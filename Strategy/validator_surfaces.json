@@ -1,0 +1,13 @@
+{
+  "version": "198.5",
+  "protected_manifest": true,
+  "validator_surfaces": {
+    "validator_surfaces.json": ["surface_boundary_definition"],
+    "replay_receptor_chain.py": ["derivability", "receipt_replay", "invariant_enforcement"],
+    "receptor_pipeline.py": ["intake", "semantic_firewall", "verdict_gate", "main_ledger_bridge"],
+    "distress_protocol.py": ["fail_closed_recovery"],
+    "constitutional_debt_engine.py": ["repeal_advisory_math", "debt_scoring"],
+    "strategy_engine.py": ["core_governance"],
+    "telemetry_*.py": ["evidence_authenticity", "evidence_time_integrity"]
+  }
+}
