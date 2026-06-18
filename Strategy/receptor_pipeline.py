@@ -412,7 +412,9 @@ if __name__ == "__main__":
         
         # Fetch original content from the past commit
         try:
-            original_content = subprocess.check_output(["git", "show", f"{commit}~1:{target}"]).decode("utf-8")
+            # git show expects path from repository root
+            git_path = f"Strategy/{target}"
+            original_content = subprocess.check_output(["git", "show", f"{commit}~1:{git_path}"]).decode("utf-8")
         except subprocess.CalledProcessError:
             original_content = "" # File might be newly created
             

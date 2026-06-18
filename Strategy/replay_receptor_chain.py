@@ -122,20 +122,28 @@ def replay_chain():
                     
                 if obs.get("schema") == "axis.code_diff.v1":
                     from receptor_pipeline import apply_diff_to_content
-                    target_file = os.path.join(BASE_DIR, obs["target_file"])
-                    if os.path.exists(target_file):
-                        with open(target_file, "r", encoding="utf-8") as f:
-                            current_content = f.read()
-                        current_hash = hashlib.sha256(current_content.encode("utf-8")).hexdigest()
-                        if current_hash != obs["original_hash"]:
-                            raise ValueError(f"Invariant 4 Failed: target file drifted after observation for case {case_id}")
+                    if not obs.get("historical", False):
+                        filepath = os.path.join(BASE_DIR, obs["target_file"])
+                        if os.path.exists(filepath):
+                            with open(filepath, "r", encoding="utf-8") as f:
+                                current_content = f.read()
+                            current_hash = hashlib.sha256(current_content.encode("utf-8")).hexdigest()
+                            if current_hash != obs["original_hash"]:
+                                raise ValueError(f"Invariant 4 Failed: target file drifted after observation for case {case_id}")
                             
+                            new_content = apply_diff_to_content(current_content, obs["diff_content"])
+                            trial_hash = hashlib.sha256(new_content.encode("utf-8")).hexdigest()
+                            if trial_hash != ev.get("verified_hash"):
+                                raise ValueError(f"Invariant 4 Failed: Recomputed diff trial hash mismatch for case {case_id}")
+                        else:
+                            raise ValueError(f"Invariant 4 Failed: target file missing for case {case_id}")
+                    else:
+                        # For historical cases, we bypass the physical drift check, but we can verify against original_content
+                        current_content = obs.get("original_content", "")
                         new_content = apply_diff_to_content(current_content, obs["diff_content"])
                         trial_hash = hashlib.sha256(new_content.encode("utf-8")).hexdigest()
                         if trial_hash != ev.get("verified_hash"):
-                            raise ValueError(f"Invariant 4 Failed: Recomputed diff trial hash mismatch for case {case_id}")
-                    else:
-                        raise ValueError(f"Invariant 4 Failed: target file missing for case {case_id}")
+                            raise ValueError(f"Invariant 4 Failed: Recomputed historical diff trial hash mismatch for case {case_id}")
                 else:
                     if ev.get("verified_hash") != obs.get("content_hash"):
                         raise ValueError(f"Invariant 4 Failed: Invalid evidence promoted for case {case_id} (hash mismatch)")

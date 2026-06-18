@@ -9,8 +9,9 @@ def run_cmd(cmd):
         return ""
 
 def process_recent_diffs(count=10):
-    log_output = run_cmd(f"git -C .. log -n {count} --oneline --name-only -- '*.py'")
+    log_output = run_cmd(f'git -C .. log -n {count} --oneline --name-only -- "*.py"')
     if not log_output:
+        print("Git log failed to produce output.")
         return
         
     lines = log_output.splitlines()
