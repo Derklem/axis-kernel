@@ -39,4 +39,8 @@ fi
 echo "============================================"
 echo " [ACCEPTED] Commit Validated.               "
 echo "============================================"
+
+# Optional read-only status text
+python receptor_console.py --status
+
 exit 0
