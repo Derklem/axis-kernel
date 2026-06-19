@@ -17,3 +17,5 @@ class DummyAdapter(BaseAuditor):
 
 def get_auditor(config):
     return DummyAdapter(config)
+    
+# Testing multi-auditor consensus

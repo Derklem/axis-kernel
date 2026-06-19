@@ -79,7 +79,7 @@ class ReceptorPipeline:
             json.dump({"head": head_hash}, f, indent=2)
 
     def _emit_receipt(self, event_type, case_id, payload_dict):
-        audit_events = ["AUDITOR_REVIEW_REQUESTED", "AUDITOR_VERDICT_RECEIVED", "AUDITOR_VERDICT_INVALID"]
+        audit_events = ["AUDITOR_REVIEW_REQUESTED", "AUDITOR_VERDICT_RECEIVED", "AUDITOR_VERDICT_INVALID", "MULTI_AUDIT_REQUESTED", "MULTI_AUDIT_VERDICTS_RECEIVED", "MULTI_AUDIT_CONSENSUS_RECORDED"]
         if self.dry_run and event_type != "CHECK_ONLY" and event_type not in audit_events:
             return
         if event_type == "CHECK_ONLY" and not self.record_check:
