@@ -1,3 +1,4 @@
+# DEPRECATED (Phase 208): Use Strategy/auditors/ subsystem instead.
 import os
 import sys
 import json

@@ -1,0 +1,11 @@
+{
+  "auditors": {
+    "gemma": {
+      "id": "gemma3:4b",
+      "adapter": "gemma_adapter.py",
+      "api_url": "http://localhost:11434/api/generate",
+      "context_window": 32768
+    }
+  },
+  "default": "gemma"
+}

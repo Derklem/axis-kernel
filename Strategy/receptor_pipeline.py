@@ -78,9 +78,12 @@ class ReceptorPipeline:
             json.dump({"head": head_hash}, f, indent=2)
 
     def _emit_receipt(self, event_type, case_id, payload_dict):
-        if self.dry_run and event_type != "CHECK_ONLY":
+        audit_events = ["AUDITOR_REVIEW_REQUESTED", "AUDITOR_VERDICT_RECEIVED", "AUDITOR_VERDICT_INVALID"]
+        if self.dry_run and event_type != "CHECK_ONLY" and event_type not in audit_events:
             return
         if event_type == "CHECK_ONLY" and not self.record_check:
+            return
+        if event_type in audit_events and not self.record_check:
             return
             
         parent_head = self._get_head()
@@ -621,6 +624,26 @@ if __name__ == "__main__":
         print(f"You may now execute: git apply State/Recovery/{commit_hash}_revert.patch")
         sys.exit(0)
 
+    if "--build-evidence-packet" in sys.argv:
+        idx = sys.argv.index("--build-evidence-packet")
+        case_id = sys.argv[idx+1]
+        
+        evidence_dir = os.path.join(STATE_DIR, "Evidence")
+        if not os.path.exists(evidence_dir):
+            os.makedirs(evidence_dir)
+            
+        bundle_path = os.path.join(evidence_dir, f"{case_id}_adjudication_bundle.md")
+        
+        with open(bundle_path, "w", encoding="utf-8") as f:
+            f.write(f"# Evidence Bundle for Case: {case_id}\n\n")
+            f.write("## Context\n")
+            f.write("Provide your reasoning here for why this change is safe and complies with invariants.\n\n")
+            f.write("## Missing Evidence Addressed\n")
+            f.write("Address any missing evidence requested by the Auditor.\n\n")
+            
+        print(f"Evidence packet built at: {bundle_path}")
+        sys.exit(0)
+
     if "--check-diff" in sys.argv:
         pipeline.dry_run = True
         if "--record-check" in sys.argv:
@@ -736,6 +759,53 @@ if __name__ == "__main__":
             for s in distress_result["signal"].get("signals", []):
                 print(f" - {s.get('trigger')}: {s.get('action')}")
                 
+        if "--audit" in sys.argv:
+            pipeline.record_check = True
+            print("\n--- Invoking Constitutional Auditor ---")
+            pipeline._emit_receipt("AUDITOR_REVIEW_REQUESTED", commit_case_id, {"diff_hash": diff_hash})
+            
+            try:
+                sys.path.insert(0, os.path.join(BASE_DIR, "auditors"))
+                from gemma_adapter import get_auditor
+                
+                registry_path = os.path.join(BASE_DIR, "auditors", "auditor_registry.json")
+                with open(registry_path, "r", encoding="utf-8") as f:
+                    registry = json.load(f)
+                    
+                auditor_config = registry["auditors"][registry["default"]]
+                auditor = get_auditor(auditor_config)
+                
+                print(f"Auditor: {auditor_config['id']}")
+                verdict_result = auditor.audit({"diff": full_diff})
+                
+                if verdict_result.get("parsing_reliability") == "failed":
+                    print("ERROR: Auditor failed to produce valid JSON.")
+                    print(verdict_result.get("raw_output", ""))
+                    pipeline._emit_receipt("AUDITOR_VERDICT_INVALID", commit_case_id, verdict_result)
+                else:
+                    print(f"\nAUDITOR VERDICT: {verdict_result.get('verdict')}")
+                    print(f"Confidence:      {verdict_result.get('confidence')}")
+                    print(f"Reasoning:       {verdict_result.get('reasoning')}")
+                    if verdict_result.get("risks"):
+                        print("Risks:")
+                        for r in verdict_result.get("risks"):
+                            print(f"  - {r}")
+                    if verdict_result.get("missing_evidence"):
+                        print("Missing Evidence:")
+                        for m in verdict_result.get("missing_evidence"):
+                            print(f"  - {m}")
+                            
+                    pipeline._emit_receipt("AUDITOR_VERDICT_RECEIVED", commit_case_id, verdict_result)
+                    
+                    # If Gemma quarantines, override final_verdict
+                    if verdict_result.get("verdict") == "QUARANTINE" and final_verdict == "ACCEPT":
+                        final_verdict = "QUARANTINE"
+                        print("\n[BLOCKED BY AUDITOR]")
+            except Exception as e:
+                print(f"\nAuditor execution failed: {e}")
+                import traceback
+                traceback.print_exc()
+        
         if pipeline.record_check:
             pipeline._emit_receipt("CHECK_ONLY", commit_case_id, {
                 "schema": "axis.check_only.v1",
@@ -744,7 +814,7 @@ if __name__ == "__main__":
                 "verdict": final_verdict,
                 "dry_run": True,
                 "state_mutation_performed": False,
-                "ledger_mutation_performed": "CHECK_ONLY_ONLY"
+                "ledger_mutation_performed": "AUDIT_RECORDS_ONLY" if "--audit" in sys.argv else "CHECK_ONLY_ONLY"
             })
             print("\nCheck recorded to receptor ledger.")
             

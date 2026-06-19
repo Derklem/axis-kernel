@@ -2,11 +2,11 @@
 # Axis Pre-Commit Hook (Adjudicated Enforcement)
 
 # Generate a diff of staged changes
-git diff --cached > .git/phase207_staged.diff
+git diff --cached > .git/phase208_staged.diff
 
 # If there are no staged changes, exit successfully
-if [ ! -s .git/phase207_staged.diff ]; then
-    rm -f .git/phase207_staged.diff
+if [ ! -s .git/phase208_staged.diff ]; then
+    rm -f .git/phase208_staged.diff
     exit 0
 fi
 
@@ -18,18 +18,20 @@ echo "============================================"
 cd Strategy || exit 1
 
 # Run the receptor pipeline on the staged diff
-python receptor_pipeline.py --check-diff ../.git/phase207_staged.diff
+python receptor_pipeline.py --check-diff ../.git/phase208_staged.diff
 
 PIPELINE_STATUS=$?
 
 # Clean up the diff
-rm -f ../.git/phase207_staged.diff
+rm -f ../.git/phase208_staged.diff
 
 if [ $PIPELINE_STATUS -ne 0 ]; then
     echo "============================================"
     echo " [BLOCKED] Commit Quarantined or Failed.    "
     echo "============================================"
     echo "To override a semantic quarantine, you must submit an ADJUDICATION_RULING."
+    echo "To consult the Constitutional Auditor, run:"
+    echo "  python Strategy/receptor_pipeline.py --check-diff .git/phase208_staged.diff --audit"
     echo "Alternatively, use 'git commit --no-verify' to bypass this hook entirely."
     exit 1
 fi
