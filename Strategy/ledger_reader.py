@@ -70,7 +70,7 @@ def parse_ledger_fast(ledger_path):
                     metrics["quarantined"] += 1
                 elif event_type == "ADJUDICATION_RULING":
                     metrics["overrides"] += 1
-                elif event_type == "AUDITOR_REVIEW_REQUESTED":
+                elif event_type in ["AUDITOR_REVIEW_REQUESTED", "MULTI_AUDIT_REQUESTED"]:
                     metrics["audit_requests"] += 1
                 elif event_type == "RECEPTOR_GOVERNANCE_EVALUATED":
                     burdens = receipt["payload"].get("burdens", {})

@@ -760,53 +760,103 @@ if __name__ == "__main__":
             for s in distress_result["signal"].get("signals", []):
                 print(f" - {s.get('trigger')}: {s.get('action')}")
 
-        if "--audit" in sys.argv:
+        if "--audit" in sys.argv or "--audit-with" in sys.argv:
             pipeline.record_check = True
-            print("\n--- Invoking Constitutional Auditor ---")
-            pipeline._emit_receipt("AUDITOR_REVIEW_REQUESTED", commit_case_id, {"diff_hash": diff_hash})
+            
+            auditor_list = []
+            if "--audit-with" in sys.argv:
+                idx = sys.argv.index("--audit-with")
+                auditor_list = sys.argv[idx+1].split(",")
+            
+            sys.path.insert(0, os.path.join(BASE_DIR, "auditors"))
+            registry_path = REGISTRY_PATH
+            with open(registry_path, "r", encoding="utf-8") as f:
+                registry = json.load(f)
+                
+            if not auditor_list:
+                auditor_list = registry.get("active_auditors", [registry.get("default")])
+                
+            strategy = registry.get("consensus_strategy", "ANY_QUARANTINE_WINS")
+            
+            print(f"\n--- Invoking Multi-Auditor Consensus [{strategy}] ---")
+            pipeline._emit_receipt("MULTI_AUDIT_REQUESTED", commit_case_id, {
+                "diff_hash": diff_hash,
+                "auditors": auditor_list,
+                "strategy": strategy
+            })
 
-            try:
-                sys.path.insert(0, os.path.join(BASE_DIR, "auditors"))
-                from gemma_adapter import get_auditor
+            from concurrent.futures import ThreadPoolExecutor, as_completed
+            import importlib
+            
+            def run_auditor(auditor_id):
+                if auditor_id not in registry.get("auditors", {}):
+                    return {"auditor_id": auditor_id, "error": f"Auditor {auditor_id} not in registry.", "parsing_reliability": "failed", "verdict": "AUDITOR_VERDICT_INVALID"}
+                auditor_config = registry["auditors"][auditor_id]
+                adapter_module_name = auditor_config["adapter"].replace(".py", "")
+                try:
+                    adapter_module = importlib.import_module(adapter_module_name)
+                    auditor_instance = adapter_module.get_auditor(auditor_config)
+                    result = auditor_instance.audit({"diff": full_diff})
+                    # Ensure auditor_id is injected just in case
+                    if "auditor_id" not in result:
+                        result["auditor_id"] = auditor_id
+                    return result
+                except Exception as e:
+                    return {"auditor_id": auditor_id, "error": str(e), "parsing_reliability": "failed", "verdict": "AUDITOR_VERDICT_INVALID"}
 
-                registry_path = REGISTRY_PATH
-                with open(registry_path, "r", encoding="utf-8") as f:
-                    registry = json.load(f)
+            raw_verdicts = []
+            with ThreadPoolExecutor(max_workers=len(auditor_list)) as executor:
+                future_to_auditor = {executor.submit(run_auditor, aid): aid for aid in auditor_list}
+                for future in as_completed(future_to_auditor):
+                    raw_verdicts.append(future.result())
 
-                auditor_config = registry["auditors"][registry["default"]]
-                auditor = get_auditor(auditor_config)
+            pipeline._emit_receipt("MULTI_AUDIT_VERDICTS_RECEIVED", commit_case_id, {
+                "verdicts": raw_verdicts,
+                "request_id": commit_case_id
+            })
 
-                print(f"Auditor: {auditor_config['id']}")
-                verdict_result = auditor.audit({"diff": full_diff})
+            quarantine_sources = []
+            accept_sources = []
+            defer_sources = []
+            invalid_sources = []
 
-                if verdict_result.get("parsing_reliability") == "failed":
-                    print("ERROR: Auditor failed to produce valid JSON.")
-                    print(verdict_result.get("raw_output", ""))
-                    pipeline._emit_receipt("AUDITOR_VERDICT_INVALID", commit_case_id, verdict_result)
-                    final_verdict = "QUARANTINE"
+            for rv in raw_verdicts:
+                v = rv.get("verdict", "AUDITOR_VERDICT_INVALID")
+                aid = rv.get("auditor_id", "unknown")
+                if v == "QUARANTINE":
+                    quarantine_sources.append(aid)
+                elif v == "ACCEPT":
+                    accept_sources.append(aid)
+                elif v == "DEFER":
+                    defer_sources.append(aid)
                 else:
-                    print(f"\nAUDITOR VERDICT: {verdict_result.get('verdict')}")
-                    print(f"Confidence:      {verdict_result.get('confidence')}")
-                    print(f"Reasoning:       {verdict_result.get('reasoning')}")
-                    if verdict_result.get("risks"):
-                        print("Risks:")
-                        for r in verdict_result.get("risks"):
-                            print(f"  - {r}")
-                    if verdict_result.get("missing_evidence"):
-                        print("Missing Evidence:")
-                        for m in verdict_result.get("missing_evidence"):
-                            print(f"  - {m}")
+                    invalid_sources.append(aid)
 
-                    pipeline._emit_receipt("AUDITOR_VERDICT_RECEIVED", commit_case_id, verdict_result)
+            if strategy == "ANY_QUARANTINE_WINS":
+                if quarantine_sources or invalid_sources:
+                    consensus_verdict = "QUARANTINE"
+                elif defer_sources:
+                    consensus_verdict = "DEFER"
+                else:
+                    consensus_verdict = "ACCEPT"
+            else:
+                consensus_verdict = "QUARANTINE" # Fallback
 
-                    # If Gemma quarantines, override final_verdict
-                    if verdict_result.get("verdict") == "QUARANTINE" and final_verdict != "QUARANTINE":
-                        final_verdict = "QUARANTINE"
-                        print("\n[BLOCKED BY AUDITOR]")
-            except Exception as e:
-                print(f"\nAuditor execution failed: {e}")
-                import traceback
-                traceback.print_exc()
+            pipeline._emit_receipt("MULTI_AUDIT_CONSENSUS_RECORDED", commit_case_id, {
+                "consensus_verdict": consensus_verdict,
+                "strategy_applied": strategy,
+                "quarantine_sources": quarantine_sources + invalid_sources,
+                "accept_sources": accept_sources,
+                "verdict_count": len(raw_verdicts)
+            })
+
+            print(f"\nCONSENSUS VERDICT: {consensus_verdict}")
+            for rv in raw_verdicts:
+                print(f"  - {rv.get('auditor_id')}: {rv.get('verdict')} (Conf: {rv.get('confidence', 0.0)})")
+
+            if consensus_verdict == "QUARANTINE" and final_verdict != "QUARANTINE":
+                final_verdict = "QUARANTINE"
+                print("\n[BLOCKED BY AUDITOR CONSENSUS]")
 
         if pipeline.record_check:
             pipeline._emit_receipt("CHECK_ONLY", commit_case_id, {

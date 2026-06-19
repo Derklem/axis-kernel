@@ -97,6 +97,8 @@ def print_case(cases, case_id):
             detail = f"Ruling: {payload.get('ruling_type')}"
         elif ev == "AUDITOR_VERDICT_RECEIVED":
             detail = f"Verdict: {payload.get('verdict')}, Confidence: {payload.get('confidence')}"
+        elif ev == "MULTI_AUDIT_CONSENSUS_RECORDED":
+            detail = f"Consensus: {payload.get('consensus_verdict')} (Strategy: {payload.get('strategy_applied')})"
             
         print(f" - {ev:<32} {detail}")
     print("======================\n")
@@ -121,16 +123,22 @@ def print_quarantines(cases):
 
 def print_audits(receipts):
     print("\n=== RECENT AUDIT VERDICTS ===")
-    print(f"{'Case ID':<40} | {'Verdict':<15} | {'Confidence':<10} | {'Auditor'}")
+    print(f"{'Case ID':<40} | {'Verdict':<15} | {'Type/Auditor'}")
     print("-" * 90)
     count = 0
     for r in reversed(receipts):
-        if r["event_type"] == "AUDITOR_VERDICT_RECEIVED":
+        if r["event_type"] == "MULTI_AUDIT_CONSENSUS_RECORDED":
             payload = r.get("payload", {})
-            print(f"{r['case_id']:<40} | {payload.get('verdict', 'N/A'):<15} | {payload.get('confidence', 0.0):<10} | {payload.get('auditor_id', 'Unknown')}")
+            print(f"{r['case_id']:<40} | {payload.get('consensus_verdict', 'N/A'):<15} | MULTI-CONSENSUS ({payload.get('strategy_applied')})")
             count += 1
-            if count >= 10:
-                break
+        elif r["event_type"] == "AUDITOR_VERDICT_RECEIVED":
+            payload = r.get("payload", {})
+            print(f"{r['case_id']:<40} | {payload.get('verdict', 'N/A'):<15} | {payload.get('auditor_id', 'Unknown')}")
+            count += 1
+            
+        if count >= 10:
+            break
+            
     if count == 0:
         print("No audits recorded.")
     print("=============================\n")

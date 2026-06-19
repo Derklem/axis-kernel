@@ -116,7 +116,7 @@ def replay_chain():
                 raise ValueError(f"Invariant 16 Failed: CHECK_ONLY receipt {idx} did not assert state_mutation_performed=False")
 
             # CHECK_ONLY should only share the case with Auditor receipts (which record advisory LLM logic, not system state)
-            allowed_events = {"CHECK_ONLY", "AUDITOR_REVIEW_REQUESTED", "AUDITOR_VERDICT_RECEIVED", "AUDITOR_VERDICT_INVALID"}
+            allowed_events = {"CHECK_ONLY", "AUDITOR_REVIEW_REQUESTED", "AUDITOR_VERDICT_RECEIVED", "AUDITOR_VERDICT_INVALID", "MULTI_AUDIT_REQUESTED", "MULTI_AUDIT_VERDICTS_RECEIVED", "MULTI_AUDIT_CONSENSUS_RECORDED"}
             if not set(case["events"]).issubset(allowed_events):
                 raise ValueError(f"Invariant 16 Failed: CHECK_ONLY case {case_id} shares events with non-audit mutating receipts. Events: {case['events']}")
             continue
@@ -368,6 +368,49 @@ def replay_chain():
             cases[case_id]["events"].append(event_type)
             cases[case_id]["audit_requests"] = cases[case_id].get("audit_requests", 0) + 1
 
+        elif event_type == "MULTI_AUDIT_REQUESTED":
+            cases[case_id]["events"].append(event_type)
+            cases[case_id]["audit_requests"] = cases[case_id].get("audit_requests", 0) + 1
+            cases[case_id]["multi_audit_strategy"] = receipt["payload"].get("strategy")
+
+        elif event_type == "MULTI_AUDIT_VERDICTS_RECEIVED":
+            if "MULTI_AUDIT_REQUESTED" not in cases[case_id]["events"]:
+                raise ValueError(f"Invariant 19 Failed: MULTI_AUDIT_VERDICTS_RECEIVED without prior REQUESTED for case {case_id}")
+            cases[case_id]["events"].append(event_type)
+            cases[case_id]["multi_audit_verdicts"] = receipt["payload"].get("verdicts", [])
+
+        elif event_type == "MULTI_AUDIT_CONSENSUS_RECORDED":
+            if "MULTI_AUDIT_VERDICTS_RECEIVED" not in cases[case_id]["events"]:
+                raise ValueError(f"Invariant 19 Failed: MULTI_AUDIT_CONSENSUS_RECORDED without prior VERDICTS_RECEIVED for case {case_id}")
+            cases[case_id]["events"].append(event_type)
+
+            consensus = receipt["payload"].get("consensus_verdict")
+            strategy = receipt["payload"].get("strategy_applied")
+            q_sources = receipt["payload"].get("quarantine_sources", [])
+            a_sources = receipt["payload"].get("accept_sources", [])
+            expected_strategy = cases[case_id].get("multi_audit_strategy")
+
+            if strategy != expected_strategy:
+                raise ValueError(f"Invariant 19 Failed: Strategy mismatch. Expected {expected_strategy}, recorded {strategy}")
+
+            raw_verdicts = cases[case_id].get("multi_audit_verdicts", [])
+            if len(raw_verdicts) != receipt["payload"].get("verdict_count"):
+                raise ValueError(f"Invariant 19 Failed: Verdict count mismatch. Expected {len(raw_verdicts)}, recorded {receipt['payload'].get('verdict_count')}")
+
+            if strategy == "ANY_QUARANTINE_WINS":
+                has_quarantine = any(v.get("verdict") in ["QUARANTINE", "AUDITOR_VERDICT_INVALID"] for v in raw_verdicts)
+                expected_consensus = "QUARANTINE" if has_quarantine else ("DEFER" if any(v.get("verdict") == "DEFER" for v in raw_verdicts) else "ACCEPT")
+                if consensus != expected_consensus:
+                    raise ValueError(f"Invariant 19 Failed: Consensus math violation. Expected {expected_consensus}, got {consensus}")
+
+            actual_q_sources = [v.get("auditor_id") for v in raw_verdicts if v.get("verdict") in ["QUARANTINE", "AUDITOR_VERDICT_INVALID"]]
+            actual_a_sources = [v.get("auditor_id") for v in raw_verdicts if v.get("verdict") == "ACCEPT"]
+
+            if set(q_sources) != set(actual_q_sources):
+                raise ValueError(f"Invariant 19 Failed: Quarantine sources mismatch. Expected {actual_q_sources}, got {q_sources}")
+            if set(a_sources) != set(actual_a_sources):
+                raise ValueError(f"Invariant 19 Failed: Accept sources mismatch. Expected {actual_a_sources}, got {a_sources}")
+
         elif event_type in ["AUDITOR_VERDICT_RECEIVED", "AUDITOR_VERDICT_INVALID"]:
             # Invariant 18: Auditor Receipt Integrity
             if "AUDITOR_REVIEW_REQUESTED" not in cases[case_id]["events"]:
@@ -426,7 +469,7 @@ def replay_chain():
             raise ValueError(f"Invariant 15D Failed: ledger accepted_files {global_accepted_count} != state {d_state.get('accepted_files')}")
 
     print(f"Replay successful. {len(lines)} receipts verified across {len(cases)} cases.")
-    print("All 18 Invariants Passed.")
+    print("All 19 Invariants Passed.")
     return True
 
 if __name__ == "__main__":

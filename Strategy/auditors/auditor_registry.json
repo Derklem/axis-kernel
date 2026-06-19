@@ -1,11 +1,17 @@
 {
+  "active_auditors": ["gemma3:4b"],
+  "consensus_strategy": "ANY_QUARANTINE_WINS",
   "auditors": {
-    "gemma": {
+    "gemma3:4b": {
       "id": "gemma3:4b",
       "adapter": "gemma_adapter.py",
       "api_url": "http://localhost:11434/api/generate",
       "context_window": 32768
+    },
+    "dummy_adapter": {
+      "id": "dummy_adapter",
+      "adapter": "dummy_adapter.py"
     }
   },
-  "default": "gemma"
+  "default": "gemma3:4b"
 }
