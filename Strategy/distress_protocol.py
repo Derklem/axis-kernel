@@ -3,7 +3,8 @@ import json
 import uuid
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-STATE_FILE = os.path.join(BASE_DIR, "State", "distress_state.json")
+STATE_DIR = os.environ.get("AXIS_STATE_DIR", os.path.join(BASE_DIR, "State"))
+STATE_FILE = os.path.join(STATE_DIR, "distress_state.json")
 
 class DistressProtocol:
     def __init__(self):

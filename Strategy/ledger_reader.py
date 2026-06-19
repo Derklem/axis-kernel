@@ -75,9 +75,11 @@ def parse_ledger_fast(ledger_path):
                 elif event_type == "RECEPTOR_GOVERNANCE_EVALUATED":
                     burdens = receipt["payload"].get("burdens", {})
                     metrics["session_burden"] += sum(burdens.values())
-                elif event_type == "RECOVERY_REHEARSED":
-                    patch_path = receipt["payload"].get("recovery_patch_path")
-                    # Reset case struct but retain payload parsing
-                    cases[case_id] = {"events": [event_type], "patch_path": patch_path, "payloads": {event_type: receipt.get("payload", {})}}
+                elif event_type == "RECOVERY_PATCH_PROPOSED":
+                    metrics.setdefault("recoveries_proposed", 0)
+                    metrics["recoveries_proposed"] += 1
+                    target_case_id = receipt["payload"].get("target_case_id")
+                    if target_case_id and target_case_id in cases:
+                        cases[target_case_id].setdefault("recoveries", []).append(receipt["payload"])
 
     return cases, metrics, receipts
