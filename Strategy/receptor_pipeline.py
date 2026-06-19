@@ -9,7 +9,8 @@ import uuid
 import hmac
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-STATE_DIR = os.path.join(BASE_DIR, "State")
+STATE_DIR = os.environ.get("AXIS_STATE_DIR", os.path.join(BASE_DIR, "State"))
+REGISTRY_PATH = os.environ.get("AXIS_REGISTRY_PATH", os.path.join(BASE_DIR, "auditors", "auditor_registry.json"))
 OBSERVATIONS_DIR = os.path.join(STATE_DIR, "Observations")
 QUARANTINE_DIR = os.path.join(STATE_DIR, "Quarantine")
 ACCEPTED_REFACTORS_DIR = os.path.join(STATE_DIR, "AcceptedRefactors")
@@ -768,7 +769,7 @@ if __name__ == "__main__":
                 sys.path.insert(0, os.path.join(BASE_DIR, "auditors"))
                 from gemma_adapter import get_auditor
 
-                registry_path = os.path.join(BASE_DIR, "auditors", "auditor_registry.json")
+                registry_path = REGISTRY_PATH
                 with open(registry_path, "r", encoding="utf-8") as f:
                     registry = json.load(f)
 
@@ -782,6 +783,7 @@ if __name__ == "__main__":
                     print("ERROR: Auditor failed to produce valid JSON.")
                     print(verdict_result.get("raw_output", ""))
                     pipeline._emit_receipt("AUDITOR_VERDICT_INVALID", commit_case_id, verdict_result)
+                    final_verdict = "QUARANTINE"
                 else:
                     print(f"\nAUDITOR VERDICT: {verdict_result.get('verdict')}")
                     print(f"Confidence:      {verdict_result.get('confidence')}")
@@ -798,7 +800,7 @@ if __name__ == "__main__":
                     pipeline._emit_receipt("AUDITOR_VERDICT_RECEIVED", commit_case_id, verdict_result)
 
                     # If Gemma quarantines, override final_verdict
-                    if verdict_result.get("verdict") == "QUARANTINE" and final_verdict == "ACCEPT":
+                    if verdict_result.get("verdict") == "QUARANTINE" and final_verdict != "QUARANTINE":
                         final_verdict = "QUARANTINE"
                         print("\n[BLOCKED BY AUDITOR]")
             except Exception as e:
@@ -990,10 +992,12 @@ if __name__ == "__main__":
         pipeline.process_claim(case_id, target, claim)
         sys.exit(0)
 
-    if len(sys.argv) > 1:
+    if len(sys.argv) > 1 and not "--adjudicate-quarantine" in sys.argv and not "--build-evidence-packet" in sys.argv and not "--check-diff" in sys.argv and not "--git-diff" in sys.argv:
         subjects = sys.argv[1:]
-    else:
+    elif not ("--adjudicate-quarantine" in sys.argv or "--build-evidence-packet" in sys.argv or "--check-diff" in sys.argv or "--git-diff" in sys.argv):
         subjects = [os.path.join(BASE_DIR, "receptor_subject_hygiene.py")]
+    else:
+        subjects = []
 
     for subject_path in subjects:
         if subject_path.endswith(".diff"):
@@ -1014,9 +1018,10 @@ if __name__ == "__main__":
             else:
                 print(f"Diff subject not found: {subject_path}")
         else:
-            res = pipeline.observe_file_delta(subject_path)
-            if res:
-                case_id, _, claim = res
-                pipeline.process_claim(case_id, subject_path, claim)
-            else:
-                print(f"Subject not found: {subject_path}")
+            if not subject_path.startswith("-"):
+                res = pipeline.observe_file_delta(subject_path)
+                if res:
+                    case_id, _, claim = res
+                    pipeline.process_claim(case_id, subject_path, claim)
+                else:
+                    print(f"Subject not found: {subject_path}")

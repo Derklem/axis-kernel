@@ -2,9 +2,11 @@ import os
 import json
 import hashlib
 import string
+import sys
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-STATE_DIR = os.path.join(BASE_DIR, "State")
+STATE_DIR = os.environ.get("AXIS_STATE_DIR", os.path.join(BASE_DIR, "State"))
+
 LEDGER_PATH = os.path.join(STATE_DIR, "receptor_ledger.jsonl")
 HEAD_PATH = os.path.join(STATE_DIR, "receptor_chain_head.json")
 
@@ -71,6 +73,7 @@ def replay_chain():
 
         case = cases[case_id]
         case["events"].append(event_type)
+        case.setdefault("payloads", {})[event_type] = receipt.get("payload", {})
 
         # State tracking for invariant checks
         if event_type in ["RECEPTOR_OBSERVATION_RECORDED", "RECEPTOR_DIFF_OBSERVED"]:
