@@ -64,9 +64,10 @@ jobs:
           
           # Run the pipeline. If a file is quarantined and there is no ADJUDICATION_RULING
           # present to override it, the script exits with non-zero status.
+          set +e
           python receptor_pipeline.py --check-diff /tmp/axis_ci_staged.diff
-          
           PIPELINE_STATUS=$?
+          set -e
           
           if [ $PIPELINE_STATUS -ne 0 ]; then
             echo "============================================"

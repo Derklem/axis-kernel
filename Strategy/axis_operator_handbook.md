@@ -76,10 +76,10 @@ python Strategy/receptor_console.py --recoveries
 
 Axis uses a **Multi-Auditor Doctrine**. When primary models encounter ambiguity, other configured models are queried to form a consensus.
 
-1. Create a new adapter in `Strategy/` that implements the standard signature:
+1. Create a new adapter in `Strategy/auditors/` that implements the standard signature:
    `def evaluate_diff(diff_content: str, previous_context: dict) -> dict:`
 2. The adapter must return a dictionary including `verdict` (ACCEPT/QUARANTINE) and `confidence` (0.0 to 1.0).
-3. Update the `AUDITOR_REGISTRY` in `Strategy/receptor_pipeline.py` to map the new auditor name to the new script.
+3. Update the `Strategy/auditors/auditor_registry.json` to map the new auditor name to the new script.
 
 ---
 
