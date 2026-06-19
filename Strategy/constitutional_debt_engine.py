@@ -75,3 +75,39 @@ class ConstitutionalDebtEngine:
             "classification": classification,
             "authority": "advisory_governance"
         }
+
+    def evaluate_recovery_weight(self, patch_content, applies_cleanly, files_touched, validator_surface_touched):
+        """
+        Deterministically evaluates a recovery patch.
+        A reverse patch generally reduces burden by removing complexity, but carries risk if it touches validators.
+        """
+        # Re-use evaluate_delta_weight with zero semantic risk (since the semantic gate was for forward diffs)
+        # But we treat the patch as a standard diff.
+        base_eval = self.evaluate_delta_weight("synthetic.patch", patch_content, 0.0)
+        
+        # In a revert patch, lines added are old code coming back, lines removed are the bad code leaving.
+        added_lines = [l for l in patch_content.splitlines() if l.startswith("+") and not l.startswith("+++")]
+        removed_lines = [l for l in patch_content.splitlines() if l.startswith("-") and not l.startswith("---")]
+        
+        # Burden reduction is correlated with how much complexity was removed (which appears as - lines in the revert patch)
+        complexity_keywords = ["if ", "for ", "while ", "try:", "except"]
+        complexity_removed = sum(1 for l in removed_lines for kw in complexity_keywords if kw in l) * 0.02
+        lines_removed_proxy = len(removed_lines) * 0.005
+        
+        burden_reduction_estimate = complexity_removed + lines_removed_proxy + base_eval["utility_score"]
+        
+        recovery_risk_score = 0.1
+        if validator_surface_touched:
+            recovery_risk_score += 0.5
+        if not applies_cleanly:
+            recovery_risk_score += 1.0
+            
+        return {
+            "scoring_version": self.scoring_version,
+            "burden_reduction_estimate": round(min(1.0, burden_reduction_estimate), 2),
+            "recovery_risk_score": round(min(1.0, recovery_risk_score), 2),
+            "applies_cleanly": applies_cleanly,
+            "files_touched": files_touched,
+            "validator_surface_touched": validator_surface_touched,
+            "authority": "advisory_governance"
+        }
