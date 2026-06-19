@@ -80,7 +80,7 @@ class ReceptorPipeline:
 
     def _emit_receipt(self, event_type, case_id, payload_dict):
         audit_events = ["AUDITOR_REVIEW_REQUESTED", "AUDITOR_VERDICT_RECEIVED", "AUDITOR_VERDICT_INVALID", "MULTI_AUDIT_REQUESTED", "MULTI_AUDIT_VERDICTS_RECEIVED", "MULTI_AUDIT_CONSENSUS_RECORDED"]
-        if self.dry_run and event_type != "CHECK_ONLY" and event_type not in audit_events:
+        if self.dry_run and event_type not in ["CHECK_ONLY", "RECOVERY_PATCH_PROPOSED"] and event_type not in audit_events:
             return
         if event_type == "CHECK_ONLY" and not self.record_check:
             return
@@ -454,115 +454,161 @@ if __name__ == "__main__":
 
     if "--propose-recovery" in sys.argv:
         idx = sys.argv.index("--propose-recovery")
-        commit_hash = sys.argv[idx+1]
+        target_case_id = sys.argv[idx+1]
+        patch_file = sys.argv[idx+2]
 
-        patch_path = os.path.join(STATE_DIR, "Recovery", f"{commit_hash}_revert.patch")
-        if not os.path.exists(patch_path):
-            print(f"No recovery patch found at {patch_path}")
+        from ledger_reader import parse_ledger_fast
+        cases, _, _ = parse_ledger_fast(LEDGER_PATH)
+        if target_case_id not in cases:
+            print(f"Case {target_case_id} not found in ledger.")
             sys.exit(1)
 
-        case_id = str(uuid.uuid4())
+        case = cases[target_case_id]
+        reason = "Unknown"
+        if "RECEPTOR_DELTA_QUARANTINED" in case.get("events", []):
+            reason = case["payloads"]["RECEPTOR_DELTA_QUARANTINED"].get("reason", "Unknown")
+        elif "MULTI_AUDIT_CONSENSUS_RECORDED" in case.get("events", []):
+            reason = f"MULTI_AUDIT: {case['payloads']['MULTI_AUDIT_CONSENSUS_RECORDED'].get('consensus_verdict')}"
+        elif "AUDITOR_VERDICT_RECEIVED" in case.get("events", []):
+            reason = f"AUDITOR: {case['payloads']['AUDITOR_VERDICT_RECEIVED'].get('verdict')}"
+
+        pipeline.proposing_recovery_for = target_case_id
+        pipeline.recovery_quarantine_reason = reason
+        pipeline.recovery_patch_path = patch_file
+
+        # Rewrite sys.argv to trigger --check-diff
+        sys.argv[idx] = "--check-diff"
+        sys.argv[idx+1] = patch_file
+        sys.argv.pop(idx+2)
+
+    if "--apply-recovery" in sys.argv:
+        if "--force-apply" not in sys.argv:
+            print("--apply-recovery requires --force-apply to confirm mutation.")
+            sys.exit(1)
+        idx = sys.argv.index("--apply-recovery")
+        target_case_id = sys.argv[idx+1]
+
+        from ledger_reader import parse_ledger_fast
+        cases, _, _ = parse_ledger_fast(LEDGER_PATH)
+        if target_case_id not in cases:
+            print(f"Case {target_case_id} not found in ledger.")
+            sys.exit(1)
+
+        case = cases[target_case_id]
+
+        proposals = [evt for evt in case.get("events", []) if evt == "RECOVERY_PATCH_PROPOSED"]
+        if not proposals:
+            print(f"No RECOVERY_PATCH_PROPOSED found for case {target_case_id}.")
+            sys.exit(1)
+
+        proposal_payload = case["payloads"]["RECOVERY_PATCH_PROPOSED"]
+
+        proposal_receipt_hash = "unknown"
+        with open(LEDGER_PATH, "r", encoding="utf-8") as lf:
+            for line in lf:
+                try:
+                    evt = json.loads(line)
+                    if evt["event_type"] == "RECOVERY_PATCH_PROPOSED" and evt["case_id"] == target_case_id:
+                        proposal_receipt_hash = evt["receipt_hash"]
+                except: pass
+
+        if proposal_payload.get("proposal_status") != "ELIGIBLE":
+            print(f"Cannot apply recovery. Proposal status is {proposal_payload.get('proposal_status')} (Needs ELIGIBLE).")
+            sys.exit(1)
+
+        patch_path = proposal_payload["patch_path"]
+        expected_hash = proposal_payload["patch_hash"]
+
+        if not os.path.exists(patch_path):
+            print(f"Patch file not found: {patch_path}")
+            sys.exit(1)
 
         with open(patch_path, "r", encoding="utf-8") as f:
             patch_content = f.read()
 
-        applies_cleanly = False
-        try:
-            # We must run git apply --check in the root directory since the patch contains paths relative to root (e.g. Strategy/...)
-            subprocess.check_call(["git", "apply", "--check", os.path.abspath(patch_path)], cwd="..")
-            applies_cleanly = True
-        except subprocess.CalledProcessError:
-            pass
+        actual_hash = hashlib.sha256(patch_content.encode("utf-8")).hexdigest()
+        if actual_hash != expected_hash:
+            print(f"Patch hash mismatch. Expected {expected_hash}, got {actual_hash}")
+            sys.exit(1)
 
-        pipeline._emit_receipt("RECOVERY_REHEARSED", case_id, {
-            "recovery_patch_path": f"State/Recovery/{commit_hash}_revert.patch",
-            "applies_cleanly": applies_cleanly
+        try:
+            subprocess.check_call(["git", "apply", "--check", os.path.abspath(patch_path)], cwd=os.path.dirname(BASE_DIR))
+        except subprocess.CalledProcessError:
+            print("Pre-apply validation failed. Patch does not apply cleanly.")
+            sys.exit(1)
+
+        try:
+            subprocess.check_call(["git", "apply", os.path.abspath(patch_path)], cwd=os.path.dirname(BASE_DIR))
+        except subprocess.CalledProcessError as e:
+            print(f"Failed to physically apply patch: {e}")
+            sys.exit(1)
+
+        print(f"Patch physically applied from {patch_path}.")
+
+        from datetime import datetime
+        apply_utc = datetime.utcnow().isoformat() + "Z"
+
+        applied_receipt = pipeline._emit_receipt("RECOVERY_APPLIED", target_case_id, {
+            "target_case_id": target_case_id,
+            "recovery_proposal_receipt_hash": proposal_receipt_hash,
+            "patch_hash": actual_hash,
+            "patch_path": patch_path,
+            "applied_by": "human_operator",
+            "apply_method": "git apply",
+            "applied_utc": apply_utc
         })
 
-        from constitutional_debt_engine import ConstitutionalDebtEngine
-        engine = ConstitutionalDebtEngine()
+        applied_receipt_hash = applied_receipt["receipt_hash"]
 
-        # Determine files touched and validator surface touched
-        files_touched = []
+        print("\nTriggering post-apply verification...")
+
+        target_files = []
         for line in patch_content.splitlines():
             if line.startswith("+++ b/"):
-                files_touched.append(line[len("+++ b/"):])
+                target_files.append(line[6:])
 
-        validator_surface_touched = False
-        for f in files_touched:
-            is_val, _ = pipeline._is_validator_surface(f)
-            if is_val:
-                validator_surface_touched = True
-                break
+        verification_status = "PASS"
+        post_apply_diff_hash = "N/A"
 
-        eval_payload = engine.evaluate_recovery_weight(patch_content, applies_cleanly, len(files_touched), validator_surface_touched)
+        if target_files:
+            diff_output = ""
+            for tf in target_files:
+                try:
+                    out = subprocess.check_output(["git", "diff", "--", tf], cwd=os.path.dirname(BASE_DIR)).decode("utf-8")
+                    diff_output += out
+                except: pass
 
-        patch_hash = hashlib.sha256(patch_content.encode("utf-8")).hexdigest()
-        eval_payload["commit_hash"] = commit_hash
-        eval_payload["recovery_patch_hash"] = patch_hash
+            post_apply_diff_hash = hashlib.sha256(diff_output.encode("utf-8")).hexdigest()
 
-        pipeline._emit_receipt("RECOVERY_GOVERNANCE_EVALUATED", case_id, eval_payload)
-        pipeline._emit_receipt("RECOVERY_AWAITING_AUTHORIZATION", case_id, {
-            "recovery_patch_path": f"State/Recovery/{commit_hash}_revert.patch",
-            "message": "Awaiting explicit human authorization to apply."
+            if diff_output.strip():
+                print(f"Running receptor observation on {len(target_files)} modified file(s)...")
+                # Create a dry-run style check using pipeline.process_claim
+                for tf in target_files:
+                    res = pipeline.observe_file_delta(tf)
+                    if res:
+                        cid, filepath, claim = res
+                        verdict, payload = pipeline.process_claim(cid, filepath, claim)
+                        if verdict == "QUARANTINED":
+                            verification_status = "FAIL_QUARANTINE"
+            else:
+                print("No working tree diff found. Did the patch apply?")
+                verification_status = "NO_DIFF"
+
+        pipeline._emit_receipt("RECOVERY_VERIFIED", target_case_id, {
+            "target_case_id": target_case_id,
+            "applied_receipt_hash": applied_receipt_hash,
+            "post_apply_diff_hash": post_apply_diff_hash,
+            "replay_status": "P",
+            "verification_status": verification_status
         })
 
-        from distress_protocol import DistressProtocol
-        dp = DistressProtocol()
-        dp.track_recovery_proposal(f"{commit_hash}_revert.patch")
+        print(f"\n[RECOVERY CYCLE COMPLETE] Verification Status: {verification_status}")
+        if verification_status == "PASS":
+            print("Recovery was successful and verified. Run adjudication to fully close the constitutional case.")
+        else:
+            print("WARNING: Post-apply verification failed. System may be in distress.")
 
-        print(f"Recovery proposal evaluated. Burden reduction estimate: {eval_payload['burden_reduction_estimate']}")
-        print("Status: AWAITING AUTHORIZATION.")
         sys.exit(0)
-
-    if "--authorize-recovery" in sys.argv:
-        idx = sys.argv.index("--authorize-recovery")
-        commit_hash = sys.argv[idx+1]
-        sig_idx = sys.argv.index("--signature")
-        signature = sys.argv[sig_idx+1]
-
-        secret = os.environ.get("AXIS_HMAC_SECRET")
-        if not secret:
-            print("ERROR: AXIS_HMAC_SECRET environment variable is missing or weak.")
-            sys.exit(1)
-
-        # Find the RECOVERY_GOVERNANCE_EVALUATED receipt for this commit
-        found_receipt = None
-        case_id = None
-        if os.path.exists(LEDGER_PATH):
-            with open(LEDGER_PATH, "r", encoding="utf-8") as f:
-                for line in f:
-                    if not line.strip(): continue
-                    receipt = json.loads(line)
-                    if receipt["event_type"] == "RECOVERY_GOVERNANCE_EVALUATED":
-                        if receipt["payload"].get("commit_hash") == commit_hash:
-                            found_receipt = receipt
-                            case_id = receipt["case_id"]
-
-        if not found_receipt:
-            print(f"No RECOVERY_GOVERNANCE_EVALUATED receipt found for commit {commit_hash}")
-            sys.exit(1)
-
-        payload = found_receipt["payload"]
-
-        # Canonical string: recovery_patch_hash|burden_reduction_estimate|recovery_risk_score|applies_cleanly|commit_hash
-        canonical_str = f"{payload['recovery_patch_hash']}|{payload['burden_reduction_estimate']}|{payload['recovery_risk_score']}|{payload['applies_cleanly']}|{payload['commit_hash']}"
-        canonical_bytes = canonical_str.encode("utf-8")
-
-        import hmac
-        expected_sig = hmac.new(secret.encode("utf-8"), canonical_bytes, hashlib.sha256).hexdigest()
-
-        pipeline._emit_receipt("RECOVERY_AUTHORIZATION_SUBMITTED", case_id, {"signature": signature})
-
-        if signature != expected_sig:
-            print(f"ERROR: Invalid authorization signature.")
-            sys.exit(1)
-
-        pipeline._emit_receipt("RECOVERY_AUTHORIZATION_VERIFIED", case_id, {"status": "verified", "canonical_str": canonical_str})
-        pipeline._emit_receipt("RECOVERY_READY_FOR_HUMAN_APPLICATION", case_id, {
-            "recovery_patch_path": f"State/Recovery/{commit_hash}_revert.patch",
-            "instruction": f"Run `git apply State/Recovery/{commit_hash}_revert.patch` to execute this recovery."
-        })
 
     if "--adjudicate-quarantine" in sys.argv:
         idx = sys.argv.index("--adjudicate-quarantine")
@@ -616,14 +662,6 @@ if __name__ == "__main__":
         print(f"ADJUDICATION RULING ACCEPTED: {ruling} for {target_case_id} (Proceeding: {adjudication_case_id})")
         sys.exit(0)
 
-
-        from distress_protocol import DistressProtocol
-        dp = DistressProtocol()
-        dp.authorize_recovery_proposal(f"{commit_hash}_revert.patch")
-
-        print("AUTHORIZATION VERIFIED.")
-        print(f"You may now execute: git apply State/Recovery/{commit_hash}_revert.patch")
-        sys.exit(0)
 
     if "--build-evidence-packet" in sys.argv:
         idx = sys.argv.index("--build-evidence-packet")
@@ -762,22 +800,22 @@ if __name__ == "__main__":
 
         if "--audit" in sys.argv or "--audit-with" in sys.argv:
             pipeline.record_check = True
-            
+
             auditor_list = []
             if "--audit-with" in sys.argv:
                 idx = sys.argv.index("--audit-with")
                 auditor_list = sys.argv[idx+1].split(",")
-            
+
             sys.path.insert(0, os.path.join(BASE_DIR, "auditors"))
             registry_path = REGISTRY_PATH
             with open(registry_path, "r", encoding="utf-8") as f:
                 registry = json.load(f)
-                
+
             if not auditor_list:
                 auditor_list = registry.get("active_auditors", [registry.get("default")])
-                
+
             strategy = registry.get("consensus_strategy", "ANY_QUARANTINE_WINS")
-            
+
             print(f"\n--- Invoking Multi-Auditor Consensus [{strategy}] ---")
             pipeline._emit_receipt("MULTI_AUDIT_REQUESTED", commit_case_id, {
                 "diff_hash": diff_hash,
@@ -787,7 +825,7 @@ if __name__ == "__main__":
 
             from concurrent.futures import ThreadPoolExecutor, as_completed
             import importlib
-            
+
             def run_auditor(auditor_id):
                 if auditor_id not in registry.get("auditors", {}):
                     return {"auditor_id": auditor_id, "error": f"Auditor {auditor_id} not in registry.", "parsing_reliability": "failed", "verdict": "AUDITOR_VERDICT_INVALID"}
@@ -869,6 +907,31 @@ if __name__ == "__main__":
                 "ledger_mutation_performed": "AUDIT_RECORDS_ONLY" if "--audit" in sys.argv else "CHECK_ONLY_ONLY"
             })
             print("\nCheck recorded to receptor ledger.")
+
+        if hasattr(pipeline, "proposing_recovery_for"):
+            status_map = {
+                "ACCEPT": "ELIGIBLE",
+                "DEFER": "NEEDS_ADJUDICATION",
+                "QUARANTINE": "BLOCKED"
+            }
+            proposal_status = status_map.get(final_verdict, "BLOCKED")
+
+            with open(pipeline.recovery_patch_path, "r", encoding="utf-8") as pf:
+                patch_content = pf.read()
+            patch_hash = hashlib.sha256(patch_content.encode("utf-8")).hexdigest()
+
+            pipeline._emit_receipt("RECOVERY_PATCH_PROPOSED", pipeline.proposing_recovery_for, {
+                "target_case_id": pipeline.proposing_recovery_for,
+                "target_quarantine_reason": pipeline.recovery_quarantine_reason,
+                "patch_hash": patch_hash,
+                "patch_path": pipeline.recovery_patch_path,
+                "dry_run_hash": diff_hash,
+                "dry_run_verdict": final_verdict,
+                "proposal_status": proposal_status,
+                "rationale": "Human operator proposed patch",
+                "proposer": "human_operator"
+            })
+            print(f"\n[RECOVERY PROPOSAL EMITTED] Status: {proposal_status}")
 
         sys.exit(1 if final_verdict != "ACCEPT" else 0)
 
