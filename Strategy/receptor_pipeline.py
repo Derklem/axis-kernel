@@ -6,6 +6,7 @@ import py_compile
 import subprocess
 import time
 import uuid
+import hmac
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATE_DIR = os.path.join(BASE_DIR, "State")
@@ -558,6 +559,59 @@ if __name__ == "__main__":
             "recovery_patch_path": f"State/Recovery/{commit_hash}_revert.patch",
             "instruction": f"Run `git apply State/Recovery/{commit_hash}_revert.patch` to execute this recovery."
         })
+
+    if "--adjudicate-quarantine" in sys.argv:
+        idx = sys.argv.index("--adjudicate-quarantine")
+        target_case_id = sys.argv[idx+1]
+        ev_idx = sys.argv.index("--evidence-hash")
+        evidence_hash = sys.argv[ev_idx+1]
+        verdict_idx = sys.argv.index("--verdict-hash")
+        verdict_hash = sys.argv[verdict_idx+1]
+        ruling_idx = sys.argv.index("--ruling")
+        ruling = sys.argv[ruling_idx+1]
+        sig_idx = sys.argv.index("--signature")
+        signature = sys.argv[sig_idx+1]
+        if ruling not in ["ACCEPT_OVERRIDE", "DEFER", "SUSTAIN_QUARANTINE"]:
+            print("ERROR: ruling must be ACCEPT_OVERRIDE, DEFER, or SUSTAIN_QUARANTINE")
+            sys.exit(1)
+        secret = os.environ.get("AXIS_HMAC_SECRET")
+        if not secret:
+            print("ERROR: AXIS_HMAC_SECRET environment variable is missing or weak.")
+            sys.exit(1)
+        # Verify the case_id exists and is actually a semantic quarantine, not a physical failure
+        found_quarantine = False
+        if os.path.exists(LEDGER_PATH):
+            with open(LEDGER_PATH, "r", encoding="utf-8") as f:
+                for line in f:
+                    if not line.strip(): continue
+                    receipt = json.loads(line)
+                    if receipt["case_id"] == target_case_id and receipt["event_type"] == "RECEPTOR_DELTA_QUARANTINED":
+                        reason = receipt["payload"].get("reason", "")
+                        if reason in ["syntax_invalid", "hash_mismatch"]:
+                            print(f"ERROR: Cannot adjudicate a physical failure ({reason}).")
+                            sys.exit(1)
+                        found_quarantine = True
+        if not found_quarantine:
+            print(f"ERROR: No eligible RECEPTOR_DELTA_QUARANTINED receipt found for case {target_case_id}")
+            sys.exit(1)
+        adjudication_case_id = "adj_" + str(uuid.uuid4())[:8]
+        canonical_str = f"{adjudication_case_id}|{target_case_id}|{evidence_hash}|{verdict_hash}|{ruling}"
+        canonical_bytes = canonical_str.encode("utf-8")
+        expected_sig = hmac.new(secret.encode("utf-8"), canonical_bytes, hashlib.sha256).hexdigest()
+        if signature != expected_sig:
+            print("ERROR: Invalid adjudication signature.")
+            sys.exit(1)
+        pipeline._emit_receipt("ADJUDICATION_RULING", adjudication_case_id, {
+            "quarantined_case_id": target_case_id,
+            "evidence_hash": evidence_hash,
+            "auditor_verdict_hash": verdict_hash,
+            "ruling_type": ruling,
+            "signature": signature,
+            "canonical_str": canonical_str
+        })
+        print(f"ADJUDICATION RULING ACCEPTED: {ruling} for {target_case_id} (Proceeding: {adjudication_case_id})")
+        sys.exit(0)
+
         
         from distress_protocol import DistressProtocol
         dp = DistressProtocol()
