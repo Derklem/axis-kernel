@@ -1,5 +1,9 @@
 # Axis Operator Handbook
 
+> **IMPORTANT**: If you are new to the Axis Governance System, please read this Handbook and the [Axis Architecture Overview](Axis_Architecture.md) first. These two documents serve as the canonical single source of truth for the system. 
+> 
+> *Note: Older markdown documents in the Strategy directory are preserved for historical context but are considered deprecated Phase Artifacts.*
+
 Welcome to the Axis Governance System. This system acts as a constitutional enforcement layer for your codebase, evaluating changes for semantic risk and enforcing immutability via a localized ledger mechanism.
 
 The Axis operates through a **Pre-Commit Hook** and an **Advisory CI Check**. It observes code changes and uses LLM-based reasoning (via the Receptor Pipeline) to either ACCEPT or QUARANTINE those changes based on defined system invariants and limits.

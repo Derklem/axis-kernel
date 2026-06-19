@@ -2,45 +2,57 @@
 # Axis Pre-Commit Hook (Adjudicated Enforcement)
 
 # Generate a diff of staged changes
-git diff --cached > .git/phase208_staged.diff
+git diff --cached > .git/axis_staged.diff
 
 # If there are no staged changes, exit successfully
-if [ ! -s .git/phase208_staged.diff ]; then
-    rm -f .git/phase208_staged.diff
+if [ ! -s .git/axis_staged.diff ]; then
+    rm -f .git/axis_staged.diff
     exit 0
 fi
-
-echo "============================================"
-echo "    Axis Advisory Review Loop: Dry-Run      "
-echo "============================================"
 
 # The hook runs from the repository root (e.g. D:/infinite/Infinity)
 cd Strategy || exit 1
 
 # Run the receptor pipeline on the staged diff
-python receptor_pipeline.py --check-diff ../.git/phase208_staged.diff
-
-PIPELINE_STATUS=$?
-
-# Clean up the diff
-rm -f ../.git/phase208_staged.diff
+# Use output redirection unless AXIS_QUIET=0
+if [ "${AXIS_QUIET:-1}" = "1" ]; then
+    OUTPUT=$(python receptor_pipeline.py --check-diff ../.git/axis_staged.diff 2>&1)
+    PIPELINE_STATUS=$?
+else
+    echo "============================================"
+    echo "    Axis Advisory Review Loop: Dry-Run      "
+    echo "============================================"
+    python receptor_pipeline.py --check-diff ../.git/axis_staged.diff
+    PIPELINE_STATUS=$?
+fi
 
 if [ $PIPELINE_STATUS -ne 0 ]; then
+    # On failure, always print the output if it was hidden
+    if [ "${AXIS_QUIET:-1}" = "1" ]; then
+        echo "$OUTPUT"
+    fi
     echo "============================================"
     echo " [BLOCKED] Commit Quarantined or Failed.    "
     echo "============================================"
     echo "To override a semantic quarantine, you must submit an ADJUDICATION_RULING."
     echo "To consult the Constitutional Auditor, run:"
-    echo "  python Strategy/receptor_pipeline.py --check-diff .git/phase208_staged.diff --audit"
+    echo "  python Strategy/receptor_pipeline.py --check-diff .git/axis_staged.diff --audit"
+    echo ""
+    echo "To view open debt and recovery options, run:"
+    echo "  python Strategy/receptor_console.py --debt-map"
+    echo "  python Strategy/receptor_console.py --recoveries"
+    echo ""
     echo "Alternatively, use 'git commit --no-verify' to bypass this hook entirely."
+    # Notice we DO NOT delete the diff on failure so the user can audit it!
     exit 1
 fi
 
-echo "============================================"
-echo " [ACCEPTED] Commit Validated.               "
-echo "============================================"
+# Clean up the diff on success
+rm -f ../.git/axis_staged.diff
 
-# Optional read-only status text
-python receptor_console.py --status
-
+if [ "${AXIS_QUIET:-1}" = "0" ]; then
+    echo "============================================"
+    echo " [ACCEPTED] Commit Validated.               "
+    echo "============================================"
+fi
 exit 0
