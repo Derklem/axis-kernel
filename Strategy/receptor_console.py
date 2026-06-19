@@ -5,6 +5,19 @@ import time
 from datetime import datetime
 from ledger_reader import parse_ledger_fast
 
+class Colors:
+    GREEN = '\033[92m'
+    YELLOW = '\033[93m'
+    RED = '\033[91m'
+    RESET = '\033[0m'
+
+    @classmethod
+    def disable(cls):
+        cls.GREEN = ''
+        cls.YELLOW = ''
+        cls.RED = ''
+        cls.RESET = ''
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 LEDGER_PATH = os.environ.get("AXIS_LEDGER_PATH", os.path.join(BASE_DIR, "State", "receptor_ledger.jsonl"))
 
@@ -18,11 +31,11 @@ def print_status(metrics):
     score = (open_quarantines * 10) + (metrics["overrides"] * 5) + metrics["session_burden"]
 
     if score < 10:
-        health = "GREEN (Healthy)"
+        health = f"{Colors.GREEN}GREEN (Healthy){Colors.RESET}"
     elif score <= 30:
-        health = "YELLOW (Elevated Debt)"
+        health = f"{Colors.YELLOW}YELLOW (Elevated Debt){Colors.RESET}"
     else:
-        health = "RED (Critical Burden)"
+        health = f"{Colors.RED}RED (Critical Burden){Colors.RESET}"
 
     print(f"System Health:      {health}")
     print(f"Debt Score:         {score:.2f}")
@@ -62,11 +75,11 @@ def print_last_n(cases, receipts, n):
         if events:
             # Look at the most significant terminal event
             if "RECEPTOR_DELTA_ACCEPTED" in events:
-                final_state = "ACCEPTED"
+                final_state = f"{Colors.GREEN}ACCEPTED{Colors.RESET}"
             elif "ADJUDICATION_RULING" in events:
-                final_state = "ADJUDICATED"
+                final_state = f"{Colors.GREEN}ADJUDICATED{Colors.RESET}"
             elif "RECEPTOR_DELTA_QUARANTINED" in events:
-                final_state = "QUARANTINED"
+                final_state = f"{Colors.RED}QUARANTINED{Colors.RESET}"
             elif "CHECK_ONLY" in events:
                 final_state = "DRY_RUN"
             else:
@@ -177,17 +190,29 @@ def print_debt_map(cases):
 
             recovery_status = "NONE"
             if "RECOVERY_VERIFIED" in events:
-                recovery_status = f"VERIFIED ({case.get('verification_status', 'Unknown')})"
+                recovery_status = f"{Colors.GREEN}VERIFIED ({case.get('verification_status', 'Unknown')}){Colors.RESET}"
             elif "RECOVERY_APPLIED" in events:
-                recovery_status = "APPLIED"
+                recovery_status = f"{Colors.YELLOW}APPLIED{Colors.RESET}"
             elif "RECOVERY_PATCH_PROPOSED" in events:
-                recovery_status = f"PROPOSED ({case.get('payloads', {}).get('RECOVERY_PATCH_PROPOSED', {}).get('proposal_status', '')})"
+                recovery_status = f"{Colors.YELLOW}PROPOSED ({case.get('payloads', {}).get('RECOVERY_PATCH_PROPOSED', {}).get('proposal_status', '')}){Colors.RESET}"
 
-            print(f"{target:<30} | {reason:<30} | {recovery_status}")
+            if recovery_status == "NONE":
+                reason_color = Colors.RED
+            else:
+                reason_color = Colors.YELLOW
+
+            # Use fixed width for original reason, then color the whole string
+            reason_str = f"{reason_color}{reason:<30}{Colors.RESET}"
+            
+            # Print using normal widths but adjust for color codes
+            # The color codes add invisible characters, so we format without padding the colored string
+            print(f"{target:<30} | {reason_str} | {recovery_status}")
             count += 1
 
     if count == 0:
-        print("No open debt detected.")
+        print(f"{Colors.GREEN}No open debt detected.{Colors.RESET}")
+    else:
+        print(f"\n{Colors.YELLOW}{count} actionable open quarantines. Run `python Strategy/receptor_console.py --recoveries` to view recovery options.{Colors.RESET}")
     print("================\n")
 
 def main():
@@ -199,8 +224,16 @@ def main():
     parser.add_argument("--audits", action="store_true", help="List recent auditor verdicts")
     parser.add_argument("--recoveries", action="store_true", help="List open recovery proposals")
     parser.add_argument("--debt-map", action="store_true", help="Print visual summary of open debt")
+    parser.add_argument("--quiet", action="store_true", help="Suppress non-essential output")
+    parser.add_argument("--verbose", action="store_true", help="Print verbose details")
+    parser.add_argument("--no-color", action="store_true", help="Disable color output")
 
     args = parser.parse_args()
+
+    if args.no_color or os.environ.get("NO_COLOR") == "1":
+        Colors.disable()
+    elif not sys.stdout.isatty() and os.environ.get("FORCE_COLOR") != "1":
+        Colors.disable()
 
     try:
         cases, metrics, receipts = parse_ledger_fast(LEDGER_PATH)
@@ -228,11 +261,11 @@ def main():
 
         print("\n=== AXIS GOVERNANCE STATUS ===")
         if score < 10:
-            health = "GREEN (Healthy)"
+            health = f"{Colors.GREEN}GREEN (Healthy){Colors.RESET}"
         elif score <= 30:
-            health = "YELLOW (Elevated Debt)"
+            health = f"{Colors.YELLOW}YELLOW (Elevated Debt){Colors.RESET}"
         else:
-            health = "RED (Critical Burden)"
+            health = f"{Colors.RED}RED (Critical Burden){Colors.RESET}"
 
         print(f"System Health:      {health}")
         print(f"Debt Score:         {score:.2f}")

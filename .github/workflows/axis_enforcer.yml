@@ -1,0 +1,86 @@
+name: Axis Constitutional Enforcement
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  constitutional-audit:
+    runs-on: ubuntu-latest
+    
+    # This workflow is ADVISORY ENFORCEMENT only.
+    # It does NOT mutate the repository's ledger; it verifies the commit against the existing ledger state.
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # Needed to generate accurate diffs against base branch
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: |
+          # If your strategy scripts require specific dependencies, install them here.
+          # pip install -r Strategy/requirements.txt
+          echo "No external dependencies required for core Axis pipeline."
+
+      - name: Generate PR Diff
+        id: generate-diff
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            git diff origin/${{ github.base_ref }}...HEAD > /tmp/axis_ci_staged.diff
+          else
+            git diff HEAD^...HEAD > /tmp/axis_ci_staged.diff
+          fi
+          
+          # If the diff is empty, we can skip the audit
+          if [ ! -s /tmp/axis_ci_staged.diff ]; then
+            echo "EMPTY_DIFF=true" >> $GITHUB_ENV
+          else
+            echo "EMPTY_DIFF=false" >> $GITHUB_ENV
+          fi
+
+      - name: Run Axis Receptor Pipeline (Dry-Run / Enforce)
+        if: env.EMPTY_DIFF == 'false'
+        env:
+          # Ensure local CI behavior matches local operator behavior
+          AXIS_STATE_DIR: ${{ github.workspace }}/Strategy/State
+          AXIS_LEDGER_PATH: ${{ github.workspace }}/Strategy/State/receptor_ledger.jsonl
+          # By default, do not suppress CI output so logs are visible
+          AXIS_QUIET: 0
+        run: |
+          cd Strategy
+          echo "============================================"
+          echo "    Axis Advisory Review Loop: CI Mode      "
+          echo "============================================"
+          
+          # Run the pipeline. If a file is quarantined and there is no ADJUDICATION_RULING
+          # present to override it, the script exits with non-zero status.
+          python receptor_pipeline.py --check-diff /tmp/axis_ci_staged.diff
+          
+          PIPELINE_STATUS=$?
+          
+          if [ $PIPELINE_STATUS -ne 0 ]; then
+            echo "============================================"
+            echo " [BLOCKED] PR Quarantined or Failed Axis Check "
+            echo "============================================"
+            echo "The constitutional logic detected elevated risk or semantic deviation."
+            echo "To merge this PR, you must either:"
+            echo "  1) Amend the code locally to align with the core doctrine."
+            echo "  2) Submit an ADJUDICATION_RULING locally and include it in this PR."
+            echo "  3) Run 'python Strategy/receptor_pipeline.py --check-diff <diff> --audit' to run multi-auditor consensus."
+            exit 1
+          fi
+          
+          echo "============================================"
+          echo " [ACCEPTED] PR Validated by Axis Receptor   "
+          echo "============================================"
+          exit 0
