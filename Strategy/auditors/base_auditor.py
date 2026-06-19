@@ -5,7 +5,7 @@ class BaseAuditor:
     def __init__(self, config):
         self.config = config
         self.auditor_id = config.get("id", "unknown")
-        
+
         # Load schema
         base_dir = os.path.dirname(os.path.abspath(__file__))
         schema_path = os.path.join(base_dir, "verdict_schema.json")
@@ -28,7 +28,7 @@ class BaseAuditor:
     def build_prompt(self, payload):
         constitution, invariants = self.get_context()
         diff_content = payload.get("diff", "")
-        
+
         prompt = f"""You are the Constitutional Auditor for the Axis Governance System.
 Your role is to perform structured dissent and governance review.
 
@@ -72,10 +72,10 @@ You MUST output strictly valid JSON matching the following schema. Do NOT wrap i
         Adds parsing_reliability flag.
         """
         import re
-        
+
         reliability = "strict"
         json_str = raw_text.strip()
-        
+
         # Try to extract JSON if it was wrapped in markdown
         match = re.search(r'```(?:json)?\s*(\{.*?\})\s*```', json_str, re.DOTALL)
         if match:
@@ -88,14 +88,14 @@ You MUST output strictly valid JSON matching the following schema. Do NOT wrap i
                 json_str = match.group(0)
                 if json_str != raw_text.strip():
                     reliability = "extracted"
-                    
+
         try:
             verdict = json.loads(json_str)
             # Ensure required fields exist
             for req in self.schema.get("required", []):
                 if req not in verdict:
                     return {"error": f"Missing required field: {req}", "raw_output": raw_text, "parsing_reliability": "failed"}
-                    
+
             verdict["parsing_reliability"] = reliability
             return verdict
         except json.JSONDecodeError as e:

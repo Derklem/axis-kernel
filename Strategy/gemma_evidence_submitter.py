@@ -17,14 +17,14 @@ def main():
     parser = argparse.ArgumentParser(description="Gemma Evidence Submitter")
     parser.add_argument("--evidence", required=True, help="Path to the evidence markdown file")
     parser.add_argument("--model", default="gemma3:4b", help="Ollama model to use")
-    
+
     args = parser.parse_args()
-    
+
     evidence_content = read_file(args.evidence)
     if not evidence_content:
         print(f"Error: Could not read evidence file at {args.evidence}")
         sys.exit(1)
-        
+
     prompt = f"""You are the Constitutional Auditor for the Axis Governance System.
 In your previous audit, you QUARANTINED a change involving `distress_protocol.py` because it lacked a complete specification and rigorous validation procedures.
 
@@ -62,7 +62,7 @@ Respond clearly and strictly within your boundaries.
 
     try:
         req = urllib.request.Request(
-            OLLAMA_API_URL, 
+            OLLAMA_API_URL,
             data=json.dumps(payload).encode('utf-8'),
             headers={'Content-Type': 'application/json'}
         )

@@ -22,7 +22,7 @@ def replay_chain():
     if not os.path.exists(LEDGER_PATH):
         print("No ledger found.")
         return True
-        
+
     manifest = _get_validator_surfaces()
 
     expected_parent = "GENESIS"
@@ -32,7 +32,7 @@ def replay_chain():
     global_quarantine_count = 0
     global_accepted_count = 0
     global_pending_recoveries = {}
-    
+
     cases = {}
     commits = {}
     suggested_patches = set()
@@ -44,34 +44,34 @@ def replay_chain():
         line = line.strip()
         if not line:
             continue
-            
+
         receipt = json.loads(line)
         case_id = receipt["case_id"]
         event_type = receipt["event_type"]
-        
+
         # Invariant 1: Chain continuity
         if receipt["parent_receptor_head"] != expected_parent:
             raise ValueError(f"Chain broken at receipt {idx}: Expected parent {expected_parent}, got {receipt['parent_receptor_head']}")
-            
+
         # Verify receipt hash integrity
         payload_bytes = json.dumps(receipt["payload"], sort_keys=True, separators=(",", ":")).encode("utf-8")
         computed_payload_hash = hashlib.sha256(payload_bytes).hexdigest()
         if computed_payload_hash != receipt["payload_hash"]:
             raise ValueError(f"Payload hash mismatch at receipt {idx}")
-            
+
         receipt_base = f"{receipt['event_type']}|{receipt['case_id']}|{receipt['parent_receptor_head']}|{computed_payload_hash}|{receipt['timestamp']}"
         computed_receipt_hash = hashlib.sha256(receipt_base.encode("utf-8")).hexdigest()
         if computed_receipt_hash != receipt["receipt_hash"]:
             raise ValueError(f"Receipt hash mismatch at receipt {idx}")
-            
+
         expected_parent = computed_receipt_hash
-        
+
         if case_id not in cases:
             cases[case_id] = {"events": [], "evidence": None, "observation": None}
-            
+
         case = cases[case_id]
         case["events"].append(event_type)
-        
+
         # State tracking for invariant checks
         if event_type in ["RECEPTOR_OBSERVATION_RECORDED", "RECEPTOR_DIFF_OBSERVED"]:
             case["observation"] = receipt["payload"]
@@ -79,7 +79,7 @@ def replay_chain():
             # Semantic risk must come after observation
             if "RECEPTOR_OBSERVATION_RECORDED" not in case["events"] and "RECEPTOR_DIFF_OBSERVED" not in case["events"]:
                 raise ValueError(f"Invariant Failed: Semantic risk scored before observation for case {case_id}")
-                
+
             # Invariant 9: Anti-Sprawl
             import fnmatch
             target_file = case["observation"]["target_file"]
@@ -90,11 +90,11 @@ def replay_chain():
                 if fnmatch.fnmatch(basename, pattern) or fnmatch.fnmatch(normalized_filename, pattern):
                     expected_validator = True
                     break
-            
+
             claimed_validator = receipt["payload"].get("is_validator_surface", False)
             if expected_validator != claimed_validator:
                 raise ValueError(f"Invariant 9 Failed: Sprawl risk detected. Receipt claims is_validator_surface={claimed_validator} for {basename}, but manifest implies {expected_validator}")
-                
+
             case["semantic_risk"] = receipt["payload"]
         elif event_type in ["RECEPTOR_EVIDENCE_ATTACHED", "RECEPTOR_DIFF_SANDBOXED"]:
             if event_type == "RECEPTOR_EVIDENCE_ATTACHED":
@@ -111,7 +111,7 @@ def replay_chain():
             # Invariant 16: Dry-Run Purity
             if receipt["payload"].get("state_mutation_performed") is not False:
                 raise ValueError(f"Invariant 16 Failed: CHECK_ONLY receipt {idx} did not assert state_mutation_performed=False")
-            
+
             # CHECK_ONLY should only share the case with Auditor receipts (which record advisory LLM logic, not system state)
             allowed_events = {"CHECK_ONLY", "AUDITOR_REVIEW_REQUESTED", "AUDITOR_VERDICT_RECEIVED", "AUDITOR_VERDICT_INVALID"}
             if not set(case["events"]).issubset(allowed_events):
@@ -120,9 +120,9 @@ def replay_chain():
         elif event_type in ["RECEPTOR_DELTA_ACCEPTED", "RECEPTOR_DELTA_QUARANTINED"]:
             if "CHECK_ONLY" in case["events"]:
                 raise ValueError(f"Invariant 16 Failed: Mutating receipt {event_type} shares case_id with a CHECK_ONLY receipt.")
-                
+
             is_semantic_quarantine = (event_type == "RECEPTOR_DELTA_QUARANTINED" and receipt["payload"].get("reason") == "semantic_validator_surface_risk")
-            
+
             if not is_semantic_quarantine:
                 # Invariant 3: Evidence before verdict
                 if "RECEPTOR_EVIDENCE_ATTACHED" not in case["events"]:
@@ -130,7 +130,7 @@ def replay_chain():
                 # Rationale before verdict
                 if "RECEPTOR_RATIONALE_SCORED" not in case["events"]:
                     raise ValueError(f"Invariant Failed: Verdict rendered before rationale scored for case {case_id}")
-            
+
             # Invariant 6: No orphan verdicts
             if not case["observation"]:
                 raise ValueError(f"Invariant 6 Failed: Orphan verdict for case {case_id}")
@@ -143,7 +143,7 @@ def replay_chain():
                 obs = case["observation"]
                 if not ev.get("syntax_valid"):
                     raise ValueError(f"Invariant 4 Failed: Invalid evidence promoted for case {case_id} (syntax_valid=False)")
-                    
+
                 if obs.get("schema") == "axis.code_diff.v1":
                     from receptor_pipeline import apply_diff_to_content
                     if not obs.get("historical", False):
@@ -154,7 +154,7 @@ def replay_chain():
                             current_hash = hashlib.sha256(current_content.encode("utf-8")).hexdigest()
                             if current_hash != obs["original_hash"]:
                                 raise ValueError(f"Invariant 4 Failed: target file drifted after observation for case {case_id}")
-                            
+
                             new_content = apply_diff_to_content(current_content, obs["diff_content"])
                             trial_hash = hashlib.sha256(new_content.encode("utf-8")).hexdigest()
                             if trial_hash != ev.get("verified_hash"):
@@ -182,27 +182,27 @@ def replay_chain():
                 raise ValueError(f"Invariant 10 Failed: Governance evaluated for non-accepted case {case_id}")
             if "RECEPTOR_DELTA_ACCEPTED" not in case["events"]:
                 raise ValueError(f"Invariant 10 Failed: Governance evaluated before ACCEPTED verdict for case {case_id}")
-                
+
             gov_payload = receipt["payload"]
             case["gov_payload"] = gov_payload
             # Invariant 11: Governance weight is fully derivable from physical reality
             from constitutional_debt_engine import ConstitutionalDebtEngine
             engine = ConstitutionalDebtEngine()
-            
+
             gov_payload = receipt["payload"]
-            
+
             if gov_payload.get("scoring_version") != engine.scoring_version:
                 raise ValueError(f"Invariant 11 Failed: Governance scoring version mismatch for case {case_id}")
-                
+
             # Recompute
             target_file = case["observation"]["target_file"]
             diff_text = case["observation"].get("diff_content", "")
             if not diff_text and "content" in case["observation"]:
                 diff_text = case["observation"]["content"]
             risk_score = case.get("semantic_risk", {}).get("risk_score", 0.0)
-            
+
             recomputed = engine.evaluate_delta_weight(target_file, diff_text, risk_score)
-            
+
             if recomputed["utility_score"] != gov_payload["utility_score"] or recomputed["burden_score"] != gov_payload["burden_score"]:
                 raise ValueError(f"Invariant 11 Failed: Governance score physically drifted for case {case_id}")
 
@@ -210,7 +210,7 @@ def replay_chain():
             commit_case_id = receipt["case_id"]
             if commit_case_id not in commits:
                 commits[commit_case_id] = {"files": [], "files_processed": [], "gov_payload": None}
-                
+
             if event_type == "COMMIT_OBSERVED":
                 commits[commit_case_id]["files"] = receipt["payload"]["target_files"]
             elif event_type == "COMMIT_FILE_PROCESSED":
@@ -218,7 +218,7 @@ def replay_chain():
             elif event_type == "COMMIT_GOVERNANCE_EVALUATED":
                 commits[commit_case_id]["gov_payload"] = receipt["payload"]
                 global_session_burden += receipt["payload"]["burden_score"]
-                
+
                 # Invariant 12: Recompute cumulative burden
                 total_utility = 0.0
                 total_burden = 0.0
@@ -226,10 +226,10 @@ def replay_chain():
                     if fid in cases and "gov_payload" in cases[fid]:
                         total_utility += cases[fid]["gov_payload"].get("utility_score", 0.0)
                         total_burden += cases[fid]["gov_payload"].get("burden_score", 0.0)
-                        
+
                 if abs(total_utility - receipt["payload"]["utility_score"]) > 0.001 or abs(total_burden - receipt["payload"]["burden_score"]) > 0.001:
                     raise ValueError(f"Invariant 12 Failed: Commit governance scores drifted for {commit_case_id}")
-                    
+
             elif event_type == "COMMIT_ACCEPTED":
                 # Invariant 12: Ensure all processed files are ACCEPTED
                 global_commit_count += 1
@@ -253,7 +253,7 @@ def replay_chain():
                 if "cumulative_burden" in sig:
                     if abs(sig["cumulative_burden"] - global_session_burden) > 0.001:
                         raise ValueError(f"Invariant 13 Failed: Distress signal claimed session burden {sig['cumulative_burden']} but replay derived {global_session_burden}")
-                        
+
         elif event_type == "RECEPTOR_RECOVERY_SUGGESTED":
             # Invariant 13: recovery_patch_hash == sha256(file at recovery_patch_path)
             patch_path = receipt["payload"].get("recovery_patch_path")
@@ -261,7 +261,7 @@ def replay_chain():
             if patch_path:
                 suggested_patches.add(patch_path)
                 global_pending_recoveries[os.path.basename(patch_path)] = "AWAITING_AUTHORIZATION"
-                
+
             if patch_path and claimed_hash:
                 full_path = os.path.join(BASE_DIR, patch_path)
                 if os.path.exists(full_path):
@@ -269,7 +269,7 @@ def replay_chain():
                         actual_hash = hashlib.sha256(f.read().encode("utf-8")).hexdigest()
                     if actual_hash != claimed_hash:
                         raise ValueError(f"Invariant 13 Failed: Recovery patch hash mismatch for {patch_path}")
-                        
+
         elif event_type == "RECEPTOR_DISTRESS_INFLUENCED":
             # Invariant 13: distress-influenced receipt occurs only when prior replay session burden > 2.0
             if global_session_burden <= 2.0:
@@ -280,54 +280,54 @@ def replay_chain():
             if patch_path not in suggested_patches:
                 raise ValueError(f"Invariant 14 Failed: RECOVERY_REHEARSED references unknown patch {patch_path}")
             cases[case_id] = {"events": [event_type], "patch_path": patch_path}
-            
+
         elif event_type == "RECOVERY_GOVERNANCE_EVALUATED":
             if case_id not in cases or "RECOVERY_REHEARSED" not in cases[case_id]["events"]:
                 raise ValueError(f"Invariant 14 Failed: RECOVERY_GOVERNANCE_EVALUATED without prior REHEARSED for {case_id}")
             cases[case_id]["events"].append(event_type)
-            
+
             # Recompute governance evaluation
             from constitutional_debt_engine import ConstitutionalDebtEngine
             engine = ConstitutionalDebtEngine()
-            
+
             full_path = os.path.join(BASE_DIR, cases[case_id]["patch_path"])
             if os.path.exists(full_path):
                 with open(full_path, "r", encoding="utf-8") as f:
                     patch_content = f.read()
-                    
+
                 applies_cleanly = receipt["payload"].get("applies_cleanly", False)
                 files_touched = receipt["payload"].get("files_touched", 0)
                 validator_surface_touched = receipt["payload"].get("validator_surface_touched", False)
-                
+
                 recomputed = engine.evaluate_recovery_weight(patch_content, applies_cleanly, files_touched, validator_surface_touched)
                 if abs(recomputed["burden_reduction_estimate"] - receipt["payload"]["burden_reduction_estimate"]) > 0.001:
                     raise ValueError(f"Invariant 14 Failed: Recovery burden reduction physically drifted for {case_id}")
-                    
+
             cases[case_id]["eval_payload"] = receipt["payload"]
-                    
+
         elif event_type == "RECOVERY_AWAITING_AUTHORIZATION":
             if case_id not in cases or "RECOVERY_GOVERNANCE_EVALUATED" not in cases[case_id]["events"]:
                 raise ValueError(f"Invariant 14 Failed: RECOVERY_AWAITING_AUTHORIZATION without prior EVALUATED for {case_id}")
             cases[case_id]["events"].append(event_type)
             cases[case_id]["awaiting_auth_receipt"] = receipt
-            
+
         elif event_type == "RECOVERY_AUTHORIZATION_VERIFIED":
             # Invariant 14: Authorized Recovery Validated
             if "RECOVERY_GOVERNANCE_EVALUATED" not in cases[case_id]["events"]:
                 raise ValueError(f"Invariant 14 Failed: RECOVERY_AUTHORIZATION_VERIFIED on un-evaluated case {case_id}")
-            
+
             # Recompute HMAC payload from RECOVERY_GOVERNANCE_EVALUATED receipt, NOT live state
             found_payload = cases[case_id].get("eval_payload")
             canonical_str = f"{found_payload['recovery_patch_hash']}|{found_payload['burden_reduction_estimate']}|{found_payload['recovery_risk_score']}|{found_payload['applies_cleanly']}|{found_payload['commit_hash']}"
             if receipt["payload"]["canonical_str"] != canonical_str:
                 raise ValueError(f"Invariant 14 Failed: Payload drift. Reconstructed: {canonical_str}")
-            
+
             cases[case_id]["events"].append(event_type)
             cases[case_id]["authorized"] = True
-            
+
             bname = os.path.basename(cases[case_id]["patch_path"])
             global_pending_recoveries[bname] = "AUTHORIZED"
-            
+
         elif event_type == "ADJUDICATION_RULING":
             # Invariant 17: Adjudication Integrity
             quarantined_case_id = receipt["payload"]["quarantined_case_id"]
@@ -335,7 +335,7 @@ def replay_chain():
                 raise ValueError(f"Invariant 17 Failed: ADJUDICATION_RULING references unknown case {quarantined_case_id}")
             if "RECEPTOR_DELTA_QUARANTINED" not in cases[quarantined_case_id]["events"]:
                 raise ValueError(f"Invariant 17 Failed: ADJUDICATION_RULING references case {quarantined_case_id} which is not QUARANTINED")
-                
+
             quarantine_payload = cases[quarantined_case_id]["payloads"]["RECEPTOR_DELTA_QUARANTINED"]
             if quarantine_payload.get("reason") in ["syntax_invalid", "hash_mismatch"]:
                 raise ValueError(f"Invariant 17 Failed: ADJUDICATION_RULING cannot override physical failure ({quarantine_payload.get('reason')})")
@@ -343,42 +343,42 @@ def replay_chain():
             evidence_hash = receipt["payload"]["evidence_hash"]
             verdict_hash = receipt["payload"]["auditor_verdict_hash"]
             ruling = receipt["payload"]["ruling_type"]
-            
+
             hexdigits = set(string.hexdigits)
             if len(evidence_hash) != 64 or not all(c in hexdigits for c in evidence_hash):
                 raise ValueError("Invariant 17 Failed: evidence_hash is not a valid SHA-256 string")
             if len(verdict_hash) != 64 or not all(c in hexdigits for c in verdict_hash):
                 raise ValueError("Invariant 17 Failed: auditor_verdict_hash is not a valid SHA-256 string")
-                
+
             if ruling not in ["ACCEPT_OVERRIDE", "DEFER", "SUSTAIN_QUARANTINE"]:
                 raise ValueError(f"Invariant 17 Failed: Invalid ruling type {ruling}")
-                
+
             adjudication_case_id = receipt["case_id"]
             canonical_str = f"{adjudication_case_id}|{quarantined_case_id}|{evidence_hash}|{verdict_hash}|{ruling}"
             if receipt["payload"].get("canonical_str") != canonical_str:
                 raise ValueError(f"Invariant 17 Failed: ADJUDICATION_RULING referential integrity mismatch. Expected canonical_str: {canonical_str}")
-                
+
             cases[quarantined_case_id]["adjudication"] = receipt["payload"]
 
         elif event_type == "AUDITOR_REVIEW_REQUESTED":
             # Just record that an audit was requested
             cases[case_id]["events"].append(event_type)
             cases[case_id]["audit_requests"] = cases[case_id].get("audit_requests", 0) + 1
-            
+
         elif event_type in ["AUDITOR_VERDICT_RECEIVED", "AUDITOR_VERDICT_INVALID"]:
             # Invariant 18: Auditor Receipt Integrity
             if "AUDITOR_REVIEW_REQUESTED" not in cases[case_id]["events"]:
                 raise ValueError(f"Invariant 18 Failed: {event_type} received without a prior AUDITOR_REVIEW_REQUESTED for case {case_id}")
-                
+
             cases[case_id]["events"].append(event_type)
-            
+
             if event_type == "AUDITOR_VERDICT_RECEIVED":
                 verdict = receipt["payload"].get("verdict")
                 if verdict not in ["ACCEPT", "DEFER", "QUARANTINE"]:
                     raise ValueError(f"Invariant 18 Failed: Invalid verdict {verdict} in AUDITOR_VERDICT_RECEIVED")
                 if "confidence" not in receipt["payload"]:
                     raise ValueError("Invariant 18 Failed: Missing confidence in AUDITOR_VERDICT_RECEIVED")
-                    
+
                 if verdict == "ACCEPT":
                     quarantine_payload = cases[case_id]["payloads"].get("RECEPTOR_DELTA_QUARANTINED", {})
                     reason = quarantine_payload.get("reason", "")
@@ -394,18 +394,18 @@ def replay_chain():
             stored_head = json.load(f).get("head")
         if stored_head != expected_parent:
             raise ValueError(f"Invariant 7 Failed: Stored head {stored_head} does not match replay head {expected_parent}")
-            
+
     # Invariant 15: Telemetry is purely derivable
     # Invariant 15: Purely Derivable State
     d_state = {}
     if os.path.exists("State/distress_state.json"):
         with open("State/distress_state.json", "r") as f:
             d_state = json.load(f)
-            
+
     # Invariant 16: Dry-Run Purity
     # Verify no accidental ledger mutation occurred during dry-run sessions
     # (By definition, we just verified all historical bounds and ignore CHECK_ONLY)
-    
+
     if d_state:   # 15A
         if abs(d_state.get("session_burden", 0.0) - global_session_burden) > 0.001:
             raise ValueError(f"Invariant 15A Failed: ledger session_burden {global_session_burden} != state {d_state.get('session_burden')}")
@@ -421,7 +421,7 @@ def replay_chain():
             raise ValueError(f"Invariant 15D Failed: ledger quarantined_files {global_quarantine_count} != state {d_state.get('quarantined_files')}")
         if d_state.get("accepted_files", 0) != global_accepted_count:
             raise ValueError(f"Invariant 15D Failed: ledger accepted_files {global_accepted_count} != state {d_state.get('accepted_files')}")
-            
+
     print(f"Replay successful. {len(lines)} receipts verified across {len(cases)} cases.")
     print("All 18 Invariants Passed.")
     return True
