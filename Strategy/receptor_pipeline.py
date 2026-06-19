@@ -61,6 +61,8 @@ def apply_diff_to_content(original_content, diff_content):
 
 class ReceptorPipeline:
     def __init__(self):
+        self.dry_run = False
+        self.record_check = False
         if not os.path.exists(HEAD_PATH):
             self._write_head("GENESIS")
 
@@ -75,6 +77,11 @@ class ReceptorPipeline:
             json.dump({"head": head_hash}, f, indent=2)
 
     def _emit_receipt(self, event_type, case_id, payload_dict):
+        if self.dry_run and event_type != "CHECK_ONLY":
+            return
+        if event_type == "CHECK_ONLY" and not self.record_check:
+            return
+            
         parent_head = self._get_head()
         payload_bytes = json.dumps(payload_dict, sort_keys=True, separators=(",", ":")).encode("utf-8")
         payload_hash = hashlib.sha256(payload_bytes).hexdigest()
@@ -164,10 +171,11 @@ class ReceptorPipeline:
     def _is_validator_surface(self, filename):
         import fnmatch
         import os
-        basename = os.path.basename(filename)
+        normalized_filename = filename.replace("\\", "/")
+        basename = os.path.basename(normalized_filename)
         surfaces = self._get_validator_surfaces()
         for pattern in surfaces.keys():
-            if fnmatch.fnmatch(basename, pattern):
+            if fnmatch.fnmatch(basename, pattern) or fnmatch.fnmatch(normalized_filename, pattern):
                 return True, surfaces[pattern]
         return False, None
 
@@ -230,7 +238,7 @@ class ReceptorPipeline:
         if is_validator and semantic_risk_score > 0.0:
             print(">> FAILED: semantic_validator_surface_risk")
             self._emit_receipt("RECEPTOR_DELTA_QUARANTINED", case_id, {"reason": "semantic_validator_surface_risk"})
-            return "QUARANTINED"
+            return "QUARANTINED", None
         
         print("Gathering evidence...")
         evidence = {}
@@ -245,23 +253,36 @@ class ReceptorPipeline:
                         
                 new_content = apply_diff_to_content(original_content, claim["diff_content"])
                 
-                # Sandbox it
-                case_sandbox = os.path.join(SANDBOX_DIR, case_id)
-                os.makedirs(case_sandbox, exist_ok=True)
-                trial_path = os.path.join(case_sandbox, claim["target_file"])
-                
-                with open(trial_path, "w", encoding="utf-8") as f:
-                    f.write(new_content)
+                if self.dry_run:
+                    import tempfile
+                    case_sandbox = tempfile.mkdtemp()
+                else:
+                    case_sandbox = os.path.join(SANDBOX_DIR, case_id)
+                    os.makedirs(case_sandbox, exist_ok=True)
                     
-                self._emit_receipt("RECEPTOR_DIFF_SANDBOXED", case_id, {"sandbox_path": trial_path})
-                
-                py_compile.compile(trial_path, doraise=True)
-                evidence["syntax_valid"] = True
-                
-                trial_hash = hashlib.sha256(new_content.encode("utf-8")).hexdigest()
-                evidence["verified_hash"] = trial_hash
-                evidence["is_diff"] = True
-                
+                try:
+                    trial_path = os.path.join(case_sandbox, claim["target_file"])
+                    
+                    with open(trial_path, "w", encoding="utf-8") as f:
+                        f.write(new_content)
+                        
+                    self._emit_receipt("RECEPTOR_DIFF_SANDBOXED", case_id, {"sandbox_path": trial_path})
+                    
+                    if claim["target_file"].endswith(".py"):
+                        py_compile.compile(trial_path, doraise=True)
+                    elif claim["target_file"].endswith(".json"):
+                        with open(trial_path, "r", encoding="utf-8") as json_f:
+                            json.load(json_f)
+                    evidence["syntax_valid"] = True
+                    
+                    trial_hash = hashlib.sha256(new_content.encode("utf-8")).hexdigest()
+                    evidence["verified_hash"] = trial_hash
+                    evidence["is_diff"] = True
+                finally:
+                    if self.dry_run:
+                        import shutil
+                        shutil.rmtree(case_sandbox, ignore_errors=True)
+                        
             except Exception as e:
                 evidence["syntax_valid"] = False
                 evidence["syntax_error"] = str(e)
@@ -313,7 +334,7 @@ class ReceptorPipeline:
         if failed_gate:
             print(f">> FAILED: {failed_gate}")
             self._emit_receipt("RECEPTOR_DELTA_QUARANTINED", case_id, {"reason": failed_gate})
-            return "QUARANTINED"
+            return "QUARANTINED", None
             
         print(">> PASSED: Evidence sufficient.")
         self._emit_receipt("RECEPTOR_DELTA_ACCEPTED", case_id, {"reason": "passed_all_gates"})
@@ -331,15 +352,12 @@ class ReceptorPipeline:
             gov_payload["case_id"] = case_id
             self._emit_receipt("RECEPTOR_GOVERNANCE_EVALUATED", case_id, gov_payload)
             print(f"   [Governance] {gov_payload['classification']} (Utility: {gov_payload['utility_score']}, Burden: {gov_payload['burden_score']})")
-            
-            if gov_payload["burden_score"] > 0.7:
-                print("   [!] DISTRESS SIGNAL: High Governance Burden Detected")
-                self._emit_receipt("RECEPTOR_DISTRESS_SIGNALED", case_id, {"burden_score": gov_payload["burden_score"]})
                 
         except Exception as e:
             print(f"Failed to evaluate governance weight: {e}")
+            gov_payload = None
             
-        return "ACCEPTED"
+        return "ACCEPTED", gov_payload
     def commit_to_main_ledger(self):
         head = self._get_head()
         if head == "GENESIS":
@@ -388,7 +406,416 @@ if __name__ == "__main__":
     if "--commit" in sys.argv:
         pipeline.commit_to_main_ledger()
         sys.exit(0)
+    if "--governance-status" in sys.argv:
+        from distress_protocol import DistressProtocol
+        dp = DistressProtocol()
+        print("\n=== Receptor Governance Dashboard ===")
+        print(f"Session Burden:    {dp.state['session_burden']:.2f}")
+        print(f"Commits Evaluated: {dp.state['commit_count']}")
         
+        q = dp.state.get('quarantined_files', 0)
+        a = dp.state.get('accepted_files', 0)
+        total = q + a
+        q_ratio = (q / total * 100) if total > 0 else 0.0
+        print(f"Quarantine Ratio:  {q_ratio:.1f}% ({q} quarantined / {a} accepted)")
+        
+        trend = dp.state.get("historical_burden_trend", [])
+        if trend:
+            print(f"Recent Burden Trend: {', '.join([f'{b:.2f}' for b in trend])}")
+            
+        health_score = max(0, 100 - (dp.state['session_burden'] * 10) - (q_ratio * 0.5))
+        print(f"Constitutional Health: {health_score:.1f}/100")
+        
+        print("\nActive Warnings:")
+        if dp.state["session_burden"] > 2.0:
+            print(" - [HIGH] Session burden > 2.0. Receptor is under DISTRESS.")
+        else:
+            print(" - None")
+            
+        print("\nValidator Touches:")
+        for v, count in dp.state["validator_touches"].items():
+            print(f" - {v}: {count}")
+            
+        import glob
+        patches = glob.glob(os.path.join(STATE_DIR, "Recovery", "*_revert.patch"))
+        if patches:
+            print(f"\nRecovery Proposals ({len(patches)}):")
+            for p in patches:
+                bname = os.path.basename(p)
+                status = dp.state.get("pending_recoveries", {}).get(bname, "UNPROPOSED")
+                print(f" - {bname} [{status}]")
+        print("=====================================")
+        sys.exit(0)
+
+    if "--propose-recovery" in sys.argv:
+        idx = sys.argv.index("--propose-recovery")
+        commit_hash = sys.argv[idx+1]
+        
+        patch_path = os.path.join(STATE_DIR, "Recovery", f"{commit_hash}_revert.patch")
+        if not os.path.exists(patch_path):
+            print(f"No recovery patch found at {patch_path}")
+            sys.exit(1)
+            
+        case_id = str(uuid.uuid4())
+        
+        with open(patch_path, "r", encoding="utf-8") as f:
+            patch_content = f.read()
+            
+        applies_cleanly = False
+        try:
+            # We must run git apply --check in the root directory since the patch contains paths relative to root (e.g. Strategy/...)
+            subprocess.check_call(["git", "apply", "--check", os.path.abspath(patch_path)], cwd="..")
+            applies_cleanly = True
+        except subprocess.CalledProcessError:
+            pass
+            
+        pipeline._emit_receipt("RECOVERY_REHEARSED", case_id, {
+            "recovery_patch_path": f"State/Recovery/{commit_hash}_revert.patch",
+            "applies_cleanly": applies_cleanly
+        })
+        
+        from constitutional_debt_engine import ConstitutionalDebtEngine
+        engine = ConstitutionalDebtEngine()
+        
+        # Determine files touched and validator surface touched
+        files_touched = []
+        for line in patch_content.splitlines():
+            if line.startswith("+++ b/"):
+                files_touched.append(line[len("+++ b/"):])
+                
+        validator_surface_touched = False
+        for f in files_touched:
+            is_val, _ = pipeline._is_validator_surface(f)
+            if is_val:
+                validator_surface_touched = True
+                break
+                
+        eval_payload = engine.evaluate_recovery_weight(patch_content, applies_cleanly, len(files_touched), validator_surface_touched)
+        
+        patch_hash = hashlib.sha256(patch_content.encode("utf-8")).hexdigest()
+        eval_payload["commit_hash"] = commit_hash
+        eval_payload["recovery_patch_hash"] = patch_hash
+        
+        pipeline._emit_receipt("RECOVERY_GOVERNANCE_EVALUATED", case_id, eval_payload)
+        pipeline._emit_receipt("RECOVERY_AWAITING_AUTHORIZATION", case_id, {
+            "recovery_patch_path": f"State/Recovery/{commit_hash}_revert.patch",
+            "message": "Awaiting explicit human authorization to apply."
+        })
+        
+        from distress_protocol import DistressProtocol
+        dp = DistressProtocol()
+        dp.track_recovery_proposal(f"{commit_hash}_revert.patch")
+        
+        print(f"Recovery proposal evaluated. Burden reduction estimate: {eval_payload['burden_reduction_estimate']}")
+        print("Status: AWAITING AUTHORIZATION.")
+        sys.exit(0)
+
+    if "--authorize-recovery" in sys.argv:
+        idx = sys.argv.index("--authorize-recovery")
+        commit_hash = sys.argv[idx+1]
+        sig_idx = sys.argv.index("--signature")
+        signature = sys.argv[sig_idx+1]
+        
+        secret = os.environ.get("AXIS_HMAC_SECRET")
+        if not secret:
+            print("ERROR: AXIS_HMAC_SECRET environment variable is missing or weak.")
+            sys.exit(1)
+            
+        # Find the RECOVERY_GOVERNANCE_EVALUATED receipt for this commit
+        found_receipt = None
+        case_id = None
+        if os.path.exists(LEDGER_PATH):
+            with open(LEDGER_PATH, "r", encoding="utf-8") as f:
+                for line in f:
+                    if not line.strip(): continue
+                    receipt = json.loads(line)
+                    if receipt["event_type"] == "RECOVERY_GOVERNANCE_EVALUATED":
+                        if receipt["payload"].get("commit_hash") == commit_hash:
+                            found_receipt = receipt
+                            case_id = receipt["case_id"]
+                            
+        if not found_receipt:
+            print(f"No RECOVERY_GOVERNANCE_EVALUATED receipt found for commit {commit_hash}")
+            sys.exit(1)
+            
+        payload = found_receipt["payload"]
+        
+        # Canonical string: recovery_patch_hash|burden_reduction_estimate|recovery_risk_score|applies_cleanly|commit_hash
+        canonical_str = f"{payload['recovery_patch_hash']}|{payload['burden_reduction_estimate']}|{payload['recovery_risk_score']}|{payload['applies_cleanly']}|{payload['commit_hash']}"
+        canonical_bytes = canonical_str.encode("utf-8")
+        
+        import hmac
+        expected_sig = hmac.new(secret.encode("utf-8"), canonical_bytes, hashlib.sha256).hexdigest()
+        
+        pipeline._emit_receipt("RECOVERY_AUTHORIZATION_SUBMITTED", case_id, {"signature": signature})
+        
+        if signature != expected_sig:
+            print(f"ERROR: Invalid authorization signature.")
+            sys.exit(1)
+            
+        pipeline._emit_receipt("RECOVERY_AUTHORIZATION_VERIFIED", case_id, {"status": "verified", "canonical_str": canonical_str})
+        pipeline._emit_receipt("RECOVERY_READY_FOR_HUMAN_APPLICATION", case_id, {
+            "recovery_patch_path": f"State/Recovery/{commit_hash}_revert.patch",
+            "instruction": f"Run `git apply State/Recovery/{commit_hash}_revert.patch` to execute this recovery."
+        })
+        
+        from distress_protocol import DistressProtocol
+        dp = DistressProtocol()
+        dp.authorize_recovery_proposal(f"{commit_hash}_revert.patch")
+        
+        print("AUTHORIZATION VERIFIED.")
+        print(f"You may now execute: git apply State/Recovery/{commit_hash}_revert.patch")
+        sys.exit(0)
+
+    if "--check-diff" in sys.argv:
+        pipeline.dry_run = True
+        if "--record-check" in sys.argv:
+            pipeline.record_check = True
+            
+        idx = sys.argv.index("--check-diff")
+        diff_file = sys.argv[idx+1]
+        
+        if not os.path.exists(diff_file):
+            print(f"File not found: {diff_file}")
+            sys.exit(1)
+            
+        with open(diff_file, "r", encoding="utf-8") as f:
+            full_diff = f.read()
+            
+        diff_hash = hashlib.sha256(full_diff.encode("utf-8")).hexdigest()
+        
+        # Parse the unified diff into per-file chunks
+        file_diffs = {}
+        current_file = None
+        current_content = []
+        for line in full_diff.splitlines():
+            if line.startswith("diff --git"):
+                if current_file:
+                    file_diffs[current_file] = "\n".join(current_content) + "\n"
+                parts = line.split(" ")
+                if len(parts) >= 4:
+                    current_file = parts[3][2:] # remove b/
+                else:
+                    current_file = None
+                current_content = [line]
+            elif current_file is not None:
+                current_content.append(line)
+        if current_file:
+            file_diffs[current_file] = "\n".join(current_content) + "\n"
+            
+        commit_case_id = str(uuid.uuid4())
+        
+        all_accepted = True
+        total_utility = 0.0
+        total_burden = 0.0
+        files_processed = []
+        quarantined_count = 0
+        accepted_count = 0
+        
+        skipped_count = 0
+        
+        for target, diff_output in file_diffs.items():
+            if not (target.endswith(".py") or target.endswith(".json")):
+                skipped_count += 1
+                continue
+                
+            try:
+                original_content = subprocess.check_output(["git", "-C", BASE_DIR, "show", f"HEAD:{target}"]).decode("utf-8")
+            except subprocess.CalledProcessError:
+                original_content = ""
+                
+            original_hash = hashlib.sha256(original_content.encode("utf-8")).hexdigest()
+            target_diff_hash = hashlib.sha256(diff_output.encode("utf-8")).hexdigest()
+            filename = os.path.basename(target)
+            file_case_id = str(uuid.uuid4())
+            
+            claim = {
+                "schema": "axis.code_diff.v1",
+                "target_file": filename,
+                "original_hash": original_hash,
+                "diff_hash": target_diff_hash,
+                "observation_timestamp": time.time(),
+                "diff_content": diff_output,
+                "historical": True,
+                "original_content": original_content
+            }
+            
+            verdict, gov_payload = pipeline.process_claim(file_case_id, target, claim)
+            
+            if verdict == "QUARANTINED":
+                all_accepted = False
+                quarantined_count += 1
+            elif gov_payload:
+                total_utility += gov_payload.get("utility_score", 0.0)
+                total_burden += gov_payload.get("burden_score", 0.0)
+                files_processed.append(filename)
+                accepted_count += 1
+                
+        if not all_accepted:
+            final_verdict = "QUARANTINE"
+        else:
+            final_verdict = "ACCEPT"
+            
+        commit_gov_payload = {
+            "utility_score": total_utility,
+            "burden_score": total_burden,
+            "files_processed": len(files_processed)
+        }
+        
+        from distress_protocol import DistressProtocol
+        distress = DistressProtocol()
+        distress_result = distress.evaluate_distress(commit_case_id, "DRY_RUN", commit_gov_payload, files_processed, quarantined_count, accepted_count, dry_run=True)
+        
+        if distress_result and "signal" in distress_result and final_verdict == "ACCEPT":
+            final_verdict = "DISTRESS-WARN"
+            
+        print("\n=== DRY RUN EVALUATION ===")
+        print(f"Files Evaluated: {len(files_processed) + quarantined_count}")
+        print(f"Files Accepted:  {accepted_count}")
+        print(f"Files Quarant'd: {quarantined_count}")
+        print(f"Files Skipped:   {skipped_count}")
+        print(f"Total Burden:    {total_burden:.2f}")
+        print(f"VERDICT:         {final_verdict}")
+        
+        if distress_result and "signal" in distress_result:
+            print("\nActive Warnings:")
+            for s in distress_result["signal"].get("signals", []):
+                print(f" - {s.get('trigger')}: {s.get('action')}")
+                
+        if pipeline.record_check:
+            pipeline._emit_receipt("CHECK_ONLY", commit_case_id, {
+                "schema": "axis.check_only.v1",
+                "diff_hash": diff_hash,
+                "files_checked": files_processed,
+                "verdict": final_verdict,
+                "dry_run": True,
+                "state_mutation_performed": False,
+                "ledger_mutation_performed": "CHECK_ONLY_ONLY"
+            })
+            print("\nCheck recorded to receptor ledger.")
+            
+        sys.exit(1 if final_verdict != "ACCEPT" else 0)
+
+    if "--git-commit" in sys.argv:
+        idx = sys.argv.index("--git-commit")
+        commit = sys.argv[idx+1]
+        
+        # Get list of .py files modified in this commit
+        try:
+            show_output = subprocess.check_output(["git", "-C", "..", "show", "--name-only", "--oneline", commit]).decode("utf-8")
+        except subprocess.CalledProcessError:
+            print(f"Failed to show commit {commit}")
+            sys.exit(1)
+            
+        lines = show_output.splitlines()
+        if not lines:
+            sys.exit(0)
+            
+        py_files = [line.strip() for line in lines[1:] if line.strip().endswith(".py")]
+        
+        # Filter to Strategy/ files for simplicity, or just use all
+        target_files = []
+        for pf in py_files:
+            if pf.startswith("Strategy/"):
+                target_files.append(pf.replace("Strategy/", ""))
+            elif "/" not in pf:
+                # Top level py file?
+                target_files.append(pf)
+                
+        if not target_files:
+            print(f"No .py files in {commit}")
+            sys.exit(0)
+            
+        commit_case_id = str(uuid.uuid4())
+        
+        from distress_protocol import DistressProtocol
+        dp = DistressProtocol()
+        if dp.state["session_burden"] > 2.0:
+            pipeline._emit_receipt("RECEPTOR_DISTRESS_INFLUENCED", commit_case_id, {
+                "prior_session_burden": dp.state["session_burden"],
+                "warning": "Ingesting under high constitutional burden."
+            })
+            
+        pipeline._emit_receipt("COMMIT_OBSERVED", commit_case_id, {
+            "commit": commit,
+            "target_files": target_files
+        })
+        
+        all_accepted = True
+        total_utility = 0.0
+        total_burden = 0.0
+        files_processed = []
+        quarantined_count = 0
+        accepted_count = 0
+        
+        for target in target_files:
+            diff_output = subprocess.check_output(["git", "diff", f"{commit}~1", commit, "--", target]).decode("utf-8")
+            if not diff_output.strip():
+                continue
+                
+            try:
+                git_path = f"Strategy/{target}"
+                original_content = subprocess.check_output(["git", "show", f"{commit}~1:{git_path}"]).decode("utf-8")
+            except subprocess.CalledProcessError:
+                original_content = ""
+                
+            original_hash = hashlib.sha256(original_content.encode("utf-8")).hexdigest()
+            diff_hash = hashlib.sha256(diff_output.encode("utf-8")).hexdigest()
+            filename = os.path.basename(target)
+            file_case_id = str(uuid.uuid4())
+            
+            pipeline._emit_receipt("COMMIT_FILE_PROCESSED", commit_case_id, {
+                "file_case_id": file_case_id,
+                "target_file": filename
+            })
+            
+            claim = {
+                "schema": "axis.code_diff.v1",
+                "target_file": filename,
+                "original_hash": original_hash,
+                "diff_hash": diff_hash,
+                "observation_timestamp": time.time(),
+                "diff_content": diff_output,
+                "historical": True,
+                "original_content": original_content
+            }
+            
+            pipeline._emit_receipt("RECEPTOR_DIFF_OBSERVED", file_case_id, claim)
+            verdict, gov_payload = pipeline.process_claim(file_case_id, target, claim)
+            
+            if verdict == "QUARANTINED":
+                all_accepted = False
+                quarantined_count += 1
+            elif gov_payload:
+                total_utility += gov_payload.get("utility_score", 0.0)
+                total_burden += gov_payload.get("burden_score", 0.0)
+                files_processed.append(filename)
+                accepted_count += 1
+                
+        if not all_accepted:
+            pipeline._emit_receipt("COMMIT_QUARANTINED", commit_case_id, {"reason": "child_file_quarantined"})
+            commit_gov_payload = {"burden_score": 0.0} # Still evaluate distress for count updates
+        else:
+            commit_gov_payload = {
+                "utility_score": total_utility,
+                "burden_score": total_burden,
+                "files_processed": len(files_processed)
+            }
+            pipeline._emit_receipt("COMMIT_GOVERNANCE_EVALUATED", commit_case_id, commit_gov_payload)
+            pipeline._emit_receipt("COMMIT_ACCEPTED", commit_case_id, {"reason": "all_child_files_accepted"})
+            
+        # Phase 202/203/204: Distress Protocol
+        from distress_protocol import DistressProtocol
+        distress = DistressProtocol()
+        distress_result = distress.evaluate_distress(commit_case_id, commit, commit_gov_payload, files_processed, quarantined_count, accepted_count)
+        if distress_result:
+            if "signal" in distress_result:
+                pipeline._emit_receipt("RECEPTOR_DISTRESS_SIGNALED", commit_case_id, distress_result["signal"])
+            if "recovery" in distress_result:
+                pipeline._emit_receipt("RECEPTOR_RECOVERY_SUGGESTED", commit_case_id, distress_result["recovery"])
+                
+        sys.exit(0)
+
     if "--git-diff" in sys.argv:
         idx = sys.argv.index("--git-diff")
         git_args = sys.argv[idx+1:]
