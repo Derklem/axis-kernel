@@ -231,6 +231,28 @@ def main():
         mutate_schema_violation
     )
     
+    def mutate_oversized_integer(case_dir, run_id):
+        ledger_file = case_dir / "ledger" / "ledger.jsonl"
+        lines = []
+        with open(ledger_file, "r") as f:
+            for line in f:
+                if line.strip(): lines.append(json.loads(line))
+                
+        # Inject into RUN_STARTED payload (unconstrained)
+        start_ev = lines[1]
+        start_ev["payload"]["canonical_integer_edge"] = 9007199254740992
+        # DO NOT update the hash, to prove canonicalizer rejects it directly
+        
+        with open(ledger_file, "w") as f:
+            for ev in lines:
+                f.write(json.dumps(ev, separators=(',', ':'), sort_keys=True) + "\n")
+
+    create_case(
+        "fail", "schema_violation_oversized_int", "FAIL", 
+        "Ledger event payload contains an integer exceeding safe interoperable bounds. Schema validation passes, but canonical hashing must reject it.",
+        mutate_oversized_integer
+    )
+    
     # CANONICAL JSON EDGES
     def mutate_canonical_json(case_dir, run_id):
         ledger_file = case_dir / "ledger" / "ledger.jsonl"

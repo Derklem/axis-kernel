@@ -1,0 +1,10 @@
+{
+  "protocol_version": "0.1.0",
+  "schema_versions": {
+    "event": "1.0.0",
+    "receipt": "1.0.0"
+  },
+  "description": "Ledger event payload contains an integer exceeding safe interoperable bounds. Schema validation passes, but canonical hashing must reject it.",
+  "expected": "FAIL",
+  "run_id": "RUN_84c417d7-77ff-4048-8cae-e5121dca0916"
+}

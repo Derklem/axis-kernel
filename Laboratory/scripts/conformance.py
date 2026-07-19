@@ -53,7 +53,8 @@ def main():
 
     if not CORPUS_DIR.exists():
         print(f"Corpus not found at {CORPUS_DIR}")
-        return
+        import sys
+        sys.exit(1)
         
     import hashlib
     def raw_hash_file(path: Path) -> str:
@@ -66,19 +67,36 @@ def main():
     manifest_path = Path("corpus") / "0.1.0_manifest.json"
     if not manifest_path.exists():
         print(f"Manifest not found at {manifest_path}")
-        return
+        import sys
+        sys.exit(1)
         
     with open(manifest_path, "r") as f:
         manifest = json.load(f)
         
     print("Verifying corpus manifest integrity...")
     manifest_failures = 0
+    declared_files = set(manifest.get("files", {}).keys())
+    
+    actual_files = {
+        p.relative_to(CORPUS_DIR).as_posix()
+        for p in CORPUS_DIR.rglob("*")
+        if p.is_file()
+    }
+    
+    missing = declared_files - actual_files
+    unexpected = actual_files - declared_files
+    
+    if missing or unexpected:
+        print(f"  [FAIL] Corpus file-set mismatch")
+        if missing:
+            print(f"    Missing: {sorted(missing)}")
+        if unexpected:
+            print(f"    Unexpected: {sorted(unexpected)}")
+        import sys
+        sys.exit(1)
+        
     for rel_path, expected_hash in manifest.get("files", {}).items():
         p = CORPUS_DIR / rel_path
-        if not p.exists():
-            print(f"  [FAIL] Missing file: {rel_path}")
-            manifest_failures += 1
-            continue
         actual_hash = raw_hash_file(p)
         if actual_hash != expected_hash:
             print(f"  [FAIL] Hash mismatch: {rel_path}")
@@ -86,6 +104,11 @@ def main():
             
     if manifest_failures > 0:
         print("Corpus manifest verification failed. Aborting.")
+        import sys
+        sys.exit(1)
+        
+    if manifest.get("protocol_version") != "0.1.0" or manifest.get("corpus_version") != "0.1.0":
+        print("Manifest version mismatch. Expected protocol 0.1.0 and corpus 0.1.0")
         import sys
         sys.exit(1)
         
@@ -123,6 +146,11 @@ def main():
         # Check exit codes
         if py_code != exp_code or rs_code != exp_code:
             print(f"  [FAIL] Exit code mismatch. Py: {py_code}, Rs: {rs_code}, Expected: {exp_code}")
+            failures += 1
+            continue
+            
+        if py_out["overall_status"] != expected or rs_out["overall_status"] != expected:
+            print(f"  [FAIL] Overall status mismatch. Py: {py_out.get('overall_status')}, Rs: {rs_out.get('overall_status')}, Expected: {expected}")
             failures += 1
             continue
             

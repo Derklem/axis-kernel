@@ -6,5 +6,5 @@
   },
   "description": "Receipt run_id field modified, breaking the hash anchor to the ledger.",
   "expected": "FAIL",
-  "run_id": "RUN_4bbb6a97-7f30-4131-9542-60f20b8d8ecf"
+  "run_id": "RUN_932d4c45-5c11-4a18-985d-395683c02a52"
 }

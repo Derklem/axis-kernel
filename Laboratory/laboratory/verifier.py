@@ -77,7 +77,13 @@ def verify_run(run_id: str, ledger_dir: Path, runs_dir: Path) -> Dict[str, Any]:
             
         test_event = event.copy()
         stored_hash = test_event.pop("hash", None)
-        recomputed = canonical_hash(test_event)
+        try:
+            recomputed = canonical_hash(test_event)
+        except ValueError as e:
+            add_check("ledger_chain", "FAIL", detail=f"Canonicalization failed at index {idx}: {e}")
+            chain_valid = False
+            break
+            
         if stored_hash != recomputed:
             add_check("ledger_chain", "FAIL", detail=f"Hash mismatch at index {idx}", expected=stored_hash, observed=recomputed)
             chain_valid = False
@@ -142,9 +148,15 @@ def verify_run(run_id: str, ledger_dir: Path, runs_dir: Path) -> Dict[str, Any]:
         return {"run_id": run_id, "overall_status": overall_status, "checks": checks}
         
     # 8. receipt_hash
-    recomputed_receipt_hash = canonical_hash(receipt)
-    if term_event["payload"].get("receipt_hash") != recomputed_receipt_hash:
-        add_check("receipt_hash", "FAIL", expected=term_event["payload"].get("receipt_hash"), observed=recomputed_receipt_hash)
+    stored_receipt_hash = term_event["payload"].get("receipt_hash")
+    try:
+        recomputed_receipt_hash = canonical_hash(receipt)
+    except ValueError as e:
+        add_check("receipt_hash", "FAIL", detail=f"Canonicalization failed: {e}")
+        return {"run_id": run_id, "overall_status": overall_status, "checks": checks}
+        
+    if stored_receipt_hash != recomputed_receipt_hash:
+        add_check("receipt_hash", "FAIL", expected=stored_receipt_hash, observed=recomputed_receipt_hash)
     else:
         add_check("receipt_hash", "PASS")
         
@@ -181,9 +193,15 @@ def verify_run(run_id: str, ledger_dir: Path, runs_dir: Path) -> Dict[str, Any]:
         return {"run_id": run_id, "overall_status": overall_status, "checks": checks}
 
     # 12. experiment_hash
-    recomputed_exp_hash = canonical_hash(experiment)
-    if receipt.get("experiment_hash") != recomputed_exp_hash:
-        add_check("experiment_hash", "FAIL", expected=receipt.get("experiment_hash"), observed=recomputed_exp_hash)
+    stored_exp_hash = receipt.get("experiment_hash")
+    try:
+        recomputed_exp_hash = canonical_hash(experiment)
+    except ValueError as e:
+        add_check("experiment_hash", "FAIL", detail=f"Canonicalization failed: {e}")
+        return {"run_id": run_id, "overall_status": overall_status, "checks": checks}
+        
+    if stored_exp_hash != recomputed_exp_hash:
+        add_check("experiment_hash", "FAIL", expected=stored_exp_hash, observed=recomputed_exp_hash)
     else:
         add_check("experiment_hash", "PASS")
         
