@@ -1,0 +1,10 @@
+{
+  "protocol_version": "0.1.0",
+  "schema_versions": {
+    "event": "1.0.0",
+    "receipt": "1.0.0"
+  },
+  "description": "Input file contents changed after freezing.",
+  "expected": "FAIL",
+  "run_id": "RUN_9a93c292-2df3-44cc-95d5-0e9381aa4374"
+}

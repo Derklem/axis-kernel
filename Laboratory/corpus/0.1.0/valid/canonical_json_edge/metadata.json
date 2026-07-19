@@ -1,0 +1,10 @@
+{
+  "protocol_version": "0.1.0",
+  "schema_versions": {
+    "event": "1.0.0",
+    "receipt": "1.0.0"
+  },
+  "description": "Uses unicode, escapes, nested arrays, and empty objects in RUN_STARTED payload to test canonical serialization.",
+  "expected": "PASS",
+  "run_id": "RUN_1b945a03-24a6-44eb-b396-1b75b37f23e4"
+}

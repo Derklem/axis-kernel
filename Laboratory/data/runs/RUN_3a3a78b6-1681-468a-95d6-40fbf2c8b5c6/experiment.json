@@ -1,0 +1,18 @@
+{
+  "hypothesis": "A hello world script should print to stdout.",
+  "procedure": "Run hello.py and verify output.",
+  "adapter": {
+    "type": "subprocess",
+    "command": ["python", "hello.py"],
+    "timeout_seconds": 10
+  },
+  "expected_artifacts": [],
+  "evaluation_criteria": {
+    "deterministic_checks": [
+      {
+        "name": "exit_code_equals",
+        "expected_exit_code": 0
+      }
+    ]
+  }
+}

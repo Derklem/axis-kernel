@@ -1,0 +1,10 @@
+{
+  "protocol_version": "0.1.0",
+  "schema_versions": {
+    "event": "1.0.0",
+    "receipt": "1.0.0"
+  },
+  "description": "An undeclared file was added to the inputs directory.",
+  "expected": "FAIL",
+  "run_id": "RUN_954359c2-72b7-43ae-9e36-85f1a994bee4"
+}

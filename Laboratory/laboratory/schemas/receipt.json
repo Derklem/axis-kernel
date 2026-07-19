@@ -1,0 +1,112 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Laboratory Experiment Receipt",
+  "type": "object",
+  "required": [
+    "receipt_schema_version",
+    "laboratory_version",
+    "run_id",
+    "run_started_hash",
+    "experiment_hash",
+    "hash_algorithm",
+    "timestamps",
+    "environment",
+    "execution"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "receipt_schema_version": { "type": "string" },
+    "laboratory_version": { "type": "string" },
+    "run_id": { "type": "string", "pattern": "^RUN_[0-9a-fA-F\\-]+$" },
+    "parent_run_id": { "type": ["string", "null"] },
+    "run_started_hash": { "type": "string" },
+    "experiment_hash": { "type": "string" },
+    "hash_algorithm": { "type": "string", "default": "sha256" },
+    "timestamps": {
+      "type": "object",
+      "required": ["started_at"],
+      "properties": {
+        "started_at": { "type": "string", "format": "date-time" },
+        "completed_at": { "type": "string", "format": "date-time" }
+      }
+    },
+    "environment": {
+      "type": "object",
+      "required": ["os", "python_version", "hostname", "working_directory"],
+      "properties": {
+        "os": { "type": "string" },
+        "python_version": { "type": "string" },
+        "hostname": { "type": "string" },
+        "working_directory": { "type": "string" },
+        "adapter_version": { "type": "string" },
+        "git_commit": { "type": "string" },
+        "git_dirty": { "type": "boolean" },
+        "additional_metadata": { "type": "object" }
+      }
+    },
+    "inputs": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["hash", "size"],
+        "properties": {
+          "hash": { "type": "string" },
+          "size": { 
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9007199254740991
+          },
+          "mime": { "type": "string" },
+          "description": { "type": "string" }
+        }
+      }
+    },
+    "execution": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": { "type": "string", "enum": ["COMPLETED", "ABORTED", "FAILED"] },
+        "exit_code": { 
+          "type": ["integer", "null"],
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        },
+        "stdout_hash": { "type": "string" },
+        "stderr_hash": { "type": "string" }
+      }
+    },
+    "artifacts": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    },
+    "evaluation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "deterministic_results": { 
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "check": { "type": "string" },
+              "passed": { "type": "boolean" },
+              "expected": { 
+                "type": "integer",
+                "minimum": -2147483648,
+                "maximum": 2147483647
+              },
+              "observed": { 
+                "type": ["integer", "null"],
+                "minimum": -2147483648,
+                "maximum": 2147483647
+              }
+            }
+          }
+        },
+        "overall_result": { "type": "boolean" },
+        "subjective_notes": { "type": "string" }
+      }
+    }
+  }
+}

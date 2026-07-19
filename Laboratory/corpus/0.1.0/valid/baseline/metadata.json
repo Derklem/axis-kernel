@@ -1,0 +1,10 @@
+{
+  "protocol_version": "0.1.0",
+  "schema_versions": {
+    "event": "1.0.0",
+    "receipt": "1.0.0"
+  },
+  "description": "Minimal successful execution without any tampering.",
+  "expected": "PASS",
+  "run_id": "RUN_323cd3a5-a943-44b8-ba33-19c20fa584f9"
+}

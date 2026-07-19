@@ -1,0 +1,1 @@
+{"hypothesis": "Corpus generation", "procedure": "Test", "adapter": {"type": "subprocess", "command": ["python", "-c", "print('hello corpus')"]}, "evaluation_criteria": {"deterministic_checks": [{"name": "exit_code_equals", "expected_exit_code": 0}]}}

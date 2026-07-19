@@ -1,0 +1,10 @@
+{
+  "protocol_version": "0.1.0",
+  "schema_versions": {
+    "event": "1.0.0",
+    "receipt": "1.0.0"
+  },
+  "description": "Declared input size was modified without altering the file hash.",
+  "expected": "FAIL",
+  "run_id": "RUN_e5f61a9d-240b-4d54-b628-16fa5966ce48"
+}

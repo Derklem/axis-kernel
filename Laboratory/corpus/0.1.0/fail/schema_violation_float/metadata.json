@@ -1,0 +1,10 @@
+{
+  "protocol_version": "0.1.0",
+  "schema_versions": {
+    "event": "1.0.0",
+    "receipt": "1.0.0"
+  },
+  "description": "Receipt exit_code mutated to a float, breaking schema validation.",
+  "expected": "FAIL",
+  "run_id": "RUN_f547a21a-3e05-452a-aa06-7d18d5d358b1"
+}

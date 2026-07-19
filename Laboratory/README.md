@@ -1,0 +1,39 @@
+# Laboratory
+
+**An Evidence Protocol for Deterministic Execution.**
+
+The Laboratory does not decide what is true. It preserves cryptographic evidence about what happened.
+
+Have you ever spent a week trying prompts, temperatures, and models, only to forget exactly what worked? Have you ever had a run succeed, but couldn't prove to someone else that you didn't manually edit the output?
+
+Laboratory solves this by shifting the paradigm from *reproducibility* to **evidence preservation**. Given a completed run, the Laboratory can determine whether the preserved evidence still faithfully represents what was originally recorded, mathematically proving that no tampering has occurred.
+
+## Core Concepts
+
+- **The Ledger**: A cryptographically chained, append-only JSONL file that anchors the timeline of all experiments.
+- **The Receipt**: A frozen manifest produced at the end of an experiment containing the exact hashes of all inputs, outputs, artifacts, and evaluation criteria.
+- **The Verifier**: A ruthless, read-only boundary tool that recalculates all hashes and cross-references them against the ledger to prove integrity.
+
+## CLI Usage
+
+The Laboratory exposes a simple command-line interface.
+
+### 1. Initialize the Ledger
+```bash
+python -m laboratory.cli init
+```
+Creates the Genesis block and establishes the cryptographic chain.
+
+### 2. Freeze and Run an Experiment
+```bash
+python -m laboratory.cli run <path_to_experiment_dir>
+```
+Validates your `experiment.json`, freezes the inputs, executes the subprocess, evaluates the deterministic criteria, and commits the evidence receipt to the ledger.
+
+### 3. Verify Evidence
+```bash
+python -m laboratory.cli verify <run_id>
+```
+Reads the ledger without mutation, recalculates every hash in the chain, reconstructs the canonical hashes of all frozen inputs and outputs, and produces a structured report. 
+
+If any byte of the inputs, outputs, receipt, or ledger has been tampered with, it will instantly reject the run as `FAIL` or `UNVERIFIABLE`.

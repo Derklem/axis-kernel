@@ -1,0 +1,10 @@
+{
+  "protocol_version": "0.1.0",
+  "schema_versions": {
+    "event": "1.0.0",
+    "receipt": "1.0.0"
+  },
+  "description": "Receipt run_id field modified, breaking the hash anchor to the ledger.",
+  "expected": "FAIL",
+  "run_id": "RUN_4bbb6a97-7f30-4131-9542-60f20b8d8ecf"
+}
