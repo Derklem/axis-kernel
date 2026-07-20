@@ -39,6 +39,7 @@ def main():
     with open(inputs1_dir / "strategy_spec.json", "w") as f: json.dump(spec, f, indent=2)
     obs = {
         "observation_schema_version": "1.0.0",
+        "kind": "feed",
         "observations": []
     }
     with open(inputs1_dir / "observations.json", "w") as f: json.dump(obs, f, indent=2)
@@ -293,18 +294,7 @@ with open(artifacts_dir / "evaluation.json", "w") as out:
     bad_ver_art = dict(ver_art)
     bad_ver_art["python_verifier"]["result"] = "FAIL"
     with open(bad_ver_art_path, "w") as f: json.dump(bad_ver_art, f)
-    try:
-        subprocess.run([
-            "python", "-m", "observation.cli",
-            "--receipt", str(run_receipt_path),
-            "--artifact-path", "evaluation.json",
-            "--artifact", str(run_eval_path),
-            "--verification-artifact", str(bad_ver_art_path),
-            "--output", str(obs_path)
-        ], capture_output=True, text=True, check=True)
-    except subprocess.CalledProcessError as e:
-        pass # The extractor currently sys.exits which raises CalledProcessError, but we want to test if it yields UNOBSERVABLE. Wait, the extractor returns a feed with "UNOBSERVABLE", but then it validates against "observation_feed.json". Wait! UNOBSERVABLE isn't a valid support/reason code structure in the feed unless we allow it?
-        
+
     subprocess.run([
         "python", "-m", "observation.cli",
         "--receipt", str(run_receipt_path),
