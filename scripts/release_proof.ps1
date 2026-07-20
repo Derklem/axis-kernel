@@ -6,7 +6,6 @@ Push-Location $repoRoot
 
 try {
     Write-Host "--- 1. Checking for Dirty Source State ---"
-    # Check if git is available
     if (Get-Command git -ErrorAction SilentlyContinue) {
         $dirty = $false
         if ((git diff --quiet) -eq $false -or $LASTEXITCODE -ne 0) { $dirty = $true }
@@ -63,17 +62,19 @@ try {
     $proofDir = "$testEnv\proof_run"
     New-Item -ItemType Directory -Path $proofDir | Out-Null
     
-    Copy-Item "$repoRoot\Strategy\scripts\prove_loop.py" -Destination $proofDir
+    # Copy the binary so prove_loop doesn't reference the repo
+    Copy-Item $rustVerifierBin -Destination "$proofDir\verifier-rs.exe"
+    $env:RUST_VERIFIER_BIN = "$proofDir\verifier-rs.exe"
+    
     Push-Location $proofDir
     try {
-        & $pythonExe "prove_loop.py"
+        & "$venvPath\Scripts\axis-kernel-proof.exe"
         if ($LASTEXITCODE -ne 0) { Write-Error "Proof loop failed in clean environment" }
     } finally {
         Pop-Location
     }
 
     Write-Host "`n--- 6. Verifying Import Paths ---"
-    # Ensure they were imported from site-packages, not local source
     $checkScript = @"
 import strategy, state, observation, laboratory
 import sys
@@ -88,11 +89,32 @@ print('SUCCESS: All modules loaded from site-packages')
     if ($LASTEXITCODE -ne 0) { Write-Error "Import path verification failed" }
 
     Write-Host "`n--- 7. Generating Release Manifest ---"
+    
+    $protocolDocs = @{
+        "STATE_PROTOCOL.md" = "$repoRoot\State\STATE_PROTOCOL.md"
+        "STRATEGY_PROTOCOL.md" = "$repoRoot\Strategy\STRATEGY_PROTOCOL.md"
+        "LABORATORY_PROTOCOL.md" = "$repoRoot\Laboratory\LABORATORY_PROTOCOL.md"
+        "OBSERVATION_PROTOCOL.md" = "$repoRoot\Observation\OBSERVATION_PROTOCOL.md"
+    }
+    
+    # Read laboratory to use canonical_hash (requires parsing python directly to get the hash behavior exactly right)
+    # Actually, canonical hash on a file is just sha256. Wait, canonical_hash in Laboratory hashes JSON objects. 
+    # For protocol documents, it's just raw SHA256 of the markdown text bytes.
+    $protocolHashes = @{}
+    foreach ($doc in $protocolDocs.Keys) {
+        $path = $protocolDocs[$doc]
+        if (Test-Path $path) {
+            $hash = (Get-FileHash -Algorithm SHA256 $path).Hash.ToLower()
+            $protocolHashes[$doc] = $hash
+        }
+    }
+    
     $manifest = @{
         "kernel_release_schema_version" = "1.0.0"
-        "release_id" = "axis-kernel-v1.0.0"
+        "release_id" = "axis-kernel-v1.0.1"
         "commit_hash" = $commitHash
         "packages" = @()
+        "protocol_documents" = $protocolHashes
         "rust_verifier_sha256" = $rustVerifierHash
         "proof_result" = "PASS"
     }
@@ -100,7 +122,6 @@ print('SUCCESS: All modules loaded from site-packages')
     foreach ($pkg in $packages) {
         $wheel = Get-ChildItem "$repoRoot\$pkg\dist\*.whl" | Sort-Object LastWriteTime -Descending | Select-Object -First 1
         $wheelHash = (Get-FileHash -Algorithm SHA256 $wheel.FullName).Hash.ToLower()
-        # Parse version from wheel name (Format: pkg-version-py3-none-any.whl)
         $version = $wheel.Name -replace '^([^-]+)-([^-]+)-.*$', '$2'
         
         $manifest["packages"] += @{
@@ -117,5 +138,4 @@ print('SUCCESS: All modules loaded from site-packages')
     Write-Host "KERNEL FREEZE PROOF PASSED."
 } finally {
     Pop-Location
-    # Cleanup test env if needed, but keeping it around for inspection can be useful on failure.
 }

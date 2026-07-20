@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+strategy = ["schemas/*.json"]
+
+[project]
+name = "strategy"
+version = "0.3.0"
+description = "Decision and Belief Evaluator for Axis"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "jsonschema>=4.19.0",
+    "laboratory>=0.2.1,<0.3.0",
+    "observation>=0.2.0,<0.3.0",
+    "state>=0.2.0,<0.3.0"
+]
+
+[project.scripts]
+strategy = "strategy.cli:main"
+axis-kernel-proof = "strategy.proof:main"

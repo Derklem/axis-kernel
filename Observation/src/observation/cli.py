@@ -13,21 +13,25 @@ def main():
     
     args = parser.parse_args()
     
-    with open(args.receipt, "r", encoding="utf-8") as f:
-        receipt = json.load(f)
-    with open(args.artifact, "r", encoding="utf-8") as f:
-        artifact = json.load(f)
-        
-    import hashlib
-    def hash_file(filepath: str) -> str:
-        digest = hashlib.sha256()
-        with open(filepath, "rb") as fh:
-            while chunk := fh.read(8192):
-                digest.update(chunk)
-        return digest.hexdigest()
-
-    with open(args.verification_artifact, "r", encoding="utf-8") as f:
-        ver_art = json.load(f)
+    try:
+        with open(args.receipt, "r", encoding="utf-8") as f:
+            receipt = json.load(f)
+        with open(args.artifact, "r", encoding="utf-8") as f:
+            artifact = json.load(f)
+            
+        import hashlib
+        def hash_file(filepath: str) -> str:
+            digest = hashlib.sha256()
+            with open(filepath, "rb") as fh:
+                while chunk := fh.read(8192):
+                    digest.update(chunk)
+            return digest.hexdigest()
+    
+        with open(args.verification_artifact, "r", encoding="utf-8") as f:
+            ver_art = json.load(f)
+    except FileNotFoundError as e:
+        print(f"Verification artifact or input file not found: {e}", file=sys.stderr)
+        sys.exit(2)
         
     actual_hash = hash_file(args.artifact)
     

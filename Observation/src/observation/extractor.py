@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 from importlib.resources import files
-from jsonschema import validate
+from jsonschema import validate, ValidationError
 from laboratory.crypto import canonical_hash
 
 def load_schema(name):
@@ -13,24 +13,40 @@ def extract_feed(receipt: dict, verification_artifact: dict, artifact_path: str,
     validate(instance=receipt, schema=load_schema("observation_input.json"))
     validate(instance=evaluation_artifact, schema=load_schema("evaluation.json"))
     
-    # Verify the verification artifact schema manually as we don't have its schema loaded into Observation
-    if verification_artifact.get("verification_schema_version") != "1.0.0":
-        raise ValueError("Invalid verification artifact version")
+    # Validate verification artifact using Laboratory schema
+    lab_schema_text = files("laboratory.schemas").joinpath("verification_report.json").read_text(encoding="utf-8")
+    lab_schema = json.loads(lab_schema_text)
+    
+    try:
+        validate(instance=verification_artifact, schema=lab_schema)
+    except ValidationError:
+        return {
+            "observation_schema_version": "1.0.0",
+            "kind": "failure",
+            "status": "UNOBSERVABLE",
+            "reason_code": "LABORATORY_VERIFICATION_ARTIFACT_INVALID"
+        }
         
     if verification_artifact["python_verifier"]["result"] != "PASS":
         return {
+            "observation_schema_version": "1.0.0",
+            "kind": "failure",
             "status": "UNOBSERVABLE",
             "reason_code": "LABORATORY_RUN_NOT_VERIFIED_PYTHON"
         }
         
     if verification_artifact["rust_verifier"]["result"] != "PASS":
         return {
+            "observation_schema_version": "1.0.0",
+            "kind": "failure",
             "status": "UNOBSERVABLE",
             "reason_code": "LABORATORY_RUN_NOT_VERIFIED_RUST"
         }
         
     if not verification_artifact["normalized_reports_equal"]:
         return {
+            "observation_schema_version": "1.0.0",
+            "kind": "failure",
             "status": "UNOBSERVABLE",
             "reason_code": "LABORATORY_REPORTS_MISMATCH"
         }
@@ -38,6 +54,8 @@ def extract_feed(receipt: dict, verification_artifact: dict, artifact_path: str,
     receipt_hash = canonical_hash(receipt)
     if verification_artifact["receipt_hash"] != receipt_hash:
         return {
+            "observation_schema_version": "1.0.0",
+            "kind": "failure",
             "status": "UNOBSERVABLE",
             "reason_code": "LABORATORY_RECEIPT_MISMATCH"
         }
@@ -74,6 +92,7 @@ def extract_feed(receipt: dict, verification_artifact: dict, artifact_path: str,
     
     feed = {
         "observation_schema_version": "1.0.0",
+        "kind": "feed",
         "observations": [
             {
                 "observation_id": obs_id,

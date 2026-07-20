@@ -1,0 +1,17 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "urn:axis:agenda:planner_input:v1.0.0",
+    "type": "object",
+    "properties": {
+        "planner_input_schema_version": { "const": "1.0.0" },
+        "state_root": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "strategy_decision_root": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "candidates": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": { "$ref": "hypothesis_candidate.json" }
+        }
+    },
+    "required": ["planner_input_schema_version", "state_root", "strategy_decision_root", "candidates"],
+    "additionalProperties": false
+}

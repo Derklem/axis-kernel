@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "laboratory"
+version = "0.2.1"
+description = "Deterministic Execution and Evidence Protocol"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "jsonschema>=4.19.0",
+]
+
+[project.scripts]
+laboratory = "laboratory.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["laboratory*"]
+
+[tool.setuptools.package-data]
+laboratory = ["schemas/*.json"]
