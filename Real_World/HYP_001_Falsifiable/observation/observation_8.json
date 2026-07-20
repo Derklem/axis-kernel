@@ -1,0 +1,19 @@
+{
+  "observation_schema_version": "1.0.0",
+  "kind": "feed",
+  "observations": [
+    {
+      "observation_id": "OBS_153fd42a167f53c754aa492009745795",
+      "subject": "hyp-001",
+      "support": 1,
+      "reason_code": "EVALUATION_SUPPORTED",
+      "source": {
+        "run_id": "RUN_9351c1e4-a1c2-4919-9172-118712798360",
+        "receipt_hash": "a954cec25d3bf93d7556686d814e2b9a080f205d45c54b0a8bc36bfc03c9e17a",
+        "verification_root": "354943d3d83393ba90b4e074fd1e9e5d20e44f09e781e9d2274637ca8b4c8f68",
+        "artifact_path": "evaluation.json",
+        "artifact_hash": "94cc847c8d73657fc2563a8f8d80cfa979dec4d459daf0f9d8137940e3c061c3"
+      }
+    }
+  ]
+}

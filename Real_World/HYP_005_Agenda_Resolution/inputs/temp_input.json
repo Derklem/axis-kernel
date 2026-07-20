@@ -1,0 +1,35 @@
+{
+  "planner_input_schema_version": "1.0.0",
+  "state_root": "1111111111111111111111111111111111111111111111111111111111111111",
+  "strategy_decision_root": "2222222222222222222222222222222222222222222222222222222222222222",
+  "candidates": [
+    {
+      "candidate_id": "c1_high_gain_low_cost",
+      "expected_information_gain": 50,
+      "estimated_compute_cost": 10,
+      "estimated_attention_cost": 10,
+      "experiment_spec_root": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    {
+      "candidate_id": "c2_med_gain_high_compute",
+      "expected_information_gain": 30,
+      "estimated_compute_cost": 50,
+      "estimated_attention_cost": 10,
+      "experiment_spec_root": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    },
+    {
+      "candidate_id": "c3_blows_budget",
+      "expected_information_gain": 40,
+      "estimated_compute_cost": 60,
+      "estimated_attention_cost": 10,
+      "experiment_spec_root": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+    },
+    {
+      "candidate_id": "c4_negative_score",
+      "expected_information_gain": 10,
+      "estimated_compute_cost": 150,
+      "estimated_attention_cost": 50,
+      "experiment_spec_root": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+    }
+  ]
+}

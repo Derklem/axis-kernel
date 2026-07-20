@@ -1,0 +1,146 @@
+{
+  "state/state_0.json": {
+    "sha256": "26cbff5edae2ec0679a19ff170746de68a842b7710e9295af32597157e010c05",
+    "producer": "operator",
+    "consumer": "state",
+    "schema_version": "1.1.0"
+  },
+  "strategy/strategy_spec.json": {
+    "sha256": "4a5681afdb2683f8008ee54c83893077609a5656e18134d433b8d7709a56968f",
+    "producer": "operator",
+    "consumer": "strategy",
+    "schema_version": "1.0.0"
+  },
+  "state/transition_spec.json": {
+    "sha256": "f4b0200a74d01580110da5d0ea236a8a4cf25a097c626ae9aa1126fdc3f99cab",
+    "producer": "operator",
+    "consumer": "state",
+    "schema_version": "1.0.0"
+  },
+  "observation/observation_0.json": {
+    "sha256": "93aac75b44a2f4af3f258081371725990a72374308507f47cbc28163961ec63d",
+    "producer": "laboratory",
+    "consumer": "observation",
+    "schema_version": "1.0.0"
+  },
+  "state/transition_1.json": {
+    "sha256": "e923fc15f5ddaee55253c3fd71bdcc8c7f31c0de144dd41541bf30df5494632a",
+    "producer": "state",
+    "consumer": "operator",
+    "schema_version": "1.1.0"
+  },
+  "observation/observation_1.json": {
+    "sha256": "1e79cf00f320fd6792bb522621636002f58042786d5d0adbc29bc6973bb9e887",
+    "producer": "laboratory",
+    "consumer": "observation",
+    "schema_version": "1.0.0"
+  },
+  "state/transition_2.json": {
+    "sha256": "9b4d590359af8b8a419d95ed8d72f72d80593cddb7ab6b5dd8820bf871e5b644",
+    "producer": "state",
+    "consumer": "operator",
+    "schema_version": "1.1.0"
+  },
+  "observation/observation_2.json": {
+    "sha256": "6f9196b637287b482f235930ecddab5ac875bb7d127824e35f8314f2023cb2b7",
+    "producer": "laboratory",
+    "consumer": "observation",
+    "schema_version": "1.0.0"
+  },
+  "state/transition_3.json": {
+    "sha256": "b84375aaf21cb7219b4180ca0700b713cda2fff4893c740ac5816373a329808a",
+    "producer": "state",
+    "consumer": "operator",
+    "schema_version": "1.1.0"
+  },
+  "observation/observation_3.json": {
+    "sha256": "2fcc53f033db06a93a386a643eee0bbf28963b6479d997b67e2ac5a62997ffdb",
+    "producer": "laboratory",
+    "consumer": "observation",
+    "schema_version": "1.0.0"
+  },
+  "state/transition_4.json": {
+    "sha256": "b51a9f89e56a4b717ac0a2eccc1ecbd61683b8564509f62b70b5d6510c3271ec",
+    "producer": "state",
+    "consumer": "operator",
+    "schema_version": "1.1.0"
+  },
+  "observation/observation_4.json": {
+    "sha256": "c423a5cab90a1f869ee677698fd200ea5c1635f83175474295ea13170fe94c00",
+    "producer": "laboratory",
+    "consumer": "observation",
+    "schema_version": "1.0.0"
+  },
+  "state/transition_5.json": {
+    "sha256": "8df825f1ea5783e1d7df7ca31980acb4b9b26b451f188e4228554682eced9cd5",
+    "producer": "state",
+    "consumer": "operator",
+    "schema_version": "1.1.0"
+  },
+  "observation/observation_5.json": {
+    "sha256": "520f258933d5e0f7133038dc0b7cfe44a1301384fdde67c6e84cf1510a534b29",
+    "producer": "laboratory",
+    "consumer": "observation",
+    "schema_version": "1.0.0"
+  },
+  "state/transition_6.json": {
+    "sha256": "286adea7b84e027fd8cc7180854640c9f9d5f7ed20e18abd95b1ee73902aaa36",
+    "producer": "state",
+    "consumer": "operator",
+    "schema_version": "1.1.0"
+  },
+  "observation/observation_6.json": {
+    "sha256": "8cd3716444cf52d3d7f8cbbd019a9195f9a87850d36115d68020d53e465cddb4",
+    "producer": "laboratory",
+    "consumer": "observation",
+    "schema_version": "1.0.0"
+  },
+  "state/transition_7.json": {
+    "sha256": "641fda5c64b929466c487bc083ae2e0ff9cfce5369fb752e07669219955a3c7b",
+    "producer": "state",
+    "consumer": "operator",
+    "schema_version": "1.1.0"
+  },
+  "observation/observation_7.json": {
+    "sha256": "d97c5e1a0411a19fbeba851e6d48d5ae623e75e063233ec27700d7ba6a00d416",
+    "producer": "laboratory",
+    "consumer": "observation",
+    "schema_version": "1.0.0"
+  },
+  "state/transition_8.json": {
+    "sha256": "cc3e38b9169501bfe3cd7c7a54d143a3c92fffa553d0941fbeef47f2b1776ad2",
+    "producer": "state",
+    "consumer": "operator",
+    "schema_version": "1.1.0"
+  },
+  "observation/observation_8.json": {
+    "sha256": "ae9bb75ae0dcaae20111b84cc0ae147abee6ca5713b721570be00deafcb5ca8b",
+    "producer": "laboratory",
+    "consumer": "observation",
+    "schema_version": "1.0.0"
+  },
+  "state/transition_9.json": {
+    "sha256": "15928a581644602555ee754099c435df310f9884caff69a6fbdefa5eee85b31c",
+    "producer": "state",
+    "consumer": "operator",
+    "schema_version": "1.1.0"
+  },
+  "observation/observation_9.json": {
+    "sha256": "0b4e6826bc25450eccc53c5b7b6ca6ebdef3183f0332ebc6c7f5801943164141",
+    "producer": "laboratory",
+    "consumer": "observation",
+    "schema_version": "1.0.0"
+  },
+  "state/transition_10.json": {
+    "sha256": "04cd9d75c69155ab39650dd5dda82208063a2b2abbe64a9580e7f72fa7bf7836",
+    "producer": "state",
+    "consumer": "operator",
+    "schema_version": "1.1.0"
+  },
+  "strategy/decision.json": {
+    "sha256": "6f12a31f7621251d0f265de5a17fc6191cb3e12812e8f07e80bf6d24db42efc5",
+    "producer": "strategy",
+    "consumer": "agenda",
+    "schema_version": "1.0.0"
+  }
+}

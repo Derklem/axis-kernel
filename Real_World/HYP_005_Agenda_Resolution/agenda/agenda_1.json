@@ -1,0 +1,35 @@
+{
+  "agenda_schema_version": "1.0.0",
+  "planner_input_root": "753ac65fbcb21347ec60db583eb97425981f49e6526640760ccd1b4225cfb217",
+  "planner_spec_root": "0313a1aa0d95120a15caf701b3bdd4414c8b5c159b33066d7209b27b2376daaf",
+  "status": "SUCCESS",
+  "ranked_items": [
+    {
+      "candidate_id": "c1_high_gain_low_cost",
+      "score": 80
+    },
+    {
+      "candidate_id": "c3_blows_budget",
+      "score": 10
+    }
+  ],
+  "deferred_items": [
+    {
+      "candidate_id": "c2_med_gain_high_compute",
+      "score": 0,
+      "reason_code": "INSUFFICIENT_COMPUTE_BUDGET"
+    }
+  ],
+  "rejected_items": [
+    {
+      "candidate_id": "c4_negative_score",
+      "score": -180,
+      "reason_code": "EXCEEDS_MAX_COMPUTE_BUDGET"
+    }
+  ],
+  "summary": {
+    "total_compute_cost": 70,
+    "total_attention_cost": 20
+  },
+  "agenda_root": "c84d930f0a882335b3ab77ab857ae5a71e9b2db5562bc760244eb08fb1ea5706"
+}

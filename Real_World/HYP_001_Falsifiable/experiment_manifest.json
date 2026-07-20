@@ -1,0 +1,26 @@
+{
+    "hypothesis_id": "HYP_001_Falsifiable",
+    "kernel_release_id": "axis-kernel-v1.0.1",
+    "agenda_release_id": "axis-agenda-v0.1.0",
+    "commit_hash": "aa0586d5505b49b28abb41af9528090942e9c631",
+    "packages": {
+        "laboratory": "874a9a8def67708d9278cca1298efd38daa680d02c9871ced5e68984e96bfa54",
+        "observation": "9bf744d48b595b41bd3b95d0e83999194e1ff4817141f8a9089a56a67447293d",
+        "state": "c3a10ac3be3f80f5662ccaeaf1105a5a76fbb1037f0c0641f366e05a507568e1",
+        "strategy": "f4d85fb09abba3972921361e52c2acc274572f952889102aa1a0f55b37764fe8",
+        "agenda": "549d94e20994725209da6a80bcc1646fc5199ef5fd241cf5d7dc3fcdf98c917c"
+    },
+    "protocol_documents": {
+        "STATE_PROTOCOL.md": "58ed9daf27bc6f7d604e24eaf30ae80455b0a6434e0a784fc188fdf3354b131b",
+        "LABORATORY_PROTOCOL.md": "f14a90a9fa6615d6f65ea4bda5b89fbd3b28455bb92cd36cad330767fb0e398e",
+        "OBSERVATION_PROTOCOL.md": "a91f83b2fa17211924ed14912fa0209eaf8cdc64b209b5ab672e2f051cf439d4",
+        "STRATEGY_PROTOCOL.md": "873e55bfdfaefc2f9cdfbe629604c65741c2faafbdb658b141bcaf020c103ff5",
+        "AGENDA_PROTOCOL.md": "ae6c4b25f6fa2cc672ff5734b2ca2a6091e7c83debcf34cf3f08a250e3880600"
+    },
+    "execution_order": [
+        "inputs/runner.py",
+        "inputs/extract_observations.py",
+        "inputs/state_transition.py",
+        "inputs/strategy_decision.py"
+    ]
+}

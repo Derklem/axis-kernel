@@ -1,0 +1,15 @@
+{
+  "state_schema_version": "1.1.0",
+  "confidence": 0,
+  "evidence_count": 16,
+  "applied_observation_ids": [
+    "OBS_223e9f5477019165e772a2b0e04e4ef8",
+    "OBS_2b64af95d191b06f9930ef3aeb10bd22",
+    "OBS_5c13238ac0d2cc3d83f592083c704048",
+    "OBS_69a0f5e32f0338f70b4ecf267f9cfe32",
+    "OBS_79802228f5769d585a5190f91809df73",
+    "OBS_b483cca0f839f49feb632763a2f1ffbe",
+    "OBS_e7f7ef4d9e9930b4151533cb7b432acf",
+    "OBS_f5f7c0e828655146799940c23be27215"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "planner_spec_schema_version": "1.0.0",
+  "gain_weight": 2,
+  "compute_cost_weight": 1,
+  "attention_cost_weight": 1,
+  "max_agenda_items": 10,
+  "max_compute_budget": 100,
+  "max_attention_budget": 100
+}

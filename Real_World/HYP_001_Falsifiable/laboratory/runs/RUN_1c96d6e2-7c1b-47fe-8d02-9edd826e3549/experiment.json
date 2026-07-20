@@ -1,0 +1,1 @@
+{"hypothesis": "hyp-001", "procedure": "Execute the canonical hash script against payload.json", "expected_artifacts": ["evaluation.json"], "adapter": {"type": "subprocess", "command": ["python", "run.py"]}, "evaluation_criteria": {}}

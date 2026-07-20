@@ -1,0 +1,37 @@
+{
+  "state_transition_schema_version": "1.0.0",
+  "transition_version": "state-hyp001",
+  "transition_engine_version": "0.1.0",
+  "prior_state_root": "0406dfde825267fb49aef0ebd216a701fda50a2f1c41c779b1ee20dd12cf6ecb",
+  "observation_feed_root": "75dace4b66ae919841888c4f83974b54c853baf61a6c7d5f1caee94a6ce43670",
+  "transition_spec_root": "97dcf0ac0219632b59424edb23829145eaaf2db35e5a3a6158119c7ab7cd8b2f",
+  "next_state_root": "4fdf638f813ab19df7857f829ae10aeacdd71281a5e475db54fe6409996171b6",
+  "next_state": {
+    "state_schema_version": "1.1.0",
+    "confidence": 0,
+    "evidence_count": 14,
+    "applied_observation_ids": [
+      "OBS_2b64af95d191b06f9930ef3aeb10bd22",
+      "OBS_5c13238ac0d2cc3d83f592083c704048",
+      "OBS_69a0f5e32f0338f70b4ecf267f9cfe32",
+      "OBS_79802228f5769d585a5190f91809df73",
+      "OBS_b483cca0f839f49feb632763a2f1ffbe",
+      "OBS_e7f7ef4d9e9930b4151533cb7b432acf",
+      "OBS_f5f7c0e828655146799940c23be27215"
+    ]
+  },
+  "applied_observation_ids": [
+    "OBS_69a0f5e32f0338f70b4ecf267f9cfe32"
+  ],
+  "skipped_observation_ids": [],
+  "summary": {
+    "supported_applied": 1,
+    "inconclusive_applied": 0,
+    "contradicted_applied": 0,
+    "replayed_skipped": 0,
+    "subject_mismatch_skipped": 0
+  },
+  "reason_codes": [
+    "SUPPORTED_OBSERVATION_APPLIED"
+  ]
+}

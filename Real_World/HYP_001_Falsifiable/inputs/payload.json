@@ -1,0 +1,13 @@
+{
+  "hello": "world",
+  "values": [
+    1,
+    2,
+    3,
+    4,
+    "six"
+  ],
+  "nested": {
+    "deep": true
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "decision_schema_version": "1.0.0",
+  "decision_version": "strategy-hello-v1",
+  "evaluator_version": "0.2.0",
+  "decision": "PROBE",
+  "reason_code": "INSUFFICIENT_CONFIDENCE",
+  "input_root": "aa6d641c41bad9c5820abf7b18c2ca018d7c3736f6a7b8c1b258d2faa28724ba"
+}

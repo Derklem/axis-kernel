@@ -1,0 +1,10 @@
+{
+  "release": "axis-kernel-v1.0.1",
+  "commit": "aa0586d5505b49b28abb41af9528090942e9c631",
+  "packages": [
+    "Laboratory",
+    "Observation",
+    "State",
+    "Strategy"
+  ]
+}

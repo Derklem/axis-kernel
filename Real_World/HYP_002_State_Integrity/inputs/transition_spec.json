@@ -1,0 +1,6 @@
+{
+  "transition_spec_schema_version": "1.0.0",
+  "transition_version": "state-hyp002",
+  "subject": "hyp-002",
+  "supported_increment": 5
+}

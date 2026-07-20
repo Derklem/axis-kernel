@@ -1,0 +1,9 @@
+{
+  "run_id": "RUN_MALFORMED",
+  "evaluation": {
+    "overall_result": true
+  },
+  "artifacts": {
+    "evaluation.json": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  }
+}

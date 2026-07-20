@@ -1,0 +1,35 @@
+{
+  "state_transition_schema_version": "1.0.0",
+  "transition_version": "state-hyp001",
+  "transition_engine_version": "0.1.0",
+  "prior_state_root": "b622220781de63dc4424c4eae0f056ed9a244a8cbd958d2f5d75004c0e33059a",
+  "observation_feed_root": "b44e7a5b8359c24f753f0e17175e9646ab20fd4b6ff106f6709e0ba8605bf4eb",
+  "transition_spec_root": "97dcf0ac0219632b59424edb23829145eaaf2db35e5a3a6158119c7ab7cd8b2f",
+  "next_state_root": "801cc39e91e7b083ee7d778a080db3694bfd8ef12e7c71e8867d11be655ec38f",
+  "next_state": {
+    "state_schema_version": "1.1.0",
+    "confidence": 0,
+    "evidence_count": 10,
+    "applied_observation_ids": [
+      "OBS_2b64af95d191b06f9930ef3aeb10bd22",
+      "OBS_79802228f5769d585a5190f91809df73",
+      "OBS_b483cca0f839f49feb632763a2f1ffbe",
+      "OBS_e7f7ef4d9e9930b4151533cb7b432acf",
+      "OBS_f5f7c0e828655146799940c23be27215"
+    ]
+  },
+  "applied_observation_ids": [
+    "OBS_f5f7c0e828655146799940c23be27215"
+  ],
+  "skipped_observation_ids": [],
+  "summary": {
+    "supported_applied": 1,
+    "inconclusive_applied": 0,
+    "contradicted_applied": 0,
+    "replayed_skipped": 0,
+    "subject_mismatch_skipped": 0
+  },
+  "reason_codes": [
+    "SUPPORTED_OBSERVATION_APPLIED"
+  ]
+}

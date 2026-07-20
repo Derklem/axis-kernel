@@ -1,0 +1,14 @@
+{
+  "verification_schema_version": "1.0.0",
+  "run_id": "RUN_245f5fea-e2a4-4f91-98aa-7573a18bfc8d",
+  "receipt_hash": "7275d452d9cec1058f1edd05a972c0351a48441c0414357751d5f60430d81cb1",
+  "python_verifier": {
+    "result": "PASS",
+    "report_root": "dbf0df6bb8b07bd118d1c1c5efb22f52995df534069f4fc650262818feb79c7f"
+  },
+  "rust_verifier": {
+    "result": "PASS",
+    "report_root": "dbf0df6bb8b07bd118d1c1c5efb22f52995df534069f4fc650262818feb79c7f"
+  },
+  "normalized_reports_equal": true
+}

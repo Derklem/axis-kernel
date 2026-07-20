@@ -1,0 +1,40 @@
+{
+  "state_transition_schema_version": "1.0.0",
+  "transition_version": "state-hyp001",
+  "transition_engine_version": "0.1.0",
+  "prior_state_root": "d829de554991806a507e249074961dcebe37a469acad4518888f41ce21cd0f37",
+  "observation_feed_root": "2d09ac12a3410eee927cf162af4ffa193f8d1d9016975a6b1d054916cc88c5ca",
+  "transition_spec_root": "97dcf0ac0219632b59424edb23829145eaaf2db35e5a3a6158119c7ab7cd8b2f",
+  "next_state_root": "2cdce7b63af03b0213656d4798af11a972e3fb98ec8b02b945adeb0537c8f860",
+  "next_state": {
+    "state_schema_version": "1.1.0",
+    "confidence": 0,
+    "evidence_count": 20,
+    "applied_observation_ids": [
+      "OBS_153fd42a167f53c754aa492009745795",
+      "OBS_223e9f5477019165e772a2b0e04e4ef8",
+      "OBS_2b64af95d191b06f9930ef3aeb10bd22",
+      "OBS_5c13238ac0d2cc3d83f592083c704048",
+      "OBS_69a0f5e32f0338f70b4ecf267f9cfe32",
+      "OBS_79802228f5769d585a5190f91809df73",
+      "OBS_b483cca0f839f49feb632763a2f1ffbe",
+      "OBS_e7f7ef4d9e9930b4151533cb7b432acf",
+      "OBS_f5f7c0e828655146799940c23be27215",
+      "OBS_fb0170dab8b3abc9e4cd8b466236f9b7"
+    ]
+  },
+  "applied_observation_ids": [
+    "OBS_fb0170dab8b3abc9e4cd8b466236f9b7"
+  ],
+  "skipped_observation_ids": [],
+  "summary": {
+    "supported_applied": 1,
+    "inconclusive_applied": 0,
+    "contradicted_applied": 0,
+    "replayed_skipped": 0,
+    "subject_mismatch_skipped": 0
+  },
+  "reason_codes": [
+    "SUPPORTED_OBSERVATION_APPLIED"
+  ]
+}

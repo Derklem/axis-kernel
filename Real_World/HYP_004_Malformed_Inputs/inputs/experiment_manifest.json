@@ -1,0 +1,9 @@
+{
+  "experiment_schema_version": "1.0.0",
+  "subject": "hyp-004",
+  "expected_artifacts": [
+    "evaluation.json"
+  ],
+  "script_path": "run.py",
+  "parameters": {}
+}

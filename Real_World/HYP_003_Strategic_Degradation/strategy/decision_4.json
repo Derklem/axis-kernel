@@ -1,0 +1,8 @@
+{
+  "decision_schema_version": "1.0.0",
+  "decision_version": "strategy-hello-v1",
+  "evaluator_version": "0.2.0",
+  "decision": "HOLD",
+  "reason_code": "THRESHOLDS_SATISFIED",
+  "input_root": "243be4df507856218906c835df1d45567051f4db4fc1889a199d7df1251b61b3"
+}

@@ -1,0 +1,31 @@
+{
+  "state_transition_schema_version": "1.0.0",
+  "transition_version": "state-hyp001",
+  "transition_engine_version": "0.1.0",
+  "prior_state_root": "9f05276cb441913533a063f8fa39a15cb8684e7c54213ea6419e779216c12bf9",
+  "observation_feed_root": "3b2bc4abfd807e3a62b44ef7b001990c03fd4c7acde13e6b72d9f714a415332e",
+  "transition_spec_root": "97dcf0ac0219632b59424edb23829145eaaf2db35e5a3a6158119c7ab7cd8b2f",
+  "next_state_root": "9b3b8df5298264aa989b3b7ebd9e7f0ab46215008b9454e8eba05313fe889352",
+  "next_state": {
+    "state_schema_version": "1.1.0",
+    "confidence": 0,
+    "evidence_count": 2,
+    "applied_observation_ids": [
+      "OBS_b483cca0f839f49feb632763a2f1ffbe"
+    ]
+  },
+  "applied_observation_ids": [
+    "OBS_b483cca0f839f49feb632763a2f1ffbe"
+  ],
+  "skipped_observation_ids": [],
+  "summary": {
+    "supported_applied": 1,
+    "inconclusive_applied": 0,
+    "contradicted_applied": 0,
+    "replayed_skipped": 0,
+    "subject_mismatch_skipped": 0
+  },
+  "reason_codes": [
+    "SUPPORTED_OBSERVATION_APPLIED"
+  ]
+}

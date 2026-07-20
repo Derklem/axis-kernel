@@ -1,0 +1,6 @@
+{
+  "strategy_schema_version": "1.0.0",
+  "decision_version": "strategy-hello-v1",
+  "probe_threshold": 10,
+  "minimum_evidence": 5
+}

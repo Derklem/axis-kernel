@@ -1,0 +1,8 @@
+{
+  "evaluation_schema_version": "1.0.0",
+  "outcome": "SUPPORTED",
+  "subject": "hyp-001",
+  "metric": "hash_match",
+  "observed": 1,
+  "expected": 1
+}
