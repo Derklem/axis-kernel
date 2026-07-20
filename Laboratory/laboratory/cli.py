@@ -235,6 +235,14 @@ def main():
     verify_parser.add_argument("--runs-dir", type=str, default="data/runs", help="Runs directory")
     verify_parser.add_argument("--json", action="store_true", help="Output JSON report")
 
+    verify_strict_parser = subparsers.add_parser("verify-strict", help="Strictly verify a run using Python and Rust verifiers")
+    verify_strict_parser.add_argument("run_id", type=str, help="Run ID to verify")
+    verify_strict_parser.add_argument("--rust-verifier", type=str, required=True, help="Path to rust verifier binary")
+    verify_strict_parser.add_argument("--dir", type=str, default="data/ledger", help="Ledger directory")
+    verify_strict_parser.add_argument("--runs-dir", type=str, default="data/runs", help="Runs directory")
+    verify_strict_parser.add_argument("--json", action="store_true", help="Output JSON verification artifact")
+
+
     args = parser.parse_args()
 
     if args.command == "init":
@@ -281,6 +289,32 @@ def main():
             sys.exit(1)
         else:
             sys.exit(3)
+            
+    elif args.command == "verify-strict":
+        from laboratory.strict_verify import verify_strict_run
+        ledger_dir = Path(args.dir).resolve()
+        runs_dir = Path(args.runs_dir).resolve()
+        rust_verifier_path = Path(args.rust_verifier).resolve()
+        
+        artifact = verify_strict_run(args.run_id, ledger_dir, runs_dir, rust_verifier_path)
+        
+        if args.json:
+            print(json.dumps(artifact, indent=2))
+        else:
+            print(f"Run ID: {artifact['run_id']}")
+            print(f"Python Verifier: {artifact['python_verifier']['result']} (Root: {artifact['python_verifier']['report_root'][:8]}...)")
+            print(f"Rust Verifier: {artifact['rust_verifier']['result']} (Root: {artifact['rust_verifier']['report_root'][:8]}...)")
+            print(f"Normalized Equal: {artifact['normalized_reports_equal']}")
+            
+        success = (artifact["python_verifier"]["result"] == "PASS" and 
+                   artifact["rust_verifier"]["result"] == "PASS" and 
+                   artifact["normalized_reports_equal"])
+                   
+        if success:
+            sys.exit(0)
+        else:
+            sys.exit(1)
+
         
     else:
         parser.print_help()

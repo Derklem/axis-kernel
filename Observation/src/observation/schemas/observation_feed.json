@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "observation_schema_version",
+    "observations"
+  ],
+  "properties": {
+    "observation_schema_version": {
+      "const": "1.0.0"
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "observation_id",
+          "subject",
+          "support",
+          "reason_code",
+          "source"
+        ],
+        "properties": {
+          "observation_id": {
+            "type": "string",
+            "pattern": "^OBS_[0-9a-f]{32}$"
+          },
+          "subject": {
+            "type": "string"
+          },
+          "support": {
+            "type": "integer",
+            "minimum": -1,
+            "maximum": 1
+          },
+          "reason_code": {
+            "type": "string"
+          },
+          "source": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "run_id",
+              "receipt_hash",
+              "verification_root",
+              "artifact_path",
+              "artifact_hash"
+            ],
+            "properties": {
+              "run_id": {
+                "type": "string"
+              },
+              "receipt_hash": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "verification_root": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "artifact_path": {
+                "type": "string"
+              },
+              "artifact_hash": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
