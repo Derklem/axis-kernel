@@ -1,0 +1,19 @@
+{
+    "trial_id": 1,
+    "pair_id": "FIX_1",
+    "condition": "explicit_json_schema",
+    "fixture_hash": "dc38955e6eb6520a8ccfc0f35c505c18110cc5b7fcf43ee85e28ecf9a717f40c",
+    "input_hash": "bc06643686ef72003f3460173e26483a1c88b28927d18c5f0da96ba3a02c1961",
+    "prompt_hash": "55d5293fc3519ab049ba815104dd3e75ae1e627bd7f7ffa5c7a42d1dde0c90fc",
+    "model": "llama3:latest",
+    "temperature": 0.0,
+    "started_utc": "2026-07-21T00:15:49.191729+00:00",
+    "completed_utc": "2026-07-21T00:16:05.027354+00:00",
+    "latency_ms": 15835.625886917114,
+    "raw_output": "{\n  \"incident_id\": \"INC-823\",\n  \"event_type\": \"outage\",\n  \"severity\": \"MEDIUM\",\n  \"entities\": [\"Primary DB\", \"Replica DB\"],\n  \"occurred_utc\": null,\n  \"summary\": \"Database outage around 3PM UTC\"",
+    "schema_valid": false,
+    "repairable": false,
+    "validation_errors": [
+        "JSON Parse Error: Expecting ',' delimiter: line 7 column 46 (char 193)"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "trial_id": 10,
+    "pair_id": "FIX_10",
+    "condition": "explicit_json_schema",
+    "fixture_hash": "dc38955e6eb6520a8ccfc0f35c505c18110cc5b7fcf43ee85e28ecf9a717f40c",
+    "input_hash": "bf565548481de8be467f57a1b44c79539362954a733b6bbf9f98f14cd1295153",
+    "prompt_hash": "a77f2eaad559cf9bdf79bbe1e3fe09779b958017f34beffc661f480f7f575c48",
+    "model": "llama3:latest",
+    "temperature": 0.0,
+    "started_utc": "2026-07-21T00:20:11.536043+00:00",
+    "completed_utc": "2026-07-21T00:20:23.166246+00:00",
+    "latency_ms": 11630.203485488892,
+    "raw_output": "{\n  \"incident_id\": \"SEC-101\",\n  \"event_type\": \"phishing_attempt\",\n  \"severity\": \"MEDIUM\",\n  \"entities\": [\"Email-Server\", \"User-Alice\"],\n  \"occurred_utc\": null,\n  \"summary\": \"{}\"\n}",
+    "schema_valid": true,
+    "repairable": false,
+    "validation_errors": []
+}

@@ -1,0 +1,19 @@
+{
+    "trial_id": 8,
+    "pair_id": "FIX_8",
+    "condition": "natural_language",
+    "fixture_hash": "dc38955e6eb6520a8ccfc0f35c505c18110cc5b7fcf43ee85e28ecf9a717f40c",
+    "input_hash": "9813be37e966208e92730dd42147a802a2ccd9e82ebd395dc3fd080466e052ae",
+    "prompt_hash": "27b4fe03ddbdda6d0714cdac6bfb42be3ef5be4cbb9ee0a82ab1c1b8a90dc398",
+    "model": "llama3:latest",
+    "temperature": 0.0,
+    "started_utc": "2026-07-21T00:19:23.416808+00:00",
+    "completed_utc": "2026-07-21T00:19:39.750182+00:00",
+    "latency_ms": 16333.373546600342,
+    "raw_output": "Here's the extracted data in the desired format:\n\n{\n    \"incident_id\": \"DB-999\",\n    \"event_type\": \"data_corruption\",\n    \"severity\": \"HIGH\",\n    \"entities\": [\"Table-Users\", \"Table-Orders\"],\n    \"occurred_utc\": \"2026-07-19T22:22:22Z\",\n    \"summary\": null\n}\n\nLet me know if you need anything else!",
+    "schema_valid": false,
+    "repairable": false,
+    "validation_errors": [
+        "JSON Parse Error: Expecting value: line 1 column 1 (char 0)"
+    ]
+}

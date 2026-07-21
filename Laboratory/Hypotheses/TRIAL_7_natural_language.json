@@ -1,0 +1,19 @@
+{
+    "trial_id": 7,
+    "pair_id": "FIX_7",
+    "condition": "natural_language",
+    "fixture_hash": "dc38955e6eb6520a8ccfc0f35c505c18110cc5b7fcf43ee85e28ecf9a717f40c",
+    "input_hash": "0f01451f1c5449750c118c5e2991fef788316f20a4eaf09a245671af0f3a9a17",
+    "prompt_hash": "40f535dc5379e0fc1d53d3dff265377e00d6e22db6e0ffb585cae3e2c56ba3d9",
+    "model": "llama3:latest",
+    "temperature": 0.0,
+    "started_utc": "2026-07-21T00:18:44.211531+00:00",
+    "completed_utc": "2026-07-21T00:18:57.786510+00:00",
+    "latency_ms": 13574.979305267334,
+    "raw_output": "Here's the extracted data in the required format:\n\n```\n{\n    'incident_id': 'DSK-04',\n    'event_type': 'disk_full',\n    'severity': 'MEDIUM',\n    'entities': ['Node-42'],\n    'occurred_utc': null,\n    'summary': 'The disk filled up with temp files.'\n}\n```",
+    "schema_valid": false,
+    "repairable": false,
+    "validation_errors": [
+        "JSON Parse Error: Expecting value: line 1 column 1 (char 0)"
+    ]
+}

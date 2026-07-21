@@ -1,0 +1,19 @@
+{
+    "trial_id": 9,
+    "pair_id": "FIX_9",
+    "condition": "natural_language",
+    "fixture_hash": "dc38955e6eb6520a8ccfc0f35c505c18110cc5b7fcf43ee85e28ecf9a717f40c",
+    "input_hash": "03b1c2f9f805463356b4e18effff1c790c5f2aea5cf11970432e0c7169b0d70a",
+    "prompt_hash": "f6ed28c41262eced5c7c4ced27b172acceda776ccdae0b3ae54d41102950f104",
+    "model": "llama3:latest",
+    "temperature": 0.0,
+    "started_utc": "2026-07-21T00:19:39.751212+00:00",
+    "completed_utc": "2026-07-21T00:19:57.910776+00:00",
+    "latency_ms": 18159.563541412354,
+    "raw_output": "Here is the extracted data:\n\n{\n    'incident_id': 'CFG-12',\n    'event_type': 'config_warning',\n    'severity': 'LOW',\n    'entities': ['Config-Service'],\n    'occurred_utc': '2026-07-20T08:00:00Z',\n    'summary': 'A small typo in the config caused a warning'\n}\n\nLet me know if you need anything else!",
+    "schema_valid": false,
+    "repairable": false,
+    "validation_errors": [
+        "JSON Parse Error: Expecting value: line 1 column 1 (char 0)"
+    ]
+}

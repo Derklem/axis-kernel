@@ -1,0 +1,19 @@
+{
+    "trial_id": 6,
+    "pair_id": "FIX_6",
+    "condition": "natural_language",
+    "fixture_hash": "dc38955e6eb6520a8ccfc0f35c505c18110cc5b7fcf43ee85e28ecf9a717f40c",
+    "input_hash": "cfeb493b05faf6cf026388a1894f97fe31fa77556a8d491e2a0024d536e0ac97",
+    "prompt_hash": "2d97c00aeb94d14c998e5864f488068aef4245efefa5c0b22b0f737dc1ba2ca0",
+    "model": "llama3:latest",
+    "temperature": 0.0,
+    "started_utc": "2026-07-21T00:18:27.037777+00:00",
+    "completed_utc": "2026-07-21T00:18:44.210505+00:00",
+    "latency_ms": 17172.728061676025,
+    "raw_output": "Here is the extracted data:\n\n```\n{\n    \"incident_id\": \"API-22\",\n    \"event_type\": \"rate_limit_exceeded\",\n    \"severity\": \"HIGH\",\n    \"entities\": [\"API-Gateway\"],\n    \"occurred_utc\": \"2026-07-18T11:11:11Z\",\n    \"summary\": \"The API gateway went down because it hit a rate limit.\"\n}\n```",
+    "schema_valid": false,
+    "repairable": false,
+    "validation_errors": [
+        "JSON Parse Error: Expecting value: line 1 column 1 (char 0)"
+    ]
+}

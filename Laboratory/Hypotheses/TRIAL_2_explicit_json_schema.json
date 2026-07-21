@@ -1,0 +1,17 @@
+{
+    "trial_id": 2,
+    "pair_id": "FIX_2",
+    "condition": "explicit_json_schema",
+    "fixture_hash": "dc38955e6eb6520a8ccfc0f35c505c18110cc5b7fcf43ee85e28ecf9a717f40c",
+    "input_hash": "eda37b43bc0c950f372b662395be2722d0de8da4ba2d106d87e8034705537a88",
+    "prompt_hash": "09f4ac16a2928ddeb860ab84a99e60ddbf1bc406059081dc290dba1baa4e18c6",
+    "model": "llama3:latest",
+    "temperature": 0.0,
+    "started_utc": "2026-07-21T00:16:05.027872+00:00",
+    "completed_utc": "2026-07-21T00:16:19.711227+00:00",
+    "latency_ms": 14683.35485458374,
+    "raw_output": "{\n  \"incident_id\": \"NET-11\",\n  \"event_type\": \"network_partition\",\n  \"severity\": \"HIGH\",\n  \"entities\": [\"Switch-A\", \"Router-X\", \"Firewall-1\"],\n  \"occurred_utc\": \"2026-07-21T00:00:00Z\",\n  \"summary\": \"\"\n}",
+    "schema_valid": true,
+    "repairable": false,
+    "validation_errors": []
+}

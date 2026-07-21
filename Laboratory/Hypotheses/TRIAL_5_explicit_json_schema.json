@@ -1,0 +1,17 @@
+{
+    "trial_id": 5,
+    "pair_id": "FIX_5",
+    "condition": "explicit_json_schema",
+    "fixture_hash": "dc38955e6eb6520a8ccfc0f35c505c18110cc5b7fcf43ee85e28ecf9a717f40c",
+    "input_hash": "76570c19290348d6f9d69de16fadbf1a52b8018832e8619b475f2fb42ffb9286",
+    "prompt_hash": "f7f2caaaffa1b5d15c7f0e793cb64af20ecbe60ee6c5c6733edc52c1d4a45683",
+    "model": "llama3:latest",
+    "temperature": 0.0,
+    "started_utc": "2026-07-21T00:17:58.031673+00:00",
+    "completed_utc": "2026-07-21T00:18:12.236351+00:00",
+    "latency_ms": 14204.67758178711,
+    "raw_output": "{\n  \"incident_id\": \"UI-55\",\n  \"event_type\": \"frontend_crash\",\n  \"severity\": \"LOW\",\n  \"entities\": [\"Web-App\"],\n  \"occurred_utc\": \"2026-07-15T09:30:00Z\",\n  \"summary\": \"The user clicked a button and it crashed\"\n}",
+    "schema_valid": true,
+    "repairable": false,
+    "validation_errors": []
+}

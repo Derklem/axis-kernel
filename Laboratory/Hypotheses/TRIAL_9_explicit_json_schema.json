@@ -1,0 +1,17 @@
+{
+    "trial_id": 9,
+    "pair_id": "FIX_9",
+    "condition": "explicit_json_schema",
+    "fixture_hash": "dc38955e6eb6520a8ccfc0f35c505c18110cc5b7fcf43ee85e28ecf9a717f40c",
+    "input_hash": "03b1c2f9f805463356b4e18effff1c790c5f2aea5cf11970432e0c7169b0d70a",
+    "prompt_hash": "a4adc712a40920b1c26d151f8adf3bc057b016733d458e2a79afd631d84211ac",
+    "model": "llama3:latest",
+    "temperature": 0.0,
+    "started_utc": "2026-07-21T00:19:57.912314+00:00",
+    "completed_utc": "2026-07-21T00:20:11.535520+00:00",
+    "latency_ms": 13623.20613861084,
+    "raw_output": "{\n\"incident_id\": \"CFG-12\",\n\"event_type\": \"config_warning\",\n\"severity\": \"LOW\",\n\"entities\": [\"Config-Service\"],\n\"occurred_utc\": \"2026-07-20T08:00:00Z\",\n\"summary\": \"A small typo in the config caused a warning\"\n}",
+    "schema_valid": true,
+    "repairable": false,
+    "validation_errors": []
+}

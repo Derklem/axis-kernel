@@ -1,0 +1,17 @@
+{
+    "trial_id": 4,
+    "pair_id": "FIX_4",
+    "condition": "explicit_json_schema",
+    "fixture_hash": "dc38955e6eb6520a8ccfc0f35c505c18110cc5b7fcf43ee85e28ecf9a717f40c",
+    "input_hash": "4c6de53e505c8a16f68bf83340360fd19863d13ebb8cb6abe91a45fbcc9f85c1",
+    "prompt_hash": "6f36681aa5aec30b763b89ae451d43a247144a5da690a845f49101b7a7102c4b",
+    "model": "llama3:latest",
+    "temperature": 0.0,
+    "started_utc": "2026-07-21T00:17:06.172646+00:00",
+    "completed_utc": "2026-07-21T00:17:20.064988+00:00",
+    "latency_ms": 13892.34209060669,
+    "raw_output": "{\n\"incident_id\": \"UNK-001\",\n\"event_type\": \"memory_leak\",\n\"severity\": \"MEDIUM\",\n\"entities\": [\"billing_service\", \"cache_node\"],\n\"occurred_utc\": \"2026-07-20T14:00:00Z\",\n\"summary\": \"\"\n}",
+    "schema_valid": true,
+    "repairable": false,
+    "validation_errors": []
+}

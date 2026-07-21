@@ -1,0 +1,19 @@
+{
+    "trial_id": 10,
+    "pair_id": "FIX_10",
+    "condition": "natural_language",
+    "fixture_hash": "dc38955e6eb6520a8ccfc0f35c505c18110cc5b7fcf43ee85e28ecf9a717f40c",
+    "input_hash": "bf565548481de8be467f57a1b44c79539362954a733b6bbf9f98f14cd1295153",
+    "prompt_hash": "7aab2b10beb894e29d7bf363dacbe961c1bce148f67c9cce6e97ab0941c4d3cf",
+    "model": "llama3:latest",
+    "temperature": 0.0,
+    "started_utc": "2026-07-21T00:20:23.167298+00:00",
+    "completed_utc": "2026-07-21T00:20:39.537155+00:00",
+    "latency_ms": 16369.8570728302,
+    "raw_output": "Here is the extracted data:\n\n{\n    \"incident_id\": \"SEC-101\",\n    \"event_type\": \"phishing_attempt\",\n    \"severity\": \"MEDIUM\",\n    \"entities\": [\"Email-Server\", \"User-Alice\"],\n    \"occurred_utc\": null,\n    \"summary\": \"A phishing email was received. {}\"\n}\n\nNote: I assumed that the summary should include the `{}` braces as per your request.",
+    "schema_valid": false,
+    "repairable": false,
+    "validation_errors": [
+        "JSON Parse Error: Expecting value: line 1 column 1 (char 0)"
+    ]
+}

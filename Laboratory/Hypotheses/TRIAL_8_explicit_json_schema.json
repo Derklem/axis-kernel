@@ -1,0 +1,17 @@
+{
+    "trial_id": 8,
+    "pair_id": "FIX_8",
+    "condition": "explicit_json_schema",
+    "fixture_hash": "dc38955e6eb6520a8ccfc0f35c505c18110cc5b7fcf43ee85e28ecf9a717f40c",
+    "input_hash": "9813be37e966208e92730dd42147a802a2ccd9e82ebd395dc3fd080466e052ae",
+    "prompt_hash": "c07cb2b5f195c5412a76c6b64948b76dffb1446f5ccf800e892575c733a9a965",
+    "model": "llama3:latest",
+    "temperature": 0.0,
+    "started_utc": "2026-07-21T00:19:09.669514+00:00",
+    "completed_utc": "2026-07-21T00:19:23.415783+00:00",
+    "latency_ms": 13746.269226074219,
+    "raw_output": "{\n  \"incident_id\": \"DB-999\",\n  \"event_type\": \"'data_corruption'\",\n  \"severity\": \"HIGH\",\n  \"entities\": [\"Table-Users\", \"Table-Orders\"],\n  \"occurred_utc\": \"2026-07-19T22:22:22Z\",\n  \"summary\": \"\"\n}",
+    "schema_valid": true,
+    "repairable": false,
+    "validation_errors": []
+}

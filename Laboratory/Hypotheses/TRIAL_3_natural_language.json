@@ -1,0 +1,19 @@
+{
+    "trial_id": 3,
+    "pair_id": "FIX_3",
+    "condition": "natural_language",
+    "fixture_hash": "dc38955e6eb6520a8ccfc0f35c505c18110cc5b7fcf43ee85e28ecf9a717f40c",
+    "input_hash": "597e034944e9929adc1ed761f403489c0dc8a85ac9dcfd5fe34a2ad075e75b2f",
+    "prompt_hash": "e22e44bca6678d3aad11859e308fddf1384bda7bc6d5aec334fc9d04e55b3628",
+    "model": "llama3:latest",
+    "temperature": 0.0,
+    "started_utc": "2026-07-21T00:16:38.403860+00:00",
+    "completed_utc": "2026-07-21T00:16:53.830534+00:00",
+    "latency_ms": 15426.673889160156,
+    "raw_output": "Here's the extracted data:\n\n```\n{\n    \"incident_id\": \"SEC-994\",\n    \"event_type\": \"unauthorized_access\",\n    \"severity\": \"LOW\",\n    \"entities\": [\"User-John\", \"Server-Bastion\"],\n    \"occurred_utc\": null,\n    \"summary\": \"Please log SEC-994. The severity is LOW.\"\n}\n```",
+    "schema_valid": false,
+    "repairable": false,
+    "validation_errors": [
+        "JSON Parse Error: Expecting value: line 1 column 1 (char 0)"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "hypothesis_id": "HYP_006",
+    "condition_A_natural_language_validity_rate": 0.0,
+    "condition_B_explicit_json_schema_validity_rate": 0.8,
+    "difference": 0.8,
+    "conclusion": "SUPPORTED",
+    "total_trials": 10,
+    "total_calls": 20
+}
