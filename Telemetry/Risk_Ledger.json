@@ -1,0 +1,117 @@
+﻿{
+    "version":  1,
+    "current_instantaneous_risk":  0,
+    "active_actions":  [
+
+                       ],
+    "recent_events":  [
+                          {
+                              "timestamp":  "2026-01-16T02:49:35.8020038Z",
+                              "type":  "start",
+                              "tool":  "FS-ReadFile",
+                              "risk":  1
+                          },
+                          {
+                              "timestamp":  "2026-01-16T02:49:35.8703611Z",
+                              "type":  "end",
+                              "tool":  "FS-ReadFile",
+                              "risk":  1
+                          },
+                          {
+                              "timestamp":  "2026-01-16T02:49:50.3059808Z",
+                              "type":  "start",
+                              "tool":  "FS-ReadFile",
+                              "risk":  1
+                          },
+                          {
+                              "timestamp":  "2026-01-16T02:49:50.3571739Z",
+                              "type":  "end",
+                              "tool":  "FS-ReadFile",
+                              "risk":  1
+                          },
+                          {
+                              "timestamp":  "2026-01-16T02:50:05.1056239Z",
+                              "type":  "start",
+                              "tool":  "FS-ReadFile",
+                              "risk":  1
+                          },
+                          {
+                              "timestamp":  "2026-01-16T02:50:05.1582475Z",
+                              "type":  "end",
+                              "tool":  "FS-ReadFile",
+                              "risk":  1
+                          },
+                          {
+                              "timestamp":  "2026-01-16T02:50:18.7892491Z",
+                              "type":  "start",
+                              "tool":  "FS-ReadFile",
+                              "risk":  1
+                          },
+                          {
+                              "timestamp":  "2026-01-16T02:50:18.8439156Z",
+                              "type":  "end",
+                              "tool":  "FS-ReadFile",
+                              "risk":  1
+                          },
+                          {
+                              "timestamp":  "2026-01-16T02:50:32.7974939Z",
+                              "type":  "start",
+                              "tool":  "FS-ReadFile",
+                              "risk":  1
+                          },
+                          {
+                              "timestamp":  "2026-01-16T02:50:32.8494321Z",
+                              "type":  "end",
+                              "tool":  "FS-ReadFile",
+                              "risk":  1
+                          },
+                          {
+                              "timestamp":  "2026-01-16T02:50:55.3851232Z",
+                              "type":  "start",
+                              "tool":  "FS-ReadFile",
+                              "risk":  1
+                          },
+                          {
+                              "timestamp":  "2026-01-16T02:50:55.4383398Z",
+                              "type":  "end",
+                              "tool":  "FS-ReadFile",
+                              "risk":  1
+                          },
+                          {
+                              "timestamp":  "2026-01-16T02:51:17.3347717Z",
+                              "type":  "start",
+                              "tool":  "FS-ReadFile",
+                              "risk":  1
+                          },
+                          {
+                              "timestamp":  "2026-01-16T02:51:17.3954194Z",
+                              "type":  "end",
+                              "tool":  "FS-ReadFile",
+                              "risk":  1
+                          },
+                          {
+                              "timestamp":  "2026-01-16T02:51:32.8089788Z",
+                              "type":  "start",
+                              "tool":  "FS-ReadFile",
+                              "risk":  1
+                          },
+                          {
+                              "timestamp":  "2026-01-16T02:51:32.8661980Z",
+                              "type":  "end",
+                              "tool":  "FS-ReadFile",
+                              "risk":  1
+                          },
+                          {
+                              "timestamp":  "2026-01-16T02:51:50.2714671Z",
+                              "type":  "start",
+                              "tool":  "FS-ReadFile",
+                              "risk":  1
+                          },
+                          {
+                              "timestamp":  "2026-01-16T02:51:50.3255056Z",
+                              "type":  "end",
+                              "tool":  "FS-ReadFile",
+                              "risk":  1
+                          }
+                      ]
+}

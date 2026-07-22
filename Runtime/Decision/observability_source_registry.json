@@ -1,0 +1,25 @@
+{
+  "version": "1.0",
+  "sources": {
+    "runtime_queue_sampler": {
+      "source_type": "LOCAL_SENSOR",
+      "base_reliability": 0.92,
+      "status": "ACTIVE"
+    },
+    "latency_aggregator": {
+      "source_type": "DERIVED_METRIC",
+      "base_reliability": 0.85,
+      "status": "ACTIVE"
+    },
+    "memory_probe": {
+      "source_type": "LOCAL_SENSOR",
+      "base_reliability": 0.88,
+      "status": "ACTIVE"
+    },
+    "bad_probe": {
+      "source_type": "REMOTE_SENSOR",
+      "base_reliability": 0.8,
+      "status": "QUARANTINED"
+    }
+  }
+}

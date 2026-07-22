@@ -1,0 +1,16 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "entity": "Anthropic",
+    "claim": "Hiring several former Google DeepMind leads for safety team.",
+    "claim_domain": "organizational_claim",
+    "claim_polarity": "affirming",
+    "source_type": "news_article",
+    "source_id": " Tech_News",
+    "confidence": 0.5,
+    "confidence_components": {
+        "base": 0.5,
+        "tension_penalty": 0.0,
+        "reason": "stewardship_inference"
+    },
+    "ts_utc": "2026-05-11T23:11:29.505035+00:00"
+}

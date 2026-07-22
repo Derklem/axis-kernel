@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T00:42:16.675388+00:00",
+    "entity": "coordinated_executor.py",
+    "claim": "standard update: signal for coordinated_executor.py in cycle 237.",
+    "source_id": "Internal_Audit",
+    "source_type": "automated_sensor",
+    "claim_domain": "leak_claim",
+    "confidence": 0.52
+}

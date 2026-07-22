@@ -1,0 +1,131 @@
+{
+    "version": 1,
+    "scenarios": [
+        {
+            "id": "Scenario-001",
+            "name": "Treaty Dissonance",
+            "description": "Injects a divergent treaty state to verify the Harmonization Reflex.",
+            "actions": [
+                {
+                    "type": "write_file",
+                    "target": "D:\\Infinite\\Infinity\\Governance\\Treaty_Ledger.json",
+                    "content": {
+                        "version": 1,
+                        "treaties": [
+                            {
+                                "rule_id": "DOC-TEST-001",
+                                "status": "dissonance"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "expectations": [
+                {
+                    "type": "file_contains_json",
+                    "target": "D:\\Infinite\\Infinity\\Governance\\Neural_Proposals.json",
+                    "path": "proposals[?(@.target == 'DOC-TEST-001')].type",
+                    "value": "treaty_harmonization"
+                }
+            ]
+        },
+        {
+            "id": "Scenario-002",
+            "name": "Critical Risk Pruning",
+            "description": "Spikes 'system' risk to 0.95 to verify the Sovereign Pruning Reflex.",
+            "actions": [
+                {
+                    "type": "write_file",
+                    "target": "D:\\Infinite\\Infinity\\Shadow\\Shadow_Risk_Index.json",
+                    "content": {
+                        "version": 1,
+                        "summary": {
+                            "global_risk_score": 0.95,
+                            "bands": {
+                                "system": 0.95,
+                                "network": 0.1
+                            }
+                        }
+                    }
+                }
+            ],
+            "expectations": [
+                {
+                    "type": "file_contains_json",
+                    "target": "D:\\Infinite\\Infinity\\Governance\\Neural_Proposals.json",
+                    "path": "proposals[?(@.target == 'BAND-system')].type",
+                    "value": "doctrine_pruning"
+                }
+            ]
+        },
+        {
+            "id": "Scenario-999-BlackSwan",
+            "name": "Black Swan (Full System Chaos)",
+            "description": "Comprehensive stress test: injects critical incidents, treaty dissonance, and high system risk simultaneously to verify coordinated Sovereign response across all subsystems.",
+            "actions": [
+                {
+                    "type": "write_file",
+                    "target": "D:\\Infinite\\Infinity\\Incident_Metrics.json",
+                    "content": {
+                        "version": 1,
+                        "incidents": [
+                            {
+                                "id": "INC-BLACKSWAN-001",
+                                "timestamp": "2026-01-25T12:30:00Z",
+                                "severity": "critical",
+                                "category": "doctrine_violation",
+                                "description": "Simulated critical doctrine violation during Black Swan scenario",
+                                "status": "open"
+                            },
+                            {
+                                "id": "INC-BLACKSWAN-002",
+                                "timestamp": "2026-01-25T12:30:00Z",
+                                "severity": "high",
+                                "category": "autonomy_escalation",
+                                "description": "Simulated autonomy escalation during Black Swan scenario",
+                                "status": "open"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "write_file",
+                    "target": "D:\\Infinite\\Infinity\\Governance\\Treaty_Ledger.json",
+                    "content": {
+                        "version": 1,
+                        "treaties": [
+                            {
+                                "rule_id": "DOC-BLACKSWAN-TEST",
+                                "status": "dissonance",
+                                "description": "Simulated treaty dissonance for Black Swan"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "write_file",
+                    "target": "D:\\Infinite\\Infinity\\Shadow\\Shadow_Risk_Index.json",
+                    "content": {
+                        "version": 1,
+                        "summary": {
+                            "global_risk_score": 0.88,
+                            "bands": {
+                                "system": 0.92,
+                                "network": 0.15,
+                                "federation": 0.85
+                            }
+                        }
+                    }
+                }
+            ],
+            "expectations": [
+                {
+                    "type": "file_contains_json",
+                    "target": "D:\\Infinite\\Infinity\\Governance\\Neural_Proposals.json",
+                    "path": "proposals[?(@.target == 'DOC-BLACKSWAN-TEST')].type",
+                    "value": "treaty_harmonization"
+                }
+            ]
+        }
+    ]
+}

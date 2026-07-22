@@ -1,0 +1,4 @@
+{"tool":"Ingest-RawText","origin":"Human","event":"ingestion","timestamp":"2026-01-25T11:35:39.7480455-08:00","status":"queued","request_id":"INPUT-202601251135397092"}
+{"tool":"Test-Connectivity","origin":"AntiGravity","event":"ingestion","timestamp":"2026-01-25T11:35:41.7670805-08:00","status":"queued","request_id":"INPUT-202601251135417588"}
+{"tool":"Ingest-RawText","origin":"AntiGravity","event":"ingestion","timestamp":"2026-01-27T10:02:25.8817464-08:00","status":"processed","request_id":"INPUT-202601271002258629"}
+{"tool":"Ingest-RawText","origin":"Human","event":"ingestion","timestamp":"2026-01-27T10:02:26.0085376-08:00","status":"processed","request_id":"INPUT-202601271002260049"}

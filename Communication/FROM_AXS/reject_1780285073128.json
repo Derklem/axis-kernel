@@ -1,0 +1,5 @@
+{
+  "error": "INVALID_JSON: Unexpected UTF-8 BOM (decode using utf-8-sig): line 1 column 1 (char 0)",
+  "original_file": "chat_20260531_203752_8607.json",
+  "timestamp_utc": "2026-06-01T03:37:53Z"
+}

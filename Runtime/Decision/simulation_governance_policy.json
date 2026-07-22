@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "simulation_classes": {
+    "SIMULATION_PROPOSAL": {
+      "execution_authority": "NONE",
+      "requires_confirmation_from": [
+        "SYSTEM_INSTRUMENT",
+        "CRYPTOGRAPHIC_WITNESS"
+      ],
+      "epistemic_tier": "BELOW_DERIVED_INFERENCE"
+    }
+  },
+  "limits": {
+    "max_simulation_rate_per_minute": 60,
+    "max_active_branch_sets": 5,
+    "max_proposals_forwarded_to_executor": 3
+  },
+  "quarantine_behavior": {
+    "on_divergence_trigger": "SUSPEND_SIMULATION_FORWARDING",
+    "on_evidence_conflict": "DEMOTE_TO_STRATEGIC_SUMMARY"
+  }
+}

@@ -1,0 +1,6 @@
+[SIGIL]
+Name = identity_bleed_net.sigil
+State = Semi-permeable
+Activated = 2025-06-20T22:53:12Z
+Anchor = DriftEcho
+Purpose = Prevent recursive bleed into core thread signatures.

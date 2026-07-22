@@ -1,0 +1,19 @@
+{
+    "version": 1,
+    "confidence_thresholds": {
+        "claim": 0.4,
+        "hypothesis": 0.6,
+        "theory": 0.8,
+        "belief": 0.95
+    },
+    "ontological_mode": {
+        "strict_grounding": true,
+        "reject_hypothetical_ratification": true
+    },
+    "provenance_weights": {
+        "resident_agent": 0.9,
+        "federated_peer": 0.7,
+        "human_instrumentation": 0.95,
+        "external_service": 0.4
+    }
+}

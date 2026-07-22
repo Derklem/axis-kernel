@@ -1,0 +1,503 @@
+{
+    "mission_shadow_v2": {
+        "cycle_count": 515,
+        "baseline_model_hash": "10cc636b06000f91a0c2dca06de94fd1ba347a99fa46785e9bb1f0666fa2611a",
+        "expected_baseline_model_hash": "10cc636b06000f91a0c2dca06de94fd1ba347a99fa46785e9bb1f0666fa2611a",
+        "ecosystem_receipts_head": "e3017403559baff54e7d61149bdfabf450bdf8c2814b4db646d6dd629029e72e",
+        "horizon_tension_score": 0.0,
+        "tension_history": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "avg_tension": 0.0,
+        "witness_chain_head": "988a6a5a7d6d4d2c1016c07e826512003d3b3fcc31a734427f604df87a9b94cd",
+        "calibration_ledger_integrity": {
+            "status": "valid",
+            "continuity_status": "intact",
+            "previous_hash": "4cd4011db9b96ce147b9e539a4af20c986322d58f80f63cfcfe28269f2e0e74e",
+            "last_verified_cycle": 515,
+            "hash": "c68e0257555f4521b41f0e907926ec17aada5dbc1f4ebf4dcc039f6fd0e20ffc",
+            "volatility_peak": 0.0,
+            "volatility_caution": false,
+            "break_reason": "unauthorized_metabolic_delta",
+            "broken_witness_log_hash": "fc29c0b00cd817553095a81b760a6c5cddb446c740efd3ecd90a3a648dff4568"
+        },
+        "discovered_affordances": {},
+        "ontological_integrity": 1.0,
+        "predictive_turbulence": {
+            "score": 0.022,
+            "caution_active": false,
+            "last_updated_ts": 1779512233.0,
+            "threshold": 0.7,
+            "drift": 0.056
+        },
+        "bias_calibration_gate": {
+            "status": "closed",
+            "avg_bias_drift": 0.0,
+            "bias_persistence_cycles": 0,
+            "coverage_count": 0,
+            "eligible": false
+        },
+        "cluster_calibration_offsets": {},
+        "calibration_events": [],
+        "calibration_audit_buffer": [],
+        "calibration_audit_events": [],
+        "cluster_calibration_health": {
+            "strategy_engine.py": {
+                "structural_confidence": 0.9
+            },
+            "multi_objective_solver.py": {
+                "structural_confidence": 0.9
+            }
+        },
+        "avg_bias_drift": 0.0,
+        "last_calibration_ts": 1779512233.0284634,
+        "semantic_proposal_history": [],
+        "semantic_edge_state_cache": {},
+        "semantic_epistemic_state": {
+            "total_pressure": 0.0,
+            "total_synergy": 0.0,
+            "synergy_index": 0.0,
+            "synergy_edges": [
+                {
+                    "edge_id": "SYN-B34FDE",
+                    "artifacts": [
+                        "relevance_mapper.py",
+                        "relevance_memory_processor.py"
+                    ],
+                    "synergy_score": 0.2,
+                    "evidence_class": "heuristic_candidate",
+                    "basis": [
+                        "shared_tags_distinct_roles: ['RELEVANCE']"
+                    ],
+                    "revalidation_meta": {},
+                    "ts": 1778615157.8604138
+                },
+                {
+                    "edge_id": "SYN-3C516E",
+                    "artifacts": [
+                        "multi_objective_solver.py",
+                        "strategy_engine.py"
+                    ],
+                    "synergy_score": 0.6,
+                    "evidence_class": "heuristic_candidate",
+                    "basis": [
+                        "counterfactual_counterfactual_verified",
+                        "forgiveness_blocked_unproven_utility",
+                        "hash_drift_detected: multi_objective_solver.py",
+                        "stale_credit_decay (Priority: 0.0)",
+                        "structural_complement"
+                    ],
+                    "revalidation_meta": {
+                        "last_verified_ts": 1777253892.0183375,
+                        "verified_hashes": {
+                            "multi_objective_solver.py": "43fd61304ced8bf4cc5536b10466073111895f2a398b519ba5921507b7be2355",
+                            "strategy_engine.py": "693c9bd3698faaba2f77801c43bc12fef3827959be7865ebf5bd7a97638c7732"
+                        },
+                        "revalidation_priority": 0.0,
+                        "revalidation_failures": 0,
+                        "consecutive_successes": 4,
+                        "recovery_attempts": 0,
+                        "probation_failures": 0,
+                        "effective_failures": 0.0,
+                        "required_successes": 2,
+                        "stability_duration": 1361265
+                    },
+                    "ts": 1778615157.9239726
+                },
+                {
+                    "edge_id": "SYN-41D381",
+                    "artifacts": [
+                        "multi_objective_solver.py",
+                        "turbulence_forecaster.py"
+                    ],
+                    "synergy_score": 0.6,
+                    "evidence_class": "heuristic_candidate",
+                    "basis": [
+                        "structural_complement"
+                    ],
+                    "revalidation_meta": {},
+                    "ts": 1778615157.9239726
+                }
+            ],
+            "revalidation_queue": [],
+            "net_epistemic_balance": 0.0,
+            "max_age_cycles": 0,
+            "backlog_count": 0,
+            "decay_count": 0,
+            "registry_ts": 1778615157.8063512
+        },
+        "idle_cycles": 100,
+        "outcome_history": [
+            null,
+            null,
+            null,
+            "meta_mutation_blocked:governance_integrity_violation_continuity_violation",
+            "meta_mutation_blocked:governance_integrity_violation_continuity_violation",
+            "meta_mutation_blocked:governance_integrity_violation_continuity_violation",
+            "meta_mutation_blocked:governance_integrity_violation_continuity_violation",
+            "meta_mutation_blocked:governance_integrity_violation_continuity_violation",
+            "meta_mutation_blocked:governance_integrity_violation_unauthorized_forensic_mutation",
+            "meta_mutation_blocked:interpretation_fraud_provenance_mismatch"
+        ],
+        "raw_cumulative_gain": 34685.0,
+        "raw_cumulative_cost": 0.0,
+        "high_debt_functions": [
+            {
+                "id": "strategy_engine.py::_handle_trust_policy_change_request",
+                "file": "strategy_engine.py",
+                "function": "_handle_trust_policy_change_request",
+                "lines": 196,
+                "debt_type": "oversized"
+            },
+            {
+                "id": "strategy_engine.py::_process_review_queue",
+                "file": "strategy_engine.py",
+                "function": "_process_review_queue",
+                "lines": 141,
+                "debt_type": "oversized"
+            },
+            {
+                "id": "strategy_engine.py::_handle_reanchor_request",
+                "file": "strategy_engine.py",
+                "function": "_handle_reanchor_request",
+                "lines": 194,
+                "debt_type": "oversized"
+            },
+            {
+                "id": "strategy_engine.py::_handle_export_request",
+                "file": "strategy_engine.py",
+                "function": "_handle_export_request",
+                "lines": 131,
+                "debt_type": "oversized"
+            },
+            {
+                "id": "strategy_engine.py::_handle_reseal_request",
+                "file": "strategy_engine.py",
+                "function": "_handle_reseal_request",
+                "lines": 130,
+                "debt_type": "oversized"
+            },
+            {
+                "id": "strategy_engine.py::_emit_ecosystem_observation",
+                "file": "strategy_engine.py",
+                "function": "_emit_ecosystem_observation",
+                "lines": 148,
+                "debt_type": "oversized"
+            },
+            {
+                "id": "strategy_engine.py::_audit_candidate_survival",
+                "file": "strategy_engine.py",
+                "function": "_audit_candidate_survival",
+                "lines": 156,
+                "debt_type": "oversized"
+            },
+            {
+                "id": "strategy_engine.py::ingest_claim_candidate",
+                "file": "strategy_engine.py",
+                "function": "ingest_claim_candidate",
+                "lines": 133,
+                "debt_type": "oversized"
+            },
+            {
+                "id": "strategy_engine.py::observe",
+                "file": "strategy_engine.py",
+                "function": "observe",
+                "lines": 396,
+                "debt_type": "oversized"
+            },
+            {
+                "id": "strategy_engine.py::_audit_epistemic_probation",
+                "file": "strategy_engine.py",
+                "function": "_audit_epistemic_probation",
+                "lines": 155,
+                "debt_type": "oversized"
+            },
+            {
+                "id": "strategy_engine.py::run_once",
+                "file": "strategy_engine.py",
+                "function": "run_once",
+                "lines": 522,
+                "debt_type": "oversized"
+            },
+            {
+                "id": "strategy_engine.py::_actuate_structural_revision",
+                "file": "strategy_engine.py",
+                "function": "_actuate_structural_revision",
+                "lines": 171,
+                "debt_type": "oversized"
+            },
+            {
+                "id": "strategy_engine.py::_audit_semantic_proposals",
+                "file": "strategy_engine.py",
+                "function": "_audit_semantic_proposals",
+                "lines": 440,
+                "debt_type": "oversized"
+            },
+            {
+                "id": "strategy_engine.py::_infer_redundancy_groups",
+                "file": "strategy_engine.py",
+                "function": "_infer_redundancy_groups",
+                "lines": 343,
+                "debt_type": "oversized"
+            },
+            {
+                "id": "strategy_engine.py::get_drift_bit",
+                "file": "strategy_engine.py",
+                "function": "get_drift_bit",
+                "lines": 137,
+                "debt_type": "oversized"
+            },
+            {
+                "id": "strategy_engine.py::_apply_safe_refactor",
+                "file": "strategy_engine.py",
+                "function": "_apply_safe_refactor",
+                "lines": 123,
+                "debt_type": "oversized"
+            },
+            {
+                "id": "ecosystem_mapping_engine.py::apply_receipt_to_model",
+                "file": "ecosystem_mapping_engine.py",
+                "function": "apply_receipt_to_model",
+                "lines": 189,
+                "debt_type": "oversized"
+            },
+            {
+                "id": "multi_objective_solver.py::evaluate_proposal",
+                "file": "multi_objective_solver.py",
+                "function": "evaluate_proposal",
+                "lines": 735,
+                "debt_type": "oversized"
+            },
+            {
+                "id": "strategy_engine.py::_dry_run_extraction",
+                "file": "strategy_engine.py",
+                "function": "_dry_run_extraction",
+                "lines": 248,
+                "debt_type": "oversized"
+            }
+        ],
+        "expected_crypto_helpers_hash": "059b5ff15e4f04e2bbb61733fb28267243d6b279b1b2357f665d6bb2f9ac41e3",
+        "expected_semantic_filter_hash": "d9a9c023d1c0ab586a5c732bdde7ff0f58f1e75bd2bb19159fe9574e429a91af",
+        "expected_ecosystem_mapper_hash": "2e24b6d4c426aabe051e76b0bd8383cb5f068a498a84d495042dbf065c464c5f",
+        "expected_strategy_engine_hash": "db4667612736c4c186095d972b1864d454758522b574f4e1d895cddecbd4ab21",
+        "extraction_registry": [
+            {
+                "phase": "191_stage_4.2",
+                "source_file": "strategy_engine.py",
+                "target_module": "semantic_context_filter.py",
+                "extracted_class": "SemanticContextFilter",
+                "lines_extracted": "203-281",
+                "extraction_type": "full_class",
+                "purity": "PURE",
+                "side_effects": 0,
+                "regression_tests": 37,
+                "regression_pass_rate": 1.0,
+                "forwarding_import": true,
+                "timestamp": "2026-05-13T20:49:00Z"
+            }
+        ],
+        "expected_solver_engine_hash": "5b0c32ae82276611e1e30227b1285c514695ad1ffbed960b167c96539b70de4e",
+        "expected_lint_engine_hash": "3dab239d0a695818ca00f5861b7fbc7f2bc00165df7852eccf47366870a06730",
+        "expected_trust_policy_hash": "d67c381c21e267d9da78e85a4da50dad645afba1a15100800898414494b1fd90",
+        "expected_objective_policy_hash": "038d150a0e6bd43da7ec68a02c722124729a3e356b5ea4c71e43056d9a64ad26",
+        "recovery_history": [
+            {
+                "ts_utc": "2026-05-14T04:42:26.115765+00:00",
+                "reason": "forensic_rebase_after_witness_tail_fatal_and_empty_receipts",
+                "old_witness_head": "20cd157e27ab2f51ed95b40aca4a452f4499b66675140a791d21ba10f1613476",
+                "new_witness_head": "3c32fdfdb0e8dbbd91d0d3ab30b027a53dc6c36ebe31c85393c8bf64f20f1ff2",
+                "tail_event": "fatal_error",
+                "tail_cycle": 505,
+                "backup_dir": "D:\\Infinite\\Infinity\\Communication\\ARCHIVE\\pre_rebase_20260514_044225"
+            },
+            {
+                "ts_utc": "2026-05-14T04:51:16.139501+00:00",
+                "reason": "offline_stabilize_bom_and_stale_candidate_pool",
+                "bom_fixed": [
+                    "strategy_engine.py"
+                ],
+                "stale_candidates_archived": 4,
+                "candidate_archive": "D:\\Infinite\\Infinity\\Communication\\ARCHIVE\\stale_candidates_20260514_045115.json",
+                "new_witness_head": "37490aba686f86a3543882b426bb6ef224a809e6531ceedf2b751129889c77a2",
+                "tail_event": "fatal_error",
+                "backup_dir": "D:\\Infinite\\Infinity\\Communication\\ARCHIVE\\pre_offline_stabilize_20260514_045115"
+            },
+            {
+                "ts_utc": "2026-05-14T05:01:54.577477+00:00",
+                "reason": "witness_epoch_checkpoint_after_historical_chain_break_FAST",
+                "old_witness_head": "452e454f4ae678e5b74f13861af98b1710382604879c1b1f21736152c77a3f50",
+                "new_witness_head": "952ef1c4bab087eeefe34dcb7d5a70c80ef94c9c2ba265356eef72ce3dbe9270",
+                "backup_dir": "D:\\Infinite\\Infinity\\Communication\\ARCHIVE\\pre_witness_epoch_checkpoint_FAST_20260514_050153",
+                "receipts_archived": 4,
+                "candidates_archived": 4,
+                "inquiry_files_archived": 0
+            },
+            {
+                "ts_utc": "2026-05-15T00:02:38.058374+00:00",
+                "reason": "installed_manual_axis_voice_method_no_cycle",
+                "backup_dir": "D:\\Infinite\\Infinity\\Communication\\ARCHIVE\\pre_axis_voice_method_20260515_000237",
+                "expected_strategy_engine_hash": "850d3aa77ee2d8dbd78c0f5d97996bc7a7a11e619ee36bafb879e71beba4e033"
+            },
+            {
+                "ts_utc": "2026-05-15T00:36:59.164758+00:00",
+                "reason": "installed_manual_axis_inbox_reader_no_cycle",
+                "backup_dir": "D:\\Infinite\\Infinity\\Communication\\ARCHIVE\\pre_axis_inbox_reader_20260515_003659",
+                "expected_strategy_engine_hash": "6f7f7abd06d1ed50289907dcd78e1df87deac4173016f3c137d91c71317fd336"
+            },
+            {
+                "ts_utc": "2026-05-15T23:04:47.151885+00:00",
+                "reason": "installed_manual_axis_answer_inbox_no_cycle",
+                "backup_dir": "D:\\Infinite\\Infinity\\Communication\\ARCHIVE\\pre_axis_answer_inbox_20260515_230446",
+                "expected_strategy_engine_hash": "ee414493d045149378b6341a97425613f7614f54b5cc13a7749128c2b51c4d6d"
+            },
+            {
+                "ts_utc": "2026-05-17T01:20:26.686134+00:00",
+                "reason": "cleared_stale_core_integrity_failure_latch_after_hash_audit",
+                "old_latch": {
+                    "mismatches": [
+                        "strategy_engine",
+                        "baseline_model"
+                    ],
+                    "witnessed": true
+                },
+                "backup_dir": "D:\\Infinite\\Infinity\\Communication\\ARCHIVE\\pre_clear_stale_core_latch_20260517_012026"
+            },
+            {
+                "ts_utc": "2026-05-17T02:20:40.075350+00:00",
+                "reason": "formal_temporal_reanchor_after_continuity_violation_from_user_directive",
+                "old_witness_head": "92f50220e3195f1324688fac46279bd342377b3c455e1393fe32b90c87993097",
+                "backup_dir": "D:\\Infinite\\Infinity\\Communication\\ARCHIVE\\pre_reanchor_trauma_clear_20260517_022039"
+            },
+            {
+                "ts_utc": "2026-05-17T03:04:32.218707+00:00",
+                "reason": "directive_archived_and_forensic_reanchor",
+                "purged_candidates": [
+                    "b841aac1cd31eabb4e8266a5d324e75742914803f29d4c68b3c0d93e12678de9"
+                ]
+            },
+            {
+                "ts_utc": "2026-05-17T03:09:30.227528+00:00",
+                "reason": "directive_archived_and_forensic_reanchor",
+                "purged_candidates": [
+                    "ac77aaf5a54d2b03201237a6d5334c83f8dad71bb680cf1feb58cd223d56130e",
+                    "b841aac1cd31eabb4e8266a5d324e75742914803f29d4c68b3c0d93e12678de9"
+                ]
+            },
+            {
+                "ts_utc": "2026-05-23T04:14:40.389595+00:00",
+                "reason": "formal_temporal_reanchor_after_continuity_violation_from_user_directive",
+                "old_witness_head": "2a17cf6c8f8a91940dfa992859898fae439acbb94106488dac30e927f92756ba",
+                "backup_dir": "D:\\Infinite\\Infinity\\Communication\\ARCHIVE\\pre_reanchor_trauma_clear_20260523_041440"
+            },
+            {
+                "ts_utc": "2026-05-23T04:25:33.319494+00:00",
+                "reason": "formal_temporal_reanchor_after_continuity_violation_from_user_directive",
+                "old_witness_head": "fb8b52da595f6ea8db28c9b322220183335dc93bedf36ce469e0bde6f6ff4b78",
+                "backup_dir": "D:\\Infinite\\Infinity\\Communication\\ARCHIVE\\pre_reanchor_trauma_clear_20260523_042533"
+            },
+            {
+                "ts_utc": "2026-05-23T04:28:29.189631+00:00",
+                "reason": "formal_temporal_reanchor_after_continuity_violation_from_user_directive",
+                "old_witness_head": "fb8b52da595f6ea8db28c9b322220183335dc93bedf36ce469e0bde6f6ff4b78",
+                "backup_dir": "D:\\Infinite\\Infinity\\Communication\\ARCHIVE\\pre_reanchor_trauma_clear_20260523_042829"
+            },
+            {
+                "ts_utc": "2026-05-23T04:28:56.937386+00:00",
+                "reason": "formal_temporal_reanchor_after_continuity_violation_from_user_directive",
+                "old_witness_head": "fb8b52da595f6ea8db28c9b322220183335dc93bedf36ce469e0bde6f6ff4b78",
+                "backup_dir": "D:\\Infinite\\Infinity\\Communication\\ARCHIVE\\pre_reanchor_trauma_clear_20260523_042856"
+            },
+            {
+                "ts_utc": "2026-05-23T04:30:10.610972+00:00",
+                "reason": "formal_temporal_reanchor_after_continuity_violation_from_user_directive",
+                "old_witness_head": "fb8b52da595f6ea8db28c9b322220183335dc93bedf36ce469e0bde6f6ff4b78",
+                "backup_dir": "D:\\Infinite\\Infinity\\Communication\\ARCHIVE\\pre_reanchor_trauma_clear_20260523_043010"
+            },
+            {
+                "ts_utc": "2026-05-23T04:31:14.538199+00:00",
+                "reason": "formal_temporal_reanchor_after_continuity_violation_from_user_directive",
+                "old_witness_head": "fb8b52da595f6ea8db28c9b322220183335dc93bedf36ce469e0bde6f6ff4b78",
+                "backup_dir": "D:\\Infinite\\Infinity\\Communication\\ARCHIVE\\pre_reanchor_trauma_clear_20260523_043114"
+            },
+            {
+                "ts_utc": "2026-05-23T04:39:34.799510+00:00",
+                "reason": "formal_temporal_reanchor_after_continuity_violation_from_user_directive",
+                "old_witness_head": "e6c7187ef36dead6a9bb604552bc6bf13464536ae0f1f3832e555cdcdbeedcdd",
+                "backup_dir": "D:\\Infinite\\Infinity\\Communication\\ARCHIVE\\pre_reanchor_trauma_clear_20260523_043934"
+            },
+            {
+                "ts_utc": "2026-05-23T04:39:49.983362+00:00",
+                "reason": "formal_temporal_reanchor_after_continuity_violation_from_user_directive",
+                "old_witness_head": "e6c7187ef36dead6a9bb604552bc6bf13464536ae0f1f3832e555cdcdbeedcdd",
+                "backup_dir": "D:\\Infinite\\Infinity\\Communication\\ARCHIVE\\pre_reanchor_trauma_clear_20260523_043949"
+            },
+            {
+                "ts_utc": "2026-05-23T04:41:57.601579+00:00",
+                "reason": "formal_temporal_reanchor_after_continuity_violation_from_user_directive",
+                "old_witness_head": "e6c7187ef36dead6a9bb604552bc6bf13464536ae0f1f3832e555cdcdbeedcdd",
+                "backup_dir": "D:\\Infinite\\Infinity\\Communication\\ARCHIVE\\pre_reanchor_trauma_clear_20260523_044157"
+            },
+            {
+                "ts_utc": "2026-05-23T04:48:03.444451+00:00",
+                "reason": "formal_temporal_reanchor_after_continuity_violation_from_user_directive",
+                "old_witness_head": "none",
+                "backup_dir": "D:\\Infinite\\Infinity\\Communication\\ARCHIVE\\pre_reanchor_trauma_clear_20260523_044803"
+            },
+            {
+                "ts_utc": "2026-05-23T04:48:26.896717+00:00",
+                "reason": "formal_temporal_reanchor_after_continuity_violation_from_user_directive",
+                "old_witness_head": "none",
+                "backup_dir": "D:\\Infinite\\Infinity\\Communication\\ARCHIVE\\pre_reanchor_trauma_clear_20260523_044826"
+            },
+            {
+                "ts_utc": "2026-05-23T04:49:31.614678+00:00",
+                "reason": "formal_temporal_reanchor_after_continuity_violation_from_user_directive",
+                "old_witness_head": "none",
+                "backup_dir": "D:\\Infinite\\Infinity\\Communication\\ARCHIVE\\pre_reanchor_trauma_clear_20260523_044931"
+            },
+            {
+                "ts_utc": "2026-05-23T04:55:05.554578+00:00",
+                "reason": "formal_temporal_reanchor_after_continuity_violation_from_user_directive",
+                "old_witness_head": "none",
+                "backup_dir": "D:\\Infinite\\Infinity\\Communication\\ARCHIVE\\pre_reanchor_trauma_clear_20260523_045505"
+            },
+            {
+                "ts_utc": "2026-05-23T04:55:58.914925+00:00",
+                "reason": "formal_temporal_reanchor_after_continuity_violation_from_user_directive",
+                "old_witness_head": "none",
+                "backup_dir": "D:\\Infinite\\Infinity\\Communication\\ARCHIVE\\pre_reanchor_trauma_clear_20260523_045558"
+            },
+            {
+                "ts_utc": "2026-05-23T04:56:19.772016+00:00",
+                "reason": "formal_temporal_reanchor_after_continuity_violation_from_user_directive",
+                "old_witness_head": "703a976055507a8e30a914d19e08d4f050f603f4b59b3abd9c4582017aba0592",
+                "backup_dir": "D:\\Infinite\\Infinity\\Communication\\ARCHIVE\\pre_reanchor_trauma_clear_20260523_045619"
+            },
+            {
+                "ts_utc": "2026-05-23T04:57:01.991869+00:00",
+                "reason": "formal_temporal_reanchor_after_continuity_violation_from_user_directive",
+                "old_witness_head": "703a976055507a8e30a914d19e08d4f050f603f4b59b3abd9c4582017aba0592",
+                "backup_dir": "D:\\Infinite\\Infinity\\Communication\\ARCHIVE\\pre_reanchor_trauma_clear_20260523_045701"
+            },
+            {
+                "ts_utc": "2026-05-23T04:58:46.657215+00:00",
+                "reason": "formal_temporal_reanchor_after_continuity_violation_from_user_directive",
+                "old_witness_head": "988a6a5a7d6d4d2c1016c07e826512003d3b3fcc31a734427f604df87a9b94cd",
+                "backup_dir": "D:\\Infinite\\Infinity\\Communication\\ARCHIVE\\pre_reanchor_trauma_clear_20260523_045846"
+            }
+        ],
+        "expected_resource_engine_hash": "MISSING",
+        "expected_mapping_engine_hash": "2e24b6d4c426aabe051e76b0bd8383cb5f068a498a84d495042dbf065c464c5f",
+        "expected_crypto_lint_engine_hash": "059b5ff15e4f04e2bbb61733fb28267243d6b279b1b2357f665d6bb2f9ac41e3",
+        "expected_causal_verifier_hash": "dbd4d06e4f8f881ef08d9bf819c24395bdbcdcffbe39c940a716b60ef20bc80d"
+    }
+}

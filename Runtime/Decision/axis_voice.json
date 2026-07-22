@@ -1,0 +1,15 @@
+{
+  "timestamp_utc": "2026-06-02T21:02:17.253024+00:00",
+  "speaker": "AXIS_DAEMON",
+  "message_type": "alert",
+  "priority": "high",
+  "epoch": 569,
+  "last_updated_cycle": 569,
+  "message": "DAEMON HALT: Post-cycle integrity failure (status=unauthorized_forensic_mutation, continuity=broken)",
+  "evidence": [
+    "cycle=569",
+    "integrity=unauthorized_forensic_mutation",
+    "continuity=broken"
+  ],
+  "requires_response": true
+}

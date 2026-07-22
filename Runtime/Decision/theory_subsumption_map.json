@@ -1,0 +1,29 @@
+{
+  "version": "1.0",
+  "subsumptions": [
+    {
+      "subsumed_theory": "THEORY_QUEUE_SATURATION",
+      "subsumed_into": "META_THEORY_RESOURCE_CONTENTION_DYNAMICS",
+      "subsumption_type": "PARTIAL_EXPLANATORY_SUBSUMPTION",
+      "preserve_as_local_model": true
+    },
+    {
+      "subsumed_theory": "ALT_THEORY_MEMORY_FRAGMENTATION",
+      "subsumed_into": "META_THEORY_RESOURCE_CONTENTION_DYNAMICS",
+      "subsumption_type": "PARTIAL_EXPLANATORY_SUBSUMPTION",
+      "preserve_as_local_model": true
+    },
+    {
+      "subsumed_theory": "THEORY_DB_DEADLOCK_B",
+      "subsumed_into": "THEORY_DB_DEADLOCK_A",
+      "subsumption_type": "DUPLICATE_COLLAPSE",
+      "preserve_as_local_model": false
+    },
+    {
+      "meta_theory_id": "META_THEORY_RESOURCE_CONTENTION_DYNAMICS",
+      "subsumption_type": "META_THEORY_CONSTRUCTED",
+      "subsumed_theory": "THEORY_QUEUE_SATURATION"
+    }
+  ],
+  "last_updated": "2026-03-15T16:57:21.333660Z"
+}

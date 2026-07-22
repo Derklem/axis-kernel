@@ -1,0 +1,11 @@
+{
+  "conflicts": [
+    {
+      "pair": [
+        "semantic_freshness_limit",
+        "retry_interval"
+      ],
+      "risk_type": "latency"
+    }
+  ]
+}

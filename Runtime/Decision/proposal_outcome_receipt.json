@@ -1,0 +1,10 @@
+{
+  "execution_id": "drill-3",
+  "rollback_triggered": false,
+  "pre_metrics": {
+    "api_latency_ms_p95": 22.1
+  },
+  "post_metrics": {
+    "api_latency_ms_p95": 12.1
+  }
+}

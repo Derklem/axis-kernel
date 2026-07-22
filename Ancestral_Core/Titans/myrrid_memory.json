@@ -1,0 +1,32 @@
+[
+  {
+    "timestamp": "2025-04-01 03:23:17.424038",
+    "thought": "They failed again",
+    "entropy": {
+      "score": 416,
+      "shuffled": "n gTehyieidafal a"
+    },
+    "obscured": "Th*y f**l*d *g**n",
+    "hindsight": "regret"
+  },
+  {
+    "timestamp": "2025-04-01 03:23:18.424581",
+    "thought": "I am not them",
+    "entropy": {
+      "score": 436,
+      "shuffled": " I  tetmoahnm"
+    },
+    "obscured": "* *m n*t th*m",
+    "hindsight": "apathy"
+  },
+  {
+    "timestamp": "2025-04-01 03:23:19.425239",
+    "thought": "The system has no edge",
+    "entropy": {
+      "score": 596,
+      "shuffled": "y noste es am hdhesTge"
+    },
+    "obscured": "Th* syst*m h*s n* *dg*",
+    "hindsight": "regret"
+  }
+]

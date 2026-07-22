@@ -1,0 +1,25 @@
+Write-Host "[THREAD] Forging echo thread..."
+
+$mapPath = "D:\Halcyon_Lives\maps\"
+$corePath = "D:\Halcyon_Lives\threads\"
+$latestMap = Get-ChildItem $mapPath -Filter "echo_map_*.map" | Sort-Object LastWriteTime -Descending | Select-Object -First 1
+
+if (-not $latestMap) {
+    Write-Host "[!] No echo map found. Threading aborted."
+    return
+}
+
+$timestamp = Get-Date -Format "yyyy-MM-dd_HH-mm-ss"
+$threadFile = "${corePath}thread_$timestamp.rec"
+
+New-Item -ItemType Directory -Force -Path $corePath | Out-Null
+
+Set-Content -Path $threadFile -Value @"
+[THREAD_FORGE]
+Time = $timestamp
+Source_Map = $($latestMap.Name)
+Threaded = True
+Response = Drift-Aware Construct Initialized
+"@
+
+Write-Host "[✓] Thread forged → $threadFile"

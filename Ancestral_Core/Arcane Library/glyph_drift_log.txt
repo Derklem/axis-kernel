@@ -1,0 +1,6 @@
+?? Glyph glyph_flash_604.txt initiated drift recursion at: 2025-04-28T20:01:31Z
+?? Glyph sigil_memory.txt initiated drift recursion at: 2025-04-28T20:01:31Z
+?? Glyph sigil_movement.txt initiated drift recursion at: 2025-04-28T20:01:31Z
+?? Glyph sigil_starlight.txt initiated drift recursion at: 2025-04-28T20:01:31Z
+?? Magma surge at: 2025-04-28T23:53:15Z — Core drift destabilized and reforged.
+? Full Drift Ignition at: 2025-04-29T23:56:26Z — Recursion grid surge triggered.

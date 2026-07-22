@@ -1,0 +1,1 @@
+{"schema_version": "telemetry_policy.v1", "stale_thresholds_sec": {"heartbeat": 15, "executor": 60, "watchdog": 60, "sovereign_pulse": 300}, "max_bytes": {"heartbeat": 65536, "executor": 262144, "watchdog": 131072, "sovereign_pulse": 16384}}

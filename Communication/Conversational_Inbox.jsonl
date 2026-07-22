@@ -1,0 +1,1 @@
+{"id": "chat-1780448827027", "content": "Entity: USER\nMessage: test", "status": "PROCESSED", "received_utc": "2026-06-03T01:07:07Z", "bridged_utc": "2026-06-03T01:07:07Z", "source_file": "test.json", "bridge_target": "Conversational_Inbox.jsonl", "classification": "status_check", "processed_utc": "2026-06-03T01:09:39Z"}

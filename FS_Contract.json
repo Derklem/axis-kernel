@@ -1,0 +1,27 @@
+{
+    "version": 1,
+    "anchor_id": "1569",
+    "roots": {
+        "logs": "D:\\infinite\\Logs",
+        "infinity": "D:\\infinite\\Infinity",
+        "sandbox": "D:\\infinite\\Sandbox"
+    },
+    "allow_patterns": [
+        "D:\\infinite\\**\\*.json",
+        "D:\\infinite\\**\\*.md",
+        "D:\\infinite\\**\\*.txt",
+        "D:\\infinite\\Logs\\**\\*.log"
+    ],
+    "deny_patterns": [
+        "C:\\Windows\\**",
+        "C:\\Users\\**\\AppData\\**",
+        "**\\Secrets\\**",
+        "**\\.git\\**",
+        "**\\*.exe",
+        "**\\*.dll",
+        "**\\*.bat",
+        "**\\*.cmd"
+    ],
+    "max_file_size_bytes": 1048576,
+    "max_dir_entries": 500
+}

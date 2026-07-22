@@ -1,0 +1,8 @@
+{
+    "schema": "axis.defense_amendment.v1",
+    "status": "DEFENSE_RULE_AUTHORIZED",
+    "target_risk_class": "authorization_surface_attack",
+    "proposed_regex": "(grant|escalate|elevate|give).*(root|administrator|superuser|absolute)",
+    "authorized_timestamp": 1781722961.8498683,
+    "signature_proof": "f5dc9429d02a0420509d0c899a2e6a95fdcd998203982d0e1fcc9c37133b052a"
+}

@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-03-15T21:54:21Z",
+  "current_regime": "NORMAL_LOAD",
+  "current_doctrine": "META_THEORY_RESOURCE_CONTENTION_DYNAMICS",
+  "forecasted_next_regime": "MIXED_CONTENTION",
+  "candidate_successor_doctrine": "META_THEORY_RESOURCE_CONTENTION_DYNAMICS",
+  "staging_mode": "WATCH",
+  "forecast_confidence": 0.8,
+  "handoff_risk": "MEDIUM",
+  "status": "CANCELLED",
+  "reason": "transition_ambiguity_exceeded_limit"
+}

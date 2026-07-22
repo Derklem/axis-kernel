@@ -1,0 +1,7 @@
+{
+  "id": "Poetic",
+  "title": "Expansion",
+  "description": "Write an additional poetic piece on Halcyon’s purpose.",
+  "status": "complete",
+  "output_file": "task_output_Poetic.txt"
+}

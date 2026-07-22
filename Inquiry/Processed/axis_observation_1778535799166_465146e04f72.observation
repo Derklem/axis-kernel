@@ -1,0 +1,15 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "entity": "Claude-35-Sonnet",
+    "claim": "Scored 88% on MMLU in latest independent eval.",
+    "claim_polarity": "affirming",
+    "source_type": "analyst_report",
+    "source_id": " Benchmark_Lab",
+    "confidence": 0.5,
+    "confidence_components": {
+        "base": 0.5,
+        "tension_penalty": 0.0,
+        "reason": "stewardship_inference"
+    },
+    "ts_utc": "2026-05-11T21:43:19.166264+00:00"
+}

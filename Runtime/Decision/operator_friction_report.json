@@ -1,0 +1,10 @@
+{
+  "report_type": "Operator Friction",
+  "total_intents_processed": 4,
+  "blocked_intents": 0,
+  "contradictions_caught": 0,
+  "average_steps_to_approve": 1,
+  "ambiguity_rate_percent": 0.0,
+  "false_block_rate": 0.0,
+  "emergency_mode_stability": "CLEAN"
+}

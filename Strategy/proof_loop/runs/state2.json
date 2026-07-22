@@ -1,0 +1,8 @@
+{
+  "state_schema_version": "1.1.0",
+  "confidence": 95,
+  "evidence_count": 50,
+  "applied_observation_ids": [
+    "OBS_b535c207538a87aa652409088f84f5cd"
+  ]
+}

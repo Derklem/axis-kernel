@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "authority": "epistemic_governance_charter.md",
+  "lanes": {
+    "conversational": {
+      "mutation_allowed": false,
+      "attestation_required": false,
+      "continuous_runtime_allowed": true
+    },
+    "witnessed": {
+      "mutation_allowed": true,
+      "attestation_required": true,
+      "continuous_runtime_allowed": false
+    }
+  },
+  "classifications": {
+    "status_check": "conversational",
+    "telemetry_request": "conversational",
+    "historical_query": "conversational",
+    "casual_dialogue": "conversational",
+    "architectural_hypothesis": "witnessed",
+    "external_model_critique": "witnessed",
+    "strategic_directive": "witnessed",
+    "operational_doctrine": "witnessed",
+    "novel_claim": "witnessed"
+  }
+}

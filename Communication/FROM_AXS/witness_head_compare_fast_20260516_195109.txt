@@ -1,0 +1,27 @@
+=== FAST WITNESS HEAD COMPARISON ===
+Timestamp: 2026-05-16T19:51:09.396029
+Ledger cycle: 506
+Anchor cycle: 506
+Ledger head: 92f50220e3195f1324688fac46279bd342377b3c455e1393fe32b90c87993097
+Anchor head: 92f50220e3195f1324688fac46279bd342377b3c455e1393fe32b90c87993097
+Witness ledger lines: 23
+
+Last witness hash: 92f50220e3195f1324688fac46279bd342377b3c455e1393fe32b90c87993097
+Last event type: cycle_verdict
+Last cycle: 506
+
+Ledger head found count: 1
+Anchor head found count: 1
+
+--- Last 8 witness records ---
+cycle=506 event=calibration_consensus prev=cf7c055ddc75ad0b hash=03e778d2d1b4b777
+cycle=506 event=trust_state_violation prev=03e778d2d1b4b777 hash=406ad6da98702347
+cycle=506 event=trust_state_violation prev=406ad6da98702347 hash=fa223569a278dad2
+cycle=506 event=trust_state_violation prev=fa223569a278dad2 hash=b169bfcc6e222b96
+cycle=506 event=semantic_registry_audit prev=b169bfcc6e222b96 hash=b836e767825437cf
+cycle=506 event=solver_arbitration prev=b836e767825437cf hash=a0839f2ce02fc707
+cycle=506 event=calibration_update:ontological_health prev=a0839f2ce02fc707 hash=b61c9711e65931b0
+cycle=506 event=cycle_verdict prev=b61c9711e65931b0 hash=92f50220e3195f13
+
+--- Recommendation ---
+SUCCESS: Ledger, anchor, and witness tail are synchronized. No repair needed.

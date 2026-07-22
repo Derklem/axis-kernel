@@ -1,0 +1,33 @@
+﻿{
+    "host":  "DESKTOP-MHQRMOO",
+    "home_assistant":  [
+
+                       ],
+    "timestamp":  "2026-01-16T19:10:57Z",
+    "network":  {
+                    "subnet":  24,
+                    "ip":  "192.168.1.2",
+                    "interface":  "Ethernet"
+                },
+    "iot_candidates":  [
+                           {
+                               "IPAddress":  "192.168.1.11",
+                               "LinkLayerAddress":  "BC-C7-46-C4-3E-DE"
+                           },
+                           {
+                               "IPAddress":  "192.168.1.7",
+                               "LinkLayerAddress":  "E4-F0-42-7B-DD-52"
+                           },
+                           {
+                               "IPAddress":  "192.168.1.6",
+                               "LinkLayerAddress":  "D8-6C-63-40-25-23"
+                           },
+                           {
+                               "IPAddress":  "192.168.1.1",
+                               "LinkLayerAddress":  "80-CC-9C-39-91-31"
+                           }
+                       ],
+    "hue":  [
+
+            ]
+}

@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T00:25:44.824387+00:00",
+    "entity": "Anthropic",
+    "claim": "replacement: signal for Anthropic in cycle 78.",
+    "source_id": "Internal_Audit",
+    "source_type": "automated_sensor",
+    "claim_domain": "rumor_claim",
+    "confidence": 0.9
+}

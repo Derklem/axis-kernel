@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T00:41:12.638152+00:00",
+    "entity": "Claude-35-Sonnet",
+    "claim": "successor: signal for Claude-35-Sonnet in cycle 220.",
+    "source_id": "Safety_Watchdog",
+    "source_type": "automated_sensor",
+    "claim_domain": "safety_claim",
+    "confidence": 0.9
+}

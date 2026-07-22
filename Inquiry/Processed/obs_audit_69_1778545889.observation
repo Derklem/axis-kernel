@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T00:31:29.015055+00:00",
+    "entity": "Mistral",
+    "claim": "derivative: signal for Mistral in cycle 69.",
+    "source_id": "Safety_Watchdog",
+    "source_type": "automated_sensor",
+    "claim_domain": "rumor_claim",
+    "confidence": 0.9
+}

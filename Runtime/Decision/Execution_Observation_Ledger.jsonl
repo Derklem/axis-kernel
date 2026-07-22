@@ -1,0 +1,2 @@
+{"timestamp": "2026-03-13T18:10:21.731736", "event_type": "HEARTBEAT_STALE", "domain": "semantic", "severity": "warn", "attestation_hash": "00000000"}
+{"timestamp": "2026-03-13T18:10:36.914238", "event_type": "HEARTBEAT_STALE", "domain": "semantic", "severity": "warn", "attestation_hash": "00000000"}

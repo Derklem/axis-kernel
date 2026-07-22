@@ -1,0 +1,78 @@
+{
+    "version": 1,
+    "profile_id": "SHADOW-BIAS-2026-001",
+    "global_modes": {
+        "normal": {
+            "global_threshold": 0.3,
+            "description": "Baseline – run everything as usual."
+        },
+        "watch": {
+            "global_threshold": 0.6,
+            "description": "Increased attention – prioritize diagnostics, slow down non-essential work."
+        },
+        "elevated": {
+            "global_threshold": 0.8,
+            "description": "High alert – run defensive/observation strategies first, defer background tasks."
+        },
+        "critical": {
+            "global_threshold": 0.95,
+            "description": "Critical – only essential health/security strategies should run."
+        }
+    },
+    "band_bias": {
+        "system": {
+            "normal": {
+                "prefer_categories": [
+                    "maintenance"
+                ],
+                "deprioritize_categories": [],
+                "notes": "Keep hygiene."
+            },
+            "elevated": {
+                "prefer_categories": [
+                    "security",
+                    "diagnostics"
+                ],
+                "deprioritize_categories": [
+                    "simulation"
+                ],
+                "notes": "Focus on integrity."
+            }
+        },
+        "network": {
+            "normal": {
+                "prefer_categories": [],
+                "deprioritize_categories": [],
+                "notes": ""
+            },
+            "elevated": {
+                "prefer_categories": [
+                    "security",
+                    "neural"
+                ],
+                "deprioritize_categories": [
+                    "nonessential"
+                ],
+                "notes": "Network anomalies – favor NET/SEC strategies."
+            }
+        },
+        "environment": {
+            "elevated": {
+                "prefer_categories": [
+                    "environment"
+                ],
+                "deprioritize_categories": [],
+                "notes": "Weather alerts – surface context."
+            }
+        },
+        "visual": {
+            "elevated": {
+                "prefer_categories": [
+                    "neural"
+                ],
+                "deprioritize_categories": [],
+                "notes": "Retina highlight – pay attention to visual-correlated strategies."
+            }
+        }
+    }
+}

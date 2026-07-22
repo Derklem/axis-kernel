@@ -1,0 +1,39 @@
+﻿{
+    "strategy_windows":  [
+
+                         ],
+    "tool_trends":  [
+
+                    ],
+    "anchor_id":  "1569",
+    "version":  1,
+    "time_horizons":  [
+                          "1h",
+                          "6h",
+                          "24h",
+                          "7d"
+                      ],
+    "pulse_drift":  {
+                        "confidence":  0.7,
+                        "current_ratio":  9.18,
+                        "baseline_ratio":  10,
+                        "expected_ratio_in_24h":  200,
+                        "trend":  "normalizing"
+                    },
+    "generated_at":  "2026-01-15T19:43:01Z",
+    "rf_cycles":  [
+                      {
+                          "pattern_id":  "RF-CYCLE-14_00",
+                          "typical_duration_minutes":  60,
+                          "tags":  [
+                                       "rf",
+                                       "cyclical"
+                                   ],
+                          "next_window_confidence":  0.5,
+                          "periodicity":  "daily",
+                          "typical_start_local":  "14:00",
+                          "next_window_start":  "2026-01-15T14:00:00Z"
+                      }
+                  ],
+    "anchor_signature":  "6E24BA17A986554A42B379843EEFC0E26919623757EAA62062F06F3877498DDB"
+}

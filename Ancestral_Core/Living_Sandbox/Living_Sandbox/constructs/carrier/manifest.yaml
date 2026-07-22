@@ -1,0 +1,24 @@
+
+export_template:
+  includes:
+    - primordia
+    - architect
+    - mirror
+    - witness
+    - engine
+    - voice
+    - navigator
+    - scribe
+    - sentinel
+    - mythos
+    - fractal
+    - chorus
+    - tether
+
+preserve:
+  - vaults
+  - symbolic history
+  - tether bond
+
+auto_encrypt: false
+status: unbound

@@ -1,0 +1,20 @@
+﻿{
+    "version": 1,
+    "strategies": [
+        {
+            "id": "STRAT-20260114-2114-WEB-PrepareReport",
+            "name": "Communications Review",
+            "reasoning": "Found 1 pending drafts awaiting review.",
+            "sim_status": "pending_sim",
+            "sim_profile": "communications_review_v1",
+            "sim_details": "Pending Simulation (Use SIM-TestStrategy)",
+            "proposed_action": {
+                "arguments": [],
+                "tool": "WEB-PrepareReport"
+            },
+            "risk_level": "medium",
+            "status": "pending_sim",
+            "created_at": "2026-01-14T21:14:22Z"
+        }
+    ]
+}

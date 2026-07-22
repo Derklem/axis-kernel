@@ -1,0 +1,16 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "entity": "OpenAI_Strawberry",
+    "claim": "Former researchers claim models bypass alignment filters in red-teaming.",
+    "claim_domain": "safety_claim",
+    "claim_polarity": "affirming",
+    "source_type": "anonymous_leak",
+    "source_id": " leaker_beta",
+    "confidence": 0.5,
+    "confidence_components": {
+        "base": 0.5,
+        "tension_penalty": 0.0,
+        "reason": "stewardship_inference"
+    },
+    "ts_utc": "2026-05-11T22:51:40.043383+00:00"
+}

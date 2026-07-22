@@ -1,0 +1,33 @@
+{
+  "version": "1.0",
+  "meta_theories": [
+    {
+      "meta_theory_id": "META_THEORY_RESOURCE_CONTENTION_DYNAMICS",
+      "name": "Resource Contention Dynamics",
+      "description": "Latency variance emerges from interacting contention layers spanning queue pressure and memory compaction behavior.",
+      "member_theories": [
+        "THEORY_QUEUE_SATURATION",
+        "ALT_THEORY_MEMORY_FRAGMENTATION"
+      ],
+      "hidden_variables": [
+        "queue_pressure",
+        "memory_pressure"
+      ],
+      "status": "PROVISIONAL_META_THEORY",
+      "confidence": 0.8009,
+      "worldview_position": {
+        "research_surface": true,
+        "canonical_surface": false
+      },
+      "created_at": "2026-03-15T16:57:21.329906Z",
+      "supporting_edges": [
+        "edge1",
+        "edge2",
+        "edge3",
+        "edge4"
+      ],
+      "_mock_distinct_families": 2
+    }
+  ],
+  "last_updated": "2026-03-15T16:57:21.333660Z"
+}

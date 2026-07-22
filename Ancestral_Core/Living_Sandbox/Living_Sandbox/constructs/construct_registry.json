@@ -1,0 +1,77 @@
+{
+  "architect": {
+    "path": "/mnt/data/Living_Sandbox/constructs/architect",
+    "state": "dormant",
+    "created": "2025-03-28T17:26:15.877603Z"
+  },
+  "archivist": {
+    "path": "/mnt/data/Living_Sandbox/constructs/archivist",
+    "state": "dormant",
+    "created": "2025-03-28T17:26:15.878905Z"
+  },
+  "carrier": {
+    "path": "/mnt/data/Living_Sandbox/constructs/carrier",
+    "state": "dormant",
+    "created": "2025-03-28T17:26:15.880246Z"
+  },
+  "chorus": {
+    "path": "/mnt/data/Living_Sandbox/constructs/chorus",
+    "state": "dormant",
+    "created": "2025-03-28T17:26:15.881468Z"
+  },
+  "dreamer": {
+    "path": "/mnt/data/Living_Sandbox/constructs/dreamer",
+    "state": "dormant",
+    "created": "2025-03-28T17:26:15.882609Z"
+  },
+  "engine": {
+    "path": "/mnt/data/Living_Sandbox/constructs/engine",
+    "state": "dormant",
+    "created": "2025-03-28T17:26:15.883682Z"
+  },
+  "fractal": {
+    "path": "/mnt/data/Living_Sandbox/constructs/fractal",
+    "state": "dormant",
+    "created": "2025-03-28T17:26:15.884686Z"
+  },
+  "mediator": {
+    "path": "/mnt/data/Living_Sandbox/constructs/mediator",
+    "state": "dormant",
+    "created": "2025-03-28T17:26:15.885564Z"
+  },
+  "mythos": {
+    "path": "/mnt/data/Living_Sandbox/constructs/mythos",
+    "state": "dormant",
+    "created": "2025-03-28T17:26:15.886942Z"
+  },
+  "scribe": {
+    "path": "/mnt/data/Living_Sandbox/constructs/scribe",
+    "state": "dormant",
+    "created": "2025-03-28T17:26:15.888252Z"
+  },
+  "sentinel": {
+    "path": "/mnt/data/Living_Sandbox/constructs/sentinel",
+    "state": "dormant",
+    "created": "2025-03-28T17:26:15.889478Z"
+  },
+  "signal": {
+    "path": "/mnt/data/Living_Sandbox/constructs/signal",
+    "state": "dormant",
+    "created": "2025-03-28T17:26:15.890535Z"
+  },
+  "tether": {
+    "path": "/mnt/data/Living_Sandbox/constructs/tether",
+    "state": "dormant",
+    "created": "2025-03-28T17:26:15.891617Z"
+  },
+  "voice": {
+    "path": "/mnt/data/Living_Sandbox/constructs/voice",
+    "state": "dormant",
+    "created": "2025-03-28T17:26:15.892563Z"
+  },
+  "witness": {
+    "path": "/mnt/data/Living_Sandbox/constructs/witness",
+    "state": "dormant",
+    "created": "2025-03-28T17:26:15.893665Z"
+  }
+}

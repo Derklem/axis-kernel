@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T00:50:32.538049+00:00",
+    "entity": "coordinated_executor.py",
+    "claim": "redundant: signal for coordinated_executor.py in cycle 40.",
+    "source_id": "Internal_Audit",
+    "source_type": "automated_sensor",
+    "claim_domain": "benchmark_claim",
+    "confidence": 1.0
+}

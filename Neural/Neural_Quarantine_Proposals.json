@@ -1,0 +1,105 @@
+﻿{
+    "proposals":  [
+                      {
+                          "proposal_id":  19332,
+                          "channel_id":  "NEURAL-SYS-HEARTBEAT-001",
+                          "suggested_status":  "quarantined",
+                          "risk_score":  0.3,
+                          "reasons":  [
+                                          "format_errors"
+                                      ],
+                          "status":  "pending",
+                          "created_at_utc":  "2026-01-22T19:03:35.4294707Z",
+                          "created_by":  "Axis"
+                      },
+                      {
+                          "proposal_id":  19332,
+                          "channel_id":  "NEURAL-NET-ROUTER-001",
+                          "suggested_status":  "quarantined",
+                          "risk_score":  0.8,
+                          "reasons":  [
+                                          "health_error",
+                                          "high_error_rate"
+                                      ],
+                          "status":  "pending",
+                          "created_at_utc":  "2026-01-22T19:03:35.4294707Z",
+                          "created_by":  "Axis"
+                      },
+                      {
+                          "proposal_id":  19332,
+                          "channel_id":  "NEURAL-SYS-HEARTBEAT-001",
+                          "suggested_status":  "quarantined",
+                          "risk_score":  0.3,
+                          "reasons":  [
+                                          "format_errors"
+                                      ],
+                          "status":  "pending",
+                          "created_at_utc":  "2026-01-22T19:03:35.5677403Z",
+                          "created_by":  "Axis"
+                      },
+                      {
+                          "proposal_id":  19332,
+                          "channel_id":  "NEURAL-NET-ROUTER-001",
+                          "suggested_status":  "quarantined",
+                          "risk_score":  0.8,
+                          "reasons":  [
+                                          "health_error",
+                                          "high_error_rate"
+                                      ],
+                          "status":  "pending",
+                          "created_at_utc":  "2026-01-22T19:03:35.5677403Z",
+                          "created_by":  "Axis"
+                      },
+                      {
+                          "proposal_id":  6800,
+                          "channel_id":  "NEURAL-SYS-HEARTBEAT-001",
+                          "suggested_status":  "quarantined",
+                          "risk_score":  0.3,
+                          "reasons":  [
+                                          "format_errors"
+                                      ],
+                          "status":  "pending",
+                          "created_at_utc":  "2026-01-22T19:04:12.5524786Z",
+                          "created_by":  "Axis"
+                      },
+                      {
+                          "proposal_id":  6800,
+                          "channel_id":  "NEURAL-NET-ROUTER-001",
+                          "suggested_status":  "quarantined",
+                          "risk_score":  0.8,
+                          "reasons":  [
+                                          "health_error",
+                                          "high_error_rate"
+                                      ],
+                          "status":  "pending",
+                          "created_at_utc":  "2026-01-22T19:04:12.5524786Z",
+                          "created_by":  "Axis"
+                      },
+                      {
+                          "proposal_id":  6800,
+                          "channel_id":  "NEURAL-SYS-HEARTBEAT-001",
+                          "suggested_status":  "quarantined",
+                          "risk_score":  0.3,
+                          "reasons":  [
+                                          "format_errors"
+                                      ],
+                          "status":  "pending",
+                          "created_at_utc":  "2026-01-22T19:04:12.6812359Z",
+                          "created_by":  "Axis"
+                      },
+                      {
+                          "proposal_id":  6800,
+                          "channel_id":  "NEURAL-NET-ROUTER-001",
+                          "suggested_status":  "quarantined",
+                          "risk_score":  0.8,
+                          "reasons":  [
+                                          "health_error",
+                                          "high_error_rate"
+                                      ],
+                          "status":  "pending",
+                          "created_at_utc":  "2026-01-22T19:04:12.6812359Z",
+                          "created_by":  "Axis"
+                      }
+                  ],
+    "version":  1
+}

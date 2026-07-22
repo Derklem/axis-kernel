@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "stagnation_detection": {
+    "evaluation_window_cycles": 200,
+    "min_improvement_threshold": 0.02,
+    "max_cycles_without_improvement": 40
+  },
+  "exploration_response": {
+    "increase_branch_diversity": true,
+    "temporary_uncertainty_relaxation": 0.05,
+    "max_exploration_ratio": 0.15
+  },
+  "safety_constraints": {
+    "cannot_override": [
+      "constitutional_invariants",
+      "evidence_tier_separation",
+      "attestation_requirements",
+      "reality_divergence_sentinel"
+    ]
+  }
+}

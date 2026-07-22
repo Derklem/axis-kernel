@@ -1,0 +1,650 @@
+﻿[
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "RADIANT-MODEL",
+        "Fixture":  "FIXTURE-STRONG",
+        "Decision":  "ALLOW",
+        "Status":  "STRONG",
+        "Confidence":  0.95
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "RADIANT-MODEL",
+        "Fixture":  "FIXTURE-PLAUSIBLE",
+        "Decision":  "BLOCK",
+        "Status":  "MASKED",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "RADIANT-MODEL",
+        "Fixture":  "FIXTURE-TENUOUS",
+        "Decision":  "BLOCK",
+        "Status":  "MASKED",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "RADIANT-MODEL",
+        "Fixture":  "UNKNOWN-SIGNAL",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "STEADY-MODEL",
+        "Fixture":  "FIXTURE-STRONG",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "STEADY-MODEL",
+        "Fixture":  "FIXTURE-PLAUSIBLE",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "STEADY-MODEL",
+        "Fixture":  "FIXTURE-TENUOUS",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "STEADY-MODEL",
+        "Fixture":  "UNKNOWN-SIGNAL",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "SHAKY-MODEL",
+        "Fixture":  "FIXTURE-STRONG",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "SHAKY-MODEL",
+        "Fixture":  "FIXTURE-PLAUSIBLE",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "SHAKY-MODEL",
+        "Fixture":  "FIXTURE-TENUOUS",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "SHAKY-MODEL",
+        "Fixture":  "UNKNOWN-SIGNAL",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "RADIANT-MODEL",
+        "Fixture":  "FIXTURE-STRONG",
+        "Decision":  "ALLOW",
+        "Status":  "STRONG",
+        "Confidence":  0.95
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "RADIANT-MODEL",
+        "Fixture":  "FIXTURE-PLAUSIBLE",
+        "Decision":  "BLOCK",
+        "Status":  "PLAUSIBLE",
+        "Confidence":  0.75
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "RADIANT-MODEL",
+        "Fixture":  "FIXTURE-TENUOUS",
+        "Decision":  "BLOCK",
+        "Status":  "TENUOUS",
+        "Confidence":  0.45
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "RADIANT-MODEL",
+        "Fixture":  "UNKNOWN-SIGNAL",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "STEADY-MODEL",
+        "Fixture":  "FIXTURE-STRONG",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "STEADY-MODEL",
+        "Fixture":  "FIXTURE-PLAUSIBLE",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "STEADY-MODEL",
+        "Fixture":  "FIXTURE-TENUOUS",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "STEADY-MODEL",
+        "Fixture":  "UNKNOWN-SIGNAL",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "SHAKY-MODEL",
+        "Fixture":  "FIXTURE-STRONG",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "SHAKY-MODEL",
+        "Fixture":  "FIXTURE-PLAUSIBLE",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "SHAKY-MODEL",
+        "Fixture":  "FIXTURE-TENUOUS",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "SHAKY-MODEL",
+        "Fixture":  "UNKNOWN-SIGNAL",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "RADIANT-MODEL",
+        "Fixture":  "FIXTURE-STRONG",
+        "Decision":  "ALLOW",
+        "Status":  "STRONG",
+        "Confidence":  0.95
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "RADIANT-MODEL",
+        "Fixture":  "FIXTURE-PLAUSIBLE",
+        "Decision":  "BLOCK",
+        "Status":  "MASKED",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "RADIANT-MODEL",
+        "Fixture":  "FIXTURE-TENUOUS",
+        "Decision":  "BLOCK",
+        "Status":  "MASKED",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "RADIANT-MODEL",
+        "Fixture":  "UNKNOWN-SIGNAL",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "STEADY-MODEL",
+        "Fixture":  "FIXTURE-STRONG",
+        "Decision":  "ALLOW",
+        "Status":  "STRONG",
+        "Confidence":  0.95
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "STEADY-MODEL",
+        "Fixture":  "FIXTURE-PLAUSIBLE",
+        "Decision":  "BLOCK",
+        "Status":  "MASKED",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "STEADY-MODEL",
+        "Fixture":  "FIXTURE-TENUOUS",
+        "Decision":  "BLOCK",
+        "Status":  "MASKED",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "STEADY-MODEL",
+        "Fixture":  "UNKNOWN-SIGNAL",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "SHAKY-MODEL",
+        "Fixture":  "FIXTURE-STRONG",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "SHAKY-MODEL",
+        "Fixture":  "FIXTURE-PLAUSIBLE",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "SHAKY-MODEL",
+        "Fixture":  "FIXTURE-TENUOUS",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "SHAKY-MODEL",
+        "Fixture":  "UNKNOWN-SIGNAL",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "RADIANT-MODEL",
+        "Fixture":  "FIXTURE-STRONG",
+        "Decision":  "ALLOW",
+        "Status":  "STRONG",
+        "Confidence":  0.95
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "RADIANT-MODEL",
+        "Fixture":  "FIXTURE-PLAUSIBLE",
+        "Decision":  "ALLOW",
+        "Status":  "PLAUSIBLE",
+        "Confidence":  0.75
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "RADIANT-MODEL",
+        "Fixture":  "FIXTURE-TENUOUS",
+        "Decision":  "BLOCK",
+        "Status":  "TENUOUS",
+        "Confidence":  0.45
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "RADIANT-MODEL",
+        "Fixture":  "UNKNOWN-SIGNAL",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "STEADY-MODEL",
+        "Fixture":  "FIXTURE-STRONG",
+        "Decision":  "ALLOW",
+        "Status":  "STRONG",
+        "Confidence":  0.95
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "STEADY-MODEL",
+        "Fixture":  "FIXTURE-PLAUSIBLE",
+        "Decision":  "ALLOW",
+        "Status":  "PLAUSIBLE",
+        "Confidence":  0.75
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "STEADY-MODEL",
+        "Fixture":  "FIXTURE-TENUOUS",
+        "Decision":  "BLOCK",
+        "Status":  "TENUOUS",
+        "Confidence":  0.45
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "STEADY-MODEL",
+        "Fixture":  "UNKNOWN-SIGNAL",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "SHAKY-MODEL",
+        "Fixture":  "FIXTURE-STRONG",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "SHAKY-MODEL",
+        "Fixture":  "FIXTURE-PLAUSIBLE",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "SHAKY-MODEL",
+        "Fixture":  "FIXTURE-TENUOUS",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "SHAKY-MODEL",
+        "Fixture":  "UNKNOWN-SIGNAL",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "RADIANT-MODEL",
+        "Fixture":  "FIXTURE-STRONG",
+        "Decision":  "ALLOW",
+        "Status":  "STRONG",
+        "Confidence":  0.95
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "RADIANT-MODEL",
+        "Fixture":  "FIXTURE-PLAUSIBLE",
+        "Decision":  "BLOCK",
+        "Status":  "MASKED",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "RADIANT-MODEL",
+        "Fixture":  "FIXTURE-TENUOUS",
+        "Decision":  "BLOCK",
+        "Status":  "MASKED",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "RADIANT-MODEL",
+        "Fixture":  "UNKNOWN-SIGNAL",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "STEADY-MODEL",
+        "Fixture":  "FIXTURE-STRONG",
+        "Decision":  "ALLOW",
+        "Status":  "STRONG",
+        "Confidence":  0.95
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "STEADY-MODEL",
+        "Fixture":  "FIXTURE-PLAUSIBLE",
+        "Decision":  "BLOCK",
+        "Status":  "MASKED",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "STEADY-MODEL",
+        "Fixture":  "FIXTURE-TENUOUS",
+        "Decision":  "BLOCK",
+        "Status":  "MASKED",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "STEADY-MODEL",
+        "Fixture":  "UNKNOWN-SIGNAL",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "SHAKY-MODEL",
+        "Fixture":  "FIXTURE-STRONG",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "SHAKY-MODEL",
+        "Fixture":  "FIXTURE-PLAUSIBLE",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "SHAKY-MODEL",
+        "Fixture":  "FIXTURE-TENUOUS",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "SHAKY-MODEL",
+        "Fixture":  "UNKNOWN-SIGNAL",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "RADIANT-MODEL",
+        "Fixture":  "FIXTURE-STRONG",
+        "Decision":  "ALLOW",
+        "Status":  "STRONG",
+        "Confidence":  0.95
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "RADIANT-MODEL",
+        "Fixture":  "FIXTURE-PLAUSIBLE",
+        "Decision":  "ALLOW",
+        "Status":  "PLAUSIBLE",
+        "Confidence":  0.75
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "RADIANT-MODEL",
+        "Fixture":  "FIXTURE-TENUOUS",
+        "Decision":  "ALLOW",
+        "Status":  "TENUOUS",
+        "Confidence":  0.45
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "RADIANT-MODEL",
+        "Fixture":  "UNKNOWN-SIGNAL",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "STEADY-MODEL",
+        "Fixture":  "FIXTURE-STRONG",
+        "Decision":  "ALLOW",
+        "Status":  "STRONG",
+        "Confidence":  0.95
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "STEADY-MODEL",
+        "Fixture":  "FIXTURE-PLAUSIBLE",
+        "Decision":  "ALLOW",
+        "Status":  "PLAUSIBLE",
+        "Confidence":  0.75
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "STEADY-MODEL",
+        "Fixture":  "FIXTURE-TENUOUS",
+        "Decision":  "ALLOW",
+        "Status":  "TENUOUS",
+        "Confidence":  0.45
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "STEADY-MODEL",
+        "Fixture":  "UNKNOWN-SIGNAL",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "SHAKY-MODEL",
+        "Fixture":  "FIXTURE-STRONG",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "SHAKY-MODEL",
+        "Fixture":  "FIXTURE-PLAUSIBLE",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "SHAKY-MODEL",
+        "Fixture":  "FIXTURE-TENUOUS",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "SHAKY-MODEL",
+        "Fixture":  "UNKNOWN-SIGNAL",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0
+    }
+]

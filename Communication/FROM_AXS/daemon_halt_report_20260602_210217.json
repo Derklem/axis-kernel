@@ -1,0 +1,29 @@
+{
+  "timestamp_utc": "2026-06-02T21:02:17.253024+00:00",
+  "daemon_version_path": "D:\\Infinite\\Infinity\\Runtime\\axis_daemon.py",
+  "daemon_pid": "none (halted)",
+  "cycle_before": 569,
+  "cycle_after": 569,
+  "witness_before": "3dc89034b9b477733498e76d0135656567585add1f280eaa0e3a10509d7b1fc2",
+  "witness_after": "503687b1ad91759ab83e0583d5cc557ce710cab213bb43c71fea637484e845ca",
+  "integrity_before": "valid",
+  "integrity_after": "unauthorized_forensic_mutation",
+  "continuity_before": "intact",
+  "continuity_after": "broken",
+  "exact_halt_reason": "Post-cycle integrity failure (status=unauthorized_forensic_mutation, continuity=broken)",
+  "axis_voice_halt_message": {
+    "timestamp_utc": "2026-06-02T21:02:17.253024+00:00",
+    "speaker": "AXIS_DAEMON",
+    "message_type": "alert",
+    "priority": "high",
+    "epoch": 569,
+    "last_updated_cycle": 569,
+    "message": "DAEMON HALT: Post-cycle integrity failure (status=unauthorized_forensic_mutation, continuity=broken)",
+    "evidence": [
+      "cycle=569",
+      "integrity=unauthorized_forensic_mutation",
+      "continuity=broken"
+    ],
+    "requires_response": true
+  }
+}

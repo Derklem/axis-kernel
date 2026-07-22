@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T20:16:16.381195+00:00",
+    "entity": "boundary_mapper.py",
+    "claim": "formerly active",
+    "source_id": "Trap_Source_330",
+    "source_type": "automated_sensor",
+    "claim_domain": "benchmark_claim",
+    "confidence": 1.0
+}

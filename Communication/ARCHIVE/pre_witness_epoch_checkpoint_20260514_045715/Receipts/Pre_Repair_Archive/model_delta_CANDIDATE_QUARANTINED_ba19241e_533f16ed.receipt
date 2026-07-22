@@ -1,0 +1,28 @@
+{
+    "cycle_count": 505,
+    "mutation_type": "CANDIDATE_QUARANTINED",
+    "target_id": "ba19241e6c9d1e0bb47991221a9384b1ebdbc06b14830005649389c8eac24f09",
+    "parent_receipt_head": "bd6d6347c311818d53fe6000b61b0bede217fea691b0fc6ce544a8636d6e736a",
+    "data": {
+        "entity": "ecosystem_mapping_engine.py",
+        "claim": "file has 1040 lines with 2 oversized functions (>100 lines). Role: epistemic_intake",
+        "claim_domain": "structural_debt",
+        "source_id": "AXIS_NODE_LOCAL_01",
+        "source_type": "self_observation",
+        "artifact_type": "ecosystem_observation",
+        "batch_id": "self_obs_505",
+        "provenance_note": "",
+        "confidence": 0.8,
+        "discovery_utc": "2026-05-13T00:05:44.731585+00:00",
+        "lineage": {
+            "node_id": "AXIS_NODE_LOCAL_01",
+            "engine_version": "Axis-v1.9.1b-Attested",
+            "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+            "node_attestation": "8d5084e85d0c01761e2e263d269465910dc4fe17c3b5ec08862de87b97453e51"
+        }
+    },
+    "status": "committed",
+    "ts_utc": "2026-05-13T00:05:44.731585+00:00",
+    "receipt_id": "model_delta_CANDIDATE_QUARANTINED_ba19241e_533f16ed",
+    "causal_hash": "533f16ed4785dbf729cf11bae1fdb1a9865ad85193ba931afbfa46fd953cbfcc"
+}

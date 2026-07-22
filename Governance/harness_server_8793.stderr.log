@@ -1,0 +1,7 @@
+Start-Transcript : Transcription cannot be started.
+At D:\Infinite\Infinity\Console\server_RC1.ps1:7 char:1
++ Start-Transcript -Path "D:\Infinite\Infinity\Console\server_transcrip ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Transcript], PSInvalidOperationException
+    + FullyQualifiedErrorId : CannotStartTranscription,Microsoft.PowerShell.Commands.StartTranscriptCommand
+ 

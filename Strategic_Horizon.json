@@ -1,0 +1,6 @@
+{
+    "version": 1,
+    "decay_constant_seconds": 259200,
+    "recurrence_threshold": 3,
+    "trends": []
+}

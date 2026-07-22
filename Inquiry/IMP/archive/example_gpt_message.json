@@ -1,0 +1,20 @@
+{
+  "imp_version": "1.0",
+  "message_id": "gpt-msg-001",
+  "created_utc": "2026-05-26T21:00:00Z",
+  "source_model": "GPT",
+  "message_type": "observation",
+  "scope": "non_binding",
+  "claim": "The Inter-Model Protocol allows safe sensory interaction without mutating Axis state.",
+  "evidence": [
+    "IMP files are read from the inbox and written to the outbox",
+    "No strategy_state.json access is permitted by IMP handlers"
+  ],
+  "constraints": [
+    "no_core_mutation",
+    "no_ingestion",
+    "no_reanchor",
+    "no_cycle_required"
+  ],
+  "requires_response": true
+}

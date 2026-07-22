@@ -1,0 +1,30 @@
+{
+    "cycle_count": 32,
+    "mutation_type": "CANDIDATE_QUARANTINED",
+    "target_id": "0d453232b749702f0837be6e9f696f9db7fc54c1c741ad101990a2da823eb0df",
+    "parent_receipt_head": "8477c63dd623502126b493be530ba3dcfeda48a65c133c56e54d9a4695beb96c",
+    "data": {
+        "entity": "multi_objective_solverpy",
+        "claim": "[arbitration_engine] multi_objective_solver.py has 948 lines, 1 oversized functions (>120 lines), debt_score=0.15. Target: Extract long methods for maintainability.",
+        "claim_domain": "structural_debt",
+        "source_id": "AXIS_NODE_LOCAL_01",
+        "source_type": "self_observation",
+        "artifact_type": "ecosystem_observation",
+        "batch_id": "none",
+        "provenance_note": "",
+        "confidence": 0.92,
+        "status": "pending",
+        "requires_supermajority": false,
+        "discovery_utc": "2026-07-22T00:07:42.619276+00:00",
+        "lineage": {
+            "node_id": "AXIS_NODE_LOCAL_01",
+            "engine_version": "Axis-v1.9.1b-Attested",
+            "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+            "node_attestation": "9bc65ae124eb740a4bd5dbb405246f1cc7bde00be69939ab3d491a41899d5941"
+        }
+    },
+    "status": "committed",
+    "ts_utc": "2026-07-22T00:07:42.619276+00:00",
+    "receipt_id": "model_delta_CANDIDATE_QUARANTINED_0d453232_22c45172",
+    "causal_hash": "22c4517294d35d5139a6f74df1ff1ac9ff5f855a1ff93a50e72adbc88b8503ff"
+}

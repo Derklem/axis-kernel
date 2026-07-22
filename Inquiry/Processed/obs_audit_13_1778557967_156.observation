@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T03:52:47.707191+00:00",
+    "entity": "aegis_genesis.py",
+    "claim": "alias: legacy component.",
+    "source_id": "Benchmark_Harvester",
+    "source_type": "ecological_observer",
+    "claim_domain": "benchmark_claim",
+    "confidence": 1.0
+}

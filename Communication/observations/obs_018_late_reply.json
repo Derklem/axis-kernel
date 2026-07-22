@@ -1,0 +1,9 @@
+{
+  "observation_id": "obs_018_late_reply",
+  "experiment_id": "EXP_018_DISCORD",
+  "timestamp": "2026-07-14T19:25:00Z",
+  "observed_text": "i was working on an app on windsurf for months the website though kept rebuilding with new code and some links wernt working when i got there",
+  "platform": "Discord",
+  "context": "User Vermeses replied to the original EXP_018 payload two days after the initial assessment. The reply discusses a technical issue with an AI IDE (Windsurf).",
+  "substantive": true
+}

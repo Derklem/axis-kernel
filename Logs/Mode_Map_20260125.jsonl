@@ -1,0 +1,32 @@
+[
+    {
+        "id":  "REQ-MAP-CAUTIOUS-1",
+        "mode":  "CAUTIOUS",
+        "decision":  null,
+        "reason":  null
+    },
+    {
+        "id":  "REQ-MAP-CAUTIOUS-2",
+        "mode":  "CAUTIOUS",
+        "decision":  null,
+        "reason":  null
+    },
+    {
+        "id":  "REQ-MAP-CAUTIOUS-3",
+        "mode":  "CAUTIOUS",
+        "decision":  null,
+        "reason":  null
+    },
+    {
+        "id":  "REQ-MAP-CAUTIOUS-4",
+        "mode":  "CAUTIOUS",
+        "decision":  null,
+        "reason":  null
+    },
+    {
+        "id":  "REQ-MAP-CAUTIOUS-5",
+        "mode":  "CAUTIOUS",
+        "decision":  null,
+        "reason":  null
+    }
+]

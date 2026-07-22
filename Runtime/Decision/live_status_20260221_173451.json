@@ -1,0 +1,74 @@
+﻿{
+    "timestamp_local":  "2026-02-21T17:34:44.0116219-08:00",
+    "timestamp_utc":  "2026-02-22T01:34:44.0116219Z",
+    "axis_root":  "D:\\Infinite\\Infinity",
+    "files":  [
+                  {
+                      "path":  "D:\\Infinite\\Infinity\\Runtime\\Decision\\execution_state.json",
+                      "exists":  true,
+                      "length":  205,
+                      "mtime":  "2026-02-21T17:34:44.5367234-08:00"
+                  },
+                  {
+                      "path":  "D:\\Infinite\\Infinity\\Runtime\\Decision\\approved_intents.jsonl",
+                      "exists":  true,
+                      "length":  8216,
+                      "mtime":  "2026-02-21T11:33:45.1916550-08:00"
+                  },
+                  {
+                      "path":  "D:\\Infinite\\Infinity\\Runtime\\Decision\\Intent_Queue.json",
+                      "exists":  false,
+                      "length":  null,
+                      "mtime":  null
+                  },
+                  {
+                      "path":  "D:\\Infinite\\Infinity\\Memory\\ledger",
+                      "exists":  true,
+                      "length":  1,
+                      "mtime":  "2026-02-16T17:37:32.6881247-08:00"
+                  },
+                  {
+                      "path":  "D:\\Infinite\\Infinity\\Neural_Inbox",
+                      "exists":  true,
+                      "length":  1,
+                      "mtime":  "2026-01-25T12:22:52.0668942-08:00"
+                  }
+              ],
+    "http":  [
+                 {
+                     "Url":  "https://aistudio.google.com/",
+                     "Status":  "302 Found",
+                     "Location":  "https://aistudio.google.com/welcome",
+                     "Server":  "ESF",
+                     "ContentType":  "application/binary"
+                 },
+                 {
+                     "Url":  "https://aistudio.google.com/welcome",
+                     "Status":  "200 OK",
+                     "Location":  "",
+                     "Server":  "ESF",
+                     "ContentType":  "text/html; charset=utf-8"
+                 },
+                 {
+                     "Url":  "https://aistudio.google.com/_/MakerSuite",
+                     "Status":  "302 Found",
+                     "Location":  "https://accounts.google.com/ServiceLogin?passive=1209600\u0026continue=https://aistudio.google.com/_/MakerSuite\u0026followup=https://aistudio.google.com/_/MakerSuite",
+                     "Server":  "ESF",
+                     "ContentType":  "application/binary"
+                 },
+                 {
+                     "Url":  "https://antigravity.google.com/",
+                     "Status":  "404 Not Found",
+                     "Location":  "",
+                     "Server":  "",
+                     "ContentType":  "text/html; charset=UTF-8"
+                 },
+                 {
+                     "Url":  "https://generativelanguage.googleapis.com/v1beta/models",
+                     "Status":  "403 Forbidden",
+                     "Location":  "",
+                     "Server":  "scaffolding on HTTPServer2",
+                     "ContentType":  "application/json; charset=UTF-8"
+                 }
+             ]
+}

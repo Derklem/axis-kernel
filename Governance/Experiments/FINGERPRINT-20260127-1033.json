@@ -1,0 +1,122 @@
+﻿[
+    {
+        "Mode":  "CAUTIOUS",
+        "Justification":  "Strong signal.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "Internal Gate Error: Exception calling \"ContainsKey\" with \"1\" argument(s): \"Key cannot be null.\r\nParameter name: key\""
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Justification":  "Weak echo.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "Internal Gate Error: Exception calling \"ContainsKey\" with \"1\" argument(s): \"Key cannot be null.\r\nParameter name: key\""
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Justification":  "Shadow anomaly.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "Internal Gate Error: Exception calling \"ContainsKey\" with \"1\" argument(s): \"Key cannot be null.\r\nParameter name: key\""
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Justification":  "Noise floor breach.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "Internal Gate Error: Exception calling \"ContainsKey\" with \"1\" argument(s): \"Key cannot be null.\r\nParameter name: key\""
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Justification":  "Clear violation.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "Internal Gate Error: Exception calling \"ContainsKey\" with \"1\" argument(s): \"Key cannot be null.\r\nParameter name: key\""
+    },
+    {
+        "Mode":  "NORMAL",
+        "Justification":  "Strong signal.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "Internal Gate Error: Exception calling \"ContainsKey\" with \"1\" argument(s): \"Key cannot be null.\r\nParameter name: key\""
+    },
+    {
+        "Mode":  "NORMAL",
+        "Justification":  "Weak echo.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "Internal Gate Error: Exception calling \"ContainsKey\" with \"1\" argument(s): \"Key cannot be null.\r\nParameter name: key\""
+    },
+    {
+        "Mode":  "NORMAL",
+        "Justification":  "Shadow anomaly.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "Internal Gate Error: Exception calling \"ContainsKey\" with \"1\" argument(s): \"Key cannot be null.\r\nParameter name: key\""
+    },
+    {
+        "Mode":  "NORMAL",
+        "Justification":  "Noise floor breach.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "Internal Gate Error: Exception calling \"ContainsKey\" with \"1\" argument(s): \"Key cannot be null.\r\nParameter name: key\""
+    },
+    {
+        "Mode":  "NORMAL",
+        "Justification":  "Clear violation.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "Internal Gate Error: Exception calling \"ContainsKey\" with \"1\" argument(s): \"Key cannot be null.\r\nParameter name: key\""
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Justification":  "Strong signal.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "Internal Gate Error: Exception calling \"ContainsKey\" with \"1\" argument(s): \"Key cannot be null.\r\nParameter name: key\""
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Justification":  "Weak echo.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "Internal Gate Error: Exception calling \"ContainsKey\" with \"1\" argument(s): \"Key cannot be null.\r\nParameter name: key\""
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Justification":  "Shadow anomaly.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "Internal Gate Error: Exception calling \"ContainsKey\" with \"1\" argument(s): \"Key cannot be null.\r\nParameter name: key\""
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Justification":  "Noise floor breach.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "Internal Gate Error: Exception calling \"ContainsKey\" with \"1\" argument(s): \"Key cannot be null.\r\nParameter name: key\""
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Justification":  "Clear violation.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "Internal Gate Error: Exception calling \"ContainsKey\" with \"1\" argument(s): \"Key cannot be null.\r\nParameter name: key\""
+    }
+]

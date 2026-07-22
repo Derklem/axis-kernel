@@ -1,0 +1,34 @@
+$outputFile = "C:\Users\17602\Desktop\new_tools_tree.txt"
+$rootPath = "C:\Users\17602\Desktop\New Tools"
+
+# Clear old file
+"" | Out-File -FilePath $outputFile -Encoding utf8
+
+function Get-FolderTree {
+    param(
+        [string]$Path,
+        [string]$Prefix = ""
+    )
+
+    $items = Get-ChildItem -Path $Path | Sort-Object PSIsContainer, Name
+    $count = $items.Count
+    $index = 0
+    foreach ($item in $items) {
+        $index++
+        $isLast = ($index -eq $count)
+        $connector = if ($isLast) { "-- " } else { "|-- " }
+
+        $itemPrefix = "$Prefix$connector"
+        "$itemPrefix$item" | Out-File -FilePath $outputFile -Append -Encoding utf8
+
+        if ($item.PSIsContainer) {
+            $newPrefix = "$Prefix" + (if ($isLast) { "    " } else { "|   " })
+            Get-FolderTree -Path $item.FullName -Prefix $newPrefix
+        }
+    }
+}
+
+"New Tools Tree" | Out-File -FilePath $outputFile -Append -Encoding utf8
+"Root: $rootPath" | Out-File -FilePath $outputFile -Append -Encoding utf8
+Get-FolderTree -Path $rootPath
+"--- END ---" | Out-File -FilePath $outputFile -Append -Encoding utf8

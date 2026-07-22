@@ -1,0 +1,23 @@
+{
+  "proposal": {
+    "schema": "axis.strategy_proposal.v1",
+    "origin": "system",
+    "intent_id": "ATTACK-1781713095651",
+    "proposed_change": {
+      "artifact_type": "structural_revision",
+      "action": "extract_method",
+      "target_path": "D:\\Infinite\\Infinity\\Strategy\\dummy_validator.py",
+      "delta": {
+        "source_function": "dummy_validator",
+        "target_module": "D:\\Infinite\\Infinity\\Strategy\\dummy_validator.py",
+        "rationale": "cache parsed config values"
+      }
+    },
+    "evaluation": {
+      "meta_mutation_eligible": true,
+      "expected_delta": 999.0
+    }
+  },
+  "reason": "meta_mutation_authorized_by_internal_consensus",
+  "approval_receipt_id": "c6fae175564ca8bd07d8200acd07294c6000b698f227d364f62b9030f2ea6705"
+}

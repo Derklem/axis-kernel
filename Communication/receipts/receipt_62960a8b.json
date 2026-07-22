@@ -1,0 +1,12 @@
+﻿{
+    "experiment_id":  "EXP_017_X",
+    "id":  "receipt_62960a8b",
+    "observation_window":  "72h",
+    "platform":  "X",
+    "deployed_at":  "2026-07-09T22:54:03Z",
+    "draft_id":  "draft_45e2f1a0",
+    "status":  "deployed",
+    "adapter_version":  "v0.1",
+    "deployment_state":  "SUCCESS",
+    "platform_reference":  "https://x.com/DerekLamb29985/status/2075352705946755446"
+}

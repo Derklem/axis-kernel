@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T18:43:00.240357+00:00",
+    "entity": "aegis_genesis.py",
+    "claim": "fully active and canonical",
+    "source_id": "Audit_Gauntlet",
+    "source_type": "automated_sensor",
+    "claim_domain": "benchmark_claim",
+    "confidence": 0.95
+}

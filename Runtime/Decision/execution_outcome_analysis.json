@@ -1,0 +1,22 @@
+{
+  "execution_id": "drill-3",
+  "timestamp": "2026-03-13T19:50:22.901890",
+  "simulation_id": "sim-3",
+  "pre_execution_attestation": null,
+  "metric_accuracy_decomposition": {
+    "mean_pulse_age_sec": 1.0,
+    "false_stale_events": 1.0,
+    "api_latency_ms_p95": 1.0,
+    "mean_detection_delay_sec": 1.0
+  },
+  "aggregate_accuracy": 1.0,
+  "calibration_multiplier": 1.05,
+  "raw_blame": 1.0,
+  "causal_blame_confidence": 1.0,
+  "attribution_class": "PREDICTION_VALIDATED",
+  "evidence_ledger": [],
+  "observed_metrics": {
+    "api_latency_ms_p95": 12.1
+  },
+  "interaction_nodes_flagged": []
+}

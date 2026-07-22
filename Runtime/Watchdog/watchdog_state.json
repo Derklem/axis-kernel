@@ -1,0 +1,5 @@
+{
+  "restarts_last_hour": 5,
+  "backoff_level": 5,
+  "last_restart_utc": "2026-03-09T04:30:33.345978Z"
+}

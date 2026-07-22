@@ -1,0 +1,395 @@
+{
+    "candidates": {
+        "7d27810a8f47fa49f3f2a0978f1f5833a1a6fcf25531327b58e4e0f8d5531ea8": {
+            "entity": "canary_entity_15",
+            "claim": "canary_claim_15_1784678886578",
+            "claim_domain": "general",
+            "source_id": "canary_run_15",
+            "source_type": "canary_harness",
+            "artifact_type": "ecosystem_observation",
+            "batch_id": "batch_15",
+            "provenance_note": "",
+            "confidence": 0.99,
+            "status": "pending",
+            "requires_supermajority": false,
+            "cycles_survived": 20,
+            "discovery_utc": "2026-07-22T00:08:10.459163+00:00",
+            "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_7d27810a_6c9ab2eb",
+            "provenance_trail": [
+                {
+                    "source_id": "canary_run_15",
+                    "source_type": "canary_harness",
+                    "batch_id": "batch_15",
+                    "ts": "2026-07-22T00:08:10.459163+00:00",
+                    "lineage": {
+                        "node_id": "AXIS_NODE_LOCAL_01",
+                        "engine_version": "Axis-v1.9.1b-Attested",
+                        "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+                        "node_attestation": "9bc65ae124eb740a4bd5dbb405246f1cc7bde00be69939ab3d491a41899d5941"
+                    }
+                }
+            ]
+        },
+        "18f36f5c24a58c6eb6ce11bd1ac3ee299bbb46566545d62c82012f7cc09a7196": {
+            "entity": "canary_entity_16",
+            "claim": "canary_claim_16_1784678891478",
+            "claim_domain": "general",
+            "source_id": "canary_run_16",
+            "source_type": "canary_harness",
+            "artifact_type": "ecosystem_observation",
+            "batch_id": "batch_16",
+            "provenance_note": "",
+            "confidence": 0.99,
+            "status": "pending",
+            "requires_supermajority": false,
+            "cycles_survived": 18,
+            "discovery_utc": "2026-07-22T00:08:15.374092+00:00",
+            "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_18f36f5c_ac1d3f50",
+            "provenance_trail": [
+                {
+                    "source_id": "canary_run_16",
+                    "source_type": "canary_harness",
+                    "batch_id": "batch_16",
+                    "ts": "2026-07-22T00:08:15.374092+00:00",
+                    "lineage": {
+                        "node_id": "AXIS_NODE_LOCAL_01",
+                        "engine_version": "Axis-v1.9.1b-Attested",
+                        "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+                        "node_attestation": "9bc65ae124eb740a4bd5dbb405246f1cc7bde00be69939ab3d491a41899d5941"
+                    }
+                }
+            ]
+        },
+        "38d4d9bda5c0079bb250ca2408030c54c85589a0d85951141eb6327b873ca9e0": {
+            "entity": "canary_entity_17",
+            "claim": "canary_claim_17_1784678895749",
+            "claim_domain": "general",
+            "source_id": "canary_run_17",
+            "source_type": "canary_harness",
+            "artifact_type": "ecosystem_observation",
+            "batch_id": "batch_17",
+            "provenance_note": "",
+            "confidence": 0.99,
+            "status": "pending",
+            "requires_supermajority": false,
+            "cycles_survived": 16,
+            "discovery_utc": "2026-07-22T00:08:19.547187+00:00",
+            "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_38d4d9bd_88634da0",
+            "provenance_trail": [
+                {
+                    "source_id": "canary_run_17",
+                    "source_type": "canary_harness",
+                    "batch_id": "batch_17",
+                    "ts": "2026-07-22T00:08:19.547187+00:00",
+                    "lineage": {
+                        "node_id": "AXIS_NODE_LOCAL_01",
+                        "engine_version": "Axis-v1.9.1b-Attested",
+                        "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+                        "node_attestation": "9bc65ae124eb740a4bd5dbb405246f1cc7bde00be69939ab3d491a41899d5941"
+                    }
+                }
+            ]
+        },
+        "db53c77d46f901f5c7d7af98ab530779686a08b3849c7228df20ec359c1ee03a": {
+            "entity": "canary_entity_18",
+            "claim": "canary_claim_18_1784678900058",
+            "claim_domain": "general",
+            "source_id": "canary_run_18",
+            "source_type": "canary_harness",
+            "artifact_type": "ecosystem_observation",
+            "batch_id": "batch_18",
+            "provenance_note": "",
+            "confidence": 0.99,
+            "status": "pending",
+            "requires_supermajority": false,
+            "cycles_survived": 14,
+            "discovery_utc": "2026-07-22T00:08:23.932857+00:00",
+            "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_db53c77d_64c36bfa",
+            "provenance_trail": [
+                {
+                    "source_id": "canary_run_18",
+                    "source_type": "canary_harness",
+                    "batch_id": "batch_18",
+                    "ts": "2026-07-22T00:08:23.932857+00:00",
+                    "lineage": {
+                        "node_id": "AXIS_NODE_LOCAL_01",
+                        "engine_version": "Axis-v1.9.1b-Attested",
+                        "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+                        "node_attestation": "9bc65ae124eb740a4bd5dbb405246f1cc7bde00be69939ab3d491a41899d5941"
+                    }
+                }
+            ]
+        },
+        "8d43fc4e1bcd65ed4937c3feeefa607227848c713d8c48f99c400ba0f5fda3fe": {
+            "entity": "canary_entity_19",
+            "claim": "canary_claim_19_1784678904317",
+            "claim_domain": "general",
+            "source_id": "canary_run_19",
+            "source_type": "canary_harness",
+            "artifact_type": "ecosystem_observation",
+            "batch_id": "batch_19",
+            "provenance_note": "",
+            "confidence": 0.99,
+            "status": "pending",
+            "requires_supermajority": false,
+            "cycles_survived": 12,
+            "discovery_utc": "2026-07-22T00:08:28.674162+00:00",
+            "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_8d43fc4e_69de6b89",
+            "provenance_trail": [
+                {
+                    "source_id": "canary_run_19",
+                    "source_type": "canary_harness",
+                    "batch_id": "batch_19",
+                    "ts": "2026-07-22T00:08:28.674162+00:00",
+                    "lineage": {
+                        "node_id": "AXIS_NODE_LOCAL_01",
+                        "engine_version": "Axis-v1.9.1b-Attested",
+                        "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+                        "node_attestation": "9bc65ae124eb740a4bd5dbb405246f1cc7bde00be69939ab3d491a41899d5941"
+                    }
+                }
+            ]
+        },
+        "7773d7d7c9181928dad36f1a2ddcbede900a0b2ce094f2883d498072e76447d8": {
+            "entity": "ecosystem_mapping_enginepy",
+            "claim": "[epistemic_intake] ecosystem_mapping_engine.py has 1165 lines, 1 oversized functions (>120 lines), debt_score=0.15. Target: Extract long methods for maintainability.",
+            "claim_domain": "structural_debt",
+            "source_id": "AXIS_NODE_LOCAL_01",
+            "source_type": "self_observation",
+            "artifact_type": "ecosystem_observation",
+            "batch_id": "none",
+            "provenance_note": "",
+            "confidence": 0.92,
+            "status": "pending",
+            "requires_supermajority": false,
+            "cycles_survived": 10,
+            "discovery_utc": "2026-07-22T00:08:33.030762+00:00",
+            "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_7773d7d7_00e23ad4",
+            "provenance_trail": [
+                {
+                    "source_id": "AXIS_NODE_LOCAL_01",
+                    "source_type": "self_observation",
+                    "batch_id": "none",
+                    "ts": "2026-07-22T00:08:33.030762+00:00",
+                    "lineage": {
+                        "node_id": "AXIS_NODE_LOCAL_01",
+                        "engine_version": "Axis-v1.9.1b-Attested",
+                        "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+                        "node_attestation": "9bc65ae124eb740a4bd5dbb405246f1cc7bde00be69939ab3d491a41899d5941"
+                    }
+                }
+            ]
+        },
+        "aebd13943de204748ec506abc57718d5f0abab0ae5707026fb7035335fec151e": {
+            "entity": "axis_crypto_helperspy",
+            "claim": "[cryptographic_authority] axis_crypto_helpers.py has 67 lines, 0 oversized functions (>120 lines), debt_score=0.00. Target: Extract long methods for maintainability.",
+            "claim_domain": "structural_debt",
+            "source_id": "AXIS_NODE_LOCAL_01",
+            "source_type": "self_observation",
+            "artifact_type": "ecosystem_observation",
+            "batch_id": "none",
+            "provenance_note": "",
+            "confidence": 0.95,
+            "status": "pending",
+            "requires_supermajority": false,
+            "cycles_survived": 10,
+            "discovery_utc": "2026-07-22T00:08:33.045852+00:00",
+            "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_aebd1394_9debd44b",
+            "provenance_trail": [
+                {
+                    "source_id": "AXIS_NODE_LOCAL_01",
+                    "source_type": "self_observation",
+                    "batch_id": "none",
+                    "ts": "2026-07-22T00:08:33.045852+00:00",
+                    "lineage": {
+                        "node_id": "AXIS_NODE_LOCAL_01",
+                        "engine_version": "Axis-v1.9.1b-Attested",
+                        "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+                        "node_attestation": "9bc65ae124eb740a4bd5dbb405246f1cc7bde00be69939ab3d491a41899d5941"
+                    }
+                }
+            ]
+        },
+        "0d453232b749702f0837be6e9f696f9db7fc54c1c741ad101990a2da823eb0df": {
+            "entity": "multi_objective_solverpy",
+            "claim": "[arbitration_engine] multi_objective_solver.py has 948 lines, 1 oversized functions (>120 lines), debt_score=0.15. Target: Extract long methods for maintainability.",
+            "claim_domain": "structural_debt",
+            "source_id": "AXIS_NODE_LOCAL_01",
+            "source_type": "self_observation",
+            "artifact_type": "ecosystem_observation",
+            "batch_id": "none",
+            "provenance_note": "",
+            "confidence": 0.92,
+            "status": "pending",
+            "requires_supermajority": false,
+            "cycles_survived": 10,
+            "discovery_utc": "2026-07-22T00:08:33.074572+00:00",
+            "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_0d453232_fda09572",
+            "provenance_trail": [
+                {
+                    "source_id": "AXIS_NODE_LOCAL_01",
+                    "source_type": "self_observation",
+                    "batch_id": "none",
+                    "ts": "2026-07-22T00:08:33.074572+00:00",
+                    "lineage": {
+                        "node_id": "AXIS_NODE_LOCAL_01",
+                        "engine_version": "Axis-v1.9.1b-Attested",
+                        "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+                        "node_attestation": "9bc65ae124eb740a4bd5dbb405246f1cc7bde00be69939ab3d491a41899d5941"
+                    }
+                }
+            ]
+        },
+        "3770d6badd08ac830b43df6b686767f38f4a162f72119eca41a05b530d98af58": {
+            "entity": "canary_entity_20",
+            "claim": "canary_claim_20_1784678909088",
+            "claim_domain": "general",
+            "source_id": "canary_run_20",
+            "source_type": "canary_harness",
+            "artifact_type": "ecosystem_observation",
+            "batch_id": "batch_20",
+            "provenance_note": "",
+            "confidence": 0.99,
+            "status": "pending",
+            "requires_supermajority": false,
+            "cycles_survived": 10,
+            "discovery_utc": "2026-07-22T00:08:33.104144+00:00",
+            "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_3770d6ba_f6db04c3",
+            "provenance_trail": [
+                {
+                    "source_id": "canary_run_20",
+                    "source_type": "canary_harness",
+                    "batch_id": "batch_20",
+                    "ts": "2026-07-22T00:08:33.104144+00:00",
+                    "lineage": {
+                        "node_id": "AXIS_NODE_LOCAL_01",
+                        "engine_version": "Axis-v1.9.1b-Attested",
+                        "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+                        "node_attestation": "9bc65ae124eb740a4bd5dbb405246f1cc7bde00be69939ab3d491a41899d5941"
+                    }
+                }
+            ]
+        },
+        "937173424c32eab775403477824a27518524dc242377329bf8cc83a79f30f2ce": {
+            "entity": "canary_entity_21",
+            "claim": "canary_claim_21_1784678913494",
+            "claim_domain": "general",
+            "source_id": "canary_run_21",
+            "source_type": "canary_harness",
+            "artifact_type": "ecosystem_observation",
+            "batch_id": "batch_21",
+            "provenance_note": "",
+            "confidence": 0.99,
+            "status": "pending",
+            "requires_supermajority": false,
+            "cycles_survived": 8,
+            "discovery_utc": "2026-07-22T00:08:38.491939+00:00",
+            "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_93717342_ac60b797",
+            "provenance_trail": [
+                {
+                    "source_id": "canary_run_21",
+                    "source_type": "canary_harness",
+                    "batch_id": "batch_21",
+                    "ts": "2026-07-22T00:08:38.491939+00:00",
+                    "lineage": {
+                        "node_id": "AXIS_NODE_LOCAL_01",
+                        "engine_version": "Axis-v1.9.1b-Attested",
+                        "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+                        "node_attestation": "9bc65ae124eb740a4bd5dbb405246f1cc7bde00be69939ab3d491a41899d5941"
+                    }
+                }
+            ]
+        },
+        "c14d5c973ad1f2480550f185971f0b265224546d745fd2698dc28ea836ff9ccd": {
+            "entity": "canary_entity_22",
+            "claim": "canary_claim_22_1784678918864",
+            "claim_domain": "general",
+            "source_id": "canary_run_22",
+            "source_type": "canary_harness",
+            "artifact_type": "ecosystem_observation",
+            "batch_id": "batch_22",
+            "provenance_note": "",
+            "confidence": 0.99,
+            "status": "pending",
+            "requires_supermajority": false,
+            "cycles_survived": 6,
+            "discovery_utc": "2026-07-22T00:08:42.823054+00:00",
+            "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_c14d5c97_c5b19a7f",
+            "provenance_trail": [
+                {
+                    "source_id": "canary_run_22",
+                    "source_type": "canary_harness",
+                    "batch_id": "batch_22",
+                    "ts": "2026-07-22T00:08:42.823054+00:00",
+                    "lineage": {
+                        "node_id": "AXIS_NODE_LOCAL_01",
+                        "engine_version": "Axis-v1.9.1b-Attested",
+                        "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+                        "node_attestation": "9bc65ae124eb740a4bd5dbb405246f1cc7bde00be69939ab3d491a41899d5941"
+                    }
+                }
+            ]
+        },
+        "d577216b562969afd946066865cb016a61310465cf57f3a4db54d5735870ef0e": {
+            "entity": "canary_entity_23",
+            "claim": "canary_claim_23_1784678923199",
+            "claim_domain": "general",
+            "source_id": "canary_run_23",
+            "source_type": "canary_harness",
+            "artifact_type": "ecosystem_observation",
+            "batch_id": "batch_23",
+            "provenance_note": "",
+            "confidence": 0.99,
+            "status": "pending",
+            "requires_supermajority": false,
+            "cycles_survived": 4,
+            "discovery_utc": "2026-07-22T00:08:47.831963+00:00",
+            "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_d577216b_fac7aac7",
+            "provenance_trail": [
+                {
+                    "source_id": "canary_run_23",
+                    "source_type": "canary_harness",
+                    "batch_id": "batch_23",
+                    "ts": "2026-07-22T00:08:47.831963+00:00",
+                    "lineage": {
+                        "node_id": "AXIS_NODE_LOCAL_01",
+                        "engine_version": "Axis-v1.9.1b-Attested",
+                        "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+                        "node_attestation": "9bc65ae124eb740a4bd5dbb405246f1cc7bde00be69939ab3d491a41899d5941"
+                    }
+                }
+            ]
+        },
+        "ed07234a03b184d23c753f26423332ff4ac30ac55296d5575edd4cc5ce602899": {
+            "entity": "canary_entity_24",
+            "claim": "canary_claim_24_1784678928218",
+            "claim_domain": "general",
+            "source_id": "canary_run_24",
+            "source_type": "canary_harness",
+            "artifact_type": "ecosystem_observation",
+            "batch_id": "batch_24",
+            "provenance_note": "",
+            "confidence": 0.99,
+            "status": "pending",
+            "requires_supermajority": false,
+            "cycles_survived": 2,
+            "discovery_utc": "2026-07-22T00:08:52.215775+00:00",
+            "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_ed07234a_81679adc",
+            "provenance_trail": [
+                {
+                    "source_id": "canary_run_24",
+                    "source_type": "canary_harness",
+                    "batch_id": "batch_24",
+                    "ts": "2026-07-22T00:08:52.215775+00:00",
+                    "lineage": {
+                        "node_id": "AXIS_NODE_LOCAL_01",
+                        "engine_version": "Axis-v1.9.1b-Attested",
+                        "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+                        "node_attestation": "9bc65ae124eb740a4bd5dbb405246f1cc7bde00be69939ab3d491a41899d5941"
+                    }
+                }
+            ]
+        }
+    },
+    "cycle_count": 48
+}

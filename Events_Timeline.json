@@ -1,0 +1,278 @@
+﻿[
+    {
+        "version":  [
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null
+                    ],
+        "events":  [
+                       null,
+                       null,
+                       null,
+                       null,
+                       null,
+                       null,
+                       null,
+                       null,
+                       null,
+                       null,
+                       null,
+                       null,
+                       null,
+                       null,
+                       null,
+                       null,
+                       null,
+                       null,
+                       null,
+                       {
+                           "source":  "SIMULATOR",
+                           "timestamp":  "2026-01-15T23:51:57.9765954Z",
+                           "description":  "Simulated High RF Noise Detected",
+                           "id":  "SIM-RF-SPIKE-001",
+                           "type":  "rf_anomaly"
+                       },
+                       {
+                           "source":  "SIMULATOR",
+                           "timestamp":  "2026-01-15T23:52:30.5701083Z",
+                           "description":  "Simulated High RF Noise Detected",
+                           "id":  "SIM-RF-SPIKE-002",
+                           "type":  "rf_anomaly"
+                       },
+                       {
+                           "id":  "SIM-CRITICAL-VOICE-001",
+                           "description":  "Phase 39 Integration Complete. Voice Systems Online.",
+                           "source":  "VERIFICATION_SCRIPT",
+                           "timestamp":  "2026-01-16T00:00:53.8619568Z",
+                           "type":  "phase_shift",
+                           "severity":  "critical"
+                       }
+                   ]
+    },
+    {
+        "timestamp":  "2026-01-16T00:16:32Z",
+        "data":  {
+                     "old_mode":  "auto_low_risk",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from auto_low_risk to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-01-16T00:42:13Z",
+        "data":  {
+                     "old_mode":  "auto_low_risk",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from auto_low_risk to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-01-16T00:44:40Z",
+        "data":  {
+                     "old_mode":  "auto_low_risk",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from auto_low_risk to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-01-16T01:27:49Z",
+        "data":  {
+                     "old_mode":  "auto_low_risk",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from auto_low_risk to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-01-16T03:03:08Z",
+        "data":  {
+                     "old_mode":  "recommend",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from recommend to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-01-16T17:24:42Z",
+        "data":  {
+                     "old_mode":  "recommend",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from recommend to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-01-16T17:28:03Z",
+        "data":  {
+                     "old_mode":  "recommend",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from recommend to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-01-16T17:31:10Z",
+        "data":  {
+                     "old_mode":  "recommend",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from recommend to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-01-16T19:03:29Z",
+        "data":  {
+                     "old_mode":  "recommend",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from recommend to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-01-16T20:42:46Z",
+        "data":  {
+                     "old_mode":  "recommend",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from recommend to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-01-17T00:41:18Z",
+        "data":  {
+                     "old_mode":  "recommend",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from recommend to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-01-17T19:49:44Z",
+        "data":  {
+                     "old_mode":  "recommend",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from recommend to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-01-17T19:53:24Z",
+        "data":  {
+                     "old_mode":  "recommend",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from recommend to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-01-17T20:05:37Z",
+        "data":  {
+                     "old_mode":  "recommend",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from recommend to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-01-17T20:32:21Z",
+        "data":  {
+                     "old_mode":  "recommend",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from recommend to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-01-17T22:47:15Z",
+        "data":  {
+                     "old_mode":  "recommend",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from recommend to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-01-18T00:11:27Z",
+        "data":  {
+                     "old_mode":  "recommend",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from recommend to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-01-18T17:02:37Z",
+        "data":  {
+                     "old_mode":  "auto_low_risk",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from auto_low_risk to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-01-18T17:02:49Z",
+        "data":  {
+                     "old_mode":  "auto_low_risk",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from auto_low_risk to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-01-18T17:49:20Z",
+        "data":  {
+                     "old_mode":  "auto_low_risk",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from auto_low_risk to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-01-18T21:33:28Z",
+        "data":  {
+                     "old_mode":  "auto_low_risk",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from auto_low_risk to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    }
+]

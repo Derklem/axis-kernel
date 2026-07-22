@@ -1,0 +1,26 @@
+{
+    "version": 1,
+    "bounds": [
+        {
+            "id": "BOUND-GOV-META-IMMUTABLE",
+            "target_components": [
+                "COMP-GOVERNANCE"
+            ],
+            "description": "Core governance semantics cannot be changed by autonomous processes.",
+            "allow_autonomous_mutation": false,
+            "allow_optimizer_suggestions": true,
+            "require_anchor_override": true
+        },
+        {
+            "id": "BOUND-OPT-NO-SELF-DIRECT",
+            "target_components": [
+                "COMP-OPTIMIZER"
+            ],
+            "description": "The optimizer cannot directly change its own logic.",
+            "allow_autonomous_mutation": false,
+            "allow_optimizer_suggestions": true,
+            "require_anchor_override": true,
+            "notes": "Optimizer may propose changes via governance; cannot self-apply."
+        }
+    ]
+}

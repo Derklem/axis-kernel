@@ -1,0 +1,21 @@
+﻿{
+    "window_days":  7,
+    "last_generated":  "2026-01-13T11:41:58",
+    "summary":  {
+                    "by_node":  {
+
+                                },
+                    "by_type":  [
+                                    {
+                                        "count":  1,
+                                        "type":  "visual_anomaly"
+                                    },
+                                    {
+                                        "count":  1,
+                                        "type":  "critical_link_loss"
+                                    }
+                                ],
+                    "total_incidents":  2
+                },
+    "version":  1
+}

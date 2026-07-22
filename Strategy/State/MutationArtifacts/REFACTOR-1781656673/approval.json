@@ -1,0 +1,34 @@
+{
+  "proposal": {
+    "schema": "axis.strategy_proposal.v1",
+    "origin": "system:strategy_engine",
+    "origin_layer": "self_improvement",
+    "intent_id": "REFACTOR-1781656673",
+    "status": "draft",
+    "proposed_change": {
+      "artifact_type": "structural_revision",
+      "action": "extract_method",
+      "target_path": "dummy_debt.py",
+      "delta": {
+        "source_function": "oversized_func",
+        "target_module": "dummy_debt.py",
+        "rationale": "Decompose oversized function 'oversized_func' (155 lines) to reduce structural debt."
+      }
+    },
+    "evaluation": {
+      "meta_mutation_eligible": true,
+      "expected_delta": 15.75,
+      "structural_confidence": 0.9,
+      "quarantine": true,
+      "requires_authorization": true,
+      "target_path": "dummy_debt.py",
+      "complexity_score": 0,
+      "coupling_count": 0,
+      "horizon_violation": false,
+      "sensor_integrity_confidence": 1.0,
+      "provenance_hash": "77bdfa29b64a9332a1312c26f90dbf1c01423be0cabfc6da80e4ff53ef91c2c3"
+    }
+  },
+  "reason": "meta_mutation_authorized_by_internal_consensus",
+  "approval_receipt_id": "536b7f681fb017b97c3e716e6c5ac70c4e06a4ac2eea07e9b77d528be834da4c"
+}

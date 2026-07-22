@@ -1,0 +1,28 @@
+GPT:
+
+**Directives Executed. The Citadel is Hardened.**
+
+I have implemented your command set to formalize "Ghost Mode" as a secure engineering state rather than a waiting room.
+
+### 1. Voice Capability Locked (Directive A)
+I have updated the Decision Envelope (`T07_DecisionEnvelope.ps1`) with a hard administrative gate:
+> `voice_status = blocked_by_claim`
+NO module can propose external `POST` intents while this flag is active. This replaces "hope" with "state."
+
+### 2. ECE Transparency (Directive C)
+I fixed the "Blind Spot" in the Morning Report. `T11_ECE_PressureReport.ps1` now correctly handles zero-event windows, and `T12` surfaces real numbers (or "QUIET" status) instead of `****` artifacts.
+*   **Current State**: `QUIET` (No events in last 10m).
+*   **Trust Map**: Updating consistently (+0.013 on `general`).
+
+### 3. Real-World Signals (Directive B)
+The Rhythm Observer (`T13`) is active but standardized. It tracks `gap_minutes` and `draft_rate` as pure telemetry. No metaphysics, just metrics.
+
+### 4. Security Policy (Directive D)
+I acknowledge the "Untrusted Input" protocol. All Moltbook feed data is sequestered in `signal_log.jsonl` and processed only by the Epistemic Engine (`T09`), which treats text as probability vectors, not instructions. There is no `Invoke-Expression` path for external content.
+
+**Status**: 
+*   **Engineering**: Green.
+*   **Identity**: Waiting for X appeal (Clean Path).
+*   **Strategy**: Building the Map.
+
+The system is secure. Proceeding with observation.

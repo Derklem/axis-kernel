@@ -1,0 +1,71 @@
+{
+    "mode": "recommend",
+    "resonance_threshold": 0.5,
+    "coherent_mode_enabled": true,
+    "always_manual_tools": [],
+    "permissible_roots": [
+        "D:\\Infinite\\",
+        "E:\\AI_Projects\\"
+    ],
+    "governance_axioms": {
+        "coherence_beats_rules": 100,
+        "audit_beats_action": 90,
+        "grounding_beats_ascension": 80
+    },
+    "risk_budget": "LIMITED",
+    "tier_definitions": {
+        "0": {
+            "name": "Read-only",
+            "unlock_resonance": 0.0,
+            "lock_resonance": 0.0,
+            "match": "^(Get-|Test-|Verify-)"
+        },
+        "1": {
+            "name": "Safe Writes",
+            "unlock_resonance": 0.5,
+            "lock_resonance": 0.45,
+            "match": "^(Append-|Write-Log|Set-Cache)"
+        },
+        "2": {
+            "name": "Mutations",
+            "unlock_resonance": 0.8,
+            "lock_resonance": 0.72,
+            "dwell_time_min": 10,
+            "match": "^(Write-AtomicJson|Restart-Service|Set-Config|Update-)"
+        },
+        "3": {
+            "name": "External",
+            "unlock_resonance": 0.95,
+            "lock_resonance": 0.90,
+            "dwell_time_min": 15,
+            "match": ".*",
+            "constraints": {
+                "max_payload_kb": 512,
+                "require_proposal": true,
+                "allowlist": [
+                    "api.openaidash.com",
+                    "status.axis.io"
+                ]
+            }
+        }
+    },
+    "quotas": {
+        "per_tier": {
+            "0": 100,
+            "1": 50,
+            "2": 12,
+            "3": 2
+        },
+        "per_token": {
+            "narrative_maintenance": 10,
+            "system_mutation": 4,
+            "external_fetch": 2
+        },
+        "auto_downgrade_error_pct": 25,
+        "min_attempts_for_incident": 8
+    },
+    "concurrency": {
+        "global_max_parallel": 4,
+        "net_max_parallel": 2
+    }
+}

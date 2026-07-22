@@ -1,0 +1,25 @@
+{
+    "cycle_count": 505,
+    "mutation_type": "DRY_RUN_EXTRACTION",
+    "target_id": "strategy_engine.py",
+    "parent_receipt_head": "74f5fd892a367358b6f1f25e51463279664150b660c5ec8681aba104e89667bc",
+    "data": {
+        "intent_id": "DRY_RUN_TEST_001",
+        "target_file": "strategy_engine.py",
+        "function": "_get_cluster_density",
+        "slice": "L374-L378",
+        "parameters": [
+            "self"
+        ],
+        "return_count": 1,
+        "side_effect_count": 1,
+        "is_pure": false,
+        "extracted_valid": true,
+        "modified_valid": true,
+        "status": "VALID_DRY_RUN"
+    },
+    "status": "committed",
+    "ts_utc": "2026-05-13T20:11:07.624163+00:00",
+    "receipt_id": "model_delta_DRY_RUN_EXTRACTION_strategy_c9fd078d",
+    "causal_hash": "c9fd078dec628c949b83ac3c8628d529ab3ccb81e7c9d0e4c663f40510b11916"
+}

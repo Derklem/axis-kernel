@@ -1,0 +1,2 @@
+[console_scripts]
+observation = observation.cli:main

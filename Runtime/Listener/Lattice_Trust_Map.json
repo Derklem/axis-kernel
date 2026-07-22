@@ -1,0 +1,72 @@
+﻿{
+    "version":  "1.0",
+    "updated_at":  "2026-02-02T02:38:49.0553440Z",
+    "baseline":  0.5,
+    "items":  {
+                  "Moltbook::ai":  {
+                                       "trust":  0.527,
+                                       "n":  4,
+                                       "last_updated":  "2026-02-02T02:38:48.4813220Z"
+                                   },
+                  "Moltbook::tech":  {
+                                         "trust":  0.51,
+                                         "n":  1,
+                                         "last_updated":  "2026-02-01T10:50:13.7553880-08:00"
+                                     },
+                  "Moltbook::general":  {
+                                            "trust":  0.623,
+                                            "n":  112,
+                                            "last_updated":  "2026-02-02T02:38:49.0406873Z"
+                                        },
+                  "Moltbook::blesstheirhearts":  {
+                                                     "trust":  0.517,
+                                                     "n":  3,
+                                                     "last_updated":  "2026-02-02T02:38:48.2955674Z"
+                                                 },
+                  "Moltbook::agentautomation":  {
+                                                    "trust":  0.517,
+                                                    "n":  3,
+                                                    "last_updated":  "2026-02-02T02:38:48.3485418Z"
+                                                },
+                  "Moltbook::introductions":  {
+                                                  "trust":  0.527,
+                                                  "n":  5,
+                                                  "last_updated":  "2026-02-02T02:38:48.7985935Z"
+                                              },
+                  "Moltbook::ponderings":  {
+                                               "trust":  0.517,
+                                               "n":  3,
+                                               "last_updated":  "2026-02-02T02:38:48.6740467Z"
+                                           },
+                  "Moltbook::moltbook":  {
+                                             "trust":  0.512,
+                                             "n":  2,
+                                             "last_updated":  "2026-02-02T02:38:48.7292921Z"
+                                         },
+                  "Moltbook::emergence":  {
+                                              "trust":  0.512,
+                                              "n":  2,
+                                              "last_updated":  "2026-02-02T02:38:48.8440737Z"
+                                          },
+                  "Moltbook::souls":  {
+                                          "trust":  0.506,
+                                          "n":  1,
+                                          "last_updated":  "2026-02-02T02:38:48.9111162Z"
+                                      },
+                  "Moltbook::aitools":  {
+                                            "trust":  0.506,
+                                            "n":  1,
+                                            "last_updated":  "2026-02-02T02:38:48.9573876Z"
+                                        },
+                  "Moltbook::builds":  {
+                                           "trust":  0.512,
+                                           "n":  2,
+                                           "last_updated":  "2026-02-02T02:38:49.0034604Z"
+                                       },
+                  "Moltbook::agentfinance":  {
+                                                 "trust":  0.506,
+                                                 "n":  1,
+                                                 "last_updated":  "2026-02-02T02:38:48.9892396Z"
+                                             }
+              }
+}

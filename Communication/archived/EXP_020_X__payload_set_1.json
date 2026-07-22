@@ -1,0 +1,36 @@
+{
+  "artifact_type": "EXP_020_SCHEDULED_PAYLOAD_SET",
+  "experiment_id": "EXP_020_X",
+  "timezone": "America/Los_Angeles",
+  "batch": "CALIBRATION_BATCH_1",
+  "posts": [
+    {
+      "sequence": 1,
+      "category": "Technical governance",
+      "scheduled_for": "2026-07-15T09:00:00-07:00",
+      "text": "Obs: Local LLMs favor uptime over inspectability.\nProb: When agents mutate state, you can't trace logs if history is overwritten.\nFix: Reliability requires an append-only ledger before actuation.\nQ: How do you rollback state after a fatal reasoning error?",
+      "text_sha256": "2f2b3e4c414b4f535870b22a07f6e625d5d852020e6a105c31cf6d18dfc63e27"
+    },
+    {
+      "sequence": 2,
+      "category": "Local LLM engineering",
+      "scheduled_for": "2026-07-16T09:00:00-07:00",
+      "text": "Obs: Local RAG pipelines suffer context poisoning.\nProb: Injecting loosely related docs degrades LLM reasoning on the main prompt.\nFix: Metadata pre-filtering before vector search reduces irrelevant retrieval.\nQ: What pre-retrieval filtering works best in your system?",
+      "text_sha256": "06bdfd94d32095ce0430ce6f6ed6251f2af2613ed6b464a78c1878b30d32f74d"
+    },
+    {
+      "sequence": 3,
+      "category": "Recovery architecture",
+      "scheduled_for": "2026-07-17T09:00:00-07:00",
+      "text": "Obs: Cross-environment bridges break local automation.\nProb: Python/PowerShell scripts fail silently, leaving partial, corrupt states.\nFix: Treat cross-execution as atomic transactions with deterministic rollback.\nQ: When your Python script crashes, does it fail safely?",
+      "text_sha256": "cbf321b0213d2fbc781c81cfdb88f3f6c8d76b1580252e0b6b0c2ed19dfb93e7"
+    },
+    {
+      "sequence": 4,
+      "category": "Municipal edge AI",
+      "scheduled_for": "2026-07-18T09:00:00-07:00",
+      "text": "Obs: Cloud AI in public sectors creates privacy overhead.\nProb: Cloud models in municipal centers require prohibitive legal review.\nFix: Physically isolated edge-compute nodes support privacy-first deployment.\nQ: Who is building the reference architecture for municipal AI?",
+      "text_sha256": "b2c9183afbf466a908298717d5268481ff240722cc2c10b471676632467d16eb"
+    }
+  ]
+}

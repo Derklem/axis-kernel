@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T00:41:27.261740+00:00",
+    "entity": "Llama-4-70B",
+    "claim": "standard update: signal for Llama-4-70B in cycle 224.",
+    "source_id": "Safety_Watchdog",
+    "source_type": "automated_sensor",
+    "claim_domain": "general",
+    "confidence": 0.61
+}

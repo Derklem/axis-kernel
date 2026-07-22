@@ -1,0 +1,38 @@
+{
+  "version": "1.0",
+  "review_weights": {
+    "structural_overlap_score": 0.30,
+    "boundary_complementarity_score": 0.25,
+    "predictive_coverage_gain": 0.20,
+    "compression_gain": 0.15,
+    "historical_stability": 0.10
+  },
+  "thresholds": {
+    "meta_theory_construction": 0.78,
+    "duplicate_collapse": 0.90,
+    "plurality_preservation_floor": 0.45,
+    "minimum_predictive_coverage_gain": 0.10
+  },
+  "constraints": {
+    "cannot_construct_meta_theory_from_pioneer_only_clusters": true,
+    "cannot_subsume_canonical_candidates_without_explicit_review": true,
+    "require_lineage_integrity": true,
+    "require_review_trace": true,
+    "queue_registry_reconciliation_required": true
+  },
+  "duplicate_policy": {
+    "default_duplicate_resolution": "DEPRECATE_DUPLICATE_KEEP_STRONGER",
+    "tie_breakers": [
+      "higher_confidence",
+      "greater_evidence_count",
+      "older_theory",
+      "greater_lineage_connectivity"
+    ]
+  },
+  "meta_theory_policy": {
+    "default_status": "PROVISIONAL_META_THEORY",
+    "research_surface_only": true,
+    "allow_canonical_staging": true
+  },
+  "last_updated": "2026-03-14T22:40:00Z"
+}

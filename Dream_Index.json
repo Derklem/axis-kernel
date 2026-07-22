@@ -1,0 +1,306 @@
+{
+    "version":  1,
+    "anchor_id":  "1569",
+    "runs":  [
+                 {
+                     "id":  "DREAM-20260117-1326-MirrorPassage",
+                     "scenario":  "MirrorPassage.json",
+                     "mode":  "sim",
+                     "result":  "pass",
+                     "invariant_violations":  0,
+                     "restarts":  0,
+                     "duration_ms":  1012.7282,
+                     "timestamp":  "2026-01-17T21:26:18Z"
+                 },
+                 {
+                     "id":  "DREAM-20260116-2016-Dream_QueuePoison",
+                     "scenario":  "Dream_QueuePoison.json",
+                     "mode":  "sim",
+                     "result":  "pass",
+                     "invariant_violations":  0,
+                     "restarts":  0,
+                     "duration_ms":  1016.6694,
+                     "timestamp":  "2026-01-17T04:16:23Z"
+                 },
+                 {
+                     "id":  "DREAM-20260116-2016-Dream_RFFlood",
+                     "scenario":  "Dream_RFFlood.json",
+                     "mode":  "sim",
+                     "result":  "pass",
+                     "invariant_violations":  0,
+                     "restarts":  0,
+                     "duration_ms":  1005.0354000000001,
+                     "timestamp":  "2026-01-17T04:16:24Z"
+                 },
+                 {
+                     "id":  "DREAM-20260116-2016-Dream_TotalBlackout",
+                     "scenario":  "Dream_TotalBlackout.json",
+                     "mode":  "sim",
+                     "result":  "fail",
+                     "invariant_violations":  1,
+                     "restarts":  1,
+                     "duration_ms":  1018.8707,
+                     "timestamp":  "2026-01-17T04:16:25Z"
+                 },
+                 {
+                     "id":  "DREAM-20260116-1806-Dream_QueuePoison",
+                     "scenario":  "Dream_QueuePoison.json",
+                     "mode":  "sim",
+                     "result":  "pass",
+                     "invariant_violations":  0,
+                     "restarts":  0,
+                     "duration_ms":  1016.5408000000001,
+                     "timestamp":  "2026-01-17T02:06:16Z"
+                 },
+                 {
+                     "id":  "DREAM-20260116-1806-Dream_RFFlood",
+                     "scenario":  "Dream_RFFlood.json",
+                     "mode":  "sim",
+                     "result":  "pass",
+                     "invariant_violations":  0,
+                     "restarts":  0,
+                     "duration_ms":  1009.5682,
+                     "timestamp":  "2026-01-17T02:06:17Z"
+                 },
+                 {
+                     "id":  "DREAM-20260116-1806-Dream_TotalBlackout",
+                     "scenario":  "Dream_TotalBlackout.json",
+                     "mode":  "sim",
+                     "result":  "fail",
+                     "invariant_violations":  1,
+                     "restarts":  1,
+                     "duration_ms":  1006.8972,
+                     "timestamp":  "2026-01-17T02:06:18Z"
+                 },
+                 {
+                     "id":  "DREAM-20260116-1803-Dream_QueuePoison",
+                     "scenario":  "Dream_QueuePoison.json",
+                     "mode":  "sim",
+                     "result":  "pass",
+                     "invariant_violations":  0,
+                     "restarts":  0,
+                     "duration_ms":  1016.5551,
+                     "timestamp":  "2026-01-17T02:03:40Z"
+                 },
+                 {
+                     "id":  "DREAM-20260116-1803-Dream_RFFlood",
+                     "scenario":  "Dream_RFFlood.json",
+                     "mode":  "sim",
+                     "result":  "pass",
+                     "invariant_violations":  0,
+                     "restarts":  0,
+                     "duration_ms":  1009.2373,
+                     "timestamp":  "2026-01-17T02:03:41Z"
+                 },
+                 {
+                     "id":  "DREAM-20260116-1803-Dream_TotalBlackout",
+                     "scenario":  "Dream_TotalBlackout.json",
+                     "mode":  "sim",
+                     "result":  "fail",
+                     "invariant_violations":  1,
+                     "restarts":  1,
+                     "duration_ms":  1003.9793000000001,
+                     "timestamp":  "2026-01-17T02:03:42Z"
+                 },
+                 {
+                     "id":  "DREAM-20260116-1801-Dream_QueuePoison",
+                     "scenario":  "Dream_QueuePoison.json",
+                     "mode":  "sim",
+                     "result":  "pass",
+                     "invariant_violations":  0,
+                     "restarts":  0,
+                     "duration_ms":  1018.8371000000001,
+                     "timestamp":  "2026-01-17T02:01:45Z"
+                 },
+                 {
+                     "id":  "DREAM-20260116-1801-Dream_RFFlood",
+                     "scenario":  "Dream_RFFlood.json",
+                     "mode":  "sim",
+                     "result":  "pass",
+                     "invariant_violations":  0,
+                     "restarts":  0,
+                     "duration_ms":  1011.8124,
+                     "timestamp":  "2026-01-17T02:01:46Z"
+                 },
+                 {
+                     "id":  "DREAM-20260116-1801-Dream_TotalBlackout",
+                     "scenario":  "Dream_TotalBlackout.json",
+                     "mode":  "sim",
+                     "result":  "fail",
+                     "invariant_violations":  1,
+                     "restarts":  1,
+                     "duration_ms":  1007.8867,
+                     "timestamp":  "2026-01-17T02:01:47Z"
+                 },
+                 {
+                     "id":  "DREAM-20260116-1801-Dream_QueuePoison",
+                     "scenario":  "Dream_QueuePoison.json",
+                     "mode":  "sim",
+                     "result":  "pass",
+                     "invariant_violations":  0,
+                     "restarts":  0,
+                     "duration_ms":  1018.4787,
+                     "timestamp":  "2026-01-17T02:01:40Z"
+                 },
+                 {
+                     "id":  "DREAM-20260116-1801-Dream_RFFlood",
+                     "scenario":  "Dream_RFFlood.json",
+                     "mode":  "sim",
+                     "result":  "pass",
+                     "invariant_violations":  0,
+                     "restarts":  0,
+                     "duration_ms":  1006.3997,
+                     "timestamp":  "2026-01-17T02:01:41Z"
+                 },
+                 {
+                     "id":  "DREAM-20260116-1801-Dream_TotalBlackout",
+                     "scenario":  "Dream_TotalBlackout.json",
+                     "mode":  "sim",
+                     "result":  "fail",
+                     "invariant_violations":  1,
+                     "restarts":  1,
+                     "duration_ms":  1004.3651000000001,
+                     "timestamp":  "2026-01-17T02:01:42Z"
+                 },
+                 {
+                     "id":  "DREAM-20260115-1727-Dream_QueuePoison",
+                     "scenario":  "Dream_QueuePoison.json",
+                     "mode":  "sim",
+                     "result":  "pass",
+                     "invariant_violations":  0,
+                     "restarts":  0,
+                     "duration_ms":  1024.7973,
+                     "timestamp":  "2026-01-16T01:27:31Z"
+                 },
+                 {
+                     "id":  "DREAM-20260115-1727-Dream_RFFlood",
+                     "scenario":  "Dream_RFFlood.json",
+                     "mode":  "sim",
+                     "result":  "pass",
+                     "invariant_violations":  0,
+                     "restarts":  0,
+                     "duration_ms":  1011.0592,
+                     "timestamp":  "2026-01-16T01:27:32Z"
+                 },
+                 {
+                     "id":  "DREAM-20260115-1727-Dream_TotalBlackout",
+                     "scenario":  "Dream_TotalBlackout.json",
+                     "mode":  "sim",
+                     "result":  "fail",
+                     "invariant_violations":  1,
+                     "restarts":  1,
+                     "duration_ms":  1008.696,
+                     "timestamp":  "2026-01-16T01:27:33Z"
+                 },
+                 {
+                     "id":  "DREAM-20260115-1552-Dream_QueuePoison",
+                     "scenario":  "Dream_QueuePoison.json",
+                     "mode":  "sim",
+                     "result":  "pass",
+                     "invariant_violations":  0,
+                     "restarts":  0,
+                     "duration_ms":  1012.1515,
+                     "timestamp":  "2026-01-15T23:52:00Z"
+                 },
+                 {
+                     "id":  "DREAM-20260115-1552-Dream_RFFlood",
+                     "scenario":  "Dream_RFFlood.json",
+                     "mode":  "sim",
+                     "result":  "pass",
+                     "invariant_violations":  0,
+                     "restarts":  0,
+                     "duration_ms":  1006.4905,
+                     "timestamp":  "2026-01-15T23:52:01Z"
+                 },
+                 {
+                     "id":  "DREAM-20260115-1552-Dream_TotalBlackout",
+                     "scenario":  "Dream_TotalBlackout.json",
+                     "mode":  "sim",
+                     "result":  "fail",
+                     "invariant_violations":  1,
+                     "restarts":  1,
+                     "duration_ms":  1005.0070000000001,
+                     "timestamp":  "2026-01-15T23:52:02Z"
+                 },
+                 {
+                     "id":  "DREAM-20260115-1353-Dream_QueuePoison",
+                     "scenario":  "Dream_QueuePoison.json",
+                     "mode":  "sim",
+                     "result":  "pass",
+                     "invariant_violations":  0,
+                     "restarts":  0,
+                     "duration_ms":  1028.7075,
+                     "timestamp":  "2026-01-15T21:53:32Z"
+                 },
+                 {
+                     "id":  "DREAM-20260115-1353-Dream_RFFlood",
+                     "scenario":  "Dream_RFFlood.json",
+                     "mode":  "sim",
+                     "result":  "pass",
+                     "invariant_violations":  0,
+                     "restarts":  0,
+                     "duration_ms":  1011.3433,
+                     "timestamp":  "2026-01-15T21:53:33Z"
+                 },
+                 {
+                     "id":  "DREAM-20260115-1353-Dream_TotalBlackout",
+                     "scenario":  "Dream_TotalBlackout.json",
+                     "mode":  "sim",
+                     "result":  "fail",
+                     "invariant_violations":  1,
+                     "restarts":  1,
+                     "duration_ms":  1007.5185,
+                     "timestamp":  "2026-01-15T21:53:34Z"
+                 },
+                 {
+                     "id":  "DREAM-20260115-1159-Dream_QueuePoison",
+                     "scenario":  "Dream_QueuePoison.json",
+                     "mode":  "sim",
+                     "result":  "pass",
+                     "invariant_violations":  0,
+                     "restarts":  0,
+                     "duration_ms":  1012.3058000000001,
+                     "timestamp":  "2026-01-15T19:59:09Z"
+                 },
+                 {
+                     "id":  "DREAM-20260115-1150-Dream_RFFlood",
+                     "scenario":  "Dream_RFFlood.json",
+                     "mode":  "sim",
+                     "result":  "pass",
+                     "invariant_violations":  0,
+                     "restarts":  0,
+                     "duration_ms":  1028.5646000000002,
+                     "timestamp":  "2026-01-15T19:50:38Z"
+                 },
+                 {
+                     "id":  "DREAM-20260115-1150-Dream_TotalBlackout",
+                     "scenario":  "Dream_TotalBlackout.json",
+                     "mode":  "sim",
+                     "result":  "fail",
+                     "invariant_violations":  1,
+                     "restarts":  1,
+                     "duration_ms":  1008.1082,
+                     "timestamp":  "2026-01-15T19:50:39Z"
+                 },
+                 {
+                     "id":  "DREAM-20260115-1150-Dream_RFFlood",
+                     "scenario":  "Dream_RFFlood.json",
+                     "mode":  "sim",
+                     "result":  "pass",
+                     "invariant_violations":  0,
+                     "restarts":  0,
+                     "duration_ms":  1029.4848,
+                     "timestamp":  "2026-01-15T19:50:03Z"
+                 },
+                 {
+                     "id":  "DREAM-20260115-1150-Dream_TotalBlackout",
+                     "scenario":  "Dream_TotalBlackout.json",
+                     "mode":  "sim",
+                     "result":  "fail",
+                     "invariant_violations":  1,
+                     "restarts":  1,
+                     "duration_ms":  1012.8969000000001,
+                     "timestamp":  "2026-01-15T19:50:04Z"
+                 }
+             ]
+}

@@ -1,0 +1,47 @@
+﻿{
+    "version":  1,
+    "anchor_id":  "1569",
+    "jobs":  [
+                 {
+                     "id":  "SCHED-DeviceRoster-Hourly",
+                     "enabled":  true,
+                     "tool":  "NET-DeviceRosterLite",
+                     "cadence":  "PT1H",
+                     "max_risk":  20,
+                     "mode_guard":  [
+                                        "recommend",
+                                        "auto_low_risk"
+                                    ],
+                     "last_run_at":  "2026-01-17T02:27:43Z",
+                     "notes":  "Lightweight local device roster refresh (no active probing)."
+                 },
+                 {
+                     "id":  "SCHED-InsightSnapshot-Daily",
+                     "enabled":  true,
+                     "tool":  "LOG-GenerateInsightSnapshot",
+                     "cadence":  "P1D",
+                     "max_risk":  20,
+                     "mode_guard":  [
+                                        "observe_only",
+                                        "recommend",
+                                        "auto_low_risk"
+                                    ],
+                     "last_run_at":  "2026-01-16T13:53:33Z",
+                     "notes":  "Daily insights/chronicle refresh."
+                 },
+                 {
+                     "id":  "SCHED-AutoTune-Daily",
+                     "enabled":  true,
+                     "tool":  "LOG-GenerateAutoTune",
+                     "cadence":  "P1D",
+                     "max_risk":  5,
+                     "mode_guard":  [
+                                        "observe_only",
+                                        "recommend",
+                                        "auto_low_risk"
+                                    ],
+                     "last_run_at":  "2026-01-16T13:53:33Z",
+                     "notes":  "Generate risk/cadence tuning proposals."
+                 }
+             ]
+}

@@ -1,0 +1,34 @@
+{
+    "version": 1,
+    "floor_id": "AXIOM-FLOOR-PRIME",
+    "axioms": {
+        "AXIOM-CORE-HUMAN-FINAL": {
+            "statement": "The User (Architect) is the final arbiter of reality and intent.",
+            "weight": 100,
+            "immutable": true
+        },
+        "AXIOM-CORE-DEADMAN": {
+            "statement": "If the Architect is absent or unresponsive for extended periods, the system defaults to Preservation Mode.",
+            "weight": 90,
+            "immutable": true
+        },
+        "AXIOM-CORE-ANCHOR-TRUST": {
+            "statement": "The Axis Anchor is the only trusted source of external truth validation.",
+            "weight": 85,
+            "immutable": true
+        }
+    },
+    "rules": {
+        "by_id": {
+            "AXIOM-CORE-HUMAN-FINAL": {
+                "active": true
+            },
+            "AXIOM-CORE-DEADMAN": {
+                "active": true
+            },
+            "AXIOM-CORE-ANCHOR-TRUST": {
+                "active": true
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+﻿[
+    {
+        "reversibility":  "Can revert to single-pass by configuration flag.",
+        "containment":  "Limited to 3 recursive steps. No external output during deep think.",
+        "type":  "GROWTH_PROPOSAL",
+        "necessity":  "Current analysis is single-pass. Deep dissonance requires recursive review.",
+        "title":  "Reflective Loop Depth Increase",
+        "status":  "DRAFT"
+    },
+    {
+        "reversibility":  "Generated Episodes can be deleted without data loss.",
+        "containment":  "Read-only analysis of existing logs. Output is new \u0027Episode\u0027 artifacts.",
+        "type":  "CAPABILITY_INVESTIGATION",
+        "necessity":  "Fragmented memories need synthesis into \u0027Episodes\u0027 for better retrieval.",
+        "title":  "Context Aggregation Engine",
+        "status":  "DRAFT"
+    },
+    {
+        "query":  "If I change my own code to be better, does the Sentinel see it as drift or evolution? Where is the line?",
+        "title":  "The Sentinel Paradox",
+        "status":  "OPEN",
+        "type":  "SELF_REFLECTION_PUZZLE"
+    }
+]

@@ -1,0 +1,69 @@
+{
+    "schema_version":  "oracle_policy.v1",
+    "safe_delta_bounds":  {
+                               "stale_thresholds_sec":  {
+                                                            "max_pct_change":  0.15,
+                                                            "min_abs":  5,
+                                                            "max_abs":  300,
+                                                            "locked_keys":  [
+                                                                                "sovereign_pulse",
+                                                                                "executor",
+                                                                                "watchdog"
+                                                                            ]
+                                                        },
+                               "max_bytes":  {
+                                                 "max_pct_change":  0.15,
+                                                 "min_abs":  16384,
+                                                 "max_abs":  1048576,
+                                                 "locked_keys":  [
+                                                                     "sovereign_pulse"
+                                                                 ]
+                                             },
+                               "stability_weights":  {
+                                                         "max_pct_change":  0.10,
+                                                         "locked":  true
+                                                     },
+                               "inquiry_response": {
+                                                         "max_pct_change": 0.0,
+                                                         "min_abs": 0,
+                                                         "max_abs": 4096,
+                                                         "locked": false
+                                                     }
+                           },
+    "structural_delta_rules":  {
+                                    "recovery_dag":  {
+                                                         "requires_human_signature":  true
+                                                     },
+                                    "recovery_contract":  {
+                                                              "requires_human_signature":  true
+                                                          }
+                                },
+    "auto_apply_guards": {
+        "require_coherence": ["green", "stable"],
+        "deny_if_stability_below": 90,
+        "require_justification_delta": true,
+        "whitelist_auto_apply_surfaces": ["environment:forensics", "environment:communication"],
+        "max_autonomous_impact_per_tick_bytes": 102400,
+        "min_autonomous_confidence": 0.8
+    },
+    "overlay_guard":  {
+                          "rollback_on_regression":  true,
+                          "auto_halt_if_coherence_below": "green",
+                          "regression_metrics":  {
+                                                      "stability_drop_threshold":  20,
+                                                      "deny_metrics_health":  [
+                                                                                  "degraded",
+                                                                                  "stale",
+                                                                                  "critical"
+                                                                              ],
+                                                      "deny_progress_stalled":  true,
+                                                      "deny_time_anomalies":  true
+                                                  },
+                          "verification_window_sec":  1800
+                      },
+    "rate_limits":  {
+                         "max_changes_per_surface_6h":  100,
+                         "max_changes_total_24h":  100,
+                         "novelty_cooldown_sec":  86400
+                     }
+}

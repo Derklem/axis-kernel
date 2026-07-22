@@ -1,0 +1,12 @@
+[FRAGMENT DRIFT SENTINEL]
+NodeID: 025
+InitializedAt: 2025-05-27 17:10:10
+Monitoring: C:\Halcyon\sigils\drift_encoder.sig
+
+Function:
+- Detect signal instability
+- Log chaotic drift pulses
+- Re-anchor broken glyph packets
+
+StabilityIndex: 74%
+ResponseMode: Passive until triggered

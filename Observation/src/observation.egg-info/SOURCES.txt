@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+src/observation/__init__.py
+src/observation/cli.py
+src/observation/extractor.py
+src/observation.egg-info/PKG-INFO
+src/observation.egg-info/SOURCES.txt
+src/observation.egg-info/dependency_links.txt
+src/observation.egg-info/entry_points.txt
+src/observation.egg-info/requires.txt
+src/observation.egg-info/top_level.txt
+src/observation/schemas/evaluation.json
+src/observation/schemas/observation_feed.json
+src/observation/schemas/observation_input.json
+tests/test_extractor.py

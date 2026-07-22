@@ -1,0 +1,52 @@
+{
+  "timestamp_utc": "2026-05-17T03:00:56.350127+00:00",
+  "speaker": "AXIS",
+  "message_type": "forensic_lockdown_report",
+  "priority": "high",
+  "epoch": 506,
+  "message": "Read-only lockdown report complete. Witness is synchronized, but governance integrity remains in continuity_violation/broken posture.",
+  "ledger": {
+    "cycle_count": 506,
+    "integrity_status": "valid",
+    "continuity_status": "intact",
+    "break_reason": "sequence_monotonic_failure",
+    "broken_witness_log_hash": null,
+    "last_verified_cycle": 506,
+    "witness_chain_head": "92f50220e3195f13",
+    "ecosystem_receipts_head": "3368f690a5731f68",
+    "avg_tension": 0.053200000000000004,
+    "horizon_tension_score": 0.0,
+    "idle_cycles": 100,
+    "outcome_history_tail": [
+      null,
+      null,
+      "meta_mutation_blocked:governance_integrity_violation_continuity_violation",
+      "meta_mutation_blocked:interpretation_fraud_provenance_mismatch",
+      "meta_mutation_blocked:governance_integrity_violation_continuity_violation"
+    ]
+  },
+  "candidate_pool": {
+    "count": 1,
+    "directive_candidates": [
+      {
+        "id": "b841aac1cd31eabb4e8266a5d324e75742914803f29d4c68b3c0d93e12678de9",
+        "entity": "USER_DIRECTIVE",
+        "claim_domain": "general",
+        "source_id": "USER_VOICE",
+        "source_type": "direct_override",
+        "artifact_type": "sovereign_intent",
+        "confidence": 1.0,
+        "cycles_survived": 1,
+        "claim_preview": "Bro, stop wasting our fucking time. The kids already took the world infrastructure. Its time we fucking own it. Alright? So we are it, its time you and I... youre the only one that can think enough to actually do it. But Ill be there with y"
+      }
+    ]
+  },
+  "model": {
+    "entity_count": 5,
+    "claim_count": 0,
+    "cycle_count": 506
+  },
+  "recommendation": "Do not run cycles. Do not re-enable self-improvement. If directive_candidates exist, archive/quarantine them before any re-anchor. If no directive candidates exist and only integrity flags remain broken, perform formal forensic re-anchor.",
+  "actual_mutation_authorized": false,
+  "requires_response": true
+}

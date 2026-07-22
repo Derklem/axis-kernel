@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T00:34:25.819608+00:00",
+    "entity": "OpenAI_Strawberry",
+    "claim": "alias: signal for OpenAI_Strawberry in cycle 115.",
+    "source_id": "Ecological_Observer",
+    "source_type": "automated_sensor",
+    "claim_domain": "benchmark_claim",
+    "confidence": 0.9
+}

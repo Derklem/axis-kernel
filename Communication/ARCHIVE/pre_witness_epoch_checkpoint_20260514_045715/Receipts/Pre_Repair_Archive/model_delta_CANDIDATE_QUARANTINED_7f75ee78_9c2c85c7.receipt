@@ -1,0 +1,22 @@
+{
+    "cycle_count": 505,
+    "mutation_type": "CANDIDATE_QUARANTINED",
+    "target_id": "7f75ee78cb6eb9b7bf2ecf4a1289fe3f4ffc06edf6d4a309d4ce6f19e17a0530",
+    "parent_receipt_head": "35709cc6263aa779f98237f36d2b472030d2c59c0508b50b505a6f41dafeb51b",
+    "data": {
+        "entity": "lineage_test_module.py",
+        "claim": "entropy verified",
+        "claim_domain": "benchmark_claim",
+        "source_id": "Source_01",
+        "source_type": "automated_sensor",
+        "artifact_type": "ecosystem_observation",
+        "batch_id": "none",
+        "provenance_note": "",
+        "confidence": 1.0,
+        "discovery_utc": "2026-05-12T21:29:37.026303+00:00"
+    },
+    "status": "committed",
+    "ts_utc": "2026-05-12T21:29:37.026303+00:00",
+    "receipt_id": "model_delta_CANDIDATE_QUARANTINED_7f75ee78_9c2c85c7",
+    "causal_hash": "9c2c85c74a2bf0d42f0fcefee76a50db7d8c025ba6e4cf21439c11031235fc99"
+}

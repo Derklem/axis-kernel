@@ -1,0 +1,15 @@
+{
+    "cycle_count": 31,
+    "mutation_type": "CANDIDATE_FRACTURED",
+    "target_id": "7773d7d7c9181928dad36f1a2ddcbede900a0b2ce094f2883d498072e76447d8",
+    "parent_receipt_head": "7685e1f8a4061a933e75257d8e69f39e6b170b087e71d3a71c789f35be3b2b89",
+    "data": {
+        "entity": "ecosystem_mapping_enginepy",
+        "claim": "[epistemic_intake] ecosystem_mapping_engine.py has 1165 lines, 1 oversized functions (>120 lines), debt_score=0.15. Target: Extract long methods for maintainability.",
+        "reason": "chronic_quorum_failure_20_cycles"
+    },
+    "status": "committed",
+    "ts_utc": "2026-07-22T00:07:37.725145+00:00",
+    "receipt_id": "model_delta_CANDIDATE_FRACTURED_7773d7d7_4a23155c",
+    "causal_hash": "4a23155ca05c75a35407d4c92c110f4477ed705d4105f8b81a63192a21650b27"
+}

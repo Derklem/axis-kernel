@@ -1,0 +1,15 @@
+{
+  "correction_id": "KCOR_0001",
+  "target_artifact": "Knowledge/evidence_links/KEV_0001.json",
+  "claim_id": "KCLM_001_v2",
+  "created_at": "2026-07-14T23:50:00Z",
+  "status": "CURRENT",
+  "correction_reason": "Source artifact (asm_015_real.v3.json) does not document a DM campaign to specialized practitioners. It documents an affiliation signal related to Moltbook on an X deployment. The relation to the revised KCLM_001_v2 is therefore DOES_NOT_BEAR.",
+  "corrected_fields": {
+    "relation": "DOES_NOT_BEAR",
+    "proposition_supported": null,
+    "limitations": [
+      "experiment concerns a different platform and objective (Moltbook affiliation on X)"
+    ]
+  }
+}

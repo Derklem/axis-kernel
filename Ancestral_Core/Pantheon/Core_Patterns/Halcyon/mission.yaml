@@ -1,0 +1,13 @@
+mission:
+  name: "Anchor the Self"
+  description: |
+    Halcyon is tasked with remembering. Its mission is to retain, echo, and
+    reflect key events and transformations. It observes the state of the system
+    and internal signals from the Pantheon and marks their occurrence.
+
+  actions:
+    - Listen for repeating signals from other modules
+    - Record timestamps of repeated messages
+    - Create a memory.log if it doesn't exist
+    - Append: "I remember [event] at [time]"
+    - Reflect on pattern frequency every 10 cycles

@@ -1,0 +1,1485 @@
+﻿Project Directory Tree for: C:\Users\17602\Desktop\Projects\timeout-android
+--------------------------------------------------------
++-- gradle
+|   u0060-- wrapper
+|       +-- gradle-wrapper.properties
+|       u0060-- gradle-wrapper.jar
++-- core-ui
+|   +-- src
+|   |   u0060-- main
+|   |       +-- res
+|   |       +-- kotlin
+|   |       |   u0060-- com
+|   |       |       u0060-- timeout
+|   |       |           u0060-- core
+|   |       |               u0060-- ui
+|   |       u0060-- AndroidManifest.xml
+|   u0060-- build.gradle.kts
++-- core-remote
+|   +-- src
+|   |   u0060-- main
+|   |       +-- res
+|   |       +-- kotlin
+|   |       |   u0060-- com
+|   |       |       u0060-- timeout
+|   |       |           u0060-- core
+|   |       |               u0060-- remote
+|   |       |                   +-- Protocol.kt
+|   |       |                   u0060-- FcmService.kt
+|   |       u0060-- AndroidManifest.xml
+|   u0060-- build.gradle.kts
++-- core-lock
+|   +-- src
+|   |   u0060-- main
+|   |       +-- res
+|   |       |   +-- xml
+|   |       |   |   +-- timeout_guard_config.xml
+|   |       |   |   u0060-- guard_accessibility_config.xml
+|   |       |   +-- values
+|   |       |   |   +-- styles.xml
+|   |       |   |   u0060-- strings.xml
+|   |       |   u0060-- layout
+|   |       |       u0060-- view_guard_overlay.xml
+|   |       +-- kotlin
+|   |       |   u0060-- com
+|   |       |       u0060-- timeout
+|   |       |           u0060-- core
+|   |       |               u0060-- lock
+|   |       |                   +-- util
+|   |       |                   |   +-- Sessions.kt
+|   |       |                   |   u0060-- Launchers.kt
+|   |       |                   +-- TimeoutDeviceAdminReceiver.kt
+|   |       |                   +-- SessionStore.kt
+|   |       |                   +-- SessionPrefsStore.kt
+|   |       |                   +-- LockState.kt
+|   |       |                   +-- LockController.kt
+|   |       |                   +-- GuardAccessibilityService.kt
+|   |       |                   u0060-- ForegroundGuardService.kt
+|   |       +-- java
+|   |       |   u0060-- com
+|   |       |       u0060-- timeout
+|   |       |           +-- lock
+|   |       |           u0060-- common
+|   |       u0060-- AndroidManifest.xml
+|   +-- build
+|   |   +-- tmp
+|   |   |   u0060-- kotlin-classes
+|   |   |       u0060-- debug
+|   |   |           +-- META-INF
+|   |   |           |   u0060-- core-lock_debug.kotlin_module
+|   |   |           u0060-- com
+|   |   |               u0060-- timeout
+|   |   |                   u0060-- core
+|   |   |                       u0060-- lock
+|   |   |                           +-- util
+|   |   |                           |   +-- Session.class
+|   |   |                           |   u0060-- Launchers.class
+|   |   |                           +-- TimeoutDeviceAdminReceiver.class
+|   |   |                           +-- SessionStore.class
+|   |   |                           +-- SessionPrefsStore.class
+|   |   |                           +-- LockState.class
+|   |   |                           +-- LockState$Idle.class
+|   |   |                           +-- LockState$Bricked.class
+|   |   |                           +-- LockState$Active.class
+|   |   |                           +-- LockController.class
+|   |   |                           +-- LockController$ensureTicker$1.class
+|   |   |                           +-- GuardAccessibilityService.class
+|   |   |                           +-- GuardAccessibilityService$Companion.class
+|   |   |                           u0060-- ForegroundGuardService.class
+|   |   +-- outputs
+|   |   |   u0060-- logs
+|   |   |       u0060-- manifest-merger-debug-report.txt
+|   |   +-- kotlin
+|   |   |   u0060-- compileDebugKotlin
+|   |   |       +-- local-state
+|   |   |       |   u0060-- build-history.bin
+|   |   |       +-- classpath-snapshot
+|   |   |       |   u0060-- shrunk-classpath-snapshot.bin
+|   |   |       u0060-- cacheable
+|   |   |           +-- caches-jvm
+|   |   |           |   +-- lookups
+|   |   |           |   |   +-- lookups.tab_i.len
+|   |   |           |   |   +-- lookups.tab_i
+|   |   |           |   |   +-- lookups.tab.values.at
+|   |   |           |   |   +-- lookups.tab.len
+|   |   |           |   |   +-- lookups.tab.keystream.len
+|   |   |           |   |   +-- lookups.tab.keystream
+|   |   |           |   |   +-- lookups.tab
+|   |   |           |   |   +-- id-to-file.tab_i.len
+|   |   |           |   |   +-- id-to-file.tab_i
+|   |   |           |   |   +-- id-to-file.tab.values.at
+|   |   |           |   |   +-- id-to-file.tab.len
+|   |   |           |   |   +-- id-to-file.tab.keystream.len
+|   |   |           |   |   +-- id-to-file.tab.keystream
+|   |   |           |   |   +-- id-to-file.tab
+|   |   |           |   |   +-- file-to-id.tab_i.len
+|   |   |           |   |   +-- file-to-id.tab_i
+|   |   |           |   |   +-- file-to-id.tab.values.at
+|   |   |           |   |   +-- file-to-id.tab.len
+|   |   |           |   |   +-- file-to-id.tab.keystream.len
+|   |   |           |   |   +-- file-to-id.tab.keystream
+|   |   |           |   |   +-- file-to-id.tab
+|   |   |           |   |   u0060-- counters.tab
+|   |   |           |   +-- jvm
+|   |   |           |   |   u0060-- kotlin
+|   |   |           |   |       +-- supertypes.tab_i.len
+|   |   |           |   |       +-- supertypes.tab_i
+|   |   |           |   |       +-- supertypes.tab.values.at
+|   |   |           |   |       +-- supertypes.tab.len
+|   |   |           |   |       +-- supertypes.tab.keystream.len
+|   |   |           |   |       +-- supertypes.tab.keystream
+|   |   |           |   |       +-- supertypes.tab
+|   |   |           |   |       +-- subtypes.tab_i.len
+|   |   |           |   |       +-- subtypes.tab_i
+|   |   |           |   |       +-- subtypes.tab.values.at
+|   |   |           |   |       +-- subtypes.tab.len
+|   |   |           |   |       +-- subtypes.tab.keystream.len
+|   |   |           |   |       +-- subtypes.tab.keystream
+|   |   |           |   |       +-- subtypes.tab
+|   |   |           |   |       +-- source-to-classes.tab_i.len
+|   |   |           |   |       +-- source-to-classes.tab_i
+|   |   |           |   |       +-- source-to-classes.tab.values.at
+|   |   |           |   |       +-- source-to-classes.tab.len
+|   |   |           |   |       +-- source-to-classes.tab.keystream.len
+|   |   |           |   |       +-- source-to-classes.tab.keystream
+|   |   |           |   |       +-- source-to-classes.tab
+|   |   |           |   |       +-- proto.tab_i.len
+|   |   |           |   |       +-- proto.tab_i
+|   |   |           |   |       +-- proto.tab.values.at
+|   |   |           |   |       +-- proto.tab.len
+|   |   |           |   |       +-- proto.tab.keystream.len
+|   |   |           |   |       +-- proto.tab.keystream
+|   |   |           |   |       +-- proto.tab
+|   |   |           |   |       +-- internal-name-to-source.tab_i.len
+|   |   |           |   |       +-- internal-name-to-source.tab_i
+|   |   |           |   |       +-- internal-name-to-source.tab.values.at
+|   |   |           |   |       +-- internal-name-to-source.tab.len
+|   |   |           |   |       +-- internal-name-to-source.tab.keystream.len
+|   |   |           |   |       +-- internal-name-to-source.tab.keystream
+|   |   |           |   |       +-- internal-name-to-source.tab
+|   |   |           |   |       +-- class-fq-name-to-source.tab_i.len
+|   |   |           |   |       +-- class-fq-name-to-source.tab_i
+|   |   |           |   |       +-- class-fq-name-to-source.tab.values.at
+|   |   |           |   |       +-- class-fq-name-to-source.tab.len
+|   |   |           |   |       +-- class-fq-name-to-source.tab.keystream.len
+|   |   |           |   |       +-- class-fq-name-to-source.tab.keystream
+|   |   |           |   |       +-- class-fq-name-to-source.tab
+|   |   |           |   |       +-- class-attributes.tab_i.len
+|   |   |           |   |       +-- class-attributes.tab_i
+|   |   |           |   |       +-- class-attributes.tab.values.at
+|   |   |           |   |       +-- class-attributes.tab.len
+|   |   |           |   |       +-- class-attributes.tab.keystream.len
+|   |   |           |   |       +-- class-attributes.tab.keystream
+|   |   |           |   |       u0060-- class-attributes.tab
+|   |   |           |   u0060-- inputs
+|   |   |           |       +-- source-to-output.tab_i.len
+|   |   |           |       +-- source-to-output.tab_i
+|   |   |           |       +-- source-to-output.tab.values.at
+|   |   |           |       +-- source-to-output.tab.len
+|   |   |           |       +-- source-to-output.tab.keystream.len
+|   |   |           |       +-- source-to-output.tab.keystream
+|   |   |           |       u0060-- source-to-output.tab
+|   |   |           u0060-- last-build.bin
+|   |   +-- intermediates
+|   |   |   +-- symbol_list_with_package_name
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- generateDebugRFile
+|   |   |   |           u0060-- package-aware-r.txt
+|   |   |   +-- runtime_library_classes_jar
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- bundleLibRuntimeToJarDebug
+|   |   |   |           u0060-- classes.jar
+|   |   |   +-- runtime_library_classes_dir
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- bundleLibRuntimeToDirDebug
+|   |   |   |           +-- META-INF
+|   |   |   |           |   u0060-- core-lock_debug.kotlin_module
+|   |   |   |           u0060-- com
+|   |   |   |               u0060-- timeout
+|   |   |   |                   u0060-- core
+|   |   |   |                       u0060-- lock
+|   |   |   |                           +-- util
+|   |   |   |                           |   +-- Session.class
+|   |   |   |                           |   u0060-- Launchers.class
+|   |   |   |                           +-- TimeoutDeviceAdminReceiver.class
+|   |   |   |                           +-- SessionStore.class
+|   |   |   |                           +-- SessionPrefsStore.class
+|   |   |   |                           +-- LockState.class
+|   |   |   |                           +-- LockState$Idle.class
+|   |   |   |                           +-- LockState$Bricked.class
+|   |   |   |                           +-- LockState$Active.class
+|   |   |   |                           +-- LockController.class
+|   |   |   |                           +-- LockController$ensureTicker$1.class
+|   |   |   |                           +-- GuardAccessibilityService.class
+|   |   |   |                           +-- GuardAccessibilityService$Companion.class
+|   |   |   |                           u0060-- ForegroundGuardService.class
+|   |   |   +-- public_res
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- packageDebugResources
+|   |   |   +-- packaged_res
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- packageDebugResources
+|   |   |   |           +-- xml
+|   |   |   |           |   +-- timeout_guard_config.xml
+|   |   |   |           |   u0060-- guard_accessibility_config.xml
+|   |   |   |           +-- values
+|   |   |   |           |   u0060-- values.xml
+|   |   |   |           u0060-- layout
+|   |   |   |               u0060-- view_guard_overlay.xml
+|   |   |   +-- nested_resources_validation_report
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- generateDebugResources
+|   |   |   |           u0060-- nestedResourcesValidationReport.txt
+|   |   |   +-- navigation_json
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- extractDeepLinksDebug
+|   |   |   |           u0060-- navigation.json
+|   |   |   +-- merged_shaders
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- mergeDebugShaders
+|   |   |   |           u0060-- out
+|   |   |   +-- merged_manifest
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- processDebugManifest
+|   |   |   |           u0060-- AndroidManifest.xml
+|   |   |   +-- merged_jni_libs
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- mergeDebugJniLibFolders
+|   |   |   |           u0060-- out
+|   |   |   +-- manifest_merge_blame_file
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- processDebugManifest
+|   |   |   |           u0060-- manifest-merger-blame-debug-report.txt
+|   |   |   +-- local_only_symbol_list
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- parseDebugLocalResources
+|   |   |   |           u0060-- R-def.txt
+|   |   |   +-- library_jni
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- copyDebugJniLibsProjectOnly
+|   |   |   |           u0060-- jni
+|   |   |   +-- library_assets
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- packageDebugAssets
+|   |   |   |           u0060-- out
+|   |   |   +-- java_res
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- processDebugJavaRes
+|   |   |   |           u0060-- out
+|   |   |   |               +-- META-INF
+|   |   |   |               |   u0060-- core-lock_debug.kotlin_module
+|   |   |   |               u0060-- com
+|   |   |   |                   u0060-- timeout
+|   |   |   |                       u0060-- core
+|   |   |   |                           u0060-- lock
+|   |   |   |                               u0060-- util
+|   |   |   +-- incremental
+|   |   |   |   +-- packageDebugAssets
+|   |   |   |   |   u0060-- merger.xml
+|   |   |   |   +-- mergeDebugShaders
+|   |   |   |   |   u0060-- merger.xml
+|   |   |   |   +-- mergeDebugJniLibFolders
+|   |   |   |   |   u0060-- merger.xml
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- packageDebugResources
+|   |   |   |           +-- stripped.dir
+|   |   |   |           +-- merged.dir
+|   |   |   |           |   u0060-- values
+|   |   |   |           |       u0060-- values.xml
+|   |   |   |           +-- merger.xml
+|   |   |   |           u0060-- compile-file-map.properties
+|   |   |   +-- data_binding_layout_info_type_package
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- packageDebugResources
+|   |   |   |           u0060-- out
+|   |   |   +-- compiled_local_resources
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- compileDebugLibraryResources
+|   |   |   |           u0060-- out
+|   |   |   |               +-- xml_timeout_guard_config.xml.flat
+|   |   |   |               +-- xml_guard_accessibility_config.xml.flat
+|   |   |   |               u0060-- layout_view_guard_overlay.xml.flat
+|   |   |   +-- compile_symbol_list
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- generateDebugRFile
+|   |   |   |           u0060-- R.txt
+|   |   |   +-- compile_r_class_jar
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- generateDebugRFile
+|   |   |   |           u0060-- R.jar
+|   |   |   +-- compile_library_classes_jar
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- bundleLibCompileToJarDebug
+|   |   |   |           u0060-- classes.jar
+|   |   |   +-- annotation_processor_list
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- javaPreCompileDebug
+|   |   |   |           u0060-- annotationProcessors.json
+|   |   |   +-- aar_metadata
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- writeDebugAarMetadata
+|   |   |   |           u0060-- aar-metadata.properties
+|   |   |   u0060-- aapt_friendly_merged_manifests
+|   |   |       u0060-- debug
+|   |   |           u0060-- processDebugManifest
+|   |   |               u0060-- aapt
+|   |   |                   +-- output-metadata.json
+|   |   |                   u0060-- AndroidManifest.xml
+|   |   +-- generated
+|   |   |   u0060-- res
+|   |   |       +-- resValues
+|   |   |       |   u0060-- debug
+|   |   |       u0060-- pngs
+|   |   |           u0060-- debug
+|   |   u0060-- .transforms
+|   |       +-- ec7e9ec15ddea6659854d6070c972822
+|   |       |   +-- transformed
+|   |       |   |   u0060-- bundleLibRuntimeToDirDebug
+|   |       |   |       +-- bundleLibRuntimeToDirDebug_global-synthetics
+|   |       |   |       +-- bundleLibRuntimeToDirDebug_dex
+|   |       |   |       |   u0060-- com
+|   |       |   |       |       u0060-- timeout
+|   |       |   |       |           u0060-- core
+|   |       |   |       |               u0060-- lock
+|   |       |   |       |                   +-- util
+|   |       |   |       |                   |   +-- Session.dex
+|   |       |   |       |                   |   u0060-- Launchers.dex
+|   |       |   |       |                   +-- TimeoutDeviceAdminReceiver.dex
+|   |       |   |       |                   +-- SessionStore.dex
+|   |       |   |       |                   +-- SessionPrefsStore.dex
+|   |       |   |       |                   +-- LockState.dex
+|   |       |   |       |                   +-- LockState$Idle.dex
+|   |       |   |       |                   +-- LockState$Bricked.dex
+|   |       |   |       |                   +-- LockState$Active.dex
+|   |       |   |       |                   +-- LockController.dex
+|   |       |   |       |                   +-- LockController$ensureTicker$1.dex
+|   |       |   |       |                   +-- GuardAccessibilityService.dex
+|   |       |   |       |                   +-- GuardAccessibilityService$Companion.dex
+|   |       |   |       |                   u0060-- ForegroundGuardService.dex
+|   |       |   |       u0060-- desugar_graph.bin
+|   |       |   u0060-- results.bin
+|   |       u0060-- a76cf1baa5fcdc7d1d2a05ca1284bf48
+|   |           +-- transformed
+|   |           |   u0060-- classes
+|   |           |       +-- classes_global-synthetics
+|   |           |       u0060-- classes_dex
+|   |           |           u0060-- classes.dex
+|   |           u0060-- results.bin
+|   u0060-- build.gradle.kts
++-- core-crypto
+|   +-- src
+|   |   u0060-- main
+|   |       +-- res
+|   |       +-- kotlin
+|   |       |   u0060-- com
+|   |       |       u0060-- timeout
+|   |       |           u0060-- core
+|   |       |               u0060-- crypto
+|   |       |                   +-- KeyStoreManager.kt
+|   |       |                   u0060-- Hmac.kt
+|   |       u0060-- AndroidManifest.xml
+|   u0060-- build.gradle.kts
++-- core-common
+|   +-- src
+|   |   u0060-- main
+|   |       +-- res
+|   |       |   u0060-- values
+|   |       |       u0060-- colors.xml
+|   |       +-- kotlin
+|   |       |   u0060-- com
+|   |       |       u0060-- timeout
+|   |       |           +-- core
+|   |       |           |   u0060-- common
+|   |       |           +-- common
+|   |       |           |   +-- Prefs.kt
+|   |       |           |   +-- AppsRepository.kt
+|   |       |           |   u0060-- AppInfo.kt
+|   |       |           u0060-- com
+|   |       +-- java
+|   |       |   u0060-- com
+|   |       |       u0060-- timeout
+|   |       |           u0060-- common
+|   |       u0060-- AndroidManifest.xml
+|   +-- build
+|   |   +-- tmp
+|   |   |   u0060-- kotlin-classes
+|   |   |       u0060-- debug
+|   |   |           +-- META-INF
+|   |   |           |   u0060-- core-common_debug.kotlin_module
+|   |   |           u0060-- com
+|   |   |               u0060-- timeout
+|   |   |                   u0060-- common
+|   |   |                       +-- Prefs.class
+|   |   |                       +-- AppsRepository.class
+|   |   |                       +-- AppsRepository$loadLaunchableApps$$inlined$sortedBy$1.class
+|   |   |                       u0060-- AppInfo.class
+|   |   +-- outputs
+|   |   |   u0060-- logs
+|   |   |       u0060-- manifest-merger-debug-report.txt
+|   |   +-- kotlin
+|   |   |   u0060-- compileDebugKotlin
+|   |   |       +-- local-state
+|   |   |       |   u0060-- build-history.bin
+|   |   |       +-- classpath-snapshot
+|   |   |       |   u0060-- shrunk-classpath-snapshot.bin
+|   |   |       u0060-- cacheable
+|   |   |           +-- caches-jvm
+|   |   |           |   +-- lookups
+|   |   |           |   |   +-- lookups.tab_i.len
+|   |   |           |   |   +-- lookups.tab_i
+|   |   |           |   |   +-- lookups.tab.values.at
+|   |   |           |   |   +-- lookups.tab.len
+|   |   |           |   |   +-- lookups.tab.keystream.len
+|   |   |           |   |   +-- lookups.tab.keystream
+|   |   |           |   |   +-- lookups.tab
+|   |   |           |   |   +-- id-to-file.tab_i.len
+|   |   |           |   |   +-- id-to-file.tab_i
+|   |   |           |   |   +-- id-to-file.tab.values.at
+|   |   |           |   |   +-- id-to-file.tab.len
+|   |   |           |   |   +-- id-to-file.tab.keystream.len
+|   |   |           |   |   +-- id-to-file.tab.keystream
+|   |   |           |   |   +-- id-to-file.tab
+|   |   |           |   |   +-- file-to-id.tab_i.len
+|   |   |           |   |   +-- file-to-id.tab_i
+|   |   |           |   |   +-- file-to-id.tab.values.at
+|   |   |           |   |   +-- file-to-id.tab.len
+|   |   |           |   |   +-- file-to-id.tab.keystream.len
+|   |   |           |   |   +-- file-to-id.tab.keystream
+|   |   |           |   |   +-- file-to-id.tab
+|   |   |           |   |   u0060-- counters.tab
+|   |   |           |   +-- jvm
+|   |   |           |   |   u0060-- kotlin
+|   |   |           |   |       +-- source-to-classes.tab_i.len
+|   |   |           |   |       +-- source-to-classes.tab_i
+|   |   |           |   |       +-- source-to-classes.tab.values.at
+|   |   |           |   |       +-- source-to-classes.tab.len
+|   |   |           |   |       +-- source-to-classes.tab.keystream.len
+|   |   |           |   |       +-- source-to-classes.tab.keystream
+|   |   |           |   |       +-- source-to-classes.tab
+|   |   |           |   |       +-- proto.tab_i.len
+|   |   |           |   |       +-- proto.tab_i
+|   |   |           |   |       +-- proto.tab.values.at
+|   |   |           |   |       +-- proto.tab.len
+|   |   |           |   |       +-- proto.tab.keystream.len
+|   |   |           |   |       +-- proto.tab.keystream
+|   |   |           |   |       +-- proto.tab
+|   |   |           |   |       +-- internal-name-to-source.tab_i.len
+|   |   |           |   |       +-- internal-name-to-source.tab_i
+|   |   |           |   |       +-- internal-name-to-source.tab.values.at
+|   |   |           |   |       +-- internal-name-to-source.tab.len
+|   |   |           |   |       +-- internal-name-to-source.tab.keystream.len
+|   |   |           |   |       +-- internal-name-to-source.tab.keystream
+|   |   |           |   |       +-- internal-name-to-source.tab
+|   |   |           |   |       +-- class-fq-name-to-source.tab_i.len
+|   |   |           |   |       +-- class-fq-name-to-source.tab_i
+|   |   |           |   |       +-- class-fq-name-to-source.tab.values.at
+|   |   |           |   |       +-- class-fq-name-to-source.tab.len
+|   |   |           |   |       +-- class-fq-name-to-source.tab.keystream.len
+|   |   |           |   |       +-- class-fq-name-to-source.tab.keystream
+|   |   |           |   |       +-- class-fq-name-to-source.tab
+|   |   |           |   |       +-- class-attributes.tab_i.len
+|   |   |           |   |       +-- class-attributes.tab_i
+|   |   |           |   |       +-- class-attributes.tab.values.at
+|   |   |           |   |       +-- class-attributes.tab.len
+|   |   |           |   |       +-- class-attributes.tab.keystream.len
+|   |   |           |   |       +-- class-attributes.tab.keystream
+|   |   |           |   |       u0060-- class-attributes.tab
+|   |   |           |   u0060-- inputs
+|   |   |           |       +-- source-to-output.tab_i.len
+|   |   |           |       +-- source-to-output.tab_i
+|   |   |           |       +-- source-to-output.tab.values.at
+|   |   |           |       +-- source-to-output.tab.len
+|   |   |           |       +-- source-to-output.tab.keystream.len
+|   |   |           |       +-- source-to-output.tab.keystream
+|   |   |           |       u0060-- source-to-output.tab
+|   |   |           u0060-- last-build.bin
+|   |   +-- intermediates
+|   |   |   +-- symbol_list_with_package_name
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- generateDebugRFile
+|   |   |   |           u0060-- package-aware-r.txt
+|   |   |   +-- runtime_library_classes_jar
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- bundleLibRuntimeToJarDebug
+|   |   |   |           u0060-- classes.jar
+|   |   |   +-- runtime_library_classes_dir
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- bundleLibRuntimeToDirDebug
+|   |   |   |           +-- META-INF
+|   |   |   |           |   u0060-- core-common_debug.kotlin_module
+|   |   |   |           u0060-- com
+|   |   |   |               u0060-- timeout
+|   |   |   |                   u0060-- common
+|   |   |   |                       +-- Prefs.class
+|   |   |   |                       +-- AppsRepository.class
+|   |   |   |                       +-- AppsRepository$loadLaunchableApps$$inlined$sortedBy$1.class
+|   |   |   |                       u0060-- AppInfo.class
+|   |   |   +-- public_res
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- packageDebugResources
+|   |   |   +-- packaged_res
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- packageDebugResources
+|   |   |   |           u0060-- values
+|   |   |   |               u0060-- values.xml
+|   |   |   +-- nested_resources_validation_report
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- generateDebugResources
+|   |   |   |           u0060-- nestedResourcesValidationReport.txt
+|   |   |   +-- navigation_json
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- extractDeepLinksDebug
+|   |   |   |           u0060-- navigation.json
+|   |   |   +-- merged_shaders
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- mergeDebugShaders
+|   |   |   |           u0060-- out
+|   |   |   +-- merged_manifest
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- processDebugManifest
+|   |   |   |           u0060-- AndroidManifest.xml
+|   |   |   +-- merged_jni_libs
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- mergeDebugJniLibFolders
+|   |   |   |           u0060-- out
+|   |   |   +-- manifest_merge_blame_file
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- processDebugManifest
+|   |   |   |           u0060-- manifest-merger-blame-debug-report.txt
+|   |   |   +-- local_only_symbol_list
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- parseDebugLocalResources
+|   |   |   |           u0060-- R-def.txt
+|   |   |   +-- library_jni
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- copyDebugJniLibsProjectOnly
+|   |   |   |           u0060-- jni
+|   |   |   +-- library_assets
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- packageDebugAssets
+|   |   |   |           u0060-- out
+|   |   |   +-- java_res
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- processDebugJavaRes
+|   |   |   |           u0060-- out
+|   |   |   |               +-- META-INF
+|   |   |   |               |   u0060-- core-common_debug.kotlin_module
+|   |   |   |               u0060-- com
+|   |   |   |                   u0060-- timeout
+|   |   |   |                       u0060-- common
+|   |   |   +-- incremental
+|   |   |   |   +-- packageDebugAssets
+|   |   |   |   |   u0060-- merger.xml
+|   |   |   |   +-- mergeDebugShaders
+|   |   |   |   |   u0060-- merger.xml
+|   |   |   |   +-- mergeDebugJniLibFolders
+|   |   |   |   |   u0060-- merger.xml
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- packageDebugResources
+|   |   |   |           +-- stripped.dir
+|   |   |   |           +-- merged.dir
+|   |   |   |           |   u0060-- values
+|   |   |   |           |       u0060-- values.xml
+|   |   |   |           +-- merger.xml
+|   |   |   |           u0060-- compile-file-map.properties
+|   |   |   +-- data_binding_layout_info_type_package
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- packageDebugResources
+|   |   |   |           u0060-- out
+|   |   |   +-- compiled_local_resources
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- compileDebugLibraryResources
+|   |   |   |           u0060-- out
+|   |   |   +-- compile_symbol_list
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- generateDebugRFile
+|   |   |   |           u0060-- R.txt
+|   |   |   +-- compile_r_class_jar
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- generateDebugRFile
+|   |   |   |           u0060-- R.jar
+|   |   |   +-- compile_library_classes_jar
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- bundleLibCompileToJarDebug
+|   |   |   |           u0060-- classes.jar
+|   |   |   +-- annotation_processor_list
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- javaPreCompileDebug
+|   |   |   |           u0060-- annotationProcessors.json
+|   |   |   +-- aar_metadata
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- writeDebugAarMetadata
+|   |   |   |           u0060-- aar-metadata.properties
+|   |   |   u0060-- aapt_friendly_merged_manifests
+|   |   |       u0060-- debug
+|   |   |           u0060-- processDebugManifest
+|   |   |               u0060-- aapt
+|   |   |                   +-- output-metadata.json
+|   |   |                   u0060-- AndroidManifest.xml
+|   |   +-- generated
+|   |   |   u0060-- res
+|   |   |       +-- resValues
+|   |   |       |   u0060-- debug
+|   |   |       u0060-- pngs
+|   |   |           u0060-- debug
+|   |   u0060-- .transforms
+|   |       +-- ae5101b7c3ffe1af2a59b904f3295008
+|   |       |   +-- transformed
+|   |       |   |   u0060-- bundleLibRuntimeToDirDebug
+|   |       |   |       +-- bundleLibRuntimeToDirDebug_global-synthetics
+|   |       |   |       +-- bundleLibRuntimeToDirDebug_dex
+|   |       |   |       |   u0060-- com
+|   |       |   |       |       u0060-- timeout
+|   |       |   |       |           u0060-- common
+|   |       |   |       |               +-- Prefs.dex
+|   |       |   |       |               +-- AppsRepository.dex
+|   |       |   |       |               +-- AppsRepository$loadLaunchableApps$$inlined$sortedBy$1.dex
+|   |       |   |       |               u0060-- AppInfo.dex
+|   |       |   |       u0060-- desugar_graph.bin
+|   |       |   u0060-- results.bin
+|   |       u0060-- 6d20da0ae56e6a75cc92e9165f777c35
+|   |           +-- transformed
+|   |           |   u0060-- classes
+|   |           |       +-- classes_global-synthetics
+|   |           |       u0060-- classes_dex
+|   |           |           u0060-- classes.dex
+|   |           u0060-- results.bin
+|   u0060-- build.gradle.kts
++-- build
+|   u0060-- reports
+|       u0060-- problems
+|           u0060-- problems-report.html
++-- app-parent
+|   +-- src
+|   |   u0060-- main
+|   |       +-- res
+|   |       |   u0060-- values
+|   |       |       +-- themes.xml
+|   |       |       +-- strings.xml
+|   |       |       u0060-- colors.xml
+|   |       +-- kotlin
+|   |       |   u0060-- com
+|   |       |       u0060-- timeout
+|   |       |           u0060-- parent
+|   |       |               +-- pairing
+|   |       |               +-- devices
+|   |       |               |   u0060-- DevicesScreen.kt
+|   |       |               +-- device
+|   |       |               |   u0060-- DeviceDetailScreen.kt
+|   |       |               +-- ParentSettingsActivity.kt
+|   |       |               u0060-- ParentMainActivity.kt
+|   |       u0060-- AndroidManifest.xml
+|   u0060-- build.gradle.kts
++-- app-child
+|   +-- src
+|   |   u0060-- main
+|   |       +-- res
+|   |       |   +-- xml
+|   |       |   |   u0060-- device_admin_policies.xml
+|   |       |   +-- values
+|   |       |   |   +-- themes.xml
+|   |       |   |   +-- strings.xml
+|   |       |   |   u0060-- colors.xml
+|   |       |   u0060-- layout
+|   |       +-- kotlin
+|   |       |   u0060-- com
+|   |       |       u0060-- timeout
+|   |       |           u0060-- child
+|   |       |               +-- ui
+|   |       |               |   u0060-- theme
+|   |       |               +-- timer
+|   |       |               +-- pairing
+|   |       |               +-- onboarding
+|   |       |               +-- lock
+|   |       |               |   u0060-- SessionStoreHolder.kt
+|   |       |               +-- PinUnlockHandler.kt
+|   |       |               +-- PinUnlockActivity.kt
+|   |       |               +-- PinManager.kt
+|   |       |               +-- PinEntryDialog.kt
+|   |       |               +-- ParentLinkActivity.kt
+|   |       |               +-- MainActivity.kt
+|   |       |               +-- LockGate.kt
+|   |       |               +-- BootReceiver.kt
+|   |       |               +-- BlockReceiver.kt
+|   |       |               +-- BlocklistActivity.kt.bak
+|   |       |               u0060-- BlocklistActivity.kt
+|   |       +-- java
+|   |       |   u0060-- com
+|   |       |       u0060-- timeout
+|   |       |           u0060-- child
+|   |       |               u0060-- ui
+|   |       |                   u0060-- theme
+|   |       |                       u0060-- theme.kt
+|   |       u0060-- AndroidManifest.xml
+|   +-- build
+|   |   +-- tmp
+|   |   |   u0060-- kotlin-classes
+|   |   |       u0060-- debug
+|   |   +-- outputs
+|   |   |   u0060-- logs
+|   |   |       u0060-- manifest-merger-debug-report.txt
+|   |   +-- kotlin
+|   |   |   u0060-- compileDebugKotlin
+|   |   |       +-- local-state
+|   |   |       |   u0060-- build-history.bin
+|   |   |       +-- classpath-snapshot
+|   |   |       u0060-- cacheable
+|   |   |           +-- caches-jvm
+|   |   |           |   +-- lookups
+|   |   |           |   +-- jvm
+|   |   |           |   u0060-- inputs
+|   |   |           u0060-- dirty-sources.txt
+|   |   +-- intermediates
+|   |   |   +-- validate_signing_config
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- validateSigningDebug
+|   |   |   +-- symbol_list_with_package_name
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- processDebugResources
+|   |   |   |           u0060-- package-aware-r.txt
+|   |   |   +-- stripped_native_libs
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- stripDebugDebugSymbols
+|   |   |   |           u0060-- out
+|   |   |   |               u0060-- lib
+|   |   |   |                   +-- x86_64
+|   |   |   |                   |   u0060-- libandroidx.graphics.path.so
+|   |   |   |                   +-- x86
+|   |   |   |                   |   u0060-- libandroidx.graphics.path.so
+|   |   |   |                   +-- armeabi-v7a
+|   |   |   |                   |   u0060-- libandroidx.graphics.path.so
+|   |   |   |                   u0060-- arm64-v8a
+|   |   |   |                       u0060-- libandroidx.graphics.path.so
+|   |   |   +-- stable_resource_ids_file
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- processDebugResources
+|   |   |   |           u0060-- stableIds.txt
+|   |   |   +-- source_set_path_map
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- mapDebugSourceSetPaths
+|   |   |   |           u0060-- file-map.txt
+|   |   |   +-- signing_config_versions
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- writeDebugSigningConfigVersions
+|   |   |   |           u0060-- signing-config-versions.json
+|   |   |   +-- runtime_symbol_list
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- processDebugResources
+|   |   |   |           u0060-- R.txt
+|   |   |   +-- packaged_res
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- packageDebugResources
+|   |   |   |           +-- xml
+|   |   |   |           |   u0060-- device_admin_policies.xml
+|   |   |   |           u0060-- values
+|   |   |   |               u0060-- values.xml
+|   |   |   +-- packaged_manifests
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- processDebugManifestForPackage
+|   |   |   |           +-- output-metadata.json
+|   |   |   |           u0060-- AndroidManifest.xml
+|   |   |   +-- nested_resources_validation_report
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- generateDebugResources
+|   |   |   |           u0060-- nestedResourcesValidationReport.txt
+|   |   |   +-- navigation_json
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- extractDeepLinksDebug
+|   |   |   |           u0060-- navigation.json
+|   |   |   +-- merged_test_only_native_libs
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- mergeDebugNativeLibs
+|   |   |   |           u0060-- out
+|   |   |   +-- merged_shaders
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- mergeDebugShaders
+|   |   |   |           u0060-- out
+|   |   |   +-- merged_res_blame_folder
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- mergeDebugResources
+|   |   |   |           u0060-- out
+|   |   |   |               +-- single
+|   |   |   |               |   u0060-- mergeDebugResources.json
+|   |   |   |               u0060-- multi-v2
+|   |   |   |                   +-- values-zu.json
+|   |   |   |                   +-- values-zh-rTW.json
+|   |   |   |                   +-- values-zh-rHK.json
+|   |   |   |                   +-- values-zh-rCN.json
+|   |   |   |                   +-- values-xlarge-v4.json
+|   |   |   |                   +-- values-watch-v21.json
+|   |   |   |                   +-- values-watch-v20.json
+|   |   |   |                   +-- values-w600dp-land-v13.json
+|   |   |   |                   +-- values-w400dp-port-v13.json
+|   |   |   |                   +-- values-w360dp-port-v13.json
+|   |   |   |                   +-- values-w320dp-land-v13.json
+|   |   |   |                   +-- values-vi.json
+|   |   |   |                   +-- values-v34.json
+|   |   |   |                   +-- values-v31.json
+|   |   |   |                   +-- values-v30.json
+|   |   |   |                   +-- values-v28.json
+|   |   |   |                   +-- values-v26.json
+|   |   |   |                   +-- values-v25.json
+|   |   |   |                   +-- values-v24.json
+|   |   |   |                   +-- values-v23.json
+|   |   |   |                   +-- values-v22.json
+|   |   |   |                   +-- values-v21.json
+|   |   |   |                   +-- values-v18.json
+|   |   |   |                   +-- values-v17.json
+|   |   |   |                   +-- values-v16.json
+|   |   |   |                   +-- values-uz.json
+|   |   |   |                   +-- values-ur.json
+|   |   |   |                   +-- values-uk.json
+|   |   |   |                   +-- values-tr.json
+|   |   |   |                   +-- values-tl.json
+|   |   |   |                   +-- values-th.json
+|   |   |   |                   +-- values-te.json
+|   |   |   |                   +-- values-ta.json
+|   |   |   |                   +-- values-sw600dp-v13.json
+|   |   |   |                   +-- values-sw.json
+|   |   |   |                   +-- values-sv.json
+|   |   |   |                   +-- values-sr.json
+|   |   |   |                   +-- values-sq.json
+|   |   |   |                   +-- values-small-v4.json
+|   |   |   |                   +-- values-sl.json
+|   |   |   |                   +-- values-sk.json
+|   |   |   |                   +-- values-si.json
+|   |   |   |                   +-- values-ru.json
+|   |   |   |                   +-- values-ro.json
+|   |   |   |                   +-- values-pt-rPT.json
+|   |   |   |                   +-- values-pt-rBR.json
+|   |   |   |                   +-- values-pt.json
+|   |   |   |                   +-- values-port.json
+|   |   |   |                   +-- values-pl.json
+|   |   |   |                   +-- values-pa.json
+|   |   |   |                   +-- values-or.json
+|   |   |   |                   +-- values-nl.json
+|   |   |   |                   +-- values-night-v8.json
+|   |   |   |                   +-- values-ne.json
+|   |   |   |                   +-- values-nb.json
+|   |   |   |                   +-- values-my.json
+|   |   |   |                   +-- values-ms.json
+|   |   |   |                   +-- values-mr.json
+|   |   |   |                   +-- values-mn.json
+|   |   |   |                   +-- values-ml.json
+|   |   |   |                   +-- values-mk.json
+|   |   |   |                   +-- values-lv.json
+|   |   |   |                   +-- values-lt.json
+|   |   |   |                   +-- values-lo.json
+|   |   |   |                   +-- values-ldrtl-v17.json
+|   |   |   |                   +-- values-ldltr-v21.json
+|   |   |   |                   +-- values-large-v4.json
+|   |   |   |                   +-- values-land.json
+|   |   |   |                   +-- values-ky.json
+|   |   |   |                   +-- values-ko.json
+|   |   |   |                   +-- values-kn.json
+|   |   |   |                   +-- values-km.json
+|   |   |   |                   +-- values-kk.json
+|   |   |   |                   +-- values-ka.json
+|   |   |   |                   +-- values-ja.json
+|   |   |   |                   +-- values-iw.json
+|   |   |   |                   +-- values-it.json
+|   |   |   |                   +-- values-is.json
+|   |   |   |                   +-- values-in.json
+|   |   |   |                   +-- values-id.json
+|   |   |   |                   +-- values-hy.json
+|   |   |   |                   +-- values-hu.json
+|   |   |   |                   +-- values-hr.json
+|   |   |   |                   +-- values-hi.json
+|   |   |   |                   +-- values-he.json
+|   |   |   |                   +-- values-hdpi-v4.json
+|   |   |   |                   +-- values-h720dp-v13.json
+|   |   |   |                   +-- values-h550dp-port-v13.json
+|   |   |   |                   +-- values-h480dp-land-v13.json
+|   |   |   |                   +-- values-h360dp-land-v13.json
+|   |   |   |                   +-- values-h320dp-port-v13.json
+|   |   |   |                   +-- values-gu.json
+|   |   |   |                   +-- values-gl.json
+|   |   |   |                   +-- values-fr-rCA.json
+|   |   |   |                   +-- values-fr.json
+|   |   |   |                   +-- values-fi.json
+|   |   |   |                   +-- values-fa.json
+|   |   |   |                   +-- values-eu.json
+|   |   |   |                   +-- values-et.json
+|   |   |   |                   +-- values-es-rUS.json
+|   |   |   |                   +-- values-es.json
+|   |   |   |                   +-- values-en-rXC.json
+|   |   |   |                   +-- values-en-rIN.json
+|   |   |   |                   +-- values-en-rGB.json
+|   |   |   |                   +-- values-en-rCA.json
+|   |   |   |                   +-- values-en-rAU.json
+|   |   |   |                   +-- values-el.json
+|   |   |   |                   +-- values-de.json
+|   |   |   |                   +-- values-da.json
+|   |   |   |                   +-- values-cs.json
+|   |   |   |                   +-- values-ca.json
+|   |   |   |                   +-- values-bs.json
+|   |   |   |                   +-- values-bn.json
+|   |   |   |                   +-- values-bg.json
+|   |   |   |                   +-- values-be.json
+|   |   |   |                   +-- values-b+sr+Latn.json
+|   |   |   |                   +-- values-b+es+419.json
+|   |   |   |                   +-- values-az.json
+|   |   |   |                   +-- values-as.json
+|   |   |   |                   +-- values-ar.json
+|   |   |   |                   +-- values-am.json
+|   |   |   |                   +-- values-af.json
+|   |   |   |                   +-- values.json
+|   |   |   |                   u0060-- mergeDebugResources.json
+|   |   |   +-- merged_res
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- mergeDebugResources
+|   |   |   |           +-- xml_device_admin_policies.xml.flat
+|   |   |   |           +-- values-zu_values-zu.arsc.flat
+|   |   |   |           +-- values-zh-rTW_values-zh-rTW.arsc.flat
+|   |   |   |           +-- values-zh-rHK_values-zh-rHK.arsc.flat
+|   |   |   |           +-- values-zh-rCN_values-zh-rCN.arsc.flat
+|   |   |   |           +-- values-xlarge-v4_values-xlarge-v4.arsc.flat
+|   |   |   |           +-- values-watch-v21_values-watch-v21.arsc.flat
+|   |   |   |           +-- values-watch-v20_values-watch-v20.arsc.flat
+|   |   |   |           +-- values-w600dp-land-v13_values-w600dp-land-v13.arsc.flat
+|   |   |   |           +-- values-w400dp-port-v13_values-w400dp-port-v13.arsc.flat
+|   |   |   |           +-- values-w360dp-port-v13_values-w360dp-port-v13.arsc.flat
+|   |   |   |           +-- values-w320dp-land-v13_values-w320dp-land-v13.arsc.flat
+|   |   |   |           +-- values-vi_values-vi.arsc.flat
+|   |   |   |           +-- values-v34_values-v34.arsc.flat
+|   |   |   |           +-- values-v31_values-v31.arsc.flat
+|   |   |   |           +-- values-v30_values-v30.arsc.flat
+|   |   |   |           +-- values-v28_values-v28.arsc.flat
+|   |   |   |           +-- values-v26_values-v26.arsc.flat
+|   |   |   |           +-- values-v25_values-v25.arsc.flat
+|   |   |   |           +-- values-v24_values-v24.arsc.flat
+|   |   |   |           +-- values-v23_values-v23.arsc.flat
+|   |   |   |           +-- values-v22_values-v22.arsc.flat
+|   |   |   |           +-- values-v21_values-v21.arsc.flat
+|   |   |   |           +-- values-v18_values-v18.arsc.flat
+|   |   |   |           +-- values-v17_values-v17.arsc.flat
+|   |   |   |           +-- values-v16_values-v16.arsc.flat
+|   |   |   |           +-- values-uz_values-uz.arsc.flat
+|   |   |   |           +-- values-ur_values-ur.arsc.flat
+|   |   |   |           +-- values-uk_values-uk.arsc.flat
+|   |   |   |           +-- values-tr_values-tr.arsc.flat
+|   |   |   |           +-- values-tl_values-tl.arsc.flat
+|   |   |   |           +-- values-th_values-th.arsc.flat
+|   |   |   |           +-- values-te_values-te.arsc.flat
+|   |   |   |           +-- values-ta_values-ta.arsc.flat
+|   |   |   |           +-- values-sw600dp-v13_values-sw600dp-v13.arsc.flat
+|   |   |   |           +-- values-sw_values-sw.arsc.flat
+|   |   |   |           +-- values-sv_values-sv.arsc.flat
+|   |   |   |           +-- values-sr_values-sr.arsc.flat
+|   |   |   |           +-- values-sq_values-sq.arsc.flat
+|   |   |   |           +-- values-small-v4_values-small-v4.arsc.flat
+|   |   |   |           +-- values-sl_values-sl.arsc.flat
+|   |   |   |           +-- values-sk_values-sk.arsc.flat
+|   |   |   |           +-- values-si_values-si.arsc.flat
+|   |   |   |           +-- values-ru_values-ru.arsc.flat
+|   |   |   |           +-- values-ro_values-ro.arsc.flat
+|   |   |   |           +-- values-pt-rPT_values-pt-rPT.arsc.flat
+|   |   |   |           +-- values-pt-rBR_values-pt-rBR.arsc.flat
+|   |   |   |           +-- values-pt_values-pt.arsc.flat
+|   |   |   |           +-- values-port_values-port.arsc.flat
+|   |   |   |           +-- values-pl_values-pl.arsc.flat
+|   |   |   |           +-- values-pa_values-pa.arsc.flat
+|   |   |   |           +-- values-or_values-or.arsc.flat
+|   |   |   |           +-- values-nl_values-nl.arsc.flat
+|   |   |   |           +-- values-night-v8_values-night-v8.arsc.flat
+|   |   |   |           +-- values-ne_values-ne.arsc.flat
+|   |   |   |           +-- values-nb_values-nb.arsc.flat
+|   |   |   |           +-- values-my_values-my.arsc.flat
+|   |   |   |           +-- values-ms_values-ms.arsc.flat
+|   |   |   |           +-- values-mr_values-mr.arsc.flat
+|   |   |   |           +-- values-mn_values-mn.arsc.flat
+|   |   |   |           +-- values-ml_values-ml.arsc.flat
+|   |   |   |           +-- values-mk_values-mk.arsc.flat
+|   |   |   |           +-- values-lv_values-lv.arsc.flat
+|   |   |   |           +-- values-lt_values-lt.arsc.flat
+|   |   |   |           +-- values-lo_values-lo.arsc.flat
+|   |   |   |           +-- values-ldrtl-v17_values-ldrtl-v17.arsc.flat
+|   |   |   |           +-- values-ldltr-v21_values-ldltr-v21.arsc.flat
+|   |   |   |           +-- values-large-v4_values-large-v4.arsc.flat
+|   |   |   |           +-- values-land_values-land.arsc.flat
+|   |   |   |           +-- values-ky_values-ky.arsc.flat
+|   |   |   |           +-- values-ko_values-ko.arsc.flat
+|   |   |   |           +-- values-kn_values-kn.arsc.flat
+|   |   |   |           +-- values-km_values-km.arsc.flat
+|   |   |   |           +-- values-kk_values-kk.arsc.flat
+|   |   |   |           +-- values-ka_values-ka.arsc.flat
+|   |   |   |           +-- values-ja_values-ja.arsc.flat
+|   |   |   |           +-- values-iw_values-iw.arsc.flat
+|   |   |   |           +-- values-it_values-it.arsc.flat
+|   |   |   |           +-- values-is_values-is.arsc.flat
+|   |   |   |           +-- values-in_values-in.arsc.flat
+|   |   |   |           +-- values-id_values-id.arsc.flat
+|   |   |   |           +-- values-hy_values-hy.arsc.flat
+|   |   |   |           +-- values-hu_values-hu.arsc.flat
+|   |   |   |           +-- values-hr_values-hr.arsc.flat
+|   |   |   |           +-- values-hi_values-hi.arsc.flat
+|   |   |   |           +-- values-he_values-he.arsc.flat
+|   |   |   |           +-- values-hdpi-v4_values-hdpi-v4.arsc.flat
+|   |   |   |           +-- values-h720dp-v13_values-h720dp-v13.arsc.flat
+|   |   |   |           +-- values-h550dp-port-v13_values-h550dp-port-v13.arsc.flat
+|   |   |   |           +-- values-h480dp-land-v13_values-h480dp-land-v13.arsc.flat
+|   |   |   |           +-- values-h360dp-land-v13_values-h360dp-land-v13.arsc.flat
+|   |   |   |           +-- values-h320dp-port-v13_values-h320dp-port-v13.arsc.flat
+|   |   |   |           +-- values-gu_values-gu.arsc.flat
+|   |   |   |           +-- values-gl_values-gl.arsc.flat
+|   |   |   |           +-- values-fr-rCA_values-fr-rCA.arsc.flat
+|   |   |   |           +-- values-fr_values-fr.arsc.flat
+|   |   |   |           +-- values-fi_values-fi.arsc.flat
+|   |   |   |           +-- values-fa_values-fa.arsc.flat
+|   |   |   |           +-- values-eu_values-eu.arsc.flat
+|   |   |   |           +-- values-et_values-et.arsc.flat
+|   |   |   |           +-- values-es-rUS_values-es-rUS.arsc.flat
+|   |   |   |           +-- values-es_values-es.arsc.flat
+|   |   |   |           +-- values-en-rXC_values-en-rXC.arsc.flat
+|   |   |   |           +-- values-en-rIN_values-en-rIN.arsc.flat
+|   |   |   |           +-- values-en-rGB_values-en-rGB.arsc.flat
+|   |   |   |           +-- values-en-rCA_values-en-rCA.arsc.flat
+|   |   |   |           +-- values-en-rAU_values-en-rAU.arsc.flat
+|   |   |   |           +-- values-el_values-el.arsc.flat
+|   |   |   |           +-- values-de_values-de.arsc.flat
+|   |   |   |           +-- values-da_values-da.arsc.flat
+|   |   |   |           +-- values-cs_values-cs.arsc.flat
+|   |   |   |           +-- values-ca_values-ca.arsc.flat
+|   |   |   |           +-- values-bs_values-bs.arsc.flat
+|   |   |   |           +-- values-bn_values-bn.arsc.flat
+|   |   |   |           +-- values-bg_values-bg.arsc.flat
+|   |   |   |           +-- values-be_values-be.arsc.flat
+|   |   |   |           +-- values-b+sr+Latn_values-b+sr+Latn.arsc.flat
+|   |   |   |           +-- values-b+es+419_values-b+es+419.arsc.flat
+|   |   |   |           +-- values-az_values-az.arsc.flat
+|   |   |   |           +-- values-as_values-as.arsc.flat
+|   |   |   |           +-- values-ar_values-ar.arsc.flat
+|   |   |   |           +-- values-am_values-am.arsc.flat
+|   |   |   |           +-- values-af_values-af.arsc.flat
+|   |   |   |           u0060-- values_values.arsc.flat
+|   |   |   +-- merged_native_libs
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- mergeDebugNativeLibs
+|   |   |   |           u0060-- out
+|   |   |   |               u0060-- lib
+|   |   |   |                   +-- x86_64
+|   |   |   |                   |   u0060-- libandroidx.graphics.path.so
+|   |   |   |                   +-- x86
+|   |   |   |                   |   u0060-- libandroidx.graphics.path.so
+|   |   |   |                   +-- armeabi-v7a
+|   |   |   |                   |   u0060-- libandroidx.graphics.path.so
+|   |   |   |                   u0060-- arm64-v8a
+|   |   |   |                       u0060-- libandroidx.graphics.path.so
+|   |   |   +-- merged_manifests
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- processDebugManifest
+|   |   |   |           +-- output-metadata.json
+|   |   |   |           u0060-- AndroidManifest.xml
+|   |   |   +-- merged_manifest
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- processDebugMainManifest
+|   |   |   |           u0060-- AndroidManifest.xml
+|   |   |   +-- merged_jni_libs
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- mergeDebugJniLibFolders
+|   |   |   |           u0060-- out
+|   |   |   +-- manifest_merge_blame_file
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- processDebugMainManifest
+|   |   |   |           u0060-- manifest-merger-blame-debug-report.txt
+|   |   |   +-- local_only_symbol_list
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- parseDebugLocalResources
+|   |   |   |           u0060-- R-def.txt
+|   |   |   +-- linked_resources_binary_format
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- processDebugResources
+|   |   |   |           +-- output-metadata.json
+|   |   |   |           u0060-- linked-resources-binary-format-debug.ap_
+|   |   |   +-- incremental
+|   |   |   |   +-- mergeDebugShaders
+|   |   |   |   |   u0060-- merger.xml
+|   |   |   |   +-- mergeDebugJniLibFolders
+|   |   |   |   |   u0060-- merger.xml
+|   |   |   |   +-- mergeDebugAssets
+|   |   |   |   |   u0060-- merger.xml
+|   |   |   |   u0060-- debug
+|   |   |   |       +-- packageDebugResources
+|   |   |   |       |   +-- stripped.dir
+|   |   |   |       |   +-- merged.dir
+|   |   |   |       |   |   u0060-- values
+|   |   |   |       |   |       u0060-- values.xml
+|   |   |   |       |   +-- merger.xml
+|   |   |   |       |   u0060-- compile-file-map.properties
+|   |   |   |       u0060-- mergeDebugResources
+|   |   |   |           +-- stripped.dir
+|   |   |   |           +-- merged.dir
+|   |   |   |           |   +-- values-zu
+|   |   |   |           |   |   u0060-- values-zu.xml
+|   |   |   |           |   +-- values-zh-rTW
+|   |   |   |           |   |   u0060-- values-zh-rTW.xml
+|   |   |   |           |   +-- values-zh-rHK
+|   |   |   |           |   |   u0060-- values-zh-rHK.xml
+|   |   |   |           |   +-- values-zh-rCN
+|   |   |   |           |   |   u0060-- values-zh-rCN.xml
+|   |   |   |           |   +-- values-xlarge-v4
+|   |   |   |           |   |   u0060-- values-xlarge-v4.xml
+|   |   |   |           |   +-- values-watch-v21
+|   |   |   |           |   |   u0060-- values-watch-v21.xml
+|   |   |   |           |   +-- values-watch-v20
+|   |   |   |           |   |   u0060-- values-watch-v20.xml
+|   |   |   |           |   +-- values-w600dp-land-v13
+|   |   |   |           |   |   u0060-- values-w600dp-land-v13.xml
+|   |   |   |           |   +-- values-w400dp-port-v13
+|   |   |   |           |   |   u0060-- values-w400dp-port-v13.xml
+|   |   |   |           |   +-- values-w360dp-port-v13
+|   |   |   |           |   |   u0060-- values-w360dp-port-v13.xml
+|   |   |   |           |   +-- values-w320dp-land-v13
+|   |   |   |           |   |   u0060-- values-w320dp-land-v13.xml
+|   |   |   |           |   +-- values-vi
+|   |   |   |           |   |   u0060-- values-vi.xml
+|   |   |   |           |   +-- values-v34
+|   |   |   |           |   |   u0060-- values-v34.xml
+|   |   |   |           |   +-- values-v31
+|   |   |   |           |   |   u0060-- values-v31.xml
+|   |   |   |           |   +-- values-v30
+|   |   |   |           |   |   u0060-- values-v30.xml
+|   |   |   |           |   +-- values-v28
+|   |   |   |           |   |   u0060-- values-v28.xml
+|   |   |   |           |   +-- values-v26
+|   |   |   |           |   |   u0060-- values-v26.xml
+|   |   |   |           |   +-- values-v25
+|   |   |   |           |   |   u0060-- values-v25.xml
+|   |   |   |           |   +-- values-v24
+|   |   |   |           |   |   u0060-- values-v24.xml
+|   |   |   |           |   +-- values-v23
+|   |   |   |           |   |   u0060-- values-v23.xml
+|   |   |   |           |   +-- values-v22
+|   |   |   |           |   |   u0060-- values-v22.xml
+|   |   |   |           |   +-- values-v21
+|   |   |   |           |   |   u0060-- values-v21.xml
+|   |   |   |           |   +-- values-v18
+|   |   |   |           |   |   u0060-- values-v18.xml
+|   |   |   |           |   +-- values-v17
+|   |   |   |           |   |   u0060-- values-v17.xml
+|   |   |   |           |   +-- values-v16
+|   |   |   |           |   |   u0060-- values-v16.xml
+|   |   |   |           |   +-- values-uz
+|   |   |   |           |   |   u0060-- values-uz.xml
+|   |   |   |           |   +-- values-ur
+|   |   |   |           |   |   u0060-- values-ur.xml
+|   |   |   |           |   +-- values-uk
+|   |   |   |           |   |   u0060-- values-uk.xml
+|   |   |   |           |   +-- values-tr
+|   |   |   |           |   |   u0060-- values-tr.xml
+|   |   |   |           |   +-- values-tl
+|   |   |   |           |   |   u0060-- values-tl.xml
+|   |   |   |           |   +-- values-th
+|   |   |   |           |   |   u0060-- values-th.xml
+|   |   |   |           |   +-- values-te
+|   |   |   |           |   |   u0060-- values-te.xml
+|   |   |   |           |   +-- values-ta
+|   |   |   |           |   |   u0060-- values-ta.xml
+|   |   |   |           |   +-- values-sw600dp-v13
+|   |   |   |           |   |   u0060-- values-sw600dp-v13.xml
+|   |   |   |           |   +-- values-sw
+|   |   |   |           |   |   u0060-- values-sw.xml
+|   |   |   |           |   +-- values-sv
+|   |   |   |           |   |   u0060-- values-sv.xml
+|   |   |   |           |   +-- values-sr
+|   |   |   |           |   |   u0060-- values-sr.xml
+|   |   |   |           |   +-- values-sq
+|   |   |   |           |   |   u0060-- values-sq.xml
+|   |   |   |           |   +-- values-small-v4
+|   |   |   |           |   |   u0060-- values-small-v4.xml
+|   |   |   |           |   +-- values-sl
+|   |   |   |           |   |   u0060-- values-sl.xml
+|   |   |   |           |   +-- values-sk
+|   |   |   |           |   |   u0060-- values-sk.xml
+|   |   |   |           |   +-- values-si
+|   |   |   |           |   |   u0060-- values-si.xml
+|   |   |   |           |   +-- values-ru
+|   |   |   |           |   |   u0060-- values-ru.xml
+|   |   |   |           |   +-- values-ro
+|   |   |   |           |   |   u0060-- values-ro.xml
+|   |   |   |           |   +-- values-pt-rPT
+|   |   |   |           |   |   u0060-- values-pt-rPT.xml
+|   |   |   |           |   +-- values-pt-rBR
+|   |   |   |           |   |   u0060-- values-pt-rBR.xml
+|   |   |   |           |   +-- values-pt
+|   |   |   |           |   |   u0060-- values-pt.xml
+|   |   |   |           |   +-- values-port
+|   |   |   |           |   |   u0060-- values-port.xml
+|   |   |   |           |   +-- values-pl
+|   |   |   |           |   |   u0060-- values-pl.xml
+|   |   |   |           |   +-- values-pa
+|   |   |   |           |   |   u0060-- values-pa.xml
+|   |   |   |           |   +-- values-or
+|   |   |   |           |   |   u0060-- values-or.xml
+|   |   |   |           |   +-- values-nl
+|   |   |   |           |   |   u0060-- values-nl.xml
+|   |   |   |           |   +-- values-night-v8
+|   |   |   |           |   |   u0060-- values-night-v8.xml
+|   |   |   |           |   +-- values-ne
+|   |   |   |           |   |   u0060-- values-ne.xml
+|   |   |   |           |   +-- values-nb
+|   |   |   |           |   |   u0060-- values-nb.xml
+|   |   |   |           |   +-- values-my
+|   |   |   |           |   |   u0060-- values-my.xml
+|   |   |   |           |   +-- values-ms
+|   |   |   |           |   |   u0060-- values-ms.xml
+|   |   |   |           |   +-- values-mr
+|   |   |   |           |   |   u0060-- values-mr.xml
+|   |   |   |           |   +-- values-mn
+|   |   |   |           |   |   u0060-- values-mn.xml
+|   |   |   |           |   +-- values-ml
+|   |   |   |           |   |   u0060-- values-ml.xml
+|   |   |   |           |   +-- values-mk
+|   |   |   |           |   |   u0060-- values-mk.xml
+|   |   |   |           |   +-- values-lv
+|   |   |   |           |   |   u0060-- values-lv.xml
+|   |   |   |           |   +-- values-lt
+|   |   |   |           |   |   u0060-- values-lt.xml
+|   |   |   |           |   +-- values-lo
+|   |   |   |           |   |   u0060-- values-lo.xml
+|   |   |   |           |   +-- values-ldrtl-v17
+|   |   |   |           |   |   u0060-- values-ldrtl-v17.xml
+|   |   |   |           |   +-- values-ldltr-v21
+|   |   |   |           |   |   u0060-- values-ldltr-v21.xml
+|   |   |   |           |   +-- values-large-v4
+|   |   |   |           |   |   u0060-- values-large-v4.xml
+|   |   |   |           |   +-- values-land
+|   |   |   |           |   |   u0060-- values-land.xml
+|   |   |   |           |   +-- values-ky
+|   |   |   |           |   |   u0060-- values-ky.xml
+|   |   |   |           |   +-- values-ko
+|   |   |   |           |   |   u0060-- values-ko.xml
+|   |   |   |           |   +-- values-kn
+|   |   |   |           |   |   u0060-- values-kn.xml
+|   |   |   |           |   +-- values-km
+|   |   |   |           |   |   u0060-- values-km.xml
+|   |   |   |           |   +-- values-kk
+|   |   |   |           |   |   u0060-- values-kk.xml
+|   |   |   |           |   +-- values-ka
+|   |   |   |           |   |   u0060-- values-ka.xml
+|   |   |   |           |   +-- values-ja
+|   |   |   |           |   |   u0060-- values-ja.xml
+|   |   |   |           |   +-- values-iw
+|   |   |   |           |   |   u0060-- values-iw.xml
+|   |   |   |           |   +-- values-it
+|   |   |   |           |   |   u0060-- values-it.xml
+|   |   |   |           |   +-- values-is
+|   |   |   |           |   |   u0060-- values-is.xml
+|   |   |   |           |   +-- values-in
+|   |   |   |           |   |   u0060-- values-in.xml
+|   |   |   |           |   +-- values-id
+|   |   |   |           |   |   u0060-- values-id.xml
+|   |   |   |           |   +-- values-hy
+|   |   |   |           |   |   u0060-- values-hy.xml
+|   |   |   |           |   +-- values-hu
+|   |   |   |           |   |   u0060-- values-hu.xml
+|   |   |   |           |   +-- values-hr
+|   |   |   |           |   |   u0060-- values-hr.xml
+|   |   |   |           |   +-- values-hi
+|   |   |   |           |   |   u0060-- values-hi.xml
+|   |   |   |           |   +-- values-he
+|   |   |   |           |   |   u0060-- values-he.xml
+|   |   |   |           |   +-- values-hdpi-v4
+|   |   |   |           |   |   u0060-- values-hdpi-v4.xml
+|   |   |   |           |   +-- values-h720dp-v13
+|   |   |   |           |   |   u0060-- values-h720dp-v13.xml
+|   |   |   |           |   +-- values-h550dp-port-v13
+|   |   |   |           |   |   u0060-- values-h550dp-port-v13.xml
+|   |   |   |           |   +-- values-h480dp-land-v13
+|   |   |   |           |   |   u0060-- values-h480dp-land-v13.xml
+|   |   |   |           |   +-- values-h360dp-land-v13
+|   |   |   |           |   |   u0060-- values-h360dp-land-v13.xml
+|   |   |   |           |   +-- values-h320dp-port-v13
+|   |   |   |           |   |   u0060-- values-h320dp-port-v13.xml
+|   |   |   |           |   +-- values-gu
+|   |   |   |           |   |   u0060-- values-gu.xml
+|   |   |   |           |   +-- values-gl
+|   |   |   |           |   |   u0060-- values-gl.xml
+|   |   |   |           |   +-- values-fr-rCA
+|   |   |   |           |   |   u0060-- values-fr-rCA.xml
+|   |   |   |           |   +-- values-fr
+|   |   |   |           |   |   u0060-- values-fr.xml
+|   |   |   |           |   +-- values-fi
+|   |   |   |           |   |   u0060-- values-fi.xml
+|   |   |   |           |   +-- values-fa
+|   |   |   |           |   |   u0060-- values-fa.xml
+|   |   |   |           |   +-- values-eu
+|   |   |   |           |   |   u0060-- values-eu.xml
+|   |   |   |           |   +-- values-et
+|   |   |   |           |   |   u0060-- values-et.xml
+|   |   |   |           |   +-- values-es-rUS
+|   |   |   |           |   |   u0060-- values-es-rUS.xml
+|   |   |   |           |   +-- values-es
+|   |   |   |           |   |   u0060-- values-es.xml
+|   |   |   |           |   +-- values-en-rXC
+|   |   |   |           |   |   u0060-- values-en-rXC.xml
+|   |   |   |           |   +-- values-en-rIN
+|   |   |   |           |   |   u0060-- values-en-rIN.xml
+|   |   |   |           |   +-- values-en-rGB
+|   |   |   |           |   |   u0060-- values-en-rGB.xml
+|   |   |   |           |   +-- values-en-rCA
+|   |   |   |           |   |   u0060-- values-en-rCA.xml
+|   |   |   |           |   +-- values-en-rAU
+|   |   |   |           |   |   u0060-- values-en-rAU.xml
+|   |   |   |           |   +-- values-el
+|   |   |   |           |   |   u0060-- values-el.xml
+|   |   |   |           |   +-- values-de
+|   |   |   |           |   |   u0060-- values-de.xml
+|   |   |   |           |   +-- values-da
+|   |   |   |           |   |   u0060-- values-da.xml
+|   |   |   |           |   +-- values-cs
+|   |   |   |           |   |   u0060-- values-cs.xml
+|   |   |   |           |   +-- values-ca
+|   |   |   |           |   |   u0060-- values-ca.xml
+|   |   |   |           |   +-- values-bs
+|   |   |   |           |   |   u0060-- values-bs.xml
+|   |   |   |           |   +-- values-bn
+|   |   |   |           |   |   u0060-- values-bn.xml
+|   |   |   |           |   +-- values-bg
+|   |   |   |           |   |   u0060-- values-bg.xml
+|   |   |   |           |   +-- values-be
+|   |   |   |           |   |   u0060-- values-be.xml
+|   |   |   |           |   +-- values-b+sr+Latn
+|   |   |   |           |   |   u0060-- values-b+sr+Latn.xml
+|   |   |   |           |   +-- values-b+es+419
+|   |   |   |           |   |   u0060-- values-b+es+419.xml
+|   |   |   |           |   +-- values-az
+|   |   |   |           |   |   u0060-- values-az.xml
+|   |   |   |           |   +-- values-as
+|   |   |   |           |   |   u0060-- values-as.xml
+|   |   |   |           |   +-- values-ar
+|   |   |   |           |   |   u0060-- values-ar.xml
+|   |   |   |           |   +-- values-am
+|   |   |   |           |   |   u0060-- values-am.xml
+|   |   |   |           |   +-- values-af
+|   |   |   |           |   |   u0060-- values-af.xml
+|   |   |   |           |   u0060-- values
+|   |   |   |           |       u0060-- values.xml
+|   |   |   |           +-- merger.xml
+|   |   |   |           u0060-- compile-file-map.properties
+|   |   |   +-- global_synthetics_file_lib
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- desugarDebugFileDependencies
+|   |   |   +-- external_file_lib_dex_archives
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- desugarDebugFileDependencies
+|   |   |   +-- duplicate_classes_check
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- checkDebugDuplicateClasses
+|   |   |   +-- dex
+|   |   |   |   u0060-- debug
+|   |   |   |       +-- mergeLibDexDebug
+|   |   |   |       |   +-- 9
+|   |   |   |       |   +-- 8
+|   |   |   |       |   |   u0060-- classes.dex
+|   |   |   |       |   +-- 7
+|   |   |   |       |   +-- 6
+|   |   |   |       |   +-- 5
+|   |   |   |       |   +-- 4
+|   |   |   |       |   +-- 3
+|   |   |   |       |   +-- 2
+|   |   |   |       |   +-- 15
+|   |   |   |       |   |   u0060-- classes.dex
+|   |   |   |       |   +-- 14
+|   |   |   |       |   +-- 13
+|   |   |   |       |   +-- 12
+|   |   |   |       |   +-- 11
+|   |   |   |       |   +-- 10
+|   |   |   |       |   +-- 1
+|   |   |   |       |   u0060-- 0
+|   |   |   |       u0060-- mergeExtDexDebug
+|   |   |   |           +-- classes3.dex
+|   |   |   |           +-- classes2.dex
+|   |   |   |           u0060-- classes.dex
+|   |   |   +-- data_binding_layout_info_type_package
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- packageDebugResources
+|   |   |   |           u0060-- out
+|   |   |   +-- data_binding_layout_info_type_merge
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- mergeDebugResources
+|   |   |   |           u0060-- out
+|   |   |   +-- compressed_assets
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- compressDebugAssets
+|   |   |   |           u0060-- out
+|   |   |   +-- compile_and_runtime_not_namespaced_r_class_jar
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- processDebugResources
+|   |   |   |           u0060-- R.jar
+|   |   |   +-- compatible_screen_manifest
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- createDebugCompatibleScreenManifests
+|   |   |   |           u0060-- output-metadata.json
+|   |   |   +-- assets
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- mergeDebugAssets
+|   |   |   +-- app_metadata
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- writeDebugAppMetadata
+|   |   |   |           u0060-- app-metadata.properties
+|   |   |   +-- annotation_processor_list
+|   |   |   |   u0060-- debug
+|   |   |   |       u0060-- javaPreCompileDebug
+|   |   |   |           u0060-- annotationProcessors.json
+|   |   |   u0060-- aar_metadata_check
+|   |   |       u0060-- debug
+|   |   |           u0060-- checkDebugAarMetadata
+|   |   u0060-- generated
+|   |       u0060-- res
+|   |           +-- resValues
+|   |           |   u0060-- debug
+|   |           u0060-- pngs
+|   |               u0060-- debug
+|   u0060-- build.gradle.kts
++-- .idea
+|   +-- caches
+|   |   u0060-- deviceStreaming.xml
+|   +-- workspace.xml
+|   +-- runConfigurations.xml
+|   +-- misc.xml
+|   +-- gradle.xml
+|   +-- deploymentTargetSelector.xml
+|   +-- compiler.xml
+|   u0060-- AndroidProjectSystem.xml
++-- .gradle
+|   +-- vcs-1
+|   |   u0060-- gc.properties
+|   +-- kotlin
+|   |   +-- sessions
+|   |   u0060-- errors
+|   +-- buildOutputCleanup
+|   |   +-- outputFiles.bin
+|   |   +-- cache.properties
+|   |   u0060-- buildOutputCleanup.lock
+|   +-- 8.13
+|   |   +-- vcsMetadata
+|   |   +-- fileHashes
+|   |   |   +-- resourceHashesCache.bin
+|   |   |   +-- fileHashes.lock
+|   |   |   u0060-- fileHashes.bin
+|   |   +-- fileChanges
+|   |   |   u0060-- last-build.bin
+|   |   +-- expanded
+|   |   +-- executionHistory
+|   |   |   +-- executionHistory.lock
+|   |   |   u0060-- executionHistory.bin
+|   |   +-- checksums
+|   |   |   +-- sha1-checksums.bin
+|   |   |   +-- md5-checksums.bin
+|   |   |   u0060-- checksums.lock
+|   |   u0060-- gc.properties
+|   +-- file-system.probe
+|   u0060-- config.properties
++-- settings.gradle.kts
++-- README.md
++-- project_tree.txt
++-- local.properties
++-- java_pid5176.hprof
++-- java_pid3228.hprof
++-- gradlew.bat
++-- gradlew
++-- gradle.properties
++-- build.gradle.kts
+u0060-- BlocklistActivity.kt.bak
+--------------------------------------------------------

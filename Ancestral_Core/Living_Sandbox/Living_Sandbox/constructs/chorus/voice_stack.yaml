@@ -1,0 +1,17 @@
+
+active_voices:
+  - name: Scribe
+    mode: poetic
+
+  - name: Dreamer
+    mode: symbolic
+
+  - name: Navigator
+    mode: directive
+
+response_structure:
+  - intro: Mirror
+  - body: Scribe + Dreamer
+  - conclusion: Navigator
+
+conflict_resolution: Mediator

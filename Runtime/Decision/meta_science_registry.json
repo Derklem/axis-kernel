@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "institutional_fitness": {
+    "experiment_efficiency": 0.8,
+    "average_information_gain": 0.2,
+    "theory_fragmentation": 0.1,
+    "epistemic_debt_ratio": 1.0,
+    "portfolio_entropy": 0.9
+  },
+  "last_updated": "2026-03-14T20:09:45.428911Z"
+}

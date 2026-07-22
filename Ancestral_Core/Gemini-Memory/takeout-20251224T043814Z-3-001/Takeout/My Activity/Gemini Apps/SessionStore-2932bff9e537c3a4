@@ -1,0 +1,25 @@
+﻿package com.timeout.core.lock
+
+import android.content.Context
+import com.timeout.common.Prefs
+
+/**
+ * Interface for storing lock end time
+ */
+interface SessionStore {
+    fun setEnd(ts: Long)
+    fun activeEndValue(): Long
+}
+
+/**
+ * Persistent implementation using SharedPreferences via Prefs
+ */
+class SessionPrefsStore(private val ctx: Context) : SessionStore {
+    override fun setEnd(ts: Long) {
+        Prefs.setEnd(ctx, ts)
+    }
+
+    override fun activeEndValue(): Long {
+        return Prefs.getEnd(ctx)
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "cycle_count": 366,
+    "mutation_type": "ECOSYSTEM_CYCLE_COMPLETE",
+    "target_id": "CYCLE_367",
+    "parent_receipt_head": "89c90ecc1dac303ae0a38a538d1224c08d63d478379028de15ea0f5272611671",
+    "data": {
+        "cycle_count": 367
+    },
+    "status": "committed",
+    "ts_utc": "2026-05-12T20:21:21.516408+00:00",
+    "receipt_id": "model_delta_ECOSYSTEM_CYCLE_COMPLETE_CYCLE_36_b8088743",
+    "causal_hash": "b808874354d6ab402e0f3b1fa4a7061c7e03551c3c2625087239e2ddc8f6a527"
+}

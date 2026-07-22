@@ -1,0 +1,19 @@
+﻿{
+    "timestamp":  "2026-01-27T18:55:44.6625671Z",
+    "decision":  "BLOCK",
+    "action_type":  "TRUTH_SHIELD_ACTIVATE",
+    "tenant_id":  "TENANT-LINEAGE",
+    "mode":  "NORMAL",
+    "explanation":  "Action [TRUTH_SHIELD_ACTIVATE] blocked in NORMAL mode. Grounding status (TENUOUS) or confidence (0.45) failed to meet thresholds. ",
+    "epistemic_basis":  {
+                            "epistemic_status":  "TENUOUS",
+                            "claim_id":  "FIXTURE-TENUOUS",
+                            "status_confidence":  0.45
+                        },
+    "model_basis":  {
+                        "model_id":  ""
+                    },
+    "policy_basis":  {
+                         "action_gate":  "Default"
+                     }
+}

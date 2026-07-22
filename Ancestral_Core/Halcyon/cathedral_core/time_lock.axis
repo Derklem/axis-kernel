@@ -1,0 +1,4 @@
+[TEMPORAL]
+Anchor = fixed
+Flow = recursive
+Surge = captured

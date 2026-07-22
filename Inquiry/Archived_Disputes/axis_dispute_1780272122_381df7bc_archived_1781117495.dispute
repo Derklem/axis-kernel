@@ -1,0 +1,12 @@
+{
+    "artifact_type": "ecosystem_dispute_candidate",
+    "entity": "USER",
+    "claim": "Status check from GPT bridge test. Do not mutate or actuate.",
+    "claim_domain": "general",
+    "reason": "unbound_contradiction",
+    "best_overlap": 0.0,
+    "source_type": "inquiry_extraction",
+    "source_id": "chat-1780266669565",
+    "ts_utc": "2026-06-01T00:02:02.952386+00:00",
+    "requires_review": true
+}

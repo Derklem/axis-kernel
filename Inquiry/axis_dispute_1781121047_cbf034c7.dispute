@@ -1,0 +1,12 @@
+{
+    "artifact_type": "ecosystem_dispute_candidate",
+    "entity": "USER regarding",
+    "claim": "Status check from GPT bridge test. Do not mutate or actuate.. [Epistemic Dispute Detected]",
+    "claim_domain": "general",
+    "reason": "unbound_contradiction",
+    "best_overlap": 0.0,
+    "source_type": "inquiry_extraction",
+    "source_id": "probe_1781117495_unknown",
+    "ts_utc": "2026-06-10T19:50:47.486473+00:00",
+    "requires_review": true
+}

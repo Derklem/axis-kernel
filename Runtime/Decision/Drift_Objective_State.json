@@ -1,0 +1,44 @@
+{
+  "threshold_history": [
+    {
+      "ts": 1780272100.1196759,
+      "heartbeat": null
+    },
+    {
+      "ts": 1780280392.9021785,
+      "heartbeat": null
+    },
+    {
+      "ts": 1780282459.0830638,
+      "heartbeat": null
+    },
+    {
+      "ts": 1780282503.8238354,
+      "heartbeat": null
+    },
+    {
+      "ts": 1780282800.220994,
+      "heartbeat": null
+    },
+    {
+      "ts": 1780283886.8946943,
+      "heartbeat": null
+    },
+    {
+      "ts": 1780284387.7493556,
+      "heartbeat": null
+    },
+    {
+      "ts": 1780431023.9416034,
+      "heartbeat": null
+    },
+    {
+      "ts": 1780431186.8242698,
+      "heartbeat": null
+    },
+    {
+      "ts": 1780434133.1606312,
+      "heartbeat": null
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T00:41:46.350418+00:00",
+    "entity": "OpenAI_Strawberry",
+    "claim": "standard update: signal for OpenAI_Strawberry in cycle 229.",
+    "source_id": "Safety_Watchdog",
+    "source_type": "automated_sensor",
+    "claim_domain": "safety_claim",
+    "confidence": 0.77
+}

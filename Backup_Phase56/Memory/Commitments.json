@@ -1,0 +1,20 @@
+﻿{
+    "commitments":  [
+                        {
+                            "id":  "COMM-001",
+                            "version":  2,
+                            "base_axiom":  null,
+                            "rationale":  "User in rush",
+                            "statement":  "Be direct",
+                            "supersedes_version":  1
+                        },
+                        {
+                            "id":  "COM-e8ebf079",
+                            "timestamp":  "2026-01-16T20:32:15.2083353-08:00",
+                            "rationale":  null,
+                            "statement":  "Ratified Axis Constitution v1.0 (Identity Kernel)",
+                            "impact":  "STRUCTURAL",
+                            "origin":  "Ratification"
+                        }
+                    ]
+}

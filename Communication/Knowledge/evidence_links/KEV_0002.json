@@ -1,0 +1,13 @@
+{
+  "evidence_link_id": "KEV_0002",
+  "claim_id": "KCLM_001",
+  "source_artifact": "assessments/asm_017_x.v2.json",
+  "relation": "SUPPORTS",
+  "independence_group": "EXP_017_X",
+  "proposition_supported": "The tested broadcast on a general personal X account produced zero on-target technical inquiries.",
+  "strength": "DIRECT_WITH_LIMITATIONS",
+  "limitations": [
+    "exposure denominator unknown (algorithmically mediated)",
+    "personal account may lack relevant technical authority signal"
+  ]
+}

@@ -1,0 +1,60 @@
+﻿{
+    "version":  "2026-01-27.v1",
+    "default_mode":  "NORMAL",
+    "modes":  [
+                  "CAUTIOUS",
+                  "NORMAL",
+                  "AGGRESSIVE"
+              ],
+    "constraints":  {
+                        "allow_auto_escalation":  false,
+                        "allow_auto_demotion":  true,
+                        "min_mode":  "CAUTIOUS",
+                        "max_mode":  "AGGRESSIVE"
+                    },
+    "rules":  [
+                  {
+                      "id":  "INV_VIOLATED_FORCE_CAUTION",
+                      "when":  {
+                                   "truth_invariants_status":  "VIOLATED"
+                               },
+                      "then":  {
+                                   "target_mode":  "CAUTIOUS",
+                                   "lock":  true,
+                                   "reason":  "Invariants violated – forcing CAUTIOUS until resolved."
+                               }
+                  },
+                  {
+                      "id":  "HB_BLOCKED_FORCE_CAUTION",
+                      "when":  {
+                                   "heartbeat_summary_status":  "BLOCKED"
+                               },
+                      "then":  {
+                                   "target_mode":  "CAUTIOUS",
+                                   "lock":  true,
+                                   "reason":  "Heartbeat status BLOCKED – autonomy clamped."
+                               }
+                  },
+                  {
+                      "id":  "RES_RED_DEMOTE",
+                      "when":  {
+                                   "resource_posture":  "RED"
+                               },
+                      "then":  {
+                                   "max_mode":  "NORMAL",
+                                   "reason":  "Resource posture RED – disallow AGGRESSIVE."
+                               }
+                  },
+                  {
+                      "id":  "RES_YELLOW_SOFT",
+                      "when":  {
+                                   "resource_posture":  "YELLOW"
+                               },
+                      "then":  {
+                                   "preferred_mode":  "CAUTIOUS",
+                                   "reason":  "Resource posture YELLOW – recommend CAUTIOUS."
+                               }
+                  }
+              ],
+    "max_auto_low_risk_actions_per_min":  5
+}

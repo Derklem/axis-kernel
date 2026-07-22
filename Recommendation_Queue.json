@@ -1,0 +1,44 @@
+﻿{
+    "history":  [
+
+                ],
+    "version":  1,
+    "strategies":  [
+                       {
+                           "id":  "TEST-HEARTBEAT-001",
+                           "ratified":  true,
+                           "created_at":  "2026-01-22T19:21:48.6480129Z",
+                           "context":  {
+
+                                       },
+                           "status":  "pending_execution",
+                           "library_id":  "STR-NEURAL-HEARTBEAT-INGEST-001"
+                       }
+                   ],
+    "recommendations":  [
+                            {
+                                "id":  "REC-20260124-145650-SQMW",
+                                "name":  "Audit Critical Doctrine Rules",
+                                "summary":  "Review the doctrine and gating rules related to this incident\u0027s source and resource class. Tighten patterns or add explicit deny rules.",
+                                "risk_level":  "medium",
+                                "status":  "pending",
+                                "created_at":  "2026-01-24T14:56:50.2865068-08:00",
+                                "source":  "Incident_Playbook",
+                                "source_incident":  "INC-20260124-145650-CDO9",
+                                "playbook_id":  "PB-DOCTRINE-CRIT-001",
+                                "linked_hypothesis_id":  "HYP-20260124-145650-L665"
+                            },
+                            {
+                                "id":  "REC-20260124-145650-DULU",
+                                "name":  "Run Autonomy Audit",
+                                "summary":  "Execute Axis_Autonomy_Audit and examine tools interacting with this resource for misclassified risk or missing gates.",
+                                "risk_level":  "medium",
+                                "status":  "pending",
+                                "created_at":  "2026-01-24T14:56:50.2890420-08:00",
+                                "source":  "Incident_Playbook",
+                                "source_incident":  "INC-20260124-145650-CDO9",
+                                "playbook_id":  "PB-DOCTRINE-CRIT-001",
+                                "linked_hypothesis_id":  "HYP-20260124-145650-L665"
+                            }
+                        ]
+}

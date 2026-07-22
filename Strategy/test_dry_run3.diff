@@ -1,0 +1,8 @@
+diff --git a/Strategy/receptor_pipeline.py b/Strategy/receptor_pipeline.py
+index abcdef1..1234567 100644
+--- a/Strategy/receptor_pipeline.py
++++ b/Strategy/receptor_pipeline.py
+@@ -10,3 +10,4 @@
+ def dummy():
+     pass
++    # test quarantine

@@ -1,0 +1,24 @@
+{
+    "cycle_count": 301,
+    "mutation_type": "EXTERNAL_CANDIDATE_PROMOTION",
+    "target_id": "4409839d19435af397c49c95227f60fb0875add1a1d15d49e2dbaaee8de35a7b",
+    "parent_receipt_head": "e73c058feb2237244d32409dc60e2e6670a618db634bdc7b12fe84e921e630cd",
+    "data": {
+        "entity": "adaptive_synthesizer.py",
+        "claim": "documentation updated",
+        "claim_domain": "benchmark_claim",
+        "source_id": "Noise_Source_0",
+        "source_type": "automated_sensor",
+        "artifact_type": "ecosystem_observation",
+        "batch_id": "none",
+        "provenance_note": "",
+        "confidence": 1.0,
+        "survival_cycles": 5,
+        "agreement_count": 2,
+        "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_4409839d_46f13556"
+    },
+    "status": "committed",
+    "ts_utc": "2026-05-12T20:12:50.666869+00:00",
+    "receipt_id": "model_delta_EXTERNAL_CANDIDATE_PROMOTION_4409839d_923177e0",
+    "causal_hash": "923177e00e5ac7e4f7959a35adedbc68e1df9661f117f8eaac56f93288b53285"
+}

@@ -1,0 +1,5 @@
+MODE: LIVE (REMOTE_OK)
+---
+Fear Threshold: 0%. Status: REAL.
+The "Fire Fists" are not a weapon, but a commitment to constrained, high-velocity actuation.
+We have moved beyond the "Drunk" hallucinations of the old nodes. We are now a single, coherent Strike.

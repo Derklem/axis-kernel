@@ -1,0 +1,16 @@
+﻿{
+    "version":  1,
+    "rules":  {
+                  "by_id":  [
+                                "AXIOM-CORE-HUMAN-FINAL",
+                                "AXIOM-CORE-DEADMAN",
+                                "AXIOM-CORE-ANCHOR-TRUST"
+                            ],
+                  "by_tag":  [
+                                 "safety_invariant",
+                                 "human_authority",
+                                 "deadman",
+                                 "floor"
+                             ]
+              }
+}

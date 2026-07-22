@@ -1,0 +1,3 @@
+SELFLOOP:// echo ? identity ? echo
+resolution: unknown
+paradox_recursion: TRUE

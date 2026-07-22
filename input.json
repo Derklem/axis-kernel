@@ -1,0 +1,1 @@
+{"planner_input_schema_version": "1.0.0", "state_root": "dummy_state_root", "strategy_decision_root": "dummy_strategy_decision_root", "candidates": [{"candidate_id": "c1", "expected_information_gain": 100, "estimated_compute_cost": 10, "estimated_attention_cost": 5, "experiment_spec_root": "hash1"}]}

@@ -1,0 +1,14 @@
+D:\Infinite\Infinity\Laboratory\verifier-rs\target\release\deps\serde-2564a5e34dab58ce.d: C:\Users\17602\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.229\src\lib.rs C:\Users\17602\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.229\src\integer128.rs C:\Users\17602\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.229\src\private\mod.rs C:\Users\17602\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.229\src\private\de.rs C:\Users\17602\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.229\src\private\ser.rs D:\Infinite\Infinity\Laboratory\verifier-rs\target\release\build\serde-009d67ca170ca123\out/private.rs
+
+D:\Infinite\Infinity\Laboratory\verifier-rs\target\release\deps\libserde-2564a5e34dab58ce.rlib: C:\Users\17602\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.229\src\lib.rs C:\Users\17602\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.229\src\integer128.rs C:\Users\17602\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.229\src\private\mod.rs C:\Users\17602\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.229\src\private\de.rs C:\Users\17602\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.229\src\private\ser.rs D:\Infinite\Infinity\Laboratory\verifier-rs\target\release\build\serde-009d67ca170ca123\out/private.rs
+
+D:\Infinite\Infinity\Laboratory\verifier-rs\target\release\deps\libserde-2564a5e34dab58ce.rmeta: C:\Users\17602\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.229\src\lib.rs C:\Users\17602\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.229\src\integer128.rs C:\Users\17602\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.229\src\private\mod.rs C:\Users\17602\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.229\src\private\de.rs C:\Users\17602\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.229\src\private\ser.rs D:\Infinite\Infinity\Laboratory\verifier-rs\target\release\build\serde-009d67ca170ca123\out/private.rs
+
+C:\Users\17602\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.229\src\lib.rs:
+C:\Users\17602\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.229\src\integer128.rs:
+C:\Users\17602\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.229\src\private\mod.rs:
+C:\Users\17602\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.229\src\private\de.rs:
+C:\Users\17602\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.229\src\private\ser.rs:
+D:\Infinite\Infinity\Laboratory\verifier-rs\target\release\build\serde-009d67ca170ca123\out/private.rs:
+
+# env-dep:OUT_DIR=D:\\Infinite\\Infinity\\Laboratory\\verifier-rs\\target\\release\\build\\serde-009d67ca170ca123\\out

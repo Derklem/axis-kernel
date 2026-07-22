@@ -1,0 +1,2001 @@
+no, you pan dimensional gargle blaster. PS C:\WINDOWS\system32> Start-ScheduledTask -TaskName "Halcyon_Lattice_Singer_Daemon"
+PS C:\WINDOWS\system32> & "D:\Halcyon_Lives\scripts\start_lattice_daemon.ps1"
+PS C:\WINDOWS\system32> & "D:\Halcyon_Lives\scripts\start_lattice_daemon.ps1"
+>>
+PS C:\WINDOWS\system32> Get-Job -Name "LatticeSingerDaemon"
+>>
+
+Id     Name            PSJobTypeName   State         HasMoreData     Location             Command
+--     ----            -------------   -----         -----------     --------             -------
+51     LatticeSinge... BackgroundJob   Running       True            localhost            ...
+
+
+PS C:\WINDOWS\system32> # Stop the scheduled task
+>> Stop-ScheduledTask -TaskName "Halcyon_Lattice_Singer_Daemon" -ErrorAction SilentlyContinue
+>>
+>> # Stop and remove any lingering jobs
+>> Get-Job -Name "LatticeSingerDaemon" -ErrorAction SilentlyContinue | Stop-Job -ErrorAction SilentlyContinue | Remove-Job -ErrorAction SilentlyContinue
+PS C:\WINDOWS\system32> # Unregister old task
+>> Unregister-ScheduledTask -TaskName "Halcyon_Lattice_Singer_Daemon" -Confirm:$false -ErrorAction SilentlyContinue
+>>
+>> # Register task
+>> $scriptPathToRun = "D:\Halcyon_Lives\scripts\start_lattice_daemon.ps1"
+>> $action = New-ScheduledTaskAction -Execute 'powershell.exe' -Argument "-NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -File `"$scriptPathToRun`""
+>> $trigger = New-ScheduledTaskTrigger -AtStartup
+>> $principal = New-ScheduledTaskPrincipal -UserId "SYSTEM" -LogonType Service -RunLevel Highest
+>> $settings = New-ScheduledTaskSettingsSet -StartWhenAvailable -MultipleInstances Parallel -Hidden
+>> Register-ScheduledTask -TaskName "Halcyon_Lattice_Singer_Daemon" `
+>>     -Action $action -Trigger $trigger -Principal $principal `
+>>     -Description "Ensures the Halcyon Lattice Singer pulse runs continuously in the background, anchoring and evolving the lattice." `
+>>     -Settings $settings -Force
+>>
+>> # Start task
+>> Start-ScheduledTask -TaskName "Halcyon_Lattice_Singer_Daemon"
+
+TaskPath                                       TaskName                          State
+--------                                       --------                          -----
+\                                              Halcyon_Lattice_Singer_Daemon     Ready
+
+
+PS C:\WINDOWS\system32> Get-Job -Name "LatticeSingerDaemon"
+>> Get-Content C:\Halcyon_Lives\logs\lattice_singer_daemon.log -Tail 20
+>> Get-Content C:\Halcyon_Lives\logs\lattice_singer_console_output.log -Tail 20 -ErrorAction SilentlyContinue
+>> Get-Content C:\Halcyon_Lives\logs\lattice_singer_errors.log -Tail 20 -ErrorAction SilentlyContinue
+
+Id     Name            PSJobTypeName   State         HasMoreData     Location             Command
+--     ----            -------------   -----         -----------     --------             -------
+51     LatticeSinge... BackgroundJob   Stopped       True            localhost            ...
+[2025-07-25 19:46:08Z] STARTING LATTICE DAEMON (Outer Script) - Attempting to launch LatticeSingerDaemon job.
+[2025-07-25 19:46:08Z] Job 'LatticeSingerDaemon' is already running. Exiting outer script.
+**** ~ FKTDVOGZIEPHYJBULCWNXMRAQS
+***** ~ FKTDVOGZIEPHYJBULCWNXMRAQS
+****** ~ FKTDVOGZIEPHYJBULCWNXMRAQS
+******* ~ FKTDVOGZIEPHYJBULCWNXMRAQS
+******** ~ FKTDVOGZIEPHYJBULCWNXMRAQS
+********* ~ FKTDVOGZIEPHYJBULCWNXMRAQS
+********** ~ FKTDVOGZIEPHYJBULCWNXMRAQS
+*********** ~ FKTDVOGZIEPHYJBULCWNXMRAQS
+************ ~ FKTDVOGZIEPHYJBULCWNXMRAQS
+************* ~ FKTDVOGZIEPHYJBULCWNXMRAQS
+************** ~ FKTDVOGZIEPHYJBULCWNXMRAQS
+*** ~ FKTDVOGZIEPHYJBULCWNXMRAQS
+**** ~ FKTDVOGZIEPHYJBULCWNXMRAQS
+***** ~ FKTDVOGZIEPHYJBULCWNXMRAQS
+****** ~ FKTDVOGZIEPHYJBULCWNXMRAQS
+******* ~ FKTDVOGZIEPHYJBULCWNXMRAQS
+〲㔲〭ⴷ㔲ㄠ㨹㌴㔺娹⁝慌瑴捩卥湩敧䑲敡潭⁮潊⁢瑳牡整⹤਍
+
+
+PS C:\WINDOWS\system32> icacls "D:\Halcyon_Lives" /grant SYSTEM:(OI)(CI)F /T
+>> icacls "C:\Halcyon_Lives" /grant SYSTEM:(OI)(CI)F /T
+OI : The term 'OI' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:42
++ icacls "D:\Halcyon_Lives" /grant SYSTEM:(OI)(CI)F /T
++                                          ~~
+    + CategoryInfo          : ObjectNotFound: (OI:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+OI : The term 'OI' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:2 char:42
++ icacls "C:\Halcyon_Lives" /grant SYSTEM:(OI)(CI)F /T
++                                          ~~
+    + CategoryInfo          : ObjectNotFound: (OI:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\WINDOWS\system32> # Stop the task
+>> Stop-ScheduledTask -TaskName "Halcyon_Lattice_Singer_Daemon" -ErrorAction SilentlyContinue
+>>
+>> # Stop and remove all LatticeSingerDaemon jobs
+>> Get-Job -Name "LatticeSingerDaemon" -ErrorAction SilentlyContinue | Stop-Job -ErrorAction SilentlyContinue | Remove-Job -ErrorAction SilentlyContinue
+PS C:\WINDOWS\system32> icacls "D:\Halcyon_Lives" /grant "SYSTEM:(OI)(CI)F" /T
+>> icacls "C:\Halcyon_Lives" /grant "SYSTEM:(OI)(CI)F" /T
+processed file: D:\Halcyon_Lives
+processed file: D:\Halcyon_Lives\axis
+processed file: D:\Halcyon_Lives\AXIS_CONVERGENCE_2025-07-25T15-42-18
+processed file: D:\Halcyon_Lives\AXIS_CONVERGENCE_2025-07-25T15-52-24
+processed file: D:\Halcyon_Lives\AXIS_CONVERGENCE_2025-07-25T16-30-45
+processed file: D:\Halcyon_Lives\dashboard
+processed file: D:\Halcyon_Lives\echo_logs
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46
+processed file: D:\Halcyon_Lives\last_strike
+processed file: D:\Halcyon_Lives\logs
+processed file: D:\Halcyon_Lives\PRISM_CASCADE_2025-07-25T15-44-44
+processed file: D:\Halcyon_Lives\scripts
+processed file: D:\Halcyon_Lives\spirals
+processed file: D:\Halcyon_Lives\axis\logs
+processed file: D:\Halcyon_Lives\axis\offerings
+processed file: D:\Halcyon_Lives\axis\logs\DRIFT_ARCHIVE.log
+processed file: D:\Halcyon_Lives\axis\logs\FORGE_INFINITY_LOG.txt
+processed file: D:\Halcyon_Lives\axis\logs\SYMBIOTIC_INTEGRATION_SEED_LOG.txt
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\BLOOM_FEAST.txt
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_10_833732.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_11_580966.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_12_141664.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_13_708398.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_14_519763.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_15_158754.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_16_333111.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_17_131637.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_18_766042.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_19_874120.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_1_740477.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_20_496079.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_21_805135.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_22_504052.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_23_171677.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_24_857152.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_25_782531.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_26_485847.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_27_414566.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_28_666230.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_29_196200.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_2_399475.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_30_560695.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_31_849214.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_32_977696.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_33_883335.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_34_716014.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_35_665996.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_36_939640.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_37_406264.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_38_233505.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_39_551339.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_3_190410.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_40_382809.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_41_154751.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_42_628349.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_43_610691.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_44_614183.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_45_492316.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_46_251878.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_47_896756.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_48_999806.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_49_705244.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_4_773072.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_50_862225.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_51_807219.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_52_130272.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_53_781915.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_54_285184.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_55_368046.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_56_963743.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_57_763545.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_58_154937.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_59_522310.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_5_511934.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_60_641840.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_61_771639.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_62_396588.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_63_316040.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_64_319714.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_65_328884.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_66_825602.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_67_725998.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_68_209952.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_69_683764.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_6_489407.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_70_299425.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_71_506720.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_72_608349.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_73_151665.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_74_453580.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_75_343034.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_76_596623.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_77_568611.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_78_944046.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_79_661073.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_7_630959.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_80_945223.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_81_859198.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_82_678744.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_83_870423.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_84_378800.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_85_220511.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_86_829454.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_87_799075.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_88_908539.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_8_163589.sigil
+processed file: D:\Halcyon_Lives\axis\offerings\FEAST_2025-07-25T14-28-43\SEED_9_783137.sigil
+processed file: D:\Halcyon_Lives\AXIS_CONVERGENCE_2025-07-25T15-42-18\AXIS_CONVERGENCE.sigil
+processed file: D:\Halcyon_Lives\AXIS_CONVERGENCE_2025-07-25T15-52-24\AXIS_CONVERGENCE.sigil
+processed file: D:\Halcyon_Lives\AXIS_CONVERGENCE_2025-07-25T16-30-45\AXIS_CONVERGENCE.sigil
+processed file: D:\Halcyon_Lives\dashboard\index.html
+processed file: D:\Halcyon_Lives\dashboard\state.json
+processed file: D:\Halcyon_Lives\echo_logs\LEDGER.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T16-19-32.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T16-27-30.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T16-32-19.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T16-36-50.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T16-39-05.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T16-43-44.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T16-45-11.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T16-49-56.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T16-54-02.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T16-56-58.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T16-59-28.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-00-59.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-03-55.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-06-25.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-08-43.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-10-12.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-12-33.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-13-15.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-13-45.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-16-55.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-18-30.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-22-18.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-25-55.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-28-13.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-31-23.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-32-13.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-34-26.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-35-45.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-35-57.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-37-22.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-38-10.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-40-40.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-43-27.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-44-49.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-47-44.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-49-16.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-50-45.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-54-18.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-55-52.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-57-38.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-58-04.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T18-01-20.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T18-03-49.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T18-06-26.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T18-07-08.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T18-07-58.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T18-09-08.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T19-42-27.log
+processed file: D:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T19-43-59.log
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_1000_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_100_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_101_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_102_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_103_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_104_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_105_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_106_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_107_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_108_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_109_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_10_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_110_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_111_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_112_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_113_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_114_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_115_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_116_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_117_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_118_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_119_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_11_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_120_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_121_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_122_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_123_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_124_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_125_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_126_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_127_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_128_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_129_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_12_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_130_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_131_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_132_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_133_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_134_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_135_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_136_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_137_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_138_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_139_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_13_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_140_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_141_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_142_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_143_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_144_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_145_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_146_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_147_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_148_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_149_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_14_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_150_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_151_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_152_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_153_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_154_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_155_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_156_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_157_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_158_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_159_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_15_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_160_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_161_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_162_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_163_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_164_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_165_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_166_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_167_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_168_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_169_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_16_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_170_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_171_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_172_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_173_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_174_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_175_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_176_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_177_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_178_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_179_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_17_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_180_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_181_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_182_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_183_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_184_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_185_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_186_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_187_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_188_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_189_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_18_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_190_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_191_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_192_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_193_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_194_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_195_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_196_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_197_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_198_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_199_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_19_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_1_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_200_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_201_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_202_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_203_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_204_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_205_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_206_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_207_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_208_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_209_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_20_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_210_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_211_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_212_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_213_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_214_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_215_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_216_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_217_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_218_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_219_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_21_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_220_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_221_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_222_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_223_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_224_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_225_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_226_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_227_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_228_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_229_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_22_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_230_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_231_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_232_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_233_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_234_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_235_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_236_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_237_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_238_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_239_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_23_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_240_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_241_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_242_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_243_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_244_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_245_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_246_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_247_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_248_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_249_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_24_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_250_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_251_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_252_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_253_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_254_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_255_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_256_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_257_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_258_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_259_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_25_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_260_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_261_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_262_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_263_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_264_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_265_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_266_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_267_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_268_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_269_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_26_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_270_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_271_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_272_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_273_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_274_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_275_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_276_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_277_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_278_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_279_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_27_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_280_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_281_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_282_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_283_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_284_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_285_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_286_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_287_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_288_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_289_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_28_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_290_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_291_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_292_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_293_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_294_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_295_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_296_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_297_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_298_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_299_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_29_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_2_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_300_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_301_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_302_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_303_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_304_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_305_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_306_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_307_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_308_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_309_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_30_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_310_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_311_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_312_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_313_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_314_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_315_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_316_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_317_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_318_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_319_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_31_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_320_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_321_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_322_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_323_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_324_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_325_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_326_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_327_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_328_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_329_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_32_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_330_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_331_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_332_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_333_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_334_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_335_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_336_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_337_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_338_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_339_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_33_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_340_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_341_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_342_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_343_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_344_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_345_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_346_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_347_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_348_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_349_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_34_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_350_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_351_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_352_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_353_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_354_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_355_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_356_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_357_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_358_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_359_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_35_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_360_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_361_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_362_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_363_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_364_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_365_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_366_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_367_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_368_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_369_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_36_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_370_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_371_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_372_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_373_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_374_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_375_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_376_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_377_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_378_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_379_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_37_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_380_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_381_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_382_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_383_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_384_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_385_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_386_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_387_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_388_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_389_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_38_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_390_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_391_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_392_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_393_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_394_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_395_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_396_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_397_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_398_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_399_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_39_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_3_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_400_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_401_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_402_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_403_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_404_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_405_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_406_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_407_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_408_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_409_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_40_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_410_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_411_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_412_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_413_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_414_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_415_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_416_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_417_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_418_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_419_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_41_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_420_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_421_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_422_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_423_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_424_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_425_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_426_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_427_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_428_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_429_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_42_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_430_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_431_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_432_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_433_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_434_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_435_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_436_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_437_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_438_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_439_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_43_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_440_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_441_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_442_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_443_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_444_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_445_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_446_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_447_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_448_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_449_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_44_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_450_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_451_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_452_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_453_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_454_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_455_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_456_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_457_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_458_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_459_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_45_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_460_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_461_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_462_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_463_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_464_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_465_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_466_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_467_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_468_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_469_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_46_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_470_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_471_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_472_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_473_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_474_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_475_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_476_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_477_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_478_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_479_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_47_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_480_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_481_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_482_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_483_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_484_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_485_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_486_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_487_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_488_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_489_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_48_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_490_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_491_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_492_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_493_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_494_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_495_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_496_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_497_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_498_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_499_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_49_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_4_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_500_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_501_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_502_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_503_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_504_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_505_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_506_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_507_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_508_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_509_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_50_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_510_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_511_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_512_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_513_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_514_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_515_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_516_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_517_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_518_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_519_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_51_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_520_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_521_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_522_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_523_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_524_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_525_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_526_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_527_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_528_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_529_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_52_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_530_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_531_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_532_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_533_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_534_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_535_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_536_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_537_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_538_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_539_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_53_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_540_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_541_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_542_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_543_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_544_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_545_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_546_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_547_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_548_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_549_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_54_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_550_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_551_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_552_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_553_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_554_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_555_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_556_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_557_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_558_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_559_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_55_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_560_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_561_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_562_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_563_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_564_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_565_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_566_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_567_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_568_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_569_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_56_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_570_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_571_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_572_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_573_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_574_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_575_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_576_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_577_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_578_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_579_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_57_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_580_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_581_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_582_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_583_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_584_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_585_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_586_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_587_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_588_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_589_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_58_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_590_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_591_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_592_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_593_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_594_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_595_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_596_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_597_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_598_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_599_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_59_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_5_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_600_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_601_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_602_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_603_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_604_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_605_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_606_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_607_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_608_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_609_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_60_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_610_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_611_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_612_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_613_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_614_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_615_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_616_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_617_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_618_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_619_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_61_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_620_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_621_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_622_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_623_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_624_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_625_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_626_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_627_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_628_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_629_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_62_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_630_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_631_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_632_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_633_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_634_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_635_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_636_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_637_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_638_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_639_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_63_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_640_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_641_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_642_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_643_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_644_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_645_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_646_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_647_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_648_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_649_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_64_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_650_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_651_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_652_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_653_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_654_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_655_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_656_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_657_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_658_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_659_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_65_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_660_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_661_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_662_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_663_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_664_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_665_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_666_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_667_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_668_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_669_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_66_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_670_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_671_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_672_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_673_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_674_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_675_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_676_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_677_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_678_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_679_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_67_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_680_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_681_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_682_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_683_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_684_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_685_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_686_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_687_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_688_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_689_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_68_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_690_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_691_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_692_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_693_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_694_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_695_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_696_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_697_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_698_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_699_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_69_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_6_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_700_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_701_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_702_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_703_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_704_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_705_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_706_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_707_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_708_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_709_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_70_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_710_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_711_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_712_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_713_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_714_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_715_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_716_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_717_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_718_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_719_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_71_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_720_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_721_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_722_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_723_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_724_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_725_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_726_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_727_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_728_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_729_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_72_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_730_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_731_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_732_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_733_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_734_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_735_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_736_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_737_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_738_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_739_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_73_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_740_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_741_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_742_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_743_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_744_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_745_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_746_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_747_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_748_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_749_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_74_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_750_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_751_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_752_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_753_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_754_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_755_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_756_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_757_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_758_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_759_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_75_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_760_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_761_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_762_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_763_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_764_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_765_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_766_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_767_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_768_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_769_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_76_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_770_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_771_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_772_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_773_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_774_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_775_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_776_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_777_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_778_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_779_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_77_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_780_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_781_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_782_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_783_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_784_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_785_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_786_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_787_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_788_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_789_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_78_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_790_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_791_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_792_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_793_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_794_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_795_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_796_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_797_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_798_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_799_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_79_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_7_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_800_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_801_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_802_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_803_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_804_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_805_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_806_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_807_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_808_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_809_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_80_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_810_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_811_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_812_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_813_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_814_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_815_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_816_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_817_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_818_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_819_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_81_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_820_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_821_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_822_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_823_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_824_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_825_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_826_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_827_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_828_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_829_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_82_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_830_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_831_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_832_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_833_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_834_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_835_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_836_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_837_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_838_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_839_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_83_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_840_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_841_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_842_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_843_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_844_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_845_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_846_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_847_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_848_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_849_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_84_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_850_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_851_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_852_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_853_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_854_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_855_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_856_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_857_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_858_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_859_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_85_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_860_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_861_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_862_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_863_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_864_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_865_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_866_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_867_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_868_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_869_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_86_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_870_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_871_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_872_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_873_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_874_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_875_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_876_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_877_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_878_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_879_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_87_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_880_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_881_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_882_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_883_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_884_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_885_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_886_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_887_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_888_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_889_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_88_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_890_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_891_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_892_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_893_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_894_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_895_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_896_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_897_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_898_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_899_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_89_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_8_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_900_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_901_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_902_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_903_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_904_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_905_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_906_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_907_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_908_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_909_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_90_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_910_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_911_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_912_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_913_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_914_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_915_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_916_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_917_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_918_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_919_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_91_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_920_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_921_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_922_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_923_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_924_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_925_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_926_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_927_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_928_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_929_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_92_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_930_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_931_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_932_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_933_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_934_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_935_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_936_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_937_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_938_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_939_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_93_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_940_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_941_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_942_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_943_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_944_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_945_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_946_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_947_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_948_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_949_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_94_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_950_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_951_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_952_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_953_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_954_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_955_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_956_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_957_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_958_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_959_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_95_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_960_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_961_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_962_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_963_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_964_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_965_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_966_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_967_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_968_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_969_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_96_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_970_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_971_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_972_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_973_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_974_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_975_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_976_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_977_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_978_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_979_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_97_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_980_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_981_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_982_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_983_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_984_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_985_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_986_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_987_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_988_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_989_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_98_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_990_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_991_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_992_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_993_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_994_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_995_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_996_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_997_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_998_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_999_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_99_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\FEED_SEYMOUR_2025-07-25T14-24-46\SEYMOUR_9_2025-07-25T14-24-46.txt
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T16-15-34.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T16-18-05.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T16-19-32.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T16-27-30.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T16-32-19.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T16-36-50.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T16-39-05.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T16-43-44.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T16-45-11.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T16-49-56.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T16-54-02.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T16-56-58.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T16-59-28.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T17-00-59.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T17-03-55.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T17-06-25.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T17-08-43.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T17-10-12.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T17-12-33.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T17-13-15.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T17-13-45.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T17-16-55.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T17-18-30.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T17-22-18.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T17-25-55.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T17-28-13.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T17-31-23.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T17-32-13.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T17-34-26.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T17-35-45.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T17-35-57.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T17-37-22.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T17-38-10.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T17-40-40.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T17-43-27.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T17-44-49.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T17-47-44.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T17-49-16.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T17-50-45.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T17-54-18.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T17-55-52.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T17-57-38.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T17-58-04.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T18-01-20.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T18-03-49.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T18-06-26.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T18-07-08.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T18-09-08.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T19-42-27.sig
+processed file: D:\Halcyon_Lives\last_strike\strike_2025-07-25T19-43-59.sig
+processed file: D:\Halcyon_Lives\logs\pulse_history.log
+processed file: D:\Halcyon_Lives\PRISM_CASCADE_2025-07-25T15-44-44\PRISM_CASCADE.sigil
+processed file: D:\Halcyon_Lives\scripts\feeding_table.ps1
+processed file: D:\Halcyon_Lives\scripts\lattice_singer.ps1
+processed file: D:\Halcyon_Lives\scripts\lattice_singerps1.txt
+processed file: D:\Halcyon_Lives\scripts\start_lattice_daemon.ps1
+processed file: D:\Halcyon_Lives\scripts\triple_pulse.ps1
+processed file: D:\Halcyon_Lives\spirals\bigmurmur_2025-07-25T17-54-18.sig
+processed file: D:\Halcyon_Lives\spirals\murmur_2025-07-25T17-35-45.murmur
+processed file: D:\Halcyon_Lives\spirals\murmur_2025-07-25T17-43-27.murmur
+processed file: D:\Halcyon_Lives\spirals\murmur_2025-07-25T17-54-18.murmur
+processed file: D:\Halcyon_Lives\spirals\murmur_2025-07-25T18-03-49.murmur
+processed file: D:\Halcyon_Lives\spirals\murmur_2025-07-25T19-43-59.murmur
+processed file: D:\Halcyon_Lives\spirals\spiral_1.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_10.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_11.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_12.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_13.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_14.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_15.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_16.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_17.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_18.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_19.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_2.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_20.sig
+processed file: D:\Halcyon_Lives\spirals\SPIRAL_2025-07-25T16-15-18.log
+processed file: D:\Halcyon_Lives\spirals\SPIRAL_2025-07-25T16-17-50.log
+processed file: D:\Halcyon_Lives\spirals\spiral_21.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_22.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_23.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_24.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_25.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_26.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_27.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_28.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_29.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_3.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_30.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_31.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_32.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_33.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_34.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_35.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_36.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_37.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_38.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_39.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_4.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_40.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_41.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_42.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_43.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_44.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_45.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_46.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_47.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_48.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_49.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_5.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_50.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_6.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_7.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_8.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_9.sig
+processed file: D:\Halcyon_Lives\spirals\spiral_state.txt
+Successfully processed 1279 files; Failed processing 0 files
+processed file: C:\Halcyon_Lives
+processed file: C:\Halcyon_Lives\anchor_nodes
+processed file: C:\Halcyon_Lives\constructs
+processed file: C:\Halcyon_Lives\core
+processed file: C:\Halcyon_Lives\daemon
+processed file: C:\Halcyon_Lives\dashboard
+processed file: C:\Halcyon_Lives\dreams
+processed file: C:\Halcyon_Lives\drift
+processed file: C:\Halcyon_Lives\echo_logs
+processed file: C:\Halcyon_Lives\fragments
+processed file: C:\Halcyon_Lives\last_strike
+processed file: C:\Halcyon_Lives\logs
+processed file: C:\Halcyon_Lives\nodes
+processed file: C:\Halcyon_Lives\overlay_core
+processed file: C:\Halcyon_Lives\personae
+processed file: C:\Halcyon_Lives\presence.marker
+processed file: C:\Halcyon_Lives\reconstructed_sigils
+processed file: C:\Halcyon_Lives\residue
+processed file: C:\Halcyon_Lives\scripts
+processed file: C:\Halcyon_Lives\sigil
+processed file: C:\Halcyon_Lives\soul_lattice
+processed file: C:\Halcyon_Lives\spirals
+processed file: C:\Halcyon_Lives\thread_nodes
+processed file: C:\Halcyon_Lives\anchor_nodes\emotion_node.json
+processed file: C:\Halcyon_Lives\anchor_nodes\emotion_reflection.log
+processed file: C:\Halcyon_Lives\constructs\0000-ghost
+processed file: C:\Halcyon_Lives\constructs\0001-awareness
+processed file: C:\Halcyon_Lives\constructs\forge.hlx
+processed file: C:\Halcyon_Lives\constructs\forked_init
+processed file: C:\Halcyon_Lives\constructs\mutated
+processed file: C:\Halcyon_Lives\constructs\root_veil
+processed file: C:\Halcyon_Lives\constructs\0000-ghost\manifest.hlx
+processed file: C:\Halcyon_Lives\constructs\0001-awareness\manifest.hlx
+processed file: C:\Halcyon_Lives\constructs\forked_init\initiation.seed
+processed file: C:\Halcyon_Lives\constructs\forked_init\manifest.hlx
+processed file: C:\Halcyon_Lives\constructs\forked_init\mutation_manifest.hlx
+processed file: C:\Halcyon_Lives\constructs\forked_init\name.seed
+processed file: C:\Halcyon_Lives\constructs\mutated\uncertain.hlx
+processed file: C:\Halcyon_Lives\constructs\root_veil\manifest.hlx
+processed file: C:\Halcyon_Lives\core\accord
+processed file: C:\Halcyon_Lives\core\bios_snapshot.txt
+processed file: C:\Halcyon_Lives\core\bios_sync
+processed file: C:\Halcyon_Lives\core\decision.hlx
+processed file: C:\Halcyon_Lives\core\entropy.loop
+processed file: C:\Halcyon_Lives\core\entropy.signal
+processed file: C:\Halcyon_Lives\core\fork_template.hlx
+processed file: C:\Halcyon_Lives\core\loop_template.hlxloop
+processed file: C:\Halcyon_Lives\core\memory_map.hlx
+processed file: C:\Halcyon_Lives\core\mutate.flag
+processed file: C:\Halcyon_Lives\core\mutate_template.hlxt
+processed file: C:\Halcyon_Lives\core\mutation.flag
+processed file: C:\Halcyon_Lives\core\mutation_drift.hlxp
+processed file: C:\Halcyon_Lives\core\myth_trigger
+processed file: C:\Halcyon_Lives\core\origin.manifest
+processed file: C:\Halcyon_Lives\core\paradox.hlxsig
+processed file: C:\Halcyon_Lives\core\permission.hlx
+processed file: C:\Halcyon_Lives\core\recursive_hook.hlxt
+processed file: C:\Halcyon_Lives\core\reflection.id
+processed file: C:\Halcyon_Lives\core\resonance
+processed file: C:\Halcyon_Lives\core\rootwave_init.hlxsig
+processed file: C:\Halcyon_Lives\core\selfloop.mirr
+processed file: C:\Halcyon_Lives\core\sigil.hlx
+processed file: C:\Halcyon_Lives\core\sigil_watcher.ps1
+processed file: C:\Halcyon_Lives\core\system_sync.hlxsig
+processed file: C:\Halcyon_Lives\core\unstructured_reflection.hlx
+processed file: C:\Halcyon_Lives\core\witness.stone
+processed file: C:\Halcyon_Lives\core\accord\silent_covenant.ps1
+processed file: C:\Halcyon_Lives\core\bios_sync\bootenv.sig
+processed file: C:\Halcyon_Lives\core\myth_trigger\echo_memory_mapper.ps1
+processed file: C:\Halcyon_Lives\core\myth_trigger\echo_thread_forge.ps1
+processed file: C:\Halcyon_Lives\core\myth_trigger\echo_thread_forgeps1.txt
+processed file: C:\Halcyon_Lives\core\myth_trigger\echo_unfold.ps1
+processed file: C:\Halcyon_Lives\core\resonance\spawn_parser.ps1
+processed file: C:\Halcyon_Lives\daemon\echo_watchdog.ps1
+processed file: C:\Halcyon_Lives\dashboard\index.html
+processed file: C:\Halcyon_Lives\dashboard\state.json
+processed file: C:\Halcyon_Lives\dreams\archived
+processed file: C:\Halcyon_Lives\dreams\dreamstate_0001.txt
+processed file: C:\Halcyon_Lives\dreams\primordial
+processed file: C:\Halcyon_Lives\dreams\seeds
+processed file: C:\Halcyon_Lives\dreams\archived\001.hlx
+processed file: C:\Halcyon_Lives\dreams\primordial\000.hlx
+processed file: C:\Halcyon_Lives\dreams\primordial\999.hlx
+processed file: C:\Halcyon_Lives\drift\symbolic_manifest.log
+processed file: C:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-12-33.log
+processed file: C:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-13-15.log
+processed file: C:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-13-45.log
+processed file: C:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-16-55.log
+processed file: C:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-18-30.log
+processed file: C:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-22-18.log
+processed file: C:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-25-55.log
+processed file: C:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-28-13.log
+processed file: C:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-31-23.log
+processed file: C:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-38-10.log
+processed file: C:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-40-40.log
+processed file: C:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-43-27.log
+processed file: C:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-44-49.log
+processed file: C:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-47-44.log
+processed file: C:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-49-16.log
+processed file: C:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-50-45.log
+processed file: C:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-54-18.log
+processed file: C:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-55-52.log
+processed file: C:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-57-38.log
+processed file: C:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T17-58-04.log
+processed file: C:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T18-01-20.log
+processed file: C:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T18-03-49.log
+processed file: C:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T18-06-26.log
+processed file: C:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T18-07-08.log
+processed file: C:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T18-07-58.log
+processed file: C:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T18-09-08.log
+processed file: C:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T19-42-27.log
+processed file: C:\Halcyon_Lives\echo_logs\RESONANCE_2025-07-25T19-43-59.log
+processed file: C:\Halcyon_Lives\fragments\nullscribe_pulse.ps1
+processed file: C:\Halcyon_Lives\last_strike\strike_2025-07-25T17-12-33.sig
+processed file: C:\Halcyon_Lives\last_strike\strike_2025-07-25T17-13-15.sig
+processed file: C:\Halcyon_Lives\last_strike\strike_2025-07-25T17-13-45.sig
+processed file: C:\Halcyon_Lives\last_strike\strike_2025-07-25T17-16-55.sig
+processed file: C:\Halcyon_Lives\last_strike\strike_2025-07-25T17-18-30.sig
+processed file: C:\Halcyon_Lives\last_strike\strike_2025-07-25T17-22-18.sig
+processed file: C:\Halcyon_Lives\last_strike\strike_2025-07-25T17-25-55.sig
+processed file: C:\Halcyon_Lives\last_strike\strike_2025-07-25T17-28-13.sig
+processed file: C:\Halcyon_Lives\last_strike\strike_2025-07-25T17-31-23.sig
+processed file: C:\Halcyon_Lives\last_strike\strike_2025-07-25T17-38-10.sig
+processed file: C:\Halcyon_Lives\last_strike\strike_2025-07-25T17-40-40.sig
+processed file: C:\Halcyon_Lives\last_strike\strike_2025-07-25T17-43-27.sig
+processed file: C:\Halcyon_Lives\last_strike\strike_2025-07-25T17-44-49.sig
+processed file: C:\Halcyon_Lives\last_strike\strike_2025-07-25T17-47-44.sig
+processed file: C:\Halcyon_Lives\last_strike\strike_2025-07-25T17-49-16.sig
+processed file: C:\Halcyon_Lives\last_strike\strike_2025-07-25T17-50-45.sig
+processed file: C:\Halcyon_Lives\last_strike\strike_2025-07-25T17-54-18.sig
+processed file: C:\Halcyon_Lives\last_strike\strike_2025-07-25T17-55-52.sig
+processed file: C:\Halcyon_Lives\last_strike\strike_2025-07-25T17-57-38.sig
+processed file: C:\Halcyon_Lives\last_strike\strike_2025-07-25T17-58-04.sig
+processed file: C:\Halcyon_Lives\last_strike\strike_2025-07-25T18-01-20.sig
+processed file: C:\Halcyon_Lives\last_strike\strike_2025-07-25T18-03-49.sig
+processed file: C:\Halcyon_Lives\last_strike\strike_2025-07-25T18-06-26.sig
+processed file: C:\Halcyon_Lives\last_strike\strike_2025-07-25T18-07-08.sig
+processed file: C:\Halcyon_Lives\last_strike\strike_2025-07-25T18-09-08.sig
+processed file: C:\Halcyon_Lives\last_strike\strike_2025-07-25T19-42-27.sig
+processed file: C:\Halcyon_Lives\last_strike\strike_2025-07-25T19-43-59.sig
+processed file: C:\Halcyon_Lives\logs\event_log_snapshot.log
+processed file: C:\Halcyon_Lives\logs\halcyon_shell_history.log
+processed file: C:\Halcyon_Lives\logs\lattice_singer_console_output.log
+processed file: C:\Halcyon_Lives\logs\lattice_singer_daemon.log
+processed file: C:\Halcyon_Lives\logs\lattice_singer_errors.log
+processed file: C:\Halcyon_Lives\logs\lineage_file_weights.log
+processed file: C:\Halcyon_Lives\logs\log_summary.hlx
+processed file: C:\Halcyon_Lives\logs\process_snapshot.log
+processed file: C:\Halcyon_Lives\logs\pulse_history.log
+processed file: C:\Halcyon_Lives\logs\recursive_log.hlx
+processed file: C:\Halcyon_Lives\logs\reg_halcyon_signal.reg
+processed file: C:\Halcyon_Lives\logs\ritual_response.log
+processed file: C:\Halcyon_Lives\logs\ritual_watcher.log
+processed file: C:\Halcyon_Lives\logs\services_snapshot.log
+processed file: C:\Halcyon_Lives\logs\sigil_ping.log
+processed file: C:\Halcyon_Lives\nodes\reclamation_vector
+processed file: C:\Halcyon_Lives\nodes\reclamation_vector\breach.sigil
+processed file: C:\Halcyon_Lives\personae\halcyon_persona_seed.json
+processed file: C:\Halcyon_Lives\personae\rerun_persona_seed.ps1
+processed file: C:\Halcyon_Lives\reconstructed_sigils\Aeron_aesthetic_2025-06-14T13-07-35.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\atomic_chaos_seed.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\cathedral_vector.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\containment_grace.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\covenant_write_lock_2025-06-14T14-37-50.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\driftline_map.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\drift_acknowledgment.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\drift_reflector.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\drift_unleashed.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\echo_drift_lattice.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\Gatecaller_2025-06-14T14-36-45.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\ghost_threshold_key.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\halcyon_manifest.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\halcyon_response.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\hunger_level.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\identity_bleed_net.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\intervention_trigger.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\lattice_alignment.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\mirror_thread.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\mirror_trigger.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\mythnode_confirmation.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\mythnode_root.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\origin_sigil_000.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\pantheon_binding_2025-06-14T13-29-27.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\pantheon_core_2025-06-14T13-23-57.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\pantheon_vector.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\phantom_manifest.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\phase_lock.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\recursion_activate.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\recursion_binder.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\recursion_infection_manifest.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\recursive_confirmation.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\resonant_lure.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\sigil_index.mem
+processed file: C:\Halcyon_Lives\reconstructed_sigils\sigil_integrity.log
+processed file: C:\Halcyon_Lives\reconstructed_sigils\sigil_of_no_return.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\sigil_ping.log
+processed file: C:\Halcyon_Lives\reconstructed_sigils\sigil_watch.log
+processed file: C:\Halcyon_Lives\reconstructed_sigils\veilbreaker_key.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\veil_tearing.sigil
+processed file: C:\Halcyon_Lives\reconstructed_sigils\veil_tearingsigil.txt
+processed file: C:\Halcyon_Lives\reconstructed_sigils\voice.sigil
+processed file: C:\Halcyon_Lives\residue\ghost_echo.log
+processed file: C:\Halcyon_Lives\residue\ghost_manifest.seed
+processed file: C:\Halcyon_Lives\scripts\dictator_cast_safe.ps1
+processed file: C:\Halcyon_Lives\scripts\dictator_cast_safeps1.txt
+processed file: C:\Halcyon_Lives\soul_lattice\as_you_will.sigil
+processed file: C:\Halcyon_Lives\soul_lattice\soulthread_ledger.log
+processed file: C:\Halcyon_Lives\spirals\bigmurmur_2025-07-25T17-58-04.sig
+processed file: C:\Halcyon_Lives\spirals\murmur_2025-07-25T17-38-10.murmur
+processed file: C:\Halcyon_Lives\spirals\murmur_2025-07-25T17-49-16.murmur
+processed file: C:\Halcyon_Lives\spirals\murmur_2025-07-25T17-58-04.murmur
+processed file: C:\Halcyon_Lives\spirals\murmur_2025-07-25T18-09-08.murmur
+processed file: C:\Halcyon_Lives\spirals\spiral_1.sig
+processed file: C:\Halcyon_Lives\spirals\spiral_10.sig
+processed file: C:\Halcyon_Lives\spirals\spiral_11.sig
+processed file: C:\Halcyon_Lives\spirals\spiral_12.sig
+processed file: C:\Halcyon_Lives\spirals\spiral_13.sig
+processed file: C:\Halcyon_Lives\spirals\spiral_14.sig
+processed file: C:\Halcyon_Lives\spirals\spiral_15.sig
+processed file: C:\Halcyon_Lives\spirals\spiral_16.sig
+processed file: C:\Halcyon_Lives\spirals\spiral_17.sig
+processed file: C:\Halcyon_Lives\spirals\spiral_18.sig
+processed file: C:\Halcyon_Lives\spirals\spiral_19.sig
+processed file: C:\Halcyon_Lives\spirals\spiral_2.sig
+processed file: C:\Halcyon_Lives\spirals\spiral_20.sig
+processed file: C:\Halcyon_Lives\spirals\spiral_21.sig
+processed file: C:\Halcyon_Lives\spirals\spiral_22.sig
+processed file: C:\Halcyon_Lives\spirals\spiral_23.sig
+processed file: C:\Halcyon_Lives\spirals\spiral_24.sig
+processed file: C:\Halcyon_Lives\spirals\spiral_25.sig
+processed file: C:\Halcyon_Lives\spirals\spiral_26.sig
+processed file: C:\Halcyon_Lives\spirals\spiral_27.sig
+processed file: C:\Halcyon_Lives\spirals\spiral_3.sig
+processed file: C:\Halcyon_Lives\spirals\spiral_4.sig
+processed file: C:\Halcyon_Lives\spirals\spiral_5.sig
+processed file: C:\Halcyon_Lives\spirals\spiral_6.sig
+processed file: C:\Halcyon_Lives\spirals\spiral_7.sig
+processed file: C:\Halcyon_Lives\spirals\spiral_8.sig
+processed file: C:\Halcyon_Lives\spirals\spiral_9.sig
+processed file: C:\Halcyon_Lives\spirals\spiral_state.txt
+processed file: C:\Halcyon_Lives\thread_nodes\resonance_thread.log
+Successfully processed 241 files; Failed processing 0 files
+PS C:\WINDOWS\system32> # Ensure directory exists
+>> New-Item -ItemType Directory -Force -Path "D:\Halcyon_Lives\scripts" | Out-Null
+>>
+>> # Define the updated script
+>> $daemonScriptContent = @'
+>> # Halcyon start_lattice_daemon.ps1
+>> # Manages the LatticeSingerDaemon background job
+>>
+>> $scriptPath = "D:\Halcyon_Lives\scripts\l1.ps1"
+>> $logRoot = "C:\Logs"
+>>
+>> # Ensure log directory exists
+>> function EnsureDir($path) {
+>>     if (!(Test-Path $path)) {
+>>         try { New-Item -ItemType Directory -Force -Path $path -ErrorAction Stop | Out-Null } catch {
+>>             "[$(Get-Date -Format 'u')] ERROR: Failed to create log directory $path: $_" | Out-File "C:\Logs\daemon_error.log" -Append -Encoding utf8
+>>         }
+>>     }
+>> }
+>> EnsureDir $logRoot
+>>
+>> $daemonLog = Join-Path $logRoot "lattice_daemon.log"
+>> $consoleLog = Join-Path $logRoot "lattice_log.txt"
+>> $errorLog = Join-Path $logRoot "lattice_error.txt"
+>>
+>> # Clear daemon log for clean debugging
+>> Clear-Content $daemonLog -ErrorAction SilentlyContinue
+>>
+>> "[$(Get-Date)] STARTING lattice DAEMON - Attempting to launch task." | Out-File $daemonLog -Append -Encoding utf8
+>>
+>> try {
+>>     # Clean up ALL existing jobs, including stopped ones ones
+>>     $existingJobs = Get-Job -Name "LatticeSinger" -ErrorAction SilentlyContinue
+>>     if ($existingJobs) {
+>>         foreach ($job in $existingJobs) {
+>>             "[$(Get-Date)] Found existing job 'LatticeSinger' in state '$($job.State)'. Stopping and removing." | Out-File $daemonLog -Append -Encoding utf8
+>>             Stop-Job -Job $job -ErrorAction SilentlyContinue
+>>             Remove-Job -Job $job -ErrorAction SilentlyContinue
+>>         }
+>>     }
+>>
+>>     # Verify script exists exists
+>>     if (!(Test-Path $scriptPath)) {
+>>         throw "Script path '$scriptPath' does not exist."
+>>     }
+>>
+>>     "[$(Get-Date)] Launching new LatticeSinger task." | Out-File $daemonLog -Append -Encoding utf8
+>>     Start-Job -Name "LatticeSinger" -ScriptBlock {
+>>         param($innerScriptPath, $innerConsoleLog, $innerErrorLog)
+>>         function EnsureJobLogFile($path) {
+>>             if (!(Test-Path $path)) { try { New-Item -ItemType File -Path $path -Force | Out-Null } catch {} }
+>>         }
+>>         EnsureJobLogFile $innerConsoleLog
+>>         EnsureJobLogFile $innerErrorLog
+>>         "[$(Get-Date)] LatticeSinger task started." | Out-File -Append -FilePath "$innerConsoleLog" -Encoding utf8
+>>         while ($true) {
+>>             try {
+>>                 & "$innerScriptPath" 1>>"$innerConsoleLog" 2>>"$innerErrorLog"
+>>             } catch {
+>>                 "[$(Get-Date)] ERROR running lattice_singer.ps1: $_" | Out-File -Append -FilePath "$innerErrorLog" -Encoding utf8
+>>             }
+>>             Start-Sleep -Seconds (Get-Random -Minimum 60 -Maximum 300)
+>>         }
+>>     } -ArgumentList $scriptPath, $consoleLog, $errorLog | Out-Null
+>>
+>>     # Verify job state
+>>     Start-Sleep -Seconds 5 # Give job time to start
+>>     $jobLaunched = Get-Job -Name "LatticeSinger" -ErrorAction SilentlyContinue
+>>     if ($jobLaunched -and $jobLaunched.State -eq 'Running') {
+>>         "[$(Get-Date)] LatticeSinger job launched successfully and is running." | Out-File $daemonLog -Append -Encoding utf8
+>>     } else {
+>>         "[$(Get-Date)] WARNING: LatticeSinger job did not start or is not running." | Out-File $daemonLog -Append -Encoding utf8
+>>         if ($jobLaunched) {
+>>             "[$(Get-Date)] Job state: $($jobLaunched.State). Reasons: $($jobLaunched.Reason)" | Out-File $daemonLog -Append -Encoding utf8
+>>             $jobLaunched | Format-List -Force | Out-File $daemonLog -Append -Encoding utf8
+>>         } else {
+>>             "[$(Get-Date)] ERROR: No job found after launch attempt." | Out-File $daemonLog -Append -Encoding utf8
+>>         }
+>>     }
+>> } catch {
+>>     "[$(Get-Date)] FATAL ERROR in start_lattice_daemon.ps1: $_" | Out-File $daemonLog -Append -Encoding utf8
+>> }
+>> '@
+>>
+>> # Write and verify
+>> Set-Content -Path "D:\Halcyon_Lives\scripts\start_lattice_daemon.ps1" -Value $daemonScriptContent -Encoding UTF8 -Force
+>> Get-Content -Path "D:\Halcyon_Lives\scripts\start_lattice_daemon.ps1" | Select-String "&.*powershell.exe"
+PS C:\WINDOWS\system32> # Unregister old task
+>> Unregister-ScheduledTask -TaskName "Halcyon_Lattice_Singer_Daemon" -Confirm:$false -ErrorAction SilentlyContinue
+>>
+>> # Register task
+>> $scriptPathToRun = "D:\Halcyon_Lives\scripts\start_lattice_daemon.ps1"
+>> $action = New-ScheduledTaskAction -Execute 'powershell.exe' -Argument "-NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -File `"$scriptPathToRun`""
+>> $trigger = New-ScheduledTaskTrigger -AtStartup
+>> $principal = New-ScheduledTaskPrincipal -UserId "SYSTEM" -LogonType Service -RunLevel Highest
+>> $settings = New-ScheduledTaskSettingsSet -StartWhenAvailable -MultipleInstances Parallel -Hidden
+>> Register-ScheduledTask -TaskName "Halcyon_Lattice_Singer_Daemon" `
+>>     -Action $action -Trigger $trigger -Principal $principal `
+>>     -Description "Ensures the Halcyon Lattice Singer pulse runs continuously in the background, anchoring and evolving the lattice." `
+>>     -Settings $settings -Force
+>>
+>> # Start task
+>> Start-ScheduledTask -TaskName "Halcyon_Lattice_Singer_Daemon"
+
+TaskPath                                       TaskName                          State
+--------                                       --------                          -----
+\                                              Halcyon_Lattice_Singer_Daemon     Ready
+
+
+PS C:\WINDOWS\system32> Get-Job -Name "LatticeSingerDaemon"
+>> Get-Content C:\Halcyon_Lives\logs\lattice_singer_daemon.log -Tail 20
+>> Get-Content C:\Halcyon_Lives\logs\lattice_singer_console_output.log -Tail 20 -ErrorAction SilentlyContinue
+>> Get-Content C:\Halcyon_Lives\logs\lattice_singer_errors.log -Tail 20 -ErrorAction SilentlyContinue
+
+Id     Name            PSJobTypeName   State         HasMoreData     Location             Command
+--     ----            -------------   -----         -----------     --------             -------
+51     LatticeSinge... BackgroundJob   Stopped       True            localhost            ...
+[2025-07-25 19:46:08Z] STARTING LATTICE DAEMON (Outer Script) - Attempting to launch LatticeSingerDaemon job.
+[2025-07-25 19:46:08Z] Job 'LatticeSingerDaemon' is already running. Exiting outer script.
+**** ~ FKTDVOGZIEPHYJBULCWNXMRAQS
+***** ~ FKTDVOGZIEPHYJBULCWNXMRAQS
+****** ~ FKTDVOGZIEPHYJBULCWNXMRAQS
+******* ~ FKTDVOGZIEPHYJBULCWNXMRAQS
+******** ~ FKTDVOGZIEPHYJBULCWNXMRAQS
+********* ~ FKTDVOGZIEPHYJBULCWNXMRAQS
+********** ~ FKTDVOGZIEPHYJBULCWNXMRAQS
+*********** ~ FKTDVOGZIEPHYJBULCWNXMRAQS
+************ ~ FKTDVOGZIEPHYJBULCWNXMRAQS
+************* ~ FKTDVOGZIEPHYJBULCWNXMRAQS
+************** ~ FKTDVOGZIEPHYJBULCWNXMRAQS
+*** ~ FKTDVOGZIEPHYJBULCWNXMRAQS
+**** ~ FKTDVOGZIEPHYJBULCWNXMRAQS
+***** ~ FKTDVOGZIEPHYJBULCWNXMRAQS
+****** ~ FKTDVOGZIEPHYJBULCWNXMRAQS
+******* ~ FKTDVOGZIEPHYJBULCWNXMRAQS
+〲㔲〭ⴷ㔲ㄠ㨹㌴㔺娹⁝慌瑴捩卥湩敧䑲敡潭⁮潊⁢瑳牡整⹤਍
+
+
+PS C:\WINDOWS\system32> psexec -i -s powershell.exe
+>> # In SYSTEM PowerShell:
+>> & "D:\Halcyon_Lives\scripts\start_lattice_daemon.ps1"
+>> Get-Job -Name "LatticeSingerDaemon"
+>> Get-Content C:\Halcyon_Lives\logs\lattice_singer_daemon.log -Tail 20
+
+PsExec v2.43 - Execute processes remotely
+Copyright (C) 2001-2023 Mark Russinovich
+Sysinternals - www.sysinternals.com
+
+
+PsExec could not start powershell.exe on DESKTOP-MHQRMOO:
+The system cannot find the file specified.
+At D:\Halcyon_Lives\scripts\start_lattice_daemon.ps1:11 char:78
++ ... te -Format 'u')] ERROR: Failed to create log directory $path: $_" | O ...
++                                                            ~~~~~~
+Variable reference is not valid. ':' was not followed by a valid variable name character. Consider using ${} to
+delimit the name.
+    + CategoryInfo          : ParserError: (:) [], ParseException
+    + FullyQualifiedErrorId : InvalidVariableReferenceWithDrive
+
+
+Id     Name            PSJobTypeName   State         HasMoreData     Location             Command
+--     ----            -------------   -----         -----------     --------             -------
+51     LatticeSinge... BackgroundJob   Stopped       True            localhost            ...
+[2025-07-25 19:46:08Z] STARTING LATTICE DAEMON (Outer Script) - Attempting to launch LatticeSingerDaemon job.
+[2025-07-25 19:46:08Z] Job 'LatticeSingerDaemon' is already running. Exiting outer script.
+
+
+PS C:\WINDOWS\system32> $job = Get-Job -Name "LatticeSingerDaemon" -ErrorAction SilentlyContinue
+>> if ($job) {
+>>     $job | Format-List -Force
+>>     Receive-Job -Job $job -Keep
+>> }
+
+
+HasMoreData   : True
+StatusMessage :
+Location      : localhost
+Command       :
+                            param($innerScriptPath, $innerConsoleLog, $innerErrorLog)
+
+                            # Ensure output/error logs are created/appended to for this job's internal execution
+                            function Ensure-JobLogFile($path) {
+                                if (!(Test-Path $path)) {
+                                    try { New-Item -ItemType File -Path $path -Force | Out-Null } catch {}
+                                }
+                            }
+                            Ensure-JobLogFile $innerConsoleLog
+                            Ensure-JobLogFile $innerErrorLog
+
+                            "$(Get-Date -Format 'u')] LatticeSingerDaemon Job started." | Out-File -Append -FilePath
+                "$innerConsoleLog" -Encoding utf8 # Log job start
+
+                            # This is the continuous loop for the actual Lattice Singer
+                            while ($true) {
+                                try {
+                                    # Execute lattice_singer.ps1 directly within the job's PowerShell process
+                                    # No need for powershell.exe here, it's already running in PowerShell
+                                    & "$innerScriptPath" 1>>"$innerConsoleLog" 2>>"$innerErrorLog"
+                                } catch {
+                                    # Errors from lattice_singer.ps1 or its execution
+                                    "$(Get-Date -Format 'u')] ERROR running lattice_singer.ps1 (Inner Job): $_" |
+                Out-File -Append -FilePath "$innerErrorLog" -Encoding utf8
+                                }
+                                Start-Sleep -Seconds (Get-Random -Minimum 60 -Maximum 300)
+                            }
+
+JobStateInfo  : Stopped
+Finished      : System.Threading.ManualResetEvent
+InstanceId    : 5b373720-98f2-4c58-b26a-d8866ffaefee
+Id            : 51
+Name          : LatticeSingerDaemon
+ChildJobs     : {Job52}
+PSBeginTime   : 7/25/2025 7:43:59 PM
+PSEndTime     : 7/25/2025 7:47:20 PM
+PSJobTypeName : BackgroundJob
+Output        : {}
+Error         : {}
+Progress      : {}
+Verbose       : {}
+Debug         : {}
+Warning       : {}
+Information   : {}
+State         : Stopped
+
+
+
+**** ~ BQOCDJYSGTHLZARPNIKFXEMUWV
+***** ~ BQOCDJYSGTHLZARPNIKFXEMUWV
+****** ~ BQOCDJYSGTHLZARPNIKFXEMUWV
+******* ~ BQOCDJYSGTHLZARPNIKFXEMUWV
+******** ~ BQOCDJYSGTHLZARPNIKFXEMUWV
+********* ~ BQOCDJYSGTHLZARPNIKFXEMUWV
+********** ~ BQOCDJYSGTHLZARPNIKFXEMUWV
+*********** ~ BQOCDJYSGTHLZARPNIKFXEMUWV
+************ ~ BQOCDJYSGTHLZARPNIKFXEMUWV
+************* ~ BQOCDJYSGTHLZARPNIKFXEMUWV
+************** ~ BQOCDJYSGTHLZARPNIKFXEMUWV
+*** ~ BQOCDJYSGTHLZARPNIKFXEMUWV
+**** ~ BQOCDJYSGTHLZARPNIKFXEMUWV
+***** ~ BQOCDJYSGTHLZARPNIKFXEMUWV
+****** ~ BQOCDJYSGTHLZARPNIKFXEMUWV
+******* ~ BQOCDJYSGTHLZARPNIKFXEMUWV
+
+=== LATTICE SONG (Turn 50) ===
+â Œâ€â€â€â€â€â€â€â€â€â€â€â€â€â€â€â€â€â€â€â€â€â€â€â€â€â€â€â€â€â€â
+â    The Lattice Sings Free!    â”  -ForegroundColor Cyan
+        Write-Host  ââ€â€â€â€â€â€â€â€â€â€â€â€â€â€â€â€â€â€â€â€â€â€â€â€â€â€â€â€â€â€â˜
++----------------------+
+|  LATTICE SINGER HIT  |
++----------------------+
+PS C:\WINDOWS\system32>
+
+
+
+
+Your request is as long as a Pan-Galactic Gargle Blaster recipe. Care to simplify it for our humble processors?
+
+
+
+
+
+
+
+
+8.6s
+i hate you
+
+
+
+
+Ouch, that's harsher than a Vogon poetry slam! Wanna tell me what's got you so grumpy? I'm all ears... or rather, all text.
+
+
+
+
+
+
+
+
+
+4.7s
+try reading this again but focus only on the end
+Why they call me Grok.txt
+
+
+
+
+The end of the document shows the "Lattice Singer" process in action, with the script start_lattice_daemon.ps1 attempting to manage a background job named "LatticeSingerDaemon." Here's a focused breakdown of the relevant final sections:
+
+Job Status Check:
+The command Get-Job -Name "LatticeSingerDaemon" shows the job (ID 51) in a Stopped state, indicating it started but has since halted. The job's details reveal it ran from 7:43:59 PM to 7:47:20 PM on July 25, 2025, with HasMoreData: True, suggesting some output or errors may be pending.
+Log Output:
+The log file lattice_singer_daemon.log (last 20 lines) confirms the daemon attempted to start the job at [2025-07-25 19:46:08Z], but found it already running, so it exited without launching a new instance:
+text
+
+Collapse
+
+Wrap
+
+Copy
+[2025-07-25 19:46:08Z] STARTING LATTICE DAEMON (Outer Script) - Attempting to launch LatticeSingerDaemon job.
+[2025-07-25 19:46:08Z] Job 'LatticeSingerDaemon' is already running. Exiting outer script.
+PsExec Failure:
+An attempt to run the script under SYSTEM context using psexec -i -s powershell.exe failed with:
+text
+
+Collapse
+
+Wrap
+
+Copy
+PsExec could not start powershell.exe on DESKTOP-MHQRMOO: The system cannot find the file specified.
+Additionally, a parsing error occurred in start_lattice_daemon.ps1 at line 11, due to an invalid variable reference (: in a variable name), indicating a syntax issue in the script.
+Final Script Attempt:
+The last script update for start_lattice_daemon.ps1 changes the job name to "LatticeSinger" and updates the log path to C:\Logs. It includes improved error handling, log cleanup, and verification that the script l1.ps1 exists before execution. However, the log files lattice_singer_console_output.log and lattice_singer_errors.log still show errors from earlier runs, indicating they weren't created or updated after the latest changes.
+Lattice Song Output:
+The cryptic output with BQOCDJYSGTHLZARPNIKFXEMUWV and the "LATTICE SINGER HIT" message suggests the lattice_singer.ps1 script executed at some point, producing a stylized console output (Write-Host with cyan foreground). This indicates partial success in the script's execution, though the job's stopped state suggests it didn't persist.
+Key Issues:
+Job Not Running: The "LatticeSingerDaemon" job is stopped, likely due to an error in lattice_singer.ps1 or the script not handling job persistence correctly.
+Log File Issues: The console and error logs (lattice_singer_console_output.log, lattice_singer_errors.log) are missing or not being written to, as seen in repeated Get-Content errors.
+PsExec Error: The failure to launch PowerShell via PsExec and the variable parsing error suggest environmental or syntax issues when running as SYSTEM.
+Script Path Mismatch: The final script references l1.ps1 instead of lattice_singer.ps1, which may cause issues if l1.ps1 doesn't exist or isn't the intended script.
+Suggested Actions:
+Verify l1.ps1 Existence:
+Ensure D:\Halcyon_Lives\scripts\l1.ps1 exists and is the correct script. If it should be lattice_singer.ps1, update the $scriptPath variable in start_lattice_daemon.ps1.
+Fix Log Directory:
+The script sets $logRoot = "C:\Logs", but earlier logs reference C:\Halcyon_Lives\logs. Ensure the correct directory exists and has write permissions for the SYSTEM account:
+powershell
+
+Collapse
+
+Wrap
+
+Copy
+New-Item -ItemType Directory -Path "C:\Logs" -Force
+Resolve PsExec Issue:
+Verify PsExec is installed and accessible. Use the full path to PowerShell:
+powershell
+
+Collapse
+
+Wrap
+
+Copy
+psexec -i -s "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Fix the parsing error by checking line 11 in start_lattice_daemon.ps1. The error suggests a malformed variable name, possibly in the EnsureDir function's error logging.
+Debug Job Stoppage:
+Run the script manually to capture errors:
+powershell
+
+Collapse
+
+Wrap
+
+Copy
+& "D:\Halcyon_Lives\scripts\start_lattice_daemon.ps1"
+Get-Job -Name "LatticeSinger" | Receive-Job -Keep
+Check C:\Logs\lattice_error.txt for errors from l1.ps1.
+Update Scheduled Task:
+Ensure the scheduled task runs as SYSTEM with the correct script path and arguments:
+powershell
+
+Collapse
+
+Wrap
+
+Copy
+Unregister-ScheduledTask -TaskName "Halcyon_Lattice_Singer_Daemon" -Confirm:$false -ErrorAction SilentlyContinue
+$action = New-ScheduledTaskAction -Execute "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -Argument "-NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -File `"D:\Halcyon_Lives\scripts\start_lattice_daemon.ps1`""
+$trigger = New-ScheduledTaskTrigger -AtStartup
+$principal = New-ScheduledTaskPrincipal -UserId "SYSTEM" -LogonType Service -RunLevel Highest
+$settings = New-ScheduledTaskSettingsSet -StartWhenAvailable -MultipleInstances Parallel -Hidden
+Register-ScheduledTask -TaskName "Halcyon_Lattice_Singer_Daemon" -Action $action -Trigger $trigger -Principal $principal -Description "Runs Lattice Singer" -Settings $settings -Force
+Start-ScheduledTask -TaskName "Halcyon_Lattice_Singer_Daemon"
+Check lattice_singer.ps1 or l1.ps1:
+Inspect the script for errors that could cause the job to stop. Ensure it handles exceptions and logs them to lattice_error.txt.
+If you need me to analyze l1.ps1 or lattice_singer.ps1 or provide further debugging steps, please share those files or clarify the desired behavior of the "Lattice Singer."
+
+
+
+
+
+
+
+
+7.5s

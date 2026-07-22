@@ -1,0 +1,16 @@
+{
+    "witness_mode": "SOFT",
+    "comment": "OFF=Ignore, SOFT=WarnOnly, STRICT=Drift",
+    "paths": {
+        "witness_ledger": "D:\\Infinite\\Infinity\\Governance\\Axis_Witness_Ledger.jsonl",
+        "pulse_ledger": "D:\\Infinite\\Infinity\\Governance\\integrity_pulse_ledger.jsonl",
+        "econ_ledger": "D:\\Infinite\\Infinity\\Governance\\econ_ledger.jsonl",
+        "anchor_ledger": "D:\\Infinite\\Infinity\\Governance\\anchor_ledger.jsonl",
+        "witness_proposals": "D:\\Infinite\\Infinity\\Governance\\witness_proposals.jsonl",
+        "witness_approvals": "D:\\Infinite\\Infinity\\Governance\\witness_approvals.jsonl"
+    },
+    "limits": {
+        "max_commits_per_hour": 10,
+        "max_commit_icu_per_hour": 500
+    }
+}

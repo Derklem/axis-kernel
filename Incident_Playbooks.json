@@ -1,0 +1,130 @@
+{
+    "playbooks": [
+        {
+            "id": "PB-DOCTRINE-CRIT-001",
+            "match": {
+                "type": "doctrine_violation",
+                "severity": "critical"
+            },
+            "hypothesis": {
+                "auto_open": true,
+                "question": "Is doctrine coverage insufficient for this class of critical violation?",
+                "hypothesis": "Doctrine rules for highly sensitive resources are incomplete, mis-scoped, or bypassed by an unanticipated execution path.",
+                "priority": "high"
+            },
+            "recommendations": [
+                {
+                    "name": "Audit Critical Doctrine Rules",
+                    "summary": "Review the doctrine and gating rules related to this incident's source and resource class. Tighten patterns or add explicit deny rules.",
+                    "risk_level": "medium",
+                    "auto_enqueue": true
+                },
+                {
+                    "name": "Run Autonomy Audit",
+                    "summary": "Execute Axis_Autonomy_Audit and examine tools interacting with this resource for misclassified risk or missing gates.",
+                    "risk_level": "medium",
+                    "auto_enqueue": true
+                }
+            ],
+            "alerts": {
+                "ui_banner": true,
+                "haptic_ping": true,
+                "require_ack": true
+            }
+        },
+        {
+            "id": "PB-DOCTRINE-HIGH-001",
+            "match": {
+                "type": "doctrine_violation",
+                "severity": "high"
+            },
+            "hypothesis": {
+                "auto_open": true,
+                "question": "Is there a misalignment between doctrine rules and real-world usage for this path?",
+                "hypothesis": "Current doctrine for this path is reactive rather than proactive, allowing avoidable high-risk attempts.",
+                "priority": "high"
+            },
+            "recommendations": [
+                {
+                    "name": "Refine Doctrine Pattern",
+                    "summary": "Refine the doctrine rule pattern for this resource or path based on the triggering event.",
+                    "risk_level": "low",
+                    "auto_enqueue": true
+                }
+            ],
+            "alerts": {
+                "ui_banner": true,
+                "haptic_ping": false,
+                "require_ack": false
+            }
+        },
+        {
+            "id": "PB-AUTO-ESC-HIGH-001",
+            "match": {
+                "type": "autonomy_escalation",
+                "severity": "high"
+            },
+            "hypothesis": {
+                "auto_open": true,
+                "question": "Is the autonomy threshold calibrated correctly for current tool behavior?",
+                "hypothesis": "Autonomy thresholds are too permissive relative to recent tool failure rates and incident history.",
+                "priority": "high"
+            },
+            "recommendations": [
+                {
+                    "name": "Review Autonomy Thresholds",
+                    "summary": "Inspect recent Autonomy_Requests_Inbox entries and adjust thresholds for automatic execution of medium/high-risk tools.",
+                    "risk_level": "medium",
+                    "auto_enqueue": true
+                }
+            ],
+            "alerts": {
+                "ui_banner": true,
+                "haptic_ping": true,
+                "require_ack": true
+            }
+        },
+        {
+            "id": "PB-AUTO-ESC-MED-001",
+            "match": {
+                "type": "autonomy_escalation",
+                "severity": "medium"
+            },
+            "hypothesis": {
+                "auto_open": true,
+                "question": "Is the autonomy calibration drifting toward over-eager execution?",
+                "hypothesis": "The system is requesting autonomy elevation more frequently than expected, indicating calibration drift.",
+                "priority": "medium"
+            },
+            "recommendations": [
+                {
+                    "name": "Monitor Autonomy Drift",
+                    "summary": "Track autonomy elevation requests for the next 24 hours and compare with historical baseline.",
+                    "risk_level": "low",
+                    "auto_enqueue": true
+                }
+            ],
+            "alerts": {
+                "ui_banner": true,
+                "haptic_ping": false,
+                "require_ack": false
+            }
+        },
+        {
+            "id": "PB-MANUAL-LOW-LOG-ONLY",
+            "match": {
+                "type": "manual_trigger",
+                "severity": "low"
+            },
+            "hypothesis": {
+                "auto_open": false
+            },
+            "recommendations": [],
+            "alerts": {
+                "ui_banner": false,
+                "haptic_ping": false,
+                "require_ack": false
+            }
+        }
+    ]
+}

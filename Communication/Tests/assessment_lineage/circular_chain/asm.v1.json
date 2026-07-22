@@ -1,0 +1,6 @@
+{
+  "assessment_id": "asm_v1",
+  "experiment_id": "EXP_TEST",
+  "_filepath": "circular_chain/asm.v1.json",
+  "supersedes": "circular_chain/asm.v2.json"
+}

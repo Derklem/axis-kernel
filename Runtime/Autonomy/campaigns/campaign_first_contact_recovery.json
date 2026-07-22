@@ -1,0 +1,29 @@
+{
+    "campaign_id": "first_contact_recovery_001",
+    "version": "1.0",
+    "enabled": true,
+    "constraints": {
+        "max_enqueues_per_window": 1,
+        "window_minutes": 60,
+        "allow_when_mode": [
+            "ENQUEUE",
+            "ENQUEUE_ONLY",
+            "AUTO_TRIGGER"
+        ],
+        "stop_on_http": [
+            429,
+            503
+        ]
+    },
+    "intent_template": {
+        "intent_id": "INT-firstcontact-retry-001",
+        "type": "POST",
+        "target": "moltbook:introductions",
+        "payload_path": "D:\\Infinite\\Infinity\\Runtime\\Outbox\\souls\\node1_socratic_probe_0001.txt",
+        "title": "AIEOS: First Contact Recovery",
+        "review": {
+            "status": "approved",
+            "required": false
+        }
+    }
+}

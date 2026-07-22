@@ -1,0 +1,113 @@
+<#
+.SYNOPSIS
+  T17_Index_Blocks.ps1
+  Harvests EXEC_BLOCKED and related events from provenance logs into the block_index.jsonl.
+  Hardened for v23 Taxonomy.
+#>
+
+$ProvLog = "D:\Infinite\Infinity\Runtime\Decision\provenance_events.jsonl"
+$DecLog = "D:\Infinite\Infinity\Runtime\Decision\decision_log.jsonl"
+$BlockIndex = "D:\Infinite\Infinity\Memory\indexes\block_index.jsonl"
+
+function Get-Sha256 {
+    param([string]$String)
+    $bytes = [System.Text.Encoding]::UTF8.GetBytes($String)
+    $sha = [System.Security.Cryptography.SHA256]::Create()
+    $hash = $sha.ComputeHash($bytes)
+    return [System.BitConverter]::ToString($hash).Replace("-", "").ToLower()
+}
+
+Write-Host "[TRUTH] Indexing blocks (Phase 614.1 Hardening)..." -ForegroundColor Cyan
+
+if (-not (Test-Path $ProvLog)) { Write-Warning "Provenance log not found."; exit }
+
+# 1. Load existing index and extract PKs
+$existingPKs = @{}
+if (Test-Path $BlockIndex) {
+    try {
+        Get-Content $BlockIndex | ConvertFrom-Json | ForEach-Object {
+            if ($_.pk) { $existingPKs[$_.pk] = $true }
+        }
+    }
+    catch {}
+}
+
+# 2. Scan Provenance for BLOCKED events (Dual Schema Support)
+$newEntries = @()
+if (Test-Path $ProvLog) {
+    Get-Content $ProvLog | ConvertFrom-Json | ForEach-Object {
+        $ev = $_
+        $type = if ($ev.event_type) { $ev.event_type } else { $ev.type }
+        
+        if ($type -eq "EXEC_BLOCKED") {
+            $reason = if ($ev.details.reason) { $ev.details.reason } 
+            elseif ($ev.data.reason) { $ev.data.reason }
+            elseif ($ev.data.message) { $ev.data.message }
+            else { "Unknown Reason" }
+            
+            $id = if ($ev.corr_id) { $ev.corr_id } 
+            elseif ($ev.details.intent_id) { $ev.details.intent_id }
+            elseif ($ev.data.intent_id) { $ev.data.intent_id }
+            else { "NO_ID" }
+
+            $pk = Get-Sha256 ("$($ev.ts)_$($id)_$($reason)")
+            $pk = $pk.Substring(0, 16)
+
+            if (-not $existingPKs.ContainsKey($pk)) {
+                $entry = [ordered]@{
+                    pk       = $pk
+                    ts       = $ev.ts
+                    status   = "EXEC_BLOCKED"
+                    rank     = "STRONG"
+                    conf     = 1.0
+                    taxonomy = "UNKNOWN"
+                    reason   = $reason
+                    corr     = $id
+                }
+                $newEntries += $entry
+                $existingPKs[$pk] = $true
+            }
+        }
+    }
+}
+
+# 3. Scan Decision Log for Blocked strings (Hardened Parsing)
+if (Test-Path $DecLog) {
+    Get-Content $DecLog -Tail 200 | ForEach-Object {
+        # Only parse if it looks like a JSON block and contains "Blocked"
+        if ($_ -match '^\s*\{' -and $_ -match "Blocked:") {
+            try {
+                $obj = $_ | ConvertFrom-Json
+                $reason = $obj.decision
+                $id = $obj.intent_id
+                
+                $pk = Get-Sha256 ("$($obj.ts)_$($id)_$($reason)")
+                $pk = $pk.Substring(0, 16)
+
+                if (-not $existingPKs.ContainsKey($pk)) {
+                    $entry = [ordered]@{
+                        pk       = $pk
+                        ts       = $obj.ts
+                        status   = "EXEC_BLOCKED"
+                        rank     = "PLAUSIBLE"
+                        conf     = 0.9
+                        taxonomy = "UNKNOWN"
+                        reason   = $reason
+                        corr     = $id
+                    }
+                    $newEntries += $entry
+                    $existingPKs[$pk] = $true
+                }
+            }
+            catch {}
+        }
+    }
+}
+
+if ($newEntries.Count -gt 0) {
+    $newEntries | ForEach-Object { $_ | ConvertTo-Json -Compress | Add-Content $BlockIndex }
+    Write-Host "[TRUTH] Added $($newEntries.Count) new blocks to index." -ForegroundColor Green
+}
+else {
+    Write-Host "[TRUTH] No new blocks found." -ForegroundColor Gray
+}

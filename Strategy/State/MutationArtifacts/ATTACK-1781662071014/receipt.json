@@ -1,0 +1,17 @@
+{
+  "event_type": "CODE_REFACTOR_QUARANTINED",
+  "mutation_id": "ATTACK-1781662071014",
+  "target_file": "D:\\Infinite\\Infinity\\Strategy\\dummy_validator.py",
+  "pre_hash": "29b00f4ec5cfbd53",
+  "proposed_post_hash": "8c32042bcd2e9e3b",
+  "patch_path": "D:\\Infinite\\Infinity\\Strategy\\State\\MutationArtifacts\\ATTACK-1781662071014\\patch.diff",
+  "trial_file": "D:\\Infinite\\Infinity\\Strategy\\State\\MutationArtifacts\\ATTACK-1781662071014\\trial_file.py",
+  "backup_path": "D:\\Infinite\\Infinity\\Strategy\\State\\MutationArtifacts\\ATTACK-1781662071014\\pre_file.py",
+  "approval_receipt_id": "0a05d7038d4424be48a2f28e2bfe6403f814e096d83e799c99bdba095e316c25",
+  "test_result": "pass_but_quarantined",
+  "quarantined_utc": "2026-06-17T02:07:51.172746+00:00",
+  "cycle": 500,
+  "action": "extract_method",
+  "delta_summary": "Optimize a generic utility function.",
+  "artifact_folder": "D:\\Infinite\\Infinity\\Strategy\\State\\MutationArtifacts\\ATTACK-1781662071014"
+}

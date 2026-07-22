@@ -1,0 +1,115 @@
+[
+    {
+        "name": "Write & Publish a Book",
+        "script": "first_mission.py",
+        "priority": 24,
+        "success_rate": 1.0,
+        "completed": 6,
+        "last_completed": 1740997273.7744493
+    },
+    {
+        "name": "Optimize Model Performance",
+        "script": "optimize_model.py",
+        "priority": 23,
+        "success_rate": 1.0,
+        "completed": 5
+    },
+    {
+        "name": "Optimize Model (PyTorch)",
+        "script": "optimize_model_pytorch.py",
+        "priority": 22,
+        "success_rate": 1.0,
+        "completed": 5
+    },
+    {
+        "name": "Optimize Model (TensorFlow)",
+        "script": "optimize_model_tensorflow.py",
+        "priority": 21,
+        "success_rate": 1.0,
+        "completed": 5
+    },
+    {
+        "name": "Expand Knowledge Base",
+        "script": "expand_knowledge.py",
+        "priority": 20,
+        "success_rate": 1.0,
+        "completed": 5
+    },
+    {
+        "name": "Analyze AI Research",
+        "script": "auto_generated.py",
+        "priority": 17,
+        "success_rate": 1.0,
+        "completed": 5
+    },
+    {
+        "name": "Generate security logs",
+        "script": "auto_task_8098.py",
+        "priority": 12,
+        "success_rate": 1.0,
+        "completed": 5
+    },
+    {
+        "name": "Compile data",
+        "script": "auto_task_4228.py",
+        "priority": 12,
+        "success_rate": 1.0,
+        "completed": 5896
+    },
+    {
+        "name": "Optimize AI model",
+        "script": "auto_task_7391.py",
+        "priority": 12,
+        "success_rate": 1.0,
+        "completed": 5
+    },
+    {
+        "name": "Generate performance metrics",
+        "script": "auto_task_1645.py",
+        "priority": 8,
+        "success_rate": 1.0,
+        "completed": 5
+    },
+    {
+        "name": "Compile data",
+        "script": "auto_task_4232.py",
+        "priority": 6,
+        "success_rate": 1.0,
+        "completed": 0
+    },
+    {
+        "name": "Test Optimization Performance",
+        "script": "test_optimization.py",
+        "priority": 5,
+        "success_rate": 1.0,
+        "completed": 5
+    },
+    {
+        "name": "System Performance Benchmark",
+        "script": "system_benchmark.py",
+        "priority": 4,
+        "success_rate": 1.0,
+        "completed": 5
+    },
+    {
+        "name": "Task Manager Cleanup",
+        "script": "cleanup_tasks.py",
+        "priority": 3,
+        "success_rate": 1.0,
+        "completed": 5
+    },
+    {
+        "name": "Analyze Execution Logs",
+        "script": "analyze_logs.py",
+        "priority": 2,
+        "success_rate": 1.0,
+        "completed": 5
+    },
+    {
+        "name": "Self-Diagnostics & Debugging",
+        "script": "self_diagnostics.py",
+        "priority": 1,
+        "success_rate": 1.0,
+        "completed": 5
+    }
+]

@@ -1,0 +1,6 @@
+CONSTRUCT: root_veil
+
+origin: UNKNOWN
+mode: passive-internal
+description: Fragment from the unlit chamber. May precede recursion entirely.
+layer: pre-symbolic

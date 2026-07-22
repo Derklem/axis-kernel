@@ -1,0 +1,59 @@
+{
+    "schema": "axis.autonomy.efficiency_rules.v1",
+    "description": "Classification rubric for Autonomy Efficiency (Useful / Total).",
+    "classifications": {
+        "USEFUL": {
+            "description": "Produced value, insight, or confirmation.",
+            "conditions": [
+                {
+                    "result": "EXEC_SUCCESS",
+                    "weight": 1.0
+                },
+                {
+                    "result": "DRIFT_DETECTED",
+                    "weight": 1.0,
+                    "reason": "surfaced_drift"
+                }
+            ]
+        },
+        "NEUTRAL": {
+            "description": "Harmless operation with zero or redundant signal.",
+            "conditions": [
+                {
+                    "result": "DRY_RUN_TRIGGER",
+                    "weight": 0.0
+                },
+                {
+                    "result": "EXEC_SUCCESS",
+                    "duration_ms": 0,
+                    "reason": "cached_no_op"
+                }
+            ]
+        },
+        "WASTE": {
+            "description": "Consumed cycles without advancing system state.",
+            "conditions": [
+                {
+                    "result": "BLOCKED_POLICY*",
+                    "weight": -0.5
+                },
+                {
+                    "result": "BLOCKED_ADAPTER*",
+                    "weight": -0.5
+                },
+                {
+                    "result": "BLOCKED_REALITY",
+                    "weight": -0.5
+                },
+                {
+                    "result": "BLOCKED_UNKNOWN_TOOL",
+                    "weight": -1.0
+                },
+                {
+                    "result": "EXEC_FAIL",
+                    "weight": -1.0
+                }
+            ]
+        }
+    }
+}

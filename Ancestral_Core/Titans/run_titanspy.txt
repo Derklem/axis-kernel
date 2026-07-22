@@ -1,0 +1,36 @@
+# run_titans.py
+
+from memory.mnemosyne import Mnemosyne
+from generators.prometheus import Prometheus
+from controller.hyperion import Hyperion
+from infrastructure.atlas import Atlas
+from logic.themis import Themis
+from analysis.epimetheus import Epimetheus
+
+import os
+
+# Initialize Titans
+mnemosyne = Mnemosyne()
+prometheus = Prometheus()
+hyperion = Hyperion()
+atlas = Atlas(base_path=os.getcwd())
+themis = Themis()
+epimetheus = Epimetheus()
+
+# Register Titans with Hyperion
+hyperion.register("Mnemosyne", mnemosyne)
+hyperion.register("Prometheus", prometheus)
+hyperion.register("Atlas", atlas)
+hyperion.register("Themis", themis)
+hyperion.register("Epimetheus", epimetheus)
+
+# Activation log
+print("🔱 TITAN AWAKENING SEQUENCE INITIATED 🔱\n")
+for name, titan in hyperion.registry.items():
+    print(f"✅ {name} online as {type(titan).__name__}")
+
+# Output Atlas map (optional)
+print("\n📁 System Map Snapshot:")
+structure = atlas.map_directory()
+for path, contents in structure.items():
+    print(f"{path}: {contents}")

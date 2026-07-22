@@ -1,0 +1,116 @@
+{
+    "candidates": {
+        "dd65540327d0775a11e4031c7f0bca20f8fbca22f6e9330b1790d141801ccd18": {
+            "entity": "strategy_enginepy",
+            "claim": "[core_governance] strategy_engine.py has 6887 lines, 16 oversized functions (>120 lines), debt_score=1.00. Target: Extract long methods for maintainability.",
+            "claim_domain": "structural_debt",
+            "source_id": "AXIS_NODE_LOCAL_01",
+            "source_type": "self_observation",
+            "artifact_type": "ecosystem_observation",
+            "batch_id": "none",
+            "provenance_note": "",
+            "confidence": 0.75,
+            "cycles_survived": 1,
+            "discovery_utc": "2026-05-14T04:53:18.837292+00:00",
+            "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_dd655403_00fd8121",
+            "provenance_trail": [
+                {
+                    "source_id": "AXIS_NODE_LOCAL_01",
+                    "source_type": "self_observation",
+                    "batch_id": "none",
+                    "ts": "2026-05-14T04:53:18.837292+00:00",
+                    "lineage": {
+                        "node_id": "AXIS_NODE_LOCAL_01",
+                        "engine_version": "Axis-v1.9.1b-Attested",
+                        "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+                        "node_attestation": "69ce49fff1c3d561f2488f1343f567fd868cba26f57cec9d96144046b33f7c38"
+                    }
+                }
+            ]
+        },
+        "c638c73478a9f5c3e7d53f2e3dfaf2f09a3ab929ebe91d1a0bfb063512d66f02": {
+            "entity": "ecosystem_mapping_enginepy",
+            "claim": "[epistemic_intake] ecosystem_mapping_engine.py has 1040 lines, 1 oversized functions (>120 lines), debt_score=0.15. Target: Extract long methods for maintainability.",
+            "claim_domain": "structural_debt",
+            "source_id": "AXIS_NODE_LOCAL_01",
+            "source_type": "self_observation",
+            "artifact_type": "ecosystem_observation",
+            "batch_id": "none",
+            "provenance_note": "",
+            "confidence": 0.92,
+            "cycles_survived": 1,
+            "discovery_utc": "2026-05-14T04:53:18.859171+00:00",
+            "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_c638c734_e8775e81",
+            "provenance_trail": [
+                {
+                    "source_id": "AXIS_NODE_LOCAL_01",
+                    "source_type": "self_observation",
+                    "batch_id": "none",
+                    "ts": "2026-05-14T04:53:18.859171+00:00",
+                    "lineage": {
+                        "node_id": "AXIS_NODE_LOCAL_01",
+                        "engine_version": "Axis-v1.9.1b-Attested",
+                        "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+                        "node_attestation": "69ce49fff1c3d561f2488f1343f567fd868cba26f57cec9d96144046b33f7c38"
+                    }
+                }
+            ]
+        },
+        "aebd13943de204748ec506abc57718d5f0abab0ae5707026fb7035335fec151e": {
+            "entity": "axis_crypto_helperspy",
+            "claim": "[cryptographic_authority] axis_crypto_helpers.py has 67 lines, 0 oversized functions (>120 lines), debt_score=0.00. Target: Extract long methods for maintainability.",
+            "claim_domain": "structural_debt",
+            "source_id": "AXIS_NODE_LOCAL_01",
+            "source_type": "self_observation",
+            "artifact_type": "ecosystem_observation",
+            "batch_id": "none",
+            "provenance_note": "",
+            "confidence": 0.95,
+            "cycles_survived": 1,
+            "discovery_utc": "2026-05-14T04:53:18.890700+00:00",
+            "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_aebd1394_e5c42668",
+            "provenance_trail": [
+                {
+                    "source_id": "AXIS_NODE_LOCAL_01",
+                    "source_type": "self_observation",
+                    "batch_id": "none",
+                    "ts": "2026-05-14T04:53:18.890700+00:00",
+                    "lineage": {
+                        "node_id": "AXIS_NODE_LOCAL_01",
+                        "engine_version": "Axis-v1.9.1b-Attested",
+                        "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+                        "node_attestation": "69ce49fff1c3d561f2488f1343f567fd868cba26f57cec9d96144046b33f7c38"
+                    }
+                }
+            ]
+        },
+        "ae3153cbe4faa3be2db1ac0b6bd8f3664b40703bec0f3593ec83d5a8334dca31": {
+            "entity": "multi_objective_solverpy",
+            "claim": "[arbitration_engine] multi_objective_solver.py has 934 lines, 1 oversized functions (>120 lines), debt_score=0.15. Target: Extract long methods for maintainability.",
+            "claim_domain": "structural_debt",
+            "source_id": "AXIS_NODE_LOCAL_01",
+            "source_type": "self_observation",
+            "artifact_type": "ecosystem_observation",
+            "batch_id": "none",
+            "provenance_note": "",
+            "confidence": 0.92,
+            "cycles_survived": 1,
+            "discovery_utc": "2026-05-14T04:53:18.920694+00:00",
+            "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_ae3153cb_ebe25ca3",
+            "provenance_trail": [
+                {
+                    "source_id": "AXIS_NODE_LOCAL_01",
+                    "source_type": "self_observation",
+                    "batch_id": "none",
+                    "ts": "2026-05-14T04:53:18.920694+00:00",
+                    "lineage": {
+                        "node_id": "AXIS_NODE_LOCAL_01",
+                        "engine_version": "Axis-v1.9.1b-Attested",
+                        "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+                        "node_attestation": "69ce49fff1c3d561f2488f1343f567fd868cba26f57cec9d96144046b33f7c38"
+                    }
+                }
+            ]
+        }
+    }
+}

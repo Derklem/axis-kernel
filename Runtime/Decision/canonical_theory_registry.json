@@ -1,0 +1,8 @@
+{
+  "theories": {
+    "THEORY_C": {
+      "confidence": 0.95,
+      "prediction_accuracy": 0.92
+    }
+  }
+}

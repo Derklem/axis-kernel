@@ -1,0 +1,53 @@
+{
+    "schema": "axis.state_vector.manifest.v1",
+    "ts_utc": "2026-02-15T21:58:00Z",
+    "components": {
+        "audit": {
+            "kind": "ledger_head",
+            "logical_name": "audit_trail",
+            "path": "Truth_Engine\\audit_trail.jsonl",
+            "required": true,
+            "introduced_date": "2026-01-01"
+        },
+        "spend": {
+            "kind": "ledger_head",
+            "logical_name": "spend_ledger",
+            "path": "Truth_Engine\\spend_ledger.jsonl",
+            "required": true,
+            "introduced_date": "2026-01-01"
+        },
+        "policy": {
+            "kind": "ledger_head",
+            "logical_name": "policy_update_ledger",
+            "path": "Governance\\policy_update_ledger.jsonl",
+            "required": true,
+            "introduced_date": "2026-01-01"
+        },
+        "revocation": {
+            "kind": "ledger_head",
+            "logical_name": "revocation_ledger",
+            "path": "Governance\\revocation_ledger.jsonl",
+            "required": true,
+            "introduced_date": "2026-01-01"
+        },
+        "pulse": {
+            "kind": "ledger_head",
+            "logical_name": "integrity_pulse_ledger",
+            "path": "Governance\\integrity_pulse_ledger.jsonl",
+            "required": false,
+            "introduced_date": "2026-02-14"
+        },
+        "identity": {
+            "kind": "file_sha256",
+            "path": "Truth_Engine\\identity_registry.json",
+            "required": true,
+            "introduced_date": "2026-01-01"
+        },
+        "keyring": {
+            "kind": "file_sha256",
+            "path": "Truth_Engine\\keyring.json",
+            "required": true,
+            "introduced_date": "2026-02-15"
+        }
+    }
+}

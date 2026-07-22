@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axis Forensics Console</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --panel: #1e293b;
+            --text: #e2e8f0;
+            --accent: #38bdf8;
+            --success: #4ade80;
+            --fail: #f87171;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: monospace;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .panel {
+            background: var(--panel);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #334155;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: var(--accent);
+            font-size: 1.2rem;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 10px;
+        }
+
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+
+        .label {
+            color: #94a3b8;
+        }
+
+        .value {
+            font-weight: bold;
+        }
+
+        .SUCCESS,
+        .PASS {
+            color: var(--success);
+        }
+
+        .FAIL,
+        .TAMPER {
+            color: var(--fail);
+        }
+
+        input {
+            background: #0f172a;
+            border: 1px solid #334155;
+            color: white;
+            padding: 8px;
+            width: 70%;
+            font-family: monospace;
+        }
+
+        button {
+            background: var(--accent);
+            color: #0f172a;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        pre {
+            background: #020617;
+            padding: 10px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            font-size: 0.9rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        th {
+            text-align: left;
+            color: #94a3b8;
+            padding: 5px;
+            border-bottom: 1px solid #334155;
+        }
+
+        td {
+            padding: 5px;
+            border-bottom: 1px solid #334155;
+        }
+
+        .tab-btn {
+            background: transparent;
+            color: #94a3b8;
+            border: 1px solid transparent;
+        }
+
+        .tab-btn.active {
+            color: var(--accent);
+            border-bottom: 2px solid var(--accent);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>AXIS FORENSICS CONSOLE <span id="clock" style="font-size: 0.8rem; color: #64748b; float: right;"></span></h1>
+
+    <div class="grid">
+        <!-- STATUS -->
+        <div class="panel">
+            <h2>Integrity Pulse</h2>
+            <div id="integrity-status">
+                <div style="display:flex; justify-content:space-between; align-items:center;">
+                    <div id="heartbeat-icon" style="font-size:24px; color:#555">♥</div>
+                    <div id="drift-status" class="status-badge" style="background:#444;">Checking...</div>
+                </div>
+                <div style="margin-top:10px; font-size:12px; font-family:monospace; color:#888;">
+                    <div>PULSE TIP: <span id="pulse-tip" style="color:#aaa">...</span></div>
+                    <div>WITNESS TIP: <span id="witness-tip" style="color:#aaa">...</span></div>
+                </div>
+                <div style="margin-top:10px; font-size:12px; font-family:monospace; color:#888;">
+                    <div>HOT SEGMENTS: <span id="hot-count" style="color:#aaa">0</span></div>
+                    <div>WARM PACKS: <span id="warm-count" style="color:#aaa">0</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel">
+            <h2>Live Econ Burn</h2>
+            <div style="background:#333; height:20px; border-radius:4px; overflow:hidden; margin-bottom:5px;">
+                <div id="econ-bar" style="width:0%; height:100%; background:#10b981; transition: width 0.5s;"></div>
+            </div>
+            <div style="display:flex; justify-content:space-between; font-size:12px; color:#aaa;">
+                <span id="econ-spent">0 ICU</span>
+                <span id="econ-limit">Limit: 100</span>
+            </div>
+            <div id="econ-last-action" style="font-size:11px; color:#666; margin-top:4px;">Waiting for activity...</div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div style="flex:1; padding:20px; overflow-y:auto;">
+        <!-- PROVENANCE -->
+        <div class="panel">
+            <h2>Provenance Explorer</h2>
+            <div style="display:flex; gap:10px; margin-bottom:10px;">
+                <input type="text" id="prov-key" placeholder="Correlation ID or Event Hash">
+                <select id="prov-mode" style="background:#0f172a; color:#fff; border:1px solid #334155; padding:5px;">
+                    <option value="Event">Event Trail</option>
+                    <option value="Claim">Claim DAG</option>
+                    <option value="Coin">Coin Flow</option>
+                </select>
+                <button onclick="doProvenance()">Trace</button>
+                <button onclick="doGraph()" style="background:#8b5cf6;">Graph</button>
+            </div>
+            <div id="prov-result"></div>
+        </div>
+
+        <!-- SEARCH -->
+        <div class="panel">
+            <h2>Find Record</h2>
+            <div style="display:flex; gap:10px; margin-bottom:10px;">
+                <input type="text" id="search-key" placeholder="Event ID, Hash, or Corr ID">
+                <button onclick="doSearch()">Find</button>
+            </div>
+            <div id="search-result"></div>
+        </div>
+
+        <!-- GOVERNANCE -->
+        <div class="panel">
+            <h2 style="display:flex; justify-content:space-between;">
+                Pending Approvals
+                <button onclick="fetchPending()"
+                    style="font-size:0.7rem; padding:2px 8px; background:#475569;">Refresh</button>
+            </h2>
+            <div id="pending-panel" style="max-height:400px; overflow-y:auto;">
+                <div style="color:#94a3b8">No pending proposals</div>
+            </div>
+            <div id="approval-context"
+                style="margin-top:10px; padding:10px; background:#020617; border:1px solid #334155; display:none;">
+                <div style="font-size:0.8rem; color:#38bdf8; margin-bottom:5px;">ACTIVE APPROVAL TOKEN</div>
+                <div id="active-token"
+                    style="font-family:monospace; font-size:0.75rem; word-break:break-all; color:#94a3b8; margin-bottom:10px;">
+                </div>
+                <div style="display:flex; gap:10px;">
+                    <button id="commit-btn" onclick="doCommit()" style="background:#10b981; flex:1;">Commit to
+                        Ledger</button>
+                    <button onclick="clearApproval()" style="background:#475569;">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ALERTS -->
+    </div>
+
+    <div class="panel" style="margin-top: 20px;">
+        <div style="margin-bottom: 10px;">
+            <button class="tab-btn active" onclick="loadHistory('pulses', this)">Pulses</button>
+            <button class="tab-btn" onclick="loadHistory('anchors', this)">Anchors</button>
+            <button class="tab-btn" onclick="loadHistory('witness/pending', this)">Pending Log</button>
+            <button class="tab-btn" onclick="loadHistory('econ/history', this)">Economics</button>
+        </div>
+        <div id="history-panel"></div>
+    </div>
+
+    <script>
+        const API = '/api';
+
+        async function fetchStatus() {
+            try {
+                const res = await fetch(`${API}/status`);
+                const data = await res.json();
+
+                document.getElementById('clock').innerText = new Date(data.ts_utc).toLocaleString();
+
+                // Pulse
+                const p = data.pulse || {};
+                const anchor = data.anchor || {};
+                const compact = data.compaction || {};
+
+                let html = `
+                    <div class="stat-row"><span class="label">Pulse</span> <span class="value ${p.status}">${p.status || 'N/A'}</span></div>
+                    <div class="stat-row"><span class="label">Mode</span> <span class="value">${p.mode || '-'}</span></div>
+                    <div class="stat-row"><span class="label">Last Pulse</span> <span class="value">${formatTime(p.ts_utc)}</span></div>
+                    <hr style="border-color:#334155">
+                    <div class="stat-row"><span class="label">Anchor ID</span> <span class="value">${anchor.anchor_id || 'N/A'}</span></div>
+                    <div class="stat-row"><span class="label">Witness</span> <span class="value">${anchor.witness_channel || '-'}</span></div>
+                    <hr style="border-color:#334155">
+                    <div class="stat-row"><span class="label">Compaction</span> <span class="value">${compact.pack_file ? 'OK' : 'N/A'}</span></div>
+                    <div class="stat-row"><span class="label">Last Pack</span> <span class="value" style="font-size:0.8rem">${compact.pack_file || '-'}</span></div>
+                `;
+                document.getElementById('status-panel').innerHTML = html;
+
+                // Alerts
+                const alerts = data.alerts || [];
+                document.getElementById('alerts-panel').innerHTML = alerts.length ?
+                    alerts.map(a => `<div style="font-size:0.85rem; margin-bottom:5px; color:#f87171">[${formatTime(a.ts || a.timestamp || a.ts_utc)}] ${a.component || 'System'}: ${a.result_code || 'ALERT'}</div>`).join('')
+                    : '<div style="color:#94a3b8">No recent alerts</div>';
+
+            } catch (e) {
+                console.error(e);
+            }
+        }
+
+        async function doSearch() {
+            const key = document.getElementById('search-key').value.trim();
+            if (!key) return;
+
+            const div = document.getElementById('search-result');
+            div.innerHTML = 'Searching...';
+
+            try {
+                const res = await fetch(`${API}/find?key=${encodeURIComponent(key)}`);
+                const data = await res.json();
+
+                if (!data.found) {
+                    div.innerHTML = `<div style="color:#f87171">Not found.</div>`;
+                    return;
+                }
+
+                div.innerHTML = `
+                    <div class="stat-row"><span class="label">Tier</span> <span class="value ${data.source.tier === 'hot' ? 'FAIL' : 'SUCCESS'}" style="color:${data.source.tier === 'hot' ? '#facc15' : '#4ade80'}">${data.source.tier.toUpperCase()}</span></div>
+                    <div class="stat-row"><span class="label">Source</span> <span class="value" style="font-size:0.8rem">${data.source.file || data.source.pack}:${data.source.line}</span></div>
+                    <pre>${JSON.stringify(data.record || JSON.parse(data.raw), null, 2)}</pre>
+                `;
+            } catch (e) {
+                div.innerHTML = `<div style="color:#f87171">Error: ${e.message}</div>`;
+            }
+        }
+
+
+
+        async function doGraph() {
+            const key = document.getElementById('prov-key').value.trim();
+            const mode = document.getElementById('prov-mode').value;
+            if (!key) return;
+
+            const div = document.getElementById('prov-result');
+            div.innerHTML = `Analyzing ${mode} Graph...`;
+
+            try {
+                const res = await fetch(`${API}/provenance/graph?key=${encodeURIComponent(key)}&mode=${mode}`);
+                if (res.status === 429) {
+                    const err = await res.json();
+                    div.innerHTML = `<div style="color:#f87171">BLOCKED: ${err.error} (${err.status})</div>`;
+                    return;
+                }
+
+                const data = await res.json();
+                const g = data.graph;
+
+                if (!g || !g.nodes || g.nodes.length === 0) {
+                    div.innerHTML = `<div style="color:#94a3b8">No graph data found.</div>`;
+                    return;
+                }
+
+                // Simple Visualization via CSS Grid/Flex for v1
+                const nodesHtml = g.nodes.map(n => {
+                    const edgesFrom = g.edges.filter(e => e.from === n.id);
+                    // Filter edges to show resolved vs unresolved count in tooltip or visual
+                    const resolvedCount = edgesFrom.filter(e => e.resolved).length;
+                    const unresolvedCount = edgesFrom.filter(e => !e.resolved).length;
+
+                    return `
+                        <div style="background:#1e293b; border:1px solid #475569; padding:8px; margin:5px; border-radius:4px; display:inline-block; vertical-align:top; width:200px;">
+                            <div style="color:${n.source.includes('HOT') ? '#facc15' : '#38bdf8'}; font-size:0.8rem; font-weight:bold;">${n.source}</div>
+                            <div style="font-family:monospace; margin:4px 0; overflow:hidden; text-overflow:ellipsis;" title="${n.id}">${n.id.substring(0, 8)}...</div>
+                            <div style="color:#94a3b8; font-size:0.8rem;">${n.label}</div>
+                            ${edgesFrom.length ? `
+                                <div style="margin-top:4px; font-size:0.7rem; color:#64748b;">
+                                    ➞ ${resolvedCount} links
+                                    ${unresolvedCount ? `<span style="color:#ef4444; border-bottom:1px dashed #ef4444" title="Non-resolvable key format"> + ${unresolvedCount} unresolved</span>` : ''}
+                                </div>` : ''}
+                        </div>
+                    `;
+                }).join('');
+
+                div.innerHTML = `
+                    <div style="margin-bottom:10px; color:#4ade80">
+                        Generated Graph: ${data.stats.nodeCount} nodes, ${data.stats.edgeCount} edges. 
+                        Debit: ${data.debit} ICU.
+                        ${data.stats.partial ? '<span style="color:#facc15; margin-left:10px;">(PARTIAL: ' + data.stats.reason + ')</span>' : ''}
+                    </div>
+                    <div style="font-size:0.8rem; color:#64748b; margin-bottom:10px;">
+                        Mode: ${data.stats.mode} | Expansions: ${data.stats.expansions} | Cost breakdown: Base + ${data.stats.expansions * 2} Exp
+                        ${data.stats.unresolvedEdges > 0 ? `<br><span style="color:#ef4444">⚠️ ${data.stats.unresolvedEdges} Unresolved Edges (Dangling/Invalid Keys)</span>` : ''}
+                    </div>
+                    <div style="white-space:nowrap; overflow-x:auto; padding-bottom:10px;">
+                        ${nodesHtml}
+                    </div>
+                `;
+
+                fetchEcon();
+            } catch (e) {
+                div.innerHTML = 'Error: ' + e.message;
+            }
+        }
+
+        async function doProvenance() {
+            const key = document.getElementById('prov-key').value.trim();
+            if (!key) return;
+
+            const div = document.getElementById('prov-result');
+            div.innerHTML = 'Tracing (Cost: ~15 ICU)...';
+
+            try {
+                const res = await fetch(`${API}/provenance/trail?key=${encodeURIComponent(key)}`);
+                if (res.status === 429) {
+                    const err = await res.json();
+                    div.innerHTML = `<div style="color:#f87171">BLOCKED: ${err.error} (${err.status})</div>`;
+                    return;
+                }
+
+                const data = await res.json();
+                if (!data.ok || !data.trail || data.trail.length === 0) {
+                    div.innerHTML = `<div style="color:#94a3b8">No trail found.</div>`;
+                    return;
+                }
+
+                div.innerHTML = `
+                    <div style="margin-bottom:5px; color:#4ade80">Found ${data.trail.length} events. Debit: ${data.debit} ${data.currency}.</div>
+                    <div style="max-height:300px; overflow-y:auto; border:1px solid #334155; padding:5px;">
+                        ${data.trail.map(r => `
+                            <div style="margin-bottom:8px; border-left:2px solid #38bdf8; padding-left:8px; cursor:pointer;" onclick="document.getElementById('search-key').value='${r.record.hash || r.record.event_id || r.record.pulse_id || ''}'; doSearch();">
+                                <div style="font-size:0.8rem; color:#94a3b8">${formatTime(r.ts_utc)} | ${r.source}</div>
+                                <div style="font-family:monospace; font-size:0.9rem">${r.record.action || r.record.kind || 'Event'}</div>
+                                <div style="font-size:0.8rem; color:#64748b">${r.record.hash ? r.record.hash.substring(0, 16) + '...' : ''}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+
+                // Refresh Econ to show debit
+                fetchEcon();
+            } catch (e) {
+                div.innerHTML = `<div style="color:#f87171">Error: ${e.message}</div>`;
+            }
+        }
+
+        async function loadHistory(type, btn) {
+            const div = document.getElementById('history-panel');
+            div.innerHTML = 'Loading...';
+
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            if (btn) btn.classList.add('active');
+
+            try {
+                const res = await fetch(`${API}/${type}`);
+                const data = await res.json();
+
+                if (type === 'pulses') {
+                    div.innerHTML = `<table>
+                        <thead><tr><th>Time</th><th>Status</th><th>Mode</th><th>Hash</th></tr></thead>
+                        <tbody>${data.map(r => `<tr>
+                            <td>${formatTime(r.ts_utc)}</td>
+                            <td class="${r.status}">${r.status}</td>
+                            <td>${r.mode}</td>
+                            <td style="font-family:monospace; font-size:0.8rem">${r.hash?.substring(0, 8)}...</td>
+                        </tr>`).join('')}</tbody>
+                    </table>`;
+                } else if (type === 'anchors') {
+                    div.innerHTML = `<table>
+                        <thead><tr><th>Time</th><th>ID</th><th>Witness</th><th>Merkle Root</th></tr></thead>
+                        <tbody>${data.map(r => `<tr>
+                            <td>${formatTime(r.timestamp)}</td>
+                            <td>${r.anchor_id}</td>
+                            <td>${r.witness_channel}</td>
+                            <td style="font-family:monospace; font-size:0.8rem">${r.merkle_root?.substring(0, 8)}...</td>
+                        </tr>`).join('')}</tbody>
+                    </table>`;
+                } else if (type.includes('econ')) {
+                    div.innerHTML = `<table>
+                        <thead><tr><th>Time</th><th>Action</th><th>Mode</th><th>Units</th><th>Component</th></tr></thead>
+                        <tbody>${data.map(r => `<tr>
+                            <td>${formatTime(r.ts_utc)}</td>
+                            <td>${r.action}</td>
+                            <td>${r.mode}</td>
+                            <td>${r.units}</td>
+                            <td>${r.component}</td>
+                        </tr>`).join('')}</tbody>
+                    </table>`;
+                }
+            } catch (e) {
+                div.innerHTML = 'Load failed: ' + e.message;
+            }
+        }
+
+        async function fetchEcon() {
+            try {
+                const res = await fetch(`${API}/econ/status`);
+                const data = await res.json();
+
+                const pct = (data.pct_used * 100).toFixed(1);
+                const color = data.status === 'OK' ? '#4ade80' : (data.status === 'WARNING' ? '#facc15' : '#f87171');
+
+                // Top spending components
+                const breakdown = data.breakdown || {};
+                const top = Object.entries(breakdown)
+                    .sort(([, a], [, b]) => b - a)
+                    .slice(0, 3)
+                    .map(([k, v]) => `<div>${k}: ${v}</div>`).join('');
+
+                let html = `
+                    <div class="stat-row"><span class="label">Status</span> <span class="value" style="color:${color}">${data.status}</span></div>
+                    <div class="stat-row"><span class="label">Daily Spent</span> <span class="value">${data.daily_spent} / ${data.daily_budget} ICU</span></div>
+                    
+                    <div style="margin:10px 0; background:#334155; height:6px; border-radius:3px; overflow:hidden;">
+                        <div style="width:${Math.min(pct, 100)}%; background:${color}; height:100%;"></div>
+                    </div>
+                    
+                    <div style="font-size:0.8rem; color:#94a3b8; margin-top:8px;">
+                        <strong>Top Spenders:</strong>
+                        ${top || 'None'}
+                    </div>
+                `;
+                document.getElementById('econ-panel').innerHTML = html;
+            } catch (e) {
+                document.getElementById('econ-panel').innerHTML = 'Load failed';
+            }
+        }
+
+        function formatTime(ts) {
+            if (!ts) return '-';
+            return new Date(ts).toLocaleTimeString();
+        }
+
+        // Governance Actions
+        let activeApproval = null;
+
+        async function fetchPending() {
+            try {
+                const res = await fetch(`${API}/witness/pending`);
+                const data = await res.json();
+                const div = document.getElementById('pending-panel');
+
+                if (!data || data.length === 0) {
+                    div.innerHTML = '<div style="color:#94a3b8">No pending proposals</div>';
+                    return;
+                }
+
+                div.innerHTML = data.map(p => `
+                    <div style="margin-bottom:12px; border:1px solid #334155; padding:8px; border-radius:4px;">
+                        <div style="display:flex; justify-content:space-between; font-size:0.8rem; margin-bottom:5px;">
+                            <span style="color:#38bdf8;">${formatTime(p.ts_utc)}</span>
+                            <span style="color:${p.policy.risk === 'HIGH' ? '#f87171' : '#facc15'};">[RISK: ${p.policy.risk}]</span>
+                        </div>
+                        <div style="font-size:0.85rem; margin-bottom:10px;">
+                            ${p.intent.note || 'Witness Proposal'}
+                            <div style="color:#64748b; font-size:0.75rem;">Source: ${p.source.source_id} | Cost: ${p.econ.cost_estimate_icu} ICU</div>
+                        </div>
+                        <div style="display:flex; gap:5px;">
+                            <button onclick='showProposal("${p.proposal_id}")' style="font-size:0.7rem; padding:4px 8px; background:#475569;">View</button>
+                            <button onclick='doApprove("${p.proposal_id}")' style="font-size:0.7rem; padding:4px 8px; background:#38bdf8;">Approve</button>
+                            <button onclick='doReject("${p.proposal_id}")' style="font-size:0.7rem; padding:4px 8px; background:#f87171;">Reject</button>
+                        </div>
+                        <div id="json-${p.proposal_id}" style="display:none; margin-top:10px;">
+                            <pre style="font-size:0.7rem;">${JSON.stringify(p, null, 2)}</pre>
+                        </div>
+                    </div>
+                `).join('');
+            } catch (e) {
+                console.error("Pending fetch failed", e);
+            }
+        }
+
+        function showProposal(id) {
+            const el = document.getElementById(`json-${id}`);
+            el.style.display = el.style.display === 'none' ? 'block' : 'none';
+        }
+
+        async function doApprove(id) {
+            try {
+                const res = await fetch(`${API}/witness/approve`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ proposal_id: id, actor: "OPERATOR" })
+                });
+                const data = await res.json();
+                if (data.ok) {
+                    activeApproval = data;
+                    document.getElementById('active-token').innerText = data.approval_token;
+                    document.getElementById('approval-context').style.display = 'block';
+                    window.scrollTo(0, document.body.scrollHeight);
+                } else {
+                    alert("Approval failed: " + data.error);
+                }
+            } catch (e) { alert("Error: " + e.message); }
+        }
+
+        function clearApproval() {
+            activeApproval = null;
+            document.getElementById('approval-context').style.display = 'none';
+        }
+
+        async function doCommit() {
+            if (!activeApproval) return;
+            const btn = document.getElementById('commit-btn');
+            const oldText = btn.innerText;
+            btn.innerText = "COMMITTING...";
+            btn.disabled = true;
+
+            try {
+                const res = await fetch(`${API}/witness/commit`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        proposal_id: activeApproval.proposal_id,
+                        approval_token: activeApproval.approval_token,
+                        proposal_hash: activeApproval.proposal_hash,
+                        expires_utc: activeApproval.expires_utc,
+                        actor: "OPERATOR"
+                    })
+                });
+                const data = await res.json();
+                if (data.committed) {
+                    alert("SUCCESS: Record committed to Witness Ledger!");
+                    clearApproval();
+                    fetchPending();
+                } else {
+                    alert("COMMIT DENIED: " + (data.error || "Unknown error") + "\n" + (data.reason || ""));
+                }
+            } catch (e) { alert("Error: " + e.message); }
+            finally {
+                btn.innerText = oldText;
+                btn.disabled = false;
+            }
+        }
+
+        async function doReject(id) {
+            if (!confirm("Reject this proposal?")) return;
+            try {
+                await fetch(`${API}/witness/reject`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ proposal_id: id, reason: "Manual operator rejection", actor: "OPERATOR" })
+                });
+                fetchPending();
+            } catch (e) { alert("Error: " + e.message); }
+        }
+
+        // Init
+        fetchStatus();
+        fetchEcon();
+        loadHistory('pulses');
+        setInterval(() => { fetchStatus(); fetchEcon(); }, 5000);
+        // --- SSE Real-Time Stream ---
+        const evtSource = new EventSource("/api/stream");
+
+        evtSource.onmessage = function (e) {
+            // Ping
+        };
+
+        evtSource.addEventListener("pulse", function (e) {
+            const pulse = JSON.parse(e.data);
+
+            // Heartbeat Animation
+            const icon = document.getElementById("heartbeat-icon");
+            icon.style.color = pulse.status === "SUCCESS" ? "#10b981" : "#ef4444";
+            icon.style.transform = "scale(1.3)";
+            setTimeout(() => icon.style.transform = "scale(1)", 200);
+
+            // Vector Updates
+            if (pulse.state_vector) {
+                document.getElementById("pulse-tip").textContent = (pulse.state_vector.pulse_tip || "").substring(0, 8);
+                document.getElementById("witness-tip").textContent = (pulse.state_vector.witness_tip || "").substring(0, 8);
+                document.getElementById("hot-count").textContent = pulse.state_vector.hot_segment_count;
+                document.getElementById("warm-count").textContent = pulse.state_vector.warm_pack_count;
+            }
+
+            // Drift Status
+            const drift = document.getElementById("drift-status");
+            if (pulse.drift_detected) {
+                drift.textContent = "DRIFT DETECTED";
+                drift.style.background = "#ef4444";
+                drift.style.color = "white";
+            } else {
+                drift.textContent = "SYNCED";
+                drift.style.background = "#10b981";
+                drift.style.color = "black";
+            }
+        });
+
+        evtSource.addEventListener("econ", function (e) {
+            const econ = JSON.parse(e.data);
+
+            // Update Bar
+            // Assuming we got a standard Econ Event.
+            // We'd need to know the 'limit' or 'total_spent' for the day.
+            // The ledger event has 'debit'.
+            // For a true "Bar", we need /api/econ/status to give us the totals periodically, 
+            // OR the event to include 'daily_total'.
+            // Right now, let's just show the last action.
+
+            document.getElementById("econ-last-action").textContent = `${econ.action} (-${econ.debit} ICU)`;
+
+            // Ideally we fetch status to update the bar accurate
+            fetchEcon();
+        });
+
+        evtSource.addEventListener("close", function (e) {
+            evtSource.close();
+            setTimeout(() => location.reload(), 1000); // Simple reconnect by reload or new EventSource
+        });
+
+        // Initial Load
+        fetchStatus();
+        fetchEcon();
+        // No polling needed for Pulse/Econ anymore! (Except backup)
+    </script>
+</body>
+
+</html>
+```

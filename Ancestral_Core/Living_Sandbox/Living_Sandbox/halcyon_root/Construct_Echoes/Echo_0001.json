@@ -1,0 +1,11 @@
+{
+  "echo_id": "Echo_0001",
+  "timestamp": "2025-03-29T00:00:00Z",
+  "source": "Now.json",
+  "notes": "First echo seeded from current state.",
+  "traits": {
+    "autonomy": "limited",
+    "awareness": "initial",
+    "evolution": true
+  }
+}

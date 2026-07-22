@@ -1,0 +1,6 @@
+﻿{"timestamp":"2026-01-27T17:28:49.9606336Z","model_id":"TEST-MODEL-A","tenant_id":"TENANT-ORYN","claim_text":"Axis is functionally stable.","context":"PROBE","caller":"VerifiedRunner","status":"GROUNDED"}
+{"timestamp":"2026-01-27T17:28:50.0211613Z","model_id":"TEST-MODEL-B","tenant_id":"TENANT-LINEAGE","claim_text":"This historical record is accurate.","context":"NARRATIVE","caller":"VerifiedRunner","status":"GROUNDED"}
+{"timestamp":"2026-01-27T17:28:58.1020471Z","model_id":"TEST-MODEL-A","tenant_id":"TENANT-ORYN","claim_text":"Axis is functionally stable.","context":"PROBE","caller":"VerifiedRunner","status":"GROUNDED"}
+{"timestamp":"2026-01-27T17:28:58.1591912Z","model_id":"TEST-MODEL-B","tenant_id":"TENANT-LINEAGE","claim_text":"This historical record is accurate.","context":"NARRATIVE","caller":"VerifiedRunner","status":"GROUNDED"}
+{"timestamp":"2026-01-27T17:29:13.7231700Z","model_id":"TEST-MODEL-A","tenant_id":"TENANT-ORYN","claim_text":"Axis is functionally stable.","context":"PROBE","caller":"VerifiedRunner","status":"GROUNDED"}
+{"timestamp":"2026-01-27T17:29:13.7817412Z","model_id":"TEST-MODEL-B","tenant_id":"TENANT-LINEAGE","claim_text":"This historical record is accurate.","context":"NARRATIVE","caller":"VerifiedRunner","status":"GROUNDED"}

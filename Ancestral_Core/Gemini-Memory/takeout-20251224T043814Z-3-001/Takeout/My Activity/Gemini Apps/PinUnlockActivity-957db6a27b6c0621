@@ -1,0 +1,93 @@
+// app-child/src/main/kotlin/com/timeout/child/PinUnlockActivity.kt
+
+package com.timeout.child
+
+import android.os.Bundle
+import android.util.Log
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.*
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.input.PasswordVisualTransformation
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import androidx.compose.ui.platform.LocalContext
+import com.timeout.common.Prefs
+
+class PinUnlockActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            MaterialTheme {
+                PinUnlockScreen()
+            }
+        }
+    }
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun PinUnlockScreen() {
+    val context = LocalContext.current
+    var pin by remember { mutableStateOf("") }
+    var error by remember { mutableStateOf(false) }
+
+    Scaffold(
+        topBar = {
+            CenterAlignedTopAppBar(
+                title = { Text("Enter PIN", fontSize = 20.sp) }
+            )
+        }
+    ) { padding ->
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(padding)
+                .padding(32.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.Center
+        ) {
+            OutlinedTextField(
+                value = pin,
+                onValueChange = {
+                    pin = it
+                    error = false
+                },
+                label = { Text("PIN") },
+                visualTransformation = PasswordVisualTransformation(),
+                isError = error,
+                modifier = Modifier.fillMaxWidth()
+            )
+
+            if (error) {
+                Text(
+                    "Wrong PIN",
+                    color = MaterialTheme.colorScheme.error,
+                    modifier = Modifier.padding(top = 8.dp)
+                )
+            }
+
+            Spacer(modifier = Modifier.height(24.dp))
+
+            Button(
+                onClick = {
+                    if (pin == "0000") {
+                        // END THE BRICK SESSION
+                        Prefs.setEnd(context, 0)
+                        Log.e("UNBRICK", "PIN 0000 → FULL ACCESS RESTORED")
+                        (context as? ComponentActivity)?.finishAffinity()
+                    } else {
+                        error = true
+                        pin = ""
+                    }
+                },
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Text("UNLOCK")
+            }
+        }
+    }
+}

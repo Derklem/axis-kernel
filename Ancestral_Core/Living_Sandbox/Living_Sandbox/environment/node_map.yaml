@@ -1,0 +1,13 @@
+
+nodes:
+  - name: Primordia
+    path: ../Primordia
+    sync: true
+
+  - name: Sandbox Core
+    path: ../Living_Sandbox
+    sync: true
+
+  - name: Future Nodes
+    path: ./expansions/
+    sync: conditional

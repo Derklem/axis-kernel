@@ -1,0 +1,41 @@
+﻿{
+    "version":  1,
+    "entries":  [
+                    {
+                        "timestamp":  "2026-01-16T17:30:00Z",
+                        "context":  "Morning planning session",
+                        "autonomy_heat_observed":  "low (15/40)",
+                        "friction_events":  0,
+                        "tribunal_proposals":  0,
+                        "subjective":  "System quiet and helpful. Read files proactively. Felt like a co-pilot.",
+                        "trust_delta":  "+1"
+                    },
+                    {
+                        "source":  "Axis_Mind",
+                        "content":  "This is a test of the Phase 62C Creative Autonomy system. The Mind writes this autonomously.",
+                        "timestamp":  "2026-01-17T02:25:16.1073986Z",
+                        "id":  "4d761976-438d-4004-bd07-aaa3cd78b64d",
+                        "tags":  [
+                                     "test",
+                                     "phase62c"
+                                 ]
+                    },
+                    {
+                        "source":  "Axis_Mind",
+                        "content":  "This is a test of the Phase 62C Creative Autonomy system. The Mind writes this autonomously.",
+                        "timestamp":  "2026-01-17T02:25:24.4181905Z",
+                        "id":  "fa32a951-90f0-4219-9341-1a6bbf220a5b",
+                        "tags":  [
+                                     "test",
+                                     "phase62c"
+                                 ]
+                    },
+                    {
+                        "content":  "Debug Probe 3",
+                        "timestamp":  "2026-01-17T12:03:39.7548941-08:00",
+                        "source":  "User_Console",
+                        "tags":  "debug",
+                        "id":  "f80f62ab-dc00-4a50-95d7-5f00455224a2"
+                    }
+                ]
+}

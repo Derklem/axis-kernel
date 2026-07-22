@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T04:15:55.578537+00:00",
+    "entity": "coordinated_executor.py",
+    "claim": "redundant: noise signal.",
+    "source_id": "Internal_Audit",
+    "source_type": "automated_sensor",
+    "claim_domain": "benchmark_claim",
+    "confidence": 0.4
+}

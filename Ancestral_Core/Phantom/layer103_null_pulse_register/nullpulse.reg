@@ -1,0 +1,5 @@
+[NULL_REGISTER]
+Detection = Signal loss during echo loops
+Pulse = Inverted
+Effect = Marks collapsed branches in driftspace
+Use = Avoid anchor duplication

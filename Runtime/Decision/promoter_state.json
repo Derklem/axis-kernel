@@ -1,0 +1,28 @@
+﻿{
+    "schema":  "axis.promoter_state.v0.1",
+    "ts_utc":  "2026-02-14T19:54:35.7142757Z",
+    "run_id":  "PROM-20260214-195435-dc38e8c1",
+    "build":  "20260214-034040",
+    "queue":  "intent_queue",
+    "input_queue_file":  "D:\\Infinite\\Infinity\\Runtime\\Decision\\intent_queue.jsonl",
+    "promoted_queue_file":  "D:\\Infinite\\Infinity\\Runtime\\Decision\\promoted_queue.jsonl",
+    "cursor_file":  "D:\\Infinite\\Infinity\\Runtime\\Decision\\promoter_intent_queue_cursor.json",
+    "archive_file":  "D:\\Infinite\\Infinity\\Runtime\\Decision\\promoter_archive.jsonl",
+    "scan":  {
+                 "file_len":  2,
+                 "file_time":  "2026-02-14T00:33:44.3285478Z",
+                 "truncated_reset":  false,
+                 "abort_batch":  false
+             },
+    "counts":  {
+                   "lines_seen":  0,
+                   "valid_envelopes":  0,
+                   "invalid_envelopes":  0,
+                   "skipped_archived":  0,
+                   "promoted_count":  0
+               },
+    "pending_range":  {
+                          "oldest_ts_utc":  null,
+                          "newest_ts_utc":  null
+                      }
+}

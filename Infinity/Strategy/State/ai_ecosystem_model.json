@@ -1,0 +1,73 @@
+{
+    "last_updated_utc": "2026-05-18T05:28:42.791108+00:00",
+    "entities": {
+        "market_data": {
+            "first_discovery_utc": "2026-05-18T03:49:49.208458+00:00",
+            "last_seen_utc": "2026-05-18T05:28:42.791108+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 2
+        }
+    },
+    "claims": {
+        "3ad1e00380ad9dc767e9437b46cc8662c1114a4b628e1901c5a901f563aba8c3": {
+            "entity": "market_data",
+            "claim": "Current BTC Price is $68,420.50 USD.",
+            "claim_domain": "financial",
+            "source_type": "external_api",
+            "source_id": "coindesk",
+            "confidence": 0.857,
+            "artifact_type": "market_observation",
+            "last_verified_utc": "2026-05-18T05:28:42.791108+00:00",
+            "staleness_days": 0,
+            "probation_start_cycle": 507,
+            "admission_tension": 0.0,
+            "admission_source": {
+                "source_type": "external_api",
+                "source_id": "coindesk",
+                "source_key": "3b43c05fdedcc073195f8626411c44ab4b83684c72afea0a6bfc06d9b3ff09f8"
+            },
+            "unresolved_contradiction_count": 0,
+            "actionability_blockers": [],
+            "actionable": true,
+            "observation_count": 2,
+            "sources_v2": {
+                "3b43c05fdedcc073195f8626411c44ab4b83684c72afea0a6bfc06d9b3ff09f8": {
+                    "source_type": "external_api",
+                    "source_id": "coindesk",
+                    "last_seen_utc": "2026-05-18T05:28:42.791108+00:00",
+                    "weight": 0.7
+                }
+            }
+        },
+        "2d0ef6df2e3835c5b948d22a6e7feb870227ae71d503afd8c5d0e3f56ba911f8": {
+            "entity": "market_data",
+            "claim": "Current BTC Price is ,500.00 USD.",
+            "claim_domain": "financial",
+            "source_type": "external_api",
+            "source_id": "coindesk",
+            "confidence": 0.85,
+            "artifact_type": "market_observation",
+            "last_verified_utc": "2026-05-18T05:26:39.210441+00:00",
+            "staleness_days": 0,
+            "probation_start_cycle": 507,
+            "admission_tension": 0.0,
+            "admission_source": {
+                "source_type": "external_api",
+                "source_id": "coindesk",
+                "source_key": "3b43c05fdedcc073195f8626411c44ab4b83684c72afea0a6bfc06d9b3ff09f8"
+            },
+            "unresolved_contradiction_count": 0,
+            "actionability_blockers": [],
+            "actionable": true,
+            "observation_count": 1,
+            "sources_v2": {
+                "3b43c05fdedcc073195f8626411c44ab4b83684c72afea0a6bfc06d9b3ff09f8": {
+                    "source_type": "external_api",
+                    "source_id": "coindesk",
+                    "last_seen_utc": "2026-05-18T05:26:39.210441+00:00",
+                    "weight": 0.7
+                }
+            }
+        }
+    }
+}

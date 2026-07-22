@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-03-13T21:07:27.621214",
+  "metric_target": "latency_congestion_coefficient",
+  "resolved_value": 20.636,
+  "total_weight": 1.1912,
+  "observations_evaluated": [
+    {
+      "witness": "nexus_telemetry_agent",
+      "tier": "CRYPTOGRAPHIC_WITNESS",
+      "raw_value": 15.2,
+      "base_weight": 0.99,
+      "dynamic_score": 0.99,
+      "time_decay_multiplier": 0.999,
+      "final_weight": 0.9796
+    },
+    {
+      "witness": "legacy_log_parser",
+      "tier": "EXTERNAL_SIGNAL",
+      "raw_value": 45.8,
+      "base_weight": 0.5,
+      "dynamic_score": 0.45,
+      "time_decay_multiplier": 0.94,
+      "final_weight": 0.2116
+    }
+  ],
+  "primary_witness": "nexus_telemetry_agent"
+}

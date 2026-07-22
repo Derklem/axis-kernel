@@ -1,0 +1,28 @@
+{
+    "cycle_count": 505,
+    "mutation_type": "CANDIDATE_QUARANTINED",
+    "target_id": "2e8926ed6714aab8de460ebcab6ab6994560788e70ac32e9977ec434a9f4d3f2",
+    "parent_receipt_head": "bfba671f81e3bd0c0bcaddc0f9c825b7e0fd6e611fe401e77fc9d25cdb5d4061",
+    "data": {
+        "entity": "ecosystem_mapping_enginepy",
+        "claim": "[epistemic_intake] ecosystem_mapping_engine.py has 1040 lines, 1 oversized functions (>120 lines), debt_score=1.00. Target: Extract long methods for maintainability.",
+        "claim_domain": "structural_debt",
+        "source_id": "AXIS_NODE_LOCAL_01",
+        "source_type": "self_observation",
+        "artifact_type": "ecosystem_observation",
+        "batch_id": "none",
+        "provenance_note": "",
+        "confidence": 0.75,
+        "discovery_utc": "2026-05-13T01:07:40.891968+00:00",
+        "lineage": {
+            "node_id": "AXIS_NODE_LOCAL_01",
+            "engine_version": "Axis-v1.9.1b-Attested",
+            "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+            "node_attestation": "85a8ab273ac677eb376f2f3b3d444f226b3499a23b7879682772cc088ac6ce4b"
+        }
+    },
+    "status": "committed",
+    "ts_utc": "2026-05-13T01:07:40.891968+00:00",
+    "receipt_id": "model_delta_CANDIDATE_QUARANTINED_2e8926ed_03bf1ace",
+    "causal_hash": "03bf1aceea88060fbe9c80310fb8c1f498024dd05f1cc22c0ebf0eed016c63e3"
+}

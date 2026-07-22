@@ -1,0 +1,24 @@
+﻿package com.timeout.child
+
+import android.app.Activity
+import android.os.Bundle
+import com.timeout.core.lock.ActivityLockGate
+import com.timeout.core.lock.LockController
+import com.timeout.core.lock.SessionStore // Added import for the interface
+import com.timeout.core.lock.SessionStoreHolder
+
+class ChildMainActivity : Activity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        LockController(
+            // FIX: Explicitly cast the SessionStoreHolder object to its interface (SessionStore).
+            // This resolves the Type Mismatch error that occurs when passing a Kotlin object
+            // instance across module boundaries.
+            store = SessionStoreHolder as SessionStore,
+            gate = ActivityLockGate(this)
+        ).startCountdown(60)  // 60 seconds for testing
+
+        finish()
+    }
+}

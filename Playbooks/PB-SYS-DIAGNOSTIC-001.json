@@ -1,0 +1,86 @@
+{
+    "playbook_id": "PB-SYS-DIAGNOSTIC-001",
+    "name": "Axis System Diagnostic (Deep Scan)",
+    "description": "Deep system diagnostic verification (Heartbeat, Processes, Autonomy Inbox, Doctrine, Registry Guard).",
+    "version": 2,
+    "tags": [
+        "diagnostic",
+        "core"
+    ],
+    "autonomy_mode": "per_step",
+    "steps": [
+        {
+            "step_id": 1,
+            "tool": "LOG-Info",
+            "arguments": {
+                "Message": "PB-SYS-DIAGNOSTIC-001: Starting deep system diagnostic..."
+            },
+            "on_fail": "abort"
+        },
+        {
+            "step_id": 2,
+            "tool": "SYS-Info",
+            "arguments": {},
+            "on_fail": "continue"
+        },
+        {
+            "step_id": 3,
+            "tool": "SYS-ProcessList",
+            "arguments": {
+                "filter": "Axis_Heartbeat_Server"
+            },
+            "on_fail": "continue"
+        },
+        {
+            "step_id": 4,
+            "tool": "SYS-ProcessList",
+            "arguments": {
+                "filter": "Axis_Mind"
+            },
+            "on_fail": "continue"
+        },
+        {
+            "step_id": 5,
+            "tool": "SYS-ProcessList",
+            "arguments": {
+                "filter": "Earth_Server"
+            },
+            "on_fail": "continue"
+        },
+        {
+            "step_id": 6,
+            "tool": "FS-ReadFile",
+            "arguments": {
+                "path": "D:\\Infinite\\Infinity\\Autonomy\\Autonomy_Requests_Inbox.json",
+                "max_bytes": 16384
+            },
+            "on_fail": "continue"
+        },
+        {
+            "step_id": 7,
+            "tool": "FS-ReadFile",
+            "arguments": {
+                "path": "D:\\Infinite\\Infinity\\Doctrine\\Doctrine_Rules.json",
+                "max_bytes": 16384
+            },
+            "on_fail": "continue"
+        },
+        {
+            "step_id": 8,
+            "tool": "FS-ReadFile",
+            "arguments": {
+                "path": "D:\\Infinite\\Infinity\\Tool_Registry.json",
+                "max_bytes": 16384
+            },
+            "on_fail": "continue"
+        },
+        {
+            "step_id": 9,
+            "tool": "LOG-Info",
+            "arguments": {
+                "Message": "PB-SYS-DIAGNOSTIC-001: Deep diagnostic steps complete."
+            },
+            "on_fail": "continue"
+        }
+    ]
+}

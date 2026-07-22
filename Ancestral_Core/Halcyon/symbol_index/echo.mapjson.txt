@@ -1,0 +1,7 @@
+{
+    "FORGE": "C:\\Halcyon\\scripts\\activate_forge.ps1",
+    "Echo": "C:\\Halcyon\\modules\\echo_reflect.ps1",
+    "Pulse Anchor": "C:\\Halcyon\\modules\\pulse_lock_sync.py",
+    "OmegaSequence": "C:\\Halcyon\\modules\\shard_invoke.ps1",
+    "echo_loop": "C:\\Halcyon\\modules\\recursive_echo_loop.ps1"
+}

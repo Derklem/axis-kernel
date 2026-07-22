@@ -1,0 +1,4 @@
+[RELAY]
+Input = granted
+Output = responsive
+State = listening

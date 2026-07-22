@@ -1,0 +1,13 @@
+﻿{
+    "parameters":  {
+                       "seed":  "Connection"
+                   },
+    "id":  "REC-BALANCE-1832948677",
+    "type":  "SYSTEM_BALANCE",
+    "priority":  "HIGH",
+    "timestamp":  "2026-01-18T10:45:44.2403667-08:00",
+    "target":  "Axis_Spark",
+    "status":  "pending",
+    "reason":  "Resonance Field is Decaying. Injection of \u0027Connection\u0027 required for Equilibrium.",
+    "action":  "IGNITE_RISING"
+}

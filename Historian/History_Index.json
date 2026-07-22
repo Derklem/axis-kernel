@@ -1,0 +1,41 @@
+﻿{
+    "version":  1,
+    "cases":  [
+                  {
+                      "id":  "CASE-20260125-132704-NBGE",
+                      "created_at":  "2026-01-25T21:27:04.2869130Z",
+                      "theme":  "Arc: treaty_harmonization on DOC-AUTH-001",
+                      "severity":  "high",
+                      "status":  "open",
+                      "anchors":  {
+                                      "proposals":  [
+                                                        "PROP-REFLECT-20260124185602-7173"
+                                                    ],
+                                      "tasks":  [
+                                                    "TASK-CODER-20260125-131917-EWN5"
+                                                ],
+                                      "experiments":  [
+                                                          null
+                                                      ]
+                                  }
+                  },
+                  {
+                      "id":  "CASE-20260125-132704-IQQ1",
+                      "created_at":  "2026-01-25T21:27:04.2869130Z",
+                      "theme":  "Arc: doctrine_pruning on BAND-system",
+                      "severity":  "critical",
+                      "status":  "open",
+                      "anchors":  {
+                                      "proposals":  [
+                                                        "PROP-REFLECT-20260124185602-8303"
+                                                    ],
+                                      "tasks":  [
+                                                    "TASK-CODER-20260125-131917-EZKH"
+                                                ],
+                                      "experiments":  [
+                                                          null
+                                                      ]
+                                  }
+                  }
+              ]
+}

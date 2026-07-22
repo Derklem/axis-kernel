@@ -1,0 +1,23 @@
+
+{
+  "policy_id": "agenda_v1_uncertainty_age_cost",
+  "attention_cost_mapping": {
+    "negligible": 0,
+    "low": 2,
+    "acceptable": 5,
+    "high": 15,
+    "unacceptable": 100
+  },
+  "risk_penalty": {
+    "GREEN": 0,
+    "YELLOW": 3,
+    "RED": 10
+  },
+  "weights": {
+    "information_gain": 20.0,
+    "epistemic_debt_age_hours": 0.5,
+    "attention_cost": -1.0,
+    "estimated_compute_minutes": -0.1,
+    "risk_penalty": -1.0
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "version": "1.0",
+  "residual_risks": [
+    {
+      "risk": "Specification risk",
+      "description": "The system may faithfully execute bad goals if higher-level goals are poorly framed."
+    },
+    {
+      "risk": "Environment novelty",
+      "description": "Reality divergence catches model mismatch, but not every form of novel environment change instantly."
+    },
+    {
+      "risk": "Human semantic ambiguity",
+      "description": "Phase 46 hardens intent protocol, but humans can still formulate bad or confused legitimate intents."
+    },
+    {
+      "risk": "Objective misweighting",
+      "description": "Utility weights and strategic posture logic may still reflect imperfect preferences even when safely enforced."
+    },
+    {
+      "risk": "Slow cultural drift",
+      "description": "Institutional memory is advisory-only, but long-horizon summaries can still subtly bias search priorities over time."
+    }
+  ]
+}

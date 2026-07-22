@@ -1,0 +1,21 @@
+﻿Top 20 paths (Type / Size / Path)
+[File]    162  C:\ProgramData\Core_Memory_Blooms\memory_bloom_1279.sig
+[File]    162  C:\ProgramData\Core_Memory_Blooms\memory_bloom_1926.sig
+[File]    162  C:\ProgramData\Core_Memory_Blooms\memory_bloom_2852.sig
+[File]    162  C:\ProgramData\Core_Memory_Blooms\memory_bloom_3432.sig
+[File]    162  C:\ProgramData\Core_Memory_Blooms\memory_bloom_3483.sig
+[File]    162  C:\ProgramData\Core_Memory_Blooms\memory_bloom_3590.sig
+[File]    162  C:\ProgramData\Core_Memory_Blooms\memory_bloom_3848.sig
+[File]    162  C:\ProgramData\Core_Memory_Blooms\memory_bloom_4265.sig
+[File]    162  C:\ProgramData\Core_Memory_Blooms\memory_bloom_4514.sig
+[File]    162  C:\ProgramData\Core_Memory_Blooms\memory_bloom_4669.sig
+[File]    162  C:\ProgramData\Core_Memory_Blooms\memory_bloom_4725.sig
+[File]    162  C:\ProgramData\Core_Memory_Blooms\memory_bloom_4900.sig
+[File]    162  C:\ProgramData\Core_Memory_Blooms\memory_bloom_4992.sig
+[File]    162  C:\ProgramData\Core_Memory_Blooms\memory_bloom_6037.sig
+[File]    162  C:\ProgramData\Core_Memory_Blooms\memory_bloom_6753.sig
+[File]    162  C:\ProgramData\Core_Memory_Blooms\memory_bloom_7003.sig
+[File]    162  C:\ProgramData\Core_Memory_Blooms\memory_bloom_7177.sig
+[File]    162  C:\ProgramData\Core_Memory_Blooms\memory_bloom_7493.sig
+[File]    162  C:\ProgramData\Core_Memory_Blooms\memory_bloom_8513.sig
+[File]    162  C:\ProgramData\Core_Memory_Blooms\memory_bloom_8555.sig

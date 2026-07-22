@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "strategy_schema_version",
+    "decision_version",
+    "probe_threshold",
+    "minimum_evidence"
+  ],
+  "properties": {
+    "strategy_schema_version": {
+      "const": "1.0.0"
+    },
+    "decision_version": {
+      "const": "strategy-hello-v1"
+    },
+    "probe_threshold": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "minimum_evidence": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    }
+  }
+}

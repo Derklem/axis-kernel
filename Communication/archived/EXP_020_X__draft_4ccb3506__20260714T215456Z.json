@@ -1,0 +1,77 @@
+{
+  "experiment_id": "EXP_020_X",
+  "proposal_revision": 1,
+  "revision_history": [
+    {
+      "revision": 1,
+      "date": "2026-07-13T23:50:00Z",
+      "reason": "Initial proposal generation based on GPT's recommendation for a controlled, 30-post technical cadence on X."
+    }
+  ],
+  "lifecycle_state": "PROPOSED",
+  "authorization_state": "AUTHORIZED_FOR_DEPLOYMENT",
+  "intent": "Determine which technical domain (Technical governance, Local LLM engineering, Recovery architecture, Educational robotics) generates the highest sustained engagement on X under a highly controlled 30-post cadence.",
+  "hypothesis": "A controlled, fixed-cadence posting strategy isolating four distinct technical variables over 30 posts will reveal statistically significant differences in audience engagement, identifying which domain resonates most strongly with the target X audience.",
+  "experimental_design": {
+    "total_posts": 30,
+    "cadence": "1 post per day at 9:00 AM PST",
+    "phases": {
+      "calibration": "Days 1-7 (disregarded for final analysis to allow algorithmic baseline)",
+      "analysis": "Days 8-30"
+    },
+    "variables": [
+      "Experiment A: Technical governance",
+      "Experiment B: Local LLM engineering",
+      "Experiment C: Recovery architecture",
+      "Experiment D: Educational robotics"
+    ],
+    "control": "One variable changed at a time, fixed posting time, and rigidly standardized formatting.",
+    "standardized_post_structure": [
+      "1. Observation",
+      "2. Concrete engineering problem",
+      "3. One insight",
+      "4. One question"
+    ]
+  },
+  "metrics": {
+    "substantive_responses": {
+      "definition": "Replies containing technical questions, follow-on insights, or direct project links.",
+      "exclusions": [
+        "generic reactions (e.g., 'cool', 'following')",
+        "spam/bot replies"
+      ]
+    },
+    "contextual_denominators": {
+      "definition": "Contextual metrics to normalize the response rate and allow future comparative analysis.",
+      "fields": [
+        "impressions",
+        "profile_clicks",
+        "reposts",
+        "likes",
+        "character_count",
+        "contains_image",
+        "contains_code",
+        "contains_link",
+        "contains_question"
+      ]
+    },
+    "comparative_metrics": {
+      "reach": "total impressions per post",
+      "response_rate": "substantive responses per 1,000 impressions"
+    },
+    "success_criteria": "A topic is considered meaningfully stronger only if its substantive response rate exceeds the second-best category by at least 20% over at least 5 posts during the analysis phase."
+  },
+  "target": {
+    "platform": "X (Twitter)",
+    "community": "AI/ML practitioners, local LLM engineers, automation developers",
+    "posting_surface_type": "Personal Account (@DerekLamb29985)",
+    "posting_surface_reference": "x:DerekLamb29985",
+    "posting_surface_verified": false,
+    "rules_verified": false
+  },
+  "limitations": [
+    "The X algorithm is opaque and subject to unannounced changes.",
+    "Early posts may suffer from artificially low impressions until the algorithm calibrates to the account's technical niche.",
+    "Cross-pollination between topics is inevitable (e.g., a follower gained from Experiment B may engage with Experiment C)."
+  ]
+}

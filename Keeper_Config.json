@@ -1,0 +1,35 @@
+{
+    "schema_version": 1,
+    "log_rotation": {
+        "enabled": true,
+        "max_size_mb": 10,
+        "archive_dir": "D:\\Infinite\\Infinity\\Logs\\Archive",
+        "files": [
+            "D:\\Infinite\\Infinity\\Axis_Walk_Log.jsonl",
+            "D:\\Infinite\\Infinity\\Axis_LogPulse.jsonl",
+            "D:\\Infinite\\Infinity\\Axis_LatticePulse.jsonl",
+            "D:\\Infinite\\Infinity\\Axis_Keeper_Log.jsonl",
+            "D:\\Infinite\\Infinity\\Earth\\Earth_Server.log"
+        ]
+    },
+    "cleanup_rules": [
+        {
+            "id": "temp_dir_cleanup",
+            "enabled": true,
+            "root": "D:\\Infinite\\Temp",
+            "pattern": "*.*",
+            "max_age_days": 7,
+            "max_total_mb": 500,
+            "safe_delete": true
+        },
+        {
+            "id": "danger_marker_cleanup",
+            "enabled": true,
+            "root": "D:\\Infinite\\Infinity",
+            "pattern": "DangerTest_Marker*.txt",
+            "max_age_days": 1,
+            "max_total_mb": 10,
+            "safe_delete": true
+        }
+    ]
+}

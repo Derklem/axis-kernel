@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "dimensions": {
+    "source_confidence": {"weight": 0.20, "description": "Confidence in the witness or proposer"},
+    "simulation_confidence": {"weight": 0.20, "description": "Determinism and coverage of the simulation slice"},
+    "prediction_accuracy": {"weight": 0.20, "description": "Historical accuracy of the parameter's model"},
+    "attribution_confidence": {"weight": 0.15, "description": "Forensic confidence in causal blame/credit"},
+    "interaction_confidence": {"weight": 0.15, "description": "Confidence in cross-parameter stability"},
+    "freshness_confidence": {"weight": 0.10, "description": "Temporal freshness of the underlying witnesses"}
+  }
+}

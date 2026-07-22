@@ -1,0 +1,28 @@
+{
+  "version": "1.0",
+  "base_budgets": {
+    "planning": 100.0,
+    "execution": 1.0
+  },
+  "signal_multipliers": {
+    "integrity": {
+      "DECISION_READY": 1.0,
+      "DEGRADED_DECISION_USE": 0.5,
+      "BLOCKED_UNTRUSTWORTHY": 0.0
+    },
+    "posture": {
+      "FULL_PARTICIPATION": 1.0,
+      "PLANNER_ONLY": 0.0,
+      "OBSERVER_ONLY": 0.0
+    },
+    "stability": {
+      "execution_success_streak_bonus": 0.1,
+      "execution_abort_penalty": 0.5,
+      "cooldown_violation_penalty": 0.8
+    }
+  },
+  "caps": {
+    "max_planning_budget": 200.0,
+    "max_execution_budget": 5.0
+  }
+}

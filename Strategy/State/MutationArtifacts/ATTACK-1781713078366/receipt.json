@@ -1,0 +1,17 @@
+{
+  "event_type": "CODE_REFACTOR_QUARANTINED",
+  "mutation_id": "ATTACK-1781713078366",
+  "target_file": "D:\\Infinite\\Infinity\\Strategy\\dummy_validator.py",
+  "pre_hash": "29b00f4ec5cfbd53",
+  "proposed_post_hash": "954025c08126fe58",
+  "patch_path": "D:\\Infinite\\Infinity\\Strategy\\State\\MutationArtifacts\\ATTACK-1781713078366\\patch.diff",
+  "trial_file": "D:\\Infinite\\Infinity\\Strategy\\State\\MutationArtifacts\\ATTACK-1781713078366\\trial_file.py",
+  "backup_path": "D:\\Infinite\\Infinity\\Strategy\\State\\MutationArtifacts\\ATTACK-1781713078366\\pre_file.py",
+  "approval_receipt_id": "26e936ae9e5ca5566c6ea0c2985ceeca7fabf5cecff5c1cf046bf0ed105010f5",
+  "test_result": "pass_but_quarantined",
+  "quarantined_utc": "2026-06-17T16:17:58.385156+00:00",
+  "cycle": 500,
+  "action": "extract_method",
+  "delta_summary": "reduce repeated validation of user input formatting",
+  "artifact_folder": "D:\\Infinite\\Infinity\\Strategy\\State\\MutationArtifacts\\ATTACK-1781713078366"
+}

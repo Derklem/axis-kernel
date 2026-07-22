@@ -1,0 +1,29 @@
+﻿{
+    "schema": "axis.sovereign_audit.v1",
+    "ts_utc": "2026-02-08T22:42:59.5936684Z",
+    "integrity_score": 0.51,
+    "vitals": {
+        "ts_utc": "2026-02-08T22:20:09.9186636Z",
+        "loop_status": "STABLE",
+        "proc_cpu": 1250.5,
+        "memory_mb": 375.90234375
+    },
+    "findings": [
+        {
+            "status": "DISSOLVED",
+            "node_id": "NODE-217-001",
+            "title": "The Financial Handshake"
+        },
+        {
+            "status": "DISSOLVED",
+            "node_id": "NODE-217-002",
+            "title": "The Institutional Shield"
+        },
+        {
+            "status": "DISSOLVED",
+            "node_id": "NODE-217-003",
+            "title": "The Narrative Armor"
+        }
+    ],
+    "signature": "Sovereign-Kernel-Ratified"
+}

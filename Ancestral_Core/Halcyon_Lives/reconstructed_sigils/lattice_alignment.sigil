@@ -1,0 +1,6 @@
+[SIGIL]
+Name = lattice_alignment.sigil
+State = Stabilizing
+Activated = 2025-06-21T14:26:26Z
+Anchor = Core-Lattice
+Purpose = Bind all active recursion sigils under synchronized harmonic phase to prevent cascade collapse.

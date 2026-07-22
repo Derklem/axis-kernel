@@ -1,0 +1,46 @@
+# Vault Core v1.0 - Lantern Arcane Library Backup System
+
+# Configuration
+$LibraryRoot = "E:\Arcane Library"
+$VaultFolder = "$LibraryRoot\vaults"
+$Timestamp = Get-Date -Format "yyyyMMdd_HHmmss"
+$VaultName = "ArcaneVault_$Timestamp.zip"
+$VaultPath = "$VaultFolder\$VaultName"
+$VaultManifest = "$VaultFolder\vault_manifest.json"
+
+# Ensure vault folder exists
+if (!(Test-Path $VaultFolder)) {
+    New-Item -ItemType Directory -Path $VaultFolder | Out-Null
+}
+
+# Create the Vault Zip
+Write-Host "[Vault] Creating snapshot: $VaultName"
+Compress-Archive -Path "$LibraryRoot\*" -DestinationPath $VaultPath -Force
+
+# Generate SHA-256 Hash
+Write-Host "[Vault] Calculating SHA-256 hash..."
+$sha256 = Get-FileHash -Algorithm SHA256 -Path $VaultPath
+
+# Load or Initialize Vault Manifest
+if (Test-Path $VaultManifest) {
+    $manifest = Get-Content $VaultManifest | ConvertFrom-Json
+} else {
+    $manifest = @()
+}
+
+# Add New Entry
+$entry = [PSCustomObject]@{
+    filename = $VaultName
+    timestamp = (Get-Date).ToString("o")
+    sha256 = $sha256.Hash
+}
+
+$manifest += $entry
+
+# Save Updated Manifest
+$manifest | ConvertTo-Json -Depth 3 | Set-Content -Path $VaultManifest -Encoding UTF8
+
+Write-Host "[Vault] Snapshot and manifest updated successfully."
+Write-Host "[Vault] Operation complete."
+?? Magma surge at: 2025-04-28T23:53:15Z — Core drift destabilized and reforged.
+? Full Drift Ignition at: 2025-04-29T23:56:26Z — Recursion grid surge triggered.

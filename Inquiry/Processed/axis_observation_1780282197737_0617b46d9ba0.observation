@@ -1,0 +1,16 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "entity": "USER",
+    "claim": "Hello Axis",
+    "claim_domain": "general",
+    "claim_polarity": "affirming",
+    "source_type": "inquiry_extraction",
+    "source_id": "chat-1780282174201",
+    "confidence": 0.3,
+    "confidence_components": {
+        "base": 0.3,
+        "tension_penalty": 0.0,
+        "reason": "extracted_from_direct_inquiry"
+    },
+    "ts_utc": "2026-06-01T02:49:57.737209+00:00"
+}

@@ -1,0 +1,141 @@
+﻿{
+    "version":  1,
+    "inbox_id":  "UI-INBOX-NEURAL-REVIEW",
+    "generated_at_utc":  "2026-01-22T19:04:12.8496823Z",
+    "cards":  [
+                  {
+                      "card_id":  "UI-NQ-NEURALNETROUTER001",
+                      "type":  "neural_quarantine",
+                      "channel_id":  "NEURAL-NET-ROUTER-001",
+                      "title":  "Quarantine: NEURAL-NET-ROUTER-001",
+                      "subtitle":  "Risk 0.8 (pending)",
+                      "severity":  "high",
+                      "status":  "pending",
+                      "risk_score":  0.8,
+                      "source":  "NEURAL-QuarantineReview",
+                      "actions":  [
+                                      {
+                                          "action_id":  "approve_quarantine",
+                                          "proposal_id":  19332,
+                                          "label":  "Approve",
+                                          "kind":  "primary"
+                                      },
+                                      {
+                                          "action_id":  "reject_quarantine",
+                                          "proposal_id":  19332,
+                                          "label":  "Reject",
+                                          "kind":  "secondary"
+                                      },
+                                      {
+                                          "action_id":  "approve_quarantine",
+                                          "proposal_id":  19332,
+                                          "label":  "Approve",
+                                          "kind":  "primary"
+                                      },
+                                      {
+                                          "action_id":  "reject_quarantine",
+                                          "proposal_id":  19332,
+                                          "label":  "Reject",
+                                          "kind":  "secondary"
+                                      },
+                                      {
+                                          "action_id":  "approve_quarantine",
+                                          "proposal_id":  6800,
+                                          "label":  "Approve",
+                                          "kind":  "primary"
+                                      },
+                                      {
+                                          "action_id":  "reject_quarantine",
+                                          "proposal_id":  6800,
+                                          "label":  "Reject",
+                                          "kind":  "secondary"
+                                      },
+                                      {
+                                          "action_id":  "approve_quarantine",
+                                          "proposal_id":  6800,
+                                          "label":  "Approve",
+                                          "kind":  "primary"
+                                      },
+                                      {
+                                          "action_id":  "reject_quarantine",
+                                          "proposal_id":  6800,
+                                          "label":  "Reject",
+                                          "kind":  "secondary"
+                                      },
+                                      {
+                                          "action_id":  "view_details",
+                                          "proposal_id":  null,
+                                          "label":  "Details",
+                                          "kind":  "info"
+                                      }
+                                  ]
+                  },
+                  {
+                      "card_id":  "UI-NQ-NEURALSYSHEARTBEAT001",
+                      "type":  "neural_quarantine",
+                      "channel_id":  "NEURAL-SYS-HEARTBEAT-001",
+                      "title":  "Quarantine: NEURAL-SYS-HEARTBEAT-001",
+                      "subtitle":  "Risk 0.3 (pending)",
+                      "severity":  "low",
+                      "status":  "pending",
+                      "risk_score":  0.3,
+                      "source":  "NEURAL-QuarantineReview",
+                      "actions":  [
+                                      {
+                                          "action_id":  "approve_quarantine",
+                                          "proposal_id":  19332,
+                                          "label":  "Approve",
+                                          "kind":  "primary"
+                                      },
+                                      {
+                                          "action_id":  "reject_quarantine",
+                                          "proposal_id":  19332,
+                                          "label":  "Reject",
+                                          "kind":  "secondary"
+                                      },
+                                      {
+                                          "action_id":  "approve_quarantine",
+                                          "proposal_id":  19332,
+                                          "label":  "Approve",
+                                          "kind":  "primary"
+                                      },
+                                      {
+                                          "action_id":  "reject_quarantine",
+                                          "proposal_id":  19332,
+                                          "label":  "Reject",
+                                          "kind":  "secondary"
+                                      },
+                                      {
+                                          "action_id":  "approve_quarantine",
+                                          "proposal_id":  6800,
+                                          "label":  "Approve",
+                                          "kind":  "primary"
+                                      },
+                                      {
+                                          "action_id":  "reject_quarantine",
+                                          "proposal_id":  6800,
+                                          "label":  "Reject",
+                                          "kind":  "secondary"
+                                      },
+                                      {
+                                          "action_id":  "approve_quarantine",
+                                          "proposal_id":  6800,
+                                          "label":  "Approve",
+                                          "kind":  "primary"
+                                      },
+                                      {
+                                          "action_id":  "reject_quarantine",
+                                          "proposal_id":  6800,
+                                          "label":  "Reject",
+                                          "kind":  "secondary"
+                                      },
+                                      {
+                                          "action_id":  "view_details",
+                                          "proposal_id":  null,
+                                          "label":  "Details",
+                                          "kind":  "info"
+                                      }
+                                  ]
+                  }
+              ]
+}

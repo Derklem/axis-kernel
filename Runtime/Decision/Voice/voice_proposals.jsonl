@@ -1,0 +1,1 @@
+﻿{"schema":"axis.intent_envelope.v0.1","ts_utc":"2026-02-13T20:01:57.3955327Z","nonce":"de7b37d9-38f4-46eb-a31a-20c6da6f20c7","identity":"system:harness","intent_json":"{\"op\":\"noop:promoter_test\",\"val\":999}","signature":"hmac256:2902a205b75d7971373ede7fd7d77e1e0e2105903de50e3ac5c41fb23546b193"}

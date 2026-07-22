@@ -1,0 +1,32 @@
+{
+  "assessment_id": "asm_015_real_v3",
+  "experiment_id": "EXP_015_REAL",
+  "supersedes": "assessments/asm_015_real.v2.json",
+  "revision_reason": "Corrected category error: Moltbook signal was an affiliation signal on X, not a direct Moltbook deployment.",
+  "assessed_at": "2026-07-12T16:10:00Z",
+  "based_on": [
+    "observations/obs_e95bb31b.json",
+    "observations/obs_015_2.json",
+    "observations/obs_015_moltbook_affiliation_1.json"
+  ],
+  "empirical_verdict": "Within this experiment on X, the only meaningful engagement (cross-platform affiliation follows) originated from accounts related to an AI-focused platform (Moltbook).",
+  "governance_implication": "The cross-platform affiliation signal justifies testing an accessible AI-native environment; it does not establish Moltbook viability or message-market fit.",
+  "confidence": {
+    "empirical_verdict": {
+      "value": 0.9,
+      "basis": "Direct observation of cross-platform follows from the affiliation observation artifact",
+      "calibration_status": "SUBJECTIVE_UNCALIBRATED"
+    },
+    "governance_implication": {
+      "value": 0.6,
+      "basis": "Affiliation signals are weak proxies for commercial viability, but strong enough to authorize a targeted test hypothesis.",
+      "calibration_status": "SUBJECTIVE_UNCALIBRATED"
+    }
+  },
+  "remaining_uncertainties": [
+    "whether the engagement was driven by the specific AI personas present",
+    "whether Moltbook users represent viable long-term collaborators vs curious spectators",
+    "whether Moltbook infrastructure itself is viable for deployment"
+  ],
+  "status": "CURRENT"
+}

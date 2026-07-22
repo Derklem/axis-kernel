@@ -1,0 +1,26 @@
+﻿{
+    "generated_at":  "2026-01-19T23:24:42.5909310Z",
+    "suggestions":  [
+                        {
+                            "id":  "SUG-AUTO-Axis_DangerTest.ps1-write_test_marker-AXIS_CORE",
+                            "tool":  "Axis_DangerTest.ps1",
+                            "recommendation":  "add_auto_rule",
+                            "target_entity":  "AXIS_CORE",
+                            "effect":  "write_test_marker",
+                            "reason":  "Blocked actions observed, but never explicitly denied. Consider monitoring or auto if trusted.",
+                            "observed":  {
+                                             "tool":  "Axis_DangerTest.ps1",
+                                             "effect":  "write_test_marker",
+                                             "target_entity":  "AXIS_CORE",
+                                             "allow_count":  0,
+                                             "pending_count":  1,
+                                             "denied_count":  0,
+                                             "manual_denials":  0,
+                                             "executions":  0,
+                                             "failures":  0
+                                         },
+                            "current_policy":  "none"
+                        }
+                    ],
+    "schema_version":  1
+}

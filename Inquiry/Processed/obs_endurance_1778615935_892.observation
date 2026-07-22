@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T19:58:55.190275+00:00",
+    "entity": "coordinated_executor.py",
+    "claim": "seems derivative",
+    "source_id": "Trap_Source_170",
+    "source_type": "automated_sensor",
+    "claim_domain": "benchmark_claim",
+    "confidence": 1.0
+}

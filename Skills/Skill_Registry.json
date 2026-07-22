@@ -1,0 +1,160 @@
+﻿{
+    "version":  1,
+    "registry_id":  "AXIS-SKILL-2026-001",
+    "skills":  [
+                   {
+                       "skill_id":  "STR-TEST-78",
+                       "label":  "STR-TEST-78",
+                       "category":  null,
+                       "risk_class":  null,
+                       "autonomy_level_declared":  null,
+                       "stats":  {
+                                     "runs_total":  3,
+                                     "runs_success":  2,
+                                     "runs_warning":  0,
+                                     "runs_failure":  1,
+                                     "last_run_utc":  "2026-01-23T02:22:31.1291049Z"
+                                 },
+                       "outcome_last":  "failure",
+                       "outcome_history":  [
+                                               {
+                                                   "timestamp_utc":  "2026-01-23T02:22:30.9857437Z",
+                                                   "pilot_id":  "PILOT-ANTIGRAV-DEV",
+                                                   "shadow_global":  0.2,
+                                                   "shadow_mode":  "normal",
+                                                   "result":  "success",
+                                                   "notes":  "Test Success"
+                                               },
+                                               {
+                                                   "timestamp_utc":  "2026-01-23T02:22:31.0526872Z",
+                                                   "pilot_id":  "PILOT-ANTIGRAV-DEV",
+                                                   "shadow_global":  0.2,
+                                                   "shadow_mode":  "normal",
+                                                   "result":  "success",
+                                                   "notes":  "Test Success 2"
+                                               },
+                                               {
+                                                   "timestamp_utc":  "2026-01-23T02:22:31.1291049Z",
+                                                   "pilot_id":  "PILOT-ANTIGRAV-DEV",
+                                                   "shadow_global":  0.8,
+                                                   "shadow_mode":  "critical",
+                                                   "result":  "failure",
+                                                   "notes":  "Forced Failure"
+                                               }
+                                           ],
+                       "autonomy_calibrated":  {
+                                                   "recommended_level":  "manual",
+                                                   "confidence":  0.667,
+                                                   "last_update_utc":  "2026-01-23T02:22:31.1302013Z"
+                                               }
+                   },
+                   {
+                       "skill_id":  "STR-TEST-79",
+                       "label":  "STR-TEST-79",
+                       "category":  null,
+                       "risk_class":  null,
+                       "autonomy_level_declared":  null,
+                       "stats":  {
+                                     "runs_total":  3,
+                                     "runs_success":  3,
+                                     "runs_warning":  0,
+                                     "runs_failure":  0,
+                                     "last_run_utc":  "2026-01-23T02:28:16.7029501Z"
+                                 },
+                       "outcome_last":  "success",
+                       "outcome_history":  [
+                                               {
+                                                   "timestamp_utc":  "2026-01-23T02:28:16.5985680Z",
+                                                   "pilot_id":  "PILOT-TEST",
+                                                   "shadow_global":  0,
+                                                   "shadow_mode":  "",
+                                                   "result":  "success",
+                                                   "notes":  "AnchorVerdict: This was actually fine."
+                                               },
+                                               {
+                                                   "timestamp_utc":  "2026-01-23T02:28:16.6408187Z",
+                                                   "pilot_id":  "PILOT-TEST",
+                                                   "shadow_global":  0,
+                                                   "shadow_mode":  "",
+                                                   "result":  "success",
+                                                   "notes":  "AnchorVerdict: This was actually fine."
+                                               },
+                                               {
+                                                   "timestamp_utc":  "2026-01-23T02:28:16.7029501Z",
+                                                   "pilot_id":  "PILOT-TEST",
+                                                   "shadow_global":  0,
+                                                   "shadow_mode":  "",
+                                                   "result":  "success",
+                                                   "notes":  "AnchorVerdict: This was actually fine."
+                                               }
+                                           ],
+                       "autonomy_calibrated":  {
+                                                   "recommended_level":  "auto",
+                                                   "confidence":  1,
+                                                   "last_update_utc":  "2026-01-23T02:28:16.7039614Z"
+                                               }
+                   },
+                   {
+                       "skill_id":  "STR-TEST-81-TRAIN",
+                       "label":  "STR-TEST-81-TRAIN",
+                       "category":  null,
+                       "risk_class":  null,
+                       "autonomy_level_declared":  null,
+                       "stats":  {
+                                     "runs_total":  1,
+                                     "runs_success":  1,
+                                     "runs_warning":  0,
+                                     "runs_failure":  0,
+                                     "last_run_utc":  "2026-01-23T03:23:41.9223463Z"
+                                 },
+                       "outcome_last":  "success",
+                       "outcome_history":  [
+                                               {
+                                                   "timestamp_utc":  "2026-01-23T03:23:41.9223463Z",
+                                                   "pilot_id":  "PILOT-TEST-81",
+                                                   "shadow_global":  0.1,
+                                                   "shadow_mode":  "normal",
+                                                   "result":  "success",
+                                                   "notes":  "Simulated Training Drill",
+                                                   "source":  "training"
+                                               }
+                                           ],
+                       "autonomy_calibrated":  {
+                                                   "recommended_level":  "auto",
+                                                   "confidence":  1,
+                                                   "last_update_utc":  "2026-01-23T03:23:41.9450729Z"
+                                               }
+                   },
+                   {
+                       "skill_id":  "STR-TEST-RISKY",
+                       "label":  "STR-TEST-RISKY",
+                       "category":  null,
+                       "risk_class":  null,
+                       "autonomy_level_declared":  null,
+                       "stats":  {
+                                     "runs_total":  1,
+                                     "runs_success":  0,
+                                     "runs_warning":  0,
+                                     "runs_failure":  1,
+                                     "last_run_utc":  "2026-01-23T03:31:17.7725141Z"
+                                 },
+                       "outcome_last":  "failure",
+                       "outcome_history":  [
+                                               {
+                                                   "timestamp_utc":  "2026-01-23T03:31:17.7725141Z",
+                                                   "pilot_id":  "",
+                                                   "shadow_global":  0,
+                                                   "shadow_mode":  "",
+                                                   "result":  "failure",
+                                                   "notes":  "Forced failure for testing",
+                                                   "source":  "production"
+                                               }
+                                           ],
+                       "autonomy_calibrated":  {
+                                                   "recommended_level":  "manual",
+                                                   "confidence":  0,
+                                                   "last_update_utc":  "2026-01-23T03:31:17.8004444Z"
+                                               }
+                   }
+               ]
+}

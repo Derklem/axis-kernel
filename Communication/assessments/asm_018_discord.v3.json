@@ -1,0 +1,25 @@
+{
+  "assessment_id": "asm_018_discord_v3",
+  "experiment_id": "EXP_018_DISCORD",
+  "supersedes": "assessments/asm_018_discord.v2.json",
+  "revision_reason": "Late arrival of a substantive technical inquiry (Windsurf IDE bug report) two days after initial assessment.",
+  "assessed_at": "2026-07-14T19:28:00Z",
+  "based_on": [
+    "observations/obs_018_late_reply.json"
+  ],
+  "empirical_verdict": "The broadcast yielded a delayed but highly substantive technical inquiry regarding an AI IDE (Windsurf), indicating that general personal networks can produce relevant technical engagement if given sufficient time.",
+  "governance_implication": "Do not prematurely close observation windows on asynchronous platforms.",
+  "confidence": {
+    "empirical_verdict": {
+      "value": 0.95,
+      "basis": "Direct screenshot of late substantive reply from user Vermeses",
+      "calibration_status": "SUBJECTIVE_UNCALIBRATED"
+    },
+    "governance_implication": {
+      "value": 0.8,
+      "basis": "Direct demonstration of false negative caused by premature assessment.",
+      "calibration_status": "SUBJECTIVE_UNCALIBRATED"
+    }
+  },
+  "status": "CURRENT"
+}

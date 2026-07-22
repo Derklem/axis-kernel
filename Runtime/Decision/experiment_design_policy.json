@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "scoring_weights": {
+    "information_gain": 0.40,
+    "safety_score": 0.25,
+    "interpretability": 0.20,
+    "feasibility": 0.15
+  },
+  "safety_baseline_minimum": 0.60,
+  "execution_tiers": [
+    "SIMULATION_ONLY",
+    "SHADOW_EXECUTION",
+    "LIVE_ADVISORY"
+  ],
+  "governance_rules": [
+    "No experiment can self-authorize live execution",
+    "Experiments must explicitly state discriminant hypotheses",
+    "Information gain is rewarded for falsification potential over confirmation"
+  ],
+  "last_updated": "2026-03-14T11:00:00Z"
+}

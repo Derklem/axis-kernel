@@ -1,0 +1,7 @@
+{
+  "version": "1.0",
+  "minimum_floors": {
+    "stability": 0.75,
+    "epistemic_integrity": 0.85
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "obs_e95bb31b",
+  "receipt_id": "receipt_b0a37891",
+  "experiment_id": "EXP_015_REAL",
+  "summary": "2 impressions, 1 engagement, 1 detail expand. Zero replies.",
+  "execution_quality": "SUCCESS",
+  "hypothesis_result": "CONTRADICTS",
+  "next_smallest_experiment": "3",
+  "observed_at": "2026-07-09T04:43:35.797280+00:00"
+}

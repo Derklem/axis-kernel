@@ -1,0 +1,45 @@
+{
+    "version": 2,
+    "last_updated_utc": "2026-03-11T20:22:48.013786Z",
+    "competence_map": {
+        "SYS-Security-Hardening": {
+            "confidence": 0.8,
+            "success_rate": 0.9,
+            "success_rate_empirical": 0.9,
+            "uncertainty": 0.2,
+            "brier_mean_10": 0.05,
+            "run_count": 12
+        },
+        "PB-SYS-DIAGNOSTIC": {
+            "confidence": 0.9,
+            "success_rate": 0.95,
+            "success_rate_empirical": 0.95,
+            "uncertainty": 0.1,
+            "brier_mean_10": 0.02,
+            "run_count": 45
+        },
+        "Axis_DangerTest": {
+            "confidence": 0.37,
+            "success_rate": 1.0,
+            "success_rate_empirical": 0.531,
+            "uncertainty": 1.0,
+            "brier_mean_10": 0.476,
+            "run_count": 2
+        }
+    },
+    "objectives": [
+        {
+            "id": "OBJ-STABILITY",
+            "target": "stability_index",
+            "min_value": 60,
+            "priority": 1.0
+        },
+        {
+            "id": "OBJ-NOVELTY",
+            "target": "tool_entropy",
+            "min_value": 1.0,
+            "priority": 0.5
+        }
+    ],
+    "disposition": "curious_controlled"
+}

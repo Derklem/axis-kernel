@@ -1,0 +1,74 @@
+﻿
+D:\Infinite\Infinity\Anc
+estral_Core\AEGIS_Projec
+t\AEGIS\AEGIS_CORE\venv\
+Scripts\Activate.ps1:154
+:                if ("'"
+"".Contains($val.Substri
+ng(0, 1))) {
+D:\Infinite\Infinity\Anc
+estral_Core\AI_Projects\
+Halcyon_Development\venv
+\Scripts\Activate.ps1:15
+4:                if ("'
+""".Contains($val.Substr
+ing(0, 1))) {
+D:\Infinite\Infinity\Anc
+estral_Core\GPT-Memory\s
+cripts\build_index.ps1:1
+61:            if ($lowe
+r.Contains($kwLower)) {
+D:\Infinite\Infinity\Anc
+estral_Core\GPT-Memory_b
+ackup\scripts\build_inde
+x.ps1:161:            
+if ($lower.Contains($kwL
+ower)) {
+D:\Infinite\Infinity\Anc
+estral_Core\Halcyon\Sove
+reignEngine\watchdog.ps1
+:3:if (-not 
+\.Contains('GRANTED')) {
+D:\Infinite\Infinity\Run
+time\Decision\Voice\Voic
+e_Proposal_Promoter.ps1:
+94:        if ($promoted
+Ids.Contains($propId)) 
+{ 
+D:\Infinite\Infinity\Run
+time\Decision\Axis_Promo
+ter.ps1:347:    if ($blo
+ckedNonces.Contains($non
+ce)) {
+D:\Infinite\Infinity\Tru
+th_Engine\Research\TR01_
+SelectTargets.ps1:39:   
+         if ($usage.Cont
+ains($log.claim_id)) { 
+$currentUsage = 
+$usage[$log.claim_id] }
+D:\Infinite\Infinity\Tru
+th_Engine\Strategies\T10
+_TrustMapUpdate.ps1:89: 
+   if (-not $trust.items
+.Contains($key)) {
+D:\Infinite\Infinity\Tru
+th_Engine\Axis_Truth_Ser
+vice.ps1:23:        if (
+$Payload.Contains("Claim
+Id")) { $ClaimId = 
+$Payload["ClaimId"] }
+D:\Infinite\Infinity\Tru
+th_Engine\Axis_Truth_Ser
+vice.ps1:24:        if (
+$Payload.Contains("Claim
+Text")) { $ClaimText = 
+$Payload["ClaimText"] }
+D:\Infinite\Infinity\Tru
+th_Engine\Axis_Truth_Ser
+vice.ps1:25:        if (
+$Payload.Contains("Actio
+n")) { $Action = 
+$Payload["Action"] }
+
+

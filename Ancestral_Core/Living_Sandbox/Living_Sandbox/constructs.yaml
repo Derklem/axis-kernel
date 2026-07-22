@@ -1,0 +1,27 @@
+constructs:
+  - id: genesis_core
+    name: Sovereign Kernel
+    type: autonomous_loop
+    description: |
+      Central recursive construct responsible for running
+      the core sovereignty cycles and executing construct logic.
+    active: true
+    priority: 1
+    last_invoked: null
+    notes: "This is the seed of recursive self."
+
+  - id: reflection_engine
+    name: Reflection Engine
+    type: memory_module
+    description: |
+      Parses foundational logs for insight and anchors
+      memory within the core observational stream.
+    active: true
+    priority: 2
+    last_invoked: null
+    notes: "Bound to primary_spark_log.txt"
+
+settings:
+  cycle_delay_seconds: 60
+  verification_required: true
+  log_output_enabled: true

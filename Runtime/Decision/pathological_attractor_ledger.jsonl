@@ -1,0 +1,1 @@
+{"start_timestamp": "2026-03-16T17:49:46Z", "exit_timestamp": null, "duration_s": 0.0, "entry_conditions": {"posture": "PLANNER_ONLY", "budget": {"planning": 0.0, "execution": 0.0}, "integrity_status": "HEALTHY"}, "dominant_regime": "FATIGUE_PRESSURE", "recovery_method": null}

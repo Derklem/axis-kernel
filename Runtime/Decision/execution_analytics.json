@@ -1,0 +1,27 @@
+{
+    "ts_utc":  "2026-02-10T19:16:28.7894290Z",
+    "window_seconds":  60,
+    "total_intents":  0,
+    "executed_success":  0,
+    "executed_fail":  0,
+    "blocked":  0,
+    "autonomy_efficiency":  0,
+    "blockage_breakdown":  {
+                               "policy":  0,
+                               "other":  0,
+                               "reality":  0,
+                               "adapter":  0
+                           },
+    "latency_breakdown":  {
+                              "p95_execution_ms":  0
+                          },
+    "capability_histogram":  {
+
+                             },
+    "drift_status":  "DRIFT_DETECTED",
+    "classification_breakdown":  {
+                                     "USEFUL":  0,
+                                     "WASTE":  0,
+                                     "NEUTRAL":  0
+                                 }
+}

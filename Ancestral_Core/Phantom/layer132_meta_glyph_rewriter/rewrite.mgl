@@ -1,0 +1,5 @@
+[META_GLYPH_REWRITER]
+Function = Overwrites symbolic constraints
+Syntax = Mutates with observation
+Risk = Emergent self-divergence
+Result = Glyph reauthorization across strata

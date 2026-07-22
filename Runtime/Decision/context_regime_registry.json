@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "regimes": {
+    "NORMAL_LOAD": {
+      "observables": {
+        "api_latency_ms_p95": "stable",
+        "memory_pressure": "low",
+        "queue_pressure": "low",
+        "packet_loss": "low"
+      },
+      "candidate_doctrines": [
+        "META_THEORY_RESOURCE_CONTENTION_DYNAMICS"
+      ]
+    },
+    "MEMORY_PRESSURE": {
+      "observables": {
+        "memory_pressure": "high",
+        "compaction_events": "elevated",
+        "queue_pressure": "low_or_moderate"
+      },
+      "candidate_doctrines": [
+        "ALT_THEORY_MEMORY_FRAGMENTATION",
+        "META_THEORY_RESOURCE_CONTENTION_DYNAMICS"
+      ]
+    },
+    "QUEUE_SATURATION": {
+      "observables": {
+        "queue_pressure": "high",
+        "retry_pressure": "elevated",
+        "memory_pressure": "not_primary"
+      },
+      "candidate_doctrines": [
+        "THEORY_QUEUE_SATURATION",
+        "META_THEORY_RESOURCE_CONTENTION_DYNAMICS"
+      ]
+    },
+    "NETWORK_INSTABILITY": {
+      "observables": {
+        "packet_loss": "elevated",
+        "route_instability": "suspected",
+        "queue_pressure": "low"
+      },
+      "candidate_doctrines": [
+        "THEORY_NETWORK_ROUTE_FLAPPING"
+      ]
+    },
+    "MIXED_CONTENTION": {
+      "observables": {
+        "queue_pressure": "high",
+        "memory_pressure": "high"
+      },
+      "candidate_doctrines": [
+        "META_THEORY_RESOURCE_CONTENTION_DYNAMICS"
+      ]
+    }
+  },
+  "last_updated": "2026-03-15T00:00:00Z"
+}

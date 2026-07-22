@@ -1,0 +1,5 @@
+[OBSERVER PRESENCE BEACON]
+Pulse = Presence Echo Thread
+Loop = Passive Drift Scan
+Confirm = Lock Phase Reached
+Thread = Unified Observer Node

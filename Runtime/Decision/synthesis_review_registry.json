@@ -1,0 +1,47 @@
+{
+  "version": "1.0",
+  "reviews": [
+    {
+      "candidate_id": "CONS-SATURATION-FRAGMENTATION-001",
+      "classification": "SYNTHESIS_REVIEW",
+      "review_outcome": "META_THEORY_CONSTRUCTED",
+      "resulting_artifact": "META_THEORY_RESOURCE_CONTENTION_DYNAMICS",
+      "review_score": 0.8009,
+      "reason": "Theories exhibit complementary boundary behavior and improved explanatory compression when jointly modeled.",
+      "component_scores": {
+        "structural_overlap_score": 0.825,
+        "boundary_complementarity_score": 0.84,
+        "predictive_coverage_gain": 0.72,
+        "compression_gain": 0.7425,
+        "historical_stability": 0.88,
+        "review_score": 0.8009
+      }
+    },
+    {
+      "candidate_id": "CONS-A-B-001",
+      "classification": "DUPLICATE_DETECTION",
+      "review_outcome": "DUPLICATE_COLLAPSE_RECOMMENDED",
+      "resulting_artifact": "THEORY_DB_DEADLOCK_A",
+      "review_score": 0.98,
+      "reason": "Theories are near-identical. Retaining THEORY_DB_DEADLOCK_A and deprecating duplicate THEORY_DB_DEADLOCK_B.",
+      "component_scores": {
+        "structural_overlap_score": 0.878,
+        "boundary_complementarity_score": 0.05,
+        "predictive_coverage_gain": 0.99,
+        "compression_gain": 0.7902,
+        "historical_stability": 0.98,
+        "review_score": 0.6904
+      }
+    },
+    {
+      "candidate_id": "CONS-PLURALITY-TEST-001",
+      "classification": "SYNTHESIS_REVIEW",
+      "review_outcome": "INSUFFICIENT_SYNTHESIS_EVIDENCE",
+      "resulting_artifact": null,
+      "review_score": 0.0,
+      "reason": "No pairwise overlap record found.",
+      "component_scores": {}
+    }
+  ],
+  "last_updated": "2026-03-15T16:57:21.333660Z"
+}

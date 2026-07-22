@@ -1,0 +1,26 @@
+{
+  "version": "1.0",
+  "queue": [
+    {
+      "experiment_id": "6fa9361f-61a5-4474-8d51-1df6fd890295",
+      "target_parameter": "memory_allocation_limit",
+      "proposed_value": "simulate_constraint",
+      "expected_outcome_if_dominant": "No change to latency variance (Queue unaffected)",
+      "expected_outcome_if_rival": "Immediate latency spike (Compaction triggered)",
+      "dominant_theory": "THEORY_QUEUE_SATURATION",
+      "rival_theory": "ALT_THEORY_MEMORY_FRAGMENTATION",
+      "status": "PROCESSED"
+    },
+    {
+      "experiment_id": "3d18b5d6-cf45-474c-931f-b54e71311ff9",
+      "target_parameter": "memory_allocation_limit",
+      "proposed_value": "simulate_constraint",
+      "expected_outcome_if_dominant": "No change to latency variance (Queue unaffected)",
+      "expected_outcome_if_rival": "Immediate latency spike (Compaction triggered)",
+      "dominant_theory": "ALT_THEORY_MEMORY_FRAGMENTATION",
+      "rival_theory": "ALT_ALT_THEORY_MEMORY_FRAGMENTATION",
+      "status": "PROCESSED"
+    }
+  ],
+  "last_updated": "2026-03-14T17:58:35.833593Z"
+}

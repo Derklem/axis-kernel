@@ -1,0 +1,60 @@
+{
+    "version": 1,
+    "anchor_id": "1569",
+    "endpoints": [
+        {
+            "id": "search_google",
+            "host": "www.google.com",
+            "type": "search",
+            "allowed_paths": [
+                "/search"
+            ],
+            "methods": [
+                "GET"
+            ],
+            "max_requests_per_hour": 10,
+            "risk": "medium"
+        },
+        {
+            "id": "kb_wikipedia",
+            "host": "en.wikipedia.org",
+            "type": "knowledge",
+            "allowed_paths": [
+                "/w/api.php"
+            ],
+            "methods": [
+                "GET"
+            ],
+            "max_requests_per_hour": 20,
+            "risk": "medium"
+        },
+        {
+            "id": "wx_noaa",
+            "host": "api.weather.gov",
+            "type": "weather",
+            "allowed_paths": [
+                "/gridpoints/*",
+                "/alerts/*"
+            ],
+            "methods": [
+                "GET"
+            ],
+            "max_requests_per_hour": 30,
+            "risk": "medium"
+        },
+        {
+            "id": "space_weather_noaa",
+            "host": "services.swpc.noaa.gov",
+            "type": "space_weather",
+            "allowed_paths": [
+                "/products/*",
+                "/text/*"
+            ],
+            "methods": [
+                "GET"
+            ],
+            "max_requests_per_hour": 10,
+            "risk": "medium"
+        }
+    ]
+}

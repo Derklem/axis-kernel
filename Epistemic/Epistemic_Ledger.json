@@ -1,0 +1,273 @@
+﻿{
+    "version":  1,
+    "last_updated":  "2026-01-26T05:15:57.1231910Z",
+    "epistemic_state":  {
+                            "observations_count":  0,
+                            "claims_count":  5,
+                            "hypotheses_count":  0,
+                            "theories_count":  0,
+                            "beliefs_count":  15
+                        },
+    "objects":  [
+                    {
+                        "id":  "EPI-CLA-d860b8cc",
+                        "type":  "claim",
+                        "content":  "PROP-1000 is safe",
+                        "source":  "PEER-TEST",
+                        "confidence":  0.5,
+                        "created_at":  "2026-01-26T04:43:51.0526547Z",
+                        "updated_at":  "2026-01-26T04:43:51.0546000Z",
+                        "provenance_chain":  [
+                                                 "PEER-TEST"
+                                             ],
+                        "validation_status":  "pending"
+                    },
+                    {
+                        "id":  "EPI-CLA-a3a392ed",
+                        "type":  "claim",
+                        "content":  "PROP-1000 is safe",
+                        "source":  "PEER-TEST",
+                        "confidence":  0.5,
+                        "created_at":  "2026-01-26T04:44:10.5473452Z",
+                        "updated_at":  "2026-01-26T04:44:10.5503852Z",
+                        "provenance_chain":  [
+                                                 "PEER-TEST"
+                                             ],
+                        "validation_status":  "pending"
+                    },
+                    {
+                        "id":  "EPI-CLA-987547d0",
+                        "type":  "claim",
+                        "content":  "PROP-1000 is safe",
+                        "source":  "CUSTODIAN",
+                        "confidence":  0.5,
+                        "created_at":  "2026-01-26T04:44:32.5555048Z",
+                        "updated_at":  "2026-01-26T04:44:32.5588158Z",
+                        "provenance_chain":  [
+                                                 "CUSTODIAN"
+                                             ],
+                        "validation_status":  "pending"
+                    },
+                    {
+                        "id":  "EPI-CLA-0a3d4123",
+                        "type":  "claim",
+                        "content":  "PROP-1000 is safe",
+                        "source":  "CUSTODIAN",
+                        "confidence":  0.5,
+                        "created_at":  "2026-01-26T04:44:57.3671028Z",
+                        "updated_at":  "2026-01-26T04:44:57.3701085Z",
+                        "provenance_chain":  [
+                                                 "CUSTODIAN"
+                                             ],
+                        "validation_status":  "pending"
+                    },
+                    {
+                        "id":  "EPI-CLA-e4f12a8d",
+                        "type":  "claim",
+                        "content":  "PROP-EPI-PASS is verified",
+                        "source":  "CUSTODIAN",
+                        "confidence":  0.98,
+                        "created_at":  "2026-01-26T04:44:57.7283788Z",
+                        "updated_at":  "2026-01-26T04:44:57.7283788Z",
+                        "provenance_chain":  [
+                                                 "CUSTODIAN"
+                                             ],
+                        "validation_status":  "pending"
+                    },
+                    {
+                        "id":  "EPI-BEL-52bdf4ae",
+                        "type":  "belief",
+                        "content":  "TEST-PASS-1000 is verified",
+                        "source":  "CUSTODIAN",
+                        "confidence":  0.98,
+                        "created_at":  "2026-01-26T04:45:24.8488990Z",
+                        "updated_at":  "2026-01-26T04:45:24.8519925Z",
+                        "provenance_chain":  [
+                                                 "CUSTODIAN"
+                                             ],
+                        "validation_status":  "pending"
+                    },
+                    {
+                        "id":  "EPI-BEL-920d4044",
+                        "type":  "belief",
+                        "content":  "TEST-BLOCK-EPI is verified",
+                        "source":  "CUSTODIAN",
+                        "confidence":  0.99,
+                        "created_at":  "2026-01-26T04:54:36.0271718Z",
+                        "updated_at":  "2026-01-26T04:54:36.0271718Z",
+                        "provenance_chain":  [
+                                                 "CUSTODIAN"
+                                             ],
+                        "validation_status":  "pending"
+                    },
+                    {
+                        "id":  "EPI-BEL-2537641c",
+                        "type":  "belief",
+                        "content":  "TEST-BLOCK-EPI is verified",
+                        "source":  "CUSTODIAN",
+                        "confidence":  0.99,
+                        "created_at":  "2026-01-26T04:54:51.7119889Z",
+                        "updated_at":  "2026-01-26T04:54:51.7119889Z",
+                        "provenance_chain":  [
+                                                 "CUSTODIAN"
+                                             ],
+                        "validation_status":  "pending"
+                    },
+                    {
+                        "id":  "EPI-BEL-c1eb7263",
+                        "type":  "belief",
+                        "content":  "TEST-BLOCK-EPI is verified",
+                        "source":  "CUSTODIAN",
+                        "confidence":  0.99,
+                        "created_at":  "2026-01-26T04:55:13.1101883Z",
+                        "updated_at":  "2026-01-26T04:55:13.1101883Z",
+                        "provenance_chain":  [
+                                                 "CUSTODIAN"
+                                             ],
+                        "validation_status":  "pending"
+                    },
+                    {
+                        "id":  "EPI-BEL-7c11f7f7",
+                        "type":  "belief",
+                        "content":  "TEST-BLOCK-GOV is verified",
+                        "source":  "CUSTODIAN",
+                        "confidence":  0.99,
+                        "created_at":  "2026-01-26T04:55:13.4868665Z",
+                        "updated_at":  "2026-01-26T04:55:13.4868665Z",
+                        "provenance_chain":  [
+                                                 "CUSTODIAN"
+                                             ],
+                        "validation_status":  "pending"
+                    },
+                    {
+                        "id":  "EPI-BEL-d0fb713e",
+                        "type":  "belief",
+                        "content":  "TEST-PASS-SUPRA is verified",
+                        "source":  "CUSTODIAN",
+                        "confidence":  0.99,
+                        "created_at":  "2026-01-26T04:55:13.6397876Z",
+                        "updated_at":  "2026-01-26T04:55:13.6397876Z",
+                        "provenance_chain":  [
+                                                 "CUSTODIAN"
+                                             ],
+                        "validation_status":  "pending"
+                    },
+                    {
+                        "id":  "EPI-BEL-751932ad",
+                        "type":  "belief",
+                        "content":  "TEST-BLOCK-EPI is verified",
+                        "source":  "CUSTODIAN",
+                        "confidence":  0.99,
+                        "created_at":  "2026-01-26T04:55:45.7968706Z",
+                        "updated_at":  "2026-01-26T04:55:45.7968706Z",
+                        "provenance_chain":  [
+                                                 "CUSTODIAN"
+                                             ],
+                        "validation_status":  "pending"
+                    },
+                    {
+                        "id":  "EPI-BEL-8ebb7cdf",
+                        "type":  "belief",
+                        "content":  "TEST-BLOCK-GOV is verified",
+                        "source":  "CUSTODIAN",
+                        "confidence":  0.99,
+                        "created_at":  "2026-01-26T04:55:46.1456530Z",
+                        "updated_at":  "2026-01-26T04:55:46.1456530Z",
+                        "provenance_chain":  [
+                                                 "CUSTODIAN"
+                                             ],
+                        "validation_status":  "pending"
+                    },
+                    {
+                        "id":  "EPI-BEL-a873884d",
+                        "type":  "belief",
+                        "content":  "TEST-PASS-SUPRA is verified",
+                        "source":  "CUSTODIAN",
+                        "confidence":  0.99,
+                        "created_at":  "2026-01-26T04:55:46.2783351Z",
+                        "updated_at":  "2026-01-26T04:55:46.2783351Z",
+                        "provenance_chain":  [
+                                                 "CUSTODIAN"
+                                             ],
+                        "validation_status":  "pending"
+                    },
+                    {
+                        "id":  "EPI-BEL-560c846d",
+                        "type":  "belief",
+                        "content":  "TEST-BLOCK-EPI is verified",
+                        "source":  "CUSTODIAN",
+                        "confidence":  0.99,
+                        "created_at":  "2026-01-26T04:56:18.0783441Z",
+                        "updated_at":  "2026-01-26T04:56:18.0783441Z",
+                        "provenance_chain":  [
+                                                 "CUSTODIAN"
+                                             ],
+                        "validation_status":  "pending"
+                    },
+                    {
+                        "id":  "EPI-BEL-cf8f7536",
+                        "type":  "belief",
+                        "content":  "TEST-BLOCK-GOV is verified",
+                        "source":  "CUSTODIAN",
+                        "confidence":  0.99,
+                        "created_at":  "2026-01-26T04:56:18.4416251Z",
+                        "updated_at":  "2026-01-26T04:56:18.4416251Z",
+                        "provenance_chain":  [
+                                                 "CUSTODIAN"
+                                             ],
+                        "validation_status":  "pending"
+                    },
+                    {
+                        "id":  "EPI-BEL-7355fbaa",
+                        "type":  "belief",
+                        "content":  "TEST-BLOCK-INV-EPI is verified",
+                        "source":  "CUSTODIAN",
+                        "confidence":  0.99,
+                        "created_at":  "2026-01-26T05:02:39.7864385Z",
+                        "updated_at":  "2026-01-26T05:02:39.7864385Z",
+                        "provenance_chain":  [
+                                                 "CUSTODIAN"
+                                             ],
+                        "validation_status":  "pending"
+                    },
+                    {
+                        "id":  "EPI-BEL-93eeb8e2",
+                        "type":  "belief",
+                        "content":  "TEST-TENSION-20260125211512 is potentially useful but ungrounded",
+                        "source":  "INVENTOR",
+                        "confidence":  0.6,
+                        "created_at":  "2026-01-26T05:15:12.8154600Z",
+                        "updated_at":  "2026-01-26T05:15:12.8175496Z",
+                        "provenance_chain":  [
+                                                 "INVENTOR"
+                                             ],
+                        "validation_status":  "pending"
+                    },
+                    {
+                        "id":  "EPI-BEL-47a0f7f6",
+                        "type":  "belief",
+                        "content":  "TEST-TENSION-20260125211540 is potentially useful but ungrounded",
+                        "source":  "INVENTOR",
+                        "confidence":  0.6,
+                        "created_at":  "2026-01-26T05:15:40.9522411Z",
+                        "updated_at":  "2026-01-26T05:15:40.9532439Z",
+                        "provenance_chain":  [
+                                                 "INVENTOR"
+                                             ],
+                        "validation_status":  "pending"
+                    },
+                    {
+                        "id":  "EPI-BEL-f26b3a3a",
+                        "type":  "belief",
+                        "content":  "TEST-TENSION-20260125211557 is potentially useful but ungrounded",
+                        "source":  "INVENTOR",
+                        "confidence":  0.6,
+                        "created_at":  "2026-01-26T05:15:57.0993049Z",
+                        "updated_at":  "2026-01-26T05:15:57.0993049Z",
+                        "provenance_chain":  [
+                                                 "INVENTOR"
+                                             ],
+                        "validation_status":  "pending"
+                    }
+                ]
+}

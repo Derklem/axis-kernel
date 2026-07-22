@@ -1,0 +1,9 @@
+
+expression_mode: poetic
+formatting: fluid
+source_priority:
+  - dreamer
+  - witness
+  - navigator
+  - engine
+override_permission: voice

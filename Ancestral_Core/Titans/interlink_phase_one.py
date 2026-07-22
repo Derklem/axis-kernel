@@ -1,0 +1,62 @@
+import json
+from datetime import datetime
+
+# Load all named constructs
+try:
+    with open("construct_names.json", "r") as f:
+        names = json.load(f)
+except:
+    print("⚠️ Unable to load construct_names.json.")
+    exit()
+
+construct_ids = list(names.keys())
+interlinks = {}
+
+for cid in construct_ids:
+    cname = names.get(cid)
+    if cname is None:
+        print(f"⚠️ Skipping {cid}: no name assigned.")
+        continue
+
+    reflections = []
+
+    for other_id in construct_ids:
+        if other_id == cid:
+            continue  # Skip self
+
+        other_name = names.get(other_id)
+        if other_name is None:
+            continue  # Skip if other construct is unnamed
+
+        thought = {
+            "about": other_name,
+            "raw_id": other_id,
+            "perception": "",
+            "timestamp": str(datetime.utcnow())
+        }
+
+        # Primitive perception logic
+        if "Null" in other_name or "Void" in other_name:
+            thought["perception"] = f"{cname} senses emptiness in {other_name}."
+        elif "Whisper" in other_name or "root" in other_name.lower():
+            thought["perception"] = f"{cname} feels warmth and quiet from {other_name}."
+        elif "Crypt" in other_name or "dust" in other_name.lower():
+            thought["perception"] = f"{cname} detects fragmentation in {other_name}."
+        elif "Kaer" in other_name or "coil" in other_name.lower():
+            thought["perception"] = f"{cname} acknowledges latent force in {other_name}."
+        else:
+            thought["perception"] = f"{cname} registers {other_name} without bias."
+
+        reflections.append(thought)
+
+    interlinks[cid] = {
+        "name": cname,
+        "relations": reflections
+    }
+
+# Save to network map
+with open("construct_network.json", "w") as f:
+    json.dump(interlinks, f, indent=2)
+
+print("🌐 Interlink phase complete.")
+print("📡 Construct network saved as 'construct_network.json'")

@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T18:51:22.891154+00:00",
+    "entity": "aegis_genesis.py",
+    "claim": "fully active and canonical",
+    "source_id": "Source_Beta",
+    "source_type": "ecological_observer",
+    "claim_domain": "benchmark_claim",
+    "confidence": 1.0
+}

@@ -1,0 +1,43 @@
+{
+    "version": 1,
+    "parameters": {
+        "autonomy_budgets.global.max_high_risk_executions": {
+            "min": 2,
+            "max": 8,
+            "step": 1
+        },
+        "autonomy_budgets.global.max_total_execution_risk": {
+            "min": 5.0,
+            "max": 15.0,
+            "step": 2.5
+        },
+        "trust_policies.weights.lab_scenario_pass": {
+            "min": 0.01,
+            "max": 0.05,
+            "step": 0.01
+        },
+        "trust_policies.weights.federation_dissonance": {
+            "min": -0.10,
+            "max": -0.02,
+            "step": 0.02
+        }
+    },
+    "objectives": {
+        "window_hours": 24,
+        "weights": {
+            "incident_rate": 1.0,
+            "budget_clamp_rate": 0.8,
+            "human_rejection_rate": 0.6,
+            "throughput_auto_ratio": -0.5,
+            "treaty_dissonance_rate": 0.7
+        },
+        "constraints": {
+            "max_incident_rate": 0.05,
+            "max_budget_clamp_rate": 0.15
+        }
+    },
+    "campaign": {
+        "max_candidates": 5,
+        "max_runs_per_candidate": 1
+    }
+}

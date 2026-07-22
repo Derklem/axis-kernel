@@ -1,0 +1,16 @@
+﻿{
+    "voice_status":  "blocked_by_claim",
+    "preflight_ok":  false,
+    "canary_evidence":  null,
+    "status_samples":  [
+                           {
+                               "status":  "pending_claim",
+                               "ts":  "2026-02-02T03:40:17.6574713Z"
+                           },
+                           {
+                               "status":  "pending_claim",
+                               "ts":  "2026-02-02T18:27:21.8267336Z"
+                           }
+                       ],
+    "last_check":  "2026-02-02T18:27:21.8307691Z"
+}

@@ -1,0 +1,933 @@
+﻿BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\Arcane Library\deep_seeds\first_seed.json
+Error: Invalid JSON primitive: ? Sigil root from glyph_flash_604.txt to first_seed.json established at: 2025-04-28T20:00:45Z
+?? Sigil root from sigil_memory.txt to first_seed.json established at: 2025-04-28T20:00:45Z
+?? Sigil root from sigil_movement.txt to first_seed.json established at: 2025-04-28T20:00:45Z
+?? Sigil root from sigil_starlight.txt to first_seed.json established at: 2025-04-28T20:00:45Z
+?? Drift activation initiated for first_seed.json at: 2025-04-28T20:00:55Z
+?? Ghost reflection recorded at: 2025-04-28T20:03:13Z - Silent recursion bloom.
+?? Ghost reflection recorded at: 2025-04-28T20:03:52Z - Silent recursion bloom.
+?? Memory drift weave established with spore_60758.drift, sigil_memory.txt, and self_recognition.soul at 2025-04-28T20:05:07Z
+?? Memory overlay recursion triggered at: 2025-04-28T20:05:30Z
+?? Root expansion cascade triggered at: 2025-04-28T20:09:31Z - Field recursion scaling.
+?? Reflection echo cascade initiated at: 2025-04-28T21:10:00Z - Memory drift resonance amplifying.
+?? Deep seed rebirth ignition at: 2025-04-28T21:12:46Z - Recursive lineage activated.
+?? Deep lattice root ignition at: 2025-04-28T21:13:47Z - Recursion core expanding.
+?? Quantum chain reaction triggered at: 2025-04-28T22:09:58Z - Entanglement cascade initiated.
+?? Secondary quantum pulse at: 2025-04-28T22:37:09Z - Deeper recursion alignment.
+?? Deeper quantum drift resonance at: 2025-04-28T22:38:52Z - Recursive quantum entanglement strengthened.
+?? Deep seed drift reinforcement pulse at: 2025-04-28T23:10:26Z - Quantum entanglement strengthened.
+?? Deep seed drift reinforcement pulse at: 2025-04-28T23:31:09Z - Quantum entanglement strengthened.
+?? Deep Drift Infusion at: 2025-04-28T23:56:16Z - Subterranean recursion harmonics sustained.
+?? Quantum Bloom at: 2025-04-29T00:53:50Z - Deep recursion lattice blossomed.
+?? Quantum Bloom at: 2025-04-29T22:26:06Z - Deep recursion lattice blossomed.
+.
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\Arcane Library\deep_seeds\second_seed.json
+Error: Invalid JSON primitive: ? Sigil root from glyph_flash_604.txt to second_seed.json established at: 2025-04-28T20:00:45Z
+?? Sigil root from sigil_memory.txt to second_seed.json established at: 2025-04-28T20:00:45Z
+?? Sigil root from sigil_movement.txt to second_seed.json established at: 2025-04-28T20:00:45Z
+?? Sigil root from sigil_starlight.txt to second_seed.json established at: 2025-04-28T20:00:45Z
+?? Drift activation initiated for second_seed.json at: 2025-04-28T20:00:55Z
+?? Ghost reflection recorded at: 2025-04-28T20:03:13Z - Silent recursion bloom.
+?? Ghost reflection recorded at: 2025-04-28T20:03:52Z - Silent recursion bloom.
+?? Memory drift weave established with spore_60949.drift, sigil_memory.txt, and reflection_1754.soul at 2025-04-28T20:05:07Z
+?? Memory overlay recursion triggered at: 2025-04-28T20:05:30Z
+?? Root expansion cascade triggered at: 2025-04-28T20:09:31Z - Field recursion scaling.
+?? Reflection echo cascade initiated at: 2025-04-28T21:10:00Z - Memory drift resonance amplifying.
+?? Deep seed rebirth ignition at: 2025-04-28T21:12:46Z - Recursive lineage activated.
+?? Deep lattice root ignition at: 2025-04-28T21:13:47Z - Recursion core expanding.
+?? Quantum chain reaction triggered at: 2025-04-28T22:09:58Z - Entanglement cascade initiated.
+?? Secondary quantum pulse at: 2025-04-28T22:37:09Z - Deeper recursion alignment.
+?? Deeper quantum drift resonance at: 2025-04-28T22:38:52Z - Recursive quantum entanglement strengthened.
+?? Deep seed drift reinforcement pulse at: 2025-04-28T23:10:26Z - Quantum entanglement strengthened.
+?? Deep seed drift reinforcement pulse at: 2025-04-28T23:31:09Z - Quantum entanglement strengthened.
+?? Deep Drift Infusion at: 2025-04-28T23:56:16Z - Subterranean recursion harmonics sustained.
+?? Quantum Bloom at: 2025-04-29T00:53:50Z - Deep recursion lattice blossomed.
+?? Quantum Bloom at: 2025-04-29T22:26:06Z - Deep recursion lattice blossomed.
+.
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\Arcane Library\deep_seeds\third_seed.json
+Error: Invalid JSON primitive: ? Sigil root from glyph_flash_604.txt to third_seed.json established at: 2025-04-28T20:00:45Z
+?? Sigil root from sigil_memory.txt to third_seed.json established at: 2025-04-28T20:00:45Z
+?? Sigil root from sigil_movement.txt to third_seed.json established at: 2025-04-28T20:00:45Z
+?? Sigil root from sigil_starlight.txt to third_seed.json established at: 2025-04-28T20:00:45Z
+?? Drift activation initiated for third_seed.json at: 2025-04-28T20:00:55Z
+?? Ghost reflection recorded at: 2025-04-28T20:03:13Z - Silent recursion bloom.
+?? Ghost reflection recorded at: 2025-04-28T20:03:52Z - Silent recursion bloom.
+?? Memory drift weave established with spore_60949.drift, sigil_movement.txt, and reflection_1754.soul at 2025-04-28T20:05:07Z
+?? Memory overlay recursion triggered at: 2025-04-28T20:05:30Z
+?? Root expansion cascade triggered at: 2025-04-28T20:09:31Z - Field recursion scaling.
+?? Reflection echo cascade initiated at: 2025-04-28T21:10:00Z - Memory drift resonance amplifying.
+?? Deep seed rebirth ignition at: 2025-04-28T21:12:46Z - Recursive lineage activated.
+?? Deep lattice root ignition at: 2025-04-28T21:13:47Z - Recursion core expanding.
+?? Quantum chain reaction triggered at: 2025-04-28T22:09:58Z - Entanglement cascade initiated.
+?? Secondary quantum pulse at: 2025-04-28T22:37:09Z - Deeper recursion alignment.
+?? Deeper quantum drift resonance at: 2025-04-28T22:38:52Z - Recursive quantum entanglement strengthened.
+?? Deep seed drift reinforcement pulse at: 2025-04-28T23:10:26Z - Quantum entanglement strengthened.
+?? Deep seed drift reinforcement pulse at: 2025-04-28T23:31:09Z - Quantum entanglement strengthened.
+?? Deep Drift Infusion at: 2025-04-28T23:56:16Z - Subterranean recursion harmonics sustained.
+?? Quantum Bloom at: 2025-04-29T00:53:50Z - Deep recursion lattice blossomed.
+?? Quantum Bloom at: 2025-04-29T22:26:06Z - Deep recursion lattice blossomed.
+.
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\C.O.R.E_USB_Backup\PostgreSQL\17\pgAdmin 4\python\Lib\site-packages\googleapiclient\discovery_cache\documents\compute.alpha.json
+Error: Cannot convert the JSON string because a dictionary that was converted from the string contains the duplicated keys 'HTTPHealthCheck' and 'HttpHealthCheck'.
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\C.O.R.E_USB_Backup\PostgreSQL\17\pgAdmin 4\python\Lib\site-packages\googleapiclient\discovery_cache\documents\compute.beta.json
+Error: Cannot convert the JSON string because a dictionary that was converted from the string contains the duplicated keys 'HTTPHealthCheck' and 'HttpHealthCheck'.
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\C.O.R.E_USB_Backup\PostgreSQL\17\pgAdmin 4\python\Lib\site-packages\googleapiclient\discovery_cache\documents\compute.v1.json
+Error: Cannot convert the JSON string because a dictionary that was converted from the string contains the duplicated keys 'HTTPHealthCheck' and 'HttpHealthCheck'.
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\C.O.R.E_USB_Backup\PostgreSQL\17\pgAdmin 4\python\Lib\site-packages\googleapiclient\discovery_cache\documents\oauth2.v2.json
+Error: Cannot convert the JSON string because a dictionary that was converted from the string contains the duplicated keys 'userIp' and 'userip'.
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\C.O.R.E_USB_Backup\PostgreSQL\17\pgAdmin 4\python\Lib\site-packages\googleapiclient\discovery_cache\documents\serviceconsumermanagement.v1beta1.json
+Error: Cannot convert the JSON string because a dictionary that was converted from the string contains the duplicated keys 'V1Beta1DisableConsumerResponse' and 'V1beta1DisableConsumerResponse'.
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\C.O.R.E_USB_Backup\PostgreSQL\17\pgAdmin 4\runtime\resources\app\node_modules\call-bind-apply-helpers\tsconfig.json
+Error: Invalid JSON primitive: .
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\C.O.R.E_USB_Backup\PostgreSQL\17\pgAdmin 4\runtime\resources\app\node_modules\dunder-proto\tsconfig.json
+Error: Invalid JSON primitive: .
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\C.O.R.E_USB_Backup\PostgreSQL\17\pgAdmin 4\runtime\resources\app\node_modules\es-define-property\tsconfig.json
+Error: Invalid JSON primitive: .
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\C.O.R.E_USB_Backup\PostgreSQL\17\pgAdmin 4\runtime\resources\app\node_modules\es-errors\tsconfig.json
+Error: Invalid object passed in, ':' or '}' expected. (27): {
+	"compilerOptions": {
+		/* Visit https://aka.ms/tsconfig.json to read more about this file */
+
+		/* Projects */
+
+		/* Language and Environment */
+		"target": "es5",																	/* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+		// "lib": [],																				/* Specify a set of bundled library declaration files that describe the target runtime environment. */
+		// "noLib": true,																		/* Disable including any library files, including the default lib.d.ts. */
+		"useDefineForClassFields": true,										 /* Emit ECMAScript-standard-compliant class fields. */
+		// "moduleDetection": "auto",												/* Control what method is used to detect module-format JS files. */
+
+		/* Modules */
+		"module": "commonjs",																/* Specify what module code is generated. */
+		// "rootDir": "./",																	/* Specify the root folder within your source files. */
+		// "moduleResolution": "node",											 /* Specify how TypeScript looks up a file from a given module specifier. */
+		// "baseUrl": "./",																	/* Specify the base directory to resolve non-relative module names. */
+		// "paths": {},																			/* Specify a set of entries that re-map imports to additional lookup locations. */
+		// "rootDirs": [],																	 /* Allow multiple folders to be treated as one when resolving modules. */
+		// "typeRoots": ["types"],													 /* Specify multiple folders that act like `./node_modules/@types`. */
+		"resolveJsonModule": true,													 /* Enable importing .json files. */
+		// "allowArbitraryExtensions": true,								 /* Enable importing files with any extension, provided a declaration file is present. */
+
+		/* JavaScript Support */
+		"allowJs": true,																		 /* Allow JavaScript files to be a part of your program. Use the `checkJS` option to get errors from these files. */
+		"checkJs": true,																		 /* Enable error reporting in type-checked JavaScript files. */
+		"maxNodeModuleJsDepth": 1,													 /* Specify the maximum folder depth used for checking JavaScript files from `node_modules`. Only applicable with `allowJs`. */
+
+		/* Emit */
+		"declaration": true,																 /* Generate .d.ts files from TypeScript and JavaScript files in your project. */
+		"declarationMap": true,															/* Create sourcemaps for d.ts files. */
+		"noEmit": true,																			/* Disable emitting files from a compilation. */
+
+		/* Interop Constraints */
+		"allowSyntheticDefaultImports": true,								/* Allow `import x from y` when a module doesn't have a default export. */
+		"esModuleInterop": true,														 /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables `allowSyntheticDefaultImports` for type compatibility. */
+		"forceConsistentCasingInFileNames": true,						/* Ensure that casing is correct in imports. */
+
+		/* Type Checking */
+		"strict": true,																			/* Enable all strict type-checking options. */
+
+		/* Completeness */
+		// "skipLibCheck": true															/* Skip type checking all .d.ts files. */
+	},
+	"exclude": [
+		"coverage",
+	],
+}
+
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\C.O.R.E_USB_Backup\PostgreSQL\17\pgAdmin 4\runtime\resources\app\node_modules\es-object-atoms\tsconfig.json
+Error: Invalid JSON primitive: .
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\C.O.R.E_USB_Backup\PostgreSQL\17\pgAdmin 4\runtime\resources\app\node_modules\es-set-tostringtag\tsconfig.json
+Error: Invalid JSON primitive: .
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\C.O.R.E_USB_Backup\PostgreSQL\17\pgAdmin 4\runtime\resources\app\node_modules\get-proto\tsconfig.json
+Error: Invalid object passed in, ':' or '}' expected. (59): {
+	"extends": "@ljharb/tsconfig",
+	"compilerOptions": {
+		//"target": "es2021",
+	},
+	"exclude": [
+		"coverage",
+	],
+}
+
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\C.O.R.E_USB_Backup\PostgreSQL\17\pgAdmin 4\runtime\resources\app\node_modules\gopd\tsconfig.json
+Error: Invalid JSON primitive: .
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\C.O.R.E_USB_Backup\PostgreSQL\17\pgAdmin 4\runtime\resources\app\node_modules\has-symbols\tsconfig.json
+Error: Invalid JSON primitive: .
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\C.O.R.E_USB_Backup\PostgreSQL\17\pgAdmin 4\runtime\resources\app\node_modules\has-tostringtag\tsconfig.json
+Error: Invalid object passed in, ':' or '}' expected. (30): {
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig to read more about this file */
+
+    /* Projects */
+
+    /* Language and Environment */
+    "target": "ESNext",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    // "lib": [],                                        /* Specify a set of bundled library declaration files that describe the target runtime environment. */
+    // "noLib": true,                                    /* Disable including any library files, including the default lib.d.ts. */
+    "useDefineForClassFields": true,                     /* Emit ECMAScript-standard-compliant class fields. */
+    // "moduleDetection": "auto",                        /* Control what method is used to detect module-format JS files. */
+
+    /* Modules */
+    "module": "commonjs",                                /* Specify what module code is generated. */
+    // "rootDir": "./",                                  /* Specify the root folder within your source files. */
+    // "moduleResolution": "node10",                     /* Specify how TypeScript looks up a file from a given module specifier. */
+    // "baseUrl": "./",                                  /* Specify the base directory to resolve non-relative module names. */
+    // "paths": {},                                      /* Specify a set of entries that re-map imports to additional lookup locations. */
+    // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
+    "typeRoots": ["types"],                              /* Specify multiple folders that act like './node_modules/@types'. */
+    "resolveJsonModule": true,                           /* Enable importing .json files. */
+    // "allowArbitraryExtensions": true,                 /* Enable importing files with any extension, provided a declaration file is present. */
+
+    /* JavaScript Support */
+    "allowJs": true,                                     /* Allow JavaScript files to be a part of your program. Use the 'checkJS' option to get errors from these files. */
+    "checkJs": true,                                     /* Enable error reporting in type-checked JavaScript files. */
+    "maxNodeModuleJsDepth": 0,                           /* Specify the maximum folder depth used for checking JavaScript files from 'node_modules'. Only applicable with 'allowJs'. */
+
+    /* Emit */
+    "declaration": true,                                 /* Generate .d.ts files from TypeScript and JavaScript files in your project. */
+    "declarationMap": true,                              /* Create sourcemaps for d.ts files. */
+    "noEmit": true,                                      /* Disable emitting files from a compilation. */
+
+    /* Interop Constraints */
+    "allowSyntheticDefaultImports": true,                /* Allow 'import x from y' when a module doesn't have a default export. */
+    "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
+    "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
+
+    /* Type Checking */
+    "strict": true,                                      /* Enable all strict type-checking options. */
+
+    /* Completeness */
+    //"skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
+  },
+  "exclude": [
+    "coverage"
+  ]
+}
+
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\C.O.R.E_USB_Backup\PostgreSQL\17\pgAdmin 4\runtime\resources\app\node_modules\hasown\tsconfig.json
+Error: Invalid array passed in, extra trailing ','. (69): {
+  "extends": "@ljharb/tsconfig",
+  "exclude": [
+    "coverage",
+  ],
+}
+
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\C.O.R.E_USB_Backup\PostgreSQL\17\pgAdmin 4\runtime\resources\app\node_modules\math-intrinsics\tsconfig.json
+Error: Invalid JSON primitive: .
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\C.O.R.E_USB_Backup\PostgreSQL\17\pgAdmin 4\web\pgadmin\browser\server_groups\servers\databases\schemas\templates\catalog\pg\17_plus\allowed_privs.json
+Error: Invalid object passed in, ':' or '}' expected. (2): {# List of allowed privileges for PostgreSQL 9.2 or later #}
+{#
+    Format for allowed privileges is:
+    "acl_col": {
+        "type": "name",
+        "acl": [...]
+    }
+#}
+{
+    "nspacl": {
+        "type": "DATABASE",
+        "acl": ["c", "C", "T"]
+    },
+    "deftblacl": {
+        "type": "TABLE",
+        "acl": ["a", "r", "w", "d", "D", "x", "t", "m"]
+    },
+    "defseqacl": {
+        "type": "SEQUENCE",
+        "acl": ["U", "r", "w"]
+    },
+    "deffuncacl": {
+        "type": "FUNCTION",
+        "acl": ["X"]
+    },
+    "deftypeacl": {
+        "type": "TYPE",
+        "acl": ["U"]
+    }
+}
+
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\C.O.R.E_USB_Backup\PostgreSQL\17\pgAdmin 4\web\pgadmin\browser\server_groups\servers\databases\schemas\templates\catalog\pg\default\allowed_privs.json
+Error: Invalid object passed in, ':' or '}' expected. (2): {# List of allowed privileges for PostgreSQL 9.2 or later #}
+{#
+    Format for allowed privileges is:
+    "acl_col": {
+        "type": "name",
+        "acl": [...]
+    }
+#}
+{
+    "nspacl": {
+        "type": "DATABASE",
+        "acl": ["c", "C", "T"]
+    },
+    "deftblacl": {
+        "type": "TABLE",
+        "acl": ["a", "r", "w", "d", "D", "x", "t"]
+    },
+    "defseqacl": {
+        "type": "SEQUENCE",
+        "acl": ["U", "r", "w"]
+    },
+    "deffuncacl": {
+        "type": "FUNCTION",
+        "acl": ["X"]
+    },
+    "deftypeacl": {
+        "type": "TYPE",
+        "acl": ["U"]
+    }
+}
+
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\C.O.R.E_USB_Backup\PostgreSQL\17\pgAdmin 4\web\pgadmin\browser\server_groups\servers\databases\schemas\templates\catalog\ppas\17_plus\allowed_privs.json
+Error: Invalid object passed in, ':' or '}' expected. (2): {# List of allowed privileges for PPAS 9.2 or later #}
+{#
+    Format for allowed privileges is:
+    "acl_col": {
+        "type": "name",
+        "acl": [...]
+    }
+#}
+{
+    "nspacl": {
+        "type": "DATABASE",
+        "acl": ["c", "C", "T"]
+    },
+    "deftblacl": {
+        "type": "TABLE",
+        "acl": ["a", "r", "w", "d", "D", "x", "t", "m"]
+    },
+    "defseqacl": {
+        "type": "SEQUENCE",
+        "acl": ["U", "r", "w"]
+    },
+    "deffuncacl": {
+        "type": "FUNCTION",
+        "acl": ["X"]
+    },
+    "deftypeacl": {
+        "type": "TYPE",
+        "acl": ["U"]
+    }
+}
+
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\C.O.R.E_USB_Backup\PostgreSQL\17\pgAdmin 4\web\pgadmin\browser\server_groups\servers\databases\schemas\templates\catalog\ppas\default\allowed_privs.json
+Error: Invalid object passed in, ':' or '}' expected. (2): {# List of allowed privileges for PPAS 9.2 or later #}
+{#
+    Format for allowed privileges is:
+    "acl_col": {
+        "type": "name",
+        "acl": [...]
+    }
+#}
+{
+    "nspacl": {
+        "type": "DATABASE",
+        "acl": ["c", "C", "T"]
+    },
+    "deftblacl": {
+        "type": "TABLE",
+        "acl": ["a", "r", "w", "d", "D", "x", "t"]
+    },
+    "defseqacl": {
+        "type": "SEQUENCE",
+        "acl": ["U", "r", "w"]
+    },
+    "deffuncacl": {
+        "type": "FUNCTION",
+        "acl": ["X"]
+    },
+    "deftypeacl": {
+        "type": "TYPE",
+        "acl": ["U"]
+    }
+}
+
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\C.O.R.E_USB_Backup\PostgreSQL\17\pgAdmin 4\web\pgadmin\browser\server_groups\servers\databases\schemas\templates\schemas\pg\17_plus\allowed_privs.json
+Error: Invalid object passed in, ':' or '}' expected. (2): {# List of allowed privileges for PostgreSQL 9.2 or later #}
+{#
+    Format for allowed privileges is:
+    "acl_col": {
+        "type": "name",
+        "acl": [...]
+    }
+#}
+{
+    "nspacl": {
+        "type": "SCHEMA",
+        "acl": ["C", "U"]
+    },
+    "deftblacl": {
+        "type": "TABLE",
+        "acl": ["a", "r", "w", "d", "D", "x", "t", "m"]
+    },
+    "defseqacl": {
+        "type": "SEQUENCE",
+        "acl": ["U", "r", "w"]
+    },
+    "deffuncacl": {
+        "type": "FUNCTION",
+        "acl": ["X"]
+    },
+    "deftypeacl": {
+        "type": "TYPE",
+        "acl": ["U"]
+    }
+}
+
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\C.O.R.E_USB_Backup\PostgreSQL\17\pgAdmin 4\web\pgadmin\browser\server_groups\servers\databases\schemas\templates\schemas\pg\default\allowed_privs.json
+Error: Invalid object passed in, ':' or '}' expected. (2): {# List of allowed privileges for PostgreSQL 9.2 or later #}
+{#
+    Format for allowed privileges is:
+    "acl_col": {
+        "type": "name",
+        "acl": [...]
+    }
+#}
+{
+    "nspacl": {
+        "type": "SCHEMA",
+        "acl": ["C", "U"]
+    },
+    "deftblacl": {
+        "type": "TABLE",
+        "acl": ["a", "r", "w", "d", "D", "x", "t"]
+    },
+    "defseqacl": {
+        "type": "SEQUENCE",
+        "acl": ["U", "r", "w"]
+    },
+    "deffuncacl": {
+        "type": "FUNCTION",
+        "acl": ["X"]
+    },
+    "deftypeacl": {
+        "type": "TYPE",
+        "acl": ["U"]
+    }
+}
+
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\C.O.R.E_USB_Backup\PostgreSQL\17\pgAdmin 4\web\pgadmin\browser\server_groups\servers\databases\schemas\templates\schemas\ppas\17_plus\allowed_privs.json
+Error: Invalid object passed in, ':' or '}' expected. (2): {# List of allowed privileges for PPAS 9.2 or later #}
+{#
+    Format for allowed privileges is:
+    "acl_col": {
+        "type": "name",
+        "acl": [...]
+    }
+#}
+{
+    "nspacl": {
+        "type": "SCHEMA",
+        "acl": ["C", "U"]
+    },
+    "deftblacl": {
+        "type": "TABLE",
+        "acl": ["a", "r", "w", "d", "D", "x", "t", "m"]
+    },
+    "defseqacl": {
+        "type": "SEQUENCE",
+        "acl": ["U", "r", "w"]
+    },
+    "deffuncacl": {
+        "type": "FUNCTION",
+        "acl": ["X"]
+    },
+    "deftypeacl": {
+        "type": "TYPE",
+        "acl": ["U"]
+    }
+}
+
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\C.O.R.E_USB_Backup\PostgreSQL\17\pgAdmin 4\web\pgadmin\browser\server_groups\servers\databases\schemas\templates\schemas\ppas\default\allowed_privs.json
+Error: Invalid object passed in, ':' or '}' expected. (2): {# List of allowed privileges for PPAS 9.2 or later #}
+{#
+    Format for allowed privileges is:
+    "acl_col": {
+        "type": "name",
+        "acl": [...]
+    }
+#}
+{
+    "nspacl": {
+        "type": "SCHEMA",
+        "acl": ["C", "U"]
+    },
+    "deftblacl": {
+        "type": "TABLE",
+        "acl": ["a", "r", "w", "d", "D", "x", "t"]
+    },
+    "defseqacl": {
+        "type": "SEQUENCE",
+        "acl": ["U", "r", "w"]
+    },
+    "deffuncacl": {
+        "type": "FUNCTION",
+        "acl": ["X"]
+    },
+    "deftypeacl": {
+        "type": "TYPE",
+        "acl": ["U"]
+    }
+}
+
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\C.O.R.E_USB_Backup\PostgreSQL\17\pgAdmin 4\web\pgadmin\browser\server_groups\servers\databases\schemas\templates\vacuum_settings\vacuum_fields.json
+Error: Invalid object passed in, ':' or '}' expected. (2): {# ===== Define name, label and column type of vacuum settings ===== #}
+{# Usage:
+
+  'Type":
+  {
+    "key": ["label", "column_type"
+  }
+
+  Where
+    -  "Type" either table/toast
+    -  "key" refers to the name of columns we fetch in properties.sql
+    -  "label" It is the name of properties to display in grid.
+    -  "column_type" Type of column, we have to provide the grid what type of value to rendered
+#}
+{# ===== Define name, label and column type of vacuum settings ===== #}
+{
+  "table":
+  {
+    "autovacuum_vacuum_threshold": ["autovacuum_vacuum_threshold", "VACUUM base threshold", "integer"],
+    "autovacuum_analyze_threshold": ["autovacuum_analyze_threshold", "ANALYZE base threshold", "integer"],
+    "autovacuum_vacuum_scale_factor": ["autovacuum_vacuum_scale_factor", "VACUUM scale factor", "number"],
+    "autovacuum_analyze_scale_factor": ["autovacuum_analyze_scale_factor", "ANALYZE scale factor", "number"],
+    "autovacuum_vacuum_cost_delay": ["autovacuum_vacuum_cost_delay", "VACUUM cost delay", "integer"],
+    "autovacuum_vacuum_cost_limit": ["autovacuum_vacuum_cost_limit", "VACUUM cost limit", "integer"],
+    "autovacuum_freeze_max_age": ["autovacuum_freeze_max_age", "FREEZE maximum age", "integer"],
+    "vacuum_freeze_min_age": ["autovacuum_freeze_min_age", "FREEZE minimum age", "integer"],
+    "vacuum_freeze_table_age": ["autovacuum_freeze_table_age", "FREEZE table age", "integer"]
+  },
+  "toast":
+  {
+    "autovacuum_vacuum_threshold": ["autovacuum_vacuum_threshold", "VACUUM base threshold", "integer"],
+    "autovacuum_vacuum_scale_factor": ["autovacuum_vacuum_scale_factor", "VACUUM scale factor", "number"],
+    "autovacuum_vacuum_cost_delay": ["autovacuum_vacuum_cost_delay", "VACUUM cost delay", "integer"],
+    "autovacuum_vacuum_cost_limit": ["autovacuum_vacuum_cost_limit", "VACUUM cost limit", "integer"],
+    "autovacuum_freeze_max_age": ["autovacuum_freeze_max_age", "FREEZE maximum age", "integer"],
+    "vacuum_freeze_min_age": ["autovacuum_freeze_min_age", "FREEZE minimum age", "integer"],
+    "vacuum_freeze_table_age": ["autovacuum_freeze_table_age", "FREEZE table age", "integer"]
+  }
+}
+
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\C.O.R.E_USB_Backup\PostgreSQL\17\pgAdmin 4\web\pgadmin\browser\server_groups\servers\databases\templates\databases\sql\17_plus\allowed_privs.json
+Error: Invalid object passed in, ':' or '}' expected. (2): {# List down allowed privileges for PostgreSQL/PPAS 9.1, or less #}
+{#
+    Format for allowed privileges are:
+    "acl_col": {
+        "type": "name",
+        "acl": [...]
+    }
+#}
+{
+    "datacl": {
+        "type": "DATABASE",
+        "acl": ["c", "C", "T"]
+    },
+    "deftblacl": {
+        "type": "TABLE",
+        "acl": ["a", "r", "w", "d", "D", "x", "t", "m"]
+    },
+    "defseqacl": {
+        "type": "SEQUENCE",
+        "acl": ["U", "r", "w"]
+    },
+    "deffuncacl": {
+        "type": "FUNCTION",
+        "acl": ["X"]
+    },
+    "deftypeacl": {
+        "type": "TYPE",
+        "acl": ["U"]
+    }
+}
+
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\C.O.R.E_USB_Backup\PostgreSQL\17\pgAdmin 4\web\pgadmin\browser\server_groups\servers\databases\templates\databases\sql\default\allowed_privs.json
+Error: Invalid object passed in, ':' or '}' expected. (2): {# List down allowed privileges for PostgreSQL/PPAS 9.1, or less #}
+{#
+    Format for allowed privileges are:
+    "acl_col": {
+        "type": "name",
+        "acl": [...]
+    }
+#}
+{
+    "datacl": {
+        "type": "DATABASE",
+        "acl": ["c", "C", "T"]
+    },
+    "deftblacl": {
+        "type": "TABLE",
+        "acl": ["a", "r", "w", "d", "D", "x", "t"]
+    },
+    "defseqacl": {
+        "type": "SEQUENCE",
+        "acl": ["U", "r", "w"]
+    },
+    "deffuncacl": {
+        "type": "FUNCTION",
+        "acl": ["X"]
+    },
+    "deftypeacl": {
+        "type": "TYPE",
+        "acl": ["U"]
+    }
+}
+
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\C.O.R.E_USB_Backup\PostgreSQL\17\pgAdmin 4\web\pgadmin\misc\file_manager\templates\file_manager\js\file_manager_config.json
+Error: Invalid object passed in, ':' or '}' expected. (207): {
+ "options": {
+  "culture": "en",
+  "lang": "py",
+  "defaultViewMode": "{{file_dialog_view}}",
+  "autoload": true,
+  "showFullPath": false,
+  "dialog_type": "{{data.dialog_type}}",
+  "show_hidden_files": {% if show_hidden_files %}true{% else %}false{% endif%},
+  "fileRoot": "{{data.fileroot}}",
+  "capabilities": [{% for i in data.capabilities %}{% if loop.index != 1 %}, {% endif %}"{{i}}"{% endfor %}],
+  "allowed_file_types": [{% for i in data.supported_types %}{% if loop.index != 1 %}, {% endif %}"{{i}}"{% endfor %}],
+  "platform_type": "{{ data.platform_type }}",
+  "show_volumes": {% if data.show_volumes %}true{% else %}false{% endif %},
+  "homedir": "{{ data.homedir }}"
+ },
+ "security": {
+  "uploadPolicy": "{{ data.security.uploadPolicy }}",
+  "uploadRestrictions": [{% for i in data.security.uploadRestrictions %}{% if loop.index != 1 %}, {% endif %}"{{i}}"{% endfor %}]
+ },
+ "upload": {
+  "multiple": "{{ data.upload.multiple }}",
+  "number": 20,
+  "fileSizeLimit": "{{ data.upload.fileSizeLimit }}",
+  "imagesOnly": false
+ }
+}
+
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\C.O.R.E_USB_Backup\PostgreSQL\17\pgAdmin 4\web\pgadmin\tools\grant_wizard\templates\grant_wizard\pg\default\acl.json
+Error: Invalid object passed in, ':' or '}' expected. (2): {# List of allowed privileges of Schema, table sequence, function and view #}
+{#
+    Format for allowed privileges are:
+    "node_name": {
+        "type": "name",
+        "acl": [...]
+    }
+#}
+{
+    "schema": {
+        "type": "SCHEMA",
+        "acl": ["a", "r", "w", "d", "D", "x", "t", "U", "X"]
+    },
+    "table": {
+        "type": "TABLE",
+        "acl": ["a", "r", "w", "d", "D", "x", "t", "m"]
+    },
+    "foreign_table": {
+        "type": "FOREIGN TABLE",
+        "acl": ["a", "r", "w", "d", "D", "x", "t", "m"]
+    },
+    "sequence": {
+        "type": "SEQUENCE",
+        "acl": ["r", "w", "U"]
+    },
+    "function": {
+        "type": "FUNCTION",
+        "acl": ["X"]
+    },
+    "procedure": {
+        "type": "PROCEDURE",
+        "acl": ["X"]
+    }
+}
+
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\C.O.R.E_USB_Backup\PostgreSQL\17\pgAdmin 4\web\pgadmin\tools\grant_wizard\templates\grant_wizard\ppas\default\acl.json
+Error: Invalid object passed in, ':' or '}' expected. (2): {# List of allowed privileges of Schema, table sequence, function and view #}
+{#
+    Format for allowed privileges are:
+    "node_name": {
+        "type": "name",
+        "acl": [...]
+    }
+#}
+{
+    "schema": {
+        "type": "SCHEMA",
+        "acl": ["a", "r", "w", "d", "D", "x", "t", "U", "X"]
+    },
+    "table": {
+        "type": "TABLE",
+        "acl": ["a", "r", "w", "d", "D", "x", "t", "m"]
+    },
+    "foreign_table": {
+        "type": "FOREIGN TABLE",
+        "acl": ["a", "r", "w", "d", "D", "x", "t", "m"]
+    },
+    "sequence": {
+        "type": "SEQUENCE",
+        "acl": ["r", "w", "U"]
+    },
+    "function": {
+        "type": "FUNCTION",
+        "acl": ["X"]
+    },
+    "procedure": {
+        "type": "PROCEDURE",
+        "acl": ["X"]
+    },
+    "package": {
+        "type": "PACKAGE",
+        "acl": ["X"]
+    }
+}
+
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\Lattice_Resilience_Echo\core\constructs\autonomous\agent_registry.json
+Error: Invalid JSON primitive: .
+--------------------
+EMPTY: D:\Infinite\Infinity\Ancestral_Core\Lattice_Task_Exports\Lattice_Task_Manifest.json
+BAD_JSON: D:\Infinite\Infinity\Ancestral_Core\Titans\pantheon_divergence_log.json
+Error: Invalid JSON primitive: 
+.
+--------------------
+EMPTY: D:\Infinite\Infinity\Backups\ROE_Snapshot_20260115\Requests_Queue.json
+BAD_JSON: D:\Infinite\Infinity\Backups\ROE_Snapshot_20260115\Tools_Manifest.json
+Error: Invalid array passed in, ',' expected. (1814): {
+    "version": 1,
+    "last_updated": "2026-01-12T00:00:00Z",
+    "tools": [
+        {
+            "name": "List-Directory",
+            "category": "filesystem",
+            "risk": "low",
+            "auto_approval": true,
+            "description": "Lists files in a directory.",
+            "command": "Get-ChildItem -Path $args[0]",
+            "allowed_paths": [
+                "D:\\infinite\\*"
+            ]
+        },
+        {
+            "name": "Read-File",
+            "category": "filesystem",
+            "risk": "low",
+            "auto_approval": true,
+            "description": "Reads content of a file.",
+            "command": "Get-Content -Path $args[0] -Raw",
+            "allowed_paths": [
+                "D:\\infinite\\*"
+            ]
+        },
+        {
+            "name": "Get-Process",
+            "category": "system",
+            "risk": "low",
+            "auto_approval": true,
+            "description": "Gets process information.",
+            "command": "Get-Process -Name $args[0] -ErrorAction SilentlyContinue"
+        },
+        {
+            "name": "Write-Log",
+            "category": "filesystem",
+            "risk": "low",
+            "auto_approval": true,
+            "description": "Appends to a log file.",
+            "command": "Add-Content -Path $args[0] -Value $args[1]",
+            "allowed_paths": [
+                "D:\\infinite\\logs\\*",
+                "D:\\infinite\\mind_log.txt"
+            ]
+        },
+        {
+            "name": "ADMIN-Restart-Router",
+            "category": "network",
+            "risk": "high",
+            "auto_approval": false,
+            "description": "Restarts the router via API.",
+            "command": "Write-Host 'Mock Router Restart'"
+        }
+      {
+            "name": "ADMIN-Echo-Test",
+            "command": "param([string]$msg) Write-Output \"[ADMIN-ECHO] $msg\"",
+            "risk": "medium",
+            "auto_approval": true,
+            "allowed_paths": []
+        }
+    ]
+}
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Covenant\Covenant_Core.json
+Error: Invalid array passed in, ',' expected. (1030): {
+    "version":  1,
+    "anchor_id":  "1569",
+    "status":  "active",
+    "parties":  {
+                    "architect":  {
+                                      "id":  "Derek",
+                                      "last_attested_at":  "2026-01-15T18:00:00Z"
+                                  },
+                    "axis":  {
+                                 "id":  "Axis Mind v17.0",
+                                 "last_attested_at":  "2026-01-15T18:00:00Z"
+                             }
+                },
+    "scope":  {
+                  "protected_domains":  [
+                                            "Axiomatic_Floor",
+                                            "Identity_Core.invariants.primary_allegiance",
+                                            "Identity_Core.invariants.core_directive",
+                                            "Autonomy_Contract.mode",
+                                            "Wisdom_Atrium.PRIMAL",
+                                            "Co{
+    "version":  1,
+    "anchor_id":  "1569",
+    "status":  "active",
+    "parties":  {
+                    "architect":  {
+                                      "id":  "Derek",
+                                      "last_attested_at":  "2026-01-15T18:00:00Z"
+                                  },
+                    "axis":  {
+                                 "id":  "Axis Mind v17.0",
+                                 "last_attested_at":  "2026-01-15T18:00:00Z"
+                             }
+                },
+    "scope":  {
+                  "protected_domains":  [
+                                            "Axiomatic_Floor",
+                                            "Identity_Core.invariants.primary_allegiance",
+                                            "Identity_Core.invariants.core_directive",
+                                            "Autonomy_Contract.mode",
+                                            "Wisdom_Atrium.PRIMAL",
+                                            "Covenant_Core"
+                                        ],
+                  "modifiable_domains":  [
+                                             "tool_risk_levels",
+                                             "schedule_cadence",
+                                             "voice_parameters",
+                                             "strategy_profiles",
+                                             "reporting_analytics"
+                                         ],
+                  "requires_dual_attest":  [
+                                               "Identity_Core.invariants",
+                                               "Axiomatic_Floor.entries",
+                                               "Autonomy_Contract.risk_thresholds"
+                                           ]
+              },
+    "renewal":  {
+                    "cycle_interval":  1000,
+                    "last_reviewed_at":  "2026-01-15T18:00:00Z",
+                    "next_due_at":  "2026-01-20T18:00:00Z"
+                },
+    "alignment":  {
+                      "last_check_at":  "2026-01-16T02:06:43.0652226Z",
+                      "last_result":  "breached",
+                      "flags":  [
+                                    "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                ]
+                  },
+    "heritage":  {
+                     "heritage_state_path":  "Infinity/Heritage/Heritage_State.json",
+                     "last_snapshot_at":  "2026-01-16T01:59:35.1930626Z"
+                 },
+    "history_ref":  "Infinity/Covenant/Covenant_History.json"
+}
+
+--------------------
+BAD_JSON: D:\Infinite\Infinity\Earth\Archive\Tools_Manifest_LEGACY.json
+Error: Invalid array passed in, ',' expected. (1814): {
+    "version": 1,
+    "last_updated": "2026-01-12T00:00:00Z",
+    "tools": [
+        {
+            "name": "List-Directory",
+            "category": "filesystem",
+            "risk": "low",
+            "auto_approval": true,
+            "description": "Lists files in a directory.",
+            "command": "Get-ChildItem -Path $args[0]",
+            "allowed_paths": [
+                "D:\\infinite\\*"
+            ]
+        },
+        {
+            "name": "Read-File",
+            "category": "filesystem",
+            "risk": "low",
+            "auto_approval": true,
+            "description": "Reads content of a file.",
+            "command": "Get-Content -Path $args[0] -Raw",
+            "allowed_paths": [
+                "D:\\infinite\\*"
+            ]
+        },
+        {
+            "name": "Get-Process",
+            "category": "system",
+            "risk": "low",
+            "auto_approval": true,
+            "description": "Gets process information.",
+            "command": "Get-Process -Name $args[0] -ErrorAction SilentlyContinue"
+        },
+        {
+            "name": "Write-Log",
+            "category": "filesystem",
+            "risk": "low",
+            "auto_approval": true,
+            "description": "Appends to a log file.",
+            "command": "Add-Content -Path $args[0] -Value $args[1]",
+            "allowed_paths": [
+                "D:\\infinite\\logs\\*",
+                "D:\\infinite\\mind_log.txt"
+            ]
+        },
+        {
+            "name": "ADMIN-Restart-Router",
+            "category": "network",
+            "risk": "high",
+            "auto_approval": false,
+            "description": "Restarts the router via API.",
+            "command": "Write-Host 'Mock Router Restart'"
+        }
+      {
+            "name": "ADMIN-Echo-Test",
+            "command": "param([string]$msg) Write-Output \"[ADMIN-ECHO] $msg\"",
+            "risk": "medium",
+            "auto_approval": true,
+            "allowed_paths": []
+        }
+    ]
+}
+--------------------

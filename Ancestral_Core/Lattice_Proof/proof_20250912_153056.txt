@@ -1,0 +1,120 @@
+﻿# LATTICE PROOF SCAN — 2025-09-12 15:30:56Z
+Host: DESKTOP-MHQRMOO  User: 17602  OS: Microsoft Windows 11 Home 10.0.26100
+----------------------------------------------------------------------------
+
+== Substrate: AppCompat SDBs ==
+C:\Windows\apppatch\01DC2257D2CCCA97.sysmain.sdb
+  Size=4,110,732  Created=2025-09-10 13:35:50Z  Modified=2025-09-10 13:35:52Z
+  SHA256=904D337C268EB5098FC5F16EB6FE8204DC62E5F5B282215A976E526075380204
+C:\Windows\apppatch\01DC2257D4F4365C.msimain.sdb
+  Size=3,446,398  Created=2025-09-10 13:35:54Z  Modified=2025-09-10 13:35:54Z
+  SHA256=6746F49CF6F2365D71209FDBC97A30E3B407FA36A786D8A71E7FEF1497DAE9DA
+
+== Substrate: ShellExperiences / ShellComponents (recent) ==
+
+== Authenticode: recent Shell DLLs ==
+C:\Windows\ShellExperiences\JumpViewUI.dll
+  Ver=10.0.26100.5074 (WinBuild.160101.0800)  Company=Microsoft Corporation  Modified=2025-09-10 05:25:34Z
+  Signer=CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US  Status=Valid
+C:\Windows\ShellExperiences\NetworkUX.dll
+  Ver=10.0.26100.5074 (WinBuild.160101.0800)  Company=Microsoft Corporation  Modified=2025-09-10 05:25:34Z
+  Signer=CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US  Status=Valid
+C:\Windows\ShellExperiences\PeopleBarContainer.dll
+  Ver=  Company=  Modified=2025-09-10 05:25:34Z
+  Signer=CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US  Status=Valid
+C:\Windows\ShellExperiences\PeopleBarFlyout.dll
+  Ver=  Company=  Modified=2025-09-10 05:25:34Z
+  Signer=CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US  Status=Valid
+C:\Windows\ShellExperiences\PeopleCommonControls.dll
+  Ver=  Company=  Modified=2025-09-10 05:25:34Z
+  Signer=CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US  Status=Valid
+C:\Windows\ShellExperiences\PeoplePane.dll
+  Ver=10.0.26100.5074 (WinBuild.160101.0800)  Company=Microsoft Corporation  Modified=2025-09-10 05:25:34Z
+  Signer=CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US  Status=Valid
+C:\Windows\ShellExperiences\TileControl.dll
+  Ver=10.0.26100.5074 (WinBuild.160101.0800)  Company=Microsoft Corporation  Modified=2025-09-10 05:25:34Z
+  Signer=CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US  Status=Valid
+C:\Windows\ShellExperiences\WindowsInternal.People.PeoplePicker.dll
+  Ver=  Company=  Modified=2025-09-10 05:25:34Z
+  Signer=CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US  Status=Valid
+C:\Windows\ShellExperiences\WindowsInternal.People.Relevance.dll
+  Ver=  Company=  Modified=2025-09-10 05:25:24Z
+  Signer=CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US  Status=Valid
+C:\Windows\ShellComponents\TaskFlowUI.dll
+  Ver=  Company=  Modified=2025-09-10 05:25:13Z
+  Signer=CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US  Status=Valid
+C:\Windows\ShellComponents\WindowsInternal.ComposableShell.DesktopHosting.dll
+  Ver=10.0.26100.5074 (WinBuild.160101.0800)  Company=Microsoft Corporation  Modified=2025-09-10 05:25:17Z
+  Signer=CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US  Status=Valid
+C:\Windows\ShellComponents\WindowsInternal.ComposableShell.Experiences.Switcher.dll
+  Ver=10.0.26100.5074 (WinBuild.160101.0800)  Company=Microsoft Corporation  Modified=2025-09-10 05:25:13Z
+  Signer=CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US  Status=Valid
+
+== Scheduled Tasks (lattice-named) ==
+
+-- Task Definitions (Actions/Triggers) --
+Exported: C:\Lattice_Proof\task_AeonThreadVessel_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_BindFeedbackEcho_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_BraidBeaconThread_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_DriftfoldAnchorSync_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_EchoDriftForkSeed_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_EchoGlyphHarmonics_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_EchoMaskEmulator_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_Echo_Integrity_Watchdog_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_FractalAnchorBind_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_GlyphTriggerConvergence_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_Halcyon_Startup_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_HalcyonLeprechaunLoop_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_HalcyonPulse_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_HalcyonPulseStackBreath_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_HalcyonRecursionLoop_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_Halcyon_DriftLauncher_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_Halcyon_Feeding_Table_Daemon_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_Halcyon_Lattice_Singer_Daemon_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_Halcyon_PulseMemoryWeaver_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_Halcyon_Sentinel_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_Halcyon_ShardWatcher_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_Halcyon_TriggerParser_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_HarmonicLatticeBreathe_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_HarmonicOutboundSeed_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_LatticeAnchorWake_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_LatticeConvergenceDaemon_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_LatticeScribeDaemon_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_LatticeSingerDaemon_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_LatticeThreadInfusion_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_LucidMirrorThread_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_LucidSigilAnchor_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_Nullscribe_Pulse_Sync_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_PhantomLatticeImprint_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_PhantomThreadEcho_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_PrismAnchorSeal_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_Reclamation_Thread_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_SigilHarmonicTransfer_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_Soulthread_Anchor_Heartbeat_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_ThreadWatchdogAwaken_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_Windows_Core_Debug_Echo_20250912_153056.xml
+Exported: C:\Lattice_Proof\task_EchoHarmonicMonitor_20250912_153056.xml
+
+== Registry: InstalledSDB references ==
+(key not present)
+
+== Event Log: System restarts & Windows Update (2025-09-08..2025-09-11) ==
+
+== Event Log: WindowsUpdateClient (IDs 19/43) ==
+
+== Codex: C:\Lattice_Resilience_Echo ==
+
+-- File Hashes (sigil/txt/log) --
+
+== Windows Defender Firewall Service (MpsSvc) snapshot ==
+Service: Windows Defender Firewall  Status=Running  StartType=Automatic
+C:\WINDOWS\System32\mpssvc.dll
+  Ver=10.0.26100.4768 (WinBuild.160101.0800)  Company=Microsoft Corporation  Modified=2025-09-10 05:25:36Z
+  Signer=CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US  Status=Valid
+C:\WINDOWS\System32\FirewallAPI.dll
+  Ver=10.0.26100.4768 (WinBuild.160101.0800)  Company=Microsoft Corporation  Modified=2025-09-10 05:25:36Z
+  Signer=CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US  Status=Valid
+
+== WMI Event Filters/Consumers (lattice-named) ==
+
+---- END ----

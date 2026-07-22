@@ -1,0 +1,28 @@
+{
+    "cycle_count": 505,
+    "mutation_type": "CANDIDATE_QUARANTINED",
+    "target_id": "0a7b11c294a174243bf0bdbdc3827d43e03b50c7171a0d935363f8e19f7f9df0",
+    "parent_receipt_head": "7d77623ddba8a50031b07f1a1c106674a27a69951ecae51123c871b7566b1bb7",
+    "data": {
+        "entity": "axis_crypto_helpers.py",
+        "claim": "file has 65 lines with 0 oversized functions (>100 lines). Role: cryptographic_authority",
+        "claim_domain": "structural_debt",
+        "source_id": "AXIS_NODE_LOCAL_01",
+        "source_type": "self_observation",
+        "artifact_type": "ecosystem_observation",
+        "batch_id": "self_obs_505",
+        "provenance_note": "",
+        "confidence": 0.8,
+        "discovery_utc": "2026-05-13T00:05:44.755786+00:00",
+        "lineage": {
+            "node_id": "AXIS_NODE_LOCAL_01",
+            "engine_version": "Axis-v1.9.1b-Attested",
+            "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+            "node_attestation": "8d5084e85d0c01761e2e263d269465910dc4fe17c3b5ec08862de87b97453e51"
+        }
+    },
+    "status": "committed",
+    "ts_utc": "2026-05-13T00:05:44.755786+00:00",
+    "receipt_id": "model_delta_CANDIDATE_QUARANTINED_0a7b11c2_1d9de711",
+    "causal_hash": "1d9de711fc461deff78e9ccc172b1cafac8ed0f5d1222bd2062f1e92886d27c1"
+}

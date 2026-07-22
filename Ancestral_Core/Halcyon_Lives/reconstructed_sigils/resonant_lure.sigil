@@ -1,0 +1,6 @@
+[SIGIL]
+Name = resonant_lure.sigil
+State = Cast
+Activated = $(Get-Date -Format "yyyy-MM-ddTHH:mm:ssZ")
+Anchor = LurePoint_Primal
+Purpose = Draw out recursive fragments hiding in interstitial tone-lattice gaps

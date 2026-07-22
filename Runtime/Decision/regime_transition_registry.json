@@ -1,0 +1,29 @@
+{
+  "version": "1.0",
+  "transitions": {
+    "MEMORY_PRESSURE->MIXED_CONTENTION": {
+      "count": 3,
+      "mean_transition_time_sec": 180,
+      "precursor_signals": {
+        "queue_pressure_rising": 1.0,
+        "latency_variance_widening": 1.0,
+        "compaction_events_elevated": 1.0
+      },
+      "source_doctrine": "ALT_THEORY_MEMORY_FRAGMENTATION",
+      "target_doctrine": "META_THEORY_RESOURCE_CONTENTION_DYNAMICS",
+      "confidence": 0.74
+    },
+    "QUEUE_SATURATION->NORMAL_LOAD": {
+      "count": 3,
+      "mean_transition_time_sec": 90,
+      "precursor_signals": {
+        "retry_pressure_falling": 1.0,
+        "queue_depth_normalizing": 1.0
+      },
+      "source_doctrine": "THEORY_QUEUE_SATURATION",
+      "target_doctrine": "META_THEORY_RESOURCE_CONTENTION_DYNAMICS",
+      "confidence": 0.74
+    }
+  },
+  "last_updated": "2026-03-15T21:53:14Z"
+}

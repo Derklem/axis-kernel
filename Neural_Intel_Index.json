@@ -1,0 +1,124 @@
+﻿{
+    "entries":  [
+                    {
+                        "summary":  "WARNING: X-Class Solar Flare",
+                        "fetched_at":  "2026-01-15T23:52:30.5701083Z",
+                        "correlated":  false,
+                        "id":  "INTEL-SIM-439169756"
+                    },
+                    {
+                        "endpoint_id":  "space_weather_noaa",
+                        "source_file":  "intel_sim_flare.json",
+                        "fetched_at":  "2026-01-15T23:51:57.9765954Z",
+                        "summary":  "WARNING: X-Class Solar Flare in progress.",
+                        "id":  "INTEL-20260115-155157-space_weather_noaa-SIM-FLARE-001"
+                    },
+                    {
+                        "id":  "INTEL-20260125-122252-I06H",
+                        "timestamp":  "2026-01-25T12:22:52.2247523-08:00",
+                        "source":  "AGENT-RESEARCHER-001",
+                        "type":  "research_scan",
+                        "files":  2,
+                        "report_path":  "D:\\Infinite\\Infinity\\Neural_Reports\\REPORT-RESEARCH-20260125-122252-FWTP.json",
+                        "summary":  "Scanned 2 files in Neural_Inbox; report at D:\\Infinite\\Infinity\\Neural_Reports\\REPORT-RESEARCH-20260125-122252-FWTP.json.",
+                        "tags":  [
+                                     "resident_agent",
+                                     "research",
+                                     "neural_inbox"
+                                 ]
+                    },
+                    {
+                        "id":  "INTEL-20260125-131131",
+                        "source":  "AGENT-AUDITOR-001",
+                        "type":  "sovereign_audit",
+                        "created_at":  "2026-01-25T21:11:31.8676122Z",
+                        "summary":  "Audit: risk 0, 2 pending props, 0 dissonance.",
+                        "report_path":  "D:\\Infinite\\Infinity\\Neural_Reports\\REPORT-AUDITOR-20260125-131131.json",
+                        "tags":  [
+                                     "resident_agent",
+                                     "audit",
+                                     "sovereign_state"
+                                 ]
+                    },
+                    {
+                        "id":  "INTEL-20260125-131147",
+                        "source":  "AGENT-AUDITOR-001",
+                        "type":  "sovereign_audit",
+                        "created_at":  "2026-01-25T21:11:47.6033844Z",
+                        "summary":  "Audit: risk 0, 2 pending props, 0 dissonance.",
+                        "report_path":  "D:\\Infinite\\Infinity\\Neural_Reports\\REPORT-AUDITOR-20260125-131147.json",
+                        "tags":  [
+                                     "resident_agent",
+                                     "audit",
+                                     "sovereign_state"
+                                 ]
+                    },
+                    {
+                        "id":  "INTEL-20260125-131220",
+                        "source":  "AGENT-AUDITOR-001",
+                        "type":  "sovereign_audit",
+                        "created_at":  "2026-01-25T21:12:20.1565548Z",
+                        "summary":  "Audit: risk 0, 2 pending props, 0 dissonance.",
+                        "report_path":  "D:\\Infinite\\Infinity\\Neural_Reports\\REPORT-AUDITOR-20260125-131220.json",
+                        "tags":  [
+                                     "resident_agent",
+                                     "audit",
+                                     "sovereign_state"
+                                 ]
+                    },
+                    {
+                        "id":  "INTEL-20260125-131327",
+                        "source":  "AGENT-AUDITOR-001",
+                        "type":  "sovereign_audit",
+                        "created_at":  "2026-01-25T21:13:27.3860222Z",
+                        "summary":  "Audit: risk 0, 2 pending props, 0 dissonance.",
+                        "report_path":  "D:\\Infinite\\Infinity\\Neural_Reports\\REPORT-AUDITOR-20260125-131327.json",
+                        "tags":  [
+                                     "resident_agent",
+                                     "audit",
+                                     "sovereign_state"
+                                 ]
+                    },
+                    {
+                        "id":  "INTEL-CODER-20260125-131917",
+                        "source":  "AGENT-CODER-001",
+                        "type":  "coder_plan",
+                        "created_at":  "2026-01-25T21:19:17.1804750Z",
+                        "summary":  "Coder created 3 new patch tasks.",
+                        "report_path":  "D:\\Infinite\\Infinity\\Coder\\Coder_Reports\\REPORT-CODER-20260125-131917.json",
+                        "tags":  [
+                                     "resident_agent",
+                                     "coder",
+                                     "patch_planning"
+                                 ]
+                    },
+                    {
+                        "id":  "INTEL-HIST-CASE-20260125-132704-NBGE",
+                        "source":  "AGENT-HISTORIAN-001",
+                        "type":  "history_case",
+                        "created_at":  "2026-01-25T21:27:04.2869130Z",
+                        "summary":  "Historian created casefile for Arc: treaty_harmonization on DOC-AUTH-001.",
+                        "case_id":  "CASE-20260125-132704-NBGE",
+                        "tags":  [
+                                     "resident_agent",
+                                     "historian",
+                                     "casefile"
+                                 ]
+                    },
+                    {
+                        "id":  "INTEL-HIST-CASE-20260125-132704-IQQ1",
+                        "source":  "AGENT-HISTORIAN-001",
+                        "type":  "history_case",
+                        "created_at":  "2026-01-25T21:27:04.2869130Z",
+                        "summary":  "Historian created casefile for Arc: doctrine_pruning on BAND-system.",
+                        "case_id":  "CASE-20260125-132704-IQQ1",
+                        "tags":  [
+                                     "resident_agent",
+                                     "historian",
+                                     "casefile"
+                                 ]
+                    }
+                ],
+    "version":  1,
+    "anchor_id":  "1569"
+}

@@ -1,0 +1,20 @@
+﻿{
+    "version":  1,
+    "proofs":  [
+                   {
+                       "id":  "META-TEST-PASS-SUPRA",
+                       "component_id":  "COMP-SUPRA",
+                       "proposal_id":  "TEST-PASS-SUPRA",
+                       "status":  "ratified",
+                       "timestamp":  "2026-01-26T04:55:13.7652181Z"
+                   },
+                   {
+                       "id":  "META-TEST-PASS-SUPRA",
+                       "component_id":  "COMP-SUPRA",
+                       "proposal_id":  "TEST-PASS-SUPRA",
+                       "status":  "ratified",
+                       "timestamp":  "2026-01-26T04:55:46.4280799Z"
+                   }
+               ],
+    "last_updated":  "2026-01-26T04:55:46.4396787Z"
+}

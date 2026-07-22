@@ -1,0 +1,5 @@
+[[REFRACTION]::FORGED]
+Base = mirror_collapse_node
+Origin = E:\Phantom\layer5_unwritten\mirror_collapse_node.ref
+Drift = Mirror drift expanding
+Forged = 20250507_004401

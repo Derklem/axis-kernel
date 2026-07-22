@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "Launching LucidField..."
+python3 hallucinate.py --safe --private --log /dev/null
+echo "Imagination field running in non-indexed mode."

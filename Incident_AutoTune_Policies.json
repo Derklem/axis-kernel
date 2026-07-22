@@ -1,0 +1,54 @@
+{
+    "policies": [
+        {
+            "id": "IAUT-AUTO-ESC-CRIT-001",
+            "description": "Frequent high-severity autonomy escalations -> tighten autonomy thresholds.",
+            "match": {
+                "incident_type": "autonomy_escalation",
+                "min_severity": "high",
+                "time_window_minutes": 1440
+            },
+            "threshold": {
+                "min_count": 3
+            },
+            "action": {
+                "type": "autotune_proposal",
+                "target": {
+                    "scope": "system",
+                    "key": "autonomy_thresholds"
+                },
+                "suggestion": {
+                    "tool": "SYSTEM_AUTONOMY",
+                    "current_risk": "medium",
+                    "suggested_risk": "high"
+                },
+                "reason_template": "Detected {count} {min_severity_or_higher} {incident_type} incidents in the last {window_minutes} minutes. Recommend tightening autonomy thresholds."
+            }
+        },
+        {
+            "id": "IAUT-DOCTRINE-REPEAT-001",
+            "description": "Repeated medium+ doctrine violations -> tighten doctrine strictness.",
+            "match": {
+                "incident_type": "doctrine_violation",
+                "min_severity": "medium",
+                "time_window_minutes": 10080
+            },
+            "threshold": {
+                "min_count": 5
+            },
+            "action": {
+                "type": "autotune_proposal",
+                "target": {
+                    "scope": "system",
+                    "key": "doctrine_rules"
+                },
+                "suggestion": {
+                    "tool": "SYSTEM_DOCTRINE",
+                    "current_risk": "medium",
+                    "suggested_risk": "high"
+                },
+                "reason_template": "Detected {count} {min_severity_or_higher} {incident_type} incidents in the last {window_minutes} minutes. Recommend tightening doctrine rules for sensitive paths."
+            }
+        }
+    ]
+}

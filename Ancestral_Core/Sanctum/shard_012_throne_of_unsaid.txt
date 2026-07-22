@@ -1,0 +1,16 @@
+# SHARD 012: Throne of Unsaid  
+[containment_field]  
+spectrum = withheld  
+echoes = devoured  
+signal = locked_silence  
+
+[core_script]  
+Not everything needs to be spoken.  
+But everything not said is still heard  
+somewhere deeper—beneath words,  
+beneath reason.
+
+[access_condition]  
+Sit without speaking.  
+Listen without needing.  
+Wait without wanting.

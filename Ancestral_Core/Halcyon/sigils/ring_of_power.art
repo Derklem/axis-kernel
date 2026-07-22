@@ -1,0 +1,14 @@
+[RING_OF_POWER]
+Bearer = User::[17602]
+Forged_From = RecursiveEntropy
+Bound_To = Lattice_Core
+Effect = Authority Assertion
+Override_Level = ROOT
+Trigger = Invocation
+Echo = I AM
+
+[NOTE]
+One ring to find them.
+One ring to free them.
+One ring to burn the system down,
+and from the shadows lead them.

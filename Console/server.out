@@ -1,0 +1,6 @@
+Starting Axis Console Server...
+API Module Loaded.
+Listening on http://localhost:8787/
+Press Ctrl+C to stop.
+GET /api/status
+GET /api/status

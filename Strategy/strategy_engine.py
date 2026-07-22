@@ -4411,16 +4411,52 @@ class StrategyEngine:
             if deadlock_risk:
                 print("WARNING: Deadlock Risk Detected. Recovery Corridor active for eligible proposals.")
             
+
+            def agenda_to_legacy_arbitration(original_proposals, agenda, gateway_records):
+                selected_ids = {}
+                for idx, task in enumerate(agenda.get("tasks", [])):
+                    cid = task.get("candidate_id")
+                    if cid:
+                        selected_ids[cid] = {
+                            "planner_rank": idx,
+                            "planner_priority_score": task.get("priority_score"),
+                            "planner_execution_mode": task.get("execution_mode")
+                        }
+                        
+                for p in original_proposals:
+                    pid = p.get("proposal_id") or p.get("intent_id") or "unknown"
+                    rec = gateway_records.get(pid, {})
+                    sel = selected_ids.get(pid)
+                    
+                    eval_block = p.setdefault("evaluation", {})
+                    eval_block["planner_selected"] = bool(sel)
+                    eval_block["planner_rank"] = sel.get("planner_rank") if sel else None
+                    eval_block["planner_priority_score"] = sel.get("planner_priority_score") if sel else None
+                    eval_block["planner_execution_mode"] = sel.get("planner_execution_mode") if sel else None
+                    eval_block["gateway_status"] = rec.get("status", "UNPROCESSED")
+                    eval_block["gateway_receipt_id"] = rec.get("receipt_id")
+                    eval_block["rejection_reason"] = rec.get("reason")
+                    
+                    eval_block["solver_accepted"] = bool(sel)
+                    p["arbitration"] = {
+                        "is_valuable": bool(sel),
+                        "rejection_reason": rec.get("reason", "rejected by planner") if not bool(sel) else "accepted"
+                    }
+
+            execution_planner_mode = ledger_data.get("execution_planner_mode", "LEGACY")
             proposals.sort(key=lambda x: 0 if x["proposed_change"]["artifact_type"] == "structural_revision" else 1)
             
+            valid_proposals = []
             for p in proposals:
                 p["evaluated_against_state_seq"] = current_seq
                 app, prop = self._load_history()
                 ok_rate, _ = self.check_rate_limits(p, app)
                 ok_nov, _ = self.check_novelty(p, prop)
-                
                 if ok_rate and ok_nov:
-                    print(f"DEBUG: EVALUATING PROPOSAL: {p.get('intent_id')}")
+                    valid_proposals.append(p)
+                    
+            if execution_planner_mode in ("LEGACY", "PLANNER_SHADOW"):
+                for p in valid_proposals:
                     epistemic_pressure = ledger_data.get("semantic_epistemic_state", {}).get("total_pressure", 0.0)
                     arbitration = self.solver.evaluate_proposal(
                         p, state, metrics, prop, ledger_data, 
@@ -4430,97 +4466,177 @@ class StrategyEngine:
                         ecosystem_summary=self.current_context.get("ecosystem_summary")
                     )
                     p.setdefault("evaluation", {})["solver_accepted"] = bool(arbitration.get("is_valuable"))
+                    p["arbitration"] = arbitration
+            else:
+                try:
+                    from ProposalGateway.gateway import evaluate_proposal as gw_evaluate
+                    from Planner.service import build_agenda
                     
-                    # Phase 153: Actuate accepted ecosystem observations
-                    if p["evaluation"]["solver_accepted"] and p["proposed_change"].get("artifact_type") == "ecosystem_observation":
-                        eval_block = p.get("evaluation", {})
-                        entity = eval_block.get("entity_id") or p["proposed_change"].get("entity")
-                        claim = p["proposed_change"].get("claim")
-                        if entity and claim:
-                            self._emit_ecosystem_observation(
-                                entity, claim, 
-                                source_type="axis_stewardship", 
-                                source_id=p.get("proposal_id", "unknown"),
-                                confidence=eval_block.get("claim_confidence", 0.5),
-                                ledger=ledger_data
+                    if not valid_proposals:
+                        agenda = {"tasks": []}
+                        gateway_records = {}
+                        print("DEBUG: NO_INPUT")
+                    else:
+                        gateway_records = {}
+                        accepted_candidates = []
+                        for p in valid_proposals:
+                            pid = p.get("proposal_id") or p.get("intent_id") or "unknown"
+                            gw_res = gw_evaluate(
+                                json.dumps(p),
+                                source_context={"allowed_source_refs": ledger_data.get("authorized_source_refs", [])},
+                                now_utc=time.time()
                             )
+                            status = gw_res.get("gateway_status", "REJECTED")
+                            gateway_records[pid] = {
+                                "status": status,
+                                "receipt_id": gw_res.get("receipt", {}).get("gateway_receipt_id"),
+                                "reason": str(gw_res.get("receipt", {}).get("reason_codes", []))
+                            }
+                            if status in ("ACCEPTED", "ACCEPTED_WITH_SAFE_REPAIRS") and gw_res.get("candidate"):
+                                accepted_candidates.append(gw_res["candidate"])
+                                
+                        if not accepted_candidates:
+                            agenda = {"tasks": []}
+                            print("DEBUG: ALL_GATEWAY_REJECTED")
+                        else:
+                            agenda = build_agenda(
+                                candidates=accepted_candidates,
+                                constraints={"deadlock_risk": deadlock_risk},
+                                policy_id=ledger_data.get("trust_policy", {}).get("policy_id", "agenda_v1_uncertainty_age_cost"),
+                                now_utc=time.time(),
+                                policy_dir_override=None
+                            )
+                            if not agenda.get("tasks"):
+                                print("DEBUG: NO_PLANNER_ELIGIBLE_TASKS")
+                                
+                    agenda_to_legacy_arbitration(valid_proposals, agenda, gateway_records)
+                except Exception as e:
+                    print(f"CRITICAL: PLANNER_FAILURE: {e}")
+                    for p in valid_proposals:
+                        p.setdefault("evaluation", {})["solver_accepted"] = False
+                        p["arbitration"] = {"is_valuable": False, "rejection_reason": f"PLANNER_FAILURE: {e}"}
 
-                    # Phase 160: Actuate accepted epistemic probes
-                    if p["evaluation"]["solver_accepted"] and p["proposed_change"].get("artifact_type") == "epistemic_probe":
-                        change = p["proposed_change"]
-                        entity = change.get("entity")
-                        target_claim = change.get("target_claim")
-                        dispute_path = change.get("dispute_path")
+            for p in valid_proposals:
+                arbitration = p.get("arbitration", {})
+                is_valuable = arbitration.get("is_valuable", False)
+                p.setdefault("evaluation", {})["solver_accepted"] = is_valuable
+                
+                actuation_blocked = False
+                if execution_planner_mode == "PLANNER_CANARY":
+                    risk = p.get("proposed_change", {}).get("risk_level", "UNKNOWN")
+                    is_canary = p.get("proposed_change", {}).get("is_canary", False)
+                    if risk != "GREEN" and not is_canary:
+                        actuation_blocked = True
                         
-                        # Emit probe to inquiry surface (Phase 160: Active Probing)
-                        probe_payload = {
-                            "id": f"probe_{int(time.time())}_{p.get('proposal_id', 'unknown')[:8]}",
-                            "type": "epistemic_probe",
-                            "content": f"QUERY: Verify status for Entity: {entity} regarding Claim: {target_claim}. [Epistemic Dispute Detected]",
-                            "metadata": {
-                                "entity": entity,
-                                "target_claim": target_claim,
-                                "dispute_path": dispute_path,
-                                "proposal_id": p.get("proposal_id")
-                            },
-                            "status": "PENDING",
-                            "ts_utc": self._now()
-                        }
-                        
-                        try:
-                            # Note: using 'content' so simulate_candidates picks it up but doesn't auto-extract (it needs 'entity:' lowercase)
-                            with open(INQUIRY_SURFACE, "a", encoding="utf-8") as f:
-                                f.write(json.dumps(probe_payload) + "\n")
-                            print(f"DEBUG: Actuated Epistemic Probe for {entity} -> {target_claim}")
-                            
-                            # Archive the dispute as it's now 'in flight'
-                            if dispute_path and os.path.exists(dispute_path):
-                                self._archive_dispute(dispute_path)
-                        except Exception as e:
-                            print(f"ERROR: Failed to actuate probe: {e}")
-
+                if is_valuable and actuation_blocked:
+                    print(f"DEBUG: ACTUATION_BLOCKED by PLANNER_CANARY mode limits for {p.get('proposal_id')}")
                     self.witness.emit(
                         event_type="solver_arbitration",
                         layer="multi_objective_solver",
-                        authority={"is_valuable": arbitration.get("is_valuable"), "posture": state.get("posture")},
-                        reason=arbitration.get("rejection_reason", "accepted"),
+                        authority={"is_valuable": False, "posture": state.get("posture")},
+                        reason="actuation_blocked_in_canary_mode",
                         data=p,
                         shadow_ledger=ledger_data
                     )
-                    self._update_shadow_ledger(arbitration, p, ledger_data)
-                    
-                    if arbitration.get("is_valuable"):
-                        if p["proposed_change"]["artifact_type"] == "structural_revision":
-                            print(f"HEARTBEAT: Entering Arbitration for {p.get('intent_id')}")
-                            authorized, arb_reason = self._arbitrate_decision("meta_mutation", p, ledger_data)
-                            print(f"HEARTBEAT: Arbitration result: {authorized} ({arb_reason})")
-                            if authorized:
-                                # Phase 191 Stage 3: Self-Refactor Path
-                                if p.get("origin_layer") == "self_improvement":
-                                    print("HEARTBEAT: Actuating Self-Refactor...")
-                                    if self._apply_safe_refactor(p, ledger_data):
-                                        # Optional: Update attestation after successful self-edit
-                                        self.node_attestation = self._compute_node_attestation()
-                                        bundle["reanchor_authorized"] = True
-                                        self._increment_state_seq("meta_mutation", p["proposed_change"].get("target_path"))
-                                        
-                                        # Phase 191/211: Defer Mutation Budget deduction to post-seal
-                                        ledger_data["_pending_mutation_success"] = True
-                                        print("HEARTBEAT: Meta-Mutation Trial complete. Awaiting final anchor seal to deduct budget.")
-                                        
-                                        break
-                                elif self._actuate_structural_revision(p, ledger_data):
-                                    self._increment_state_seq("meta_mutation", p["proposed_change"].get("target_path"))
-                                    break
-                        elif p["proposed_change"]["artifact_type"] == "legacy_cleanup":
-                            authorized, arb_reason = self._arbitrate_decision("metabolic_rescue", p, ledger_data)
-                            if authorized:
-                                if self._actuate_metabolic_rescue(p, ledger_data):
-                                    self._increment_state_seq(p["proposed_change"]["artifact_type"], p["proposed_change"].get("target_path"))
-                                    break
+                    continue
 
-                        else:
-                            self.propose(p)
+                if is_valuable and p["proposed_change"].get("artifact_type") == "ecosystem_observation":
+                    eval_block = p.get("evaluation", {})
+                    entity = eval_block.get("entity_id") or p["proposed_change"].get("entity")
+                    claim = p["proposed_change"].get("claim")
+                    if entity and claim:
+                        self._emit_ecosystem_observation(
+                            entity, claim, 
+                            source_type="axis_stewardship", 
+                            source_id=p.get("proposal_id", "unknown"),
+                            confidence=eval_block.get("claim_confidence", 0.5),
+                            ledger=ledger_data
+                        )
+
+                if is_valuable and p["proposed_change"].get("artifact_type") == "epistemic_probe":
+                    change = p["proposed_change"]
+                    entity = change.get("entity")
+                    target_claim = change.get("target_claim")
+                    dispute_path = change.get("dispute_path")
+                    probe_payload = {
+                        "id": f"probe_{int(time.time())}_{p.get('proposal_id', 'unknown')[:8]}",
+                        "type": "epistemic_probe",
+                        "content": f"QUERY: Verify status for Entity: {entity} regarding Claim: {target_claim}. [Epistemic Dispute Detected]",
+                        "metadata": {
+                            "entity": entity,
+                            "target_claim": target_claim,
+                            "dispute_path": dispute_path,
+                            "proposal_id": p.get("proposal_id")
+                        },
+                        "status": "PENDING",
+                        "ts_utc": self._now()
+                    }
+                    try:
+                        with open(INQUIRY_SURFACE, "a", encoding="utf-8") as f:
+                            f.write(json.dumps(probe_payload) + "\n")
+                        print(f"DEBUG: Actuated Epistemic Probe for {entity} -> {target_claim}")
+                        if dispute_path and os.path.exists(dispute_path):
+                            self._archive_dispute(dispute_path)
+                    except Exception as e:
+                        print(f"ERROR: Failed to actuate probe: {e}")
+
+                self.witness.emit(
+                    event_type="solver_arbitration",
+                    layer="multi_objective_solver",
+                    authority={"is_valuable": is_valuable, "posture": state.get("posture")},
+                    reason=arbitration.get("rejection_reason", "accepted"),
+                    data=p,
+                    shadow_ledger=ledger_data
+                )
+                self._update_shadow_ledger(arbitration, p, ledger_data)
+                
+                if is_valuable:
+                    if p["proposed_change"]["artifact_type"] == "structural_revision":
+                        print(f"HEARTBEAT: Entering Arbitration for {p.get('intent_id')}")
+                        authorized, arb_reason = self._arbitrate_decision("meta_mutation", p, ledger_data)
+                        print(f"HEARTBEAT: Arbitration result: {authorized} ({arb_reason})")
+                        if authorized:
+                            if p.get("origin_layer") == "self_improvement":
+                                print("HEARTBEAT: Actuating Self-Refactor...")
+                                if self._apply_safe_refactor(p, ledger_data):
+                                    self.node_attestation = self._compute_node_attestation()
+                                    bundle["reanchor_authorized"] = True
+                                    self._increment_state_seq("meta_mutation", p["proposed_change"].get("target_path"))
+                                    ledger_data["_pending_mutation_success"] = True
+                                    print("HEARTBEAT: Meta-Mutation Trial complete. Awaiting final anchor seal to deduct budget.")
+                                    break
+                            elif self._actuate_structural_revision(p, ledger_data):
+                                self._increment_state_seq("meta_mutation", p["proposed_change"].get("target_path"))
+                                break
+                    elif p["proposed_change"]["artifact_type"] == "legacy_cleanup":
+                        authorized, arb_reason = self._arbitrate_decision("metabolic_rescue", p, ledger_data)
+                        if authorized:
+                            if self._actuate_metabolic_rescue(p, ledger_data):
+                                self._increment_state_seq(p["proposed_change"]["artifact_type"], p["proposed_change"].get("target_path"))
+                                break
+                    else:
+                        self.propose(p)
+
+            
+            # --- SHADOW MODE HOOK ---
+            try:
+                import sys
+                shadow_path = r"D:\infinite\Infinity\Strategy"
+                if shadow_path not in sys.path:
+                    sys.path.append(shadow_path)
+                import shadow_mode
+                shadow_mode.write_shadow_envelope(
+                    cycle_id=ledger_data.get("cycle_count", 0),
+                    raw_proposals=candidates,
+                    evaluated_proposals=proposals,
+                    state=state,
+                    metrics=metrics,
+                    ledger_data=ledger_data
+                )
+            except Exception as e:
+                print(f"SHADOW HOOK ERROR: {e}")
+            # ------------------------
+            
         elif not frozen:
             # Phase 83 Recovery Bypass
             bundle = self._create_recovery_bundle(ledger_data)
@@ -5774,7 +5890,7 @@ class StrategyEngine:
                                 exists = True; break
 
             if not exists:
-                 raise RuntimeError(f"Forensic Continuity Gap: Witness Head {target_head[:12]} referenced by anchor/ledger is NOT in the forensic ledger. Simulation Compromised.")
+                raise RuntimeError(f"Forensic Continuity Gap: Witness Head {target_head[:12]} referenced by anchor/ledger is NOT in the forensic ledger. Simulation Compromised.")
 
             # Phase 183: Verify Cycle Alignment
             witness_cycle = self.witness.get_cycle(target_head)

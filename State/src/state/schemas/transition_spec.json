@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "transition_spec_schema_version",
+    "transition_version",
+    "subject",
+    "supported_increment"
+  ],
+  "properties": {
+    "transition_spec_schema_version": {
+      "const": "1.0.0"
+    },
+    "transition_version": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "supported_increment": {
+      "type": "integer",
+      "minimum": 0
+    }
+  }
+}

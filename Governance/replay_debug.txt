@@ -1,0 +1,6 @@
+﻿  [PASS] Anchor Chain Valid.
+-ForegroundColor
+Green
+Verifying Snapshot State Vector...
+------------------------
+REPLAY FAILED: 1 errors detected.

@@ -1,0 +1,9 @@
+{
+  "last_progress_utc": "2026-02-26T04:29:06.521657Z",
+  "observed_snapshot": {
+    "executor_last_run_utc": "2026-02-25T20:05:20.5157530ZZ",
+    "heartbeat_tick": null,
+    "ledger_bytes": 16,
+    "pulse_epoch_start_utc": "2026-02-21T16:00:00Z"
+  }
+}

@@ -1,0 +1,3 @@
+URL: https://www.amazon.com/?url=http://example.com
+Steps: 1. Navigate to the URL. 2. Observe redirect to example.com.
+Impact: Could allow phishing by redirecting users to malicious sites.

@@ -1,0 +1,31 @@
+{
+    "schema_version": "1.0",
+    "definition": "A Directed Acyclic Graph (DAG) mapping L1 Inferences to L0 Observed Evidence.",
+    "nodes": {
+        "L0_NODE": {
+            "type": "EVIDENCE",
+            "fields": [
+                "ts",
+                "source_hash",
+                "raw_data_ref"
+            ]
+        },
+        "L1_NODE": {
+            "type": "CONCLUSION",
+            "fields": [
+                "ts",
+                "score",
+                "decay_rate"
+            ]
+        }
+    },
+    "edges": {
+        "SUPPORTED_BY": {
+            "from": "L1_NODE",
+            "to": "L0_NODE",
+            "weight": 1.0,
+            "constraint": "MUST_EXIST"
+        }
+    },
+    "invariant": "No L1 Node exists without at least one SUPPORTED_BY edge to an L0 Node."
+}

@@ -1,0 +1,14 @@
+{
+    "schema_version": 1,
+    "report_root": "D:\\Infinite\\Infinity\\Reports",
+    "sources": {
+        "walk_log": "D:\\Infinite\\Infinity\\Axis_Walk_Log.jsonl",
+        "log_pulse": "D:\\Infinite\\Infinity\\Axis_LogPulse.jsonl",
+        "lattice_pulse": "D:\\Infinite\\Infinity\\Axis_LatticePulse.jsonl",
+        "keeper_log": "D:\\Infinite\\Infinity\\Axis_Keeper_Log.jsonl"
+    },
+    "identity_script": "D:\\Infinite\\Axis_Identity.ps1",
+    "window": {
+        "hours_back": 24
+    }
+}

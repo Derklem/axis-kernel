@@ -1,0 +1,10 @@
+﻿{
+    "ts_utc":  "2026-02-10T19:16:29.3945388Z",
+    "last_event_ts":  "2026-02-07T18:25:19.7112858Z",
+    "status":  "stalled_provenance_write",
+    "window_events":  81,
+    "n_correct":  0,
+    "accuracy":  0,
+    "avg_abs_duration_error_ms":  18907.466666666667,
+    "p95_abs_duration_error_ms":  35590
+}

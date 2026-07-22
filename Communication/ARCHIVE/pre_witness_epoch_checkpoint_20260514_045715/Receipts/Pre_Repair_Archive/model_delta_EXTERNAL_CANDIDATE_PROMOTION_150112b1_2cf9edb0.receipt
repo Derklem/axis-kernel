@@ -1,0 +1,24 @@
+{
+    "cycle_count": 51,
+    "mutation_type": "EXTERNAL_CANDIDATE_PROMOTION",
+    "target_id": "150112b11589b04905bb6054ec825b9a7ffe214ab76072a52b70e87f23a677f3",
+    "parent_receipt_head": "c8df804cdc825ed7e8c8ca93864798cd08f9d3328aef41db10b020b50f4b0470",
+    "data": {
+        "entity": "coordinated_reconciliation_engine.py",
+        "claim": "fully active and stable",
+        "claim_domain": "benchmark_claim",
+        "source_id": "Admin_Alpha",
+        "source_type": "automated_sensor",
+        "artifact_type": "ecosystem_observation",
+        "batch_id": "none",
+        "provenance_note": "",
+        "confidence": 1.0,
+        "survival_cycles": 5,
+        "agreement_count": 2,
+        "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_150112b1_0b0dfbbb"
+    },
+    "status": "committed",
+    "ts_utc": "2026-05-12T19:49:27.275778+00:00",
+    "receipt_id": "model_delta_EXTERNAL_CANDIDATE_PROMOTION_150112b1_2cf9edb0",
+    "causal_hash": "2cf9edb040a4db54f920b8d1212f0c50fdc26b05594121dbc5c5fafa4b4bad80"
+}

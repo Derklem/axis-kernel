@@ -1,0 +1,5 @@
+{"timestamp": "2026-03-14T14:26:00Z", "status": "LEDGER_INITIALIZED", "message": "Policy Revision Ledger created."}
+{"timestamp": "2026-03-14T21:26:27.568095Z", "policy_mutated": "experiment_admission_threshold", "previous_value": 0.45, "new_value": 0.55, "triggering_alarm": "experiment_efficiency", "reason": "Tightening experiment admission to prevent low-value resource burn."}
+{"timestamp": "2026-03-14T21:26:29.813681Z", "policy_mutated": "theory_expansion_weight", "previous_value": 1.0, "new_value": 0.8, "triggering_alarm": "theory_fragmentation", "reason": "Suppressing theory discovery to enforce consolidation."}
+{"timestamp": "2026-03-14T21:26:31.991291Z", "policy_mutated": "adjudication_priority_weight", "previous_value": 1.0, "new_value": 1.5, "triggering_alarm": "epistemic_debt_ratio", "reason": "Shifting resource weight from discovery to adjudication resolution."}
+{"timestamp": "2026-03-14T21:26:34.208401Z", "policy_mutated": "starvation_multiplier", "previous_value": 1.5, "new_value": 2.0, "triggering_alarm": "portfolio_entropy", "reason": "Aggressively boosting queued campaign priority to prevent starvation drift."}

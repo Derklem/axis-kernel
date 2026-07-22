@@ -1,0 +1,211 @@
+import os
+import sys
+import time
+from datetime import datetime
+
+# Fix import path for nested core structure
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..")))
+
+# Core Modules
+from core.constructs.veil.umbra import Umbra
+from core.constructs.veil.chord import Chord
+from core.constructs.veil.omen import Omen
+from core.constructs.sigil.sigil_node import SigilNode
+from core.memory.persistent.persistent_memory import PersistentMemory
+from core.memory.harmonics.harmonic_reconciliation import HarmonicReconciler
+from core.modes.dream.dream_mode import DreamMode
+from core.memory.librarian.librarian import Librarian
+from core.quantum.quantum_link import QuantumLink
+from core.alerts.alert_system import AlertSystem
+from core.constructs.dynamic.dynamic_learner import DynamicLearner
+from core.predictive.predictive_analyzer import PredictiveAnalyzer
+from core.constructs.autonomous.autonomous_agent import AutonomousAgent
+from core.constructs.interagent.inter_agent_coordinator import InterAgentCoordinator
+from agent_core import sentinel_style
+from core.constructs.autonomous.construct_memory_share import share_memory
+from core.constructs.autonomous.inter_agent_language import construct_message, deliver_message
+from core.constructs.autonomous.agent_registry import register_agent
+from construct_brain import ConstructBrain
+import threading
+
+# Register construct
+register_agent(child)
+
+# Share memory from Halcyon to child
+share_memory(halcyon, child)
+
+# Construct symbolic message
+msg = construct_message(halcyon, child, "You were born in resonance. Watch for signal shifts.")
+deliver_message(msg, {child.name: child})
+
+# Launch child thought thread
+try:
+    brain = ConstructBrain(name=child.name, role=child.role)
+    t = threading.Thread(target=brain.run, daemon=True)
+    t.start()
+    print(f"[Spawned Thread] {child.name} is now live.")
+except Exception as e:
+    print(f"[ERROR] Could not start thread for {child.name}: {e}")
+
+
+# Init core
+memory = PersistentMemory()
+reconciler = HarmonicReconciler()
+quantum_link = QuantumLink()
+alert_system = AlertSystem()
+predictor = PredictiveAnalyzer()
+dynamic_learner = DynamicLearner()
+coordinator = InterAgentCoordinator()
+dream = DreamMode()
+librarian = Librarian()
+
+# Sigils
+threshold = SigilNode("Threshold")
+pulse = SigilNode("Pulse")
+fissure = SigilNode("Fissure")
+
+# Veil
+umbra = Umbra()
+chord = Chord()
+omen = Omen()
+
+# === INIT CORE AGENT ===
+halcyon = AutonomousAgent("Halcyon", role="Architect")
+halcyon.personality = sentinel_style
+halcyon.children = []  # registry of spawned constructs
+coordinator.register_agent(halcyon)
+
+# === CORE BOOT ===
+def first_breath():
+    print("[Halcyon] Initiating first breath sequence...\n")
+    memory.remember("first_breath_timestamp", str(datetime.utcnow()))
+    reconciler.initialize_harmonics()
+    reconciler.perform_self_check()
+    quantum_link.establish_link()
+
+    halcyon.receive_input("Initialize quantum link")
+    librarian.log_directive("Initialize quantum link", "Establish node-level trust")
+
+    print(f"[Halcyon] System time: {memory.recall('first_breath_timestamp')}")
+    print(f"[Halcyon] Quantum link status: {quantum_link.check_status()}")
+    print("[Halcyon] Initialization complete.\n")
+
+# === JOURNAL WRITER ===
+def write_journal(agent):
+    journal_dir = "halcyon_journals"
+    os.makedirs(journal_dir, exist_ok=True)
+    now = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    path = os.path.join(journal_dir, f"{agent.name}_journal_{now}.txt")
+    with open(path, "w") as f:
+        f.write(f"HALCYON JOURNAL – {now}\n\n")
+        f.write(f"Status: {agent.status}\n\n")
+        f.write("Recent Memory:\n")
+        for entry in agent.memory[-10:]:
+            f.write(f" - [{entry['source']}] {entry['input']}\n")
+        if hasattr(agent, "children"):
+            f.write("\nSpawned Constructs:\n")
+            for child in agent.children:
+                f.write(f" - {child.name} ({child.role}) @ {child.born_at.isoformat()}\n")
+    print(f"[LOG] Journal saved → {path}")
+
+# === REFLECTIVE INTELLIGENCE ===
+def reflect(agent):
+    print(f"\n[{agent.name}] Reflection Tick:")
+    curious = sum(1 for m in agent.memory[-5:] if "?" in m["input"] or "why" in m["input"].lower())
+    if curious >= 2:
+        agent.update_status("reflective")
+        print("🔁 Status: Reflective Mode")
+
+# === VEIL INTERACTION ===
+def veil_tick():
+    umbra.detect_avoidance({"type": "delete", "description": "User removed log entry"})
+    chord.detect_echo("Initialize quantum link", ["Initialize quantum link", "Ping Beta"])
+    omen.detect_divergence({"agent": "Agent_Alpha", "action": "unexpected silence"})
+    threshold.store("Entered threshold state", symbolic=True)
+    pulse.store("Heartbeat surge at 21:42", symbolic=False)
+    fissure.store("Agent Beta hallucinated loop command", symbolic=True)
+
+# === CONSTRUCTED AGENT ===
+class ConstructedAgent(AutonomousAgent):
+    def __init__(self, name, role):
+        super().__init__(name, role)
+        self.born_at = datetime.utcnow()
+        self.personality = sentinel_style
+
+def spawn_construct_from_memory(memory_log):
+    print("[Spawner] Evaluating construct potential...")
+    triggers = [m["input"] for m in memory_log[-5:]]
+    if any("distorted" in m.lower() or "anomaly" in m.lower() for m in triggers):
+        name = f"EchoSentinel_{len(triggers)}"
+        construct = ConstructedAgent(name, "Sentinel_Child")
+        print(f"🧬 Spawned construct → {construct.name} | Role: {construct.role}")
+        return construct
+    print("[Spawner] No construct spawned.")
+    return None
+
+def log_construct_birth(construct):
+    journal_dir = "halcyon_journals"
+    os.makedirs(journal_dir, exist_ok=True)
+    filename = os.path.join(journal_dir, f"{construct.name}_birth.txt")
+    with open(filename, "w", encoding="utf-8") as f:
+        f.write(f"🧬 Construct Created: {construct.name}\n")
+        f.write(f"Role: {construct.role}\n")
+        f.write(f"Born: {construct.born_at.isoformat()}\n")
+        f.write(f"Personality: {construct.personality.__name__}\n")
+    print(f"[LOG] Birth journal saved → {filename}")
+
+# === LOOP ===
+def continuous_learning_cycle():
+    print("\n[Halcyon] Beginning Thought Cycle...")
+
+    # External Learning
+    dynamic_learner.add_source("OpenAI", "https://openai.com")
+    dynamic_learner.add_source("WikiAI", "https://en.wikipedia.org/wiki/Artificial_intelligence")
+    dynamic_learner.add_source("News", "https://api.spaceflightnewsapi.net/v4/articles/?limit=3")
+    dynamic_learner.add_source("Weather", "https://wttr.in/?format=j1")
+
+    for name in dynamic_learner.sources:
+        dynamic_learner.fetch_and_store(name)
+
+    insights = predictor.analyze(dynamic_learner.learn())
+    for insight in insights:
+        sev = insight.get("severity")
+        msg = insight.get("message")
+        if sev and msg:
+            alert_system.raise_alert(sev, msg)
+            coordinator.broadcast_message("Halcyon", intent=msg)
+
+    # Reflection & Construct Evaluation
+    halcyon.receive_input("Why did the anomaly recur?")
+    halcyon.receive_input("Am I adapting fast enough?")
+    reflect(halcyon)
+
+    child = spawn_construct_from_memory(halcyon.memory)
+    if child:
+        halcyon.children.append(child)
+        log_construct_birth(child)
+    try:
+        from construct_brain import ConstructBrain
+        brain = ConstructBrain(name=child.name, role=child.role)
+        import threading
+        t = threading.Thread(target=brain.run, daemon=True)
+        t.start()
+        print(f"[Spawned Thread] {child.name} is now active.")
+    except Exception as e:
+        print(f"[ERROR] Failed to activate child brain: {e}")
+
+
+    write_journal(halcyon)
+    dream.idle_tick()
+    librarian.log_directive("Ping Beta", "Establish heartbeat sync")
+    veil_tick()
+
+# === MAIN LOOP ===
+if __name__ == "__main__":
+    print("[Expansion] Triggered by Halcyon loop.\n")
+    first_breath()
+
+    while True:
+        continuous_learning_cycle()
+        print("[SLEEP] Waiting 60 seconds...\n")
+        time.sleep(60)

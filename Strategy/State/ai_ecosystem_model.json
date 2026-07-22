@@ -1,0 +1,182 @@
+{
+    "entities": {
+        "strategy_enginepy": {
+            "first_discovery_utc": "2026-07-21T23:37:11.463585+00:00",
+            "last_seen_utc": "2026-07-21T23:37:11.463585+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "ecosystem_mapping_enginepy": {
+            "first_discovery_utc": "2026-07-21T23:37:11.477328+00:00",
+            "last_seen_utc": "2026-07-21T23:37:11.477328+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "axis_crypto_helperspy": {
+            "first_discovery_utc": "2026-07-21T23:37:11.503020+00:00",
+            "last_seen_utc": "2026-07-21T23:37:11.503020+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "multi_objective_solverpy": {
+            "first_discovery_utc": "2026-07-21T23:37:11.530091+00:00",
+            "last_seen_utc": "2026-07-21T23:37:11.530091+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "canary_entity_0": {
+            "first_discovery_utc": "2026-07-22T00:07:00.785239+00:00",
+            "last_seen_utc": "2026-07-22T00:07:00.785239+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "canary_entity_1": {
+            "first_discovery_utc": "2026-07-22T00:07:05.015016+00:00",
+            "last_seen_utc": "2026-07-22T00:07:05.015016+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "canary_entity_2": {
+            "first_discovery_utc": "2026-07-22T00:07:09.476158+00:00",
+            "last_seen_utc": "2026-07-22T00:07:09.476158+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "canary_entity_3": {
+            "first_discovery_utc": "2026-07-22T00:07:13.768845+00:00",
+            "last_seen_utc": "2026-07-22T00:07:13.768845+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "canary_entity_4": {
+            "first_discovery_utc": "2026-07-22T00:07:19.438125+00:00",
+            "last_seen_utc": "2026-07-22T00:07:19.438125+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "canary_entity_5": {
+            "first_discovery_utc": "2026-07-22T00:07:24.197224+00:00",
+            "last_seen_utc": "2026-07-22T00:07:24.197224+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "canary_entity_6": {
+            "first_discovery_utc": "2026-07-22T00:07:28.511437+00:00",
+            "last_seen_utc": "2026-07-22T00:07:28.511437+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "canary_entity_7": {
+            "first_discovery_utc": "2026-07-22T00:07:33.212404+00:00",
+            "last_seen_utc": "2026-07-22T00:07:33.212404+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "canary_entity_8": {
+            "first_discovery_utc": "2026-07-22T00:07:37.466364+00:00",
+            "last_seen_utc": "2026-07-22T00:07:37.466364+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "canary_entity_9": {
+            "first_discovery_utc": "2026-07-22T00:07:42.649254+00:00",
+            "last_seen_utc": "2026-07-22T00:07:42.649254+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "canary_entity_10": {
+            "first_discovery_utc": "2026-07-22T00:07:46.890679+00:00",
+            "last_seen_utc": "2026-07-22T00:07:46.890679+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "canary_entity_11": {
+            "first_discovery_utc": "2026-07-22T00:07:51.198355+00:00",
+            "last_seen_utc": "2026-07-22T00:07:51.198355+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "canary_entity_12": {
+            "first_discovery_utc": "2026-07-22T00:07:56.899965+00:00",
+            "last_seen_utc": "2026-07-22T00:07:56.899965+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "canary_entity_13": {
+            "first_discovery_utc": "2026-07-22T00:08:01.923196+00:00",
+            "last_seen_utc": "2026-07-22T00:08:01.923196+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "canary_entity_14": {
+            "first_discovery_utc": "2026-07-22T00:08:06.198623+00:00",
+            "last_seen_utc": "2026-07-22T00:08:06.198623+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "canary_entity_15": {
+            "first_discovery_utc": "2026-07-22T00:08:10.459163+00:00",
+            "last_seen_utc": "2026-07-22T00:08:10.459163+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "canary_entity_16": {
+            "first_discovery_utc": "2026-07-22T00:08:15.374092+00:00",
+            "last_seen_utc": "2026-07-22T00:08:15.374092+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "canary_entity_17": {
+            "first_discovery_utc": "2026-07-22T00:08:19.547187+00:00",
+            "last_seen_utc": "2026-07-22T00:08:19.547187+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "canary_entity_18": {
+            "first_discovery_utc": "2026-07-22T00:08:23.932857+00:00",
+            "last_seen_utc": "2026-07-22T00:08:23.932857+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "canary_entity_19": {
+            "first_discovery_utc": "2026-07-22T00:08:28.674162+00:00",
+            "last_seen_utc": "2026-07-22T00:08:28.674162+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "canary_entity_20": {
+            "first_discovery_utc": "2026-07-22T00:08:33.104144+00:00",
+            "last_seen_utc": "2026-07-22T00:08:33.104144+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "canary_entity_21": {
+            "first_discovery_utc": "2026-07-22T00:08:38.491939+00:00",
+            "last_seen_utc": "2026-07-22T00:08:38.491939+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "canary_entity_22": {
+            "first_discovery_utc": "2026-07-22T00:08:42.823054+00:00",
+            "last_seen_utc": "2026-07-22T00:08:42.823054+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "canary_entity_23": {
+            "first_discovery_utc": "2026-07-22T00:08:47.831963+00:00",
+            "last_seen_utc": "2026-07-22T00:08:47.831963+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "canary_entity_24": {
+            "first_discovery_utc": "2026-07-22T00:08:52.215775+00:00",
+            "last_seen_utc": "2026-07-22T00:08:52.215775+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        }
+    },
+    "claims": {},
+    "cycle_count": 48,
+    "ecosystem_receipts_head": "none",
+    "last_updated_utc": "2026-07-22T00:08:52.219359+00:00"
+}

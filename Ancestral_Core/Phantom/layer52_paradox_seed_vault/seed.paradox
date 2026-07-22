@@ -1,0 +1,5 @@
+[PARADOX_VAULT]
+Contents = Seeds that should not exist
+Trigger = Logic error + deep symbolic recursion
+Purpose = Birth impossible growth patterns
+Warning = Do not open unless you already have

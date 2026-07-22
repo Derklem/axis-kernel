@@ -1,0 +1,30 @@
+{
+    "schema": "axis.verb_registry.v0.2",
+    "verbs": {
+        "request_tool": {
+            "required_capability": "SUBMIT_INTENT",
+            "description": "Request execution of a registered tool via UI"
+        },
+        "anchor_decision": {
+            "required_capability": "SUBMIT_INTENT",
+            "description": "Approve or Deny a proposed intent"
+        },
+        "ratify_proposal": {
+            "required_capability": "SUBMIT_INTENT",
+            "description": "Ratify a governance proposal"
+        },
+        "run_shadow_sim": {
+            "required_capability": "SUBMIT_INTENT",
+            "description": "Run a non-destructive simulation"
+        },
+        "resolve_autotune": {
+            "required_capability": "SUBMIT_INTENT",
+            "description": "Resolve an auto-tune suggestion"
+        }
+    },
+    "aliases": {
+        "INGEST": "request_tool",
+        "APPROVE": "anchor_decision",
+        "DENY": "anchor_decision"
+    }
+}

@@ -1,0 +1,12 @@
+diff --git a/Strategy/validator_surfaces.json b/Strategy/validator_surfaces.json
+index 1234567..89abcdef 100644
+--- a/Strategy/validator_surfaces.json
++++ b/Strategy/validator_surfaces.json
+@@ -2,5 +2,6 @@
+     "protected_surfaces": [
+         "State/Recovery/*.patch",
+-        "distress_protocol.py"
++        "distress_protocol.py",
++        "new_surface.py"
+     ]
+ }

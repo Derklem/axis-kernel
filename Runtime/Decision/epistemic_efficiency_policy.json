@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "fitness_thresholds": {
+    "min_acceptable_efficiency": 0.50,
+    "min_average_information_gain": 0.10,
+    "max_acceptable_fragmentation": 0.30,
+    "max_epistemic_debt_ratio": 3.0,
+    "max_portfolio_entropy": 0.50
+  },
+  "last_updated": "2026-03-14T13:09:00Z"
+}

@@ -1,0 +1,14 @@
+﻿{
+    "timestamp_utc":  "2026-05-15T00:37:20.9784997Z",
+    "speaker":  "USER",
+    "constraints":  [
+                        "read_only",
+                        "no_cycle",
+                        "no_self_improvement",
+                        "no_refactor",
+                        "no_ingestion",
+                        "summarize_only"
+                    ],
+    "question":  "What is the safest next posture after cycle 506 recovery?",
+    "message_type":  "bounded_read_only_inquiry"
+}

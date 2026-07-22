@@ -1,0 +1,52 @@
+{
+  "version": "1.0",
+  "execution_mode": "CONSTRAINED_GATE",
+  "plan_ttl_cycles_by_staging": {
+    "NONE": 10,
+    "WATCH": 6,
+    "PRESTAGE": 4,
+    "HANDOFF_READY": 2,
+    "QUARANTINE": 1
+  },
+  "execution_firebreaks": {
+    "block_if_regime_changed": true,
+    "block_if_doctrine_changed": true,
+    "block_if_quarantine_active": true,
+    "block_if_budget_exceeded": true,
+    "block_if_plan_superseded": true,
+    "block_if_ttl_expired": true
+  },
+  "context_hash_fields": [
+    "current_regime",
+    "active_doctrine",
+    "staging_mode",
+    "forecasted_next_regime",
+    "quarantine_active"
+  ],
+  "staging_execution_permissions": {
+    "NONE": [
+      "PASSIVE_DIAGNOSTIC",
+      "TARGETED_PROBE",
+      "DOCTRINE_DISCRIMINATION",
+      "RECOVERY_VALIDATION",
+      "STRESS_TEST"
+    ],
+    "WATCH": [
+      "PASSIVE_DIAGNOSTIC",
+      "TARGETED_PROBE",
+      "DOCTRINE_DISCRIMINATION"
+    ],
+    "PRESTAGE": [
+      "PASSIVE_DIAGNOSTIC",
+      "DOCTRINE_DISCRIMINATION",
+      "RECOVERY_VALIDATION"
+    ],
+    "HANDOFF_READY": [
+      "PASSIVE_DIAGNOSTIC",
+      "RECOVERY_VALIDATION"
+    ],
+    "QUARANTINE": [
+      "PASSIVE_DIAGNOSTIC"
+    ]
+  }
+}

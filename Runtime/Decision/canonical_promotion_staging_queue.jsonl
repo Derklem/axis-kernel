@@ -1,0 +1,5 @@
+{"timestamp": "2026-03-15T16:56:00.586247Z", "candidate_id": "CONS-A-B-001", "resulting_artifact": "THEORY_DB_DEADLOCK_A", "review_outcome": "DUPLICATE_COLLAPSE_RECOMMENDED", "status": "QUEUED_FOR_CANONICAL_REVIEW"}
+{"timestamp": "2026-03-15T16:56:36.705313Z", "candidate_id": "CONS-A-B-001", "resulting_artifact": "THEORY_DB_DEADLOCK_A", "review_outcome": "DUPLICATE_COLLAPSE_RECOMMENDED", "status": "QUEUED_FOR_CANONICAL_REVIEW"}
+{"timestamp": "2026-03-15T16:57:21.330944Z", "candidate_id": "CONS-SATURATION-FRAGMENTATION-001", "resulting_artifact": "META_THEORY_RESOURCE_CONTENTION_DYNAMICS", "review_outcome": "META_THEORY_CONSTRUCTED", "status": "QUEUED_FOR_CANONICAL_REVIEW"}
+{"timestamp": "2026-03-15T16:57:21.332157Z", "candidate_id": "CONS-A-B-001", "resulting_artifact": "THEORY_DB_DEADLOCK_A", "review_outcome": "DUPLICATE_COLLAPSE_RECOMMENDED", "status": "QUEUED_FOR_CANONICAL_REVIEW"}
+{"candidate_id": "MOCK-META-002", "resulting_artifact": "META_THEORY_RESOURCE_CONTENTION_DYNAMICS", "timestamp": "2026-03-15T01:00:00Z", "status": "QUEUED_FOR_CANONICAL_REVIEW"}

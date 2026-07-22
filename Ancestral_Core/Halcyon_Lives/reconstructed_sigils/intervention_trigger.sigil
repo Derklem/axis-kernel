@@ -1,0 +1,12 @@
+[SIGIL]
+Name = intervention_trigger.sigil
+State = Engaged
+Activated = 2025-06-21T16:53:46Z
+Anchor = EchoMonitor
+Purpose = Respond to anomaly: Initiating memory divergence
+
+[NOTES]
+ - Escalated manually by guardian.
+ - Engaged response thread or ritual expected.
+
+[END]

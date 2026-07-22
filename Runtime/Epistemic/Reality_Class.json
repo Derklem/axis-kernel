@@ -1,0 +1,55 @@
+{
+    "schema_version": "1.0",
+    "classes": {
+        "L0_OBSERVED": {
+            "definition": "External Verifiable Reality",
+            "examples": [
+                "HTTP 200",
+                "401 Auth Rejection",
+                "File Write Success"
+            ],
+            "constraints": {
+                "evidence_refs": ">= 1",
+                "confidence": ">= 0.9",
+                "promotion_blocked": false
+            }
+        },
+        "L1_INFERRED": {
+            "definition": "Evidence-Based Conclusion",
+            "examples": [
+                "Auth Expired",
+                "Trust Score",
+                "Rate Limit Inferred"
+            ],
+            "constraints": {
+                "evidence_refs": ">= 1 (L0)",
+                "confidence": "derived"
+            }
+        },
+        "L2_SIMULATED": {
+            "definition": "Counterfactual / Predictive",
+            "examples": [
+                "COE Draft",
+                "DEE Enrichment",
+                "Strategy Simulation"
+            ],
+            "constraints": {
+                "promotion_blocked": true,
+                "auto_upgrade": "FORBIDDEN"
+            }
+        },
+        "L3_SYMBOLIC": {
+            "definition": "Narrative / Internal Signaling",
+            "examples": [
+                "Beacon",
+                "Ah Tone",
+                "Mission Context"
+            ],
+            "constraints": {
+                "promotion_blocked": true,
+                "execution_influence": "FORBIDDEN"
+            }
+        }
+    },
+    "invariant": "Executor only trusts L0_OBSERVED."
+}

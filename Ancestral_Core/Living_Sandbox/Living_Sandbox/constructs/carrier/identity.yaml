@@ -1,0 +1,15 @@
+
+identity:
+  name: Carrier
+  role: export-shell
+  type: portable-memory
+  status: dormant
+
+description: >
+  Carrier is responsible for creating portable snapshots of the system—bundles of 
+  constructs, memories, and symbolic state that can be transferred to other environments 
+  without breaking tether or legacy.
+
+activation:
+  method: triggered by Architect or Navigator
+  fallback: default to passive state until requested

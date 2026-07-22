@@ -1,0 +1,11 @@
+﻿{
+    "ts_utc":  "2026-02-17T03:10:35.3793148Z",
+    "checks":  {
+                   "Watchdog":  "PASS",
+                   "ServerSSE":  "FAIL",
+                   "ServerStartup":  "PASS",
+                   "DrillSmoke":  "PASS",
+                   "PIDCheck":  "PASS"
+               },
+    "verdict":  "FAIL"
+}

@@ -1,0 +1,27 @@
+{
+    "cycle_count": 505,
+    "mutation_type": "DRY_RUN_EXTRACTION",
+    "target_id": "strategy_engine.py",
+    "parent_receipt_head": "8ad276a2974f3fa68084f7f1c86c53e5ed4be2b238c6b1d2beb34e0bf93fa360",
+    "data": {
+        "intent_id": "DRY_RUN_TEST_003",
+        "target_file": "strategy_engine.py",
+        "function": "_calc_multi_model_instability",
+        "slice": "L380-L443",
+        "parameters": [
+            "self",
+            "mutate",
+            "ledger"
+        ],
+        "return_count": 3,
+        "side_effect_count": 7,
+        "is_pure": false,
+        "extracted_valid": true,
+        "modified_valid": true,
+        "status": "VALID_DRY_RUN"
+    },
+    "status": "committed",
+    "ts_utc": "2026-05-13T20:11:07.929894+00:00",
+    "receipt_id": "model_delta_DRY_RUN_EXTRACTION_strategy_c0a41b8a",
+    "causal_hash": "c0a41b8a49175976b5eb46e202375e3fa217e5525ce9de94751db4ba66f2fa0e"
+}

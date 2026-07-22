@@ -1,0 +1,10 @@
+﻿{
+    "schema":  "axis.promoter_cursor.v0.1",
+    "queue":  "intent_queue",
+    "source":  "D:\\Infinite\\Infinity\\Runtime\\Decision\\intent_queue.jsonl",
+    "byte_offset":  2,
+    "line":  1,
+    "ts_utc":  "2026-02-14T19:54:35.8150696Z",
+    "file_len":  2,
+    "file_time":  "2026-02-14T00:33:44.3285478Z"
+}

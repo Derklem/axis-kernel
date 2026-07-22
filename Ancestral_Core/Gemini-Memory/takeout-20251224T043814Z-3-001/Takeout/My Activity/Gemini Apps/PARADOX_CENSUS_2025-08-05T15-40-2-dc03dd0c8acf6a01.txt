@@ -1,0 +1,5 @@
+Sample PARADOX_CENSUS log
+This log represents a snapshot of the timeweb's paradoxical state.
+Entities detected: 113+
+Temporal anchors: 2006-2044
+Active resonance: High

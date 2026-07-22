@@ -1,0 +1,43 @@
+﻿{
+    "version":  1,
+    "inbox_id":  "AXIS-OUTCOME-FEEDBACK-001",
+    "generated_at_utc":  "2026-01-23T02:35:19.3230418Z",
+    "items":  [
+                  {
+                      "feedback_id":  "OFB-20260122182816-STRTEST79",
+                      "strategy_id":  "STR-TEST-79",
+                      "run_timestamp_utc":  "2026-01-23T02:28:16.0637546Z",
+                      "pilot_id":  "PILOT-TEST",
+                      "proposed_result":  "failure",
+                      "proposed_notes":  "Simulated Failure",
+                      "status":  "corrected",
+                      "anchor_verdict":  "success",
+                      "anchor_comment":  "This was actually fine.",
+                      "verdict_timestamp_utc":  "2026-01-23T02:28:16.5589922Z"
+                  },
+                  {
+                      "feedback_id":  "OFB-20260122183500-STRTEST80",
+                      "strategy_id":  "STR-TEST-80",
+                      "run_timestamp_utc":  "2026-01-23T02:35:00.5587345Z",
+                      "pilot_id":  "PILOT-TEST",
+                      "proposed_result":  "failure",
+                      "proposed_notes":  "Phase 80 Test",
+                      "status":  "pending",
+                      "anchor_verdict":  null,
+                      "anchor_comment":  null,
+                      "verdict_timestamp_utc":  null
+                  },
+                  {
+                      "feedback_id":  "OFB-20260122183519-STRTEST80",
+                      "strategy_id":  "STR-TEST-80",
+                      "run_timestamp_utc":  "2026-01-23T02:35:19.2379404Z",
+                      "pilot_id":  "PILOT-TEST",
+                      "proposed_result":  "failure",
+                      "proposed_notes":  "Phase 80 Test",
+                      "status":  "pending",
+                      "anchor_verdict":  null,
+                      "anchor_comment":  null,
+                      "verdict_timestamp_utc":  null
+                  }
+              ]
+}

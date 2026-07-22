@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "doctrines": {
+    "ALT_THEORY_MEMORY_FRAGMENTATION": {
+      "canonical_status": "RIVAL"
+    },
+    "THEORY_QUEUE_SATURATION": {
+      "canonical_status": "CANONICAL_CANDIDATE"
+    },
+    "META_THEORY_RESOURCE_CONTENTION_DYNAMICS": {
+      "canonical_status": "CANONICAL_CANDIDATE"
+    },
+    "THEORY_NETWORK_ROUTE_FLAPPING": {
+      "canonical_status": "PIONEER_HYPOTHESIS"
+    }
+  }
+}

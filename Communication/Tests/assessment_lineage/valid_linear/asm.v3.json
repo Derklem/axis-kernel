@@ -1,0 +1,6 @@
+{
+  "assessment_id": "asm_v3",
+  "experiment_id": "EXP_TEST",
+  "_filepath": "valid_linear/asm.v3.json",
+  "supersedes": "valid_linear/asm.v2.json"
+}

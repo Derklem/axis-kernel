@@ -1,0 +1,20 @@
+{
+  "imp_version": "1.0",
+  "message_id": "grok-crit-001",
+  "created_utc": "2026-05-26T21:05:00Z",
+  "source_model": "GROK",
+  "message_type": "critique",
+  "scope": "non_binding",
+  "claim": "Axis is generating self-observations but not linking them to actionable refactor targets.",
+  "evidence": [
+    "Observation axis_observation_1779828039339 shows structural debt in strategy_engine.py",
+    "No refactor_target artifact was generated from this observation"
+  ],
+  "constraints": [
+    "no_core_mutation",
+    "no_ingestion",
+    "no_reanchor",
+    "no_cycle_required"
+  ],
+  "requires_response": false
+}

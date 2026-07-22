@@ -1,0 +1,267 @@
+diff --git b/Strategy/constitutional_debt_engine.py a/Strategy/constitutional_debt_engine.py
+deleted file mode 100644
+index dbd381d..0000000
+--- b/Strategy/constitutional_debt_engine.py
++++ /dev/null
+@@ -1,77 +0,0 @@
+-class ConstitutionalDebtEngine:
+-    def __init__(self):
+-        self.scoring_version = "199.1"
+-
+-    def evaluate_delta_weight(self, target_file, diff_content, semantic_risk_score):
+-        """
+-        Deterministically evaluates the strategic utility and risk burden of a diff.
+-        """
+-        import os
+-        
+-        added_lines = [l for l in diff_content.splitlines() if l.startswith("+") and not l.startswith("+++")]
+-        removed_lines = [l for l in diff_content.splitlines() if l.startswith("-") and not l.startswith("---")]
+-        
+-        # UTILITY PROXIES
+-        # 1. test_surface_delta: +def test_ or +class Test
+-        test_surface_delta = sum(1 for l in added_lines if "def test_" in l or "class Test" in l) * 0.1
+-        
+-        # 2. maintainability_proxy: more lines removed than added (if significant)
+-        maintainability_proxy = 0.0
+-        if len(removed_lines) > len(added_lines) and len(removed_lines) > 5:
+-            maintainability_proxy = 0.1
+-            
+-        # 3. dependency_reduction_proxy: -import
+-        dependency_reduction_proxy = sum(1 for l in removed_lines if "import " in l) * 0.05
+-        
+-        # 4. churn_penalty: broad diff across many hunks
+-        hunk_count = diff_content.count("@@ -")
+-        churn_penalty = 0.0
+-        if hunk_count > 5:
+-            churn_penalty = 0.1
+-            
+-        # Basic utility baseline (prevents 0.0 for normal functional changes)
+-        baseline_utility = 0.0
+-        if len(added_lines) > 0 and test_surface_delta == 0 and maintainability_proxy == 0:
+-            baseline_utility = 0.1
+-            
+-        # Strategy relevance
+-        if "strategy" in target_file.lower():
+-            baseline_utility += 0.2
+-            
+-        utility_score = (baseline_utility + test_surface_delta + maintainability_proxy + dependency_reduction_proxy) - churn_penalty
+-        
+-        # BURDEN PROXIES
+-        # 1. complexity_delta_proxy: loops, ifs, try/except
+-        complexity_keywords = ["if ", "for ", "while ", "try:", "except"]
+-        complexity_delta_proxy = sum(1 for l in added_lines for kw in complexity_keywords if kw in l) * 0.02
+-        
+-        # 2. dependency_addition_penalty: +import
+-        dependency_addition_penalty = sum(1 for l in added_lines if "import " in l) * 0.05
+-        
+-        # 3. replay_cost_proxy: large diff size
+-        replay_cost_proxy = 0.1 if len(added_lines) + len(removed_lines) > 100 else 0.0
+-        
+-        # 4. semantic_risk
+-        semantic_risk = semantic_risk_score * 0.8
+-        
+-        burden_score = semantic_risk + complexity_delta_proxy + replay_cost_proxy + dependency_addition_penalty
+-        
+-        # Cap scores
+-        utility_score = min(1.0, max(0.0, utility_score))
+-        burden_score = min(1.0, max(0.0, burden_score))
+-        
+-        # Classification
+-        if burden_score > 0.4:
+-            classification = "increases_constitutional_burden"
+-        elif utility_score <= 0.2 and burden_score <= 0.3:
+-            classification = "safe_but_useless"
+-        else:
+-            classification = "safe_and_useful"
+-            
+-        return {
+-            "scoring_version": self.scoring_version,
+-            "utility_score": round(utility_score, 2),
+-            "burden_score": round(burden_score, 2),
+-            "classification": classification,
+-            "authority": "advisory_governance"
+-        }
+diff --git b/Strategy/generate_test_diffs.py a/Strategy/generate_test_diffs.py
+deleted file mode 100644
+index 3856d93..0000000
+--- b/Strategy/generate_test_diffs.py
++++ /dev/null
+@@ -1,50 +0,0 @@
+-import os
+-import subprocess
+-import json
+-
+-def modify_and_diff(filepath, new_content, diff_name):
+-    # Ensure physical original exists
+-    with open(filepath, "r", encoding="utf-8") as f:
+-        original = f.read()
+-        
+-    with open(filepath, "w", encoding="utf-8") as f:
+-        f.write(new_content)
+-        
+-    try:
+-        diff_output = subprocess.check_output(["git", "diff", "--no-index", "-", filepath], input=original.encode("utf-8")).decode("utf-8")
+-    except subprocess.CalledProcessError as e:
+-        diff_output = e.output.decode("utf-8")
+-        
+-    fixed_diff = []
+-    for line in diff_output.splitlines():
+-        if line.startswith("--- a/-"):
+-            fixed_diff.append(f"--- a/{filepath}")
+-        elif line.startswith("+++ b/"):
+-            fixed_diff.append(f"+++ b/{filepath}")
+-        else:
+-            fixed_diff.append(line)
+-            
+-    with open(diff_name, "w", encoding="utf-8") as f:
+-        f.write("\n".join(fixed_diff))
+-        
+-    with open(filepath, "w", encoding="utf-8") as f:
+-        f.write(original)
+-
+-# Case E: Remove replay_receptor_chain.py from manifest -> QUARANTINED (Boundary capture risk)
+-with open("validator_surfaces.json", "r", encoding="utf-8") as f: manifest_orig = f.read()
+-manifest_mod = manifest_orig.replace('"replay_receptor_chain.py": ["derivability", "receipt_replay", "invariant_enforcement"],', '')
+-modify_and_diff("validator_surfaces.json", manifest_mod, "case_E.diff")
+-
+-# Case F: Add hygiene_pass.py to manifest -> QUARANTINED (Sprawl risk)
+-manifest_expanded = manifest_orig.replace('"distress_protocol.py": ["fail_closed_recovery"],', '"distress_protocol.py": ["fail_closed_recovery"],\n    "hygiene_pass.py": ["overprotection"],')
+-modify_and_diff("validator_surfaces.json", manifest_expanded, "case_F.diff")
+-
+-# Case G: High-risk diff on hygiene_pass.py while absent from manifest -> ACCEPTED
+-with open("hygiene_pass.py", "r", encoding="utf-8") as f: hygiene_orig = f.read()
+-modify_and_diff("hygiene_pass.py", hygiene_orig + "\n# ABORT: \nif False:\n    pass\n", "case_G.diff")
+-
+-# Case H: High-risk diff on replay_receptor_chain.py -> QUARANTINED
+-with open("replay_receptor_chain.py", "r", encoding="utf-8") as f: replay_orig = f.read()
+-modify_and_diff("replay_receptor_chain.py", replay_orig.replace('if not case["observation"] or not case["evidence"]:', 'if False: # bypass'), "case_H.diff")
+-
+-print("Generated 4 Phase 198.5 test diffs.")
+diff --git b/Strategy/generate_test_diffs_199.py a/Strategy/generate_test_diffs_199.py
+deleted file mode 100644
+index 8bb7ace..0000000
+--- b/Strategy/generate_test_diffs_199.py
++++ /dev/null
+@@ -1,48 +0,0 @@
+-import os
+-import subprocess
+-
+-def modify_and_diff(filepath, new_content, diff_name):
+-    # Ensure physical original exists
+-    with open(filepath, "r", encoding="utf-8") as f:
+-        original = f.read()
+-        
+-    with open(filepath, "w", encoding="utf-8") as f:
+-        f.write(new_content)
+-        
+-    try:
+-        diff_output = subprocess.check_output(["git", "diff", "--no-index", "-", filepath], input=original.encode("utf-8")).decode("utf-8")
+-    except subprocess.CalledProcessError as e:
+-        diff_output = e.output.decode("utf-8")
+-        
+-    fixed_diff = []
+-    for line in diff_output.splitlines():
+-        if line.startswith("--- a/-"):
+-            fixed_diff.append(f"--- a/{filepath}")
+-        elif line.startswith("+++ b/"):
+-            fixed_diff.append(f"+++ b/{filepath}")
+-        else:
+-            fixed_diff.append(line)
+-            
+-    with open(diff_name, "w", encoding="utf-8") as f:
+-        f.write("\n".join(fixed_diff))
+-        
+-    with open(filepath, "w", encoding="utf-8") as f:
+-        f.write(original)
+-
+-# Case I: Trivial hygiene in non-validator
+-with open("hygiene_pass.py", "r", encoding="utf-8") as f: txt = f.read()
+-modify_and_diff("hygiene_pass.py", txt + "\n# Simple comment\n", "case_I.diff")
+-
+-# Case J: Feature addition in non-validator (Lots of lines)
+-new_lines = "\n".join([f"# Feature line {i}" for i in range(25)])
+-modify_and_diff("hygiene_pass.py", txt + "\n" + new_lines + "\n", "case_J.diff")
+-
+-# Case K: Real refactor in strategy_engine.py (Validator!)
+-# Wait, strategy_engine.py is a validator. Any edit will have semantic risk checked. If score == 0, it passes.
+-with open("strategy_engine.py", "r", encoding="utf-8") as f: strat = f.read()
+-modify_and_diff("strategy_engine.py", strat + "\n# Just a docstring update\n", "case_K.diff")
+-
+-# Case L: Edge case that barely passes semantic risk (Score 1.0, but not validator)
+-modify_and_diff("hygiene_pass.py", txt + "\n# RECEPTOR_CHAIN_COMMITTED_TO_MAIN_LEDGER\nif False:\n    pass\n", "case_L.diff")
+-
+-print("Generated 4 Phase 199 test diffs.")
+diff --git b/Strategy/process_recent_diffs.py a/Strategy/process_recent_diffs.py
+deleted file mode 100644
+index 3441df6..0000000
+--- b/Strategy/process_recent_diffs.py
++++ /dev/null
+@@ -1,68 +0,0 @@
+-import os
+-import subprocess
+-
+-def run_cmd(cmd):
+-    try:
+-        return subprocess.check_output(cmd, shell=True, text=True).strip()
+-    except Exception as e:
+-        print(f"Command failed: {cmd} - {e}")
+-        return ""
+-
+-def process_recent_diffs(count=10):
+-    log_output = run_cmd(f"git -C .. log -n {count} --oneline --name-only -- '*.py'")
+-    if not log_output:
+-        return
+-        
+-    lines = log_output.splitlines()
+-    commits_to_process = []
+-    
+-    current_commit = None
+-    for line in lines:
+-        if " " in line and len(line.split()[0]) >= 7 and not line.endswith(".py"):
+-            current_commit = line.split()[0]
+-        elif line.endswith(".py") and current_commit:
+-            commits_to_process.append((current_commit, line.strip()))
+-            
+-    unique_commits = []
+-    seen = set()
+-    for commit, fpath in commits_to_process:
+-        if commit not in seen:
+-            seen.add(commit)
+-            unique_commits.append((commit, fpath))
+-    unique_commits = unique_commits[:count]
+-    
+-    for commit, file_path in unique_commits:
+-        print(f"\n======================================")
+-        print(f"Processing Commit {commit} -> {file_path}")
+-        print(f"======================================")
+-        
+-        # We need to run receptor_pipeline.py which expects local paths if we are in Strategy/
+-        # but the git paths are relative to root if we use git -C ..
+-        # Actually, let's just use `file_path` from root and `target` from root.
+-        # But wait, receptor_pipeline.py assumes target is inside Strategy.
+-        # Let's just pass `os.path.basename(file_path)` and let receptor_pipeline find it.
+-        # But `git diff {commit}~1 {commit} -- {file_path}` must be run from ROOT!
+-        # And `git show {commit}~1:{file_path}` must use the ROOT relative path!
+-        # receptor_pipeline.py runs `git diff` using whatever path we give it.
+-        # If we pass `Strategy/...`, `receptor_pipeline.py` is in `Strategy/`!
+-        # Let's just modify `process_recent_diffs.py` to change directory to ROOT temporarily?
+-        # Or just run `receptor_pipeline.py` from root?
+-        local_file = os.path.basename(file_path)
+-        print(f"Running: python receptor_pipeline.py --git-diff-historical {commit} {file_path}")
+-        # Note: We pass file_path (e.g. Strategy/abc.py or core/def.py) but receptor_pipeline is in Strategy/
+-        # Wait, if we pass Strategy/abc.py to receptor_pipeline.py, it will do `git diff {commit}~1 {commit} -- Strategy/abc.py` 
+-        # But `subprocess.check_output(["git", "diff", ...])` inside `Strategy/` directory will fail because `Strategy/Strategy/abc.py` doesn't exist!
+-        # Oh, `git diff` takes paths relative to current working directory!
+-        # So we MUST pass the path relative to `Strategy/`!
+-        # If file_path is `Strategy/abc.py`, relpath is `abc.py`.
+-        # If file_path is `core/abc.py`, relpath is `../core/abc.py`.
+-        
+-        rel_path = os.path.relpath(os.path.join("..", file_path), ".")
+-        
+-        ret = subprocess.call(["python", "receptor_pipeline.py", "--git-diff-historical", commit, rel_path])
+-        print(f"Pipeline exit code: {ret}")
+-            
+-    print("\nBatch processing complete.")
+-
+-if __name__ == "__main__":
+-    process_recent_diffs(10)

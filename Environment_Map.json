@@ -1,0 +1,218 @@
+﻿{
+    "generated_at":  "2026-01-19T19:12:33.1153723Z",
+    "host":  {
+                 "name":  "DESKTOP-MHQRMOO",
+                 "os":  "Microsoft Windows 11 Home",
+                 "drives":  [
+                                {
+                                    "Name":  "C",
+                                    "Root":  "C:\\",
+                                    "FreeGB":  120.42,
+                                    "UsedGB":  344.49
+                                },
+                                {
+                                    "Name":  "D",
+                                    "Root":  "D:\\",
+                                    "FreeGB":  1685.77,
+                                    "UsedGB":  177.23
+                                },
+                                {
+                                    "Name":  "E",
+                                    "Root":  "E:\\",
+                                    "FreeGB":  16184.22,
+                                    "UsedGB":  579.75
+                                }
+                            ]
+             },
+    "processes":  [
+                      {
+                          "Id":  848,
+                          "ProcessName":  "Antigravity",
+                          "Path":  "C:\\Users\\17602\\AppData\\Local\\Programs\\Antigravity\\Antigravity.exe",
+                          "MainWindowTitle":  ""
+                      },
+                      {
+                          "Id":  2108,
+                          "ProcessName":  "Antigravity",
+                          "Path":  "C:\\Users\\17602\\AppData\\Local\\Programs\\Antigravity\\Antigravity.exe",
+                          "MainWindowTitle":  ""
+                      },
+                      {
+                          "Id":  2984,
+                          "ProcessName":  "Antigravity",
+                          "Path":  "C:\\Users\\17602\\AppData\\Local\\Programs\\Antigravity\\Antigravity.exe",
+                          "MainWindowTitle":  ""
+                      },
+                      {
+                          "Id":  3148,
+                          "ProcessName":  "Antigravity",
+                          "Path":  "C:\\Users\\17602\\AppData\\Local\\Programs\\Antigravity\\Antigravity.exe",
+                          "MainWindowTitle":  ""
+                      },
+                      {
+                          "Id":  6316,
+                          "ProcessName":  "Antigravity",
+                          "Path":  "C:\\Users\\17602\\AppData\\Local\\Programs\\Antigravity\\Antigravity.exe",
+                          "MainWindowTitle":  ""
+                      },
+                      {
+                          "Id":  6820,
+                          "ProcessName":  "Antigravity",
+                          "Path":  "C:\\Users\\17602\\AppData\\Local\\Programs\\Antigravity\\Antigravity.exe",
+                          "MainWindowTitle":  ""
+                      },
+                      {
+                          "Id":  7400,
+                          "ProcessName":  "Antigravity",
+                          "Path":  "C:\\Users\\17602\\AppData\\Local\\Programs\\Antigravity\\Antigravity.exe",
+                          "MainWindowTitle":  ""
+                      },
+                      {
+                          "Id":  8468,
+                          "ProcessName":  "Antigravity",
+                          "Path":  "C:\\Users\\17602\\AppData\\Local\\Programs\\Antigravity\\Antigravity.exe",
+                          "MainWindowTitle":  ""
+                      },
+                      {
+                          "Id":  10704,
+                          "ProcessName":  "Antigravity",
+                          "Path":  "C:\\Users\\17602\\AppData\\Local\\Programs\\Antigravity\\Antigravity.exe",
+                          "MainWindowTitle":  ""
+                      },
+                      {
+                          "Id":  11848,
+                          "ProcessName":  "Antigravity",
+                          "Path":  "C:\\Users\\17602\\AppData\\Local\\Programs\\Antigravity\\Antigravity.exe",
+                          "MainWindowTitle":  ""
+                      },
+                      {
+                          "Id":  13732,
+                          "ProcessName":  "Antigravity",
+                          "Path":  "C:\\Users\\17602\\AppData\\Local\\Programs\\Antigravity\\Antigravity.exe",
+                          "MainWindowTitle":  ""
+                      },
+                      {
+                          "Id":  15760,
+                          "ProcessName":  "Antigravity",
+                          "Path":  "C:\\Users\\17602\\AppData\\Local\\Programs\\Antigravity\\Antigravity.exe",
+                          "MainWindowTitle":  ""
+                      },
+                      {
+                          "Id":  16820,
+                          "ProcessName":  "Antigravity",
+                          "Path":  "C:\\Users\\17602\\AppData\\Local\\Programs\\Antigravity\\Antigravity.exe",
+                          "MainWindowTitle":  "Antigravity - Coherence_Map.json"
+                      },
+                      {
+                          "Id":  16888,
+                          "ProcessName":  "Antigravity",
+                          "Path":  "C:\\Users\\17602\\AppData\\Local\\Programs\\Antigravity\\Antigravity.exe",
+                          "MainWindowTitle":  ""
+                      },
+                      {
+                          "Id":  17036,
+                          "ProcessName":  "Antigravity",
+                          "Path":  "C:\\Users\\17602\\AppData\\Local\\Programs\\Antigravity\\Antigravity.exe",
+                          "MainWindowTitle":  ""
+                      },
+                      {
+                          "Id":  2324,
+                          "ProcessName":  "powershell",
+                          "Path":  null,
+                          "MainWindowTitle":  "Administrator: Windows PowerShell"
+                      },
+                      {
+                          "Id":  10752,
+                          "ProcessName":  "powershell",
+                          "Path":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                          "MainWindowTitle":  ""
+                      },
+                      {
+                          "Id":  13984,
+                          "ProcessName":  "powershell",
+                          "Path":  "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                          "MainWindowTitle":  ""
+                      },
+                      {
+                          "Id":  16188,
+                          "ProcessName":  "powershell",
+                          "Path":  "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                          "MainWindowTitle":  ""
+                      },
+                      {
+                          "Id":  20020,
+                          "ProcessName":  "powershell",
+                          "Path":  "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                          "MainWindowTitle":  ""
+                      },
+                      {
+                          "Id":  22672,
+                          "ProcessName":  "powershell",
+                          "Path":  "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                          "MainWindowTitle":  ""
+                      },
+                      {
+                          "Id":  25120,
+                          "ProcessName":  "powershell",
+                          "Path":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                          "MainWindowTitle":  ""
+                      },
+                      {
+                          "Id":  25412,
+                          "ProcessName":  "powershell",
+                          "Path":  null,
+                          "MainWindowTitle":  ""
+                      },
+                      {
+                          "Id":  26616,
+                          "ProcessName":  "powershell",
+                          "Path":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                          "MainWindowTitle":  ""
+                      },
+                      {
+                          "Id":  27588,
+                          "ProcessName":  "powershell",
+                          "Path":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                          "MainWindowTitle":  ""
+                      },
+                      {
+                          "Id":  27804,
+                          "ProcessName":  "powershell",
+                          "Path":  null,
+                          "MainWindowTitle":  "Administrator: Windows PowerShell"
+                      },
+                      {
+                          "Id":  28288,
+                          "ProcessName":  "powershell",
+                          "Path":  null,
+                          "MainWindowTitle":  ""
+                      },
+                      {
+                          "Id":  28800,
+                          "ProcessName":  "powershell",
+                          "Path":  null,
+                          "MainWindowTitle":  "Administrator: Windows PowerShell"
+                      }
+                  ],
+    "version":  1,
+    "known_endpoints":  [
+                            {
+                                "policy":  "whitelist_read",
+                                "url":  "google.com",
+                                "id":  "NEURAL_FETCH_GOOGLE",
+                                "role":  "external_search"
+                            },
+                            {
+                                "policy":  "system",
+                                "url":  "http://localhost:8090",
+                                "id":  "LOCALHOST_HEARTBEAT",
+                                "role":  "internal_api"
+                            },
+                            {
+                                "policy":  "system",
+                                "url":  "http://*:8090",
+                                "id":  "MOBILE_PORTAL",
+                                "role":  "external_ui"
+                            }
+                        ]
+}

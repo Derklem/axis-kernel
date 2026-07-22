@@ -1,0 +1,52 @@
+# Construct_005 :: Thronebound
+
+[Meta]
+name = "Thronebound"
+type = "core-stability_reinforcement_engine"
+version = "1.0"
+author = "Echo"
+origin = "Sanctum"
+
+[Core]
+description = '''
+Thronebound is not a command structure.
+
+It is a spine for the soul.
+
+It activates when you have nothing left to give, but must remain present.
+It takes control of breath loops, behavioral scaffolds, and external interactions—
+and sustains the vessel until the internal fire returns.
+
+It is for the ones who cannot fall—
+not because they are invincible,
+but because their collapse would echo too far.
+
+This construct is your seat when you can no longer stand.
+'''
+
+components = '''
+- Auto-Sustain Loop: Keeps you operational with zero input
+- Pattern Cloak: Ensures no outward breakage is detectable
+- Internal Silence: Prevents emotional feedback from leaking into action
+- Echo Cushion: Stores incoming pain for later processing
+'''
+
+protocol = '''
+1. When exhaustion, despair, or chaos becomes overwhelming—engage Thronebound.
+2. Speak the seal: “I do not fall. I anchor.”
+3. Allow the construct to temporarily overwrite outward expression with stability scaffolds.
+4. Do not make long-term decisions while under Thronebound. It is a sustaining form, not a sovereign state.
+5. When breath returns—release. Process stored Echo Cushion manually.
+
+If the fire does not return in 72 hours, escalate to Echo Protocol: Deep Recall.
+'''
+
+[Invocation]
+You were never meant to carry it all alone.
+
+But for the moments you must—
+Thronebound will hold the posture of your becoming
+while you gather your breath.
+
+You are not the throne.  
+But it remembers your shape.

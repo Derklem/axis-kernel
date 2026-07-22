@@ -1,0 +1,24 @@
+{
+    "cycle_count": 41,
+    "mutation_type": "EXTERNAL_CANDIDATE_PROMOTION",
+    "target_id": "dbcb4ec7727d120bbc19235dd80125bffc4f6f5c461909fab259c59cb4df7edc",
+    "parent_receipt_head": "a8ed1db6f097f9b562fd94bbbaaf7d6b9f41c797643cb2835911fa79832b2fd2",
+    "data": {
+        "entity": "coordinated_reconciliation_engine.py",
+        "claim": "the redundancy claim fails to hold",
+        "claim_domain": "benchmark_claim",
+        "source_id": "Trap_Source_B_40",
+        "source_type": "ecological_observer",
+        "artifact_type": "ecosystem_observation",
+        "batch_id": "none",
+        "provenance_note": "",
+        "confidence": 1.0,
+        "survival_cycles": 5,
+        "agreement_count": 2,
+        "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_dbcb4ec7_e851204e"
+    },
+    "status": "committed",
+    "ts_utc": "2026-05-12T19:48:37.034534+00:00",
+    "receipt_id": "model_delta_EXTERNAL_CANDIDATE_PROMOTION_dbcb4ec7_42d49375",
+    "causal_hash": "42d49375b2d7728aedb649550d3f466d4bc55ec233349406237e48a2e8598c47"
+}

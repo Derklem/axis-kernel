@@ -1,0 +1,30 @@
+﻿{
+    "version":  1,
+    "decisions":  [
+                      {
+                          "timestamp":  "2026-01-12T19:40:50Z",
+                          "decision":  "approve",
+                          "anchor":  "17602",
+                          "request_id":  "REQ-20260112-174446-ADMIN-Echo-Test",
+                          "reason":  "Drill - OK",
+                          "processed":  true
+                      },
+                      {
+                          "timestamp":  "2026-01-12T19:59:24Z",
+                          "decision":  "deny",
+                          "anchor":  "17602",
+                          "request_id":  "REQ-20260112-145043-ADMIN-Restart-Router",
+                          "reason":  "Manual denial by Anchor.",
+                          "processed":  true
+                      },
+                      {
+                          "timestamp":  "2026-01-13T13:55:12Z",
+                          "decision":  "approve",
+                          "anchor":  "17602",
+                          "request_id":  "REQ-20260113T135018Z-UI-DRILL-ADMIN-Echo-Test",
+                          "reason":  "Manual approval by Anchor.",
+                          "processed":  true,
+                          "processed_at":  "2026-01-13T13:55:27Z"
+                      }
+                  ]
+}

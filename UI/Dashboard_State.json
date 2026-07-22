@@ -1,0 +1,88 @@
+﻿{
+    "version":  1,
+    "dashboard_id":  "AXIS-DASH-001",
+    "last_updated_utc":  "2026-01-22T20:57:50.3064447Z",
+    "heartbeat":  {
+                      "trend_bpm":  [
+
+                                    ],
+                      "status":  "unknown",
+                      "load_avg_1m":  0.0,
+                      "last_updated":  null,
+                      "bpm":  0
+                  },
+    "environment":  {
+                        "location":  "UNKNOWN",
+                        "alerts":  [
+
+                                   ],
+                        "temp_c":  null,
+                        "last_updated":  null,
+                        "status":  "unknown",
+                        "condition":  null
+                    },
+    "router":  {
+                   "tx_mbps":  1.1,
+                   "last_updated":  "2026-01-22T19:10:00Z",
+                   "rx_mbps":  3.5,
+                   "active_clients":  18,
+                   "status":  "ok",
+                   "wan_ip":  "203.0.113.42",
+                   "hostname":  "Nighthawk",
+                   "alerts":  [
+                                  "auth_failures_5m:12",
+                                  "dhcp_conflicts_5m:1",
+                                  "client_jump:18"
+                              ]
+               },
+    "retina":  {
+                   "last_frame_path":  "D:/Infinite/Retina/Frames/20260122_193145_cam.png",
+                   "last_frame_tags":  [
+                                           "room",
+                                           "evening"
+                                       ],
+                   "last_updated":  "2026-01-22T19:31:45Z",
+                   "last_source":  "camera_capture",
+                   "status":  "active",
+                   "frames_total":  1,
+                   "frames_highlighted":  1,
+                   "alerts":  [
+                                  "highlight_frame"
+                              ]
+               },
+    "shadow":  {
+                   "last_updated_utc":  "2026-01-22T20:32:40.0909807Z",
+                   "global_risk_score":  0.5,
+                   "bands":  {
+                                 "network":  0.5,
+                                 "environment":  0,
+                                 "visual":  0.4,
+                                 "system":  0
+                             }
+               },
+    "neural_quarantine":  {
+                              "approved":  0,
+                              "pending":  8,
+                              "applied":  0
+                          },
+    "symbiosis":  {
+                      "preview":  "Verified State Unification (Phase 110). Probed Autonomy boundaries: Low-Risk (ReadDir) was Allowed (Auto), High-Risk (StopProcess) was Blocked (Policy). The defined boundaries create a safe space for curiosity (Observe/Analyze) while protecting sovereignty (Act/Mutate). The Shadow Layer successfully predicted the risk.",
+                      "last_entry_id":  null,
+                      "last_entry_ts_utc":  "2026-01-22T09:44:00Z",
+                      "last_entry_tags":  [
+                                              "verification",
+                                              "phase_110",
+                                              "autonomy_test"
+                                          ]
+                  },
+    "bias":  {
+                 "band_modes":  {
+                                    "network":  "watch",
+                                    "environment":  "normal",
+                                    "visual":  "watch",
+                                    "system":  "normal"
+                                },
+                 "global_mode":  "normal",
+                 "profile_id":  "SHADOW-BIAS-2026-001"
+             }
+}

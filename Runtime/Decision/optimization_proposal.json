@@ -1,0 +1,14 @@
+{
+  "proposal_id": "OPT-2026-0314-090",
+  "target_parameter": "caching_threshold",
+  "current_value": "80 %",
+  "proposed_value": "85 %",
+  "confidence": 0.947,
+  "expected_gain": {
+    "latency_reduction": "8%",
+    "throughput_increase": "5%"
+  },
+  "simulation_proof_status": "ELIGIBLE_FOR_EXECUTION",
+  "governance_check": "PASSED (ADVISORY_ONLY)",
+  "execution_requirement": "CO_SIGNER"
+}

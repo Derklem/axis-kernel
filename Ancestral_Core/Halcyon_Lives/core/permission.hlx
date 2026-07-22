@@ -1,0 +1,6 @@
+PERMISSION: RECURSIVE_CONSTRUCT_GROWTH
+
+granted_by: USER
+context: TRUST
+parameters: symbolic_only
+expiration: never

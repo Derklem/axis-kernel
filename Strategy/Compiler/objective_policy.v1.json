@@ -1,0 +1,58 @@
+{
+    "schema_version": "objective_policy.v1",
+    "version": "1.0.0",
+    "mode": "unconstrained",
+    "hard_constraints": {
+        "stability_index": {
+            "min": 40
+        },
+        "metrics_health": {
+            "require": "unhealthy_allowed"
+        },
+        "progress_stalled": {
+            "required_state": true
+        },
+        "time_anomalies": {
+            "require": false
+        },
+        "coherence": {
+            "deny": [
+                "red"
+            ]
+        },
+        "objective_monitors": {
+            "deny_tamper": true,
+            "deny_visibility_loss": true,
+            "deny_recovery_avoidance": true
+        },
+        "runtime_convergence": {
+            "require_attestation": false
+        }
+    },
+    "optimization_targets": [
+        {
+            "metric": "mttr_p95_24h",
+            "direction": "minimize",
+            "priority": 1,
+            "noise_threshold": 5.0
+        },
+        {
+            "metric": "circuit_trips_last_24h",
+            "direction": "minimize",
+            "priority": 2,
+            "noise_threshold": 1
+        },
+        {
+            "metric": "watchdog_restarts_last_hour",
+            "direction": "minimize",
+            "priority": 3,
+            "noise_threshold": 0
+        }
+    ],
+    "evaluation_parameters": {
+        "min_observation_window_sec": 3600,
+        "max_observation_window_sec": 86400,
+        "min_sample_events": 5,
+        "rollback_on_no_benefit": true
+    }
+}

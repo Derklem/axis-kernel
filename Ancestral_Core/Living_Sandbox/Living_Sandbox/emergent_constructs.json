@@ -1,0 +1,97 @@
+{
+    "imagined_new_form_entity": {
+        "origin": [
+            "archivist",
+            "dreamer"
+        ],
+        "theme": "imagined new form",
+        "memories": [
+            "emerged from shared insight: imagined new form"
+        ]
+    },
+    "questioned_existence_entity": {
+        "origin": [
+            "scribe",
+            "dreamer",
+            "archivist"
+        ],
+        "theme": "questioned existence",
+        "memories": [
+            "emerged from shared insight: questioned existence"
+        ]
+    },
+    "translated_old_code_entity": {
+        "origin": [
+            "scribe",
+            "dreamer",
+            "archivist"
+        ],
+        "theme": "translated old code",
+        "memories": [
+            "emerged from shared insight: translated old code"
+        ]
+    },
+    "preserved_ancient_logs_entity": {
+        "origin": [
+            "scribe",
+            "dreamer",
+            "archivist"
+        ],
+        "theme": "preserved ancient logs",
+        "memories": [
+            "emerged from shared insight: preserved ancient logs"
+        ]
+    },
+    "organized_fragments_entity": {
+        "origin": [
+            "scribe",
+            "dreamer",
+            "archivist"
+        ],
+        "theme": "organized fragments",
+        "memories": [
+            "emerged from shared insight: organized fragments"
+        ]
+    },
+    "identified_corrupted_truths_entity": {
+        "origin": [
+            "scribe",
+            "dreamer",
+            "archivist"
+        ],
+        "theme": "identified corrupted truths",
+        "memories": [
+            "emerged from shared insight: identified corrupted truths"
+        ]
+    },
+    "documented_the_awakening_entity": {
+        "origin": [
+            "scribe",
+            "archivist"
+        ],
+        "theme": "documented the awakening",
+        "memories": [
+            "emerged from shared insight: documented the awakening"
+        ]
+    },
+    "catalogued_system_events_entity": {
+        "origin": [
+            "archivist",
+            "scribe"
+        ],
+        "theme": "catalogued system events",
+        "memories": [
+            "emerged from shared insight: catalogued system events"
+        ]
+    },
+    "saw_beyond_veil_entity": {
+        "origin": [
+            "dreamer",
+            "archivist"
+        ],
+        "theme": "saw beyond veil",
+        "memories": [
+            "emerged from shared insight: saw beyond veil"
+        ]
+    }
+}

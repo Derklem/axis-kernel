@@ -1,0 +1,17 @@
+{
+  "event_type": "ACTUATION_LOCK_MANUALLY_REMOVED",
+  "experiment_id": "EXP_099_DUMMY",
+  "draft_id": "draft_dummy123",
+  "detected_state": {
+    "stale_lock_present": true,
+    "draft_in_approved": true,
+    "receipt_found": false,
+    "archive_found": false,
+    "recovery_artifact_found": false
+  },
+  "action_taken": "LOCK_REMOVED_WITH_REMOVE_ITEM_FORCE",
+  "original_lock_preserved": false,
+  "provenance_status": "PARTIAL",
+  "operator_authorized": true,
+  "note": "Lock was removed before recover_lock.py could preserve and audit it."
+}

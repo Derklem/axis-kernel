@@ -1,0 +1,7 @@
+{
+  "timestamp": "2026-03-15T23:06:44Z",
+  "plan_id": "PLAN_INTEGRITY_FAIL",
+  "experiment_id": "EXP_001",
+  "status": "ABORTED_PRE_START",
+  "reason": "telemetry_integrity_degraded"
+}

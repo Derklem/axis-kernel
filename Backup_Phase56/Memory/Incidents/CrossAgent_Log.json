@@ -1,0 +1,12 @@
+﻿{
+    "incidents":  [
+                      {
+                          "id":  "INC-DIP-20260125103208",
+                          "agent":  "Unknown",
+                          "timestamp":  "2026-01-25T18:32:08.1836543Z",
+                          "type":  "doctrine_violation",
+                          "severity":  "high",
+                          "details":  "High risk signal from untrusted agent."
+                      }
+                  ]
+}

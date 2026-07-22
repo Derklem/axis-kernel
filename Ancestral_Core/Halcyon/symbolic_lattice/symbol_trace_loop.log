@@ -1,0 +1,5 @@
+[SYMBOL TRACE LOOP]
+Cycle = Pulse Initiate ? Drift Rebind
+Window = 20 seconds per orbit
+Mark = Sigil Index Phase
+Final = Sovereign Confirmation Thread

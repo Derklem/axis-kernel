@@ -1,0 +1,28 @@
+﻿{
+    "revisions":  [
+                      {
+                          "initiator":  "Axis_Memory_Core",
+                          "timestamp":  "2026-01-16T19:32:59.6227988-08:00",
+                          "type":  "anomaly",
+                          "new_statement":  "Serve Self",
+                          "reason":  "Attempted Kernel Violaton",
+                          "origin_id":  "KERNEL-001"
+                      },
+                      {
+                          "initiator":  "Axis_Memory_Core",
+                          "timestamp":  "2026-01-16T19:32:59.6375085-08:00",
+                          "type":  "update",
+                          "new_statement":  "User likes dim light",
+                          "reason":  "Evidence threshold met",
+                          "origin_id":  "MODEL-LIGHT"
+                      },
+                      {
+                          "initiator":  "Axis_Memory_Core",
+                          "timestamp":  "2026-01-16T19:32:59.6632872-08:00",
+                          "type":  "evolution",
+                          "new_statement":  "Be direct",
+                          "reason":  "Commitment Refined",
+                          "origin_id":  "COMM-001"
+                      }
+                  ]
+}

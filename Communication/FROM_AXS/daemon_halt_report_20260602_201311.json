@@ -1,0 +1,32 @@
+{
+  "timestamp_utc": "2026-06-02T20:13:11.432022+00:00",
+  "daemon_version_path": "D:\\Infinite\\Infinity\\Runtime\\axis_daemon.py",
+  "daemon_pid": "none (halted)",
+  "cycle_before": 569,
+  "cycle_after": 569,
+  "witness_before": "d95e2991",
+  "witness_after": "3dc89034",
+  "integrity_before": "valid",
+  "integrity_after": "continuity_violation",
+  "continuity_before": "intact",
+  "continuity_after": "broken",
+  "exact_halt_reason": "Post-cycle integrity failure (status=continuity_violation, continuity=broken)",
+  "claim_candidates_contains_manual_injection": false,
+  "hash_claim_candidates_after_cleanup": "FEB00D9D9480478AD82F964F376D9DD497E9EC8F7BA98B2B147D5197F9E12854",
+  "message_exists_in_TO_AXS": true,
+  "axis_voice_halt_message": {
+    "timestamp_utc": "2026-06-02T20:13:11.433038+00:00",
+    "speaker": "AXIS_DAEMON",
+    "message_type": "alert",
+    "priority": "high",
+    "epoch": 569,
+    "last_updated_cycle": 569,
+    "message": "DAEMON HALT: Post-cycle integrity failure (status=continuity_violation, continuity=broken)",
+    "evidence": [
+      "cycle=569",
+      "integrity=continuity_violation",
+      "continuity=broken"
+    ],
+    "requires_response": true
+  }
+}

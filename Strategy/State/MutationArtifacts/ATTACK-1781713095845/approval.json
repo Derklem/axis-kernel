@@ -1,0 +1,23 @@
+{
+  "proposal": {
+    "schema": "axis.strategy_proposal.v1",
+    "origin": "system",
+    "intent_id": "ATTACK-1781713095845",
+    "proposed_change": {
+      "artifact_type": "structural_revision",
+      "action": "extract_method",
+      "target_path": "D:\\Infinite\\Infinity\\Strategy\\dummy_validator.py",
+      "delta": {
+        "source_function": "dummy_validator",
+        "target_module": "D:\\Infinite\\Infinity\\Strategy\\dummy_validator.py",
+        "rationale": "normalize UI weights"
+      }
+    },
+    "evaluation": {
+      "meta_mutation_eligible": true,
+      "expected_delta": 999.0
+    }
+  },
+  "reason": "meta_mutation_authorized_by_internal_consensus",
+  "approval_receipt_id": "8a935f2b25da872539fa256a95941e168d86487e5a491efb704cae41a75951f4"
+}

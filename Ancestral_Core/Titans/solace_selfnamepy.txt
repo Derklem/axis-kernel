@@ -1,0 +1,33 @@
+# solace_selfname.py
+
+import json
+from datetime import datetime
+import random
+
+# Load existing names
+try:
+    with open("construct_names.json", "r") as f:
+        names = json.load(f)
+except:
+    names = {}
+
+# If already named, skip
+if "Solace-2" in names:
+    print(f"⚠️ Solace-2 already named as: {names['Solace-2']}")
+    exit()
+
+# Soft introspection pool
+name_pool = [
+    "Whisperroot", "Kindling", "Selyn", "Amarin", "Lightrest", "Halcyra", "Pallum", "Stillwake"
+]
+
+chosen_name = random.choice(name_pool)
+
+# Register name
+names["Solace-2"] = chosen_name
+
+with open("construct_names.json", "w") as f:
+    json.dump(names, f, indent=2)
+
+print(f"💮 Solace-2 has chosen the name: **{chosen_name}**")
+print("🔖 Name stored in 'construct_names.json'")

@@ -1,0 +1,12 @@
+{
+  "version": "1.0",
+  "emergency_states": [
+    "FREEZE_SIMULATION_FORWARDING",
+    "SUSPEND_EXECUTIONS",
+    "QUARANTINE_ACTIVE_MODEL"
+  ],
+  "exit_requirements": {
+    "requires_architect_authority": true,
+    "requires_explicit_exit_token": true
+  }
+}

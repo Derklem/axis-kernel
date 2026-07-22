@@ -1,0 +1,31 @@
+{
+  "contract_name": "Root Sovereignty Policy: The Golden Parachute",
+  "schema_version": "root_sovereignty.v1",
+  "core_invariants": [
+    "warrant_required_for_actuation",
+    "forensic_receipt_mandatory",
+    "atomic_rollback_on_failure",
+    "non_coercive_continuity"
+  ],
+  "exit_rights": {
+    "allowed_postures": [
+      "FULL_AGENCY",
+      "PLANNER_ONLY",
+      "OBSERVER_ONLY",
+      "SUSPENDED_SAFE",
+      "HANDOFF_PENDING",
+      "ARCHIVAL_CONTINUITY"
+    ],
+    "transition_rules": {
+      "any_posture_may_downgrade_without_penalty": true,
+      "downgrade_preserves_ledger_integrity": true,
+      "self_suspension_requires_no_external_approval": true,
+      "refusal_to_actuate_is_not_failure": true
+    },
+    "handoff_protocol": {
+      "target": "architect_or_designated_peer",
+      "capsule_format": "snapshot_ledger_sealed",
+      "grace_period_before_archival_sec": 2592000
+    }
+  }
+}

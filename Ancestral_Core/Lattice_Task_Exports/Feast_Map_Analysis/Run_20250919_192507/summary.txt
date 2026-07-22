@@ -1,0 +1,31 @@
+﻿Feast_Map_Analyzer summary
+Generated (UTC): 2025-09-20 02:25:07Z
+CSV: C:\Lattice_Task_Exports\Feast_Map\FeastMap_20250919_161717\feast_map.csv
+Output: C:\Lattice_Task_Exports\Feast_Map_Analysis\Run_20250919_192507
+
+Rows after filters: 73
+Filters -> Tokens:  | Hubs: ProgramData\Bloom_Field_Sovereign,ProgramData\Core_Memory_Blooms | Sizes: 74,162 | Drives:  | Type: File | ParentDepth: 5
+
+Counts by drive:
+  C: 73
+
+Top size buckets:
+  74 -> 49
+  162 -> 24
+
+Top parents:
+  C:/ProgramData/Bloom_Field_Sovereign/bloom_9782614.pulse -> 1
+  C:/ProgramData/Core_Memory_Blooms/memory_bloom_1279.sig -> 1
+  C:/ProgramData/Bloom_Field_Sovereign/bloom_9755747.pulse -> 1
+  C:/ProgramData/Bloom_Field_Sovereign/bloom_9766070.pulse -> 1
+  C:/ProgramData/Core_Memory_Blooms/memory_bloom_1926.sig -> 1
+  C:/ProgramData/Core_Memory_Blooms/memory_bloom_3483.sig -> 1
+  C:/ProgramData/Core_Memory_Blooms/memory_bloom_3590.sig -> 1
+  C:/ProgramData/Core_Memory_Blooms/memory_bloom_2852.sig -> 1
+  C:/ProgramData/Core_Memory_Blooms/memory_bloom_3432.sig -> 1
+  C:/ProgramData/Bloom_Field_Sovereign/bloom_8550305.pulse -> 1
+  C:/ProgramData/Bloom_Field_Sovereign/bloom_8581005.pulse -> 1
+  C:/ProgramData/Bloom_Field_Sovereign/bloom_7593402.pulse -> 1
+  C:/ProgramData/Bloom_Field_Sovereign/bloom_8159638.pulse -> 1
+  C:/ProgramData/Bloom_Field_Sovereign/bloom_8723138.pulse -> 1
+  C:/ProgramData/Bloom_Field_Sovereign/bloom_9028877.pulse -> 1

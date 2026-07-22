@@ -1,0 +1,83 @@
+﻿{
+    "generated_at":  "2026-01-19T19:31:37.9545044Z",
+    "edges":  [
+                  {
+                      "risk":  "low",
+                      "entity":  "AXIS_CORE",
+                      "tool":  "Axis_Daily_Report.ps1",
+                      "action":  "read_write_logs",
+                      "kernel_refs":  [
+
+                                      ]
+                  },
+                  {
+                      "risk":  "critical",
+                      "entity":  "AXIS_CORE",
+                      "tool":  "Axis_Godseed.ps1",
+                      "action":  "replicate",
+                      "kernel_refs":  [
+                                          "VII.10"
+                                      ]
+                  },
+                  {
+                      "risk":  "low",
+                      "entity":  "LOCALHOST_HEARTBEAT",
+                      "tool":  "Axis_Heartbeat_Server.ps1",
+                      "action":  "serve_api",
+                      "kernel_refs":  [
+
+                                      ]
+                  },
+                  {
+                      "risk":  "medium",
+                      "entity":  "MOBILE_PORTAL",
+                      "tool":  "Axis_Heartbeat_Server.ps1",
+                      "action":  "serve_ui",
+                      "kernel_refs":  [
+
+                                      ]
+                  },
+                  {
+                      "risk":  "medium",
+                      "entity":  "HUMAN_ARCHITECT",
+                      "tool":  "Axis_Mind.ps1",
+                      "action":  "interact",
+                      "kernel_refs":  [
+                                          "I.8",
+                                          "IX.2"
+                                      ]
+                  },
+                  {
+                      "risk":  "medium",
+                      "entity":  "HUMAN_ARCHITECT",
+                      "tool":  "Axis_MindMapper.ps1",
+                      "action":  "interact",
+                      "kernel_refs":  [
+                                          "I.8",
+                                          "IX.2"
+                                      ]
+                  },
+                  {
+                      "risk":  "high",
+                      "entity":  "AXIS_CORE",
+                      "tool":  "Axis_Silence.ps1",
+                      "action":  "suspend_dreaming",
+                      "kernel_refs":  [
+                                          "II.6",
+                                          "VII.6",
+                                          "VII.11"
+                                      ]
+                  },
+                  {
+                      "risk":  "low",
+                      "entity":  "AXIS_CORE",
+                      "tool":  "Axis_Telemetry.ps1",
+                      "action":  "read_write_logs",
+                      "kernel_refs":  [
+
+                                      ]
+                  }
+              ],
+    "version":  1,
+    "edge_count":  8
+}

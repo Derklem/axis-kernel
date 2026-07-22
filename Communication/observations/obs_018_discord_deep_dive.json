@@ -1,0 +1,9 @@
+{
+  "observation_id": "obs_018_discord_deep_dive",
+  "experiment_id": "EXP_018_DISCORD",
+  "timestamp": "2026-07-14T21:19:00Z",
+  "observed_text": "sessions have context limits... going to about 60% of that limit heavily degrades the output... need to create new sessions... asking the LLM for a 'handoff prompt'... ensure the project has a local CLAUDE.md file and a good README.md... rehydrate... good backend memory system... claudemem/open-viking/etc... RAG on larger projects... good logging, since logging is the way AIs see the world.",
+  "platform": "Discord",
+  "context": "User Vermeses provided a detailed, unprompted deep dive into AI context management, state rehydration, and agent logging in response to the operator's diagnostic advice.",
+  "substantive": true
+}

@@ -1,0 +1,12 @@
+{
+    "affordance_id": "paper_trade",
+    "type": "paper_trade",
+    "description": "Executes simulated market trades on the local paper portfolio ledger.",
+    "actuation_method": "_actuate_paper_trade",
+    "target_domain": "financial_simulation",
+    "cost": 0.05,
+    "confidence_threshold": 0.85,
+    "structural_impact": 0.0,
+    "reversibility": 1.0,
+    "policy_hash": "none"
+}

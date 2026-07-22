@@ -1,0 +1,15 @@
+﻿{
+    "id":  "receipt_2b9ea5f5",
+    "content_sha256":  "37d5ed11b78609450372fcef93c57980318c4bbf2703ea07ec161194814aaf71",
+    "draft_sha256":  "c561bbfa32fb02e3f9ebbe6d1b8afd2738bb2634047c6b94c4c7f69413207676",
+    "archive_path":  "archived/EXP_018_DISCORD__draft_66c0837c__20260710T020318Z.json",
+    "platform_reference":  "https://x.com/DerekLamb29985/status/2075400312836464998",
+    "experiment_id":  "EXP_018_DISCORD",
+    "draft_id":  "draft_66c0837c",
+    "status":  "deployed",
+    "platform":  "Discord",
+    "adapter_version":  "v0.2",
+    "deployed_at":  "2026-07-10T02:03:18Z",
+    "deployment_state":  "SUCCESS",
+    "observation_window":  "72h"
+}

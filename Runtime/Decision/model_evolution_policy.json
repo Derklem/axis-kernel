@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "model_classes": [
+    "ACTIVE_MODEL",
+    "SHADOW_MODEL",
+    "CANDIDATE_MODEL",
+    "DEPRECATED_MODEL",
+    "REJECTED"
+  ],
+  "promotion_requirements": {
+    "min_shadow_cycles": 500,
+    "min_performance_gain": 0.03,
+    "max_divergence_rate": 0.10
+  },
+  "attestation_requirements": {
+    "promotion_signature_class": "PROMOTION_AUTHORIZED"
+  },
+  "rollback_conditions": {
+    "reality_divergence_trigger": true,
+    "performance_regression_threshold": 0.02
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "version": "1.0",
+  "roles": {
+    "OBSERVER": [
+      "query_state",
+      "export_ledger"
+    ],
+    "REVIEWER": [
+      "query_state",
+      "export_ledger",
+      "flag_warning"
+    ],
+    "CO_SIGNER": [
+      "query_state",
+      "export_ledger",
+      "flag_warning",
+      "cosign_execution",
+      "approve_simulation_proposal"
+    ],
+    "EMERGENCY_OPERATOR": [
+      "query_state",
+      "emergency_freeze",
+      "emergency_rollback"
+    ],
+    "ARCHITECT_AUTHORITY": [
+      "query_state",
+      "export_ledger",
+      "flag_warning",
+      "cosign_execution",
+      "approve_simulation_proposal",
+      "promote_model",
+      "mutate_constitutional_policy",
+      "exit_emergency_mode"
+    ]
+  }
+}

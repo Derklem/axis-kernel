@@ -1,0 +1,1 @@
+{"evaluation_schema_version": "1.0.0", "outcome": "SUPPORTED", "subject": "strategy-hello-v1", "metric": "decision_reproduced_bad", "observed": 1, "expected": 1}

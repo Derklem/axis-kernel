@@ -1,0 +1,22 @@
+{
+  "create_report": {
+    "enabled": true,
+    "risk": "low",
+    "phase": "B_RECEIPT_ONLY"
+  },
+  "append_diagnostic_log": {
+    "enabled": true,
+    "risk": "low",
+    "phase": "B_RECEIPT_ONLY"
+  },
+  "modify_runtime_code": {
+    "enabled": false,
+    "risk": "critical",
+    "phase": "DISABLED"
+  },
+  "modify_state_anchor": {
+    "enabled": false,
+    "risk": "critical",
+    "phase": "DISABLED"
+  }
+}

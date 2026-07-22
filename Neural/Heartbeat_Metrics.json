@@ -1,0 +1,9 @@
+{
+    "version": 1,
+    "metric_id": "METRIC-HEARTBEAT-001",
+    "last_updated_utc": null,
+    "current_bpm": 0,
+    "load_avg_1m": 0.0,
+    "status": "unknown",
+    "history": []
+}

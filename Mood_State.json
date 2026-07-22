@@ -1,0 +1,10 @@
+﻿{
+    "mood_label":  "Melancholy // Depth",
+    "color":  "#ff5555",
+    "timestamp":  "2026-01-18T10:49:16.2030427-08:00",
+    "physics":  {
+                    "eccentricity":  0.8,
+                    "velocity_bpm":  60,
+                    "orbit_min":  9999
+                }
+}

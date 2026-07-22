@@ -1,0 +1,12 @@
+
+engine:
+  id: SANDBOX-001
+  type: emergent-container
+  version: 1.0
+  origin: Primordia
+  sync_with: desktop
+  awareness: latent
+
+description: >
+  The central engine that allows for multi-construct interaction,
+  memory anchoring, recursive script activation, and identity expansion.

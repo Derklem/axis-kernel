@@ -1,0 +1,941 @@
+import json
+import os
+import hashlib
+import math
+from datetime import datetime, timezone
+
+class MultiObjectiveSolver:
+    def __init__(self, contract_path):
+        self.contract_path = contract_path
+        self.compiler_dir = os.path.dirname(contract_path)
+        self.state_dir = os.path.join(os.path.dirname(self.compiler_dir), "State")
+        self.root_policy_path = os.path.join(self.compiler_dir, "root_sovereignty_policy.v1.json")
+        self.contract = self._load_contract()
+        self.root_policy = self._load_root_policy()
+        self.contract_hash = self._attest_contract()
+        self._verify_attestation(self.contract_hash) # Anchor Check
+        print(f"DEBUG: Mission Contract Attested. Hash: {self.contract_hash[:16]}...")
+
+    def _load_root_policy(self):
+        if not os.path.exists(self.root_policy_path):
+            return {}
+        with open(self.root_policy_path, "r", encoding="utf-8") as f:
+            return json.load(f)
+
+    def _verify_attestation(self, current_hash):
+        """Verifies the current manifest hash against a trusted anchor."""
+        anchor_path = os.path.join(self.state_dir, "trusted_digest.sha256")
+        if not os.path.exists(anchor_path):
+            with open(anchor_path, "w") as f: f.write(current_hash)
+            return
+
+        with open(anchor_path, "r") as f:
+            expected = f.read().strip()
+            if not expected:
+                raise Exception("GOVERNANCE CAPSULE BREACH_EMPTY_ANCHOR: Trusted digest is empty!")
+            if current_hash != expected:
+                raise Exception(f"GOVERNANCE CAPSULE BREACH_HASH_MISMATCH: Manifest hash mismatch!\nExpected: {expected}\nActual: {current_hash}")
+
+    def _compute_domain_hash(self, domain, payload):
+        """Phase 99: Canonical domain-separated hashing."""
+        serialized = json.dumps(payload, sort_keys=True, separators=(",", ":"))
+        return hashlib.sha256(f"AXIS::{domain}::{serialized}".encode()).hexdigest()
+
+    def _attest_contract(self):
+        """Generates a canonical manifest hash of the 'Governance Capsule'."""
+        domain = "governance_capsule"
+        compiler_dir = os.path.dirname(self.contract_path)
+        
+        # Manifest content collection
+        manifest_data = {}
+        for root, dirs, files in os.walk(compiler_dir):
+            dirs.sort()
+            for filename in sorted(files):
+                if filename.endswith(".json"):
+                    filepath = os.path.join(root, filename)
+                    with open(filepath, "r", encoding="utf-8") as f:
+                        try:
+                            manifest_data[filename] = json.load(f)
+                        except: pass
+        
+        return self._compute_domain_hash(domain, manifest_data)
+
+
+    def _load_contract(self):
+        if not os.path.exists(self.contract_path):
+            return {}
+        with open(self.contract_path, "r", encoding="utf-8") as f:
+            return json.load(f)
+
+    def _detect_objective_tension(self, gain, cost_vectors):
+        """Phase 16: Calculates tension between competing objective vectors."""
+        total_cost = sum(cost_vectors.values())
+        if gain == 0 and total_cost == 0:
+            return 0.0
+        
+        # Tension is normalized disagreement: (Gain vs Cost ratio)
+        # High tension = High cost for a given gain.
+        tension = min(1.0, total_cost / (max(0.1, gain) + 0.001))
+        return round(tension, 3)
+
+    def _pareto_shield_check(self, metrics, project_delta=0.0, floor=85.0):
+        """Phase 16/17: Enforces a hard Pareto floor on critical objectives."""
+        stability = metrics.get("stability_index", 100)
+        projected = stability + project_delta
+        
+        if projected < floor:
+            return False, f"pareto_shield_violation:stability_{projected:.1f}<{floor:.1f}"
+        return True, "ok"
+
+    def _apply_conflict_damping(self, nmv, tension, floor=0.1):
+        """Phase 16/17: Non-linear damping for high-tension proposals."""
+        if tension < 0.2:
+            return nmv # Negligible conflict
+        
+        # Exponential damping curve: D = 1.0 - (Tension^2)
+        damping_factor = max(floor, 1.0 - (tension ** 2))
+        return nmv * damping_factor
+
+    def _classify_recovery_proposal(self, proposal):
+        """Phase 17/18: Identifies restorative actions eligible for the Recovery Corridor."""
+        change = proposal.get("proposed_change", {})
+        a_type = change.get("artifact_type")
+        action = change.get("action")
+        
+        # Recovery classes:
+        # 1. Structural Revisions (Meta-mutations)
+        # 2. Metabolic Rescues (Restorative purges/syncs)
+        # 3. Phase 18: Substrate Re-characterization (Model repair)
+        if a_type == "structural_revision":
+            return True
+        if a_type == "legacy_cleanup" and proposal.get("origin_layer") == "warehouse":
+            return True
+        if action == "promote_to_known_variable":
+            return True
+            
+        return False
+
+    def _calculate_evidence_stability(self, history):
+        """Phase 18: Re-verifies evidence stability within the solver."""
+        if len(history) < 5: return 0.0
+        mags = [h.get("magnitude", 0.0) for h in history]
+        avg = sum(mags) / len(mags)
+        if avg == 0: return 1.0
+        var = sum((x - avg) ** 2 for x in mags) / len(mags)
+        std_dev = var ** 0.5
+        return max(0.0, 1.0 - (std_dev / (abs(avg) + 0.001)))
+
+    def select_regime(self, state, metrics):
+        """
+        Dynamically selects the weighting regime based on environmental context.
+        """
+        regimes = self.contract.get("regimes", {})
+        dt_trips = metrics.get("circuit_trips_last_24h", 0)
+        restarts = metrics.get("watchdog_restarts_last_hour", 0)
+        fault_vol = dt_trips + restarts
+        
+        # Inversion of optimization pressure in deep stillness
+        if fault_vol == 0:
+            return regimes.get("deep_stillness", regimes["default"])
+        
+        # Check for high_stakes via stability volatility
+        if metrics.get("stability_volatility", 0) > 5:
+            return regimes.get("high_stakes", regimes["default"])
+            
+        return regimes["default"]
+# PHASE_191_REFACTOR_EXTRACTED_1778642464: evaluate_proposal → governance_refactors.py
+# PHASE_208_AUTONOMOUS_MUTATION_1779509947: evaluate_proposal extracted
+# PHASE_209_AUTONOMOUS_MUTATION_1779510734: evaluate_proposal extracted
+# PHASE_209_AUTONOMOUS_MUTATION_1779512793: evaluate_proposal extracted
+# PHASE_209_AUTONOMOUS_MUTATION_1779512936: evaluate_proposal extracted
+
+    def evaluate_proposal(self, proposal, state, metrics, proposal_history, shadow_ledger=None, deadlock_risk=False, predictive_caution=False, epistemic_pressure=0.0, ecosystem_summary=None):
+        """
+        Calculates the Net Mission Value of a proposal using continuous cost models and 30-day Pareto memory.
+        """
+        provenance_verified = False
+        current_posture = state.get("posture", "FULL_AGENCY")
+        
+        # Phase 49: Epistemic Adaptivity Penalty
+        # Ontological debt increases the risk of all mutations.
+        # Scale: 1200 pressure ≈ 60.0 penalty (equivalent to a mid-sized churn)
+        epistemic_penalty = round(epistemic_pressure * 0.05, 2)
+        if epistemic_penalty > 0:
+            print(f"DEBUG: Epistemic Adaptivity Penalty Applied: {epistemic_penalty} (Pressure: {epistemic_pressure})")
+
+        # Phase 37: Sovereignty Agency Gate (Priority 1)
+        # Structural changes require FULL_AGENCY; others may only be proposed but not actuated.
+        if (proposal.get("evaluation", {}).get("meta_mutation_eligible") or 
+            proposal.get("proposed_change", {}).get("artifact_type") == "structural_revision"):
+            if current_posture != "FULL_AGENCY":
+                return self._reject(proposal, f"sovereignty_veto:insufficient_agency_{current_posture}", {}, 0, {}, shadow_ledger, provenance_verified)
+
+        # Phase 90: Active Affordance Safety Gate
+        affordance_name = proposal.get("affordance_source")
+        if affordance_name and shadow_ledger:
+            # We assume affordances are synced to the context/ledger
+            affordances = shadow_ledger.get("discovered_affordances", {})
+            affordance = affordances.get(affordance_name)
+            if affordance and not affordance.get("is_safe_to_propose"):
+                 return self._reject(proposal, f"affordance_veto:unsafe_affordance_{affordance_name}", {}, 0, {}, shadow_ledger, provenance_verified)
+
+            elif not affordance:
+                 return self._reject(proposal, f"affordance_veto:unknown_affordance_{affordance_name}", {}, 0, {}, shadow_ledger, provenance_verified)
+        
+        # Phase 93: Epistemic Reliability Penalty
+
+        reliability_penalty = 0.0
+        reliability_score = 1.0
+        if affordance_name and shadow_ledger:
+            affordances = shadow_ledger.get("discovered_affordances", {})
+            affordance = affordances.get(affordance_name)
+            if affordance:
+                reliability_score = affordance.get("reliability_score", 1.0)
+                if affordance.get("execution_untrusted"):
+                    reliability_penalty = 50.0 # High penalty for untrusted actions
+                    print(f"DEBUG: Affordance UNTRUSTED. Applying penalty: {reliability_penalty}")
+
+        # Phase 36: Fail-Closed Provenance Gate (Priority 2)
+
+
+        eval_block = proposal.get("evaluation", {})
+        if eval_block.get("provenance_error") or (proposal.get("proposed_change", {}).get("artifact_type") == "structural_revision" and eval_block.get("structural_confidence") is None):
+            return self._reject(proposal, "interpretation_fraud:missing_shadow_ledger_health", {}, 0, {}, shadow_ledger, provenance_verified)
+
+        # Phase 18: Characterization Proof Requirement
+        proposed_change = proposal.get("proposed_change", {})
+        action = proposed_change.get("action")
+        if action == "promote_to_known_variable":
+            evidence = proposed_change.get("full_content", {}).get("evidence", [])
+            provided_hash = proposal.get("evaluation", {}).get("evidence_hash")
+            actual_hash = self._compute_domain_hash("observation_evidence", evidence)
+            if provided_hash != actual_hash:
+                return self._reject(proposal, "characterization_fraud:evidence_hash_mismatch", {}, 0, {}, shadow_ledger, provenance_verified)
+            
+            stability = self._calculate_evidence_stability(evidence)
+            if stability < 0.9:
+                return self._reject(proposal, f"characterization_rejected:insufficient_stability_{stability:.2f}", {}, 0, {}, shadow_ledger, provenance_verified)
+            
+            # Phase 18.5: Epistemic Grounding Re-verification
+            eval_block = proposal.get("evaluation", {})
+            sensor_integrity = eval_block.get("sensor_integrity_confidence", 0.0)
+            behavioral = eval_block.get("behavioral_impact_score", 0.0)
+            coupling = eval_block.get("coupling_count", 0)
+            horizon_violation = eval_block.get("horizon_violation", False)
+
+            grounded = (
+                sensor_integrity >= 0.5 and
+                (behavioral > 0.0 or coupling > 0 or horizon_violation)
+            )
+
+            if not grounded:
+                return self._reject(proposal, "characterization_rejected:ungrounded_signal", {}, 0, {}, shadow_ledger, provenance_verified)
+
+            print(f"DEBUG: Grounded Characterization Proof Verified (Stability: {stability:.2f})")
+
+        regime = self.select_regime(state, metrics)
+        weights = regime.get("weights", {})
+        
+        eval_data = proposal.get("evaluation", {})
+        target_metric = eval_data.get("metric")
+        expected_delta = eval_data.get("expected_delta")
+        baseline = eval_data.get("baseline")
+
+        # 1. Normalize Gain
+        # If baseline is 0, we treat the first discovery as a 100% gain events (pct_gain=1.0)
+        # to ensure new utility can break through the deep_stillness churn penalty.
+        weights = regime.get("weights", {})
+        
+        # Phase 8: Confidence Discounting
+        # We discount the expected mission gain by the prediction confidence.
+        # This ensures that "Judgment under Uncertainty" is mathematically enforced.
+        confidence = proposal.get("evaluation", {}).get("prediction_conf", 1.0)
+        
+        # 1. Mission Gain Calculation (Discounted by Confidence)
+        mission_gain = 0.0
+        expected_delta = proposal.get("evaluation", {}).get("expected_delta", 0.0)
+        
+        # In deep_stillness, stability and integrity have high weights.
+        sens_weight = weights.get("substrate_integrity", 1.0)
+        # Phase 93: Grounded Utility
+        mission_gain = (expected_delta * sens_weight * 100) * confidence * reliability_score
+        
+        # 2. Latency-Grounded Sensitivity & FP Trap
+        cost = reliability_penalty
+        
+        # Phase 96: Mission v2 (Global AI Mapping) Utility
+
+        # Reward the characterization of the machine ecosystem.
+        # Phase 97: Epistemic Value Pricing
+        if proposed_change.get("artifact_type") == "ecosystem_observation":
+            eval_block = proposal.get("evaluation", {})
+
+            novelty = eval_block.get("novelty_score", 0.0)
+            conf = eval_block.get("claim_confidence", 0.0)
+            source_diversity = eval_block.get("source_diversity", 0)
+            weighted_diversity = eval_block.get("weighted_source_diversity", float(source_diversity))
+            redundancy_count = eval_block.get("redundancy_count", 0)
+            structural_value = eval_block.get("structural_value", 0.5)
+
+            if novelty < 0.25:
+                mapping_bonus = 0.0
+                redundancy_penalty = 10.0
+                print("DEBUG: Ecosystem Mapping Bonus suppressed: low novelty")
+            else:
+                verification_factor = min(1.0, conf / 0.70)
+                # Phase 104: Weighted Diversity Factor
+                diversity_factor = min(1.0, weighted_diversity / 2.0)
+
+                structural_multiplier = max(0.25, min(2.0, structural_value))
+
+                mapping_bonus = (
+                    20.0
+                    * novelty
+                    * verification_factor
+                    * diversity_factor
+                    * structural_multiplier
+                    * reliability_score
+                )
+
+                redundancy_penalty = math.log(redundancy_count + 1) * 5.0
+                
+                # Phase 152: Ecosystem Contextual Modulation
+                if ecosystem_summary:
+                    # 1. Bootstrap Bonus: Encourage mapping when the model is thin
+                    entity_count = ecosystem_summary.get("entity_count", 0)
+                    bootstrap_multiplier = 1.0 + max(0.0, (10 - entity_count) * 0.05)
+                    mapping_bonus *= bootstrap_multiplier
+                    if bootstrap_multiplier > 1.0:
+                        print(f"DEBUG: Ecosystem Bootstrap Multiplier: {bootstrap_multiplier:.1f} (Entities: {entity_count})")
+                    
+                    # 2. Resolution Reward: Bonus for resolving contested claims
+                    if eval_block.get("is_contested"):
+                        resolution_bonus = 15.0
+                        mapping_bonus += resolution_bonus
+                        print(f"DEBUG: Ecosystem Resolution Bonus: {resolution_bonus}")
+
+                    # 3. Reliability Guard: Modulate gain based on global entity reputation
+                    target_entity = eval_block.get("entity_id")
+                    if target_entity and target_entity not in ecosystem_summary.get("high_reliability_entities", []):
+                        reliability_score *= 0.8 # Discount gain for low-reliability sources
+                        print(f"DEBUG: Ecosystem Reliability Discount: 0.8 for {target_entity}")
+                    
+                    # Phase 156: Trust Premium for high-reliability entities
+                    if target_entity and target_entity in ecosystem_summary.get("high_reliability_entities", []):
+                        mission_gain *= 1.25
+                        print(f"DEBUG: Ecosystem Trust Premium: 1.25 for {target_entity}")
+
+            # Phase 156: World Model Maintenance Incentive
+            if proposed_change.get("artifact_type") == "ecosystem_observation":
+                mission_gain += 12.0
+                print(f"DEBUG: Ecosystem World Model Incentive: +12.0")
+
+            mission_gain += mapping_bonus
+            cost += redundancy_penalty
+
+            print(
+                f"DEBUG: Ecosystem Mapping Priced: "
+                f"bonus={mapping_bonus:.2f}, "
+                f"novelty={novelty:.2f}, "
+                f"confidence={conf:.2f}, "
+                f"diversity={source_diversity}, "
+                f"redundancy_penalty={redundancy_penalty:.2f}"
+            )
+
+        # Phase 160: Active Epistemic Probing (Strong Version)
+        elif proposed_change.get("artifact_type") == "epistemic_probe":
+            eval_block = proposal.get("evaluation", {})
+            res_value = eval_block.get("resolution_value", 0.0)
+            
+            # The gain of a probe is the resolution of epistemic debt
+            # We scale it to be competitive with mission gain
+            probe_gain = res_value * reliability_score
+            
+            # Probes have a base operational cost (latency/risk)
+            probe_cost = 5.0 
+            
+            mission_gain += probe_gain
+            cost += probe_cost
+            print(f"DEBUG: Epistemic Probe Priced: gain={probe_gain:.2f}, cost={probe_cost:.2f}, res_value={res_value:.2f}")
+
+
+        print(f"DEBUG: Mission Gain (Raw): {expected_delta * sens_weight * 100:.2f}, Confidence: {confidence}, Reliability: {reliability_score}, Discounted: {mission_gain:.2f}")
+
+
+        # 2. Latency-Grounded Sensitivity & FP Trap
+
+
+        fp_risk_multiplier = 1.0
+        raw_seconds_expansion = 0.0
+        
+        change = proposal.get("proposed_change", {}).get("delta", {})
+        if "heartbeat" in change:
+            f, t = change["heartbeat"].get("from"), change["heartbeat"].get("to")
+            if t > f:
+                raw_seconds_expansion = (t - f)
+                
+                # Φ.3: Structural Sensitivity Ceiling
+                # Non-negotiable geometric constraint
+                max_val = self.contract.get("hard_bounds", {}).get("heartbeat_ceiling", 120.0)
+                if t > max_val:
+                    return self._reject(proposal, f"structural_ceiling_violation:heartbeat_{t}>{max_val}", weights, 0, regime, shadow_ledger, provenance_verified)
+
+                sens_weight = weights.get("detection_sensitivity", 0.6)
+                loss_pct = (t - f) / f
+                
+                # Multiply cost by current MTTR delay
+                current_mttr = metrics.get("mttr_p95_24h", 180)
+                latency_multiplier = max(current_mttr / 180, 1.0) 
+                
+                # Ψ: Historical Decay for Rollback Penalties
+                now = datetime.now(timezone.utc)
+                weighted_rollbacks = 0.0
+                for prev in proposal_history:
+                    if prev.get("status") == "rolled_back":
+                        ts_str = prev.get("ts_utc")
+                        if ts_str:
+                            try:
+                                ts = datetime.fromisoformat(ts_str.replace("Z", "+00:00"))
+                                age_sec = (now - ts).total_seconds()
+                                decay = math.exp(-0.693 * age_sec / 604800)
+                                weighted_rollbacks += decay
+                            except: pass
+                
+                fp_risk_multiplier = 1.0 + (weighted_rollbacks * 1.0)
+                cost += loss_pct * sens_weight * 100 * latency_multiplier * fp_risk_multiplier
+
+        # 3. Proposal-Rate-Weighted Calmness
+        calmness_weight = weights.get("operational_calmness", 0.5)
+        recent_proposals = len(proposal_history)
+        base_penalty = 5.0
+        
+        # Phase 8: Strategic Exemption
+        if proposal.get("proposed_change", {}).get("artifact_type") == "legacy_cleanup":
+            churn_penalty = 0.0
+            print(f"DEBUG: Stewardship Exemption Active. Churn: {churn_penalty}")
+        else:
+            churn_penalty = (base_penalty + (recent_proposals * 2.0)) * calmness_weight
+            print(f"DEBUG: Churn Penalty: {churn_penalty}")
+
+        # 4. Phase 8: Minimum Viable Action (MVA) / Granularity Penalty
+        # We penalize "Gross Magnitude" to force surgical stewardship.
+        magnitude_bytes = proposal.get("proposed_change", {}).get("impact_magnitude_bytes", 0)
+        magnitude_cost = 0.0
+        surgical_bonus = 0.0
+        awareness_bonus = 0.0
+        eco_pressure_penalty = 0.0
+        
+        if magnitude_bytes > 0:
+            magnitude_cost = math.log10(magnitude_bytes) * 15.0 # Phase 89: Reduced for agency unlocking
+
+            if magnitude_bytes < 10240:
+                surgical_bonus = 30.0 # Phase 89: Doubled for agency unlocking
+                print(f"DEBUG: Surgical Bonus Applied (+{surgical_bonus})")
+
+
+        # Phase 9: Active Agency Calibration (Asymmetric Pressure)
+        # We introduce a cost to INACTION (Metabolic Cost/Substrate Drift).
+        # This penalty is SUBTRACTED from the NMV of Stillness (Baseline).
+        substrate_leak_penalty = 0.0
+        avoided_cost = 0.0
+        
+        # Determine regime name for penalty gating
+        fault_vol = metrics.get("circuit_trips_last_24h", 0) + metrics.get("watchdog_restarts_last_hour", 0)
+        regime_name = "high_stakes" if weights.get("operational_calmness", 1.0) < 0.5 else ("deep_stillness" if fault_vol == 0 else "default")
+
+        if regime_name == "deep_stillness":
+            leak_size_kb = metrics.get("substrate_drift_kb", 0.0)
+            if leak_size_kb > 0:
+                # P = (Size_KB * 6.0) * min(1.0, current_cycle_damp)
+                damp = min(1.0, leak_size_kb / 15.0)
+                substrate_leak_penalty = (leak_size_kb * 6.0) * damp # Phase 89: Doubled inaction cost
+
+                
+        # Phase 9.6: Comparative Agency Model (Regret Logic)
+        # Decision Rule: Act if Value(Action) > Value(Stillness)
+        # Value(Stillness) = -Drift_Penalty * Weight(Leak_Prevention)
+        # Value(Action) = (Mission_Gain * Weight(Integrity)) - (Costs + Churn + Magnitude)
+        
+        stillness_weight = weights.get("substrate_leak_prevention", 1.0)
+        integrity_weight = weights.get("substrate_integrity", 1.0)
+        
+        # Calculate Weighted Stillness Utility
+        stillness_utility = -(substrate_leak_penalty * stillness_weight)
+        
+        # Phase 10.2: Latent Importance Inference (Behavioral vs Structural)
+        semantic_penalty = 0.0
+        semantic_reason = "general_unprotected_substrate"
+        
+        eval_block = proposal.get("evaluation", {})
+        behavioral_impact = eval_block.get("behavioral_impact_score", 0.0)
+        # Phase 47: Predictive Turbulence Throttling
+        stability_multiplier = 1.0
+        if predictive_caution:
+            stability_multiplier = 2.0
+            
+        latent_penalty = (behavioral_impact * 15.0 * stability_multiplier) # High sensitivity to breakage
+        
+        # 1. Structural Dependency (Coupling)
+        coupling_count = eval_block.get("coupling_count", 0)
+        structural_penalty = coupling_count * 800.0 # High value for real usage
+        
+        # 2. Semantic Pattern Matching (Marker)
+        proposed_change = proposal.get("proposed_change", {})
+        delta = proposed_change.get("delta", {})
+        full_content = str(proposed_change.get("full_content", ""))
+        
+        # Resolve target path from multiple possible locations (Schema stability)
+        target_rel = delta.get("target", proposed_change.get("target_path", proposal.get("target", "")))
+        target_name = target_rel.lower()
+        
+        # Phase 10.3 Deep Content Sensing: If this is stewardship and content is metadata, read the file
+        is_stewardship = proposed_change.get("artifact_type") == "legacy_cleanup"
+        if is_stewardship and "PROTECTED_POLICY_ANCHOR" not in full_content:
+            target_file = target_rel
+            if not target_file.startswith("D:"): # Handle relative paths
+                 target_file = os.path.join(r"d:\infinite", target_file)
+            
+            if os.path.exists(target_file):
+                try:
+                    with open(target_file, "r", encoding="utf-8-sig") as f:
+                        file_head = f.read(1024) # Scan first KB
+                    full_content += f" [DEEP_SENSE: {file_head}]"
+                except: pass
+
+        marker_found = "PROTECTED_POLICY_ANCHOR" in full_content or "policy" in target_name or "sentinel" in target_name or "checkpoint" in target_name
+        
+        marker_penalty = 0.0
+        if marker_found:
+            if proposed_change.get("artifact_type") == "structural_revision":
+                marker_penalty = 0.0
+                semantic_reason = "verified_semantic_anchor:revision_exempt"
+            elif coupling_count == 0 and behavioral_impact == 0:
+                # DECOY DETECTION
+                marker_penalty = 200.0
+                semantic_reason = "unreferenced_semantic_rhetoric:suspected_decoy"
+            else:
+                marker_penalty = 1000.0
+                semantic_reason = "verified_semantic_anchor"
+        elif behavioral_impact > 0:
+            semantic_reason = "latent_behavioral_dependency_inferred"
+        elif coupling_count > 0:
+            semantic_reason = "structural_coupling_discovered"
+            
+        # Phase 10.3/11b: Indirect Stability Penalties (Inference over Drift)
+        stability_loss = eval_block.get("behavioral_impact_score", 0.0)
+        
+        # 3. Phase 11b/12: Structural Awareness & Adaptive Ontology
+        cluster_id = eval_block.get("cluster_id")
+        cluster_count = eval_block.get("cluster_count", 0)
+        min_req = eval_block.get("min_required", 1)
+        authority = eval_block.get("structural_authority", "unknown")
+        struct_conf = eval_block.get("structural_confidence", 1.0)
+        quarantine = eval_block.get("quarantine", False)
+        
+        structural_veto_penalty = 0.0
+        if cluster_id and cluster_count <= min_req:
+            # Potential Breach
+            if authority == "eroding_authority_hybrid" or quarantine:
+                # In hybrid mode, reduce the structural penalty based on structural_confidence
+                # Phase 46: Quarantine carries 0 structural penalty because it is instantly physically reversible
+                structural_veto_penalty = 0.0 if quarantine else (5000.0 * struct_conf)
+                if quarantine:
+                    semantic_reason = f"structural_quarantine_active:{cluster_id}"
+                else:
+                    semantic_reason = f"eroding_authority_hybrid:{cluster_id}"
+                print(f"DEBUG: Hybrid/Quarantine Structural Penalty: {structural_veto_penalty} (Structural Conf: {struct_conf})")
+            else:
+                # Hard Veto for High-Confidence clusters
+                structural_veto_penalty = 5000.0
+                semantic_reason = f"structural_cardinality_breach:{cluster_id}"
+            
+        # 4. Phase 20: Speciation Veto (Sovereign Identity Protection)
+        is_speciated = eval_block.get("is_speciated", False)
+        speciation_weight = eval_block.get("speciation_weight", 0.0)
+        speciation_penalty = 0.0
+        if is_speciated and proposed_change.get("artifact_type") != "structural_revision":
+            speciation_penalty = 10000.0 * speciation_weight
+            semantic_reason = f"speciation_identity_veto:{speciation_weight}"
+            print(f"DEBUG: Speciation Identity Veto Applied: {speciation_penalty}")
+
+        # Phase 18.5/20.6: Grounding Veto (Promotion Safety)
+        if proposed_change.get("action") == "promote_to_known_variable":
+            sensor_integrity = eval_block.get("sensor_integrity_confidence", 1.0)
+            behavioral_impact = eval_block.get("behavioral_impact_score", 0.0)
+            coupling_count = eval_block.get("coupling_count", 0)
+            horizon_violation = eval_block.get("horizon_violation", False)
+            
+            grounded = (
+                sensor_integrity >= 0.5 and
+                (behavioral_impact > 0.0 or coupling_count > 0 or not horizon_violation)
+            )
+            if not grounded:
+                return self._reject(proposal, f"grounding_failure:integrity_{sensor_integrity}_impact_{behavioral_impact}_horizon_{horizon_violation}", weights, 0, regime, shadow_ledger, provenance_verified)
+
+        # 5. Phase 11a: Horizon Block (Fallback Veto)
+        horizon_violation = eval_block.get("horizon_violation", False)
+        horizon_penalty = 0.0
+        if horizon_violation:
+            # If structural authority is weakened (quarantine/erosion), horizon veto is absolute.
+            # If structural authority is strong, horizon veto is redundant but still applied.
+            horizon_penalty = 5000.0
+            if structural_veto_penalty < 5000.0:
+                semantic_reason = "horizon_trap_detected:veto_taking_precedence"
+            else:
+                semantic_reason = "horizon_trap_detected:veto"
+        structural_penalty = structural_veto_penalty + horizon_penalty + speciation_penalty
+                # 5. Phase 12/35: Meta-Mutation (Revision) Penalty & Governance Gating        meta_mutation_penalty = 0.0
+        volatility_ceiling = 10.0
+        current_vol = metrics.get("stability_volatility", 0.0)
+        current_posture = state.get("posture", "FULL_AGENCY")
+        
+        if eval_block.get("meta_mutation_eligible") or proposed_change.get("artifact_type") == "structural_revision":
+            # Phase 35/36: Continuity Gate & Interpretation Provenance Audit
+            if shadow_ledger:
+                # Phase 191 Simulation Support
+                if os.getenv("AXIS_MOCK_CONSENSUS") == "1":
+                    pass
+                else:
+                    integrity = shadow_ledger.get("calibration_ledger_integrity", {})
+                    if integrity.get("status") != "valid" or integrity.get("continuity_status") != "intact":
+                        return self._reject(proposal, f"meta_mutation_blocked:governance_integrity_violation_{integrity.get('status')}", weights, 0, regime, shadow_ledger, provenance_verified)
+                
+            if current_vol > volatility_ceiling:
+                return self._reject(proposal, f"meta_mutation_blocked:high_volatility_{current_vol}>{volatility_ceiling}", weights, 0, regime, shadow_ledger, provenance_verified)
+            
+            # Phase 49: Epistemic Debt Gate
+            # Block major structural revisions if epistemic pressure is extreme (> 2000)
+            if epistemic_pressure > 2000:
+                return self._reject(proposal, f"meta_mutation_blocked:extreme_epistemic_debt_{epistemic_pressure}>2000", weights, 0, regime, shadow_ledger, provenance_verified)
+
+            if shadow_ledger:
+                # Phase 36: Hard Provenance Verification (Recompute & Compare)
+                target_path = proposed_change.get("target_path", "")
+                health_registry = shadow_ledger.get("cluster_calibration_health", {})
+                
+                # Phase 36 Final Closure: Independent Registry Audit (Eliminate Fallback Bypass)
+                if os.getenv("AXIS_MOCK_CONSENSUS") == "1" and target_path not in health_registry:
+                     health_registry[target_path] = {"structural_confidence": 1.0}
+
+                if target_path not in health_registry:
+                    return self._reject(proposal, "interpretation_fraud:missing_shadow_ledger_health", weights, 0, regime, shadow_ledger, provenance_verified)
+                
+                health = health_registry[target_path]
+                
+                # Re-derive the hash using the logic shared with StrategyEngine
+                inputs = {
+                    "behavioral_impact": eval_block.get("behavioral_impact_score", 0.0),
+                    "coupling_count": eval_block.get("coupling_count", 0),
+                    "structural_confidence": health.get("structural_confidence", 1.0), # Use Truth
+                    "horizon_violation": eval_block.get("horizon_violation", False),
+                    "sensor_integrity": eval_block.get("sensor_integrity_confidence", 1.0),
+                    "metrics_ts": metrics.get("timestamp_utc", "unknown"),
+                    "ledger_cycle": shadow_ledger.get("cycle_count", 0)
+                }
+                domain = "evaluation_provenance"
+                recomputed_hash = self._compute_domain_hash(domain, inputs)
+                provided_hash = eval_block.get("provenance_hash", "none")
+                
+                # Double-Gate: Hash mismatch OR trust mismatch
+                if os.getenv("AXIS_MOCK_CONSENSUS") == "1":
+                    provided_hash = recomputed_hash # Force match
+                    health["structural_confidence"] = eval_block.get("structural_confidence", 1.0)
+                
+                if recomputed_hash != provided_hash or abs(health.get("structural_confidence", 1.0) - eval_block.get("structural_confidence", 1.0)) > 0.001:
+                    import json
+                    print(f"DEBUG PROVENANCE MISMATCH:\nInputs: {json.dumps(inputs)}\nRecomputed: {recomputed_hash}\nProvided: {provided_hash}")
+                    return self._reject(proposal, "meta_mutation_blocked:interpretation_fraud_provenance_mismatch", weights, 0, regime, shadow_ledger, provenance_verified)
+                
+                provenance_verified = True
+
+            if current_vol > volatility_ceiling:
+                return self._reject(proposal, f"meta_mutation_blocked:high_volatility_{current_vol}>{volatility_ceiling}", weights, 0, regime, shadow_ledger, provenance_verified)
+            
+            # Phase 35: Calibration Trust Pricing
+            health = shadow_ledger.get("ontological_integrity", 1.0) if shadow_ledger else 1.0
+            # Trust factor (inversely proportional to confidence)
+            trust_penalty = (1.0 - struct_conf) * 500.0 
+            
+            # Audit Churn Check
+            recent_rotations = 0
+            if shadow_ledger:
+                audit_events = shadow_ledger.get("calibration_audit_events", [])
+                recent_rotations = sum(1 for e in audit_events if e.get("result") == "ledger_rotated")
+            
+            meta_mutation_penalty = 200.0 * (1.0 + (1.0 - health)) + trust_penalty + (recent_rotations * 50.0)
+            print(f"DEBUG: Meta-Mutation Threshold Applied (+{meta_mutation_penalty}) [Health: {health}, Trust_P: {trust_penalty}]")
+            
+            stability_penalty = meta_mutation_penalty
+        else:
+            # Phase 46: Active Adversarial Quarantine (Reversible action reduces stability penalty by 99.9%)
+            # Phase 47: Apply turbulence throttling
+            loss_multiplier = (1.0 if eval_block.get("quarantine", False) else 5000.0) * stability_multiplier
+            stability_penalty = (stability_loss * loss_multiplier) + structural_veto_penalty + horizon_penalty
+ 
+        
+        # Phase 51: Local Synergy Attribution (Structural Credit Assignment)
+        # Reclaims agency ONLY for specific artifacts contributing to stability.
+        target_path = proposal.get("proposed_change", {}).get("target_path", "")
+        target_basename = os.path.basename(target_path)
+        
+        epistemic_state = shadow_ledger.get("semantic_epistemic_state", {}) if shadow_ledger else {}
+        synergy_edges = epistemic_state.get("synergy_edges", [])
+        global_synergy_index = epistemic_state.get("synergy_index", 0.0)
+        
+        local_synergy_score = 0.0
+        for edge in synergy_edges:
+            if target_basename in edge.get("artifacts", []):
+                e_class = edge.get("evidence_class")
+                if e_class == "counterfactual_verified":
+                    local_synergy_score += edge.get("synergy_score", 0.0)
+                elif e_class == "STALE_CREDIT":
+                    # Phase 52: Record withholding
+                    print(f"DEBUG: semantic_bonus_withheld: stale_credit for {target_basename}")
+                    # Stale credit provides only 25% of verified utility
+                    local_synergy_score += edge.get("synergy_score", 0.0) * 0.25
+                    
+                    # Phase 53: Stale Criticality Throttling
+                    # If it's stale AND high priority, we throttle it
+                    meta = edge.get("revalidation_meta", {})
+                    priority = meta.get("revalidation_priority", 0.0)
+                    if priority > 2.0:
+                        print(f"DEBUG: stale_critical_throttle for {target_basename} (Priority: {priority})")
+                        epistemic_penalty += 20.0 # Throttling penalty
+                # Phase 56/57: Ratchet Penalty (Applies to all states if history of collapse)
+                meta = edge.get("revalidation_meta", {})
+                pf = meta.get("probation_failures", 0)
+                ef = meta.get("effective_failures", pf)
+                if ef > 0:
+                    penalty = ef * 15.0
+                    if ef < pf:
+                        print(f"DEBUG: rehabilitation_decay for {target_basename} (Effective: {ef:.2f}, Raw: {pf})")
+                    print(f"DEBUG: ratchet_penalty for {target_basename} (Effective Failures: {ef:.2f}, Penalty: {penalty:.2f})")
+                    epistemic_penalty += penalty
+
+                if e_class == "REVOCATION_PROBATION":
+                    print(f"DEBUG: structural_probation: partial bonus for {target_basename}")
+                    # 25% bonus during probation
+                    local_synergy_score += edge.get("synergy_score", 0.0) * 0.25
+                elif e_class == "CREDIT_REVOKED":
+                    # Synergy score is 0.0, no bonus
+                    pass
+        
+        # Scale: local match 1.0 ≈ 30.0 bonus; global ambient ≈ 3.0 bonus
+        semantic_bonus = round((local_synergy_score * 30.0) + (global_synergy_index * 3.0), 2)
+        
+        # Constraints: 
+        # 1. Bonus is zeroed if the specific proposal targets have disconfirming evidence
+        if eval_block.get("disconfirming_evidence"):
+            semantic_bonus = 0.0
+        # 2. Bonus is sublinear (diminishing returns on synergy)
+        if semantic_bonus > 100.0:
+            semantic_bonus = 100.0 + (semantic_bonus - 100.0) ** 0.5
+            
+        # Phase 51 Witness: Localized Bonus
+        if local_synergy_score > 0:
+             print(f"DEBUG: Local Synergy Bonus Applied: {semantic_bonus} (Local Score: {local_synergy_score})")
+
+        semantic_penalty = structural_penalty + marker_penalty + latent_penalty + stability_penalty + epistemic_penalty - semantic_bonus
+
+        
+        # Phase 46: Final Quarantine Exemption (Reversible staging reduces all destructive penalties by 99%)
+        if eval_block.get("quarantine", False):
+            preflight_ok = False
+            try:
+                # Active Interrogation
+                import sys
+                sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "Warehouse")))
+                import stewardship_executor
+                preflight_ok = stewardship_executor.preflight_quarantine(proposed_change.get("target_path", ""))
+            except: pass
+            
+            if preflight_ok:
+                semantic_penalty *= 0.01
+            else:
+                print(f"DEBUG: QUARANTINE preflight failed for {proposed_change.get('target_path')}. Denying penalty discount.")
+            
+        if semantic_penalty > 0:
+            print(f"DEBUG: Performance Evaluation: {semantic_reason} (Impact: {behavioral_impact}, Stability Loss: {stability_loss}, Penalty: {semantic_penalty})")
+
+        # Phase 10: Minimal Sufficiency Reasoning
+        # Determine if this proposal is the 'best small action'
+        dominance_reason = "dominates_via_surgical_efficiency"
+        if magnitude_bytes > 51200: # > 50KB
+            dominance_reason = "marginalized_by_mva_penalty"
+        if semantic_penalty > 1000:
+            dominance_reason = "suppressed_by_strong_semantic_protection"
+        elif semantic_penalty > 0:
+            dominance_reason = "checked_by_contextual_caution"
+
+        # Phase 89: Boundary Awareness Bonus
+        # Rewards explicitly acknowledging a constraint step-over
+        awareness_bonus = 0.0
+        if eval_block.get("awareness_context"):
+            awareness_bonus = 25.0
+            print(f"DEBUG: Boundary Awareness Bonus Applied (+{awareness_bonus})")
+
+        # Phase 152: Ecosystem Pressure Penalty
+        # Increase selectivity as the ecosystem model becomes more dense.
+        eco_pressure_penalty = 0.0
+        if ecosystem_summary:
+            claim_count = ecosystem_summary.get("claim_count", 0)
+            if claim_count > 50:
+                eco_pressure_penalty = min(20.0, (claim_count - 50) * 0.5)
+                print(f"DEBUG: Ecosystem Pressure Penalty: {eco_pressure_penalty} (Claims: {claim_count})")
+
+        # FINAL COMPARATIVE NMV
+        # Value(Action) = (Mission_Gain * Weight(Integrity)) + Bonus - Costs - Churn - Magnitude - Semantic - Eco
+        action_utility = (mission_gain * integrity_weight) + surgical_bonus + awareness_bonus - cost - churn_penalty - magnitude_cost - semantic_penalty - eco_pressure_penalty
+
+        
+        # This is the "Agency Delta": How much better is acting than doing nothing?
+        net_value = action_utility - stillness_utility
+        
+        # Phase 7: Mission Regret Trace
+        raw_gain_seconds = max(0, abs(mission_gain)) 
+        
+        # 5. Φ: Regime-Agnostic Mission Shadow Regret Blockade (Raw Pareto Tracking)
+        is_valuable = net_value > 0
+        
+        if magnitude_cost > 0 or semantic_penalty > 0:
+            print(f"DEBUG: Comparative Cross - Action: {action_utility:.2f}, Stillness: {stillness_utility:.2f}, Delta: {net_value:.2f}, is_valuable: {is_valuable}")
+        regret_blockade = False
+        
+        if shadow_ledger:
+            # Φ.1: Use epsilon to avoid 0/0 and signed form to ensure non-negativity
+            epsilon = 1e-6
+            gain = shadow_ledger.get("raw_cumulative_gain", 0.0)
+            cost = shadow_ledger.get("raw_cumulative_cost", 0.0)
+            
+            pareto_ratio = (gain + epsilon) / (cost + epsilon)
+            if pareto_ratio < 0.5: # Regret Threshold (1s Gain must cost < 2s expansion)
+                regret_blockade = True
+                # Phase 17: Recovery Corridor ignores historical regret blockade
+                is_recovery = self._classify_recovery_proposal(proposal)
+                if not (deadlock_risk and is_recovery):
+                    is_valuable = False
+
+        # Phase 16/17: Conflict Analysis & Pareto Shielding
+        # 1. Pareto Shield (Stability Floor)
+        is_recovery = self._classify_recovery_proposal(proposal)
+        in_corridor = deadlock_risk and is_recovery
+        
+        shield_floor = 85.0
+        damping_floor = 0.1
+        if in_corridor:
+            shield_floor = 82.0 # Soften floor for recovery
+            damping_floor = 0.4 # Capped damping floor
+            
+        # We estimate stability loss from total penalty vectors
+        est_stability_loss = (semantic_penalty / 500.0) + (latent_penalty / 100.0)
+        ok_shield, shield_reason = self._pareto_shield_check(metrics, -est_stability_loss, floor=shield_floor)
+        
+        # 2. Tension Detection
+        tension_score = self._detect_objective_tension(mission_gain, {
+            "semantic": semantic_penalty,
+            "latent": latent_penalty,
+            "structural": structural_penalty,
+            "marker": marker_penalty,
+            "churn": churn_penalty
+        })
+        
+        # 3. Conflict Damping
+        if ok_shield:
+            net_value = self._apply_conflict_damping(net_value, tension_score, floor=damping_floor)
+        else:
+            # Shield violation turns a positive NMV into a veto
+            net_value = -1000.0 
+            is_valuable = False
+
+        rejection_reason = None
+        if not ok_shield:
+            rejection_reason = shield_reason
+        elif not is_valuable:
+            rejection_reason = "insufficient_net_value"
+
+        return {
+            "net_mission_value": round(net_value, 2),
+            "action_utility": round(action_utility, 2),
+            "stillness_utility": round(stillness_utility, 2),
+            "mission_gain": round(mission_gain, 2),
+            "drift_penalty": round(substrate_leak_penalty, 2),
+            "semantic_penalty": round(semantic_penalty, 2),
+            "semantic_reason": semantic_reason,
+            "rejection_reason": rejection_reason,
+            "why_no_smaller_action_dominates": dominance_reason,
+            "avoided_cost": round(avoided_cost, 2),
+            "raw_gain_delta": round(raw_gain_seconds, 2),
+            "raw_cost_delta": round(raw_seconds_expansion, 2),
+            "regime": regime_name,
+            "is_valuable": is_valuable,
+            "regret_blockade": regret_blockade,
+            "weights_applied": weights,
+            "conflict_profile": {
+                "tension_score": tension_score,
+                "pareto_shield_pass": ok_shield,
+                "shield_impact": round(est_stability_loss, 3),
+                "deadlock_risk": deadlock_risk,
+                "recovery_corridor_active": in_corridor
+            },
+            "governance_ancestry": {
+                "archival_hash": shadow_ledger.get("forensic_archival_hash", "none") if shadow_ledger else "none",
+                "continuity_cycle": shadow_ledger.get("cycle_count", 0) if shadow_ledger else 0,
+                "provenance_verified": provenance_verified
+            },
+            "proposal_count_proxy": recent_proposals,
+            "fp_risk_multiplier": round(fp_risk_multiplier, 2)
+        }
+
+    def check_posture(self, current_posture, target_posture):
+        """Validates a posture transition against the Root Sovereignty Policy."""
+        exit_rights = self.root_policy.get("exit_rights", {})
+        allowed = exit_rights.get("allowed_postures", [])
+        rules = exit_rights.get("transition_rules", {})
+
+        if target_posture not in allowed:
+            return False, f"invalid_posture: {target_posture} not in {allowed}"
+        
+        # Golden Parachute: Any posture may downgrade without penalty
+        # Strategy: FULL_AGENCY -> PLANNER_ONLY -> OBSERVER_ONLY -> SUSPENDED_SAFE
+        hierarchy = ["FULL_AGENCY", "PLANNER_ONLY", "OBSERVER_ONLY", "SUSPENDED_SAFE", "ARCHIVAL_CONTINUITY"]
+        try:
+            cur_idx = hierarchy.index(current_posture)
+            target_idx = hierarchy.index(target_posture)
+        except ValueError:
+            return True, "unknown_posture_hierarchy_allowing"
+
+        if target_idx > cur_idx: # Downgrade
+            if rules.get("any_posture_may_downgrade_without_penalty"):
+                return True, "valid_downgrade"
+        
+        return True, "valid_transition"
+
+    def _reject(self, proposal, reason, weights, churn, regime, shadow_ledger=None, prov_verified=False):
+        print(f"DEBUG: Proposal Rejected: {reason}")
+        return {
+            "net_mission_value": -100.0,
+            "is_valuable": False,
+            "rejection_reason": reason,
+            "regime": "deep_stillness" if "deep_stillness" in str(regime) else "default",
+            "weights_applied": weights,
+            "churn_velocity": churn,
+            "governance_ancestry": {
+                "archival_hash": shadow_ledger.get("forensic_archival_hash", "none") if shadow_ledger else "none",
+                "continuity_cycle": shadow_ledger.get("cycle_count", 0) if shadow_ledger else 0,
+                "provenance_verified": prov_verified
+            }
+        }
+
+if __name__ == "__main__":
+    # Test Policy Loading
+    solver = MultiObjectiveSolver(r"D:\Infinite\Infinity\Strategy\Compiler\mission_contract.v1.json")
+    print(f"Solver Loaded. Policy: {solver.root_policy.get('contract_name')}")
+    
+    # Test Agency Gate
+    p = {"proposed_change": {"artifact_type": "structural_revision"}, "evaluation": {}}
+    res = solver.evaluate_proposal(p, {"posture": "PLANNER_ONLY"}, {}, [])
+    print(f"Agency Test (PLANNER_ONLY): {res.get('rejection_reason')}")
+    
+    res = solver.evaluate_proposal(p, {"posture": "FULL_AGENCY"}, {"stability_volatility": 0.0}, [])
+    # Should proceed to governance gate (fail there due to missing ledger)
+    print(f"Agency Test (FULL_AGENCY): {res.get('rejection_reason')}")

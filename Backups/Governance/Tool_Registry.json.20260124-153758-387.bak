@@ -1,0 +1,9 @@
+﻿{
+    "tools":  [
+                  {
+                      "risk_level":  "low",
+                      "name":  "Test Tool",
+                      "id":  "TEST-TOOL-001"
+                  }
+              ]
+}

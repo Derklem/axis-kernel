@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-03-16T00:48:31Z",
+  "metrics": {
+    "timestamp": "2026-03-16T00:48:30Z",
+    "epistemic_yield": {
+      "completed_plans": 0,
+      "gate_rejections": 0,
+      "yield_ratio": 1.0
+    },
+    "recovery_dynamics": {
+      "recovery_count": 0,
+      "status": "PLANNER_ONLY"
+    },
+    "budget_calibration": {
+      "planning": 0.0,
+      "execution": 0.0
+    },
+    "doctrine_rent": {
+      "avg_theory_confidence": 0
+    },
+    "observability_health": {
+      "repair_backlog": 3
+    }
+  },
+  "status": "VALIDATED_BASELINE"
+}

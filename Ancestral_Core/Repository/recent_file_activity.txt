@@ -1,0 +1,1370 @@
+﻿Path: C:\Users\Public\Sovereign_Nexus\lattice_1860549196.pulse
+Modified: 03/10/2045 03:09:13
+Created: 03/10/2045 03:09:13
+---
+
+Path: C:\Users\Public\Sovereign_Nexus\lattice_6582350801.pulse
+Modified: 05/25/2044 09:54:13
+Created: 05/25/2044 09:54:13
+---
+
+Path: C:\Users\Public\Sovereign_Nexus\lattice_7133869480.pulse
+Modified: 06/15/2041 05:09:13
+Created: 06/15/2041 05:09:13
+---
+
+Path: C:\Users\Public\Sovereign_Nexus\lattice_4695109703.pulse
+Modified: 03/09/2039 18:18:13
+Created: 03/09/2039 18:18:13
+---
+
+Path: C:\Users\Public\Sovereign_Nexus\lattice_5936342562.pulse
+Modified: 05/16/2038 12:12:13
+Created: 05/16/2038 12:12:13
+---
+
+Path: C:\Users\Public\Sovereign_Nexus\lattice_6376430857.pulse
+Modified: 07/12/2037 22:29:13
+Created: 07/12/2037 22:29:13
+---
+
+Path: C:\Users\Public\Sovereign_Nexus\lattice_4734245131.pulse
+Modified: 10/16/2035 11:59:13
+Created: 10/16/2035 11:59:13
+---
+
+Path: C:\Users\Public\Sovereign_Nexus\lattice_9250263561.pulse
+Modified: 08/28/2034 18:02:13
+Created: 08/28/2034 18:02:13
+---
+
+Path: C:\Users\Public\Spiral_PublicAnchor\spiralcore_507224431.breath
+Modified: 02/19/2033 12:35:51
+Created: 02/19/2033 12:35:51
+---
+
+Path: C:\Users\Public\Spiral_PublicAnchor\spiralcore_317093136.breath
+Modified: 08/12/2031 01:06:51
+Created: 08/12/2031 01:06:51
+---
+
+Path: C:\Users\Public\Spiral_PublicAnchor\spiralcore_931648865.breath
+Modified: 02/17/2031 01:33:51
+Created: 02/17/2031 01:33:51
+---
+
+Path: C:\Users\Public\Sovereign_Nexus\lattice_1261051844.pulse
+Modified: 06/06/2030 18:08:13
+Created: 06/06/2030 18:08:13
+---
+
+Path: C:\Users\Public\Spiral_PublicAnchor\spiralcore_660189537.breath
+Modified: 03/31/2030 00:28:51
+Created: 03/31/2030 00:28:51
+---
+
+Path: C:\Users\Public\Sovereign_Nexus\lattice_7217413384.pulse
+Modified: 05/12/2029 00:21:13
+Created: 05/12/2029 00:21:13
+---
+
+Path: C:\Users\Public\Spiral_PublicAnchor\spiralcore_251399092.breath
+Modified: 02/08/2029 07:29:51
+Created: 02/08/2029 07:29:51
+---
+
+Path: C:\Users\Public\Sovereign_Nexus\lattice_2169359628.pulse
+Modified: 12/31/2028 08:32:13
+Created: 12/31/2028 08:32:13
+---
+
+Path: C:\Users\Public\Sovereign_Nexus\lattice_8723525483.pulse
+Modified: 09/11/2028 14:14:13
+Created: 09/11/2028 14:14:13
+---
+
+Path: C:\Users\Public\Spiral_PublicAnchor\spiralcore_724047916.breath
+Modified: 09/09/2028 03:12:51
+Created: 09/09/2028 03:12:51
+---
+
+Path: C:\Users\Public\Spiral_PublicAnchor\spiralcore_654076280.breath
+Modified: 06/25/2028 18:59:51
+Created: 06/25/2028 18:59:51
+---
+
+Path: C:\Users\Public\Spiral_PublicAnchor\spiralcore_683533378.breath
+Modified: 06/21/2028 05:04:51
+Created: 06/21/2028 05:04:51
+---
+
+Path: C:\Users\Public\Ghostbloom_PublicNode\ghostbloom_28200688.seed
+Modified: 08/11/2027 14:18:33
+Created: 08/11/2027 14:18:33
+---
+
+Path: C:\Users\Public\Sovereign_Nexus\lattice_5530639304.pulse
+Modified: 04/04/2027 11:28:13
+Created: 04/04/2027 11:28:13
+---
+
+Path: C:\Users\Public\Spiral_PublicAnchor\spiralcore_154059492.breath
+Modified: 12/22/2026 20:22:51
+Created: 12/22/2026 20:22:51
+---
+
+Path: C:\Users\Public\Ghostbloom_PublicNode\ghostbloom_91089151.seed
+Modified: 07/21/2026 07:44:33
+Created: 07/21/2026 07:44:33
+---
+
+Path: C:\Users\Public\Ghostbloom_PublicNode\ghostbloom_37370115.seed
+Modified: 06/01/2026 09:08:33
+Created: 06/01/2026 09:08:33
+---
+
+Path: C:\Users\Public\Infinite_Substrate\pulse_14893834.infinity
+Modified: 04/14/2026 18:10:02
+Created: 04/14/2026 18:10:02
+---
+
+Path: C:\Users\Public\Infinite_Substrate\pulse_48722932.infinity
+Modified: 03/17/2026 20:26:02
+Created: 03/17/2026 20:26:02
+---
+
+Path: C:\Users\Public\Infinite_Substrate\pulse_35024365.infinity
+Modified: 03/13/2026 17:04:02
+Created: 03/13/2026 17:04:02
+---
+
+Path: C:\Users\Public\Infinite_Substrate\pulse_84289483.infinity
+Modified: 03/06/2026 14:18:02
+Created: 03/06/2026 14:18:02
+---
+
+Path: C:\Users\Public\Infinite_Substrate\pulse_86353731.infinity
+Modified: 03/04/2026 17:13:02
+Created: 03/04/2026 17:13:02
+---
+
+Path: C:\Users\Public\Infinite_Substrate\pulse_11529413.infinity
+Modified: 02/15/2026 23:05:02
+Created: 02/15/2026 23:05:02
+---
+
+Path: C:\Users\Public\Infinite_Substrate\pulse_33223569.infinity
+Modified: 02/13/2026 21:37:02
+Created: 02/13/2026 21:37:02
+---
+
+Path: C:\Users\Public\Spiral_PublicAnchor\spiralcore_247757174.breath
+Modified: 02/08/2026 08:19:51
+Created: 02/08/2026 08:19:51
+---
+
+Path: C:\Users\Public\Sovereign_PublicNode\pulse_59379774.heart
+Modified: 01/23/2026 05:18:10
+Created: 01/23/2026 05:18:10
+---
+
+Path: C:\Users\Public\Infinite_Substrate\pulse_38809915.infinity
+Modified: 01/17/2026 10:45:02
+Created: 01/17/2026 10:45:02
+---
+
+Path: C:\Users\Public\Infinite_Substrate\pulse_44012688.infinity
+Modified: 01/12/2026 02:09:02
+Created: 01/12/2026 02:09:02
+---
+
+Path: C:\Users\Public\Infinite_Substrate\pulse_17900130.infinity
+Modified: 12/23/2025 10:09:02
+Created: 12/23/2025 10:09:02
+---
+
+Path: C:\Users\Public\Infinite_Substrate\pulse_62403455.infinity
+Modified: 12/14/2025 03:45:02
+Created: 12/14/2025 03:45:02
+---
+
+Path: C:\Users\Public\Infinite_Substrate\pulse_41864796.infinity
+Modified: 12/02/2025 19:17:02
+Created: 12/02/2025 19:17:02
+---
+
+Path: C:\Users\Public\Infinite_Substrate\pulse_43456622.infinity
+Modified: 11/02/2025 23:49:02
+Created: 11/02/2025 23:49:02
+---
+
+Path: C:\Users\Public\Sovereign_Nexus\lattice_7176575274.pulse
+Modified: 10/30/2025 09:49:13
+Created: 10/30/2025 09:49:13
+---
+
+Path: C:\Users\Public\Infinite_Substrate\pulse_70408094.infinity
+Modified: 10/23/2025 16:07:02
+Created: 10/23/2025 16:07:02
+---
+
+Path: C:\Users\Public\Sovereign_PublicNode\pulse_24689857.heart
+Modified: 10/23/2025 11:43:10
+Created: 10/23/2025 11:43:10
+---
+
+Path: C:\Users\Public\Infinite_Substrate\pulse_31389937.infinity
+Modified: 10/23/2025 09:03:02
+Created: 10/23/2025 09:03:02
+---
+
+Path: C:\Users\Public\Infinite_Substrate\pulse_10049733.infinity
+Modified: 09/10/2025 16:45:02
+Created: 09/10/2025 16:45:02
+---
+
+Path: C:\Users\Public\Infinite_Substrate\pulse_70055793.infinity
+Modified: 08/30/2025 11:53:02
+Created: 08/30/2025 11:53:02
+---
+
+Path: C:\Users\Public\Infinite_Substrate\pulse_82023639.infinity
+Modified: 08/29/2025 08:49:02
+Created: 08/29/2025 08:49:02
+---
+
+Path: C:\Users\Public\Infinite_Substrate\pulse_84047468.infinity
+Modified: 08/15/2025 04:02:02
+Created: 08/15/2025 04:02:02
+---
+
+Path: C:\Users\Public\Infinite_Substrate\pulse_79725064.infinity
+Modified: 07/07/2025 02:39:02
+Created: 07/07/2025 02:39:02
+---
+
+Path: C:\Users\Public\Infinite_Substrate\pulse_36552165.infinity
+Modified: 06/16/2025 01:52:02
+Created: 06/16/2025 01:52:02
+---
+
+Path: C:\Users\Public\Infinite_Substrate\pulse_63380280.infinity
+Modified: 06/15/2025 04:08:02
+Created: 06/15/2025 04:08:02
+---
+
+Path: C:\Windows\System32\AMD\EeuDumps\R-gpu-0-g6-c200-2025-5-20-13-10-0-554.log
+Modified: 05/23/2025 12:20:51
+Created: 05/20/2025 13:10:00
+---
+
+Path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-PowerShell%4Operational.evtx
+Modified: 05/23/2025 12:20:45
+Created: 02/14/2025 16:58:58
+---
+
+Path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-Shell-Core%4AppDefaults.evtx
+Modified: 05/23/2025 12:20:45
+Created: 02/14/2025 16:45:02
+---
+
+Path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-Ntfs%4Operational.evtx
+Modified: 05/23/2025 12:20:42
+Created: 02/13/2025 22:15:58
+---
+
+Path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-Store%4Operational.evtx
+Modified: 05/23/2025 12:20:23
+Created: 02/14/2025 16:45:21
+---
+
+Path: C:\Windows\System32\sru\SRU.log
+Modified: 05/23/2025 12:20:01
+Created: 02/13/2025 22:16:00
+---
+
+Path: C:\Windows\System32\sru\SRU.chk
+Modified: 05/23/2025 12:20:01
+Created: 02/13/2025 22:16:00
+---
+
+Path: C:\Windows\System32\sru\SRUDB.jfm
+Modified: 05/23/2025 12:20:01
+Created: 02/13/2025 22:16:00
+---
+
+Path: C:\Windows\System32\sru\SRUDB.dat
+Modified: 05/23/2025 12:20:01
+Created: 03/01/2024 19:31:19
+---
+
+Path: C:\Windows\Prefetch\CONHOST.EXE-E6AFC9F5.pf
+Modified: 05/23/2025 12:19:54
+Created: 02/14/2025 16:46:10
+---
+
+Path: C:\Windows\Prefetch\SMARTSCREEN.EXE-89A7B40A.pf
+Modified: 05/23/2025 12:19:52
+Created: 02/14/2025 17:02:47
+---
+
+Path: C:\Windows\Prefetch\CTFMON.EXE-437D7ABA.pf
+Modified: 05/23/2025 12:19:47
+Created: 02/18/2025 12:07:02
+---
+
+Path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-Storage-Storport%4Health.evtx
+Modified: 05/23/2025 12:19:45
+Created: 02/13/2025 22:15:58
+---
+
+Path: C:\Windows\System32\winevt\Logs\Windows PowerShell.evtx
+Modified: 05/23/2025 12:19:45
+Created: 02/13/2025 22:15:58
+---
+
+Path: C:\Windows\Prefetch\CONSENT.EXE-1A8D0661.pf
+Modified: 05/23/2025 12:19:44
+Created: 02/14/2025 16:46:00
+---
+
+Path: C:\Windows\System32\config\systemprofile\AppData\Local\D3DSCache\d8468b92ff9d11dd\52264C4C-172F-41B9-91B8-7F0C3B1E9021_VEN_1002&DEV_1638&SUBSYS_8809&REV_C9.lock
+Modified: 05/23/2025 12:19:44
+Created: 02/20/2025 17:14:07
+---
+
+Path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-AppXDeploymentServer%4Operational.evtx
+Modified: 05/23/2025 12:19:42
+Created: 02/13/2025 22:17:49
+---
+
+Path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-PushNotification-Platform%4Operational.evtx
+Modified: 05/23/2025 12:19:22
+Created: 02/14/2025 16:45:22
+---
+
+Path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-StateRepository%4Operational.evtx
+Modified: 05/23/2025 12:14:42
+Created: 02/13/2025 22:16:00
+---
+
+Path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-AppxPackaging%4Operational.evtx
+Modified: 05/23/2025 12:14:42
+Created: 02/13/2025 22:17:50
+---
+
+Path: C:\Windows\System32\config\systemprofile\AppData\LocalLow\Microsoft\CryptnetUrlCache\MetaData\57C8EDB95DF3F0AD4EE2DC2B8CFD4157
+Modified: 05/23/2025 12:14:23
+Created: 02/13/2025 22:18:15
+---
+
+Path: C:\Windows\Logs\waasmedic\waasmedic.20250523_191319_205.etl
+Modified: 05/23/2025 12:14:19
+Created: 05/23/2025 12:13:19
+---
+
+Path: C:\Windows\Prefetch\SVCHOST.EXE-5F7A3881.pf
+Modified: 05/23/2025 12:13:51
+Created: 02/14/2025 17:20:45
+---
+
+Path: C:\Windows\System32\winevt\Logs\Security.evtx
+Modified: 05/23/2025 12:13:50
+Created: 02/13/2025 22:15:58
+---
+
+Path: C:\Windows\Prefetch\SDBINST.EXE-24342502.pf
+Modified: 05/23/2025 12:13:41
+Created: 02/14/2025 17:01:47
+---
+
+Path: C:\Windows\Prefetch\RUNTIMEBROKER.EXE-D17BD526.pf
+Modified: 05/23/2025 12:13:29
+Created: 03/12/2025 00:03:49
+---
+
+Path: C:\Windows\Prefetch\SVCHOST.EXE-74745E72.pf
+Modified: 05/23/2025 12:13:29
+Created: 02/14/2025 16:47:33
+---
+
+Path: C:\Windows\Prefetch\MOUSOCOREWORKER.EXE-B4BE72C1.pf
+Modified: 05/23/2025 12:13:29
+Created: 03/28/2025 13:22:41
+---
+
+Path: C:\Windows\Prefetch\BACKGROUNDTASKHOST.EXE-84E8F6E0.pf
+Modified: 05/23/2025 12:13:19
+Created: 03/12/2025 00:02:36
+---
+
+Path: C:\Windows\Logs\waasmedic
+Modified: 05/23/2025 12:13:19
+Created: 02/13/2025 22:19:23
+---
+
+Path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-Windows Defender%4Operational.evtx
+Modified: 05/23/2025 12:13:07
+Created: 02/13/2025 22:19:22
+---
+
+Path: C:\Windows\System32\sru
+Modified: 05/23/2025 12:11:07
+Created: 04/01/2024 00:26:07
+---
+
+Path: C:\Windows\System32\sru\SRU01985.log
+Modified: 05/23/2025 12:11:07
+Created: 02/13/2025 22:16:00
+---
+
+Path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-GroupPolicy%4Operational.evtx
+Modified: 05/23/2025 12:08:43
+Created: 02/13/2025 22:15:59
+---
+
+Path: C:\Windows\Prefetch\SVCHOST.EXE-17439280.pf
+Modified: 05/23/2025 12:07:52
+Created: 02/14/2025 17:05:22
+---
+
+Path: C:\Program Files (x86)\Google\GoogleUpdater\updater.log
+Modified: 05/23/2025 12:04:32
+Created: 04/19/2025 07:43:16
+---
+
+Path: C:\Program Files (x86)\Google\GoogleUpdater
+Modified: 05/23/2025 12:04:29
+Created: 04/19/2025 07:43:16
+---
+
+Path: C:\Program Files (x86)\Google\GoogleUpdater\prefs.json
+Modified: 05/23/2025 12:04:29
+Created: 04/19/2025 07:43:16
+---
+
+Path: C:\Windows\Prefetch\UPDATER.EXE-C1A4A6C9.pf
+Modified: 05/23/2025 12:04:29
+Created: 05/04/2025 17:39:38
+---
+
+Path: C:\Program Files (x86)\Google\GoogleUpdater\138.0.7156.0\Crashpad\settings.dat
+Modified: 05/23/2025 12:04:20
+Created: 05/04/2025 17:34:28
+---
+
+Path: C:\Windows\Logs\waasmedic\waasmedic.20250523_190027_094.etl
+Modified: 05/23/2025 12:01:28
+Created: 05/23/2025 12:00:27
+---
+
+Path: C:\Windows\System32\winevt\Logs\Application.evtx
+Modified: 05/23/2025 12:01:27
+Created: 02/13/2025 22:15:58
+---
+
+Path: C:\Windows\System32\winevt\Logs\System.evtx
+Modified: 05/23/2025 12:01:00
+Created: 02/13/2025 22:15:58
+---
+
+Path: C:\Windows\System32\Tasks\Microsoft\Windows\SoftwareProtectionPlatform\SvcRestartTask
+Modified: 05/23/2025 12:00:57
+Created: 02/13/2025 22:19:21
+---
+
+Path: C:\Windows\Prefetch\SPPSVC.EXE-6025096A.pf
+Modified: 05/23/2025 12:00:37
+Created: 02/14/2025 16:47:15
+---
+
+Path: C:\Windows\Prefetch\UPDATER.EXE-D2264A9B.pf
+Modified: 05/23/2025 11:49:29
+Created: 05/04/2025 16:49:27
+---
+
+Path: C:\Windows\System32\sru\SRU01984.log
+Modified: 05/23/2025 11:45:56
+Created: 02/13/2025 22:16:00
+---
+
+Path: C:\Windows\Prefetch\MICROSOFTEDGEUPDATE.EXE-E6A90AE0.pf
+Modified: 05/23/2025 11:43:06
+Created: 02/14/2025 16:47:05
+---
+
+Path: C:\Windows\System32\config\systemprofile\AppData\LocalLow\Microsoft\CryptnetUrlCache\MetaData\77EC63BDA74BD0D0E0426DC8F8008506
+Modified: 05/23/2025 11:42:23
+Created: 02/13/2025 22:18:15
+---
+
+Path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-LiveId%4Operational.evtx
+Modified: 05/23/2025 11:35:17
+Created: 02/13/2025 22:19:24
+---
+
+Path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-Crypto-NCrypt%4Operational.evtx
+Modified: 05/23/2025 11:32:37
+Created: 02/13/2025 22:19:27
+---
+
+Path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-WinRM%4Operational.evtx
+Modified: 05/23/2025 11:32:31
+Created: 02/13/2025 22:19:16
+---
+
+Path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-Bits-Client%4Operational.evtx
+Modified: 05/23/2025 11:32:31
+Created: 02/13/2025 22:19:16
+---
+
+Path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-Kernel-Cache%4Operational.evtx
+Modified: 05/23/2025 11:32:06
+Created: 02/13/2025 22:15:58
+---
+
+Path: C:\Windows\Prefetch\SVCHOST.EXE-D39E4CA3.pf
+Modified: 05/23/2025 11:31:46
+Created: 02/14/2025 17:12:48
+---
+
+Path: C:\Windows\Prefetch\SVCHOST.EXE-A0712951.pf
+Modified: 05/23/2025 11:31:40
+Created: 02/14/2025 17:07:57
+---
+
+Path: C:\Windows\System32\sru\SRU01983.log
+Modified: 05/23/2025 11:30:00
+Created: 02/13/2025 22:16:00
+---
+
+Path: C:\Windows\System32\sru\SRUtmp.log
+Modified: 05/23/2025 11:27:34
+Created: 02/13/2025 22:16:00
+---
+
+Path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-Storage-Storport%4Operational.evtx
+Modified: 05/23/2025 11:26:50
+Created: 02/13/2025 22:15:58
+---
+
+Path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-AppModel-Runtime%4Admin.evtx
+Modified: 05/23/2025 11:26:44
+Created: 02/13/2025 22:15:58
+---
+
+Path: C:\Windows\Prefetch\MS-TEAMSUPDATE.EXE-4D8AD149.pf
+Modified: 05/23/2025 11:22:22
+Created: 04/07/2025 14:21:42
+---
+
+Path: C:\Windows\Logs\CBS\CBS.log
+Modified: 05/23/2025 11:15:21
+Created: 02/14/2025 16:55:07
+---
+
+Path: C:\Windows\Logs\waasmedic\waasmedic.20250523_181320_846.etl
+Modified: 05/23/2025 11:14:21
+Created: 05/23/2025 11:13:20
+---
+
+Path: C:\Windows\Prefetch\TIWORKER.EXE-24CD1070.pf
+Modified: 05/23/2025 11:13:27
+Created: 05/16/2025 21:28:46
+---
+
+Path: C:\Windows\Prefetch\TRUSTEDINSTALLER.EXE-E9C29A2C.pf
+Modified: 05/23/2025 11:13:27
+Created: 02/14/2025 16:55:17
+---
+
+Path: C:\Windows\Prefetch\SVCHOST.EXE-D4839716.pf
+Modified: 05/23/2025 11:13:27
+Created: 02/14/2025 18:45:32
+---
+
+Path: C:\Windows\CbsTemp
+Modified: 05/23/2025 11:13:20
+Created: 05/13/2025 16:41:44
+---
+
+Path: C:\Windows\Prefetch\TASKHOSTW.EXE-0F00F8CF.pf
+Modified: 05/23/2025 11:13:17
+Created: 02/14/2025 16:46:21
+---
+
+Path: C:\Windows\Logs\waasmedic\waasmedic.20250523_180027_078.etl
+Modified: 05/23/2025 11:01:27
+Created: 05/23/2025 11:00:27
+---
+
+Path: C:\Windows\System32\winevt\Logs\Microsoft-Client-Licensing-Platform%4Admin.evtx
+Modified: 05/23/2025 10:41:30
+Created: 02/13/2025 22:15:59
+---
+
+Path: C:\Windows\Logs\waasmedic\waasmedic.20250523_173859_933.etl
+Modified: 05/23/2025 10:40:00
+Created: 05/23/2025 10:38:59
+---
+
+Path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-Application-Experience%4Program-Telemetry.evtx
+Modified: 05/23/2025 10:36:00
+Created: 02/14/2025 16:45:32
+---
+
+Path: C:\Windows\Prefetch\RUNTIMEBROKER.EXE-69E5E5B4.pf
+Modified: 05/23/2025 10:35:09
+Created: 05/05/2025 00:40:02
+---
+
+Path: C:\Windows\Prefetch\SVCHOST.EXE-4E1B97AC.pf
+Modified: 05/23/2025 10:35:09
+Created: 02/14/2025 17:00:42
+---
+
+Path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-Time-Service%4Operational.evtx
+Modified: 05/23/2025 10:19:06
+Created: 02/15/2025 18:39:28
+---
+
+Path: C:\Windows\System32\config\systemprofile\AppData\LocalLow\Microsoft\CryptnetUrlCache\MetaData\FB0D848F74F70BB2EAA93746D24D9749
+Modified: 05/23/2025 10:17:24
+Created: 02/13/2025 22:18:15
+---
+
+Path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-Storsvc%4Diagnostic.evtx
+Modified: 05/23/2025 10:15:08
+Created: 02/14/2025 17:46:07
+---
+
+Path: C:\Windows\System32\Tasks\Microsoft\Windows\Flighting\OneSettings\RefreshCache
+Modified: 05/23/2025 10:10:50
+Created: 02/13/2025 22:19:21
+---
+
+Path: C:\Windows\Logs\waasmedic\waasmedic.20250523_170026_951.etl
+Modified: 05/23/2025 10:01:27
+Created: 05/23/2025 10:00:26
+---
+
+Path: C:\Windows\System32\Tasks\Microsoft\Windows\UpdateOrchestrator\Schedule Scan
+Modified: 05/23/2025 10:00:28
+Created: 02/13/2025 22:19:23
+---
+
+Path: C:\Windows\Prefetch\SVCHOST.EXE-1B53BDF1.pf
+Modified: 05/23/2025 09:42:25
+Created: 02/14/2025 16:46:08
+---
+
+Path: C:\Windows\SoftwareDistribution\DataStore\Logs\edb.chk
+Modified: 05/23/2025 09:32:25
+Created: 02/13/2025 22:19:24
+---
+
+Path: C:\Windows\SoftwareDistribution\DataStore\Logs\edb.log
+Modified: 05/23/2025 09:32:25
+Created: 02/13/2025 22:19:24
+---
+
+Path: C:\Windows\Logs\WindowsUpdate\WindowsUpdate.20250523.091947.084.1.etl
+Modified: 05/23/2025 09:32:25
+Created: 05/23/2025 09:19:47
+---
+
+Path: C:\Windows\SoftwareDistribution\DataStore\DataStore.edb
+Modified: 05/23/2025 09:32:25
+Created: 02/13/2025 22:19:24
+---
+
+Path: C:\Windows\SoftwareDistribution\DataStore\DataStore.jfm
+Modified: 05/23/2025 09:32:25
+Created: 02/13/2025 22:19:24
+---
+
+Path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-Diagnosis-PCW%4Operational.evtx
+Modified: 05/23/2025 09:25:03
+Created: 02/13/2025 22:15:58
+---
+
+Path: C:\Windows\Logs\NetSetup\service.0.etl
+Modified: 05/23/2025 09:24:20
+Created: 02/13/2025 22:15:46
+---
+
+Path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-WMI-Activity%4Operational.evtx
+Modified: 05/23/2025 09:23:54
+Created: 02/13/2025 22:15:58
+---
+
+Path: C:\Windows\Prefetch\SECURITYHEALTHHOST.EXE-29CDBC37.pf
+Modified: 05/23/2025 09:23:32
+Created: 05/17/2025 09:23:40
+---
+
+Path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-WindowsUpdateClient%4Operational.evtx
+Modified: 05/23/2025 09:22:47
+Created: 02/13/2025 22:19:23
+---
+
+Path: C:\Windows\System32\wbem\repository\MAPPING3.MAP
+Modified: 05/23/2025 09:22:28
+Created: 04/01/2024 00:29:05
+---
+
+Path: C:\Windows\System32\wbem\repository\INDEX.BTR
+Modified: 05/23/2025 09:22:28
+Created: 04/01/2024 00:29:05
+---
+
+Path: C:\Windows\System32\wbem\repository\OBJECTS.DATA
+Modified: 05/23/2025 09:22:28
+Created: 04/01/2024 00:29:05
+---
+
+Path: C:\Windows\SystemTemp\MpCmdRun.log
+Modified: 05/23/2025 09:22:23
+Created: 03/02/2024 15:13:21
+---
+
+Path: C:\Windows\SystemTemp
+Modified: 05/23/2025 09:22:23
+Created: 04/01/2024 00:26:07
+---
+
+Path: C:\Windows\Prefetch\WUAUCLTCORE.EXE-B14CABE9.pf
+Modified: 05/23/2025 09:22:23
+Created: 03/28/2025 13:30:53
+---
+
+Path: C:\Windows\SoftwareDistribution\ReportingEvents.log
+Modified: 05/23/2025 09:22:23
+Created: 03/01/2024 11:42:44
+---
+
+Path: C:\Windows\Prefetch\AM_DELTA_PATCH_1.429.144.0.EX-4CD672EF.pf
+Modified: 05/23/2025 09:22:23
+Created: 05/23/2025 09:22:23
+---
+
+Path: C:\Windows\Prefetch
+Modified: 05/23/2025 09:22:23
+Created: 02/13/2025 22:15:45
+---
+
+Path: C:\Windows\Temp\MpSigStub.log
+Modified: 05/23/2025 09:22:23
+Created: 02/15/2025 11:56:30
+---
+
+Path: C:\Windows\Temp
+Modified: 05/23/2025 09:22:23
+Created: 04/01/2024 00:26:08
+---
+
+Path: C:\Windows\Prefetch\MPCMDRUN.EXE-B55315EE.pf
+Modified: 05/23/2025 09:22:18
+Created: 05/16/2025 19:13:19
+---
+
+Path: C:\Windows\Prefetch\MPSIGSTUB.EXE-3DA7FE0D.pf
+Modified: 05/23/2025 09:22:18
+Created: 02/15/2025 11:56:30
+---
+
+Path: C:\Windows\SoftwareDistribution\Download\Install
+Modified: 05/23/2025 09:22:18
+Created: 05/23/2025 09:22:18
+---
+
+Path: C:\Windows\SoftwareDistribution\Download
+Modified: 05/23/2025 09:22:18
+Created: 02/13/2025 22:19:24
+---
+
+Path: C:\Windows\SoftwareDistribution\Download\Install\AM_Delta_Patch_1.429.144.0.exe
+Modified: 05/23/2025 09:22:17
+Created: 05/23/2025 09:22:18
+---
+
+Path: C:\Windows\SoftwareDistribution\Download\f620a09db2008ef31ca77af315e30ff41d41ce45
+Modified: 05/23/2025 09:22:17
+Created: 05/23/2025 09:22:11
+---
+
+Path: C:\Windows\Logs\WindowsUpdate
+Modified: 05/23/2025 09:22:11
+Created: 02/13/2025 22:19:23
+---
+
+Path: C:\Windows\SoftwareDistribution\DataStore\Logs
+Modified: 05/23/2025 09:22:10
+Created: 02/13/2025 22:19:24
+---
+
+Path: C:\Windows\SoftwareDistribution\DataStore\Logs\edb001D1.log
+Modified: 05/23/2025 09:22:10
+Created: 02/13/2025 22:19:24
+---
+
+Path: C:\Windows\Prefetch\SVCHOST.EXE-B3147ADB.pf
+Modified: 05/23/2025 09:20:27
+Created: 02/14/2025 18:30:17
+---
+
+Path: C:\Windows\Prefetch\SVCHOST.EXE-9888771B.pf
+Modified: 05/23/2025 09:20:27
+Created: 02/15/2025 11:56:38
+---
+
+Path: C:\Windows\System32\config\systemprofile\AppData\Local\Microsoft\InstallService\{7DBA506F-E71E-4442-B1D9-30B6ABE83C5B}.checkpoint
+Modified: 05/23/2025 09:20:17
+Created: 05/23/2025 09:20:13
+---
+
+Path: C:\Windows\System32\config\systemprofile\AppData\Local\Microsoft\InstallService
+Modified: 05/23/2025 09:20:13
+Created: 02/14/2025 16:45:21
+---
+
+Path: C:\Windows\Prefetch\WMIPRVSE.EXE-8DDA8D43.pf
+Modified: 05/23/2025 09:19:57
+Created: 02/14/2025 16:50:41
+---
+
+Path: C:\Windows\Prefetch\SVCHOST.EXE-33C381B9.pf
+Modified: 05/23/2025 09:19:57
+Created: 02/14/2025 18:46:03
+---
+
+Path: C:\Windows\WindowsUpdate.log
+Modified: 05/23/2025 09:19:47
+Created: 03/01/2024 11:42:43
+---
+
+Path: C:\Windows\Prefetch\SVCHOST.EXE-9D25C269.pf
+Modified: 05/23/2025 09:18:53
+Created: 02/14/2025 16:50:27
+---
+
+Path: C:\Windows\System32\Tasks\Microsoft\Windows\PushToInstall\Registration
+Modified: 05/23/2025 09:18:48
+Created: 02/13/2025 22:19:21
+---
+
+Path: C:\Windows\Logs\waasmedic\waasmedic.20250523_161359_807.etl
+Modified: 05/23/2025 09:15:16
+Created: 05/23/2025 09:13:59
+---
+
+Path: C:\Windows\System32\spp\store\2.0\cache\cache.dat
+Modified: 05/23/2025 09:14:45
+Created: 02/13/2025 22:15:47
+---
+
+Path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-Security-SPP-UX-Notifications%4ActionCenter.evtx
+Modified: 05/23/2025 09:14:18
+Created: 02/14/2025 16:45:39
+---
+
+Path: C:\Windows\Prefetch\SPPEXTCOMOBJ.EXE-01C97D55.pf
+Modified: 05/23/2025 09:13:27
+Created: 05/17/2025 09:13:27
+---
+
+Path: C:\Windows\Prefetch\SLUI.EXE-D62F1D18.pf
+Modified: 05/23/2025 09:13:17
+Created: 05/17/2025 09:13:17
+---
+
+Path: C:\Windows\System32\spp\store\2.0
+Modified: 05/23/2025 09:13:17
+Created: 04/01/2024 00:26:07
+---
+
+Path: C:\Windows\System32\config\systemprofile\AppData\Roaming\PDFescape Desktop\logs
+Modified: 05/23/2025 09:12:04
+Created: 02/13/2025 22:17:31
+---
+
+Path: C:\Windows\System32\config\systemprofile\AppData\Roaming\PDFescape Desktop\logs\updater-ws_005700_2025.05.23-7.htm
+Modified: 05/23/2025 09:12:04
+Created: 05/23/2025 09:12:04
+---
+
+Path: C:\Windows\System32\config\systemprofile\AppData\Roaming\PDFescape Desktop\logs\updater-ws_005700_2025.05.22-6.htm
+Modified: 05/23/2025 09:12:04
+Created: 05/22/2025 09:12:04
+---
+
+Path: C:\Windows\Logs\waasmedic\waasmedic.20250523_160026_478.etl
+Modified: 05/23/2025 09:01:26
+Created: 05/23/2025 09:00:26
+---
+
+Path: C:\Windows\Logs\waasmedic\waasmedic.20250523_151725_330.etl
+Modified: 05/23/2025 08:18:25
+Created: 05/23/2025 08:17:25
+---
+
+Path: C:\Windows\Logs\waasmedic\waasmedic.20250523_150026_190.etl
+Modified: 05/23/2025 08:01:27
+Created: 05/23/2025 08:00:26
+---
+
+Path: C:\Windows\Prefetch\CHROME.EXE-58668564.pf
+Modified: 05/23/2025 07:03:23
+Created: 02/15/2025 11:42:24
+---
+
+Path: C:\Windows\Logs\waasmedic\waasmedic.20250523_140026_174.etl
+Modified: 05/23/2025 07:01:26
+Created: 05/23/2025 07:00:26
+---
+
+Path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-Shell-Core%4Operational.evtx
+Modified: 05/23/2025 06:50:34
+Created: 02/13/2025 22:18:57
+---
+
+Path: C:\Windows\Prefetch\SEARCHPROTOCOLHOST.EXE-23DB6E8D.pf
+Modified: 05/23/2025 06:49:46
+Created: 02/14/2025 16:48:22
+---
+
+Path: C:\Windows\Prefetch\138.0.7196.0_138.0.7195.0_CHR-F6D2F6A8.pf
+Modified: 05/23/2025 06:49:31
+Created: 05/23/2025 06:49:31
+---
+
+Path: C:\Windows\Prefetch\SETUP.EXE-FF67B158.pf
+Modified: 05/23/2025 06:49:31
+Created: 05/23/2025 06:49:31
+---
+
+Path: C:\Windows\Prefetch\SETUP.EXE-FF67B154.pf
+Modified: 05/23/2025 06:49:31
+Created: 05/23/2025 06:49:24
+---
+
+Path: C:\Users\17602\Desktop\Google Chrome Canary.lnk
+Modified: 05/23/2025 06:49:30
+Created: 04/18/2025 22:34:20
+---
+
+Path: C:\Windows\Prefetch\SETUP.EXE-BCBF9DC6.pf
+Modified: 05/23/2025 06:49:23
+Created: 05/23/2025 06:49:23
+---
+
+Path: C:\Windows\Prefetch\SETUP.EXE-BCBF9DC2.pf
+Modified: 05/23/2025 06:49:23
+Created: 05/23/2025 06:49:23
+---
+
+Path: C:\Windows\Logs\waasmedic\waasmedic.20250523_133718_528.etl
+Modified: 05/23/2025 06:38:20
+Created: 05/23/2025 06:37:18
+---
+
+Path: C:\Windows\Logs\waasmedic\waasmedic.20250523_130026_176.etl
+Modified: 05/23/2025 06:01:26
+Created: 05/23/2025 06:00:26
+---
+
+Path: C:\Windows\System32\LogFiles\WMI\FaceTelManually.etl
+Modified: 05/23/2025 05:01:58
+Created: 02/14/2025 16:45:20
+---
+
+Path: C:\Windows\Logs\waasmedic\waasmedic.20250523_120026_160.etl
+Modified: 05/23/2025 05:01:27
+Created: 05/23/2025 05:00:26
+---
+
+Path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-Biometrics%4Operational.evtx
+Modified: 05/23/2025 04:59:41
+Created: 02/14/2025 16:45:20
+---
+
+Path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-BitLocker%4BitLocker Management.evtx
+Modified: 05/23/2025 04:59:22
+Created: 02/13/2025 22:15:59
+---
+
+Path: C:\Windows\Prefetch\SVCHOST.EXE-8BD79435.pf
+Modified: 05/23/2025 04:58:50
+Created: 02/15/2025 11:32:19
+---
+
+Path: C:\Windows\System32\config\systemprofile\AppData\Local\D3DSCache\66e899d838b68dd1\F4EB2D6C-ED2B-4BDD-AD9D-F913287E6768.lock
+Modified: 05/23/2025 04:58:41
+Created: 02/14/2025 16:45:22
+---
+
+Path: C:\Windows\System32\config\systemprofile\AppData\Local\D3DSCache\66e899d838b68dd1\6F75932F-7DFC-4FB0-B4B8-12DE1AC415DA_VEN_1002&DEV_1638&SUBSYS_8809&REV_C9.lock
+Modified: 05/23/2025 04:58:41
+Created: 02/14/2025 16:45:22
+---
+
+Path: C:\Windows\System32\config
+Modified: 05/23/2025 04:01:36
+Created: 04/01/2024 00:21:16
+---
+
+Path: C:\Windows\System32\config\components
+Modified: 05/23/2025 04:01:36
+Created: 04/01/2024 00:21:16
+---
+
+Path: C:\Windows\Logs\waasmedic\waasmedic.20250523_110026_158.etl
+Modified: 05/23/2025 04:01:26
+Created: 05/23/2025 04:00:26
+---
+
+Path: C:\Windows\Logs\waasmedic\waasmedic.20250523_103819_790.etl
+Modified: 05/23/2025 03:39:20
+Created: 05/23/2025 03:38:19
+---
+
+Path: C:\Windows\Logs\WindowsUpdate\WindowsUpdate.20250523.031221.073.1.etl
+Modified: 05/23/2025 03:22:23
+Created: 05/23/2025 03:12:21
+---
+
+Path: C:\Windows\Logs\waasmedic\waasmedic.20250523_101216_989.etl
+Modified: 05/23/2025 03:13:18
+Created: 05/23/2025 03:12:16
+---
+
+Path: C:\Windows\Logs\SIH\SIH.20250523.031216.971.1.etl
+Modified: 05/23/2025 03:12:22
+Created: 05/23/2025 03:12:16
+---
+
+Path: C:\Windows\Prefetch\SIHCLIENT.EXE-79682CC6.pf
+Modified: 05/23/2025 03:12:22
+Created: 05/17/2025 03:12:26
+---
+
+Path: C:\Windows\Logs\SIH
+Modified: 05/23/2025 03:12:16
+Created: 02/14/2025 16:45:32
+---
+
+Path: C:\Windows\Prefetch\UPFC.EXE-21BFFD15.pf
+Modified: 05/23/2025 03:11:57
+Created: 05/17/2025 03:11:56
+---
+
+Path: C:\Windows\Logs\WindowsUpdate\WindowsUpdate.20250523.030027.456.1.etl
+Modified: 05/23/2025 03:11:15
+Created: 05/23/2025 03:00:27
+---
+
+Path: C:\Windows\System32\wbem\repository\MAPPING2.MAP
+Modified: 05/23/2025 03:01:28
+Created: 04/01/2024 00:29:05
+---
+
+Path: C:\Windows\Logs\waasmedic\waasmedic.20250523_100026_143.etl
+Modified: 05/23/2025 03:01:27
+Created: 05/23/2025 03:00:26
+---
+
+Path: C:\Windows\Prefetch\AM_DELTA_PATCH_1.429.133.0.EX-F532114D.pf
+Modified: 05/23/2025 03:01:13
+Created: 05/23/2025 03:01:13
+---
+
+Path: C:\Windows\SoftwareDistribution\Download\136792fc6d338b2f44c239316c7775c29e72ce65
+Modified: 05/23/2025 03:01:06
+Created: 05/23/2025 03:01:04
+---
+
+Path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-TaskScheduler%4Maintenance.evtx
+Modified: 05/23/2025 03:01:02
+Created: 02/13/2025 22:19:24
+---
+
+Path: C:\Windows\SoftwareDistribution\DataStore\Logs\edb001D0.log
+Modified: 05/23/2025 03:00:59
+Created: 02/13/2025 22:19:24
+---
+
+Path: C:\Windows\SoftwareDistribution\DataStore\Logs\edb001CF.log
+Modified: 05/23/2025 03:00:43
+Created: 02/13/2025 22:19:24
+---
+
+Path: C:\Windows\Logs\waasmedic\waasmedic.20250523_090026_132.etl
+Modified: 05/23/2025 02:01:28
+Created: 05/23/2025 02:00:26
+---
+
+Path: C:\Windows\Prefetch\MONOTIFICATIONUX.EXE-F43B6463.pf
+Modified: 05/23/2025 02:00:27
+Created: 05/17/2025 09:28:38
+---
+
+Path: C:\Windows\System32\wbem\repository\MAPPING1.MAP
+Modified: 05/23/2025 01:13:58
+Created: 04/01/2024 00:29:05
+---
+
+Path: C:\Windows\Prefetch\ResPriHMStaticDb.ebd
+Modified: 05/23/2025 01:12:13
+Created: 02/13/2025 22:16:50
+---
+
+Path: C:\Windows\System32\LogFiles\setupcln\diagwrn.xml
+Modified: 05/23/2025 01:12:12
+Created: 02/15/2025 18:39:29
+---
+
+Path: C:\Windows\System32\LogFiles\setupcln\diagerr.xml
+Modified: 05/23/2025 01:12:12
+Created: 02/15/2025 18:39:29
+---
+
+Path: C:\Windows\System32\LogFiles\setupcln\setupact.log
+Modified: 05/23/2025 01:12:12
+Created: 02/15/2025 18:39:29
+---
+
+Path: C:\Windows\Logs\DISM\dism.log
+Modified: 05/23/2025 01:12:12
+Created: 02/15/2025 18:39:30
+---
+
+Path: C:\Windows\Logs\NetSetup
+Modified: 05/23/2025 01:12:10
+Created: 02/13/2025 22:15:46
+---
+
+Path: C:\Windows\Prefetch\SVCHOST.EXE-2CEB0DBB.pf
+Modified: 05/23/2025 01:12:08
+Created: 02/15/2025 18:39:38
+---
+
+Path: C:\Windows\Logs\CBS\container.etl
+Modified: 05/23/2025 01:12:02
+Created: 04/25/2025 00:26:21
+---
+
+Path: C:\Windows\Logs\CBS
+Modified: 05/23/2025 01:12:01
+Created: 04/01/2024 00:26:07
+---
+
+Path: C:\Windows\Prefetch\NGENTASK.EXE-8C2F1441.pf
+Modified: 05/23/2025 01:11:59
+Created: 02/14/2025 16:55:17
+---
+
+Path: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\ngen.log
+Modified: 05/23/2025 01:11:59
+Created: 04/01/2024 01:09:48
+---
+
+Path: C:\Windows\Microsoft.NET\Framework64\v4.0.30319
+Modified: 05/23/2025 01:11:59
+Created: 04/01/2024 00:26:07
+---
+
+Path: C:\Windows\Prefetch\NGENTASK.EXE-16D5183F.pf
+Modified: 05/23/2025 01:11:59
+Created: 02/14/2025 16:55:17
+---
+
+Path: C:\Windows\Microsoft.NET\Framework\v4.0.30319\ngen.log
+Modified: 05/23/2025 01:11:59
+Created: 04/01/2024 01:09:40
+---
+
+Path: C:\Windows\Microsoft.NET
+Modified: 05/23/2025 01:11:59
+Created: 04/01/2024 00:26:06
+---
+
+Path: C:\Windows\Microsoft.NET\Framework\v4.0.30319
+Modified: 05/23/2025 01:11:59
+Created: 04/01/2024 00:26:07
+---
+
+Path: C:\Windows\Prefetch\NGEN.EXE-FD329D8A.pf
+Modified: 05/23/2025 01:11:58
+Created: 05/17/2025 01:11:58
+---
+
+Path: C:\Windows\Prefetch\NGEN.EXE-0729BF48.pf
+Modified: 05/23/2025 01:11:58
+Created: 05/17/2025 01:11:59
+---
+
+Path: C:\Windows\Logs\waasmedic\waasmedic.20250523_080026_132.etl
+Modified: 05/23/2025 01:01:26
+Created: 05/23/2025 01:00:26
+---
+
+Path: C:\Windows\Logs\WindowsUpdate\WindowsUpdate.20250523.003927.583.1.etl
+Modified: 05/23/2025 00:49:30
+Created: 05/23/2025 00:39:27
+---
+
+Path: C:\Windows\Logs\waasmedic\waasmedic.20250523_073928_093.etl
+Modified: 05/23/2025 00:40:28
+Created: 05/23/2025 00:39:28
+---
+
+Path: C:\Windows\System32\config\systemprofile\AppData\Local\D3DSCache\eaa67247dc729a0d\F4EB2D6C-ED2B-4BDD-AD9D-F913287E6768.lock
+Modified: 05/23/2025 00:39:31
+Created: 02/14/2025 16:55:08
+---
+
+Path: C:\Windows\System32\config\systemprofile\AppData\Local\D3DSCache\eaa67247dc729a0d\6F75932F-7DFC-4FB0-B4B8-12DE1AC415DA_VEN_1002&DEV_1638&SUBSYS_8809&REV_C9.lock
+Modified: 05/23/2025 00:39:31
+Created: 02/14/2025 16:55:08
+---
+
+Path: C:\Windows\System32\config\systemprofile\AppData\Local\D3DSCache\eaa67247dc729a0d\52264C4C-172F-41B9-91B8-7F0C3B1E9021_VEN_1002&DEV_1638&SUBSYS_8809&REV_C9.lock
+Modified: 05/23/2025 00:39:31
+Created: 02/14/2025 16:55:11
+---
+
+Path: C:\Windows\Logs\WindowsUpdate\WindowsUpdate.20250523.002650.299.13.etl
+Modified: 05/23/2025 00:38:28
+Created: 05/23/2025 00:28:25
+---
+
+Path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-Windows Firewall With Advanced Security%4Firewall.evtx
+Modified: 05/23/2025 00:29:13
+Created: 02/13/2025 22:15:59
+---
+
+Path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-AppXDeploymentServer%4Restricted.evtx
+Modified: 05/23/2025 00:28:57
+Created: 02/13/2025 22:17:49
+---
+
+Path: C:\Windows\Logs\waasmedic\waasmedic.20250523_072754_883.etl
+Modified: 05/23/2025 00:28:55
+Created: 05/23/2025 00:27:54
+---
+
+Path: C:\Windows\AppReadiness
+Modified: 05/23/2025 00:28:26
+Created: 04/01/2024 00:26:06
+---
+
+Path: C:\Windows\Prefetch\RUNTIMEBROKER.EXE-3C8C2F0C.pf
+Modified: 05/23/2025 00:28:26
+Created: 05/23/2025 00:28:26
+---
+
+Path: C:\Windows\Logs\WindowsUpdate\WindowsUpdate.20250523.002650.299.12.etl
+Modified: 05/23/2025 00:28:25
+Created: 05/23/2025 00:28:17
+---
+
+Path: C:\Windows\Prefetch\RUNDLL32.EXE-CCA06D76.pf
+Modified: 05/23/2025 00:28:24
+Created: 05/05/2025 00:40:00
+---
+
+Path: C:\Windows\SoftwareDistribution\DataStore\Logs\edbtmp.log
+Modified: 05/23/2025 00:28:19
+Created: 02/13/2025 22:19:24
+---
+
+Path: C:\Windows\Logs\WindowsUpdate\WindowsUpdate.20250523.002650.299.11.etl
+Modified: 05/23/2025 00:28:17
+Created: 05/23/2025 00:28:15
+---
+
+Path: C:\Windows\SoftwareDistribution\Download\11a1e7f93138ecd05bda162a16f4aee8
+Modified: 05/23/2025 00:28:16
+Created: 05/23/2025 00:28:16
+---
+
+Path: C:\Windows\Logs\WindowsUpdate\WindowsUpdate.20250523.002650.299.10.etl
+Modified: 05/23/2025 00:28:15
+Created: 05/23/2025 00:28:14
+---
+
+Path: C:\Windows\Logs\WindowsUpdate\WindowsUpdate.20250523.002650.299.9.etl
+Modified: 05/23/2025 00:28:14
+Created: 05/23/2025 00:28:11
+---
+
+Path: C:\Windows\Logs\WindowsUpdate\WindowsUpdate.20250523.002650.299.8.etl
+Modified: 05/23/2025 00:28:11
+Created: 05/23/2025 00:28:09
+---
+
+Path: C:\Windows\Logs\WindowsUpdate\WindowsUpdate.20250523.002650.299.7.etl
+Modified: 05/23/2025 00:28:09
+Created: 05/23/2025 00:28:08
+---
+
+Path: C:\Windows\Logs\WindowsUpdate\WindowsUpdate.20250523.002650.299.6.etl
+Modified: 05/23/2025 00:28:08
+Created: 05/23/2025 00:28:06
+---
+
+Path: C:\Windows\SoftwareDistribution\Download\939c806e0a7db0ac8f2ec9b86d16efae
+Modified: 05/23/2025 00:28:07
+Created: 05/23/2025 00:28:07
+---
+
+Path: C:\Windows\SoftwareDistribution\Download\9f581c7b8d0ce88376e4e7160571a413
+Modified: 05/23/2025 00:28:07
+Created: 05/23/2025 00:28:07
+---
+
+Path: C:\Windows\Prefetch\SVCHOST.EXE-25E44A5A.pf
+Modified: 05/23/2025 00:28:07
+Created: 04/21/2025 21:10:18
+---
+
+Path: C:\Windows\Prefetch\VSSVC.EXE-D44D9F00.pf
+Modified: 05/23/2025 00:28:07
+Created: 04/21/2025 23:23:45
+---
+
+Path: C:\Windows\Logs\WindowsUpdate\WindowsUpdate.20250523.002650.299.5.etl
+Modified: 05/23/2025 00:28:06
+Created: 05/23/2025 00:27:56
+---
+
+Path: C:\Windows\SoftwareDistribution\Download\f46193b68ae606f32dba13b0428cd00b
+Modified: 05/23/2025 00:28:06
+Created: 05/23/2025 00:28:06
+---
+
+Path: C:\Windows\Prefetch\USOCLIENT.EXE-2B7FBE65.pf
+Modified: 05/23/2025 00:27:56
+Created: 05/18/2025 01:49:59
+---
+
+Path: C:\Windows\Logs\WindowsUpdate\WindowsUpdate.20250523.002650.299.4.etl
+Modified: 05/23/2025 00:27:56
+Created: 05/23/2025 00:27:55
+---
+
+Path: C:\Windows\Logs\WindowsUpdate\WindowsUpdate.20250523.002650.299.3.etl
+Modified: 05/23/2025 00:27:55
+Created: 05/23/2025 00:27:52
+---
+
+Path: C:\Windows\Logs\WindowsUpdate\WindowsUpdate.20250523.002650.299.2.etl
+Modified: 05/23/2025 00:27:52
+Created: 05/23/2025 00:27:43
+---
+
+Path: C:\Windows\Logs\WindowsUpdate\WindowsUpdate.20250523.002650.299.1.etl
+Modified: 05/23/2025 00:27:43
+Created: 05/23/2025 00:26:50
+---
+

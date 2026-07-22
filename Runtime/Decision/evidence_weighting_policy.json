@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "evidence_tiers": {
+    "CRYPTOGRAPHIC_WITNESS": {"base_weight": 0.99, "description": "Signed telemetry"},
+    "SYSTEM_INSTRUMENT": {"base_weight": 0.90, "description": "Internal metrics"},
+    "DERIVED_INFERENCE": {"base_weight": 0.70, "description": "Simulation prediction"},
+    "EXTERNAL_SIGNAL": {"base_weight": 0.50, "description": "Network observations"}
+  },
+  "arbitration_rules": {
+    "corroboration_bonus_multiplier": 1.1,
+    "conflict_resolution_method": "RELIABILITY_WEIGHTED_AVERAGE"
+  },
+  "trust_decay": {
+    "half_life_hours": 24,
+    "penalty_for_proven_inaccuracy": 0.15
+  }
+}

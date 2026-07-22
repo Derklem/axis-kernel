@@ -1,0 +1,33 @@
+﻿Signal Focus from: current_window_triage_full_20250923_161008.csv
+Generated: 2025-09-23 18:12:30Z
+MaxKB filter: 1024
+Total signals: 19
+
+== Counts by Bucket ==
+   12  Win/Cryptnet/MetaData
+    3  Win/WebCache
+    2  Chrome/ReportingNEL
+    1  Chrome/NetworkPersistentState
+    1  Other
+
+== Recent 30 ==
+9/23/2025 4:09:50 PM  Chrome/ReportingNEL  655360B  C:\Users\17602\AppData\Local\Google\Chrome\User Data\Profile 8\Network\Reporting and NEL
+9/23/2025 4:09:50 PM  Chrome/ReportingNEL  0B  C:\Users\17602\AppData\Local\Google\Chrome\User Data\Profile 8\Network\Reporting and NEL-journal
+9/23/2025 4:07:45 PM  Chrome/NetworkPersistentState  89557B  C:\Users\17602\AppData\Local\Google\Chrome\User Data\Profile 8\Network\Network Persistent State
+9/23/2025 4:00:20 PM  Other  88931B  C:\Users\17602\AppData\Local\Google\Chrome\User Data\Profile 8\Network\TransportSecurity
+9/23/2025 4:00:13 PM  Win/Cryptnet/MetaData  174B  C:\Windows\System32\config\systemprofile\AppData\LocalLow\Microsoft\CryptnetUrlCache\MetaData\8B2B9A00839EED1DFDCCC3BFC2F5DF12
+9/23/2025 4:00:13 PM  Win/Cryptnet/MetaData  170B  C:\Windows\System32\config\systemprofile\AppData\LocalLow\Microsoft\CryptnetUrlCache\MetaData\B46811C17859FFB409CF0E904A4AA8F8
+9/23/2025 3:56:11 PM  Win/WebCache  524288B  C:\Users\17602\AppData\Local\Microsoft\Windows\WebCache\V01.log
+9/23/2025 3:45:11 PM  Win/Cryptnet/MetaData  342B  C:\Windows\System32\config\systemprofile\AppData\LocalLow\Microsoft\CryptnetUrlCache\MetaData\57C8EDB95DF3F0AD4EE2DC2B8CFD4157
+9/23/2025 3:45:11 PM  Win/Cryptnet/MetaData  290B  C:\Windows\System32\config\systemprofile\AppData\LocalLow\Microsoft\CryptnetUrlCache\MetaData\77EC63BDA74BD0D0E0426DC8F8008506
+9/23/2025 3:41:20 PM  Win/Cryptnet/MetaData  174B  C:\Users\17602\AppData\LocalLow\Microsoft\CryptnetUrlCache\MetaData\8B2B9A00839EED1DFDCCC3BFC2F5DF12
+9/23/2025 3:41:20 PM  Win/Cryptnet/MetaData  170B  C:\Users\17602\AppData\LocalLow\Microsoft\CryptnetUrlCache\MetaData\B46811C17859FFB409CF0E904A4AA8F8
+9/23/2025 3:41:20 PM  Win/Cryptnet/MetaData  192B  C:\Users\17602\AppData\LocalLow\Microsoft\CryptnetUrlCache\MetaData\103621DE9CD5414CC2538780B4B75751
+9/23/2025 3:41:20 PM  Win/Cryptnet/MetaData  342B  C:\Users\17602\AppData\LocalLow\Microsoft\CryptnetUrlCache\MetaData\57C8EDB95DF3F0AD4EE2DC2B8CFD4157
+9/23/2025 3:41:20 PM  Win/Cryptnet/MetaData  330B  C:\Users\17602\AppData\LocalLow\Microsoft\CryptnetUrlCache\MetaData\77EC63BDA74BD0D0E0426DC8F8008506
+9/23/2025 3:40:20 PM  Win/Cryptnet/MetaData  330B  C:\Users\17602\AppData\LocalLow\Microsoft\CryptnetUrlCache\MetaData\FB0D848F74F70BB2EAA93746D24D9749
+9/23/2025 3:28:12 PM  Win/Cryptnet/MetaData  330B  C:\Windows\System32\config\systemprofile\AppData\LocalLow\Microsoft\CryptnetUrlCache\MetaData\FB0D848F74F70BB2EAA93746D24D9749
+9/23/2025 3:06:20 PM  Win/Cryptnet/MetaData  170B  C:\Users\17602\AppData\LocalLow\Microsoft\CryptnetUrlCache\MetaData\05DDC6AA91765AACACDB0A5F96DF8199
+9/23/2025 3:05:25 PM  Win/WebCache  8192B  C:\Users\17602\AppData\Local\Microsoft\Windows\WebCache\V01.chk
+9/23/2025 2:30:20 PM  Win/WebCache  524288B  C:\Users\17602\AppData\Local\Microsoft\Windows\WebCache\V01002DF.log
+

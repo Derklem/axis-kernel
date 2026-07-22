@@ -1,0 +1,31 @@
+{
+  "version": "1.0",
+  "families": {
+    "QUEUE_DYNAMICS": {
+      "name": "Queue Dynamics",
+      "description": "Explanations rooted in buffer saturation, retry storms, and concurrency backpressure.",
+      "member_theories": [
+        "THEORY_QUEUE_SATURATION"
+      ],
+      "creation_timestamp": "2026-03-14T10:00:00Z"
+    },
+    "MEMORY_MANAGEMENT": {
+      "name": "Memory Management",
+      "description": "Explanations rooted in allocation limits, garbage collection, and compaction stalls.",
+      "member_theories": [
+        "ALT_THEORY_MEMORY_FRAGMENTATION",
+        "ALT_ALT_THEORY_MEMORY_FRAGMENTATION"
+      ],
+      "creation_timestamp": "2026-03-14T10:50:00Z"
+    },
+    "NETWORK_IO_ROUTING": {
+      "name": "Network Io Routing",
+      "description": "Domain instantiated to address gap: latency spike with zero queue pressure",
+      "member_theories": [
+        "THEORY_NETWORK_ROUTE_FLAPPING"
+      ],
+      "creation_timestamp": "2026-03-14T18:31:46.279763Z"
+    }
+  },
+  "last_updated": "2026-03-14T18:31:46.279763Z"
+}

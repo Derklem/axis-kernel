@@ -1,0 +1,7 @@
+message TrustSignal {
+  string source_id = 1;
+  string target_id = 2;
+  float trust_score = 3; // -1.0 (destructive) to 1.0 (supportive)
+  string context = 4;
+  int64 timestamp = 5;
+}

@@ -1,0 +1,104 @@
+{
+    "version": 1,
+    "services": [
+        {
+            "id": "RESEARCH",
+            "name": "Market & Domain Researcher",
+            "provider_script": "D:\\Infinite\\Axis_Agent_Researcher.ps1",
+            "risk_class": "medium",
+            "required_trust": 0.6,
+            "budget_unit_cost": 0.5,
+            "description": "Deep research and analysis of external entities and markets."
+        },
+        {
+            "id": "AUDIT",
+            "name": "Governance & Safety Auditor",
+            "provider_script": "D:\\Infinite\\Axis_Agent_Auditor.ps1",
+            "risk_class": "low",
+            "required_trust": 0.7,
+            "budget_unit_cost": 0.1,
+            "description": "Verification and audit of system state and compliance."
+        },
+        {
+            "id": "CODE_FIX",
+            "name": "Autonomous Coder",
+            "provider_script": "D:\\Infinite\\Axis_Agent_Coder.ps1",
+            "risk_class": "high",
+            "required_trust": 0.8,
+            "budget_unit_cost": 1.0,
+            "description": "Drafting and proposing code patches for system improvement."
+        },
+        {
+            "id": "CASEFILE_GEN",
+            "name": "Agent Historian",
+            "provider_script": "D:\\Infinite\\Axis_Agent_Historian.ps1",
+            "risk_class": "low",
+            "required_trust": 0.5,
+            "budget_unit_cost": 0.1,
+            "description": "Generation of comprehensive casefiles and historical records."
+        },
+        {
+            "id": "TRUTH-CONSULT-001",
+            "name": "TruthConsult",
+            "provider_script": "D:\\Infinite\\Infinity\\Truth_Engine\\Axis_Truth_Service.ps1",
+            "risk_class": "low",
+            "required_trust": 0.5,
+            "budget_unit_cost": 0.0,
+            "description": "Read-only grounding queries over the Historical Lattice."
+        },
+        {
+            "id": "TRUTH-RESEARCH-001",
+            "name": "TruthResearch",
+            "provider_script": "D:\\Infinite\\Axis_Truth_Research_Service.ps1",
+            "risk_class": "medium",
+            "required_trust": 0.6,
+            "budget_unit_cost": 5.0,
+            "description": "Autonomous research flights to resolve grounding gaps."
+        },
+        {
+            "id": "TRUTH-VIEW-001",
+            "name": "TruthView",
+            "provider_script": "D:\\Infinite\\Axis_Tenant_Truth_Service.ps1",
+            "risk_class": "low",
+            "required_trust": 0.5,
+            "budget_unit_cost": 0.1,
+            "description": "Role-based epistemic projections and filtering for tenants."
+        },
+        {
+            "id": "MODEL-TRUTH-001",
+            "name": "ModelTruth",
+            "provider_script": "D:\\Infinite\\Axis_Model_Truth_Profile_Service.ps1",
+            "risk_class": "low",
+            "required_trust": 0.5,
+            "budget_unit_cost": 0.2,
+            "description": "Epistemic reliability metrics for federated models."
+        },
+        {
+            "id": "TRUTH-EXPLAIN-001",
+            "name": "TruthExplain",
+            "provider_script": "D:\\Infinite\\Axis_Truth_Explain_Service.ps1",
+            "risk_class": "low",
+            "required_trust": 0.5,
+            "budget_unit_cost": 0.1,
+            "description": "Standardized decision justifications for auditing."
+        },
+        {
+            "id": "GOV-PROPOSE-001",
+            "name": "GovPropose",
+            "provider_script": "D:\\Infinite\\Axis_Governance_Proposal_Service.ps1",
+            "risk_class": "low",
+            "required_trust": 0.8,
+            "budget_unit_cost": 0.5,
+            "description": "Analyzes audit data to suggest policy optimizations."
+        },
+        {
+            "id": "GOV-REVIEW-001",
+            "name": "GovReview",
+            "provider_script": "D:\\Infinite\\Axis_Governance_Review.ps1",
+            "risk_class": "low",
+            "required_trust": 0.8,
+            "budget_unit_cost": 0.2,
+            "description": "Interactive surface for ratifying governance proposals."
+        }
+    ]
+}

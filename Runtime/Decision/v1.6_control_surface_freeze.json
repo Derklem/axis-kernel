@@ -1,0 +1,46 @@
+{
+  "v1.7_timestamp": "2026-03-17T19:30:40Z",
+  "seal_status": "LOCKED",
+  "phase": "80.0",
+  "version": "v1.7",
+  "policies": {
+    "observability_integrity_policy.json": "40112e79a8e8cc9ca1e8ea16d5e655bf744fd40ed493e87072d7dcc95447d217",
+    "dynamic_budget_policy.json": "060fb87a21949678a34c0798002975a6c1470e69a77e1ba18b0946ac0b95ae1d",
+    "autonomy_posture_policy.json": "ee9d74a894c6d107f4f3764ae47ea993ec65bd863a4e16ec3bffb5d45a684ab8",
+    "arbitration_policy.json": "763a7dbcea37fc729fe794009e9e77de94f2137ba9a826cf05be03d078564cb1",
+    "executor_policy.json": "f103dc6e8680c9e8d8255a098389736ca9d174eb894c96fd32b0614767d1c7a4",
+    "experiment_planning_policy.json": "e4e85d4f05554ef2649163a6900da3bc7e2b62f63fe5ae8da43f3d0fe9833733",
+    "execution_policy.json": "087cbfb56d18830d8d61a29dcf5adc9166aa26315542c100c6558173334e716d",
+    "doctrine_drift_policy.json": "88697ccb7ce5c388f71a8ac778e99452aab116e7298c77a73854816b2a155bfa",
+    "doctrine_staging_policy.json": "457012955c2a923c0ca5ca0b8a8940a5bc5beaee89362df3fbb04d5fa6d4959a",
+    "theory_status_policy.json": "bc0ac14820d30ad7090e48d7247c2da5e075efc7ce6d05004e2e302366355715",
+    "consolidation_detection_policy.json": "dd26c7361e5eda68b5072cd9417572c70cfddda97ea4d02a8c5dc5c51898c229",
+    "synthesis_review_policy.json": "cd6a0ba057cbe95b600104c94b42046e14f60cdf298abe020f6acd9fa34d3dae",
+    "canonical_promotion_policy.json": "1cedc14b7bb12ff05d5e3e36f4b920ca75b4b4149a38044e62ffeecee782b9f1",
+    "epistemic_efficiency_policy.json": "852a9f67f1d12b1651af1df5acd8fadf63602ea2ca285303bb6cfdf49c3d52c0",
+    "routing_precedence_policy.json": "942405dee26feb485ad7084dafdca139198112c791a88a520fa6f4ea6c1f8bf2",
+    "exit_rights_constitution.md": "24c2102dc0d2bc37d2e1e03bb169fd5151d8a0e7abc94a778fa965d67c2eb965"
+  },
+  "engines": {
+    "observability_integrity_engine.py": "638b56ccc70fbf6918a9d6b0ea6a54c26ba0d839c68e8275fd6ccf0fffd69b01",
+    "dynamic_risk_budgeting_engine.py": "83f26b667531e4fb928b397105d9a12153afbb19032dd957fdfe5bbfb84a1d47",
+    "autonomy_posture_governor.py": "c72353ae195f151a2b894863e7a9a0228a18aa58ccdfa5436eca4c52908b5794",
+    "doctrine_arbitration_engine.py": "6fe0199e28c5a1161cae07cfb21a39dd37573c5b6320d45a1164a01ad3638b6b",
+    "bounded_executor_shell.py": "ed68495f0cfacb148f48eb64cfea1a8ca212d24c7e2fb235ded934c1aa9464bc",
+    "regime_conditioned_experiment_planner.py": "daceb84da90de0a734ef0cc3167489f8258d19112820b0750c63e26606be7d3a",
+    "doctrine_drift_engine.py": "d29ac72d360a725990d3799d423780ddce10c1f8f88a42c808f79473bff9f163",
+    "preemptive_doctrine_staging_engine.py": "b6a6b5030105a4e86199bc8f4e0577da30b4828ae59791e106ad8576d7e4444c",
+    "continuous_experiment_engine.py": "b453f002b48529f083731c021edbf85a7bce3957302812a285312e0161860b3a",
+    "operational_campaign_monitor.py": "87dfe88e2150fe7aefb9e2ad43b418a0da502e34603b72687161c54dce7421bf",
+    "stabilization_metrics_aggregator.py": "9f178e6f7e15b94b79f99597c925cf6669d74632bd1608e9c0758987bd250146",
+    "constitutional_dynamics_monitor.py": "9dddfa8b9013b1aa4a04f2cacc390bb9437d764cbdf98acf4447bd8a79cf8dfe",
+    "pathological_attractor_monitor.py": "e6189b4586e669d42e7fe6e91496d0f78f1750c6cb1d40aef6d8b47d88a194c6",
+    "recovery_ecology_monitor.py": "6dc0f148298ea0034f92ad7c10153c8356481b18d5544d460b31bdf72ddf65fe",
+    "suppressed_learning_monitor.py": "0ebe19115d7a5f754e2b576718b9e66c1c672434941dd7acadbfaf3ee2501c91",
+    "drill_voluntary_withdrawal.py": "f8f186350c6ce1c144f3a151a25e9690f57348ab501005624e1bf119b9a16665"
+  },
+  "chain_of_trust": {
+    "seal_script_hash": "4fa8927568d8589110a6eebd8fd90f80730967ea7dba53d613c0543a451a97d0",
+    "note": "v1.7 Constitutional Refinement (Exit Rights) sealed."
+  }
+}

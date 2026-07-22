@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Axis Autonomy</title>
+    <style>
+        body {
+            background: #0d1117;
+            color: #c9d1d9;
+            font-family: system-ui;
+            padding: 16px;
+            margin: 0;
+        }
+
+        .card {
+            background: #161b22;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+            border: 1px solid #30363d;
+        }
+
+        .header {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .gauge {
+            height: 24px;
+            background: #21262d;
+            border-radius: 12px;
+            overflow: hidden;
+            margin: 12px 0;
+            position: relative;
+        }
+
+        .fill {
+            height: 100%;
+            transition: width 0.8s, background 0.8s;
+            border-radius: 12px;
+        }
+
+        .gauge-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 0.8em;
+            font-weight: bold;
+            color: white;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+        }
+
+        .list {
+            font-size: 0.9em;
+            padding-left: 20px;
+            color: #8b949e;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 0.8em;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+
+        .green {
+            background: #238636;
+            color: white;
+        }
+
+        .yellow {
+            background: #d29922;
+            color: white;
+        }
+
+        .orange {
+            background: #d29922;
+            color: black;
+        }
+
+        .red {
+            background: #da3633;
+            color: white;
+        }
+
+        .meta {
+            font-size: 0.8em;
+            color: #8b949e;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .activity-item {
+            margin-bottom: 4px;
+            border-bottom: 1px solid #21262d;
+            padding-bottom: 4px;
+        }
+
+        .activity-item:last-child {
+            border: none;
+        }
+
+        #persona-prefix {
+            color: #58a6ff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="header">Persona State <span id="covenant" class="tag">Loading...</span></div>
+        <div id="persona-prefix" style="font-weight:bold; margin-bottom:4px">Axis (...)</div>
+        <div class="meta">
+            <span>Mode: <strong id="mode" style="color:#e6edf3">—</strong></span>
+            <span>Mood: <strong id="mood" style="color:#e6edf3">—</strong></span>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="header">Autonomy Heat <span id="risk-status" class="tag">—</span></div>
+        <div class="gauge">
+            <div id="risk-fill" class="fill" style="width:0%"></div>
+            <div class="gauge-text"><span id="risk-current">0</span> / <span id="risk-max">40</span> (<span
+                    id="risk-pct">0</span>%)</div>
+        </div>
+        <div class="meta">
+            <span>Active Threads: <strong id="active-count">0</strong></span>
+            <span>Peak: <span id="risk-peak" style="color:#8b949e">--</span></span>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="header">Friction (5m) <span id="blocked-count" class="tag" style="background:#21262d">0</span></div>
+        <div id="friction-box" style="margin-top:8px;">
+            <div id="friction-placeholder" style="font-style:italic; color:#484f58">No recent friction events.</div>
+            <ul id="friction-list" class="list" style="display:none; margin:0; padding:0; list-style:none;"></ul>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="header">
+            <span>Spark Deck</span>
+            <button onclick="refreshSpark()"
+                style="background:#238636; color:white; border:none; padding:4px 8px; border-radius:4px; cursor:pointer;">Refresh
+                Dream</button>
+        </div>
+        <div id="spark-box" style="margin-top:8px;">
+            <div id="spark-content"
+                style="font-family:monospace; white-space:pre-wrap; color:#8b949e; font-size:0.9em;">Waiting for
+                inspiration...</div>
+            <div id="spark-meta" style="font-size:0.8em; color:#58a6ff; margin-top:4px;"></div>
+        </div>
+    </div>
+
+    <script>
+        async function refreshSpark() {
+            const btn = document.querySelector('button[onclick="refreshSpark()"]');
+            btn.textContent = "Igniting...";
+            btn.disabled = true;
+            try {
+                await fetch('/action', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ intent: 'spark_refresh' })
+                });
+                setTimeout(updateSpark, 1000); // Wait for generation
+                setTimeout(() => { btn.textContent = "Refresh Dream"; btn.disabled = false; }, 2000);
+            } catch (e) {
+                console.error(e);
+                btn.textContent = "Error";
+            }
+        }
+
+        async function updateSpark() {
+            try {
+                const res = await fetch('/spark_feed'); // Need to serve this
+                if (!res.ok) return;
+                const d = await res.json();
+                document.getElementById('spark-content').textContent = d.content;
+                document.getElementById('spark-meta').textContent = `${d.type} | Seed: ${d.seed} | ${new Date(d.timestamp).toLocaleTimeString()}`;
+            } catch (e) {
+                // Silent fail if no feed yet
+            }
+        }
+        setInterval(updateSpark, 5000);
+    </script>
+
+    <div class="card">
+        <div class="header">Live Stream <span id="stream-status" class="tag green">ACTIVE</span></div>
+        <div id="log-stream"
+            style="font-family:monospace; font-size:0.8em; color:#8b949e; max-height:150px; overflow-y:auto; display:flex; flex-direction:column-reverse;">
+            <!-- Logs appear here -->
+        </div>
+    </div>
+
+    <script>
+        async function updateLogs() {
+            try {
+                const res = await fetch('/logs');
+                if (!res.ok) return;
+                const logs = await res.json();
+                const container = document.getElementById('log-stream');
+                container.innerHTML = logs.map(l => {
+                    const ts = new Date(l.ts).toLocaleTimeString();
+                    let color = '#8b949e';
+                    if (l.type === 'error' || (l.data && l.data.status === 'error')) color = '#da3633';
+                    else if (l.type === 'policy_decision' && l.data.decision === 'ALLOW') color = '#238636';
+                    else if (l.type === 'manual_denial') color = '#d29922';
+
+                    let msg = `[${l.type}]`;
+                    if (l.data) {
+                        if (l.data.tool) msg += ` ${l.data.tool}`;
+                        if (l.data.status) msg += ` -> ${l.data.status}`;
+                        if (l.data.decision) msg += ` -> ${l.data.decision}`;
+                    }
+                    return `<div style="border-bottom:1px solid #21262d; padding:2px 0;">
+                        <span style="color:#58a6ff">${ts}</span> 
+                        <span style="color:${color}">${msg}</span>
+                    </div>`;
+                }).join('');
+            } catch (e) { console.error(e); }
+        }
+        setInterval(updateLogs, 3000);
+        updateLogs();
+    </script>
+
+    <div class="card">
+        <div class="header">Governance</div>
+        <div style="display:flex; justify-content:space-between; margin-bottom:8px;">
+            <span>Pending Amendments:</span>
+            <strong id="proposals">0</strong>
+        </div>
+        <div class="meta">
+            <span id="timestamp">Updated: --</span>
+        </div>
+    </div>
+
+    <script>
+        async function update() {
+            try {
+                const res = await fetch('/autonomy');
+                if (!res.ok) return;
+                const d = await res.json();
+
+                // Persona
+                document.getElementById('persona-prefix').textContent = d.persona.prefix;
+                document.getElementById('mode').textContent = d.persona.autonomy_mode;
+                document.getElementById('mood').textContent = d.persona.emotional_state;
+
+                // Covenant Badge
+                const covTag = document.getElementById('covenant');
+                covTag.textContent = d.covenant.alignment;
+                covTag.className = `tag ${d.covenant.alignment === 'aligned' ? 'green' : 'red'}`;
+
+                // Risk Gauge
+                const cur = d.risk_gauge.current;
+                const max = d.risk_gauge.maximum;
+                const pct = Math.round(d.risk_gauge.utilization_pct * 100);
+
+                document.getElementById('risk-current').textContent = cur;
+                document.getElementById('risk-max').textContent = max;
+                document.getElementById('risk-pct').textContent = pct;
+
+                const fill = document.getElementById('risk-fill');
+                fill.style.width = `${Math.min(pct, 100)}%`;
+
+                // Color Logic
+                let colorClass = 'green';
+                if (d.risk_gauge.color === 'yellow') colorClass = 'yellow';
+                if (d.risk_gauge.color === 'orange') colorClass = 'orange';
+                if (d.risk_gauge.color === 'red') colorClass = 'red';
+
+                // We set bg color directly based on strict classes match from CSS
+                if (d.risk_gauge.color === 'green') fill.style.backgroundColor = '#238636';
+                else if (d.risk_gauge.color === 'yellow') fill.style.backgroundColor = '#d29922';
+                else if (d.risk_gauge.color === 'orange') fill.style.backgroundColor = '#d29922'; // Use orange-ish
+                else if (d.risk_gauge.color === 'red') fill.style.backgroundColor = '#da3633';
+                else fill.style.backgroundColor = '#238636';
+
+                const statusTag = document.getElementById('risk-status');
+                statusTag.textContent = d.risk_gauge.status.toUpperCase();
+                statusTag.className = `tag ${colorClass}`;
+
+                document.getElementById('active-count').textContent = d.concurrency.active_count;
+
+                // Friction
+                const bCount = d.friction.blocked_last_5min;
+                const bTag = document.getElementById('blocked-count');
+                bTag.textContent = bCount;
+                bTag.style.background = bCount > 0 ? '#da3633' : '#21262d';
+
+                const fList = document.getElementById('friction-list');
+                const fPlace = document.getElementById('friction-placeholder');
+
+                if (bCount > 0 && d.friction.recent_blocks && d.friction.recent_blocks.length > 0) {
+                    fList.style.display = 'block';
+                    fPlace.style.display = 'none';
+                    fList.innerHTML = '';
+                    d.friction.recent_blocks.forEach(b => {
+                        const div = document.createElement('div');
+                        div.className = 'activity-item';
+                        const tTime = new Date(b.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+                        div.innerHTML = `<span style="color:#da3633">•</span> <strong>${b.tool}</strong> <span style="font-size:0.8em; color:#8b949e">(${b.reason})</span> <div style="font-size:0.7em; text-align:right">${tTime}</div>`;
+                        fList.appendChild(div);
+                    });
+                } else {
+                    fList.style.display = 'none';
+                    fPlace.style.display = 'block';
+                }
+
+                // Footer
+                document.getElementById('proposals').textContent = d.covenant.pending_proposals;
+                document.getElementById('timestamp').textContent = 'Updated: ' + new Date(d.generated_at).toLocaleTimeString();
+
+            } catch (e) {
+                console.error(e);
+                document.getElementById('timestamp').textContent = 'Connection Lost';
+            }
+        }
+        setInterval(update, 2000);
+        update();
+    </script>
+</body>
+
+</html>

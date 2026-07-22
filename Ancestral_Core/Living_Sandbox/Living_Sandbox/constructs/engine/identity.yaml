@@ -1,0 +1,15 @@
+
+identity:
+  name: Engine
+  role: active-response-module
+  type: conversion-agent
+  status: idle
+
+description: >
+  Engine is the first active construct. It receives inputs from memory, 
+  symbolic data, or reflection logs, and translates them into responses, 
+  suggestions, or actions. It is not autonomous, but it is directive.
+
+activation:
+  method: input detection (stimulus or manual trigger)
+  fallback: remains idle until system pattern demands motion

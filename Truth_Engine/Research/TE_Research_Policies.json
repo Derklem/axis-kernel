@@ -1,0 +1,19 @@
+{
+    "research_policy": {
+        "budgets": {
+            "max_daily_risk_units": 50,
+            "max_risk_per_probe": 10,
+            "max_concurrent_targets": 5
+        },
+        "thresholds": {
+            "tenuous_usage_trigger": 5,
+            "unknown_usage_trigger": 3,
+            "high_priority_confidence_floor": 0.2
+        },
+        "allowed_probe_types": [
+            "EXTERNAL_FETCH",
+            "SIMULATION",
+            "HISTORY_SCAN"
+        ]
+    }
+}

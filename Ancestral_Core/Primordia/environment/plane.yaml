@@ -1,0 +1,9 @@
+
+environment:
+  container: soft-field
+  type: reflective
+  interference: low
+
+description: >
+  This is the bubble around Primordia—stable, transparent,
+  and responsive to external engagement.

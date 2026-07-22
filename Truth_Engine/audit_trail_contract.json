@@ -1,0 +1,67 @@
+{
+    "schema": "axis.audit.contract.v1",
+    "version": "1.0.0",
+    "invariants": [
+        "INV_APPEND_ONLY: Entries must never be deleted or modified in place.",
+        "INV_HASH_CHAIN: Each entry's prev_hash must match the hash of the preceding entry.",
+        "INV_TEMPORAL_LINK: Entry ts_utc must be non-decreasing (monotonic).",
+        "INV_TERMINAL_DECISION: Every authorization request must result in exactly one terminal audit event."
+    ],
+    "result_codes": [
+        {
+            "code": "AUDIT_TRAIL_INITIALIZED",
+            "result": "INIT",
+            "description": "Genesis block for the audit stream."
+        },
+        {
+            "code": "ALLOWED_LIFECYCLE_POLICY_PASS",
+            "result": "ALLOW",
+            "description": "Passed all lifecycle and capability gates."
+        },
+        {
+            "code": "BLOCKED_NO_ENVELOPE",
+            "result": "BLOCK",
+            "description": "Rejected due to missing cryptographic envelope."
+        },
+        {
+            "code": "BLOCKED_BAD_ENVELOPE",
+            "result": "BLOCK",
+            "description": "Rejected due to invalid signature, checksum, or temporal window violation."
+        },
+        {
+            "code": "BLOCKED_LIFECYCLE",
+            "result": "BLOCK",
+            "description": "Rejected by Lifecycle Gate (e.g., revoked key, inactive identity)."
+        },
+        {
+            "code": "BLOCKED_CAPABILITY_UNMAPPED",
+            "result": "BLOCK",
+            "description": "Rejected because the operation is not defined in the policy's capability map."
+        },
+        {
+            "code": "BLOCKED_CAPABILITY_IDENTITY_MISSING",
+            "result": "BLOCK",
+            "description": "Rejected because the identity is not found in the registry."
+        },
+        {
+            "code": "BLOCKED_CAPABILITY_IDENTITY_INACTIVE",
+            "result": "BLOCK",
+            "description": "Rejected because the identity's status is not 'active'."
+        },
+        {
+            "code": "BLOCKED_CAPABILITY_MISSING",
+            "result": "BLOCK",
+            "description": "Rejected because the identity lacks the required capability for the operation."
+        }
+    ],
+    "requirement_matrix": {
+        "hashes.registry": "Required if Lifecycle Gate or Capability Gate consulted.",
+        "hashes.keyring": "Required if Lifecycle Gate consulted.",
+        "hashes.revocation": "Required if Lifecycle Gate consulted.",
+        "hashes.policy": "Required if Capability Gate consulted."
+    },
+    "authorities": {
+        "repair": "system:admin",
+        "anchoring": "system:anchor"
+    }
+}

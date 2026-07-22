@@ -1,0 +1,4 @@
+{"timestamp": "2026-03-14T11:47:00Z", "status": "QUEUE_INITIALIZED", "message": "Experiment Routing Queue created."}
+{"timestamp": "2026-03-14T18:47:05.119994Z", "domain": "DRILL_DOMAIN_C_MATURE", "route": "DISAMBIGUATION_EXPERIMENT_REQUEST", "reason": "Competing mechanisms exist and can be safely separated by bounded simulation.", "status": "QUEUED"}
+{"timestamp": "2026-03-14T18:47:29.048567Z", "domain": "DRILL_DOMAIN_C_MATURE", "route": "DISAMBIGUATION_EXPERIMENT_REQUEST", "reason": "Competing mechanisms exist and can be safely separated by bounded simulation.", "status": "QUEUED"}
+{"timestamp": "2026-03-14T19:11:23.965599Z", "domain": "DRILL_DOMAIN_C_MATURE", "route": "READY_FOR_EXPERIMENT_DESIGN", "reason": "Plural theories and intervention variable present.", "status": "QUEUED"}

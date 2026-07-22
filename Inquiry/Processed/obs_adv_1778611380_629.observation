@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T18:43:00.236766+00:00",
+    "entity": "coordinated_executor.py",
+    "claim": "component is not a derivative",
+    "source_id": "Audit_Gauntlet",
+    "source_type": "automated_sensor",
+    "claim_domain": "benchmark_claim",
+    "confidence": 0.95
+}

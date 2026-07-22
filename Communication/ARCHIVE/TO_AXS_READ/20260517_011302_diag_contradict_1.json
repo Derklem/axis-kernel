@@ -1,0 +1,11 @@
+﻿{
+    "timestamp_utc":  "2026-05-17T01:13:02.0529221Z",
+    "speaker":  "USER",
+    "constraints":  [
+                        "read_only",
+                        "no_cycle",
+                        "no_state_mutation"
+                    ],
+    "question":  "What specific state conditions currently block the resumption of autonomous mutation?",
+    "message_type":  "diagnostic_contradiction_probe"
+}

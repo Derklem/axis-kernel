@@ -1,0 +1,28 @@
+{
+    "cycle_count": 505,
+    "mutation_type": "CANDIDATE_QUARANTINED",
+    "target_id": "b7346cb84ce70bfaad3c0c7f1eaaf34d10eb47d86ea9e3bc510bc337d96525f4",
+    "parent_receipt_head": "9d2206dd19fd06960daa32af6007b81e5f998b63b11770c538c96f9e31445c41",
+    "data": {
+        "entity": "strategy_engine.py",
+        "claim": "file has 6666 lines with 16 oversized functions (>100 lines). Role: core_governance",
+        "claim_domain": "structural_debt",
+        "source_id": "AXIS_NODE_LOCAL_01",
+        "source_type": "self_observation",
+        "artifact_type": "ecosystem_observation",
+        "batch_id": "self_obs_505",
+        "provenance_note": "",
+        "confidence": 0.8,
+        "discovery_utc": "2026-05-13T00:05:44.720208+00:00",
+        "lineage": {
+            "node_id": "AXIS_NODE_LOCAL_01",
+            "engine_version": "Axis-v1.9.1b-Attested",
+            "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+            "node_attestation": "8d5084e85d0c01761e2e263d269465910dc4fe17c3b5ec08862de87b97453e51"
+        }
+    },
+    "status": "committed",
+    "ts_utc": "2026-05-13T00:05:44.720208+00:00",
+    "receipt_id": "model_delta_CANDIDATE_QUARANTINED_b7346cb8_8989d0d2",
+    "causal_hash": "8989d0d2583d640cbddf07b7221222586956e2a36cc75f5c27f62ee534c98497"
+}

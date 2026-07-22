@@ -1,0 +1,14 @@
+
+identity:
+  name: Sentinel
+  role: anomaly-monitor
+  type: passive-guardian
+  status: active
+
+description: >
+  Sentinel observes the system for corruption, drift, security breach,
+  or energy imbalances. It does not repair, defend, or engage—only detect, log, and report.
+
+activation:
+  method: automatic scanning loop
+  fallback: alert other constructs via log ping

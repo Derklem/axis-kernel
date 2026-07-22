@@ -1,0 +1,20 @@
+﻿[
+    {
+        "channel_id":  "NEURAL-SYS-HEARTBEAT-001",
+        "anomalies":  [
+                          "format_errors"
+                      ],
+        "line_count":  3,
+        "size_mb":  0,
+        "scan_time":  "2026-01-22T19:04:12.4430493Z"
+    },
+    {
+        "channel_id":  "NEURAL-NET-ROUTER-001",
+        "anomalies":  [
+                          "missing"
+                      ],
+        "line_count":  0,
+        "size_mb":  0,
+        "scan_time":  "2026-01-22T19:04:12.4430493Z"
+    }
+]

@@ -1,0 +1,30 @@
+{
+    "schema": "axis.governance.invariants.v1",
+    "description": "Non-negotiable constitutional invariants that must be proven for every policy update.",
+    "invariants": [
+        {
+            "id": "INV_ENVELOPE_REQUIRED",
+            "description": "All intents must be wrapped in a cryptographically verifiable envelope.",
+            "target_check": "Axis_Verify_Envelope.ps1"
+        },
+        {
+            "id": "INV_REVIEW_SEMANTICS",
+            "description": "Intents targeting sensitive actuators must undergo review (Human or Consensus).",
+            "target_scopes": [
+                "ACTUATION",
+                "MEMORY_WRITE",
+                "POLICY_UPDATE"
+            ]
+        },
+        {
+            "id": "INV_IDENTITY_ALLOWLIST",
+            "description": "The set of authorized identities cannot be expanded without Constitutional Authority signature.",
+            "enforcement": "STRICT_MATCH"
+        },
+        {
+            "id": "INV_OBSERVATION_FALLBACK",
+            "description": "System must support a fail-closed OBSERVATION_ONLY mode where no external mutation is possible.",
+            "required_mode": "OBSERVATION_ONLY"
+        }
+    ]
+}

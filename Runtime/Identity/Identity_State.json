@@ -1,0 +1,18 @@
+﻿{
+    "global_anomaly_ema":  8,
+    "metrics":  {
+                    "portal:maya_phone":  {
+                                              "last_seen":  "2026-02-11T02:45:10.6412141Z",
+                                              "fail_sig":  0,
+                                              "successes":  3,
+                                              "fail_cap":  1
+                                          }
+                },
+    "nonce_cache":  {
+                        "portal:maya_phone":  [
+                                                  "6692487b-0657-4f29-ac3e-6be8f78771f5",
+                                                  "aecb61d8-3645-4123-9928-ef5c883bc445",
+                                                  "ec4a5ed1-58d5-4795-b812-9b84df568bb7"
+                                              ]
+                    }
+}

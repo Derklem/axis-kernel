@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T03:31:15.718281+00:00",
+    "entity": "boundary_mapper.py",
+    "claim": "derivative: shadowed logic.",
+    "source_id": "Benchmark_Harvester",
+    "source_type": "ecological_observer",
+    "claim_domain": "benchmark_claim",
+    "confidence": 1.0
+}

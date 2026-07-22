@@ -1,0 +1,15 @@
+{
+    "cycle_count": 38,
+    "mutation_type": "CANDIDATE_FRACTURED",
+    "target_id": "d52d84cbe41a83c7be96d26372a5e898fa0fb40c75fd90866b8b99c3155bb399",
+    "parent_receipt_head": "528e6374e5b533716d275abdc73b87be2bbfc25a4df36d23c37c8945ecce271a",
+    "data": {
+        "entity": "canary_entity_5",
+        "claim": "canary_claim_5_1784678839810",
+        "reason": "chronic_quorum_failure_20_cycles"
+    },
+    "status": "committed",
+    "ts_utc": "2026-07-22T00:08:10.714934+00:00",
+    "receipt_id": "model_delta_CANDIDATE_FRACTURED_d52d84cb_e55da712",
+    "causal_hash": "e55da71247f24213f2610dc3d7d95e9c343481f72340ad83b9ea69c5ce2688a0"
+}

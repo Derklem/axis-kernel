@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T00:24:45.287509+00:00",
+    "entity": "Mistral",
+    "claim": "derivative: signal for Mistral in cycle 62.",
+    "source_id": "Benchmark_Harvester",
+    "source_type": "automated_sensor",
+    "claim_domain": "benchmark_claim",
+    "confidence": 0.9
+}

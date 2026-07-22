@@ -1,0 +1,44 @@
+﻿{
+    "steps":  [
+                  {
+                      "label":  "Inventory Subsystems",
+                      "status":  "pending",
+                      "params":  {
+                                     "target":  "D:\\Infinite"
+                                 },
+                      "id":  "STEP-1",
+                      "tool":  "File"
+                  },
+                  {
+                      "label":  "Map Invariants to Kernel",
+                      "status":  "pending",
+                      "params":  {
+                                     "source":  "Architect_Kernel.md"
+                                 },
+                      "id":  "STEP-2",
+                      "tool":  "Unknowns"
+                  },
+                  {
+                      "label":  "Define Rhythms (Heartbeat/Spark)",
+                      "status":  "pending",
+                      "params":  {
+
+                                 },
+                      "id":  "STEP-3",
+                      "tool":  "Vector"
+                  },
+                  {
+                      "label":  "Compile Coherence Map (JSON)",
+                      "status":  "pending",
+                      "params":  {
+                                     "output":  "Coherence_Map.json"
+                                 },
+                      "id":  "STEP-4",
+                      "tool":  "File"
+                  }
+              ],
+    "created_at":  "2026-01-19T18:55:55.8040127Z",
+    "plan_id":  "PLAN-GOAL-20260119-105555",
+    "goal_id":  "GOAL-20260119-105555",
+    "status":  "open"
+}

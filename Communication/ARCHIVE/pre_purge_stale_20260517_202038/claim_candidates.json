@@ -1,0 +1,33 @@
+{
+    "candidates": {
+        "fc63171a8cc364d4285c6584db30adf2da13d1add8e41f87f4b14161081adea9": {
+            "entity": "MARKET_SIGNAL",
+            "claim": "Current BTC market conditions require observation and potential positioning analysis.",
+            "claim_domain": "general",
+            "source_id": "USER_DIRECTIVE",
+            "source_type": "external_affordance_trigger",
+            "artifact_type": "market_observation_request",
+            "batch_id": "none",
+            "provenance_note": "User-initiated financial synapse test.",
+            "confidence": 0.85,
+            "cycles_survived": 0,
+            "discovery_utc": "2026-05-17T03:51:13.864188+00:00",
+            "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_fc63171a_a0245d8a",
+            "provenance_trail": [
+                {
+                    "source_id": "USER_DIRECTIVE",
+                    "source_type": "external_affordance_trigger",
+                    "batch_id": "none",
+                    "ts": "2026-05-17T03:51:13.864188+00:00",
+                    "lineage": {
+                        "node_id": "AXIS_NODE_LOCAL_01",
+                        "engine_version": "Axis-v1.9.1b-Attested",
+                        "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+                        "node_attestation": "5d87122bbdb9470bf86524c9790217b7b619fa88e793f9100e3f37aaadc423ab"
+                    }
+                }
+            ]
+        }
+    },
+    "cycle_count": 506
+}

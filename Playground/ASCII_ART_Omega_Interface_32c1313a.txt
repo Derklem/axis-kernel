@@ -1,0 +1,13 @@
+﻿TYPE: ASCII_ART
+TOPIC: Omega_Interface
+TIME: 20260117-104206
+NOTE: This is a playground artifact. It has no execution authority.
+----------------------------------------------------------------
+
+      .       .
+     / \     / \
+    | O |---| O |
+     \ /     \ /
+      '       '
+     [ OMEGA ]
+

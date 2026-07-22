@@ -1,0 +1,1 @@
+{"action": "PURGE", "impact_magnitude_bytes": 8192, "justification_delta": {"utility_gain": 1}, "prediction_conf": 0.4, "target": "Warehouse/ambiguous_target.jsonl"}

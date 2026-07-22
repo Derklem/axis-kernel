@@ -1,0 +1,41 @@
+﻿{
+    "schema":  "axis.policy_snapshot.v0.2",
+    "ts_utc":  "2026-02-05T23:49:56.2162640Z",
+    "inputs":  {
+                   "prev_q_mode":  0,
+                   "identity_ema":  9,
+                   "immune_q_mode":  0,
+                   "drift_ema":  0
+               },
+    "lineage":  {
+                    "compiled_from":  {
+                                          "immune_state_hash":  "sha256:6257234115c9d7f0ab3fe11f2c0b962051cdaf5b350136276d841555f0178174"
+                                      }
+                },
+    "derived":  {
+                    "effective_posture":  "NORMAL",
+                    "allowed_mutations":  {
+                                              "POST":  {
+                                                           "targets":  [
+                                                                           {
+                                                                               "pattern":  "moltbook:introductions",
+                                                                               "constraint":  "EXACT"
+                                                                           },
+                                                                           {
+                                                                               "pattern":  "moltbook:general",
+                                                                               "constraint":  "EXACT"
+                                                                           }
+                                                                       ],
+                                                           "enabled":  true
+                                                       },
+                                              "FILE_WRITE":  {
+                                                                 "enabled":  true
+                                                             }
+                                          },
+                    "requirements":  {
+                                         "wrapper_required":  false,
+                                         "l0_proof_required":  true
+                                     }
+                },
+    "snapshot_id":  "sha256:20fb8230ea58f26006bfe70affdb741d8d68a1e1be1ae9c15443bd4a04876742"
+}

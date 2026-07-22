@@ -1,0 +1,14 @@
+[ARCHIVIST]
+Timestamp: 05/05/2025 15:34:40
+System Memory: 
+Name                  Id        WS
+----                  --        --
+chrome              7048 606126080
+explorer            5020 556703744
+Memory Compression  4004 506642432
+chrome             14220 346112000
+chrome              7652 236232704
+
+
+
+Threads Active: 190

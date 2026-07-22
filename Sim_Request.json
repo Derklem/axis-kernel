@@ -1,0 +1,10 @@
+{
+    "id":  "SIMREQ-20260119-095341-NET-DeviceRosterLite",
+    "depth":  0,
+    "arguments":  [
+
+                  ],
+    "created_at":  "2026-01-19T09:53:41Z",
+    "tool":  "NET-DeviceRosterLite",
+    "status":  "failed"
+}

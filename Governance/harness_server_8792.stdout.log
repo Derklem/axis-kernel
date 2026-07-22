@@ -1,0 +1,17 @@
+Transcript started, output file is D:\Infinite\Infinity\Console\server_transcript.log
+Starting Axis Console Server... (Version: RUNSPACE-RECREATED)
+WARNING: The names of some imported commands from the module 'Axis_IntegrityEconomics' include unapproved verbs that 
+might make them less discoverable. To find the commands with unapproved verbs, run the Import-Module command again with
+ the Verbose parameter. For a list of approved verbs, type Get-Verb.
+Econ Module Loaded.
+Debug: Checking Provenance Module...
+Debug: ProvModule Path: D:\Infinite\Infinity\Governance\Axis_Provenance.psm1
+Debug: Importing Provenance...
+WARNING: The names of some imported commands from the module 'Axis_Provenance' include unapproved verbs that might make
+ them less discoverable. To find the commands with unapproved verbs, run the Import-Module command again with the 
+Verbose parameter. For a list of approved verbs, type Get-Verb.
+Provenance Module Loaded.
+Debug: Writing PID...
+API Module Loaded. PID: 40188
+Listening on http://localhost:8792/
+Press Ctrl+C to stop.

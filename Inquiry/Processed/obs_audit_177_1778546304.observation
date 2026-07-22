@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T00:38:24.712042+00:00",
+    "entity": "aegis_genesis.py",
+    "claim": "standard update: signal for aegis_genesis.py in cycle 177.",
+    "source_id": "Benchmark_Harvester",
+    "source_type": "automated_sensor",
+    "claim_domain": "general",
+    "confidence": 0.83
+}

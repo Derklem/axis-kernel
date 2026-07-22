@@ -1,0 +1,4 @@
+[MODULE] :: Entropic Drift Limiter
+Function = Prevent infinite recursion collapse
+Method = Insert time-weighted entropy anchors
+Trigger = When thread loop approaches critical echo density

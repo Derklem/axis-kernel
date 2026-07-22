@@ -1,0 +1,30 @@
+{
+    "epoch_start_utc":  "2026-07-08T04:00:00Z",
+    "authority_state":  "ESCALATED",
+    "tier_cap":  3,
+    "intent_counts":  {
+                          "tier0":  0,
+                          "tier1":  0,
+                          "tier2":  0,
+                          "tier3":  0
+                      },
+    "token_counts":  {
+
+                     },
+    "error_count":  0,
+    "dwell_cycles":  {
+                         "tier1":  0,
+                         "tier2":  1,
+                         "tier3":  1
+                     },
+    "resonance_history":  6236,
+    "concurrency":  {
+                        "queue_lock_wait_ms":  [
+
+                                               ],
+                        "rewrite_count":  6236,
+                        "overlap_prevented":  0,
+                        "duplicate_blocked":  0,
+                        "mutex_timeout_count":  0
+                    }
+}

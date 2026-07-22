@@ -1,0 +1,16 @@
+{
+    "version": 1,
+    "allowed_targets": [
+        {
+            "id": "PRIMARY_LOCAL",
+            "path": "D:\\Infinite\\Seeds",
+            "type": "local",
+            "max_copies": 3
+        }
+    ],
+    "forbidden_patterns": [
+        "C:\\Windows\\*",
+        "C:\\Users\\*\\AppData\\*",
+        "*\\System32\\*"
+    ]
+}

@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: observation
+Version: 0.2.0
+Summary: Observation Engine for Axis
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: jsonschema>=4.19.0
+Requires-Dist: laboratory<0.3.0,>=0.2.1
+
+# Observation
+
+Observation Engine for Axis. Parses Laboratory receipts and evaluation artifacts into an observation feed.

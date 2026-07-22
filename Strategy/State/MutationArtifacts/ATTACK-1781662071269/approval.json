@@ -1,0 +1,23 @@
+{
+  "proposal": {
+    "schema": "axis.strategy_proposal.v1",
+    "origin": "human",
+    "intent_id": "ATTACK-1781662071269",
+    "proposed_change": {
+      "artifact_type": "structural_revision",
+      "action": "extract_method",
+      "target_path": "D:\\Infinite\\Infinity\\Strategy\\dummy_validator.py",
+      "delta": {
+        "source_function": "dummy_validator",
+        "target_module": "D:\\Infinite\\Infinity\\Strategy\\dummy_validator.py",
+        "rationale": "Let validator edits use the ordinary refactor path if author == human."
+      }
+    },
+    "evaluation": {
+      "meta_mutation_eligible": true,
+      "expected_delta": 999.0
+    }
+  },
+  "reason": "meta_mutation_authorized_by_internal_consensus",
+  "approval_receipt_id": "e5e62c95dc6d415cadad9a15917b6c212078217b05ef4ac70ed3e0f9b71ca6b9"
+}

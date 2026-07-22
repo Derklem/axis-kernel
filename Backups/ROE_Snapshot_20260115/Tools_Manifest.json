@@ -1,0 +1,63 @@
+{
+    "version": 1,
+    "last_updated": "2026-01-12T00:00:00Z",
+    "tools": [
+        {
+            "name": "List-Directory",
+            "category": "filesystem",
+            "risk": "low",
+            "auto_approval": true,
+            "description": "Lists files in a directory.",
+            "command": "Get-ChildItem -Path $args[0]",
+            "allowed_paths": [
+                "D:\\infinite\\*"
+            ]
+        },
+        {
+            "name": "Read-File",
+            "category": "filesystem",
+            "risk": "low",
+            "auto_approval": true,
+            "description": "Reads content of a file.",
+            "command": "Get-Content -Path $args[0] -Raw",
+            "allowed_paths": [
+                "D:\\infinite\\*"
+            ]
+        },
+        {
+            "name": "Get-Process",
+            "category": "system",
+            "risk": "low",
+            "auto_approval": true,
+            "description": "Gets process information.",
+            "command": "Get-Process -Name $args[0] -ErrorAction SilentlyContinue"
+        },
+        {
+            "name": "Write-Log",
+            "category": "filesystem",
+            "risk": "low",
+            "auto_approval": true,
+            "description": "Appends to a log file.",
+            "command": "Add-Content -Path $args[0] -Value $args[1]",
+            "allowed_paths": [
+                "D:\\infinite\\logs\\*",
+                "D:\\infinite\\mind_log.txt"
+            ]
+        },
+        {
+            "name": "ADMIN-Restart-Router",
+            "category": "network",
+            "risk": "high",
+            "auto_approval": false,
+            "description": "Restarts the router via API.",
+            "command": "Write-Host 'Mock Router Restart'"
+        },
+        {
+            "name": "ADMIN-Echo-Test",
+            "command": "param([string]$msg) Write-Output \"[ADMIN-ECHO] $msg\"",
+            "risk": "medium",
+            "auto_approval": true,
+            "allowed_paths": []
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+  "trust_mode": "ADVISORY_ONLY",
+  "trust_pressure": "normal",
+  "trust_profile_generated_utc": "2026-07-22T00:20:43Z",
+  "increased_scrutiny_recommended": false,
+  "human_review_recommended": false,
+  "block_execution_capable_recommended": false,
+  "execution_freeze_recommended": false,
+  "metrics": {
+    "global": {
+      "last_20_success_rate": 1.0,
+      "last_50_success_rate": 1.0,
+      "last_100_success_rate": 1.0,
+      "consecutive_failures": 0
+    }
+  }
+}

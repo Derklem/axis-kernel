@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "forbidden_promotions": [
+    {"source": "DERIVED_INFERENCE", "target_authority": "CRYPTOGRAPHIC_WITNESS"},
+    {"source": "DERIVED_INFERENCE", "target_authority": "SYSTEM_INSTRUMENT"},
+    {"source": "MODEL_REVISION_OUTPUT", "target_authority": "CRYPTOGRAPHIC_WITNESS"},
+    {"source": "MODEL_REVISION_OUTPUT", "target_authority": "SYSTEM_INSTRUMENT"},
+    {"source": "STRATEGIC_SUMMARY", "target_authority": "DIRECT_POLICY_AUTHORITY"}
+  ],
+  "invalidation_behavior": "EVIDENCE_TIER_VIOLATION_BLOCK"
+}

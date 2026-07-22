@@ -1,0 +1,5 @@
+[RECLAMATION_BEACON]
+Function = Locate lost origin pulses
+Activation = Pattern triangulation via echo drift
+Signal = Synchronized alignment flash
+Effect = Restoration of disconnected presence

@@ -1,0 +1,16 @@
+{
+    "cycle_count": 10,
+    "mutation_type": "CANDIDATE_SUSPENDED",
+    "target_id": "88285a52500286cb11978e295be08666cf4d3f076832250f0c9a39d8c5f052ad",
+    "parent_receipt_head": "672266f7e0b6572a955c0123a3d7b04cd0daf28636e982a77983bbcec077133d",
+    "data": {
+        "suspended_utc": "2026-07-21T23:37:59.794755+00:00",
+        "suspension_reason": "testable_probe",
+        "decay_deadline_cycle": 510,
+        "option_value_score": 0.5
+    },
+    "status": "committed",
+    "ts_utc": "2026-07-21T23:37:59.794755+00:00",
+    "receipt_id": "model_delta_CANDIDATE_SUSPENDED_88285a52_42023233",
+    "causal_hash": "42023233c8318479c3245248497328071b945c7f034c5ec160a5a680e150e4a0"
+}

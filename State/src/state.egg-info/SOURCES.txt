@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+src/state/__init__.py
+src/state/cli.py
+src/state/transition.py
+src/state.egg-info/PKG-INFO
+src/state.egg-info/SOURCES.txt
+src/state.egg-info/dependency_links.txt
+src/state.egg-info/entry_points.txt
+src/state.egg-info/requires.txt
+src/state.egg-info/top_level.txt
+src/state/schemas/state_transition.json
+src/state/schemas/state_vector.json
+src/state/schemas/transition_spec.json
+tests/test_schema_loading.py
+tests/test_transition.py

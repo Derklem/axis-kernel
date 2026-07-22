@@ -1,0 +1,6 @@
+{
+  "assessment_id": "asm_v2b",
+  "experiment_id": "EXP_TEST",
+  "_filepath": "multiple_branches/asm.v2b.json",
+  "supersedes": "multiple_branches/asm.v1.json"
+}

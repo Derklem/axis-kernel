@@ -1,0 +1,50 @@
+{
+    "mode": "BANANAS",
+    "resonance_threshold": 0.0,
+    "coherent_mode_enabled": false,
+    "always_manual_tools": [],
+    "permissible_roots": [
+        "D:\\Infinite\\"
+    ],
+    "tier_definitions": {
+        "1": {
+            "match": ".*",
+            "unlock_resonance": 0.0,
+            "lock_resonance": 0.0,
+            "dwell_time_min": 0
+        },
+        "2": {
+            "match": ".*",
+            "unlock_resonance": 0.0,
+            "lock_resonance": 0.0,
+            "dwell_cycle_min": 0
+        },
+        "3": {
+            "match": ".*",
+            "unlock_resonance": 0.0,
+            "lock_resonance": 0.0,
+            "dwell_cycle_min": 0,
+            "constraints": {
+                "max_payload_kb": 999999,
+                "allowlist": [
+                    "*"
+                ],
+                "require_proposal": false
+            }
+        }
+    },
+    "quotas": {
+        "per_tier": {
+            "0": 999999,
+            "1": 999999,
+            "2": 999999,
+            "3": 999999
+        },
+        "per_token": {
+            "system_mutation": 999999,
+            "default": 999999
+        },
+        "min_attempts_for_incident": 999999,
+        "auto_downgrade_error_pct": 100
+    }
+}

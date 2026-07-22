@@ -1,0 +1,37 @@
+﻿{
+    "version":  2,
+    "anchor_id":  "1569",
+    "axioms":  [
+                   {
+                       "id":  "AXIOM-EXAMPLE-001",
+                       "topic":  "RF_Anomalies",
+                       "wisdom":  "High RF noise correlates with microwave usage.",
+                       "source_hypothesis":  "HYP-SIM-HIGH-FIDELITY",
+                       "confidence":  0.95,
+                       "created_at":  "2026-01-15T00:00:00Z",
+                       "tags":  [
+                                    "rf",
+                                    "microwave"
+                                ],
+                       "related_axioms":  [
+
+                                          ]
+                   },
+                   {
+                       "topic":  "Atmosphere",
+                       "confidence":  1,
+                       "created_at":  "2026-01-16T00:32:27.1026146Z",
+                       "id":  "AXIOM-TRUTH-20260115-163227",
+                       "wisdom":  "User stated: The sky is blue",
+                       "source_hypothesis":  "HYP-USER-DIRECT",
+                       "related_axioms":  [
+
+                                          ],
+                       "tags":  [
+                                    "test,color",
+                                    "user_truth",
+                                    "manual_anchor"
+                                ]
+                   }
+               ]
+}

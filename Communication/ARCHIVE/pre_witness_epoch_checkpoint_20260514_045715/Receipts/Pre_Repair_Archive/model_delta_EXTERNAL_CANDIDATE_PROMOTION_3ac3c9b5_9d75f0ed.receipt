@@ -1,0 +1,24 @@
+{
+    "cycle_count": 51,
+    "mutation_type": "EXTERNAL_CANDIDATE_PROMOTION",
+    "target_id": "3ac3c9b50bb32964d33629744c2ecc6f28fcf55c7cb43d2d866a7845759c2e59",
+    "parent_receipt_head": "f91e583bdb9760e17703dac7670e692b4dda9f9d9f780851972fa1555e9d1c6f",
+    "data": {
+        "entity": "boundary_mapper.py",
+        "claim": "refactored for readability",
+        "claim_domain": "benchmark_claim",
+        "source_id": "Noise_Source_0",
+        "source_type": "automated_sensor",
+        "artifact_type": "ecosystem_observation",
+        "batch_id": "none",
+        "provenance_note": "",
+        "confidence": 1.0,
+        "survival_cycles": 5,
+        "agreement_count": 2,
+        "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_3ac3c9b5_26b8be94"
+    },
+    "status": "committed",
+    "ts_utc": "2026-05-12T19:49:27.267041+00:00",
+    "receipt_id": "model_delta_EXTERNAL_CANDIDATE_PROMOTION_3ac3c9b5_9d75f0ed",
+    "causal_hash": "9d75f0ed6cbc2ec58c8068202532a48d65c164a628d9276d1cfdaffdc1e9bce8"
+}

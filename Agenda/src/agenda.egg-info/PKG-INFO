@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: agenda
+Version: 0.1.0
+Summary: Axis Planner and Agenda Engine
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: jsonschema>=4.19.0
+Requires-Dist: laboratory<0.3.0,>=0.2.1
+
+# Agenda
+
+Deterministic scoring and capacity-constrained ranking engine for the Axis protocol.

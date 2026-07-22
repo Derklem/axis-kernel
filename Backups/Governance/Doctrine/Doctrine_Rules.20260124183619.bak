@@ -1,0 +1,68 @@
+{
+    "version": 1,
+    "doctrine_id": "AXIS-DOCTRINE-2026-001",
+    "rules": [
+        {
+            "rule_id": "DOC-NET-ROUTER-ELEVATED-001",
+            "enabled": true,
+            "scope": "network",
+            "match": {
+                "shadow_global_modes": [
+                    "elevated",
+                    "critical"
+                ],
+                "strategy_ids_any": [
+                    "STR-NET-ROUTER-REBOOT-001"
+                ],
+                "channels_any": [
+                    "NEURAL-CMD-MOBILE-001",
+                    "ENGINE"
+                ]
+            },
+            "policy": {
+                "autonomy": "manual_only",
+                "notes": "No autonomous router reboots when network risk is elevated."
+            },
+            "source": {
+                "anchor_verdicts": 0,
+                "system_failures": 0,
+                "author": "ANCHOR",
+                "notes": "Bootstrapped doctrine rule."
+            },
+            "last_updated_utc": "2026-01-22T21:00:00Z"
+        },
+        {
+            "rule_id": "DOC-FS-WINDOWS-WRITE",
+            "enabled": true,
+            "scope": "filesystem",
+            "match": {
+                "shadow_global_modes": [],
+                "strategy_ids_any": [],
+                "channels_any": [],
+                "tags_any": [
+                    "file_write",
+                    "system_modification"
+                ]
+            },
+            "condition": {
+                "target_path_contains": [
+                    "C:\\Windows",
+                    "C:\\Program Files",
+                    "System32"
+                ]
+            },
+            "policy": {
+                "autonomy": "manual_only",
+                "notes": "Prevent autonomous modification of critical system directories."
+            },
+            "source": {
+                "author": "ANCHOR",
+                "notes": "Phase 85: Non-network doctrine test."
+            },
+            "last_updated_utc": "2026-01-22T22:00:00Z"
+        }
+    ]
+}
+
+
+

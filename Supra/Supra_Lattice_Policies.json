@@ -1,0 +1,31 @@
+{
+    "version": 1,
+    "strategos": {
+        "horizon_hours": 168,
+        "risk_weight": 0.4,
+        "treaty_instability_weight": 0.3,
+        "budget_health_weight": 0.3,
+        "lab_evidence_min": 1
+    },
+    "custodian": {
+        "constitution_violation_weight": 0.6,
+        "treaty_drift_weight": 0.3,
+        "change_frequency_penalty": 0.1,
+        "hard_veto_on": [
+            "supreme_risk_escalation",
+            "doctrine_core_violation"
+        ]
+    },
+    "inventor": {
+        "novelty_reward_weight": 0.5,
+        "stagnation_penalty_weight": 0.2,
+        "max_unsupported_novelty": 0.3,
+        "requires_lab_scenarios": true
+    },
+    "archivist": {
+        "flip_flop_penalty_weight": 0.5,
+        "arc_length_min_hours": 12,
+        "alignment_with_past_weight": 0.3,
+        "explicit_justification_required": true
+    }
+}

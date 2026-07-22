@@ -1,0 +1,9 @@
+{
+  "assessment_id": "merge",
+  "experiment_id": "EXP_TEST",
+  "_filepath": "merge_attempt/asm.merge.json",
+  "supersedes": [
+    "merge_attempt/asm.root1.json",
+    "merge_attempt/asm.root2.json"
+  ]
+}

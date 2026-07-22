@@ -1,0 +1,12 @@
+{
+  "version": "1.0",
+  "propagation_rules": {
+    "bottleneck_weight": 0.7,
+    "description": "Aggregate confidence is significantly constrained by the minimum value in the profile vector."
+  },
+  "binding_policies": {
+    "witness_to_proposal": ["source_confidence", "freshness_confidence"],
+    "simulation_to_receipt": ["simulation_confidence", "interaction_confidence"],
+    "execution_to_registry": ["prediction_accuracy", "attribution_confidence"]
+  }
+}

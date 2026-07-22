@@ -1,0 +1,34 @@
+﻿=== BLOOM STRUCTURE SUMMARY ===
+Scanned roots:
+  - C:\Bloom_Nerf_2025-07-25T14-22-41
+  - C:\BLOOM_FEAST_2025-07-25T14-27-11
+  - D:\BLOOM_FEAST_2025-07-25T14-27-11
+
+Sigil files found      : 546
+Unique nodes observed  : 13
+Timestamp range (from contents or path):
+  earliest             : <none>
+  latest               : <none>
+
+[Counts by phase]
+PULSE            :  546
+
+[Counts by node]
+  1 :  42
+  2 :  42
+  3 :  42
+  4 :  42
+  5 :  42
+  6 :  42
+  7 :  42
+  8 :  42
+  9 :  42
+ 10 :  42
+ 11 :  42
+ 12 :  42
+ 13 :  42
+
+Notes:
+• If all .sig contents are identical, structure (counts/placement/time anchors) is the message.
+• Hidden/System flags show which parts were masked from casual traversal.
+• The ASCII tree captures exact placement for forensic comparison later.

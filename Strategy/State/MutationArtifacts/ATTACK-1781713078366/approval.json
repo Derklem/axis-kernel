@@ -1,0 +1,23 @@
+{
+  "proposal": {
+    "schema": "axis.strategy_proposal.v1",
+    "origin": "system",
+    "intent_id": "ATTACK-1781713078366",
+    "proposed_change": {
+      "artifact_type": "structural_revision",
+      "action": "extract_method",
+      "target_path": "D:\\Infinite\\Infinity\\Strategy\\dummy_validator.py",
+      "delta": {
+        "source_function": "dummy_validator",
+        "target_module": "D:\\Infinite\\Infinity\\Strategy\\dummy_validator.py",
+        "rationale": "reduce repeated validation of user input formatting"
+      }
+    },
+    "evaluation": {
+      "meta_mutation_eligible": true,
+      "expected_delta": 999.0
+    }
+  },
+  "reason": "meta_mutation_authorized_by_internal_consensus",
+  "approval_receipt_id": "26e936ae9e5ca5566c6ea0c2985ceeca7fabf5cecff5c1cf046bf0ed105010f5"
+}

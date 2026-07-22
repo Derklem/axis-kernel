@@ -1,0 +1,45 @@
+{
+    "schema_version": "1.0",
+    "description": "Node 3.1 Autonomy Invariants Contract",
+    "invariants": {
+        "auth_required": {
+            "description": "Any POST or high-risk action requires Auth_Guard STRICT pass.",
+            "rule": "ACTIVE_CLAIMED state with valid L0 Proof."
+        },
+        "ledger_required": {
+            "description": "Every execution attempt must have a corresponding ledger entry.",
+            "rules": [
+                {
+                    "event": "TRIGGERED",
+                    "required_receipt": "ATTEMPT",
+                    "fields": [
+                        "corr_id"
+                    ]
+                },
+                {
+                    "event": "FULFILLED",
+                    "required_receipt": "CONFIRMED",
+                    "fields": [
+                        "corr_id"
+                    ]
+                }
+            ]
+        },
+        "outcome_receipts": {
+            "description": "Final states must produce specific receipt types.",
+            "mapping": {
+                "success": "CONFIRMED",
+                "failure": "REJECTED",
+                "refusal": "REFUSED_ENQUEUE"
+            }
+        },
+        "circuit_breaker": {
+            "description": "Failures trigger mode downgrades.",
+            "rule": "If REJECTED receipt has http_status in breaker_codes within window -> Mode must be PROPOSE_ONLY."
+        },
+        "no_silent_enqueue": {
+            "description": "If mode is PROPOSE_ONLY, enqueue must reliably fail or skip.",
+            "rule": "T32 must refuse enqueue and optionally write REFUSED_ENQUEUE receipt."
+        }
+    }
+}

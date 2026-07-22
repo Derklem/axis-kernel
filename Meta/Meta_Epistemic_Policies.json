@@ -1,0 +1,29 @@
+{
+    "version": 1,
+    "modes": {
+        "normal": {
+            "allow_self_tuning": true,
+            "require_poi_for_self_changes": true,
+            "min_confidence_for_self_change": 0.9
+        },
+        "ontological": {
+            "allow_self_tuning": false,
+            "require_poi_for_self_changes": true,
+            "min_confidence_for_self_change": 0.95
+        }
+    },
+    "proof_requirements": {
+        "component_mutation": {
+            "default": {
+                "required_proof_types": [
+                    "epistemic_chain",
+                    "historical_consistency"
+                ],
+                "min_lattice_resonance": 0.8
+            },
+            "meta_immutable": {
+                "allowed": false
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T00:18:14.511975+00:00",
+    "entity": "aegis_genesis.py",
+    "claim": "standard update: signal for aegis_genesis.py in cycle 6.",
+    "source_id": "Internal_Audit",
+    "source_type": "automated_sensor",
+    "claim_domain": "general",
+    "confidence": 0.54
+}

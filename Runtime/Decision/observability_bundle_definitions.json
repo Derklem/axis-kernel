@@ -1,0 +1,44 @@
+{
+  "version": "1.0",
+  "bundles": {
+    "QUEUE_SATURATION": {
+      "required_signals": [
+        "queue_depth",
+        "retry_pressure",
+        "api_latency_ms_p95"
+      ],
+      "optional_signals": [
+        "latency_variance"
+      ],
+      "covariance_expectations": [
+        [
+          "queue_depth",
+          "retry_pressure"
+        ],
+        [
+          "retry_pressure",
+          "api_latency_ms_p95"
+        ]
+      ]
+    },
+    "MIXED_CONTENTION": {
+      "required_signals": [
+        "queue_pressure",
+        "latency_variance",
+        "compaction_events",
+        "memory_pressure"
+      ],
+      "optional_signals": [],
+      "covariance_expectations": [
+        [
+          "queue_pressure",
+          "latency_variance"
+        ],
+        [
+          "memory_pressure",
+          "compaction_events"
+        ]
+      ]
+    }
+  }
+}

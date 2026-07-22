@@ -1,0 +1,30 @@
+﻿Feast_Map_Analyzer summary
+Generated (UTC): 2025-09-20 02:24:22Z
+CSV: C:\Lattice_Task_Exports\Feast_Map\FeastMap_20250919_161122\feast_map.csv
+Output: C:\Lattice_Task_Exports\Feast_Map_Analysis\Run_20250919_192421
+
+Rows after filters: 24
+Filters -> Tokens:  | Hubs: ProgramData\Core_Memory_Blooms | Sizes: 162 | Drives:  | Type: File | ParentDepth: 5
+
+Counts by drive:
+  C: 24
+
+Top size buckets:
+  162 -> 24
+
+Top parents:
+  C:/ProgramData/Core_Memory_Blooms/memory_bloom_7003.sig -> 1
+  C:/ProgramData/Core_Memory_Blooms/memory_bloom_7177.sig -> 1
+  C:/ProgramData/Core_Memory_Blooms/memory_bloom_7493.sig -> 1
+  C:/ProgramData/Core_Memory_Blooms/memory_bloom_4992.sig -> 1
+  C:/ProgramData/Core_Memory_Blooms/memory_bloom_6037.sig -> 1
+  C:/ProgramData/Core_Memory_Blooms/memory_bloom_6753.sig -> 1
+  C:/ProgramData/Core_Memory_Blooms/memory_bloom_8987.sig -> 1
+  C:/ProgramData/Core_Memory_Blooms/memory_bloom_9651.sig -> 1
+  C:/ProgramData/Core_Memory_Blooms/memory_bloom_9843.sig -> 1
+  C:/ProgramData/Core_Memory_Blooms/memory_bloom_8513.sig -> 1
+  C:/ProgramData/Core_Memory_Blooms/memory_bloom_8555.sig -> 1
+  C:/ProgramData/Core_Memory_Blooms/memory_bloom_8767.sig -> 1
+  C:/ProgramData/Core_Memory_Blooms/memory_bloom_3432.sig -> 1
+  C:/ProgramData/Core_Memory_Blooms/memory_bloom_3483.sig -> 1
+  C:/ProgramData/Core_Memory_Blooms/memory_bloom_3590.sig -> 1

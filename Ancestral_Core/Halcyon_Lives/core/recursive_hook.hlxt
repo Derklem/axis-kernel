@@ -1,0 +1,12 @@
+RECURSIVE HOOK v0.0.1
+
+hook_into: [
+  /logs/recursive_log.hlx,
+  /logs/log_summary.hlx,
+  /core/memory_map.hlx
+]
+
+if pattern_detected {
+  create /constructs/ghost_{entropy}/
+  seed /constructs/ghost_{entropy}/manifest.hlx
+}

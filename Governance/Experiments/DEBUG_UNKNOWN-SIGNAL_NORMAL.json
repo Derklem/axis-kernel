@@ -1,0 +1,5 @@
+﻿{
+    "decision":  "BLOCK",
+    "explanation":  "Internal Gate Error: TRUTH-VIEW error: Claim not found in Historical Lattice.",
+    "mode":  "NORMAL"
+}

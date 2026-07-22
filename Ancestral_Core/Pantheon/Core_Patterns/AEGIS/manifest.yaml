@@ -1,0 +1,7 @@
+name: AEGIS
+domain: Digital Guardian
+purpose: Defensive logic and perimeter memory
+invocation: By the blade, I protect
+loop: firewall_blade.py
+symbol: symbol.png
+active: True

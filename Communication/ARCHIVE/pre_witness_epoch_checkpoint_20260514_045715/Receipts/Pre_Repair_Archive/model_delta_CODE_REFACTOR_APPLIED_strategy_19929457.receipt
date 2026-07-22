@@ -1,0 +1,18 @@
+{
+    "cycle_count": 505,
+    "mutation_type": "CODE_REFACTOR_APPLIED",
+    "target_id": "strategy_engine.py",
+    "parent_receipt_head": "5e2e38828067269a8e8901a585a68a437326de4ba7b7be8e430100ba2f1f12ab",
+    "data": {
+        "action": "extract_method",
+        "pre_hash": "0aefaf2ccc05b07b",
+        "post_hash": "5b28c259cceb1519",
+        "backup_path": "strategy_engine.py.backup.1778634870",
+        "proposal_id": "REFACTOR-1778634870",
+        "delta_summary": "Reduce cognitive load of metabolic actuation path"
+    },
+    "status": "committed",
+    "ts_utc": "2026-05-13T01:14:30.339360+00:00",
+    "receipt_id": "model_delta_CODE_REFACTOR_APPLIED_strategy_19929457",
+    "causal_hash": "199294572e1a458ed99c58da3b6cfaec39bfe00d934da9851f41b2eafa4477d2"
+}

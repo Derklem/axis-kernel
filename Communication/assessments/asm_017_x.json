@@ -1,0 +1,15 @@
+{
+  "experiment_id": "EXP_017_X",
+  "assessment_id": "asm_017_x",
+  "observation_ref": "obs_017_1",
+  "assessed_at": "2026-07-12T13:10:00Z",
+  "empirical_verdict": "Low human engagement, some impressions occurred with no confirmed organic conversation.",
+  "governance_implication": "Suspend additional deployments of this specific message to X until a new hypothesis is tested.",
+  "confidence": 0.85,
+  "remaining_uncertainties": [
+    "audience maturity",
+    "posting time",
+    "account reputation",
+    "wording"
+  ]
+}

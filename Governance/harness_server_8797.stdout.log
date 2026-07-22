@@ -1,0 +1,66 @@
+Starting Axis Console Server... (Version: RUNSPACE-RECREATED)
+WARNING: The names of some imported commands from the module 'Axis_IntegrityEconomics' include unapproved verbs that 
+might make them less discoverable. To find the commands with unapproved verbs, run the Import-Module command again with
+ the Verbose parameter. For a list of approved verbs, type Get-Verb.
+Econ Module Loaded.
+Debug: Checking Provenance Module...
+Debug: ProvModule Path: D:\Infinite\Infinity\Governance\Axis_Provenance.psm1
+Debug: Importing Provenance...
+WARNING: The names of some imported commands from the module 'Axis_Provenance' include unapproved verbs that might make
+ them less discoverable. To find the commands with unapproved verbs, run the Import-Module command again with the 
+Verbose parameter. For a list of approved verbs, type Get-Verb.
+Provenance Module Loaded.
+Debug: Writing PID...
+API Module Loaded. PID: 22060
+Listening on http://127.0.0.1:8797/
+Press Ctrl+C to stop.
+GET /api/status
+GET /api/stream
+
+
+Commands            : System.Management.Automation.PSCommand
+Streams             : System.Management.Automation.PSDataStreams
+InstanceId          : 22f299cf-20f9-4745-af94-f7b613b2a1c4
+InvocationStateInfo : System.Management.Automation.PSInvocationStateInfo
+IsNested            : False
+HadErrors           : False
+Runspace            : System.Management.Automation.Runspaces.LocalRunspace
+RunspacePool        : 
+IsRunspaceOwner     : True
+HistoryString       : 
+
+Commands            : System.Management.Automation.PSCommand
+Streams             : System.Management.Automation.PSDataStreams
+InstanceId          : 22f299cf-20f9-4745-af94-f7b613b2a1c4
+InvocationStateInfo : System.Management.Automation.PSInvocationStateInfo
+IsNested            : False
+HadErrors           : False
+Runspace            : System.Management.Automation.Runspaces.LocalRunspace
+RunspacePool        : 
+IsRunspaceOwner     : True
+HistoryString       : 
+
+Commands            : System.Management.Automation.PSCommand
+Streams             : System.Management.Automation.PSDataStreams
+InstanceId          : 22f299cf-20f9-4745-af94-f7b613b2a1c4
+InvocationStateInfo : System.Management.Automation.PSInvocationStateInfo
+IsNested            : False
+HadErrors           : False
+Runspace            : System.Management.Automation.Runspaces.LocalRunspace
+RunspacePool        : 
+IsRunspaceOwner     : True
+HistoryString       : 
+
+Commands            : System.Management.Automation.PSCommand
+Streams             : System.Management.Automation.PSDataStreams
+InstanceId          : 22f299cf-20f9-4745-af94-f7b613b2a1c4
+InvocationStateInfo : System.Management.Automation.PSInvocationStateInfo
+IsNested            : False
+HadErrors           : False
+Runspace            : System.Management.Automation.Runspaces.LocalRunspace
+RunspacePool        : 
+IsRunspaceOwner     : True
+HistoryString       : 
+
+
+

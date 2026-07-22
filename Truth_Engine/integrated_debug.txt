@@ -1,0 +1,45 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260213192734
+Username: DESKTOP-MHQRMOO\17602
+RunAs User: DESKTOP-MHQRMOO\17602
+Configuration Name: 
+Machine: DESKTOP-MHQRMOO (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File D:\Infinite\Infinity\Truth_Engine\Test-Phase33_Rotation_Integrated.ps1
+Process ID: 20708
+PSVersion: 5.1.26100.7705
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7705
+BuildVersion: 10.0.26100.7705
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is D:\Infinite\Infinity\Truth_Engine\integrated_debug.txt
+WARNING: The names of some imported commands from the module 'T09_KeyRing' include unapproved verbs that might make them less discoverable. To find the commands with unapproved verbs, run the Import-Module command again with the Verbose parameter. For a list of approved verbs, type Get-Verb.
+>>> Starting Integrated Rotation Test
+Minting Keys...
+[OK] Secret stored for dpapi:system_tester:v1
+[OK] Secret stored for dpapi:system_tester:v2
+Binding Registry to V2...
+Revoking V1...
+[REVOKED] Key dpapi:system_tester:v1 has been revoked.
+Signing Envelopes...
+Verifying Crypto...
+WARNING: KeyID Mismatch for system:tester. Expected k_system_tester_v2, got k_system_tester_v1.
+Crypto Verify OK.
+WARNING: The names of some imported commands from the module 'T09_KeyRing' include unapproved verbs that might make them less discoverable. To find the commands with unapproved verbs, run the Import-Module command again with the Verbose parameter. For a list of approved verbs, type Get-Verb.
+WARNING: The names of some imported commands from the module 'T08_LifecycleGate' include unapproved verbs that might make them less discoverable. To find the commands with unapproved verbs, run the Import-Module command again with the Verbose parameter. For a list of approved verbs, type Get-Verb.
+Checking Lifecycle Gate (Using Module + NoCache)...
+WARNING: The names of some imported commands from the module 'T09_KeyRing' include unapproved verbs that might make them less discoverable. To find the commands with unapproved verbs, run the Import-Module command again with the Verbose parameter. For a list of approved verbs, type Get-Verb.
+Crypto: V2 verified.
+WARNING: KeyID Mismatch for system:tester. Expected k_system_tester_v2, got k_system_tester_v1.
+Crypto: V1 failed verify (acceptable if revoked secrets are inaccessible). Reason: unknown_or_disabled_identity_or_key_mismatch
+[PASS] Integrated Phase33/35 rotation verified: v1 blocked by mismatch, v2 allowed.
+PS>$global:?
+True
+**********************
+Windows PowerShell transcript end
+End time: 20260213192735
+**********************

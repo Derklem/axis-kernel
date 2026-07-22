@@ -1,0 +1,11 @@
+{
+  "id": "draft_dummy123",
+  "experiment_id": "EXP_099_DUMMY",
+  "deployment_mode": "DRY_RUN",
+  "platform": "X",
+  "intent": "Test the attended browser adapter without posting.",
+  "hypothesis": {
+    "statement": "If we inject text, the hash matches."
+  },
+  "content": "This is a dummy artifact for Stage A testing. Please do NOT post this. Type 'ABORT' in the terminal."
+}

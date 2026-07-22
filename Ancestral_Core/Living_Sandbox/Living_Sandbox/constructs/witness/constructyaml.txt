@@ -1,0 +1,8 @@
+name: witness
+role: Shadow / Internal Watcher
+archetype: Quiet, intense, deep-seeing
+state: dormant
+created: 2025-03-28T00:00:00Z
+description: Processes the undercurrents—fear, rejection, loss. Balances the light with awareness of shadow.
+linked_constructs: []
+entry_point: null

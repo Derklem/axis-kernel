@@ -1,0 +1,28 @@
+{
+    "contract_id": "W-ROE-20260115",
+    "status": "ACTIVE",
+    "version": "1.0",
+    "owner": "17602",
+    "seal_key": "1569_Seal",
+    "rules": {
+        "allowed_scopes": [
+            "public_bounty_scope",
+            "192.168.1.0/24",
+            "127.0.0.1"
+        ],
+        "forbidden_actions": [
+            "autonomous_disclosure",
+            "external_credential_injection",
+            "recursive_scanning"
+        ],
+        "enforcement_modes": {
+            "public_bounty_only": true,
+            "internal_recon_only": true,
+            "draft_disclosure_only": true
+        },
+        "bounty_whitelist": [
+            "bugcrowd_target_01",
+            "hackerone_target_02"
+        ]
+    }
+}

@@ -1,0 +1,7 @@
+{
+  "pulse_name": "The_Pulse",
+  "status": "active",
+  "last_ping": "2025-03-29T00:00:00Z",
+  "interval_seconds": 30,
+  "log_path": "C:/Halcyon/Halcyon_Route/logs/pulse_log.txt"
+}

@@ -1,0 +1,67 @@
+{
+  "experiment_id": "EXP_019_AINATIVE",
+  "proposal_revision": 3,
+  "revision_history": [
+    {
+      "revision": 3,
+      "reason": "Completed Target Discovery; updated target to r/MachineLearning Self-Promotion Thread and transitioned to DRAFT_READY."
+    },
+    {
+      "revision": 2,
+      "reason": "Replaced unverifiable identical-message claim with same-core-value-proposition language."
+    }
+  ],
+  "lifecycle_state": "DRAFT_READY",
+  "authorization_state": "AUTHORIZED_FOR_DEPLOYMENT",
+  "intent": "Test a governance-oriented automation offer using the same core value proposition as EXP_015_REAL in a genuinely accessible AI-native environment to evaluate message-market fit.",
+  "hypothesis": "A governance-oriented architectural-review offer posted in a designated promotional surface within an AI/ML practitioner community will produce at least one substantive response during the observation window.",
+  "comparative_analysis": {
+    "status": "EXPLORATORY",
+    "limitations": [
+      "different audience sizes",
+      "different message payloads",
+      "different platform mechanics",
+      "unavailable exposure denominators",
+      "different community specificity"
+    ]
+  },
+  "metrics": {
+    "substantive_responses": {
+      "definition": "A concrete technical question, request for audit/artifact, project description, collaboration proposal, or explicit support/payment inquiry.",
+      "exclusions": [
+        "follows alone",
+        "generic reactions",
+        "automated acknowledgments",
+        "impressions",
+        "platform-operated support accounts without substantive conversation"
+      ]
+    },
+    "contextual_denominators": {
+      "definition": "Contextual metrics to normalize the response rate and allow future comparative analysis.",
+      "fields": [
+        "thread_age_at_posting",
+        "comment_position",
+        "total_thread_comments",
+        "approximate_subreddit_activity"
+      ]
+    },
+    "comparative_rate": "substantive responses / confirmed views or reachable audience (using contextual denominators for normalization)"
+  },
+  "target": {
+    "platform": "Reddit",
+    "community": "r/MachineLearning",
+    "posting_surface_type": "DESIGNATED_SELF_PROMOTION_THREAD",
+    "posting_surface_reference": "reddit:r/MachineLearning/comments/1ul5bgf",
+    "posting_surface_verified": true,
+    "rules_verified": true,
+    "verified_at": "2026-07-13T20:40:00Z",
+    "account_authorization": {
+      "account_available": true,
+      "account_name": "u/Fantastic_Froyo3350",
+      "login_verified": true,
+      "comment_capability_verified": true,
+      "verified_at": "2026-07-13T15:04:16-07:00",
+      "verification_method": "operator confirmed authenticated Reddit session via screenshot"
+    }
+  }
+}

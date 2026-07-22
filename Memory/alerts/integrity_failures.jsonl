@@ -1,0 +1,16 @@
+{"ts":"2026-02-15T20:18:54.1323513Z","pulse_id":"1c96a0f0-b9e4-4475-91aa-4abdaca17bbb","mode":"DEEP","failures":["HistoricalReplay","TemporalChain"]}
+{"ts":"2026-02-15T20:19:54.9460555Z","pulse_id":"839ad5a4-0ce3-453b-9425-90c0ae4082bc","mode":"DEEP","failures":"HistoricalReplay"}
+{"ts":"2026-02-15T20:21:31.3170026Z","pulse_id":"89a75c0b-2834-44ac-b822-9d46b81f81f2","mode":"DEEP","failures":"HistoricalReplay"}
+{"ts":"2026-02-15T21:46:27.9109447Z","pulse_id":"d0822b79-0fa3-4570-aae0-77078bc7f956","mode":"DEEP","failures":["ForensicJoins","RotationContinuity","HistoricalReplay","PolicyChain"]}
+{"ts":"2026-02-15T21:58:12.2671642Z","pulse_id":"581878bc-d218-4da4-aef0-9298714e6053","mode":"DEEP","failures":["ForensicJoins","RotationContinuity","HistoricalReplay","TemporalChain","PolicyChain"]}
+{"ts":"2026-02-15T22:00:19.5132900Z","pulse_id":"111d2e14-5c45-4e51-9756-b9e05c00fb5a","mode":"DEEP","failures":["ForensicJoins","RotationContinuity","HistoricalReplay","TemporalChain","PolicyChain"]}
+{"ts":"2026-02-15T22:01:43.3242724Z","pulse_id":"8400755b-7a81-44e0-bea0-b80f1f76f28f","mode":"DEEP","failures":["ForensicJoins","RotationContinuity","HistoricalReplay","TemporalChain","PolicyChain"]}
+{"ts":"2026-02-15T22:07:12.5201876Z","pulse_id":"ae36b8bd-c9f8-465b-8ad3-72d38fd4fb20","mode":"DEEP","failures":["ForensicJoins","RotationContinuity","HistoricalReplay","TemporalChain","PolicyChain"]}
+{"ts":"2026-02-15T22:09:03.8353949Z","pulse_id":"b056d672-1924-4a79-a837-fff6c321b656","mode":"DEEP","failures":["ForensicJoins","RotationContinuity","HistoricalReplay"]}
+{"ts":"2026-02-15T22:10:27.6946214Z","pulse_id":"9d2f5889-b4b5-491c-b44e-121118d56b9a","mode":"DEEP","failures":["ForensicJoins","RotationContinuity","HistoricalReplay"]}
+{"ts":"2026-02-15T22:19:13.5563464Z","pulse_id":"de111c2b-98fc-48a0-84c7-84df52a7e3ef","mode":"DEEP","failures":"HistoricalReplay"}
+{"ts":"2026-02-16T18:45:49.1208546Z","pulse_id":"71fb168b-040d-4e33-870c-ae783dbb420b","mode":"DEEP-LITE","failures":["RotationContinuity","HistoricalReplay","TemporalChain"]}
+{"ts":"2026-02-16T18:46:36.7780421Z","pulse_id":"b2250a74-0fec-4ad7-ba17-be3cd56ca109","mode":"DEEP-LITE","failures":["RotationContinuity","HistoricalReplay","TemporalChain"]}
+{"ts":"2026-02-16T18:48:52.9030202Z","pulse_id":"e3c19dbc-7498-4ef7-bb18-e00c683c7e81","mode":"DEEP-LITE","failures":["RotationContinuity","HistoricalReplay","TemporalChain"]}
+{"ts":"2026-02-16T18:50:21.0713210Z","pulse_id":"dce0ffd8-53c9-4389-b254-0c5318f566e6","mode":"DEEP-LITE","failures":"HistoricalReplay"}
+{"ts":"2026-02-16T18:50:44.6689812Z","pulse_id":"d9177deb-eb41-45ee-b9ba-527420ebe4f9","mode":"DEEP-LITE","failures":"HistoricalReplay"}

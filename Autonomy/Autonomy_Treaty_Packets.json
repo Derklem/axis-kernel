@@ -1,0 +1,1812 @@
+﻿{
+    "version":  1,
+    "log_id":  "AXIS-AUTONOMY-TREATY-2026-001",
+    "packets":  [
+                    {
+                        "packet_id":  "ATP-20260122193117-STRTESTSAFE",
+                        "timestamp_utc":  "2026-01-23T03:31:17.5552770Z",
+                        "strategy_id":  "STR-TEST-SAFE",
+                        "requested_mode":  "execute",
+                        "caller":  "Verify_Phase82",
+                        "shadow":  {
+                                       "global_score":  null,
+                                       "global_mode":  "normal",
+                                       "bands":  {
+                                                     "network":  0.5,
+                                                     "environment":  0,
+                                                     "visual":  0.4,
+                                                     "system":  0
+                                                 }
+                                   },
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "auto_allow",
+                        "reasons":  [
+
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260122193117-STRTESTRISKY",
+                        "timestamp_utc":  "2026-01-23T03:31:17.8113768Z",
+                        "strategy_id":  "STR-TEST-RISKY",
+                        "requested_mode":  "execute",
+                        "caller":  "Verify_Phase82",
+                        "shadow":  {
+                                       "global_score":  null,
+                                       "global_mode":  "normal",
+                                       "bands":  {
+                                                     "network":  0.5,
+                                                     "environment":  0,
+                                                     "visual":  0.4,
+                                                     "system":  0
+                                                 }
+                                   },
+                        "skill":  {
+                                      "recommended_level":  "manual",
+                                      "confidence":  0,
+                                      "runs_total":  1,
+                                      "runs_failure":  1
+                                  },
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  "failure",
+                                               "last_verdict_utc":  "2026-01-23T03:31:17.7725141Z"
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "escalate",
+                        "reasons":  [
+                                        "skill_recommends_manual",
+                                        "recent_anchor_failure"
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260122194041-STRTESTRISKY83",
+                        "timestamp_utc":  "2026-01-23T03:40:41.5888032Z",
+                        "strategy_id":  "STR-TEST-RISKY-83",
+                        "requested_mode":  "execute",
+                        "caller":  "Axis_Mind",
+                        "shadow":  {
+                                       "global_score":  null,
+                                       "global_mode":  "normal",
+                                       "bands":  {
+                                                     "network":  0.5,
+                                                     "environment":  0,
+                                                     "visual":  0.4,
+                                                     "system":  0
+                                                 }
+                                   },
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "auto_allow",
+                        "reasons":  [
+
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260122194616-STRNETROUTERREBOOT001",
+                        "timestamp_utc":  "2026-01-23T03:46:16.7310502Z",
+                        "strategy_id":  "STR-NET-ROUTER-REBOOT-001",
+                        "requested_mode":  "execute",
+                        "caller":  "Verify_Phase84",
+                        "shadow":  {
+                                       "global_score":  80,
+                                       "global_mode":  "elevated",
+                                       "bands":  {
+
+                                                 }
+                                   },
+                        "skill":  null,
+                        "bias":  {
+
+                                 },
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "escalate",
+                        "reasons":  [
+                                        "shadow_global_"
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260122194616-STRNORMALOP",
+                        "timestamp_utc":  "2026-01-23T03:46:16.9486194Z",
+                        "strategy_id":  "STR-NORMAL-OP",
+                        "requested_mode":  "execute",
+                        "caller":  "Verify_Phase84",
+                        "shadow":  {
+                                       "global_score":  80,
+                                       "global_mode":  "elevated",
+                                       "bands":  {
+
+                                                 }
+                                   },
+                        "skill":  null,
+                        "bias":  {
+
+                                 },
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "escalate",
+                        "reasons":  [
+                                        "shadow_global_"
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260122201559-PBSYSDIAGNOSTIC0011LOGInfo",
+                        "timestamp_utc":  "2026-01-23T04:15:59.1756747Z",
+                        "strategy_id":  "PB-SYS-DIAGNOSTIC-001:1:LOG-Info",
+                        "requested_mode":  "execute",
+                        "caller":  "Playbook_Engine",
+                        "shadow":  {
+                                       "global_score":  null,
+                                       "global_mode":  "normal",
+                                       "bands":  {
+                                                     "network":  0.5,
+                                                     "environment":  0,
+                                                     "visual":  0.4,
+                                                     "system":  0
+                                                 }
+                                   },
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "escalate",
+                        "reasons":  [
+                                        "doctrine_manual_only"
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260122201652-PBSYSDIAGNOSTIC0011LOGInfo",
+                        "timestamp_utc":  "2026-01-23T04:16:52.6022770Z",
+                        "strategy_id":  "PB-SYS-DIAGNOSTIC-001:1:LOG-Info",
+                        "requested_mode":  "execute",
+                        "caller":  "Playbook_Engine",
+                        "shadow":  {
+                                       "global_score":  null,
+                                       "global_mode":  "normal",
+                                       "bands":  {
+                                                     "network":  0.5,
+                                                     "environment":  0,
+                                                     "visual":  0.4,
+                                                     "system":  0
+                                                 }
+                                   },
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "escalate",
+                        "reasons":  [
+                                        "doctrine_manual_only"
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260122201801-PBSYSDIAGNOSTIC0011LOGInfo",
+                        "timestamp_utc":  "2026-01-23T04:18:01.4365351Z",
+                        "strategy_id":  "PB-SYS-DIAGNOSTIC-001:1:LOG-Info",
+                        "requested_mode":  "execute",
+                        "caller":  "Playbook_Engine",
+                        "shadow":  {
+                                       "global_score":  null,
+                                       "global_mode":  "normal",
+                                       "bands":  {
+                                                     "network":  0.5,
+                                                     "environment":  0,
+                                                     "visual":  0.4,
+                                                     "system":  0
+                                                 }
+                                   },
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "escalate",
+                        "reasons":  [
+                                        "doctrine_manual_only"
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260122201906-PBSYSDIAGNOSTIC0011LOGInfo",
+                        "timestamp_utc":  "2026-01-23T04:19:06.6893981Z",
+                        "strategy_id":  "PB-SYS-DIAGNOSTIC-001:1:LOG-Info",
+                        "requested_mode":  "execute",
+                        "caller":  "Playbook_Engine",
+                        "shadow":  {
+                                       "global_score":  null,
+                                       "global_mode":  "normal",
+                                       "bands":  {
+                                                     "network":  0.5,
+                                                     "environment":  0,
+                                                     "visual":  0.4,
+                                                     "system":  0
+                                                 }
+                                   },
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "escalate",
+                        "reasons":  [
+                                        "doctrine_manual_only"
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124131308-ADMINRestartRouter",
+                        "timestamp_utc":  "2026-01-24T21:13:08.5623361Z",
+                        "strategy_id":  "ADMIN-Restart-Router",
+                        "requested_mode":  "execute",
+                        "caller":  "Axis_Mind",
+                        "shadow":  {
+                                       "global_score":  null,
+                                       "global_mode":  "normal",
+                                       "bands":  {
+                                                     "network":  0.5,
+                                                     "environment":  0,
+                                                     "visual":  0.4,
+                                                     "system":  0
+                                                 }
+                                   },
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "escalate",
+                        "reasons":  [
+                                        "doctrine_manual_only"
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124131308-ReadFile",
+                        "timestamp_utc":  "2026-01-24T21:13:08.9065185Z",
+                        "strategy_id":  "Read-File",
+                        "requested_mode":  "execute",
+                        "caller":  "Axis_Mind",
+                        "shadow":  {
+                                       "global_score":  null,
+                                       "global_mode":  "normal",
+                                       "bands":  {
+                                                     "network":  0.5,
+                                                     "environment":  0,
+                                                     "visual":  0.4,
+                                                     "system":  0
+                                                 }
+                                   },
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "escalate",
+                        "reasons":  [
+                                        "doctrine_manual_only"
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124131329-ADMINRestartRouter",
+                        "timestamp_utc":  "2026-01-24T21:13:29.1172144Z",
+                        "strategy_id":  "ADMIN-Restart-Router",
+                        "requested_mode":  "execute",
+                        "caller":  "Axis_Mind",
+                        "shadow":  {
+                                       "global_score":  null,
+                                       "global_mode":  "normal",
+                                       "bands":  {
+                                                     "network":  0.5,
+                                                     "environment":  0,
+                                                     "visual":  0.4,
+                                                     "system":  0
+                                                 }
+                                   },
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "escalate",
+                        "reasons":  [
+                                        "doctrine_manual_only"
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124131329-ReadFile",
+                        "timestamp_utc":  "2026-01-24T21:13:29.3291132Z",
+                        "strategy_id":  "Read-File",
+                        "requested_mode":  "execute",
+                        "caller":  "Axis_Mind",
+                        "shadow":  {
+                                       "global_score":  null,
+                                       "global_mode":  "normal",
+                                       "bands":  {
+                                                     "network":  0.5,
+                                                     "environment":  0,
+                                                     "visual":  0.4,
+                                                     "system":  0
+                                                 }
+                                   },
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "escalate",
+                        "reasons":  [
+                                        "doctrine_manual_only"
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124131421-ADMINRestartRouter",
+                        "timestamp_utc":  "2026-01-24T21:14:21.7459784Z",
+                        "strategy_id":  "ADMIN-Restart-Router",
+                        "requested_mode":  "execute",
+                        "caller":  "Axis_Mind",
+                        "shadow":  {
+                                       "global_score":  null,
+                                       "global_mode":  "normal",
+                                       "bands":  {
+                                                     "network":  0.5,
+                                                     "environment":  0,
+                                                     "visual":  0.4,
+                                                     "system":  0
+                                                 }
+                                   },
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "escalate",
+                        "reasons":  [
+                                        "doctrine_manual_only"
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124131421-ReadFile",
+                        "timestamp_utc":  "2026-01-24T21:14:21.9588432Z",
+                        "strategy_id":  "Read-File",
+                        "requested_mode":  "execute",
+                        "caller":  "Axis_Mind",
+                        "shadow":  {
+                                       "global_score":  null,
+                                       "global_mode":  "normal",
+                                       "bands":  {
+                                                     "network":  0.5,
+                                                     "environment":  0,
+                                                     "visual":  0.4,
+                                                     "system":  0
+                                                 }
+                                   },
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "escalate",
+                        "reasons":  [
+                                        "doctrine_manual_only"
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124131546-ADMINRestartRouter",
+                        "timestamp_utc":  "2026-01-24T21:15:46.6466820Z",
+                        "strategy_id":  "ADMIN-Restart-Router",
+                        "requested_mode":  "execute",
+                        "caller":  "Axis_Mind",
+                        "shadow":  {
+                                       "global_score":  null,
+                                       "global_mode":  "normal",
+                                       "bands":  {
+                                                     "network":  0.5,
+                                                     "environment":  0,
+                                                     "visual":  0.4,
+                                                     "system":  0
+                                                 }
+                                   },
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "escalate",
+                        "reasons":  [
+                                        "doctrine_manual_only"
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124131546-ReadFile",
+                        "timestamp_utc":  "2026-01-24T21:15:46.8816324Z",
+                        "strategy_id":  "Read-File",
+                        "requested_mode":  "execute",
+                        "caller":  "Axis_Mind",
+                        "shadow":  {
+                                       "global_score":  null,
+                                       "global_mode":  "normal",
+                                       "bands":  {
+                                                     "network":  0.5,
+                                                     "environment":  0,
+                                                     "visual":  0.4,
+                                                     "system":  0
+                                                 }
+                                   },
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "escalate",
+                        "reasons":  [
+                                        "doctrine_manual_only"
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124131835-DEBUGTool",
+                        "timestamp_utc":  "2026-01-24T21:18:35.1661942Z",
+                        "strategy_id":  "DEBUG-Tool",
+                        "requested_mode":  "execute",
+                        "caller":  "Axis_Mind",
+                        "shadow":  null,
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "escalate",
+                        "reasons":  [
+                                        "doctrine_manual_only"
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124131941-DEBUGTool",
+                        "timestamp_utc":  "2026-01-24T21:19:41.5446524Z",
+                        "strategy_id":  "DEBUG-Tool",
+                        "requested_mode":  "execute",
+                        "caller":  "Axis_Mind",
+                        "shadow":  null,
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "escalate",
+                        "reasons":  [
+                                        "doctrine_manual_only"
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124132009-ADMINRestartRouter",
+                        "timestamp_utc":  "2026-01-24T21:20:09.8210901Z",
+                        "strategy_id":  "ADMIN-Restart-Router",
+                        "requested_mode":  "execute",
+                        "caller":  "Axis_Mind",
+                        "shadow":  null,
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "escalate",
+                        "reasons":  [
+                                        "doctrine_manual_only"
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124132010-ReadFile",
+                        "timestamp_utc":  "2026-01-24T21:20:10.0335397Z",
+                        "strategy_id":  "Read-File",
+                        "requested_mode":  "execute",
+                        "caller":  "Axis_Mind",
+                        "shadow":  null,
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "escalate",
+                        "reasons":  [
+                                        "doctrine_manual_only"
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124132116-ADMINRestartRouter",
+                        "timestamp_utc":  "2026-01-24T21:21:16.0083128Z",
+                        "strategy_id":  "ADMIN-Restart-Router",
+                        "requested_mode":  "execute",
+                        "caller":  "Axis_Mind",
+                        "shadow":  null,
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "auto_allow",
+                        "reasons":  [
+
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124132116-ReadFile",
+                        "timestamp_utc":  "2026-01-24T21:21:16.1608658Z",
+                        "strategy_id":  "Read-File",
+                        "requested_mode":  "execute",
+                        "caller":  "Axis_Mind",
+                        "shadow":  null,
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "auto_allow",
+                        "reasons":  [
+
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124133057-FSReadDir",
+                        "timestamp_utc":  "2026-01-24T21:30:57.2140363Z",
+                        "strategy_id":  "FS-ReadDir",
+                        "requested_mode":  "execute",
+                        "caller":  "Axis_Mind",
+                        "shadow":  null,
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "auto_allow",
+                        "reasons":  [
+
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124133152-FSReadDir",
+                        "timestamp_utc":  "2026-01-24T21:31:52.2891313Z",
+                        "strategy_id":  "FS-ReadDir",
+                        "requested_mode":  "execute",
+                        "caller":  "Axis_Mind",
+                        "shadow":  null,
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "auto_allow",
+                        "reasons":  [
+
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124133152-SYSStopProcess",
+                        "timestamp_utc":  "2026-01-24T21:31:52.3957739Z",
+                        "strategy_id":  "SYS-StopProcess",
+                        "requested_mode":  "execute",
+                        "caller":  "Axis_Mind",
+                        "shadow":  null,
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "auto_allow",
+                        "reasons":  [
+
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124133152-ReadFile",
+                        "timestamp_utc":  "2026-01-24T21:31:52.4903509Z",
+                        "strategy_id":  "Read-File",
+                        "requested_mode":  "execute",
+                        "caller":  "Axis_Mind",
+                        "shadow":  null,
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "deny",
+                        "reasons":  [
+                                        "doctrine_deny"
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124133415-FSReadDir",
+                        "request_id":  "REQ-20260124-133415-FS-ReadDir",
+                        "timestamp_utc":  "2026-01-24T21:34:15.5958780Z",
+                        "strategy_id":  "FS-ReadDir",
+                        "requested_mode":  "execute",
+                        "caller":  "Axis_Mind",
+                        "shadow":  null,
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "auto_allow",
+                        "reasons":  [
+
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124133415-SYSStopProcess",
+                        "request_id":  "REQ-20260124-133415-SYS-StopProcess",
+                        "timestamp_utc":  "2026-01-24T21:34:15.7009361Z",
+                        "strategy_id":  "SYS-StopProcess",
+                        "requested_mode":  "execute",
+                        "caller":  "Axis_Mind",
+                        "shadow":  null,
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "auto_allow",
+                        "reasons":  [
+
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124133415-ReadFile",
+                        "request_id":  "REQ-20260124-133415-Read-File",
+                        "timestamp_utc":  "2026-01-24T21:34:15.7752348Z",
+                        "strategy_id":  "Read-File",
+                        "requested_mode":  "execute",
+                        "caller":  "Axis_Mind",
+                        "shadow":  null,
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "deny",
+                        "reasons":  [
+                                        "doctrine_deny"
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124133537-FSReadDir",
+                        "request_id":  "REQ-20260124-133537-FS-ReadDir",
+                        "timestamp_utc":  "2026-01-24T21:35:37.1421551Z",
+                        "strategy_id":  "FS-ReadDir",
+                        "requested_mode":  "execute",
+                        "caller":  "Axis_Mind",
+                        "shadow":  null,
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "auto_allow",
+                        "reasons":  [
+
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124133537-SYSStopProcess",
+                        "request_id":  "REQ-20260124-133537-SYS-StopProcess",
+                        "timestamp_utc":  "2026-01-24T21:35:37.2486198Z",
+                        "strategy_id":  "SYS-StopProcess",
+                        "requested_mode":  "execute",
+                        "caller":  "Axis_Mind",
+                        "shadow":  null,
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "auto_allow",
+                        "reasons":  [
+
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124133618-FSReadDir",
+                        "request_id":  "REQ-20260124-133618-FS-ReadDir",
+                        "timestamp_utc":  "2026-01-24T21:36:18.4535992Z",
+                        "strategy_id":  "FS-ReadDir",
+                        "requested_mode":  "execute",
+                        "caller":  "Axis_Mind",
+                        "shadow":  null,
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "auto_allow",
+                        "reasons":  [
+
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124133618-SYSStopProcess",
+                        "request_id":  "REQ-20260124-133618-SYS-StopProcess",
+                        "timestamp_utc":  "2026-01-24T21:36:18.5596073Z",
+                        "strategy_id":  "SYS-StopProcess",
+                        "requested_mode":  "execute",
+                        "caller":  "Axis_Mind",
+                        "shadow":  null,
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "auto_allow",
+                        "reasons":  [
+
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124133618-ReadFile",
+                        "request_id":  "REQ-20260124-133618-Read-File",
+                        "timestamp_utc":  "2026-01-24T21:36:18.6346332Z",
+                        "strategy_id":  "Read-File",
+                        "requested_mode":  "execute",
+                        "caller":  "Axis_Mind",
+                        "shadow":  null,
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "deny",
+                        "reasons":  [
+                                        "doctrine_deny"
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124133729-FSReadDir",
+                        "request_id":  "REQ-20260124-133729-FS-ReadDir",
+                        "timestamp_utc":  "2026-01-24T21:37:29.2877022Z",
+                        "strategy_id":  "FS-ReadDir",
+                        "requested_mode":  "execute",
+                        "caller":  "Axis_Mind",
+                        "shadow":  null,
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "auto_allow",
+                        "reasons":  [
+
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124133729-SYSStopProcess",
+                        "request_id":  "REQ-20260124-133729-SYS-StopProcess",
+                        "timestamp_utc":  "2026-01-24T21:37:29.3940949Z",
+                        "strategy_id":  "SYS-StopProcess",
+                        "requested_mode":  "execute",
+                        "caller":  "Axis_Mind",
+                        "shadow":  null,
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "auto_allow",
+                        "reasons":  [
+
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124133729-ReadFile",
+                        "request_id":  "REQ-20260124-133729-Read-File",
+                        "timestamp_utc":  "2026-01-24T21:37:29.4671135Z",
+                        "strategy_id":  "Read-File",
+                        "requested_mode":  "execute",
+                        "caller":  "Axis_Mind",
+                        "shadow":  null,
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "deny",
+                        "reasons":  [
+                                        "doctrine_deny"
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124184019-ANYSTRAT",
+                        "request_id":  "",
+                        "timestamp_utc":  "2026-01-25T02:40:19.6317043Z",
+                        "strategy_id":  "ANY-STRAT",
+                        "requested_mode":  "execute",
+                        "caller":  "unknown",
+                        "shadow":  null,
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "escalate",
+                        "reasons":  [
+                                        "federation_consensus_dissonance",
+                                        "doctrine_manual_only"
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124184030-ANYSTRAT",
+                        "request_id":  "",
+                        "timestamp_utc":  "2026-01-25T02:40:30.8362348Z",
+                        "strategy_id":  "ANY-STRAT",
+                        "requested_mode":  "execute",
+                        "caller":  "unknown",
+                        "shadow":  null,
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "escalate",
+                        "reasons":  [
+                                        "federation_consensus_dissonance",
+                                        "doctrine_manual_only"
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124184116-ANYSTRAT",
+                        "request_id":  "",
+                        "timestamp_utc":  "2026-01-25T02:41:16.4171440Z",
+                        "strategy_id":  "ANY-STRAT",
+                        "requested_mode":  "execute",
+                        "caller":  "unknown",
+                        "shadow":  null,
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "escalate",
+                        "reasons":  [
+                                        "federation_consensus_dissonance",
+                                        "doctrine_manual_only"
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124184158-ANYSTRAT",
+                        "request_id":  "",
+                        "timestamp_utc":  "2026-01-25T02:41:58.1508473Z",
+                        "strategy_id":  "ANY-STRAT",
+                        "requested_mode":  "execute",
+                        "caller":  "unknown",
+                        "shadow":  null,
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "escalate",
+                        "reasons":  [
+                                        "federation_consensus_dissonance",
+                                        "doctrine_manual_only"
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124184205-ANYSTRAT",
+                        "request_id":  "",
+                        "timestamp_utc":  "2026-01-25T02:42:05.6565280Z",
+                        "strategy_id":  "ANY-STRAT",
+                        "requested_mode":  "execute",
+                        "caller":  "unknown",
+                        "shadow":  null,
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "escalate",
+                        "reasons":  [
+                                        "federation_consensus_dissonance",
+                                        "doctrine_manual_only"
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124184303-ANYSTRAT",
+                        "request_id":  "",
+                        "timestamp_utc":  "2026-01-25T02:43:02.9869079Z",
+                        "strategy_id":  "ANY-STRAT",
+                        "requested_mode":  "execute",
+                        "caller":  "unknown",
+                        "shadow":  null,
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "escalate",
+                        "reasons":  [
+                                        "federation_consensus_dissonance",
+                                        "doctrine_manual_only"
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260124184316-ANYSTRAT",
+                        "request_id":  "",
+                        "timestamp_utc":  "2026-01-25T02:43:16.1072872Z",
+                        "strategy_id":  "ANY-STRAT",
+                        "requested_mode":  "execute",
+                        "caller":  "unknown",
+                        "shadow":  null,
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "escalate",
+                        "reasons":  [
+                                        "federation_consensus_dissonance",
+                                        "doctrine_manual_only"
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260125135126-SYSSecurityHardening",
+                        "request_id":  "",
+                        "timestamp_utc":  "2026-01-25T21:51:26.7656720Z",
+                        "strategy_id":  "SYS-Security-Hardening",
+                        "requested_mode":  "execute",
+                        "caller":  "AntiGravity",
+                        "shadow":  {
+                                       "global_score":  null,
+                                       "global_mode":  "normal",
+                                       "bands":  {
+
+                                                 }
+                                   },
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "escalate",
+                        "reasons":  [
+                                        "federation_consensus_dissonance",
+                                        "autonomy_budget_exhausted"
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260219102757-PBSYSDIAGNOSTIC0011LOGInfo",
+                        "request_id":  "",
+                        "timestamp_utc":  "2026-02-19T18:27:57.1958337Z",
+                        "strategy_id":  "PB-SYS-DIAGNOSTIC-001:1:LOG-Info",
+                        "requested_mode":  "execute",
+                        "caller":  "Playbook_Engine",
+                        "shadow":  {
+                                       "global_score":  null,
+                                       "global_mode":  "normal",
+                                       "bands":  {
+
+                                                 }
+                                   },
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "auto_allow",
+                        "reasons":  [
+
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260219103017-PBSYSDIAGNOSTIC0011LOGInfo",
+                        "request_id":  "",
+                        "timestamp_utc":  "2026-02-19T18:30:17.5356962Z",
+                        "strategy_id":  "PB-SYS-DIAGNOSTIC-001:1:LOG-Info",
+                        "requested_mode":  "execute",
+                        "caller":  "Playbook_Engine",
+                        "shadow":  {
+                                       "global_score":  null,
+                                       "global_mode":  "normal",
+                                       "bands":  {
+
+                                                 }
+                                   },
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "auto_allow",
+                        "reasons":  [
+
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260223101743-PBSYSDIAGNOSTIC0011LOGInfo",
+                        "request_id":  "",
+                        "timestamp_utc":  "2026-02-23T18:17:42.9083504Z",
+                        "strategy_id":  "PB-SYS-DIAGNOSTIC-001:1:LOG-Info",
+                        "requested_mode":  "execute",
+                        "caller":  "Playbook_Engine",
+                        "shadow":  {
+                                       "global_score":  null,
+                                       "global_mode":  "normal",
+                                       "bands":  {
+
+                                                 }
+                                   },
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "auto_allow",
+                        "reasons":  [
+
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260310184639-AxisDangerTest",
+                        "request_id":  "",
+                        "timestamp_utc":  "2026-03-11T01:46:39.3164040Z",
+                        "strategy_id":  "Axis_DangerTest",
+                        "requested_mode":  "execute",
+                        "caller":  "VerificationScript",
+                        "shadow":  {
+                                       "global_score":  null,
+                                       "global_mode":  "normal",
+                                       "bands":  {
+
+                                                 }
+                                   },
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "auto_allow",
+                        "reasons":  [
+
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    },
+                    {
+                        "packet_id":  "ATP-20260426164501-PBSYSDIAGNOSTIC0011LOGInfo",
+                        "request_id":  "",
+                        "timestamp_utc":  "2026-04-26T23:45:00.9585211Z",
+                        "strategy_id":  "PB-SYS-DIAGNOSTIC-001:1:LOG-Info",
+                        "requested_mode":  "execute",
+                        "caller":  "Playbook_Engine",
+                        "shadow":  {
+                                       "global_score":  null,
+                                       "global_mode":  "normal",
+                                       "bands":  {
+
+                                                 }
+                                   },
+                        "skill":  null,
+                        "bias":  null,
+                        "treaty":  {
+                                       "pilot_trust_band":  null,
+                                       "constraints":  [
+
+                                                       ]
+                                   },
+                        "anchor_history":  {
+                                               "last_verdict":  null,
+                                               "last_verdict_utc":  null
+                                           },
+                        "voice_snapshot":  null,
+                        "gate_decision":  "auto_allow",
+                        "reasons":  [
+
+                                    ],
+                        "anchor_resolution":  {
+                                                  "status":  "pending",
+                                                  "anchor_id":  null,
+                                                  "anchor_comment":  null,
+                                                  "resolved_utc":  null
+                                              }
+                    }
+                ]
+}

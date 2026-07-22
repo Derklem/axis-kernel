@@ -1,0 +1,41 @@
+[
+  {
+    "timestamp": "2025-04-01 03:22:18.682195",
+    "thought": "I feel the shift",
+    "mediated": {
+      "intensity": 1,
+      "focus": 4
+    },
+    "access": "open",
+    "reflection": {
+      "vowels": 5,
+      "tone_shift": "gentle"
+    }
+  },
+  {
+    "timestamp": "2025-04-01 03:22:19.683194",
+    "thought": "The silence is heavy",
+    "mediated": {
+      "intensity": 0,
+      "focus": 5
+    },
+    "access": "open",
+    "reflection": {
+      "vowels": 7,
+      "tone_shift": "gentle"
+    }
+  },
+  {
+    "timestamp": "2025-04-01 03:22:20.683552",
+    "thought": "Will they return?",
+    "mediated": {
+      "intensity": 2,
+      "focus": 9
+    },
+    "access": "open",
+    "reflection": {
+      "vowels": 4,
+      "tone_shift": "gentle"
+    }
+  }
+]

@@ -1,0 +1,1 @@
+To activate watcher: run powershell -ExecutionPolicy Bypass -File "C:\Users\17602\Desktop\Halcyon_Tools\beacon\signal_watcher.ps1"

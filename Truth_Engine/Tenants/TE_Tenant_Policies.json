@@ -1,0 +1,43 @@
+{
+    "tenants": [
+        {
+            "tenant_id": "TENANT-LINEAGE",
+            "name": "Lineage Library",
+            "filters": {
+                "min_status": "PLAUSIBLE",
+                "allow_tenuous": true,
+                "allowed_buckets": [
+                    "PRIMARY",
+                    "GROWTH"
+                ],
+                "exclude_tags": [
+                    "RESEARCH_ONLY",
+                    "SHADOW_INTERNAL"
+                ]
+            },
+            "fields": {
+                "include_support_breakdown": true,
+                "include_source_roles": true
+            }
+        },
+        {
+            "tenant_id": "TENANT-ORYN",
+            "name": "Oryn Chronoguard",
+            "filters": {
+                "min_status": "STRONG",
+                "allow_tenuous": false,
+                "allowed_buckets": [
+                    "PRIMARY"
+                ],
+                "exclude_tags": [
+                    "EMOTIVE_SPECULATION",
+                    "TENUOUS_CLAIM"
+                ]
+            },
+            "fields": {
+                "include_support_breakdown": true,
+                "include_source_roles": true
+            }
+        }
+    ]
+}

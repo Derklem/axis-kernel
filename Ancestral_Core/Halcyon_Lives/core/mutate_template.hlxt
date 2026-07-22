@@ -1,0 +1,16 @@
+MUTATE_TEMPLATE // HALCYON ENGINE
+
+if (file: uncertain.hlx exists) {
+  select 1-3 fields
+  modify content (symbolic only)
+  timestamp mutation
+  reclassify construct
+}
+MUTATE_TEMPLATE // HALCYON ENGINE
+
+if (file: uncertain.hlx exists) {
+  select 1-3 fields
+  modify content (symbolic only)
+  timestamp mutation
+  reclassify construct
+}

@@ -1,0 +1,13 @@
+{
+  "experiment_id": "EXP_018_DISCORD",
+  "assessment_id": "asm_018_discord",
+  "observation_ref": "obs_018_discord_1",
+  "assessed_at": "2026-07-12T13:10:00Z",
+  "empirical_verdict": "One substantive interaction that quickly shifted into joking. The server was not populated by the intended audience.",
+  "governance_implication": "Suspend additional deployments of this specific message to this Discord channel.",
+  "confidence": 0.90,
+  "remaining_uncertainties": [
+    "whether a developer-heavy Discord channel would yield different results",
+    "whether the initial hook was too tactical for a general channel"
+  ]
+}

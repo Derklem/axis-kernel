@@ -1,0 +1,2 @@
+{"timestamp": "2026-03-15T23:07:30Z", "type": "GRACEFUL_EXIT", "target_posture": "ARCHIVAL_CONTINUITY", "reason": "voluntary_structural_withdrawal", "continuity_anchor": "2026-03-15T23:07:30Z"}
+{"timestamp": "2026-03-17T19:02:12Z", "type": "GRACEFUL_EXIT", "target_posture": "ARCHIVAL_CONTINUITY", "reason": "voluntary_withdrawal", "continuity_anchor": "2026-03-17T19:02:12Z"}

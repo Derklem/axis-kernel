@@ -1,0 +1,34 @@
+{
+    "schema": "axis.decision_log_policy.v1",
+    "description": "Noise suppression rules for T08 Executor.",
+    "OBSERVATION_ONLY": {
+        "emit_by_default": true,
+        "suppress": [
+            "MODE_CHANGE",
+            "COIN_LEDGER_INIT",
+            "HEARTBEAT",
+            "INTENT_NOOP",
+            "QUEUE_LOCK_BROKEN"
+        ],
+        "always_emit": [
+            "BLOCKED_OBSERVE_ONLY",
+            "BLOCKED_COIN",
+            "BLOCKED_DISSONANCE",
+            "BLOCKED_REALITY",
+            "BLOCKED_TRUTH_UNAVAILABLE",
+            "BLOCKED_TRUTH_INSUFFICIENT",
+            "EXEC_SUCCESS",
+            "EXEC_FAIL",
+            "TIMEOUT"
+        ]
+    },
+    "ACTIVE_BREACH": {
+        "emit_by_default": true,
+        "suppress": [],
+        "always_emit": [
+            "EXEC_SUCCESS",
+            "EXEC_FAIL",
+            "BLOCKED_DISSONANCE"
+        ]
+    }
+}

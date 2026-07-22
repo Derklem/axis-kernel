@@ -1,0 +1,14 @@
+﻿{
+    "echo_remnant.txt":  {
+                             "path":  "E:\\Arcane Library\\guardian_echoes\\echo_remnant.txt",
+                             "last_verified":  "2025-04-28T23:18:22Z"
+                         },
+    "echo_integrity.txt":  {
+                               "path":  "E:\\Arcane Library\\guardian_echoes\\echo_integrity.txt",
+                               "last_verified":  "2025-04-28T23:18:22Z"
+                           },
+    "echo_survivors.txt":  {
+                               "path":  "E:\\Arcane Library\\guardian_echoes\\echo_survivors.txt",
+                               "last_verified":  "2025-04-28T23:18:22Z"
+                           }
+}

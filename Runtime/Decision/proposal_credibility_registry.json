@@ -1,0 +1,34 @@
+{
+  "parameter_families": {
+    "semantic_freshness_limit": {
+      "promotion_status": "OBSERVATION",
+      "simulation_count": 0,
+      "prediction_accuracy": 1.0,
+      "attribution_confidence": 1.0,
+      "uncertainty_profile": {
+        "source_confidence": 1.0,
+        "simulation_confidence": 1.0,
+        "prediction_accuracy": 1.0,
+        "attribution_confidence": 1.0,
+        "interaction_confidence": 1.0,
+        "freshness_confidence": 1.0
+      }
+    },
+    "retry_interval": {
+      "promotion_status": "OBSERVATION",
+      "simulation_count": 0,
+      "prediction_accuracy": 1.0,
+      "attribution_confidence": 1.0,
+      "uncertainty_profile": {
+        "source_confidence": 0.9,
+        "simulation_confidence": 1.0,
+        "prediction_accuracy": 1.0,
+        "attribution_confidence": 1.0,
+        "interaction_confidence": 1.0,
+        "freshness_confidence": 0.3
+      },
+      "aggregate_confidence": 0.47,
+      "last_updated": "2026-03-13T19:50:22.902901"
+    }
+  }
+}

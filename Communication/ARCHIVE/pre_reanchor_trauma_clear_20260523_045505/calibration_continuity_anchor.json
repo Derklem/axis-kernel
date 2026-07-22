@@ -1,0 +1,10 @@
+{
+    "last_hash": "5c476918fe29c1ac2c5906bb30d2d26323fa80261045aece462d40d5b379e719",
+    "last_cycle": 514,
+    "witness_chain_head": "a9bc4d1d2a0dffe9df6041d62eca17d3b47034da4c84a803a62df9df5eaeb79e",
+    "volatility_peak": 0.0,
+    "volatility_caution": false,
+    "status": "continuity_violation",
+    "continuity_status": "broken",
+    "ts": 1779511782.8129158
+}

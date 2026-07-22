@@ -1,0 +1,315 @@
+{
+  "mission_shadow_v2": {
+    "cycle_count": 48,
+    "ecosystem_receipts_head": "588e79acc1afb3ee2ff54f0fcfd12f12a2a50e6fe2bbdc476c4a76447357f407",
+    "witness_chain_head": "e4edab348201a434fc7c86469a9b37ba3ad7c5b45321e5f89ccbcbf2da3c96aa",
+    "continuity_reanchor_request": {
+      "status": "rejected",
+      "operator": "HALCYON_ROOT",
+      "scope": "temporal_continuity",
+      "mode": "forensic_repair",
+      "acknowledge_lineage_break": true,
+      "nonce": "REANCHOR_POST_IMP_PATCH_001",
+      "reason": "authorized_imp_sensory_bridge_patch",
+      "requested_cycle": 552,
+      "expires_cycle": 9999,
+      "witness_repair_head": "none",
+      "rejected_reason": "request_future_cycle"
+    },
+    "calibration_ledger_integrity": {
+      "hash": "44953fefbbaa88f7d9cd8298f5880546b9bfa891a699145f2a40983a6642f68a",
+      "status": "valid",
+      "continuity_status": "intact",
+      "break_reason": "sequence_monotonic_failure",
+      "last_verified_cycle": 48,
+      "previous_hash": "d04333ef9c1f83a8d2c9f462f434e60f7d6f7d8e46798a5dbea837fd5679b387",
+      "volatility_peak": 0.0,
+      "volatility_caution": false
+    },
+    "discovered_affordances": {},
+    "ontological_integrity": 1.0,
+    "predictive_turbulence": {
+      "score": 0.022,
+      "caution_active": false,
+      "last_updated_ts": 1784678932.0,
+      "threshold": 0.7,
+      "drift": 0.056
+    },
+    "bias_calibration_gate": {
+      "status": "closed",
+      "avg_bias_drift": 0.0,
+      "bias_persistence_cycles": 0,
+      "coverage_count": 0,
+      "eligible": false
+    },
+    "cluster_calibration_offsets": {},
+    "calibration_events": [],
+    "calibration_audit_buffer": [],
+    "calibration_audit_events": [
+      {
+        "ts": 1784674675.5342727,
+        "cycle": 500,
+        "result": "reanchor_rejected",
+        "reason": "request_future_cycle",
+        "operator": "HALCYON_ROOT"
+      },
+      {
+        "ts": 1784676628.879086,
+        "cycle": 0,
+        "result": "reanchor_rejected",
+        "reason": "request_future_cycle",
+        "operator": "HALCYON_ROOT"
+      },
+      {
+        "ts": 1784677031.8612525,
+        "cycle": 0,
+        "result": "reanchor_rejected",
+        "reason": "request_future_cycle",
+        "operator": "HALCYON_ROOT"
+      }
+    ],
+    "cluster_calibration_health": {},
+    "horizon_tension_score": 0.0,
+    "avg_bias_drift": 0.0,
+    "last_calibration_ts": 1784678932.4656377,
+    "tension_history": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "avg_tension": 0.0,
+    "semantic_proposal_history": [],
+    "semantic_edge_state_cache": {},
+    "semantic_epistemic_state": {
+      "total_pressure": 0.0,
+      "total_synergy": 0.0,
+      "synergy_index": 0.0,
+      "synergy_edges": [
+        {
+          "edge_id": "SYN-B34FDE",
+          "artifacts": [
+            "relevance_mapper.py",
+            "relevance_memory_processor.py"
+          ],
+          "synergy_score": 0.2,
+          "evidence_class": "heuristic_candidate",
+          "basis": [
+            "shared_tags_distinct_roles: ['RELEVANCE']"
+          ],
+          "revalidation_meta": {},
+          "ts": 1778615157.8604138
+        },
+        {
+          "edge_id": "SYN-3C516E",
+          "artifacts": [
+            "multi_objective_solver.py",
+            "strategy_engine.py"
+          ],
+          "synergy_score": 0.6,
+          "evidence_class": "heuristic_candidate",
+          "basis": [
+            "counterfactual_counterfactual_verified",
+            "forgiveness_blocked_unproven_utility",
+            "hash_drift_detected: multi_objective_solver.py",
+            "stale_credit_decay (Priority: 0.0)",
+            "structural_complement"
+          ],
+          "revalidation_meta": {
+            "last_verified_ts": 1777253892.0183375,
+            "verified_hashes": {
+              "multi_objective_solver.py": "43fd61304ced8bf4cc5536b10466073111895f2a398b519ba5921507b7be2355",
+              "strategy_engine.py": "693c9bd3698faaba2f77801c43bc12fef3827959be7865ebf5bd7a97638c7732"
+            },
+            "revalidation_priority": 0.0,
+            "revalidation_failures": 0,
+            "consecutive_successes": 4,
+            "recovery_attempts": 0,
+            "probation_failures": 0,
+            "effective_failures": 0.0,
+            "required_successes": 2,
+            "stability_duration": 1361265
+          },
+          "ts": 1778615157.9239726
+        },
+        {
+          "edge_id": "SYN-41D381",
+          "artifacts": [
+            "multi_objective_solver.py",
+            "turbulence_forecaster.py"
+          ],
+          "synergy_score": 0.6,
+          "evidence_class": "heuristic_candidate",
+          "basis": [
+            "structural_complement"
+          ],
+          "revalidation_meta": {},
+          "ts": 1778615157.9239726
+        }
+      ],
+      "revalidation_queue": [],
+      "net_epistemic_balance": 0.0,
+      "max_age_cycles": 0,
+      "backlog_count": 0,
+      "decay_count": 0,
+      "registry_ts": 1778615157.8063512
+    },
+    "high_debt_functions": [
+      {
+        "id": "strategy_engine.py::_handle_trust_policy_change_request",
+        "file": "strategy_engine.py",
+        "function": "_handle_trust_policy_change_request",
+        "lines": 196,
+        "debt_type": "oversized"
+      },
+      {
+        "id": "strategy_engine.py::_process_review_queue",
+        "file": "strategy_engine.py",
+        "function": "_process_review_queue",
+        "lines": 141,
+        "debt_type": "oversized"
+      },
+      {
+        "id": "strategy_engine.py::_handle_reanchor_request",
+        "file": "strategy_engine.py",
+        "function": "_handle_reanchor_request",
+        "lines": 194,
+        "debt_type": "oversized"
+      },
+      {
+        "id": "strategy_engine.py::_handle_export_request",
+        "file": "strategy_engine.py",
+        "function": "_handle_export_request",
+        "lines": 131,
+        "debt_type": "oversized"
+      },
+      {
+        "id": "strategy_engine.py::_handle_reseal_request",
+        "file": "strategy_engine.py",
+        "function": "_handle_reseal_request",
+        "lines": 130,
+        "debt_type": "oversized"
+      },
+      {
+        "id": "strategy_engine.py::_emit_ecosystem_observation",
+        "file": "strategy_engine.py",
+        "function": "_emit_ecosystem_observation",
+        "lines": 148,
+        "debt_type": "oversized"
+      },
+      {
+        "id": "strategy_engine.py::_audit_candidate_survival",
+        "file": "strategy_engine.py",
+        "function": "_audit_candidate_survival",
+        "lines": 234,
+        "debt_type": "oversized"
+      },
+      {
+        "id": "strategy_engine.py::ingest_claim_candidate",
+        "file": "strategy_engine.py",
+        "function": "ingest_claim_candidate",
+        "lines": 186,
+        "debt_type": "oversized"
+      },
+      {
+        "id": "strategy_engine.py::observe",
+        "file": "strategy_engine.py",
+        "function": "observe",
+        "lines": 400,
+        "debt_type": "oversized"
+      },
+      {
+        "id": "strategy_engine.py::_audit_epistemic_probation",
+        "file": "strategy_engine.py",
+        "function": "_audit_epistemic_probation",
+        "lines": 154,
+        "debt_type": "oversized"
+      },
+      {
+        "id": "strategy_engine.py::simulate_candidates",
+        "file": "strategy_engine.py",
+        "function": "simulate_candidates",
+        "lines": 178,
+        "debt_type": "oversized"
+      },
+      {
+        "id": "strategy_engine.py::run_once",
+        "file": "strategy_engine.py",
+        "function": "run_once",
+        "lines": 564,
+        "debt_type": "oversized"
+      },
+      {
+        "id": "strategy_engine.py::_actuate_structural_revision",
+        "file": "strategy_engine.py",
+        "function": "_actuate_structural_revision",
+        "lines": 171,
+        "debt_type": "oversized"
+      },
+      {
+        "id": "strategy_engine.py::_audit_semantic_proposals",
+        "file": "strategy_engine.py",
+        "function": "_audit_semantic_proposals",
+        "lines": 440,
+        "debt_type": "oversized"
+      },
+      {
+        "id": "strategy_engine.py::_infer_redundancy_groups",
+        "file": "strategy_engine.py",
+        "function": "_infer_redundancy_groups",
+        "lines": 343,
+        "debt_type": "oversized"
+      },
+      {
+        "id": "strategy_engine.py::get_drift_bit",
+        "file": "strategy_engine.py",
+        "function": "get_drift_bit",
+        "lines": 137,
+        "debt_type": "oversized"
+      },
+      {
+        "id": "strategy_engine.py::_apply_safe_refactor",
+        "file": "strategy_engine.py",
+        "function": "_apply_safe_refactor",
+        "lines": 246,
+        "debt_type": "oversized"
+      },
+      {
+        "id": "strategy_engine.py::_dry_run_extraction",
+        "file": "strategy_engine.py",
+        "function": "_dry_run_extraction",
+        "lines": 248,
+        "debt_type": "oversized"
+      },
+      {
+        "id": "ecosystem_mapping_engine.py::apply_receipt_to_model",
+        "file": "ecosystem_mapping_engine.py",
+        "function": "apply_receipt_to_model",
+        "lines": 267,
+        "debt_type": "oversized"
+      },
+      {
+        "id": "multi_objective_solver.py::evaluate_proposal",
+        "file": "multi_objective_solver.py",
+        "function": "evaluate_proposal",
+        "lines": 737,
+        "debt_type": "oversized"
+      },
+      {
+        "id": "strategy_engine.py::agenda_to_legacy_arbitration",
+        "file": "strategy_engine.py",
+        "function": "agenda_to_legacy_arbitration",
+        "lines": 385,
+        "debt_type": "oversized"
+      }
+    ],
+    "baseline_model_hash": "1d3c6fb2338a1c7e19f6c8a2d4145e7d30f3e70580fb5d1f913147a15b1bc39d"
+  },
+  "execution_planner_mode": "PLANNER_LIVE"
+}

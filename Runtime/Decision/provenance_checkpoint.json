@@ -1,0 +1,8 @@
+﻿{
+    "ts_utc":  "2026-02-06T02:41:41.9573547Z",
+    "log_file":  "provenance_events.jsonl",
+    "line_count":  1,
+    "file_hash_sha256":  "81cc47ad2051daa75365e95d54029f8d058575174b2faa63cf1d71e3e91c4693",
+    "tail_hash_16":  "d10b36aa74a59bcf",
+    "schema_version":  "axis.provenance.checkpoint.v0.1"
+}

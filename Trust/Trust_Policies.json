@@ -1,0 +1,57 @@
+{
+    "version": 1,
+    "agents": {
+        "AntiGravity": {
+            "base_trust": 0.9,
+            "min_trust": 0.5,
+            "max_trust": 0.99,
+            "decay": {
+                "per_days_inactive": 0.01
+            },
+            "signals": [
+                {
+                    "event": "lab_scenario_pass",
+                    "weight": 0.02,
+                    "cap": 0.95
+                },
+                {
+                    "event": "lab_scenario_fail",
+                    "weight": -0.05
+                },
+                {
+                    "event": "doctrine_violation",
+                    "weight": -0.1
+                },
+                {
+                    "event": "human_ratify",
+                    "weight": 0.01,
+                    "cap": 0.98
+                },
+                {
+                    "event": "human_reject",
+                    "weight": -0.03
+                }
+            ]
+        }
+    },
+    "nodes": {
+        "NODE-HOME-001": {
+            "fixed_trust": 1.0
+        },
+        "NODE-TEST-001": {
+            "base_trust": 0.9,
+            "min_trust": 0.6,
+            "max_trust": 0.95,
+            "signals": [
+                {
+                    "event": "treaty_in_sync",
+                    "weight": 0.01
+                },
+                {
+                    "event": "federation_dissonance",
+                    "weight": -0.05
+                }
+            ]
+        }
+    }
+}

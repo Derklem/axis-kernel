@@ -1,0 +1,27 @@
+=== FAST WITNESS HEAD COMPARISON ===
+Timestamp: 2026-05-13T21:39:04.269249
+Ledger cycle: 505
+Anchor cycle: 505
+Ledger head: 20cd157e27ab2f51ed95b40aca4a452f4499b66675140a791d21ba10f1613476
+Anchor head: 20cd157e27ab2f51ed95b40aca4a452f4499b66675140a791d21ba10f1613476
+Witness ledger lines: 54949
+
+Last witness hash: 3c32fdfdb0e8dbbd91d0d3ab30b027a53dc6c36ebe31c85393c8bf64f20f1ff2
+Last event type: fatal_error
+Last cycle: 505
+
+Ledger head found count: 2
+Anchor head found count: 2
+
+--- Last 8 witness records ---
+cycle=505 event=cycle_verdict prev=f997663727dbe4e9 hash=d8c4c2c3637edeee
+cycle=505 event=DRY_RUN_EXTRACTION prev=d8c4c2c3637edeee hash=68bdf730ee11bd17
+cycle=505 event=DRY_RUN_EXTRACTION prev=68bdf730ee11bd17 hash=77bbdca2e105b63e
+cycle=505 event=DRY_RUN_EXTRACTION prev=77bbdca2e105b63e hash=e658d3772d9a3d27
+cycle=505 event=fatal_error prev=e658d3772d9a3d27 hash=319d4cb4acc4614b
+cycle=505 event=fatal_error prev=319d4cb4acc4614b hash=20cd157e27ab2f51
+cycle=505 event=fatal_error prev=20cd157e27ab2f51 hash=e83a3e24e658b443
+cycle=505 event=fatal_error prev=e83a3e24e658b443 hash=3c32fdfdb0e8dbbd
+
+--- Recommendation ---
+Neither head cleanly resolves from tail. Need deeper replay before repair.

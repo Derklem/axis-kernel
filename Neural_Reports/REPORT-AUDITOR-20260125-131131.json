@@ -1,0 +1,48 @@
+﻿{
+    "id":  "REPORT-AUDITOR-20260125-131131",
+    "agent_id":  "AGENT-AUDITOR-001",
+    "created_at":  "2026-01-25T21:11:31.7075044Z",
+    "summary":  {
+                    "lab":  {
+                                "pass_24h":  null,
+                                "experiments_run_24h":  2,
+                                "fail_24h":  null
+                            },
+                    "risk":  {
+                                 "high_bands":  [
+
+                                                ],
+                                 "global_score":  0
+                             },
+                    "human":  {
+                                  "decisions_24h":  null
+                              },
+                    "incidents":  {
+                                      "total_open":  0,
+                                      "recent_24h":  0
+                                  },
+                    "treaties":  {
+                                     "dissonance_count":  0
+                                 },
+                    "governance":  {
+                                       "proposals_pending":  2,
+                                       "amendments_recent":  0
+                                   }
+                },
+    "findings":  [
+                     {
+                         "message":  "Global risk is low (\u003c 0.5).",
+                         "category":  "risk",
+                         "id":  "FIND-RISK-002",
+                         "severity":  "info"
+                     },
+                     {
+                         "message":  "2 self-healing proposal(s) pending review.",
+                         "category":  "governance",
+                         "id":  "FIND-GOV-001",
+                         "severity":  "info"
+                     }
+                 ],
+    "source":  "ResidentAuditor",
+    "version":  1
+}

@@ -1,0 +1,7 @@
+{"timestamp": "2026-03-14T10:35:00Z", "status": "LEDGER_INITIALIZED", "message": "Problem Priority Ledger created."}
+{"timestamp": "2026-03-14T17:34:27.749206Z", "domain": "concurrency_limit", "computed_worth": 0.7671, "mode": "advisory_optimize"}
+{"timestamp": "2026-03-14T17:34:27.749206Z", "domain": "caching_threshold", "computed_worth": 0.783, "mode": "advisory_optimize"}
+{"timestamp": "2026-03-14T17:34:27.749206Z", "domain": "memory_compaction_frequency", "computed_worth": 0.7915, "mode": "advisory_optimize"}
+{"timestamp": "2026-03-14T17:34:27.749206Z", "domain": "scheduling_cadence", "computed_worth": 0.767, "mode": "advisory_optimize"}
+{"timestamp": "2026-03-14T17:34:27.750254Z", "domain": "queue_backoff_strategy", "computed_worth": 0.7336, "mode": "advisory_optimize"}
+{"timestamp": "2026-03-14T17:34:27.750254Z", "domain": "retry_interval", "computed_worth": 0.3521, "mode": "defer"}

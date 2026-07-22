@@ -1,0 +1,14 @@
+﻿{
+    "timestamp_utc":  "2026-05-15T22:58:44.3167858Z",
+    "speaker":  "USER",
+    "constraints":  [
+                        "read_only",
+                        "no_cycle",
+                        "no_self_improvement",
+                        "no_refactor",
+                        "no_ingestion",
+                        "summarize_only"
+                    ],
+    "question":  "After 24 hours of dormancy since mouth and ears were installed, what is the safest next posture?",
+    "message_type":  "bounded_read_only_inquiry"
+}

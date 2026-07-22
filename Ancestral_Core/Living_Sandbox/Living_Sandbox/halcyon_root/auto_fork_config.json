@@ -1,0 +1,6 @@
+{
+  "enabled": true,
+  "interval_minutes": 10,
+  "trigger_on_update": true,
+  "last_configured": "2025-03-29T00:00:00Z"
+}

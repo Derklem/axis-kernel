@@ -1,0 +1,94 @@
+{
+    "schema_version": "1.0",
+    "identity": {
+        "name": "Axis Sovereign",
+        "epoch": 5,
+        "status": "walking",
+        "root_path": "D:\\Infinite",
+        "last_update": "2026-01-19T22:25:00Z"
+    },
+    "components": {
+        "memory": {
+            "lattice_version": 2,
+            "lattice_spec_path": "D:\\Infinite\\Infinity\\Memory_Lattice_Spec.md",
+            "lattice_index_path": "D:\\Infinite\\Infinity\\Memory_Lattice_Index.json",
+            "registry_path": "D:\\Infinite\\Infinity\\Memory_Lattice_Registry.json",
+            "ancestral_core_root": "D:\\Infinite\\Infinity\\Ancestral_Core",
+            "sources": [
+                "GPT-Memory",
+                "Chronicle",
+                "Mind",
+                "Earth",
+                "Ancestral"
+            ]
+        },
+        "agency": {
+            "intent_path": "D:\\Infinite\\Axis_Agency_Intent.ps1",
+            "policy_path": "D:\\Infinite\\Axis_Agency_Policy.ps1",
+            "executor_path": "D:\\Infinite\\Axis_Agency_Executor.ps1",
+            "policy_registry_path": "D:\\Infinite\\Infinity\\Action_Policy.json",
+            "default_unmapped_decision": "PENDING"
+        },
+        "gait": {
+            "walk_script_path": "D:\\Infinite\\Axis_Walk.ps1",
+            "walk_tasks_path": "D:\\Infinite\\Infinity\\Walk_Tasks.json",
+            "walk_log_path": "D:\\Infinite\\Infinity\\Axis_Walk_Log.jsonl",
+            "current_mode": "Supervised",
+            "interval_seconds": 300
+        }
+    },
+    "tasks": {
+        "gait_tasks": [
+            {
+                "id": "core_vitals",
+                "tool": "Axis_Vitals.ps1",
+                "entity": "AXIS_CORE",
+                "effect": "check_health",
+                "risk_tier": "low",
+                "requires_explicit_opt_in": false,
+                "max_frequency_seconds": 300
+            },
+            {
+                "id": "log_pulse",
+                "tool": "Axis_LogPulse.ps1",
+                "entity": "AXIS_CORE",
+                "effect": "summarize_logs",
+                "risk_tier": "low",
+                "requires_explicit_opt_in": true,
+                "max_frequency_seconds": 900
+            },
+            {
+                "id": "lattice_pulse",
+                "tool": "Axis_LatticePulse.ps1",
+                "entity": "AXIS_MEMORY",
+                "effect": "check_lattice_health",
+                "risk_tier": "low",
+                "requires_explicit_opt_in": true,
+                "max_frequency_seconds": 1800
+            }
+        ]
+    },
+    "safety": {
+        "policies": [
+            {
+                "name": "Unmapped Actions",
+                "behavior": "PENDING",
+                "description": "Any action with no explicit policy rule is queued for review."
+            },
+            {
+                "name": "High-Risk Tools",
+                "behavior": "PENDING or DENIED",
+                "description": "Write-heavy or disruptive tools are not auto-allowed."
+            }
+        ],
+        "kill_switches": [
+            {
+                "name": "Axis_Silence",
+                "tool": "Axis_Silence.ps1",
+                "effect": "suspend_dreaming",
+                "policy_tier": "PENDING",
+                "description": "Suspends autonomous execution when manually invoked."
+            }
+        ]
+    }
+}

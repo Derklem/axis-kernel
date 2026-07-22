@@ -1,0 +1,13 @@
+{
+  "experiment_id": "EXP_015_REAL",
+  "assessment_id": "asm_015_real",
+  "observation_ref": "obs_e95bb31b",
+  "assessed_at": "2026-07-12T13:10:00Z",
+  "empirical_verdict": "Within this experiment, the only meaningful engagement (signups/follows) originated from an AI-focused platform (Moltbook) rather than general-purpose social platforms.",
+  "governance_implication": "The message resonates most strongly in environments where autonomous agents, AI tooling, or AI developers already congregate. Test this hypothesis in other AI-native environments.",
+  "confidence": 0.80,
+  "remaining_uncertainties": [
+    "whether the engagement was driven by the specific AI personas present",
+    "whether Moltbook users represent viable long-term collaborators vs curious spectators"
+  ]
+}

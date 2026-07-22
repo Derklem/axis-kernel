@@ -1,0 +1,11 @@
+{
+    "status":  "active",
+    "composite_resonance":  0.91,
+    "id":  "TEST-TENSION-20260125211512",
+    "lattice_resonance":  {
+                              "Archivist":  0.8,
+                              "Inventor":  0.92,
+                              "Strategos":  0.95,
+                              "Custodian":  0.75
+                          }
+}

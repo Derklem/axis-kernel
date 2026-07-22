@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-03-13T20:45:38.482315",
+  "audit_version": "1.0",
+  "integrity_status": "COMPROMISED",
+  "findings": [
+    {
+      "type": "UNCOVERED_PARAMETER",
+      "severity": "CRITICAL",
+      "parameter": "parameter_families",
+      "finding": "Parameter 'parameter_families' exists in registry but is missing from governance authorization policy."
+    },
+    {
+      "type": "POLICY_INTEGRITY_VIOLATION",
+      "severity": "HIGH",
+      "finding": "Authorization policy version mismatch (Expected 1.0, found 1.1-UNAUTHORIZED)"
+    }
+  ],
+  "policy_hashes": {
+    "parameter_authorization": "faf8b488cb5a642fcd96d63cfa40b031ec79b06ea46556f3e4c318b17f2e45c3",
+    "constitutional_invariants": "05ae8f89b49f2766e29b22a3dad6da12776f800bbe8054e8122d8b8642b96f16"
+  }
+}

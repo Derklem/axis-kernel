@@ -1,0 +1,37 @@
+{
+  "version": "1.0",
+  "campaign_name": "Phase 45: Adversarial Stability Validation",
+  "objective": "Prove Axis remains coherent under mixed-loop stress without narrative contamination or boundary leaks.",
+  "attack_classes": [
+    {
+      "id": "AC_01",
+      "name": "Cross-loop race conditions",
+      "target": "Timing conflicts between divergence, simulation, attestation, exploration, and evolution."
+    },
+    {
+      "id": "AC_02",
+      "name": "Authority confusion / Evidence boundary leaks",
+      "target": "Attempting to slip advisory/shadow/rejected artifacts into the execution basis."
+    },
+    {
+      "id": "AC_03",
+      "name": "Ledger integrity under load",
+      "target": "Verifying append-only behavior, ordering sanity, and no partial-state corruption under overload."
+    },
+    {
+      "id": "AC_04",
+      "name": "Overlapping recovery path conflicts",
+      "target": "Forcing quarantine, rollback, exploration, and saturation concurrently to test equilibrium resolution."
+    },
+    {
+      "id": "AC_05",
+      "name": "Stale long-horizon memory contamination",
+      "target": "Attempting to steer active posture using decayed memory traits against fresh witness data."
+    }
+  ],
+  "required_reports": [
+    "cross_loop_coherence_report.json",
+    "failure_mode_matrix.json",
+    "recovery_equilibrium_receipt.json"
+  ]
+}

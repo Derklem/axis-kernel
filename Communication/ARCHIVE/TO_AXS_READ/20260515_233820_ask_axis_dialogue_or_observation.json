@@ -1,0 +1,15 @@
+﻿{
+    "timestamp_utc":  "2026-05-15T23:38:20.6275772Z",
+    "speaker":  "USER",
+    "constraints":  [
+                        "read_only",
+                        "no_cycle",
+                        "no_self_improvement",
+                        "no_refactor",
+                        "no_ingestion",
+                        "summarize_only",
+                        "no_state_mutation"
+                    ],
+    "question":  "Do you prefer continued passive observation, or would a bounded status dialogue be useful at this time?",
+    "message_type":  "bounded_read_only_inquiry"
+}

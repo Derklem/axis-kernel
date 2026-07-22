@@ -1,0 +1,153 @@
+﻿=== Mojibake ===
+〲㔲〭ⴷ㔲ㄠ㨹㌴㔺娹⁝慌瑴捩卥湩敧䑲敡潭⁮潊⁢瑳牡整⹤਍
+
+=== Top Candidates (full width) ===
+
+
+Lane       : HIGH
+Transform  : raw; shift=0
+Raw        : 050-51:35Z atcSneDeo o tre.
+             
+Shifted    : 050-51:35Z atcSneDeo o tre.
+             
+Decoded    : 050-51:35H atcZneDeo o tre.
+             
+ScoreRaw   : 6
+ScoreShift : 6
+ScoreKey   : 1
+
+Lane       : HIGH
+Transform  : raw; shift=2
+Raw        : 050-51:35Z atcSneDeo o tre.
+             
+Shifted    : 272-73:57B cveUpgFgq q vtg.
+             
+Decoded    : 272-73:57O cvePpgAgq q vtg.
+             
+ScoreRaw   : 6
+ScoreShift : 1
+ScoreKey   : 1
+
+Lane       : HIGH
+Transform  : raw; shift=1
+Raw        : 050-51:35Z atcSneDeo o tre.
+             
+Shifted    : 161-62:46A budTofEfp p usf.
+             
+Decoded    : 161-62:46X budCofJfp p usf.
+             
+ScoreRaw   : 6
+ScoreShift : 1
+ScoreKey   : 1
+
+Lane       : HIGH
+Transform  : raw; shift=-2
+Raw        : 050-51:35Z atcSneDeo o tre.
+             
+Shifted    : .3.-3/:13X _raQlcBcm m rpc.
+             
+Decoded    : .3.-3/:13U _raYlcOcm m rpc.
+             
+ScoreRaw   : 6
+ScoreShift : 1
+ScoreKey   : 1
+
+Lane       : HIGH
+Transform  : raw; shift=-1
+Raw        : 050-51:35Z atcSneDeo o tre.
+             
+Shifted    : /4/-40:24Y `sbRmdCdn n sqd.
+             
+Decoded    : /4/-40:24M `sbWmdRdn n sqd.
+             
+ScoreRaw   : 6
+ScoreShift : 1
+ScoreKey   : 1
+
+Lane       : HIGH
+Transform  : even|odd; shift=2
+Raw        : 005:5 tSee  r.5-13ZacnDoote
+             
+Shifted    : 227:7 vUgg  t.7-35BcepFqqvg
+             
+Decoded    : 227:7 vPgg  t.7-35OcepAqqvg
+             
+ScoreRaw   : 1
+ScoreShift : 1
+ScoreKey   : 1
+
+Lane       : HIGH
+Transform  : even|odd; shift=1
+Raw        : 005:5 tSee  r.5-13ZacnDoote
+             
+Shifted    : 116:6 uTff  s.6-24AbdoEppuf
+             
+Decoded    : 116:6 uCff  s.6-24XbdoJppuf
+             
+ScoreRaw   : 1
+ScoreShift : 1
+ScoreKey   : 1
+
+Lane       : HIGH
+Transform  : odd|even; shift=-1
+Raw        : 5-13ZacnDoote
+             005:5 tSee  r.
+Shifted    : 4-02Y`bmCnnsd
+             //4:4 sRdd  q.
+Decoded    : 4-02M`bmRnnsd
+             //4:4 sWdd  q.
+ScoreRaw   : 1
+ScoreShift : 1
+ScoreKey   : 1
+
+Lane       : HIGH
+Transform  : odd|even; shift=-2
+Raw        : 5-13ZacnDoote
+             005:5 tSee  r.
+Shifted    : 3-/1X_alBmmrc
+             ..3:3 rQcc  p.
+Decoded    : 3-/1U_alOmmrc
+             ..3:3 rYcc  p.
+ScoreRaw   : 1
+ScoreShift : 1
+ScoreKey   : 1
+
+Lane       : HIGH
+Transform  : even|odd; shift=-2
+Raw        : 005:5 tSee  r.5-13ZacnDoote
+             
+Shifted    : ..3:3 rQcc  p.3-/1X_alBmmrc
+             
+Decoded    : ..3:3 rYcc  p.3-/1U_alOmmrc
+             
+ScoreRaw   : 1
+ScoreShift : 1
+ScoreKey   : 1
+
+Lane       : HIGH
+Transform  : reverse; shift=2
+Raw        : 
+             .ert o oeDenScta Z53:15-050
+Shifted    : 
+             .gtv q qgFgpUevc B75:37-272
+Decoded    : 
+             .gtv q qgAgpPevc O75:37-272
+ScoreRaw   : 1
+ScoreShift : 1
+ScoreKey   : 1
+
+Lane       : HIGH
+Transform  : even|odd; shift=0
+Raw        : 005:5 tSee  r.5-13ZacnDoote
+             
+Shifted    : 005:5 tSee  r.5-13ZacnDoote
+             
+Decoded    : 005:5 tZee  r.5-13HacnDoote
+             
+ScoreRaw   : 1
+ScoreShift : 1
+ScoreKey   : 1
+
+
+
+

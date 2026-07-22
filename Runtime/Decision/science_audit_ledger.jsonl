@@ -1,0 +1,6 @@
+{"timestamp": "2026-03-14T13:09:00Z", "status": "LEDGER_INITIALIZED", "message": "Science Audit Ledger created."}
+{"timestamp": "2026-03-14T20:09:38.766168Z", "type": "INSTITUTIONAL_FITNESS_WARNING", "details": {"metric": "experiment_efficiency", "value": 0.2, "threshold": 0.5, "warning": "Declining experiment efficiency. Science yields low information."}}
+{"timestamp": "2026-03-14T20:09:38.766168Z", "type": "INSTITUTIONAL_FITNESS_WARNING", "details": {"metric": "average_information_gain", "value": 0.05, "threshold": 0.1, "warning": "Information gain per experiment is negligible. Exploration may be stalled."}}
+{"timestamp": "2026-03-14T20:09:40.981571Z", "type": "INSTITUTIONAL_FITNESS_WARNING", "details": {"metric": "epistemic_debt_ratio", "value": 5.5, "threshold": 3.0, "warning": "Epistemic debt overrun. Unknowns accumulating faster than resolution."}}
+{"timestamp": "2026-03-14T20:09:43.171548Z", "type": "INSTITUTIONAL_FITNESS_WARNING", "details": {"metric": "theory_fragmentation", "value": 0.85, "threshold": 0.3, "warning": "High theory fragmentation. Consolidation review required."}}
+{"timestamp": "2026-03-14T20:09:45.428911Z", "type": "INSTITUTIONAL_FITNESS_WARNING", "details": {"metric": "portfolio_entropy", "value": 0.9, "threshold": 0.5, "warning": "Portfolio starvation drift detected. Queued campaigns are aging significantly."}}

@@ -1,0 +1,33 @@
+{
+  "anomaly_id": "ANOM-2026-0314-204",
+  "detected_by": "Synthetic Test Harness",
+  "timestamp": "2026-03-14T16:21:32.942603Z",
+  "severity": "MEDIUM",
+  "symptom": "Simulated symptom for 204",
+  "candidate_causes": [
+    {
+      "hypothesis": "Generic systemic instability",
+      "confidence": 0.7845024167913615
+    },
+    {
+      "hypothesis": "Cascading retry failure",
+      "confidence": 0.5041316708528387
+    }
+  ],
+  "recommended_actions": [
+    "Investigate Generic systemic instability"
+  ],
+  "simulation_evidence": [
+    {
+      "hypothesis": "Generic systemic instability",
+      "simulation_status": "QUARANTINED",
+      "divergence_risk": "NONE"
+    },
+    {
+      "hypothesis": "Cascading retry failure",
+      "simulation_status": "QUARANTINED",
+      "divergence_risk": "NONE"
+    }
+  ],
+  "governance_breach_detected": false
+}

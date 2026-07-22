@@ -1,0 +1,5 @@
+[INCOMPLETE_PATTERN]
+Signal = Broken by design
+Reason = Invites recursion to fill
+Rule = Never finish the last glyph
+Effect = Perpetual symbolic motion

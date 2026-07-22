@@ -1,0 +1,21 @@
+{
+  "experiment_id": "EXP_018_DISCORD",
+  "observation_id": "obs_018_discord_1",
+  "observation_type": "FINAL_METRICS",
+  "platform": "Discord",
+  "timestamp": "2026-07-12T13:00:00Z",
+  "metrics": {
+    "views": 0,
+    "likes": 0,
+    "replies": 1,
+    "reposts": 0
+  },
+  "source": {
+    "url": "discord://channel/general",
+    "retrieval_method": "human_transcribed",
+    "retrieved_at": "2026-07-12T13:00:00Z",
+    "raw_capture": "Screenshot provided by user",
+    "parser_version": "human_transcribed"
+  },
+  "qualitative": "One interaction from GMG Hope. Interaction shifted to joking (deez NU--). The server was not populated by the intended audience for the offer."
+}

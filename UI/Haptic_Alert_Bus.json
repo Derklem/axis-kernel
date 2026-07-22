@@ -1,0 +1,67 @@
+﻿{
+    "bus_id":  "AXIS-HAPTIC-001",
+    "last_updated_utc":  "2026-01-22T20:49:21.3931839Z",
+    "version":  1,
+    "alerts":  [
+                   {
+                       "alert_id":  "HAPTIC-20260122124921394-GLOBAL",
+                       "timestamp_utc":  "2026-01-22T20:49:21.3931839Z",
+                       "source":  "shadow",
+                       "severity":  "high",
+                       "channel":  "global",
+                       "pattern":  "long_pulse",
+                       "duration_ms":  1500,
+                       "repeat":  1,
+                       "message":  "Global risk 0.5",
+                       "consumed":  false
+                   },
+                   {
+                       "dispatched":  true,
+                       "message":  "Bus Dispatch Test",
+                       "alert_id":  "TEST-VERIFY-20260122130448",
+                       "timestamp_utc":  "2026-01-22T21:04:48.7288206Z",
+                       "source":  "Verify_Phase73",
+                       "severity":  "medium"
+                   },
+                   {
+                       "dispatched":  true,
+                       "message":  "Bus Dispatch Test",
+                       "alert_id":  "TEST-VERIFY-20260122130508",
+                       "timestamp_utc":  "2026-01-22T21:05:08.1942547Z",
+                       "source":  "Verify_Phase73",
+                       "severity":  "medium"
+                   },
+                   {
+                       "dispatched":  true,
+                       "message":  "Bus Dispatch Test",
+                       "alert_id":  "TEST-VERIFY-20260122131235",
+                       "timestamp_utc":  "2026-01-22T21:12:35.3284650Z",
+                       "source":  "Verify_Phase73",
+                       "severity":  "medium"
+                   },
+                   {
+                       "dispatched":  true,
+                       "message":  "Bus Dispatch Test",
+                       "alert_id":  "TEST-VERIFY-20260122131406",
+                       "timestamp_utc":  "2026-01-22T21:14:06.9850163Z",
+                       "source":  "Verify_Phase73",
+                       "severity":  "medium"
+                   },
+                   {
+                       "dispatched":  true,
+                       "message":  "Bus Dispatch Test",
+                       "alert_id":  "TEST-VERIFY-20260122131959",
+                       "timestamp_utc":  "2026-01-22T21:19:59.4762833Z",
+                       "source":  "Verify_Phase73",
+                       "severity":  "medium"
+                   },
+                   {
+                       "dispatched":  true,
+                       "message":  "Bus Dispatch Test",
+                       "alert_id":  "TEST-VERIFY-20260122140450",
+                       "timestamp_utc":  "2026-01-22T22:04:50.3176977Z",
+                       "source":  "Verify_Phase73",
+                       "severity":  "medium"
+                   }
+               ]
+}

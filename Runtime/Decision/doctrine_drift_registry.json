@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "doctrines": {
+    "THEORY_QUEUE_SATURATION": {
+      "regime_usage_count": 100,
+      "override_events": 90,
+      "prediction_accuracy": 0.5,
+      "recent_usage_decay": 0.5,
+      "status": "DRIFT_MONITORING",
+      "drift_score": 0.685
+    }
+  },
+  "last_updated": "2026-03-15T21:26:31Z"
+}

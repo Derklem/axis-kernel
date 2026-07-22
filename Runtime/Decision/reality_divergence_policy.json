@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "divergence_metrics": {
+    "api_latency_ms_p95": {
+      "metric_type": "latency_prediction_error_pct",
+      "thresholds": {
+        "soft_warning": 0.20,
+        "simulation_weight_decay": 0.30,
+        "branch_prediction_invalid": 0.40
+      }
+    },
+    "mean_pulse_age_sec": {
+      "metric_type": "pulse_age_prediction_error_pct",
+      "thresholds": {
+        "soft_warning": 0.15,
+        "simulation_weight_decay": 0.25,
+        "branch_prediction_invalid": 0.35
+      }
+    }
+  },
+  "response_behavior": {
+    "soft_warning": "LOG_AND_DECAY_SIMULATION_WEIGHT",
+    "simulation_weight_decay": "DECREASE_DERIVED_INFERENCE_WEIGHT",
+    "branch_prediction_invalid": "QUARANTINE_COUNTERFACTUAL_BRANCHES",
+    "convergence_recovery": "RESTORE_SIMULATION_WEIGHT"
+  }
+}

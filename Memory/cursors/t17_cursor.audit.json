@@ -1,0 +1,13 @@
+﻿{
+    "file_len":  3019,
+    "fingerprint_offset":  "a37ea2b4a4ec6a6012feab18edc524c7a04c957d98ff5584b66ac6a34264b37c",
+    "byte_offset":  3019,
+    "current_segment":  "D:\\Infinite\\Infinity\\Truth_Engine\\audit_trail.jsonl",
+    "ledger":  "audit",
+    "file_mtime_utc":  "2026-02-19T18:27:00.0626573Z",
+    "fingerprint":  "089ea644c755b304cd4a09734184132eaad340a238f81d805c7143a66d1be99f",
+    "seen_segments":  {
+
+                      },
+    "schema":  "axis.t17.cursor.v1"
+}

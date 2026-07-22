@@ -1,0 +1,6 @@
+{
+  "transition_spec_schema_version": "1.0.0",
+  "transition_version": "state-hello-v1",
+  "subject": "strategy-hello-v1",
+  "supported_increment": 10
+}

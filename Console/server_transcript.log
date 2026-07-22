@@ -1,0 +1,31 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260216190623
+Username: DESKTOP-MHQRMOO\17602
+RunAs User: DESKTOP-MHQRMOO\17602
+Configuration Name: 
+Machine: DESKTOP-MHQRMOO (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File D:\Infinite\Infinity\Console\server_RC1.ps1 -Port 8794
+Process ID: 15804
+PSVersion: 5.1.26100.7705
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7705
+BuildVersion: 10.0.26100.7705
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is D:\Infinite\Infinity\Console\server_transcript.log
+Starting Axis Console Server... (Version: RUNSPACE-RECREATED)
+WARNING: The names of some imported commands from the module 'Axis_IntegrityEconomics' include unapproved verbs that might make them less discoverable. To find the commands with unapproved verbs, run the Import-Module command again with the Verbose parameter. For a list of approved verbs, type Get-Verb.
+Econ Module Loaded.
+Debug: Checking Provenance Module...
+Debug: ProvModule Path: D:\Infinite\Infinity\Governance\Axis_Provenance.psm1
+Debug: Importing Provenance...
+WARNING: The names of some imported commands from the module 'Axis_Provenance' include unapproved verbs that might make them less discoverable. To find the commands with unapproved verbs, run the Import-Module command again with the Verbose parameter. For a list of approved verbs, type Get-Verb.
+Provenance Module Loaded.
+Debug: Writing PID...
+API Module Loaded. PID: 15804
+Listening on http://localhost:8794/
+Press Ctrl+C to stop.

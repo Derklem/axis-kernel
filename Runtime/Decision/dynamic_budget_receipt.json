@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-03-16T17:49:24Z",
+  "regime": "QUEUE_SATURATION",
+  "inputs": {
+    "integrity_status": "BLOCKED_MISSING_REQUIRED",
+    "posture": "PLANNER_ONLY",
+    "success_streak": 1,
+    "consecutive_aborts": 0
+  },
+  "multiplier_trace": {
+    "integrity_factor": 0.0,
+    "posture_factor": 0.0,
+    "stability_factor": 1.1,
+    "derivation": "capacity = base * 0.0 (integrity) * 0.0 (posture) * 1.1 (stability)"
+  },
+  "calculated_budgets": {
+    "planning": 0.0,
+    "execution": 0.0
+  }
+}

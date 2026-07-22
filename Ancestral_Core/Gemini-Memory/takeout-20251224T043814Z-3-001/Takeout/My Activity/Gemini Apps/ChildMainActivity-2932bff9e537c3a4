@@ -1,0 +1,20 @@
+﻿package com.timeout.child
+
+import android.app.Activity
+import android.os.Bundle
+import com.timeout.core.lock.ActivityLockGate
+import com.timeout.core.lock.LockController
+import com.timeout.core.lock.SessionStoreHolder
+
+class ChildMainActivity : Activity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        LockController(
+            store = SessionStoreHolder,  // In-memory, works 100%
+            gate = ActivityLockGate(this)
+        ).startCountdown(60)  // 60 seconds for testing
+
+        finish()
+    }
+}

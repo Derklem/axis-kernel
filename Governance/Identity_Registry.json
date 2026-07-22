@@ -1,0 +1,27 @@
+{
+    "schema": "axis.governance.registry.v1",
+    "timestamp": "2026-02-14T20:00:00Z",
+    "identities": [
+        {
+            "identity": "system:harness",
+            "keys": [
+                "k_system_harness_v1"
+            ],
+            "role": "SYSTEM",
+            "capabilities": [
+                "high.risk",
+                "intent.submit",
+                "intent.promote"
+            ],
+            "status": "ACTIVE"
+        },
+        {
+            "identity": "system:root",
+            "keys": [
+                "k_root_v1"
+            ],
+            "role": "ROOT",
+            "status": "ACTIVE"
+        }
+    ]
+}

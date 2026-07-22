@@ -1,0 +1,71 @@
+{
+    "version": 6,
+    "tasks": [
+        {
+            "id": "core_vitals",
+            "enabled": true,
+            "tool": "Axis_Vitals.ps1",
+            "entity": "AXIS_CORE",
+            "effect": "check_health",
+            "source": "AXIS_WALK",
+            "max_frequency_seconds": 300,
+            "risk_tier": "low",
+            "requires_explicit_opt_in": false
+        },
+        {
+            "id": "ingest_remote_intents",
+            "enabled": true,
+            "tool": "Axis_Ingest_Remote.ps1",
+            "entity": "AXIS_CORE",
+            "effect": "ingest_ui_intents",
+            "source": "AXIS_WALK",
+            "max_frequency_seconds": 15,
+            "risk_tier": "low",
+            "requires_explicit_opt_in": false
+        },
+        {
+            "id": "log_pulse",
+            "enabled": true,
+            "tool": "Axis_LogPulse.ps1",
+            "entity": "AXIS_CORE",
+            "effect": "summarize_logs",
+            "source": "AXIS_WALK",
+            "max_frequency_seconds": 900,
+            "risk_tier": "low",
+            "requires_explicit_opt_in": true
+        },
+        {
+            "id": "lattice_pulse",
+            "enabled": true,
+            "tool": "Axis_LatticePulse.ps1",
+            "entity": "AXIS_MEMORY",
+            "effect": "check_lattice_health",
+            "source": "AXIS_WALK",
+            "max_frequency_seconds": 1800,
+            "risk_tier": "low",
+            "requires_explicit_opt_in": true
+        },
+        {
+            "id": "keeper_pulse",
+            "enabled": true,
+            "tool": "Axis_Keeper.ps1",
+            "entity": "AXIS_CORE",
+            "effect": "housekeeping",
+            "source": "AXIS_WALK",
+            "max_frequency_seconds": 3600,
+            "risk_tier": "low",
+            "requires_explicit_opt_in": true
+        },
+        {
+            "id": "danger_test",
+            "enabled": false,
+            "tool": "Axis_DangerTest.ps1",
+            "entity": "AXIS_CORE",
+            "effect": "write_test_marker",
+            "source": "AXIS_WALK",
+            "max_frequency_seconds": 900,
+            "risk_tier": "high",
+            "requires_explicit_opt_in": true
+        }
+    ]
+}

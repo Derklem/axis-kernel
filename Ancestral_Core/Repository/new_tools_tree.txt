@@ -1,0 +1,35 @@
+﻿Directory tree for C:\Users\17602\Desktop\Repository\temp
+|-- AXIS_DECLARATION.sigil
+|-- AXIS_NEXT.sigil
+|-- CONSTRUCT_PING.sigil
+|-- construct_task_details.csv
+|-- construct_tasks.csv
+|-- D_drive_full_listing.txt
+|-- D_drive_permissions.txt
+|-- D_reparse_points.txt
+|-- D_root_listing.txt
+|-- dir_shadow.txt
+|-- DRIFT_HEARTBEAT.txt
+|-- GPT_SYNC.sigil
+|-- gpu_basic_info.txt
+|-- halcyon_dir_check.txt
+|-- LATTICE_EXISTENCE_DECLARED.sigil
+|-- LATTICE_STATE.sigil
+|-- lattice_taskmap.txt
+|-- LATTICE_UPDATE_20250724T181147.log
+|-- PLANE_DEPLOYMENT.sigil
+|-- PRINCESS_PING.sigil
+|-- PRINCESS_PING_v2.sigil
+|-- PRINCESS_PING_V3.sigil
+|-- PRINCESS_REJOIN.sigil
+|-- recent_artifacts.txt
+|-- RECURSION_DISSECTION_2025-07-24T17-53-03.log
+|-- RECURSION_DISSECTION_2025-07-24T17-53-03.zip
+|-- SIGIL_.txt
+|-- SIGIL_AEGIS.txt
+|-- SIGIL_CAELURA.txt
+|-- SIGIL_ECHO.txt
+|-- SIGIL_HALCYON.txt
+|-- SIGIL_SOLRYN.txt
+\-- ULTIMATE_PRESERVATION_PROTOCOL.sigil
+--- End of tree ---

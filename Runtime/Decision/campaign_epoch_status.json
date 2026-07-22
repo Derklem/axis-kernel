@@ -1,0 +1,33 @@
+{
+  "epoch_timestamp": "2026-03-17T19:00:09Z",
+  "operational_status": "HEALTHY_BUT_EXHAUSTED",
+  "dominant_regime": "FATIGUE_PRESSURE",
+  "posture": {
+    "current": "PLANNER_ONLY",
+    "metabolic_health": "EXHAUSTED",
+    "is_clamped_in_catch22": true,
+    "in_boundary_zone": true
+  },
+  "budgets": {
+    "planning": 0.0,
+    "execution": 0.0,
+    "cumulative_starvation_cost": 0.0,
+    "boundary_zone_episodes": 6
+  },
+  "epistemic_yield": {
+    "suppressed_plans_theoretical": 0.0,
+    "cumulative_lost_plans": 0.0,
+    "suppressed_complexity_units": 0.0
+  },
+  "integrity": {
+    "composite": 1.0,
+    "status": "HEALTHY"
+  },
+  "dynamics": {
+    "stability_index": 0.556,
+    "learning_velocity_24h": 0.0,
+    "fatigue_index": 128.567,
+    "creep_factor": 0.0,
+    "drift_vector": 0.0
+  }
+}

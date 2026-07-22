@@ -1,0 +1,25 @@
+{
+    "timestamp_utc": "2026-06-03T02:06:30Z",
+    "metrics": {
+        "total_processed": 28,
+        "total_accepted": 17,
+        "total_rejected": 11
+    },
+    "routing_integrity": {
+        "conversational_in_witnessed": false,
+        "witnessed_in_conversational": false,
+        "bypassed_router": false,
+        "bridge_imports_router": true,
+        "historical_bypass_count": 15,
+        "current_bypass_count": 0
+    },
+    "rejections": {
+        "missing_classification": 0,
+        "unknown_classification": 0,
+        "invalid_json_or_schema": 11
+    },
+    "lanes": {
+        "conversational": 1,
+        "witnessed": 16
+    }
+}

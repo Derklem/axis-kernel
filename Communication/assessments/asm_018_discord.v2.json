@@ -1,0 +1,26 @@
+{
+  "assessment_id": "asm_018_discord_v2",
+  "experiment_id": "EXP_018_DISCORD",
+  "supersedes": "assessments/asm_018_discord.json",
+  "revision_reason": "Confidence schema separated empirical and governance propositions.",
+  "assessed_at": "2026-07-12T13:50:00Z",
+  "empirical_verdict": "One substantive interaction that quickly shifted into joking. The server was not populated by the intended audience.",
+  "governance_implication": "Suspend additional deployments of this specific message to this Discord channel.",
+  "confidence": {
+    "empirical_verdict": {
+      "value": 0.95,
+      "basis": "Screenshot evidence of exact interaction",
+      "calibration_status": "SUBJECTIVE_UNCALIBRATED"
+    },
+    "governance_implication": {
+      "value": 0.6,
+      "basis": "Single observation in one channel, but clear cultural mismatch",
+      "calibration_status": "SUBJECTIVE_UNCALIBRATED"
+    }
+  },
+  "remaining_uncertainties": [
+    "whether a developer-heavy Discord channel would yield different results",
+    "whether the initial hook was too tactical for a general channel"
+  ],
+  "status": "CURRENT"
+}

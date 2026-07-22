@@ -1,0 +1,26 @@
+
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "candidate_id": { "type": "string" },
+    "title": { "type": "string" },
+    "objective": { "type": "string" },
+    "source_refs": { "type": "array", "items": { "type": "string" } },
+    "expected_information_gain": { "type": "number", "minimum": 0, "maximum": 1 },
+    "epistemic_debt_age_hours": { "type": "number", "minimum": 0 },
+    "attention_cost": { "type": "string" },
+    "estimated_compute_minutes": { "type": "number", "minimum": 0 },
+    "dependencies": { "type": "array", "items": { "type": "string" } },
+    "constraints": { "type": "array", "items": { "type": "string" } },
+    "risk_level": { "type": "string", "enum": ["GREEN", "YELLOW", "RED", "BLACK"] },
+    "execution_mode": { "type": "string", "enum": ["human_approval", "autonomous"] },
+    "status": { "type": "string", "enum": ["candidate"] }
+  },
+  "required": [
+    "candidate_id", "title", "objective", "source_refs", "expected_information_gain",
+    "epistemic_debt_age_hours", "attention_cost", "estimated_compute_minutes",
+    "dependencies", "constraints", "risk_level", "execution_mode", "status"
+  ],
+  "additionalProperties": false
+}

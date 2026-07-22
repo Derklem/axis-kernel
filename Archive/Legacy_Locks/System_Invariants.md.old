@@ -1,0 +1,31 @@
+# Axis System Invariants (Phase 603)
+
+**Status:** LOCKED
+**Date:** 2026-02-06
+**Baseline Policy:** SNAPSHOT-20260113-145329-9c15443bd4a
+
+## The Constitution of Stillness
+
+The following invariants are absolute. They define the boundary between the System (Mechanism) and the Narrative (Meaning).
+
+### 1. The Single Executor Rule
+> There is exactly **one executor**: `T08_Executor.ps1`.
+> No other script, module, or agent is authorized to trigger side effects in the `Earth` domain.
+
+### 2. The Policy Physics
+> All actuation MUST flow through the sequence: **Policy Snapshot → T08 → Adapter**.
+> Direct invocation of adapters by anything other than T08 is a violation.
+
+### 3. The Narrative Firewall
+> Narrative artifacts (stored in `Narrative\`) are **NON_OPERATIVE**.
+> They MUST NOT be read, imported, or parsed by `T08_Executor.ps1` or any runtime module.
+> Meaning describes Muscle; it does not drive it.
+
+### 4. Comparison of Powers
+*   **Earth Engine**: Provide Capabilities (Sandboxed, Passive).
+*   **T08**: Provide Decison & Routing (Governed).
+*   **Living Syntax**: Provide Context (Non-Operative).
+
+### 5. Introspection Anchor
+> `earth.describe` is the only authorized method for the system to know its own capabilities.
+> It must remain read-only and emit valid integrity hashes.

@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "defeat_conditions": {
+    "min_confidence_to_survive": 0.3,
+    "max_consecutive_prediction_failures": 1
+  },
+  "promotion_conditions": {
+    "min_confidence_to_promote": 0.85
+  }
+}

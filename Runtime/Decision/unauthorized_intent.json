@@ -1,0 +1,10 @@
+{
+    "schema": "axis.intent_envelope.v0.1",
+    "ts_utc": "2026-02-13T22:30:00Z",
+    "nonce": "test-unauthorized-cap",
+    "identity": "system:harness",
+    "sig_alg": "hmac256",
+    "key_id": "k_system_harness_v1",
+    "intent_json": "{\"op\":\"policy:apply\",\"val\":\"malicious_update\"}",
+    "signature": "hmac256:MOCK_SIG_WILL_FAIL_ENV_VERIFY_IF_NOT_CAREFUL"
+}

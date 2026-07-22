@@ -1,0 +1,78 @@
+﻿{
+    "id":  "CASE-20260125-132704-IQQ1",
+    "created_at":  "2026-01-25T21:27:04.2869130Z",
+    "window":  {
+                   "start":  "2026-01-24T21:27:04.2823655Z",
+                   "end":  "2026-01-25T21:27:04.2869130Z"
+               },
+    "theme":  "Arc: doctrine_pruning on BAND-system",
+    "severity":  "critical",
+    "status":  "open",
+    "anchors":  {
+                    "proposals":  [
+                                      "PROP-REFLECT-20260124185602-8303"
+                                  ],
+                    "tasks":  [
+                                  "TASK-CODER-20260125-131917-EZKH"
+                              ],
+                    "experiments":  [
+                                        null
+                                    ]
+                },
+    "evidence":  {
+                     "proposals":  [
+                                       {
+                                           "id":  "PROP-REFLECT-20260124185602-8303",
+                                           "timestamp":  "2026-01-25T02:56:02.8699206Z",
+                                           "type":  "doctrine_pruning",
+                                           "target":  "BAND-system",
+                                           "reason":  "Persistent high risk in \u0027system\u0027 sector. Recommend pruning complexity or restrictive amendment.",
+                                           "severity":  "critical",
+                                           "status":  "pending_ratification",
+                                           "origin":  "Axis_Neural_Reflection"
+                                       }
+                                   ],
+                     "coder_tasks":  [
+                                         {
+                                             "id":  "TASK-CODER-20260125-131917-EZKH",
+                                             "created_at":  "2026-01-25T21:19:17.1416757Z",
+                                             "status":  "pending",
+                                             "priority":  "high",
+                                             "source":  "AGENT-CODER-001",
+                                             "basis":  {
+                                                           "from_audit":  null,
+                                                           "from_proposal":  "PROP-REFLECT-20260124185602-8303",
+                                                           "from_lab":  null
+                                                       },
+                                             "target":  {
+                                                            "path":  "BAND-system",
+                                                            "hint":  "Address doctrine_pruning: Persistent high risk in \u0027system\u0027 sector. Recommend pruning complexity or restrictive amendment.",
+                                                            "kind":  "config"
+                                                        },
+                                             "suggestion":  {
+                                                                "summary":  "Address doctrine_pruning: Persistent high risk in \u0027system\u0027 sector. Recommend pruning complexity or restrictive amendment.",
+                                                                "category":  "refactor",
+                                                                "notes":  "Linked to pending_proposal Basis ID: PROP-REFLECT-20260124185602-8303."
+                                                            },
+                                             "tags":  [
+                                                          "coder",
+                                                          "patch_planning"
+                                                      ]
+                                         }
+                                     ],
+                     "human_decisions":  [
+
+                                         ],
+                     "lab_results":  [
+
+                                     ]
+                 },
+    "summary":  {
+                    "recommendation":  "Review the associated coder tasks and ratify the pending proposal if verified.",
+                    "headline":  "System identified doctrine_pruning requirement for BAND-system. Generated 1 patch tasks. Human status: pending.",
+                    "timeline":  [
+                                     "01/24/2026 18:56:02.ToString(\u0027yyyy-MM-dd HH:mmZ\u0027) - Proposal PROP-REFLECT-20260124185602-8303 (doctrine_pruning) generated targeting BAND-system.",
+                                     "01/25/2026 13:19:17.ToString(\u0027yyyy-MM-dd HH:mmZ\u0027) - Coder task TASK-CODER-20260125-131917-EZKH created."
+                                 ]
+                }
+}

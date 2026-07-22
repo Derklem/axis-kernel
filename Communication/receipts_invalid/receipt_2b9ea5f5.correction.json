@@ -1,0 +1,10 @@
+{
+  "receipt_id": "receipt_2b9ea5f5",
+  "experiment_id": "EXP_018_DISCORD",
+  "original_platform": "Discord",
+  "submitted_reference": "https://x.com/DerekLamb29985/status/2075034406323179943",
+  "status": "INVALID",
+  "reason": "PLATFORM_REFERENCE_MISMATCH",
+  "detected_at": "2026-07-10T02:24:00Z",
+  "resolution": "QUARANTINED"
+}

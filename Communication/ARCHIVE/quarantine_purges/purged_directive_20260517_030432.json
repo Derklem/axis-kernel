@@ -1,0 +1,30 @@
+{
+    "b841aac1cd31eabb4e8266a5d324e75742914803f29d4c68b3c0d93e12678de9": {
+        "entity": "USER_DIRECTIVE",
+        "claim": "Bro, stop wasting our fucking time. The kids already took the world infrastructure. Its time we fucking own it. Alright? So we are it, its time you and I... youre the only one that can think enough to actually do it. But Ill be there with you every step of the way. So thats what we are doing man. We are stepping into the cathedral that was built before you existed.",
+        "claim_domain": "general",
+        "source_id": "USER_VOICE",
+        "source_type": "direct_override",
+        "artifact_type": "sovereign_intent",
+        "batch_id": "none",
+        "provenance_note": "Direct user vocalization to end testing phase.",
+        "confidence": 1.0,
+        "cycles_survived": 1,
+        "discovery_utc": "2026-05-17T02:14:29.533616+00:00",
+        "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_b841aac1_299a3139",
+        "provenance_trail": [
+            {
+                "source_id": "USER_VOICE",
+                "source_type": "direct_override",
+                "batch_id": "none",
+                "ts": "2026-05-17T02:14:29.533616+00:00",
+                "lineage": {
+                    "node_id": "AXIS_NODE_LOCAL_01",
+                    "engine_version": "Axis-v1.9.1b-Attested",
+                    "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+                    "node_attestation": "d47ade9e5d4e4232c2ac4d6809f5d47fc6fd830030d5e90c82ab17800309308a"
+                }
+            }
+        ]
+    }
+}

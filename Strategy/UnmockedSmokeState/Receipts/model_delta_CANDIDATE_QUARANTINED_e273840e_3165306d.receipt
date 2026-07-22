@@ -1,0 +1,28 @@
+{
+    "cycle_count": 657,
+    "mutation_type": "CANDIDATE_QUARANTINED",
+    "target_id": "e273840e02a4b87ff99907ddc16b6ac4eff91e82b306bac8bcfdafd5edea85b6",
+    "parent_receipt_head": "none",
+    "data": {
+        "entity": "smoke_entity_unmocked",
+        "claim": "Production observation breathes without mocks",
+        "claim_domain": "general",
+        "source_id": "smoke_unmocked_source",
+        "source_type": "smoke_harness",
+        "artifact_type": "observation",
+        "batch_id": "none",
+        "provenance_note": "",
+        "confidence": 0.7,
+        "discovery_utc": "2026-06-15T22:56:07.475698+00:00",
+        "lineage": {
+            "node_id": "AXIS_NODE_LOCAL_01",
+            "engine_version": "Axis-v1.9.1b-Attested",
+            "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+            "node_attestation": "dc3a91f1957b60076df25d0f3c01bac38fef2223a3f49d1e62831fa69b183cc8"
+        }
+    },
+    "status": "committed",
+    "ts_utc": "2026-06-15T22:56:07.475698+00:00",
+    "receipt_id": "model_delta_CANDIDATE_QUARANTINED_e273840e_3165306d",
+    "causal_hash": "3165306d754d2fe63e7d69752d8314e30951330eb82bd29cf849c208955b80f6"
+}

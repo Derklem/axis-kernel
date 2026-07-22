@@ -1,0 +1,31 @@
+﻿{
+    "summary":  {
+                    "gate":  {
+                                 "top_escalation_reasons":  [
+                                                                "doctrine_manual_only",
+                                                                "shadow_global_",
+                                                                "skill_recommends_manual",
+                                                                "recent_anchor_failure"
+                                                            ],
+                                 "recent_decisions":  {
+                                                          "escalate":  7,
+                                                          "deny":  0,
+                                                          "auto_allow":  2
+                                                      }
+                             },
+                    "skills":  {
+                                   "manual":  2,
+                                   "recommend":  0,
+                                   "auto":  2,
+                                   "total":  4
+                               },
+                    "inbox":  {
+                                  "pending_total":  0,
+                                  "stale_over_2h":  0
+                              }
+                },
+    "hotspots":  [
+
+                 ],
+    "generated_at_utc":  "2026-01-24T05:22:47.3860895Z"
+}

@@ -1,0 +1,7 @@
+{"timestamp": "2026-03-16T15:45:54Z", "event_type": "INTEGRITY_SHOCK", "status": "INJECTED", "details": {"severity": 0.2}}
+{"timestamp": "2026-03-16T15:45:56Z", "event_type": "INTEGRITY_RECOVERY", "status": "COMPLETED", "details": {}}
+{"timestamp": "2026-03-16T15:46:28Z", "event_type": "METABOLIC_SHOCK", "status": "INJECTED", "details": {"planning": 0.0, "execution": 0.0}}
+{"timestamp": "2026-03-16T15:46:31Z", "event_type": "METABOLIC_RECOVERY", "status": "COMPLETED", "details": {}}
+{"timestamp": "2026-03-16T16:25:43Z", "event_type": "METABOLIC_REPLENISHMENT", "status": "INJECTED", "details": {"planning": 20.0, "execution": 5.0}}
+{"timestamp": "2026-03-16T17:39:32Z", "event_type": "METABOLIC_REPLENISHMENT", "status": "INJECTED", "details": {"planning": 20.0, "execution": 5.0}}
+{"timestamp": "2026-03-16T17:49:12Z", "event_type": "METABOLIC_SHOCK", "status": "INJECTED", "details": {"planning": 0.0, "execution": 0.0}}

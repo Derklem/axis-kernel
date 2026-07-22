@@ -1,0 +1,15 @@
+{
+    "schema": "axis.truth_contract.v0.1",
+    "system_versions": {
+        "provenance_event_schema": "axis.provenance.event.v0.1",
+        "provenance_checkpoint_schema": "axis.provenance.checkpoint.v0.1",
+        "policy_snapshot_schema": "axis.policy_snapshot.v0.1",
+        "queue_cursor_schema": "axis.queue_cursor.v0.1"
+    },
+    "immutability_guarantees": [
+        "provenance_events.jsonl IS APPEND_ONLY",
+        "policy_snapshot.json IS DETERMINISTIC",
+        "decision_log.jsonl IS IMMUTABLE_HISTORICAL"
+    ],
+    "last_updated_utc": "2026-02-05T22:00:00Z"
+}

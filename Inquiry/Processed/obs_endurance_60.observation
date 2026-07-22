@@ -1,0 +1,9 @@
+{
+    "entity": "Entity_0",
+    "claim": "Claim from cycle 60 - random data 554",
+    "source_id": "Source_0",
+    "source_type": "endurance_gauntlet",
+    "confidence": 0.5,
+    "artifact_type": "ecosystem_observation",
+    "ts_utc": "2026-05-11T15:15:54.130380+00:00"
+}

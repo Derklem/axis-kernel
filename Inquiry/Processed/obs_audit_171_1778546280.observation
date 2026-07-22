@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T00:38:00.794330+00:00",
+    "entity": "Anthropic",
+    "claim": "standard update: signal for Anthropic in cycle 171.",
+    "source_id": "Ecological_Observer",
+    "source_type": "automated_sensor",
+    "claim_domain": "leak_claim",
+    "confidence": 0.47
+}

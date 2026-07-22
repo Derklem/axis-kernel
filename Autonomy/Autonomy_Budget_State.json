@@ -1,0 +1,9 @@
+{
+    "global":  {
+                   "remaining_total_execution_risk":  999999,
+                   "status":  "unconstrained",
+                   "daily_total_execution_risk_limit":  999999,
+                   "used_high_risk_executions":  0,
+                   "used_total_execution_risk":  0
+               }
+}

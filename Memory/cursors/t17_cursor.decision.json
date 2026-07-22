@@ -1,0 +1,13 @@
+﻿{
+    "file_len":  2809,
+    "fingerprint_offset":  "3c5c4e508631d9f74cd49a9fecc2734420277b9c074008b93d3e38ea342ca249",
+    "byte_offset":  2809,
+    "current_segment":  "D:\\Infinite\\Infinity\\Runtime\\Decision\\decision_log.jsonl",
+    "ledger":  "decision",
+    "file_mtime_utc":  "2026-02-21T19:34:25.7299690Z",
+    "fingerprint":  "a442066418a0f001ef1331b730b965acbc8a82fb402ca1b6a299401668279577",
+    "seen_segments":  {
+
+                      },
+    "schema":  "axis.t17.cursor.v1"
+}

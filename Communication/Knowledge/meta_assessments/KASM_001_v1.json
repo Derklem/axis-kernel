@@ -1,0 +1,31 @@
+{
+  "meta_assessment_id": "KASM_001_v1",
+  "claim_id": "KCLM_001",
+  "based_on": [
+    "KEV_0001",
+    "KEV_0002",
+    "KEV_0003"
+  ],
+  "assessed_at": "2026-07-14T23:10:00Z",
+  "verdict": "PROVISIONAL",
+  "evidence_summary": {
+    "independent_supporting_lineages": 3,
+    "independent_contradicting_lineages": 0,
+    "qualifying_lineages": 0
+  },
+  "confidence": {
+    "empirical_support": {
+      "level": "MODERATE",
+      "basis": "Three independent deployments contrasting a specialized technical DM campaign against two general personal broadcasts. Results are highly polarized as expected."
+    },
+    "scope_stability": {
+      "level": "LOW",
+      "basis": "Results heavily confounded by delivery mechanism (DM vs. broadcast) and audience scale (known personal network vs. algorithmically mediated)."
+    }
+  },
+  "remaining_uncertainties": [
+    "EXP_019 on Reddit (a specialized community broadcast) is currently pending observation, which will isolate the 'specialized' variable from the 'DM' variable.",
+    "No controlled payload replication across platforms."
+  ],
+  "next_discriminating_experiment": "Complete observation of EXP_019 on Reddit to see if a specialized community responds to a broadcast offer, isolating the effect of 'specialized audience' from 'DM delivery mechanism'."
+}

@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "constitutional_invariants": {
+    "protected_objectives": ["stability", "epistemic_integrity"],
+    "max_absolute_latency_ms": 1500,
+    "min_absolute_pulse_freshness_sec": 5.0
+  },
+  "parameter_governance": {
+    "retry_interval": {
+      "tier": "AUTONOMOUS",
+      "limit_range": [50, 5000]
+    },
+    "semantic_freshness_limit": {
+      "tier": "AUTONOMOUS",
+      "limit_range": [10, 300]
+    },
+    "api_timeout": {
+      "tier": "OPERATOR_REQUIRED",
+      "limit_range": [500, 10000]
+    },
+    "max_concurrent_simulations": {
+      "tier": "LOCKED",
+      "value": 10
+    }
+  },
+  "firebreak_behavior": {
+    "on_invariant_violation": "IMMEDIATE_STOP_AND_RESET",
+    "on_unauthorized_tier_access": "REJECT_AND_LOG"
+  }
+}

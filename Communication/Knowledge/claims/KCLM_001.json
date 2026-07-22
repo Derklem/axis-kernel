@@ -1,0 +1,30 @@
+{
+  "claim_id": "KCLM_001",
+  "statement": "Direct architectural-review offers receive substantive technical responses when deployed to individuals or groups known for specialized AI/ML practice, but yield zero on-target technical inquiries when broadcast to general personal networks (Discord, X).",
+  "scope": {
+    "message_type": "architectural review offer",
+    "audiences": [
+      "specialized AI/ML practitioner communities",
+      "general personal networks (Discord, X)"
+    ],
+    "platforms_observed": [
+      "Slack (DMs)",
+      "Discord (Personal Channel)",
+      "X (General Account)"
+    ]
+  },
+  "claim_type": "COMPARATIVE_EMPIRICAL",
+  "status": "PROPOSED",
+  "created_at": "2026-07-14T23:10:00Z",
+  "created_from": [
+    "assessments/asm_015_real.v3.json",
+    "assessments/asm_017_x.v2.json",
+    "assessments/asm_018_discord.v2.json"
+  ],
+  "known_limitations": [
+    "different message payloads across experiments",
+    "different exposure denominators",
+    "different account reputations",
+    "non-equivalent audiences"
+  ]
+}

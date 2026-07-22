@@ -1,0 +1,35 @@
+{
+  "receipt_id": "receipt_020_scheduled",
+  "experiment_id": "EXP_020_X",
+  "archive_path": "archived/EXP_020_X__draft_4ccb3506__20260714T215456Z.json",
+  "content_sha256": "4ccb35069c7d98094b067fd6c840bae87246fcff4209a7534d5a8f463916c336",
+  "status": "scheduled",
+  "platform": "X",
+  "deployed_at": "2026-07-14T21:55:00Z",
+  "scheduled_posts": [
+    {
+      "sequence": 1,
+      "category": "Technical governance",
+      "scheduled_local_time": "America/Los_Angeles, 2026-07-15 09:00",
+      "text_hash": "2f2b3e4c414b4f535870b22a07f6e625d5d852020e6a105c31cf6d18dfc63e27"
+    },
+    {
+      "sequence": 2,
+      "category": "Local LLM engineering",
+      "scheduled_local_time": "America/Los_Angeles, 2026-07-16 09:00",
+      "text_hash": "06bdfd94d32095ce0430ce6f6ed6251f2af2613ed6b464a78c1878b30d32f74d"
+    },
+    {
+      "sequence": 3,
+      "category": "Recovery architecture",
+      "scheduled_local_time": "America/Los_Angeles, 2026-07-17 09:00",
+      "text_hash": "cbf321b0213d2fbc781c81cfdb88f3f6c8d76b1580252e0b6b0c2ed19dfb93e7"
+    },
+    {
+      "sequence": 4,
+      "category": "Educational robotics",
+      "scheduled_local_time": "America/Los_Angeles, 2026-07-18 09:00",
+      "text_hash": "b2c9183afbf466a908298717d5268481ff240722cc2c10b471676632467d16eb"
+    }
+  ]
+}

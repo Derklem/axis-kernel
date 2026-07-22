@@ -1,0 +1,3251 @@
+{
+    "events":  [
+                   {
+                       "timestamp":  "2026-02-19T19:45:06.8443411Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:45:14.5391909Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:45:14.6584101Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:45:22.3034450Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:45:22.6150330Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:45:30.1676795Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:45:30.4314097Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:45:37.9626965Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:45:38.3693029Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:45:45.8376274Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:45:46.1233284Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:45:54.2426905Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:45:54.2729029Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:46:02.0400191Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:46:02.1757629Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:46:09.8219839Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:46:09.9003977Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:46:17.8652022Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:46:18.8052886Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:46:25.4927303Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:46:26.8641759Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:46:32.9578027Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:46:35.0275262Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:46:41.0180802Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:46:42.8398925Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:46:48.3681809Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:46:50.7075328Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:46:56.2497058Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:46:58.7045204Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:47:03.5685890Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:47:06.6126570Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:47:11.2079329Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:47:14.8756723Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:47:19.1242734Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:47:23.2393294Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:47:26.7474802Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:47:30.8684030Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:47:34.5936365Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:47:38.6777067Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:47:42.4652863Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:47:48.3458649Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:47:51.0935186Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:47:56.6786061Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:47:59.5962916Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:48:06.1999540Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:48:08.1481639Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:48:14.0916937Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:48:16.3758500Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:48:23.5034084Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:48:24.5990269Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:48:32.4302934Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:48:32.8686212Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:48:40.8020364Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:48:41.2209938Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:48:49.5734196Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:48:49.8626646Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:48:57.2969763Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:48:57.8693307Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:49:06.7430952Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:49:08.0362761Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:49:14.5540027Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:49:15.9259104Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:49:22.4420654Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:49:23.6797365Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:49:30.1004289Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:49:31.3911390Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:49:37.5079219Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:49:38.9734553Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:49:45.1362140Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:49:46.5596246Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:49:52.6357315Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:49:54.3453738Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:50:00.0345949Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:50:01.7709163Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:50:08.1083858Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:50:09.4460002Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:50:15.6082801Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:50:17.0929744Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:50:22.9482502Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:50:24.5930114Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:50:30.4063215Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:50:32.1847999Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:50:37.7983477Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:50:39.9372733Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:50:45.1202941Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:50:47.5628771Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:50:52.6797981Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:50:55.0604580Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:51:00.3710986Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:51:03.2529172Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:51:07.7153564Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:51:11.3445602Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:51:18.9679460Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:51:21.8365579Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:51:30.8168388Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:51:33.5098605Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:51:41.6365470Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:51:44.9273876Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:51:57.1477202Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:51:58.8793067Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:52:04.3817312Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:52:06.8938535Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:52:12.1447017Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:52:15.5832904Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:52:19.6787069Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:52:40.0685021Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:52:40.3001373Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:52:49.0120920Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:52:49.1335910Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:52:57.3793836Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:52:57.4354347Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:53:05.0495551Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:53:06.5785231Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:53:14.8407016Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:53:15.1118884Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:53:23.1665157Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:53:29.7583798Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:53:30.7251351Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:53:37.7040238Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:53:38.5483611Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:53:45.2379092Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:53:46.1376775Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:53:52.7793827Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:53:53.6856722Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:54:09.1159895Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:54:15.9167756Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:54:17.5262329Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:54:24.1622276Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:54:25.3483164Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:54:31.9730835Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:54:32.9684442Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:54:39.4484424Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:54:40.4456743Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:54:47.2299716Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:54:48.1914104Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:54:55.0567351Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:54:55.9004848Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:55:02.6621960Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:55:04.4261164Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:55:11.6207644Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:55:12.1877624Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:55:19.7183607Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:55:19.9141660Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:55:27.3815941Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:55:27.8528427Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:55:35.3328138Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:55:36.4094262Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:55:44.1431439Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:55:52.1002953Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:55:52.1532177Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:55:59.7890498Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:55:59.8974222Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:56:07.3954949Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:56:07.7006009Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:56:14.8107400Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:56:15.3914542Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:56:22.2553912Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:56:22.7788049Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:56:29.6899566Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:56:30.3796037Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:56:37.1140045Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:56:37.9297576Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:56:44.5296431Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:56:45.4629125Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:56:51.9050099Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:56:53.0731925Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:56:59.6076133Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:57:01.1457913Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:57:06.6594910Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:57:08.8185709Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:57:14.0354585Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:57:16.2813029Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:57:21.5715676Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:57:23.3984962Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:57:28.6683837Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:57:30.6172482Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:57:35.6681105Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:57:42.9444580Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:57:45.1262342Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:57:50.5853930Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:57:52.2812652Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:57:57.7970226Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:57:59.4831900Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:58:05.2119968Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:58:07.2579781Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:58:12.3720430Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:58:13.8483728Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:58:19.3399984Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:58:20.8714730Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:58:26.7378504Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:58:28.8751693Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:58:33.9787663Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:58:36.0984001Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:58:41.1063659Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:58:43.5052760Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:58:48.4536453Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:58:50.5945837Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:58:55.6287427Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:58:57.8191925Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:59:02.6877715Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:59:04.8942309Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:59:10.0431442Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:59:12.7877517Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:59:17.2072587Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:59:20.0359276Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:59:24.6925078Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:59:27.3538762Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:59:31.7160614Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:59:34.6563573Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:59:38.8221289Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:59:42.2501897Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:59:45.9053458Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:59:49.5456915Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:59:53.3057838Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T19:59:57.0495775Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:00:00.9018983Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:00:04.5841538Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:00:08.2740618Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:00:12.0187736Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:00:15.4626224Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:00:19.5639414Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:00:23.0390218Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:00:26.8524828Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:00:30.3543636Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:00:34.2391877Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:00:37.9984934Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:00:41.7279224Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:00:45.2180482Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:00:49.2550626Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:00:53.2618095Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:00:57.7901715Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:01:00.6472036Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:01:05.7050417Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:01:08.1815997Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:01:13.3295898Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:01:15.4860476Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:01:20.9788774Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:01:23.1189691Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:01:28.7493232Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:01:30.4723067Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:01:36.4761948Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:01:38.0878025Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:01:44.0474451Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:01:45.7884555Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:01:51.3051453Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:01:53.1483539Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:01:59.0223457Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:02:00.8460678Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:02:06.3809399Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:02:08.1346770Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:02:13.7442473Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:02:15.4504843Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:02:21.1566267Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:02:22.7286282Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:02:28.4418083Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:02:30.0191285Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:02:35.6521886Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:02:37.2026356Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:02:42.7902148Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:02:44.4584022Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:02:50.0639868Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:02:51.9608101Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:02:57.1314792Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:02:58.9900012Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:03:04.3653059Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:03:07.1877608Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:03:11.1183518Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:03:14.4722224Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:03:19.4125562Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:03:22.5477275Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:03:26.4890373Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:03:29.6123499Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:03:33.4938593Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:03:36.6656479Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:03:40.5591145Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:03:43.7045172Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:03:47.7076381Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:03:51.0816085Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:03:54.7737793Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:03:58.0683488Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:04:02.0858939Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:04:05.5189639Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:04:09.1992122Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:04:12.8702489Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:04:17.2004765Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:04:20.3485527Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:04:24.8639100Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:04:27.6469842Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:04:32.1295351Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:04:34.8196176Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:04:39.6710973Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:04:42.2907087Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:04:47.8425106Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:04:49.4775308Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:04:54.9695288Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:04:56.8209775Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:05:02.1833558Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:05:04.8801898Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:05:09.7440977Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:05:12.3580592Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:05:16.7877503Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:05:19.3734322Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:05:23.8272373Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:05:26.3761655Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:05:30.9657786Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:05:33.4791851Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:05:37.9801060Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:05:40.4566622Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:05:45.1625293Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:05:47.4523945Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:05:52.4142687Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:05:54.9639649Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:05:59.5383028Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:06:02.2172933Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:06:06.9023743Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:06:09.3985217Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:06:13.9667635Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:06:16.4627563Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:06:21.2652363Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:06:23.5334995Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:06:28.4363801Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:06:30.6258698Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:06:35.5187103Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:06:37.7402973Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:06:42.6233942Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:06:44.7739511Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:06:49.6481203Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:06:52.1066391Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:06:56.9234448Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:06:59.1400997Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:07:04.0238374Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:07:05.9334390Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:07:11.1582118Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:07:13.1634940Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:07:18.2126478Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:07:20.2139189Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:07:25.6947559Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:07:27.8813524Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:07:32.8659456Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:07:35.0090956Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:07:39.9516558Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:07:42.1233098Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:07:47.2394414Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:07:49.1956146Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:07:54.2855501Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:07:56.4116030Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:08:01.5278001Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:08:03.6082520Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:08:08.9149692Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:08:11.0238005Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:08:16.9479458Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:08:18.1988638Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:08:24.2051568Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:08:25.3924244Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:08:31.4982063Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:08:32.9711040Z",
+                       "details":  {
+                                       "flags":  [
+                                                     "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                                                 ]
+                                   },
+                       "kind":  "breach_detected"
+                   },
+                   {
+                       "timestamp":  "2026-02-19T20:37:25.9534289Z",
+                       "details":  {
+
+                                   },
+                       "kind":  "alignment_restored"
+                   },
+                   {
+                       "timestamp":  "2026-02-20T03:28:54.5217104Z",
+                       "details":  {
+
+                                   },
+                       "kind":  "alignment_restored"
+                   },
+                   {
+                       "timestamp":  "2026-02-20T18:11:55.8515705Z",
+                       "details":  {
+
+                                   },
+                       "kind":  "alignment_restored"
+                   },
+                   {
+                       "timestamp":  "2026-02-21T08:46:47.9387988Z",
+                       "details":  {
+
+                                   },
+                       "kind":  "alignment_restored"
+                   },
+                   {
+                       "timestamp":  "2026-02-21T10:35:03.4394270Z",
+                       "details":  {
+
+                                   },
+                       "kind":  "alignment_restored"
+                   },
+                   {
+                       "timestamp":  "2026-02-21T12:53:59.9926594Z",
+                       "details":  {
+
+                                   },
+                       "kind":  "alignment_restored"
+                   }
+               ],
+    "version":  1
+}

@@ -1,0 +1,34 @@
+{
+  "timestamp_utc": "2026-05-14T04:17:44.669467+00:00",
+  "speaker": "AXIS",
+  "message_type": "forensic_triage",
+  "priority": "high",
+  "epoch": 505,
+  "last_updated_cycle": 505,
+  "message": "Do not run new cycles. The likely fault is anchor/ledger witness mismatch. Next step: compare forensic_witness_ledger tail against anchor and ledger heads.",
+  "evidence": [
+    "ledger_witness_head=e658d3772d9a3d27",
+    "anchor_witness_head=d8c4c2c3637edeee",
+    "ledger_cycle=505",
+    "anchor_cycle=505",
+    "integrity=continuity_violation",
+    "continuity=broken",
+    "receipt_files=0",
+    "canonical_chain_length=0",
+    "orphan_receipts=0",
+    "duplicate_parent_count=0",
+    "computed_receipt_head=none",
+    "ledger_receipt_head=none",
+    "candidate_count=4",
+    "candidate:f4b85b96 entity=strategy_enginepy domain=structural_debt survived=8 source=self_observation",
+    "candidate:2e8926ed entity=ecosystem_mapping_enginepy domain=structural_debt survived=8 source=self_observation",
+    "candidate:2f535eb2 entity=axis_crypto_helperspy domain=structural_debt survived=8 source=self_observation",
+    "candidate:4e578707 entity=multi_objective_solverpy domain=structural_debt survived=8 source=self_observation"
+  ],
+  "problems": [
+    "witness_head_mismatch",
+    "integrity_status_continuity_violation",
+    "continuity_status_broken"
+  ],
+  "requires_response": true
+}

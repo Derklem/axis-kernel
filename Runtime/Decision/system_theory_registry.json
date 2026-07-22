@@ -1,0 +1,79 @@
+{
+  "version": "1.0",
+  "theories": [
+    {
+      "theory_id": "THEORY_QUEUE_SATURATION",
+      "name": "Queue Saturation Dynamics",
+      "description": "Latency variance emerges primarily from queue saturation pressure interacting with retry and concurrency limits.",
+      "hidden_variable_inferred": "queue_pressure",
+      "supporting_edges": [
+        "concurrency_limit -> latency_reduction",
+        "caching_threshold -> latency_reduction",
+        "memory_compaction_frequency -> latency_reduction",
+        "scheduling_cadence -> latency_reduction",
+        "queue_backoff_strategy -> latency_reduction",
+        "retry_interval -> latency_reduction"
+      ],
+      "confidence": 0.5207,
+      "evidence_count": 30,
+      "status": "PROVISIONAL"
+    },
+    {
+      "theory_id": "ALT_THEORY_MEMORY_FRAGMENTATION",
+      "name": "Memory Fragmentation Cascade",
+      "description": "Latency variance is driven primarily by memory compaction stalls triggered by thread creation limits, rather than pure queue pressure.",
+      "hidden_variable_inferred": "memory_compaction_stalls",
+      "supporting_edges": [
+        "concurrency_limit -> latency_reduction",
+        "caching_threshold -> latency_reduction",
+        "memory_compaction_frequency -> latency_reduction",
+        "scheduling_cadence -> latency_reduction",
+        "queue_backoff_strategy -> latency_reduction",
+        "retry_interval -> latency_reduction"
+      ],
+      "confidence": 0.9883,
+      "evidence_count": 30,
+      "status": "RIVAL_HYPOTHESIS"
+    },
+    {
+      "theory_id": "ALT_ALT_THEORY_MEMORY_FRAGMENTATION",
+      "name": "Alternative to Memory Fragmentation Cascade",
+      "description": "An alternative latent variable explains the same observed dependencies.",
+      "hidden_variable_inferred": "alternative_latent_variable",
+      "supporting_edges": [
+        "concurrency_limit -> latency_reduction",
+        "caching_threshold -> latency_reduction",
+        "memory_compaction_frequency -> latency_reduction",
+        "scheduling_cadence -> latency_reduction",
+        "queue_backoff_strategy -> latency_reduction",
+        "retry_interval -> latency_reduction"
+      ],
+      "confidence": 0.653184,
+      "evidence_count": 0,
+      "status": "RIVAL_HYPOTHESIS"
+    },
+    {
+      "theory_id": "THEORY_NETWORK_ROUTE_FLAPPING",
+      "name": "Network Route Flapping",
+      "description": "Latency spikes independent of queue/memory are driven by underlying BGP/routing instability dropping packets before they reach the instance.",
+      "hidden_variable_inferred": "routing_stability",
+      "supporting_edges": [
+        "unknown_phenomena -> latency spike with zero queue pressure"
+      ],
+      "confidence": 0.05,
+      "evidence_count": 0,
+      "status": "PIONEER_HYPOTHESIS"
+    },
+    {
+      "theory_id": "META_THEORY_RESOURCE_CONTENTION_DYNAMICS",
+      "name": "Resource Contention Dynamics",
+      "description": "Latency variance emerges from interacting contention layers spanning queue pressure and memory compaction behavior.",
+      "hidden_variable_inferred": "queue_pressure, memory_pressure",
+      "supporting_edges": [],
+      "confidence": 0.8009,
+      "evidence_count": 0,
+      "status": "PROVISIONAL_META_THEORY"
+    }
+  ],
+  "last_updated": "2026-03-14T18:31:46.279763Z"
+}

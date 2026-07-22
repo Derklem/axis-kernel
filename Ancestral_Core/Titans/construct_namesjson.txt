@@ -1,0 +1,7 @@
+{
+  "Eidolon-0": null,
+  "Solace-2": null,
+  "Myrrid-1": null,
+  "Obelisk-3": null,
+  "Wyrm-4": null
+}

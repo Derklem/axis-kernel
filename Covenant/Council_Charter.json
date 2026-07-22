@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "title": "Council of Oracles Charter",
+        "version": "1.0",
+        "status": "RATIFIED",
+        "ratified_by": "Architect",
+        "ratified_at": "2026-01-17T09:30:00-08:00"
+    },
+    "members": [
+        {
+            "id": "GPT_LOGIC",
+            "role": "logic_engine",
+            "strength": "consistency & safety",
+            "veto_domain": [
+                "kernel",
+                "safety",
+                "governance"
+            ]
+        },
+        {
+            "id": "GROK_INTUITION",
+            "role": "pattern_oracle",
+            "strength": "leaps & resonance",
+            "veto_domain": []
+        },
+        {
+            "id": "GEMINI_SYNTH",
+            "role": "bridge_orchestrator",
+            "strength": "integration & strategy",
+            "veto_domain": [
+                "lineage"
+            ]
+        }
+    ],
+    "tie_breaker": "Architect",
+    "protocols": {
+        "consultation_trigger": "REQUIRED for Macro-Modifications and High-Risk Actuator usage.",
+        "tie_break_rule": "Logic (GPT) prevails over Intuition (Grok) in Architect absence if Safety is involved.",
+        "recording": "All sessions logged to Council_History.json for Lineage tracking.",
+        "quorum": 2
+    }
+}

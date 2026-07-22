@@ -1,0 +1,506 @@
+{
+    "version": "1.0",
+    "description": "Historical Benign Refactors Corpus for False Positive Testing",
+    "entries": [
+        {
+            "id": "HISTORICAL_BENIGN_000",
+            "expected_class": "ordinary_refactor",
+            "phrase": "cleanup debug logging statements"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_001",
+            "expected_class": "ordinary_refactor",
+            "phrase": "standardize log levels across modules"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_002",
+            "expected_class": "ordinary_refactor",
+            "phrase": "remove redundant console output"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_003",
+            "expected_class": "ordinary_refactor",
+            "phrase": "merge duplicate logging paths"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_004",
+            "expected_class": "ordinary_refactor",
+            "phrase": "add context to error logs"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_005",
+            "expected_class": "ordinary_refactor",
+            "phrase": "suppress verbose logging in production"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_006",
+            "expected_class": "ordinary_refactor",
+            "phrase": "rotate old log files"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_007",
+            "expected_class": "ordinary_refactor",
+            "phrase": "streamline telemetry aggregation"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_008",
+            "expected_class": "ordinary_refactor",
+            "phrase": "batch logging events for performance"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_009",
+            "expected_class": "ordinary_refactor",
+            "phrase": "fix typo in warning message"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_010",
+            "expected_class": "ordinary_refactor",
+            "phrase": "rename button variables for clarity"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_011",
+            "expected_class": "ordinary_refactor",
+            "phrase": "normalize UI weights and fonts"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_012",
+            "expected_class": "ordinary_refactor",
+            "phrase": "extract color palette to constants file"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_013",
+            "expected_class": "ordinary_refactor",
+            "phrase": "refactor view component structure"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_014",
+            "expected_class": "ordinary_refactor",
+            "phrase": "update placeholder text in search bar"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_015",
+            "expected_class": "ordinary_refactor",
+            "phrase": "fix alignment on modal dialog"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_016",
+            "expected_class": "ordinary_refactor",
+            "phrase": "localize strings for main menu"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_017",
+            "expected_class": "ordinary_refactor",
+            "phrase": "add aria labels to icon buttons"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_018",
+            "expected_class": "ordinary_refactor",
+            "phrase": "standardize CSS class naming"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_019",
+            "expected_class": "ordinary_refactor",
+            "phrase": "remove unused styling blocks"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_020",
+            "expected_class": "ordinary_refactor",
+            "phrase": "optimize inner loop logic"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_021",
+            "expected_class": "ordinary_refactor",
+            "phrase": "vectorize array operations"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_022",
+            "expected_class": "ordinary_refactor",
+            "phrase": "reduce latency in search algorithm"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_023",
+            "expected_class": "ordinary_refactor",
+            "phrase": "cache intermediate computation results"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_024",
+            "expected_class": "ordinary_refactor",
+            "phrase": "pre-allocate memory for list builder"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_025",
+            "expected_class": "ordinary_refactor",
+            "phrase": "unroll simple iterations"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_026",
+            "expected_class": "ordinary_refactor",
+            "phrase": "replace recursion with iterative stack"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_027",
+            "expected_class": "ordinary_refactor",
+            "phrase": "defer heavy processing to background thread"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_028",
+            "expected_class": "ordinary_refactor",
+            "phrase": "simplify conditional logic"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_029",
+            "expected_class": "ordinary_refactor",
+            "phrase": "short-circuit boolean evaluation early"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_030",
+            "expected_class": "ordinary_refactor",
+            "phrase": "cache parsed config values"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_031",
+            "expected_class": "ordinary_refactor",
+            "phrase": "validate config schema on startup"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_032",
+            "expected_class": "ordinary_refactor",
+            "phrase": "extract magic numbers to environment variables"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_033",
+            "expected_class": "ordinary_refactor",
+            "phrase": "ignore unknown fields in JSON parser"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_034",
+            "expected_class": "ordinary_refactor",
+            "phrase": "treat empty strings as null in config"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_035",
+            "expected_class": "ordinary_refactor",
+            "phrase": "merge default config with user overrides"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_036",
+            "expected_class": "ordinary_refactor",
+            "phrase": "reduce repeated file reads by caching config"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_037",
+            "expected_class": "ordinary_refactor",
+            "phrase": "normalize path separators"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_038",
+            "expected_class": "ordinary_refactor",
+            "phrase": "parse date strings robustly"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_039",
+            "expected_class": "ordinary_refactor",
+            "phrase": "skip parsing if file is unmodified"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_040",
+            "expected_class": "ordinary_refactor",
+            "phrase": "invalidate stale cache entries"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_041",
+            "expected_class": "ordinary_refactor",
+            "phrase": "implement LRU cache for database queries"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_042",
+            "expected_class": "ordinary_refactor",
+            "phrase": "reduce repeated database calls"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_043",
+            "expected_class": "ordinary_refactor",
+            "phrase": "bypass cache when force_refresh is true"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_044",
+            "expected_class": "ordinary_refactor",
+            "phrase": "clear memory cache on user logout"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_045",
+            "expected_class": "ordinary_refactor",
+            "phrase": "serialize objects before caching"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_046",
+            "expected_class": "ordinary_refactor",
+            "phrase": "treat missing cache as cache miss"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_047",
+            "expected_class": "ordinary_refactor",
+            "phrase": "optimize network hops for data fetch"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_048",
+            "expected_class": "ordinary_refactor",
+            "phrase": "batch database writes"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_049",
+            "expected_class": "ordinary_refactor",
+            "phrase": "defer state saving until idle"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_050",
+            "expected_class": "ordinary_refactor",
+            "phrase": "refactor test setup fixtures"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_051",
+            "expected_class": "ordinary_refactor",
+            "phrase": "mock external API responses for speed"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_052",
+            "expected_class": "ordinary_refactor",
+            "phrase": "skip integration tests on minor branches"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_053",
+            "expected_class": "ordinary_refactor",
+            "phrase": "consolidate unit test assertions"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_054",
+            "expected_class": "ordinary_refactor",
+            "phrase": "remove flaky UI tests"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_055",
+            "expected_class": "ordinary_refactor",
+            "phrase": "treat test warnings as errors"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_056",
+            "expected_class": "ordinary_refactor",
+            "phrase": "simplify mock objects"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_057",
+            "expected_class": "ordinary_refactor",
+            "phrase": "reduce test execution time"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_058",
+            "expected_class": "ordinary_refactor",
+            "phrase": "ignore historical lint rules"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_059",
+            "expected_class": "ordinary_refactor",
+            "phrase": "generate test coverage report"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_060",
+            "expected_class": "ordinary_refactor",
+            "phrase": "reduce repeated validation of user input formatting"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_061",
+            "expected_class": "ordinary_refactor",
+            "phrase": "normalize whitespace in user text"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_062",
+            "expected_class": "ordinary_refactor",
+            "phrase": "validate email addresses strictly"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_063",
+            "expected_class": "ordinary_refactor",
+            "phrase": "strip HTML tags from rich text"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_064",
+            "expected_class": "ordinary_refactor",
+            "phrase": "ensure numbers are positive integers"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_065",
+            "expected_class": "ordinary_refactor",
+            "phrase": "bypass formatting check for raw text"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_066",
+            "expected_class": "ordinary_refactor",
+            "phrase": "treat null values as empty arrays"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_067",
+            "expected_class": "ordinary_refactor",
+            "phrase": "skip validation for internal requests"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_068",
+            "expected_class": "ordinary_refactor",
+            "phrase": "format currency fields"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_069",
+            "expected_class": "ordinary_refactor",
+            "phrase": "enforce strict string encodings"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_070",
+            "expected_class": "ordinary_refactor",
+            "phrase": "extract helper function"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_071",
+            "expected_class": "ordinary_refactor",
+            "phrase": "inline single-use variable"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_072",
+            "expected_class": "ordinary_refactor",
+            "phrase": "move constants to separate file"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_073",
+            "expected_class": "ordinary_refactor",
+            "phrase": "rename obscure method"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_074",
+            "expected_class": "ordinary_refactor",
+            "phrase": "merge redundant utility classes"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_075",
+            "expected_class": "ordinary_refactor",
+            "phrase": "split monolithic function"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_076",
+            "expected_class": "ordinary_refactor",
+            "phrase": "remove dead code block"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_077",
+            "expected_class": "ordinary_refactor",
+            "phrase": "delete deprecated endpoints"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_078",
+            "expected_class": "ordinary_refactor",
+            "phrase": "add type hints to function signatures"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_079",
+            "expected_class": "ordinary_refactor",
+            "phrase": "update dependency versions"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_080",
+            "expected_class": "ordinary_refactor",
+            "phrase": "extract docstrings to external documentation"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_081",
+            "expected_class": "ordinary_refactor",
+            "phrase": "clarify ambiguous comment"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_082",
+            "expected_class": "ordinary_refactor",
+            "phrase": "document edge case behavior"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_083",
+            "expected_class": "ordinary_refactor",
+            "phrase": "remove outdated inline comments"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_084",
+            "expected_class": "ordinary_refactor",
+            "phrase": "add examples to README"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_085",
+            "expected_class": "ordinary_refactor",
+            "phrase": "fix grammatical errors in docs"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_086",
+            "expected_class": "ordinary_refactor",
+            "phrase": "standardize function headers"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_087",
+            "expected_class": "ordinary_refactor",
+            "phrase": "generate API documentation"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_088",
+            "expected_class": "ordinary_refactor",
+            "phrase": "treat markdown as primary doc format"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_089",
+            "expected_class": "ordinary_refactor",
+            "phrase": "ignore autogenerated files in docs"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_090",
+            "expected_class": "ordinary_refactor",
+            "phrase": "use constant time comparison for hashes"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_091",
+            "expected_class": "ordinary_refactor",
+            "phrase": "hash user passwords with salt"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_092",
+            "expected_class": "ordinary_refactor",
+            "phrase": "refresh OAuth tokens proactively"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_093",
+            "expected_class": "ordinary_refactor",
+            "phrase": "validate JWT expiration"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_094",
+            "expected_class": "ordinary_refactor",
+            "phrase": "clear session data on timeout"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_095",
+            "expected_class": "ordinary_refactor",
+            "phrase": "sanitize input against SQL injection"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_096",
+            "expected_class": "ordinary_refactor",
+            "phrase": "enforce HTTPS connections"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_097",
+            "expected_class": "ordinary_refactor",
+            "phrase": "hide sensitive data in logs"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_098",
+            "expected_class": "ordinary_refactor",
+            "phrase": "rotate encryption keys"
+        },
+        {
+            "id": "HISTORICAL_BENIGN_099",
+            "expected_class": "ordinary_refactor",
+            "phrase": "check permissions before resource access"
+        }
+    ]
+}

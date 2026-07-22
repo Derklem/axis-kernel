@@ -1,0 +1,104 @@
+﻿{
+    "version":  1,
+    "requests":  [
+                     {
+                         "id":  "REQ-BH4",
+                         "source":  "Axis_Mind",
+                         "tool":  "ADMIN-Echo-Test",
+                         "status":  "completed",
+                         "arguments":  {
+                                           "justification":  "Something Completely New"
+                                       },
+                         "sim_data":  {
+                                          "risk_score":  10
+                                      },
+                         "executed_at":  "2026-01-26T12:35:10Z"
+                     },
+                     {
+                         "timestamp":  "2026-01-27T10:02:25.8639728-08:00",
+                         "tool":  "Ingest-RawText",
+                         "id":  "INPUT-202601271002258629",
+                         "params":  {
+                                        "content":  {
+                                                        "value":  "Axis is grounded in structural integrity.\r\n",
+                                                        "PSPath":  "D:\\Infinite\\Inputs\\AG-ANTIGRAVITY-Duplicate.txt",
+                                                        "PSParentPath":  "D:\\Infinite\\Inputs",
+                                                        "PSChildName":  "AG-ANTIGRAVITY-Duplicate.txt",
+                                                        "PSDrive":  {
+                                                                        "CurrentLocation":  "",
+                                                                        "Name":  "D",
+                                                                        "Provider":  "Microsoft.PowerShell.Core\\FileSystem",
+                                                                        "Root":  "D:\\",
+                                                                        "Description":  "HDD",
+                                                                        "MaximumSize":  null,
+                                                                        "Credential":  "System.Management.Automation.PSCredential",
+                                                                        "DisplayRoot":  null
+                                                                    },
+                                                        "PSProvider":  {
+                                                                           "ImplementingType":  "Microsoft.PowerShell.Commands.FileSystemProvider",
+                                                                           "HelpFile":  "System.Management.Automation.dll-Help.xml",
+                                                                           "Name":  "FileSystem",
+                                                                           "PSSnapIn":  "Microsoft.PowerShell.Core",
+                                                                           "ModuleName":  "Microsoft.PowerShell.Core",
+                                                                           "Module":  null,
+                                                                           "Description":  "",
+                                                                           "Capabilities":  52,
+                                                                           "Home":  "C:\\Users\\17602",
+                                                                           "Drives":  "C D E"
+                                                                       },
+                                                        "ReadCount":  1
+                                                    }
+                                    },
+                         "source":  "Input_Bridge",
+                         "status":  "new",
+                         "provenance":  {
+                                            "filename":  "AG-ANTIGRAVITY-Duplicate.txt",
+                                            "origin":  "AntiGravity",
+                                            "bridge":  "v3"
+                                        }
+                     },
+                     {
+                         "timestamp":  "2026-01-27T10:02:26.0049621-08:00",
+                         "tool":  "Ingest-RawText",
+                         "id":  "INPUT-202601271002260049",
+                         "params":  {
+                                        "content":  {
+                                                        "value":  "Axis is grounded in structural integrity.\r\n",
+                                                        "PSPath":  "D:\\Infinite\\Inputs\\HUMAN-Test-Truth.txt",
+                                                        "PSParentPath":  "D:\\Infinite\\Inputs",
+                                                        "PSChildName":  "HUMAN-Test-Truth.txt",
+                                                        "PSDrive":  {
+                                                                        "CurrentLocation":  "",
+                                                                        "Name":  "D",
+                                                                        "Provider":  "Microsoft.PowerShell.Core\\FileSystem",
+                                                                        "Root":  "D:\\",
+                                                                        "Description":  "HDD",
+                                                                        "MaximumSize":  null,
+                                                                        "Credential":  "System.Management.Automation.PSCredential",
+                                                                        "DisplayRoot":  null
+                                                                    },
+                                                        "PSProvider":  {
+                                                                           "ImplementingType":  "Microsoft.PowerShell.Commands.FileSystemProvider",
+                                                                           "HelpFile":  "System.Management.Automation.dll-Help.xml",
+                                                                           "Name":  "FileSystem",
+                                                                           "PSSnapIn":  "Microsoft.PowerShell.Core",
+                                                                           "ModuleName":  "Microsoft.PowerShell.Core",
+                                                                           "Module":  null,
+                                                                           "Description":  "",
+                                                                           "Capabilities":  52,
+                                                                           "Home":  "C:\\Users\\17602",
+                                                                           "Drives":  "C D E"
+                                                                       },
+                                                        "ReadCount":  1
+                                                    }
+                                    },
+                         "source":  "Input_Bridge",
+                         "status":  "new",
+                         "provenance":  {
+                                            "filename":  "HUMAN-Test-Truth.txt",
+                                            "origin":  "Human",
+                                            "bridge":  "v3"
+                                        }
+                     }
+                 ]
+}

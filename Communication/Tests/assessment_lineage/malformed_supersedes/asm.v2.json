@@ -1,0 +1,6 @@
+{
+  "assessment_id": "asm2",
+  "experiment_id": "EXP_TEST",
+  "_filepath": "malformed_supersedes/asm.v2.json",
+  "supersedes": 12345
+}

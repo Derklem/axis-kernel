@@ -1,0 +1,40 @@
+{
+    "version": 1,
+    "registry_id": "PILOT-REG-2026-001",
+    "pilots": [
+        {
+            "pilot_id": "PILOT-GPT-ANCHOR",
+            "name": "ChatGPT Anchor Channel",
+            "model_family": "GPT-5.1",
+            "role": "architect",
+            "trust_band": "high",
+            "capabilities": [
+                "reasoning",
+                "spec_design",
+                "refactor_review"
+            ],
+            "constraints": [
+                "no_direct_io",
+                "no_unattended_high_risk_plans"
+            ],
+            "notes": "Primary architect + quality control."
+        },
+        {
+            "pilot_id": "PILOT-ANTIGRAV-DEV",
+            "name": "Anti-Gravity Dev Agent",
+            "model_family": "Gemini/AntiGravity",
+            "role": "executor",
+            "trust_band": "medium",
+            "capabilities": [
+                "code_edit",
+                "file_io",
+                "android_builds"
+            ],
+            "constraints": [
+                "no_autonomy_policy_change",
+                "no_shadow_layer_edit"
+            ],
+            "notes": "Primary implementation engine."
+        }
+    ]
+}

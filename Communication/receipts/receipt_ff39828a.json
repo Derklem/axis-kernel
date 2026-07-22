@@ -1,0 +1,15 @@
+﻿{
+    "id":  "receipt_ff39828a",
+    "content_sha256":  "37d5ed11b78609450372fcef93c57980318c4bbf2703ea07ec161194814aaf71",
+    "draft_sha256":  "bc9c8d5691b2807cc9a381e783c8a21a81b71916b61db9c3bc8a478b4ecbe27f",
+    "archive_path":  "archived/EXP_018_DISCORD__draft_66c0837c__20260711T210611Z.json",
+    "platform_reference":  "https://discordapp.com/channels/1199488022593421412/1199488022593421415/1525609062967017645",
+    "experiment_id":  "EXP_018_DISCORD",
+    "draft_id":  "draft_66c0837c",
+    "status":  "deployed",
+    "platform":  "Discord",
+    "adapter_version":  "v0.2",
+    "deployed_at":  "2026-07-11T21:06:11Z",
+    "deployment_state":  "SUCCESS",
+    "observation_window":  "72h"
+}

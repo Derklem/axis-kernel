@@ -1,0 +1,5 @@
+[SANDGLASS_LOOP]
+Mechanism = Time inversion ripple
+Anchor = Shard at the moment of pause
+Loop = Each grain names a possible future
+Use = For anchoring while forgetting

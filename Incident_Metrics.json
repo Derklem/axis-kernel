@@ -1,0 +1,23 @@
+﻿{
+    "last_run_at":  "2026-01-24T15:09:30.3251936-08:00",
+    "metrics":  [
+                    {
+                        "policy_id":  "IAUT-AUTO-ESC-CRIT-001",
+                        "incident_type":  "autonomy_escalation",
+                        "min_severity":  "high",
+                        "time_window_minutes":  1440,
+                        "count":  3,
+                        "window_start":  "2026-01-23T15:09:30.3251936-08:00",
+                        "window_end":  "2026-01-24T15:09:30.3251936-08:00"
+                    },
+                    {
+                        "policy_id":  "IAUT-DOCTRINE-REPEAT-001",
+                        "incident_type":  "doctrine_violation",
+                        "min_severity":  "medium",
+                        "time_window_minutes":  10080,
+                        "count":  0,
+                        "window_start":  "2026-01-17T15:09:30.3251936-08:00",
+                        "window_end":  "2026-01-24T15:09:30.3251936-08:00"
+                    }
+                ]
+}

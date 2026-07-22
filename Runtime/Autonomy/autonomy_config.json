@@ -1,0 +1,23 @@
+{
+    "schema_version": "1.0",
+    "config_description": "Node 3 Agentic Autonomy Configuration",
+    "autonomy_mode": "ENQUEUE",
+    "allowed_modes": [
+        "PROPOSE_ONLY",
+        "ENQUEUE",
+        "AUTO_TRIGGER"
+    ],
+    "constraints": {
+        "max_proposals_per_cycle": 5,
+        "circuit_breaker_window_minutes": 60,
+        "circuit_breaker_error_codes": [
+            429,
+            503
+        ],
+        "require_l0_proof_for_proposal": true
+    },
+    "paths": {
+        "proposals": "D:\\Infinite\\Infinity\\Runtime\\Autonomy\\proposed_intents.jsonl",
+        "budget_state": "D:\\Infinite\\Infinity\\Runtime\\Autonomy\\budget_state.json"
+    }
+}

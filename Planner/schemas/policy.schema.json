@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "policy_id": { "type": "string" },
+    "attention_cost_mapping": {
+      "type": "object",
+      "additionalProperties": { "type": "number" }
+    },
+    "risk_penalty": {
+      "type": "object",
+      "additionalProperties": { "type": "number" }
+    },
+    "weights": {
+      "type": "object",
+      "properties": {
+        "information_gain": { "type": "number" },
+        "epistemic_debt_age_hours": { "type": "number" },
+        "attention_cost": { "type": "number" },
+        "estimated_compute_minutes": { "type": "number" },
+        "risk_penalty": { "type": "number" }
+      },
+      "additionalProperties": false,
+      "required": [
+        "information_gain",
+        "epistemic_debt_age_hours",
+        "attention_cost",
+        "estimated_compute_minutes",
+        "risk_penalty"
+      ]
+    }
+  },
+  "required": ["policy_id", "attention_cost_mapping", "risk_penalty", "weights"],
+  "additionalProperties": false
+}

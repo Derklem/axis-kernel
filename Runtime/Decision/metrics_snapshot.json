@@ -1,0 +1,17 @@
+﻿{
+    "vitals":  {
+                   "ts_utc":  "2026-02-10T04:02:26.2043433Z",
+                   "loop_status":  "STABLE",
+                   "proc_cpu":  1970.390625,
+                   "memory_mb":  334.7109375
+               },
+    "logs":  {
+                 "size_mb":  14.782713890075684,
+                 "last_modified":  "2026-02-10T04:02:23.2081097Z"
+             },
+    "state":  {
+                  "failed_count":  0,
+                  "inflight_count":  null,
+                  "executed_count":  0
+              }
+}

@@ -1,0 +1,9 @@
+﻿{
+    "timestamp":  "2026-01-16T19:02:52Z",
+    "light_level":  60,
+    "occupancy":  true,
+    "source":  "Mock_Adapter",
+    "temperature":  21.5,
+    "humidity":  45,
+    "noise_level":  "low"
+}

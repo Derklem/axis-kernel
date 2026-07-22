@@ -1,0 +1,19 @@
+
+input_channels:
+  - name: manual_drop
+    type: folder_watch
+    path: ./external_input/
+    status: enabled
+
+  - name: user_message
+    type: direct_prompt
+    status: enabled
+
+  - name: ambient_flag
+    type: symbolic_log_scan
+    status: passive
+
+routing_priority:
+  1. Witness
+  2. Engine
+  3. Scribe

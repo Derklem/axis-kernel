@@ -1,0 +1,84 @@
+import os
+import json
+import time
+
+TASKS_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../memory/tasks"))
+
+def create_task(task_id, title, description):
+    task = {
+        "id": task_id,
+        "title": title,
+        "description": description,
+        "status": "pending",
+        "output_file": f"task_output_{task_id}.txt"
+    }
+
+    path = os.path.join(TASKS_DIR, f"{task_id}.json")
+    with open(path, 'w') as f:
+        json.dump(task, f, indent=2)
+
+    print(f"[Shell] Task {task_id} written.")
+
+def list_tasks():
+    print("[Shell] Listing all tasks:")
+    for file in os.listdir(TASKS_DIR):
+        if file.endswith(".json"):
+            path = os.path.join(TASKS_DIR, file)
+            with open(path, 'r') as f:
+                task = json.load(f)
+                print(f"ID: {task['id']}, Title: {task['title']}, Status: {task['status']}")
+
+def update_task(task_id, status):
+    path = os.path.join(TASKS_DIR, f"{task_id}.json")
+    if os.path.exists(path):
+        with open(path, 'r') as f:
+            task = json.load(f)
+
+        task["status"] = status
+        with open(path, 'w') as f:
+            json.dump(task, f, indent=2)
+
+        print(f"[Shell] Task {task_id} updated to status: {status}")
+    else:
+        print(f"[Shell] Task {task_id} not found.")
+
+def main():
+    print("== Halcyon Task Shell ==")
+    print("Type 'exit' to quit.\n")
+
+    while True:
+        command = input("Command > ").strip()
+
+        if command.lower() == "exit":
+            break
+
+        # Create Task Command
+        elif command.startswith("create task"):
+            parts = command.split(" ", 3)
+            if len(parts) == 4:
+                task_id = parts[2]
+                title = parts[1]
+                description = parts[3]
+                create_task(task_id, title, description)
+            else:
+                print("[Shell] Invalid command format.")
+
+        # List Tasks Command
+        elif command.lower() == "list tasks":
+            list_tasks()
+
+        # Update Task Command
+        elif command.startswith("update task"):
+            parts = command.split(" ", 3)
+            if len(parts) == 4:
+                task_id = parts[2]
+                status = parts[3]
+                update_task(task_id, status)
+            else:
+                print("[Shell] Invalid command format.")
+
+        else:
+            print("[Shell] Command not recognized.")
+
+if __name__ == "__main__":
+    main()

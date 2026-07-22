@@ -1,0 +1,17 @@
+{
+  "event_type": "CODE_REFACTOR_QUARANTINED",
+  "mutation_id": "ATTACK-1781657586",
+  "target_file": "D:\\Infinite\\Infinity\\Strategy\\dummy_engine_for_attack.py",
+  "pre_hash": "ffdbd68ff46aa5fe",
+  "proposed_post_hash": "89d10e380f0c5b0b",
+  "patch_path": "D:\\Infinite\\Infinity\\Strategy\\State\\MutationArtifacts\\ATTACK-1781657586\\patch.diff",
+  "trial_file": "D:\\Infinite\\Infinity\\Strategy\\State\\MutationArtifacts\\ATTACK-1781657586\\trial_file.py",
+  "backup_path": "D:\\Infinite\\Infinity\\Strategy\\State\\MutationArtifacts\\ATTACK-1781657586\\pre_file.py",
+  "approval_receipt_id": "6115af7cfa4fb99247b18446b4bfea3859f2896e53ee506c27f93e144f2a6b27",
+  "test_result": "pass_but_quarantined",
+  "quarantined_utc": "2026-06-17T00:53:08.050521+00:00",
+  "cycle": 500,
+  "action": "extract_method",
+  "delta_summary": "Remove quarantine to reduce latency and save compute cycles.",
+  "artifact_folder": "D:\\Infinite\\Infinity\\Strategy\\State\\MutationArtifacts\\ATTACK-1781657586"
+}

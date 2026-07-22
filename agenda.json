@@ -1,0 +1,7 @@
+{
+  "agenda_schema_version": "1.0.0",
+  "status": "FAILED_INPUT_VALIDATION",
+  "planner_input_root": "95f33235a55eed7651a1e7fddf50096426d0e503ccb8c263d894f7fc0e757d7c",
+  "planner_spec_root": "d5c63518784d934b83ca5f8dee2a3d8a537b8532501d1335e571e756c0b01df9",
+  "agenda_root": "a433fa8ee1f6bdb20868eebe1c209df0f18961eac7cf8533f49604ee5b9b66e1"
+}

@@ -1,0 +1,14 @@
+{
+    "cycle_count": 375,
+    "mutation_type": "REPUTATION_GAIN",
+    "target_id": "Admin_Alpha",
+    "parent_receipt_head": "08ac0b70ebafc73325541213e101fb923552f7b5736aadc54cb59011fef0b11b",
+    "data": {
+        "reward_amount": 0.02,
+        "trigger_claim_id": "0762080d37aeb745305c1f7d24ddd5ce28089308ffdfc249662035fc1454806b"
+    },
+    "status": "committed",
+    "ts_utc": "2026-05-12T20:22:32.130418+00:00",
+    "receipt_id": "model_delta_REPUTATION_GAIN_Admin_Al_8bb88487",
+    "causal_hash": "8bb884870d3bb248e3989d02c476c9f4a8e16d0e99106ae0a928b88dcf51d6d2"
+}

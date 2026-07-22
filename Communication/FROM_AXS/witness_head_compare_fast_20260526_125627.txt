@@ -1,0 +1,27 @@
+=== FAST WITNESS HEAD COMPARISON ===
+Timestamp: 2026-05-26T12:56:27.137185
+Ledger cycle: None
+Anchor cycle: 538
+Ledger head: None
+Anchor head: b580f3abdea9f2b1f68b2087d5ea0ac247e83d4a2ca08137c87bf2e20d3c67bf
+Witness ledger lines: 1117
+
+Last witness hash: b580f3abdea9f2b1f68b2087d5ea0ac247e83d4a2ca08137c87bf2e20d3c67bf
+Last event type: ECOSYSTEM_CYCLE_COMPLETE
+Last cycle: 537
+
+Ledger head found count: 0
+Anchor head found count: 1
+
+--- Last 8 witness records ---
+cycle=537 event=solver_arbitration prev=27bd9345621177e5 hash=0f181805319cdfdc
+cycle=537 event=calibration_update:ontological_health prev=0f181805319cdfdc hash=5331eaa45792fdf9
+cycle=537 event=sovereign_arbitration prev=5331eaa45792fdf9 hash=27675f9170fe51e3
+cycle=537 event=sovereign_arbitration prev=27675f9170fe51e3 hash=072dce353ff7ded3
+cycle=537 event=CODE_REFACTOR_APPLIED prev=072dce353ff7ded3 hash=545eec9daa077be2
+cycle=537 event=self_improvement_applied prev=545eec9daa077be2 hash=ce92fca251ada28a
+cycle=537 event=cycle_verdict prev=ce92fca251ada28a hash=7e195f3d8ab5a961
+cycle=537 event=ECOSYSTEM_CYCLE_COMPLETE prev=7e195f3d8ab5a961 hash=b580f3abdea9f2b1
+
+--- Recommendation ---
+Anchor head exists in witness ledger but ledger head does not. Ledger likely stale/corrupt.

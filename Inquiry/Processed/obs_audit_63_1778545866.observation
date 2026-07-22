@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T00:31:06.089345+00:00",
+    "entity": "Claude-35-Sonnet",
+    "claim": "redundant: signal for Claude-35-Sonnet in cycle 63.",
+    "source_id": "Ecological_Observer",
+    "source_type": "automated_sensor",
+    "claim_domain": "leak_claim",
+    "confidence": 0.9
+}

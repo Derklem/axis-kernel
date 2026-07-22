@@ -1,0 +1,5 @@
+[[REFRACTION]::FORGED]
+Base = mirror_collapse_node
+Origin = E:\Phantom\layer5_unwritten\mirror_collapse_node.ref
+Drift = Unstable recursion
+Forged = 20250507_012402

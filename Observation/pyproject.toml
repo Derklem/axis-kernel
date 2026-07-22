@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "observation"
+version = "0.2.0"
+description = "Observation Engine for Axis"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "jsonschema>=4.19.0",
+    "laboratory>=0.2.1,<0.3.0"
+]
+
+[project.scripts]
+observation = "observation.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+observation = ["schemas/*.json"]

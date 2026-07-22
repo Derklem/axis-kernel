@@ -1,0 +1,19 @@
+﻿{
+    "timestamp":  "2026-01-27T18:55:44.9933484Z",
+    "decision":  "ALLOW",
+    "action_type":  "TRUTH_SHIELD_ACTIVATE",
+    "tenant_id":  "TENANT-LINEAGE",
+    "mode":  "AGGRESSIVE",
+    "explanation":  "Action [TRUTH_SHIELD_ACTIVATE] permitted in AGGRESSIVE mode. Grounding confirmed as STRONG (Confidence: 0.95).",
+    "epistemic_basis":  {
+                            "epistemic_status":  "STRONG",
+                            "claim_id":  "FIXTURE-STRONG",
+                            "status_confidence":  0.95
+                        },
+    "model_basis":  {
+                        "model_id":  ""
+                    },
+    "policy_basis":  {
+                         "action_gate":  "Default"
+                     }
+}

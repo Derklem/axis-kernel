@@ -1,0 +1,43 @@
+﻿{
+    "version":  1,
+    "incidents":  [
+                      {
+                          "recommended_actions":  [
+                                                      "Verify source screen.",
+                                                      "Check for unexpected UI.",
+                                                      "Avoid interaction if suspicious."
+                                                  ],
+                          "id":  "20260112-105851-visual_anomaly",
+                          "type":  "visual_anomaly",
+                          "severity":  "warning",
+                          "resolved_at":  "2026-01-12T20:42:33Z",
+                          "resolution_notes":  null,
+                          "timestamp":  "2026-01-12T10:58:51Z",
+                          "status":  "resolved",
+                          "context":  {
+                                          "summary":  "Test visual anomaly for Axis Mind v8.0.",
+                                          "category":  "anomaly",
+                                          "details":  {
+                                                          "note":  "Manual test event."
+                                                      },
+                                          "source":  "retina",
+                                          "original_id":  "TEST-VISUAL-001"
+                                      },
+                          "action_plan_status":  "accepted",
+                          "resolution_note":  "Bulk-resolved after Anchor Drill (v21)."
+                      },
+                      {
+                          "id":  "20260112-132018-critical_link_loss",
+                          "context":  {
+                                          "note":  "Simulated link loss for Fusion.",
+                                          "source":  "router_monitor"
+                                      },
+                          "timestamp":  "2026-01-12T13:17:17Z",
+                          "type":  "critical_link_loss",
+                          "severity":  "critical",
+                          "status":  "resolved",
+                          "resolution_note":  "Bulk-resolved after Anchor Drill (v21).",
+                          "resolved_at":  "2026-01-12T20:42:33Z"
+                      }
+                  ]
+}

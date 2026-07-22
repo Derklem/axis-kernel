@@ -1,0 +1,2 @@
+{"timestamp": "2026-03-13T20:56:25Z", "status": "LEDGER_INITIALIZED", "event": "Model Revision Proposal Ledger created."}
+{"proposal_id": "ec8adbd7-f087-4323-b7b2-de3ee5418a68", "component_type": "INTERACTION_STRENGTH", "timestamp": "2026-03-13T20:57:16.198236", "proposed_params": {"latency_congestion_coefficient": 1.5}, "expected_benefit": 0.7, "status": "QUARANTINED"}

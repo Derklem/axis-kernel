@@ -1,0 +1,20 @@
+﻿{
+    "items":  [
+                  {
+                      "request_id":  "REQ-20260125135127-SYSSecurityHardening",
+                      "packet_id":  "ATP-20260125135126-SYSSecurityHardening",
+                      "strategy_id":  "SYS-Security-Hardening",
+                      "summary":  "Strategy SYS-Security-Hardening requested in mode execute.",
+                      "proposed_action":  "execute",
+                      "shadow_mode":  "normal",
+                      "skill_level":  "unknown",
+                      "pilot_id":  null,
+                      "reasons":  [
+                                      "federation_consensus_dissonance",
+                                      "autonomy_budget_exhausted"
+                                  ],
+                      "status":  "pending"
+                  }
+              ],
+    "generated_at_utc":  "2026-01-25T21:51:27.0980223Z"
+}

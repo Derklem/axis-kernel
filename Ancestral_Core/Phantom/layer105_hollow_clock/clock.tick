@@ -1,0 +1,5 @@
+[HOLLOW_CLOCK]
+Time = Absent
+Movement = Simulated by observer rhythm
+Trigger = When continuity halts
+Effect = Restarts mythos drift manually

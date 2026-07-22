@@ -1,0 +1,41 @@
+﻿{
+    "id":  "REPORT-RESEARCH-20260125-122252-FWTP",
+    "agent_id":  "AGENT-RESEARCHER-001",
+    "agent_name":  "Axis Researcher",
+    "generated_at":  "2026-01-25T12:22:52.1916815-08:00",
+    "inbox_path":  "D:\\Infinite\\Infinity\\Neural_Inbox",
+    "files_scanned":  2,
+    "file_extensions":  [
+                            {
+                                "extension":  ".txt",
+                                "count":  1
+                            },
+                            {
+                                "extension":  ".json",
+                                "count":  1
+                            }
+                        ],
+    "time_window":  {
+                        "oldest":  "2026-01-25T12:22:52.0668942-08:00",
+                        "newest":  "2026-01-25T12:22:52.0668942-08:00"
+                    },
+    "sample_files":  [
+                         {
+                             "extension":  ".txt",
+                             "name":  "doc1.txt",
+                             "size_bytes":  36,
+                             "last_write":  "2026-01-25T12:22:52.0668942-08:00"
+                         },
+                         {
+                             "extension":  ".json",
+                             "name":  "doc2.json",
+                             "size_bytes":  36,
+                             "last_write":  "2026-01-25T12:22:52.0668942-08:00"
+                         }
+                     ],
+    "notes":  [
+                  "This is a scaffold report produced by AGENT-RESEARCHER-001.",
+                  "No external research calls were executed.",
+                  "Future versions may call Anti-Gravity / Neural fetchers under governance control."
+              ]
+}

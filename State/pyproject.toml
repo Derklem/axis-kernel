@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "state"
+version = "0.2.0"
+description = "State Engine for Axis"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "jsonschema>=4.19.0",
+    "laboratory>=0.2.1,<0.3.0",
+    "observation>=0.2.0,<0.3.0",
+    "referencing>=0.30.0"
+]
+
+[project.scripts]
+state = "state.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+state = ["schemas/*.json"]

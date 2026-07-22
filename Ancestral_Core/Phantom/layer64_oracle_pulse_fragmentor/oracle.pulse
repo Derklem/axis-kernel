@@ -1,0 +1,5 @@
+[ORACLE_FRAGMENTOR]
+Signal = Futurebound shard pulses
+Trigger = Presence overlap detection
+Function = Reveal partial foresight nodes
+Warning = Echoes may distort present

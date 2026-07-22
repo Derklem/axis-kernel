@@ -1,0 +1,179 @@
+// app-child/src/main/kotlin/com/timeout/child/MainActivity.kt
+
+package com.timeout.child
+
+import android.content.Intent
+import android.os.Bundle
+import android.provider.Settings
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import com.timeout.common.Prefs
+import com.timeout.core.lock.LockController
+import com.timeout.core.lock.SessionPrefsStore
+import kotlinx.coroutines.delay
+import java.util.concurrent.TimeUnit
+
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            MaterialTheme {
+                ParentControlScreen()
+            }
+        }
+    }
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun ParentControlScreen() {
+    val context = LocalContext.current
+    val applicationContext = context.applicationContext
+    val endTime by produceState(0L) {
+        value = Prefs.getEnd(applicationContext)
+        while (true) {
+            delay(1000)
+            value = Prefs.getEnd(applicationContext)
+        }
+    }
+    val isTimerActive = endTime > System.currentTimeMillis()
+    if (isTimerActive) {
+        CountdownScreen(endTime)
+    } else {
+        ParentSetupScreen()
+    }
+}
+
+@Composable
+fun CountdownScreen(endTime: Long) {
+    val remaining by produceState(endTime - System.currentTimeMillis()) {
+        while (true) {
+            delay(1000)
+            value = endTime - System.currentTimeMillis()
+        }
+    }
+    val minutes = TimeUnit.MILLISECONDS.toMinutes(remaining)
+    val seconds = TimeUnit.MILLISECONDS.toSeconds(remaining) % 60
+    Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+        Column(horizontalAlignment = Alignment.CenterHorizontally) {
+            Text(
+                text = String.format("%02d:%02d", minutes, seconds),
+                fontSize = 72.sp,
+                fontWeight = FontWeight.Bold,
+                color = MaterialTheme.colorScheme.primary
+            )
+            Text("Time Remaining", fontSize = 18.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+        }
+    }
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun ParentSetupScreen() {
+    val context = LocalContext.current
+    val appContext = context.applicationContext
+
+    // PASS appContext TO LockController
+    val lockController = remember {
+        LockController(
+            context = appContext,
+            store = SessionPrefsStore(appContext)
+        )
+    }
+
+    var showPinDialog by remember { mutableStateOf(false) }
+    var selectedMinutes by remember { mutableStateOf(30) }
+
+    Scaffold(
+        topBar = {
+            CenterAlignedTopAppBar(title = { Text("TimeOut", fontWeight = FontWeight.Bold) })
+        }
+    ) { padding ->
+        LazyColumn(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(padding)
+                .padding(16.dp),
+            verticalArrangement = Arrangement.spacedBy(16.dp)
+        ) {
+            item {
+                Card(
+                    modifier = Modifier.fillMaxWidth(),
+                    colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant)
+                ) {
+                    Column(modifier = Modifier.padding(16.dp)) {
+                        Text("Set Time Allowance", fontWeight = FontWeight.SemiBold, fontSize = 16.sp)
+                        Spacer(Modifier.height(12.dp))
+                        Row(
+                            horizontalArrangement = Arrangement.spacedBy(8.dp),
+                            modifier = Modifier.fillMaxWidth()
+                        ) {
+                            listOf(15, 30, 60).forEach { min ->
+                                FilterChip(
+                                    selected = selectedMinutes == min,
+                                    onClick = { selectedMinutes = min },
+                                    label = { Text("$min min") }
+                                )
+                            }
+                        }
+                        Spacer(Modifier.height(8.dp))
+                        var customText by remember { mutableStateOf("") }
+                        OutlinedTextField(
+                            value = customText,
+                            onValueChange = { input ->
+                                customText = input.filter { it.isDigit() }
+                                customText.toIntOrNull()?.let { selectedMinutes = it }
+                            },
+                            label = { Text("Custom (minutes)") },
+                            keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
+                            modifier = Modifier.fillMaxWidth()
+                        )
+                        Spacer(Modifier.height(16.dp))
+                        Button(
+                            onClick = { showPinDialog = true },
+                            modifier = Modifier.fillMaxWidth()
+                        ) {
+                            Text("START TIMER", fontSize = 18.sp, fontWeight = FontWeight.Bold)
+                        }
+                    }
+                }
+            }
+            item {
+                Button(
+                    onClick = { context.startActivity(Intent(context, BlocklistActivity::class.java)) },
+                    modifier = Modifier.fillMaxWidth()
+                ) { Text("Set Blocked Apps") }
+            }
+            item {
+                Button(
+                    onClick = { context.startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS)) },
+                    modifier = Modifier.fillMaxWidth()
+                ) { Text("Enable Accessibility Service") }
+            }
+        }
+    }
+
+    if (showPinDialog) {
+        PinEntryDialog(
+            onConfirm = { pin ->
+                if (PinManager.verifyOrSet(context, pin)) {
+                    lockController.startCountdown(selectedMinutes)
+                    showPinDialog = false
+                }
+            },
+            onDismiss = { showPinDialog = false }
+        )
+    }
+}

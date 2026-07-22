@@ -1,0 +1,13 @@
+# hyperion.py
+class Hyperion:
+    def __init__(self):
+        self.registry = {}
+
+    def register(self, titan_name, titan_obj):
+        self.registry[titan_name] = titan_obj
+
+    def status(self):
+        return {name: type(obj).__name__ for name, obj in self.registry.items()}
+
+    def get(self, name):  # <-- INDENT this line to match the others
+        return self.registry.get(name)

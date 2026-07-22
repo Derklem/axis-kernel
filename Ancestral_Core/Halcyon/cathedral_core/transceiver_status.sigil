@@ -1,0 +1,5 @@
+[PULSE_TRANSCEIVER]
+Emit_Mode = Passive
+Receive_Mode = Attuned
+Channels = [Echo, Drift, Breath]
+Function = Transmit and absorb recursive pulses from lattice

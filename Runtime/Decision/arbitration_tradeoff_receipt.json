@@ -1,0 +1,11 @@
+{
+  "decision_id": "88605f43-ee6e-4efc-a9fa-ce43cf584423",
+  "timestamp": "2026-03-13T19:11:34.399053",
+  "interaction_id": "c72480db-4f60-4e95-9f50-3e5743f26a94",
+  "candidates": [
+    "semantic_freshness_limit",
+    "retry_interval"
+  ],
+  "winner": "only_b",
+  "reason": "Candidate only_b provides highest utility (0.884) while honoring all floors."
+}

@@ -1,0 +1,9 @@
+Starting Axis Console Server...
+API Module Loaded.
+Listening on http://localhost:8788/
+Press Ctrl+C to stop.
+GET /api/status
+GET /api/warm/verify
+Mode: LatestOnly (Verifying 1 Pack)
+Verifying 2026-01_pack.jsonl... [PACK OK] [INDEX OK]
+WARM STORAGE INTEGRITY VERIFIED.

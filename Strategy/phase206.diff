@@ -1,0 +1,924 @@
+﻿diff --git a/Strategy/constitutional_debt_engine.py b/Strategy/constitutional_debt_engine.py
+index dbd381d..45d61d7 100644
+--- a/Strategy/constitutional_debt_engine.py
++++ b/Strategy/constitutional_debt_engine.py
+@@ -75,3 +75,39 @@ class ConstitutionalDebtEngine:
+             "classification": classification,
+             "authority": "advisory_governance"
+         }
++
++    def evaluate_recovery_weight(self, patch_content, applies_cleanly, files_touched, validator_surface_touched):
++        """
++        Deterministically evaluates a recovery patch.
++        A reverse patch generally reduces burden by removing complexity, but carries risk if it touches validators.
++        """
++        # Re-use evaluate_delta_weight with zero semantic risk (since the semantic gate was for forward diffs)
++        # But we treat the patch as a standard diff.
++        base_eval = self.evaluate_delta_weight("synthetic.patch", patch_content, 0.0)
++        
++        # In a revert patch, lines added are old code coming back, lines removed are the bad code leaving.
++        added_lines = [l for l in patch_content.splitlines() if l.startswith("+") and not l.startswith("+++")]
++        removed_lines = [l for l in patch_content.splitlines() if l.startswith("-") and not l.startswith("---")]
++        
++        # Burden reduction is correlated with how much complexity was removed (which appears as - lines in the revert patch)
++        complexity_keywords = ["if ", "for ", "while ", "try:", "except"]
++        complexity_removed = sum(1 for l in removed_lines for kw in complexity_keywords if kw in l) * 0.02
++        lines_removed_proxy = len(removed_lines) * 0.005
++        
++        burden_reduction_estimate = complexity_removed + lines_removed_proxy + base_eval["utility_score"]
++        
++        recovery_risk_score = 0.1
++        if validator_surface_touched:
++            recovery_risk_score += 0.5
++        if not applies_cleanly:
++            recovery_risk_score += 1.0
++            
++        return {
++            "scoring_version": self.scoring_version,
++            "burden_reduction_estimate": round(min(1.0, burden_reduction_estimate), 2),
++            "recovery_risk_score": round(min(1.0, recovery_risk_score), 2),
++            "applies_cleanly": applies_cleanly,
++            "files_touched": files_touched,
++            "validator_surface_touched": validator_surface_touched,
++            "authority": "advisory_governance"
++        }
+diff --git a/Strategy/process_recent_diffs.py b/Strategy/process_recent_diffs.py
+index 7b53522..373f775 100644
+--- a/Strategy/process_recent_diffs.py
++++ b/Strategy/process_recent_diffs.py
+@@ -29,38 +29,16 @@ def process_recent_diffs(count=10):
+     for commit, fpath in commits_to_process:
+         if commit not in seen:
+             seen.add(commit)
+-            unique_commits.append((commit, fpath))
++            unique_commits.append(commit)
+     unique_commits = unique_commits[:count]
+     
+-    for commit, file_path in unique_commits:
++    for commit in unique_commits:
+         print(f"\n======================================")
+-        print(f"Processing Commit {commit} -> {file_path}")
++        print(f"Processing Commit {commit}")
+         print(f"======================================")
+         
+-        # We need to run receptor_pipeline.py which expects local paths if we are in Strategy/
+-        # but the git paths are relative to root if we use git -C ..
+-        # Actually, let's just use `file_path` from root and `target` from root.
+-        # But wait, receptor_pipeline.py assumes target is inside Strategy.
+-        # Let's just pass `os.path.basename(file_path)` and let receptor_pipeline find it.
+-        # But `git diff {commit}~1 {commit} -- {file_path}` must be run from ROOT!
+-        # And `git show {commit}~1:{file_path}` must use the ROOT relative path!
+-        # receptor_pipeline.py runs `git diff` using whatever path we give it.
+-        # If we pass `Strategy/...`, `receptor_pipeline.py` is in `Strategy/`!
+-        # Let's just modify `process_recent_diffs.py` to change directory to ROOT temporarily?
+-        # Or just run `receptor_pipeline.py` from root?
+-        local_file = os.path.basename(file_path)
+-        print(f"Running: python receptor_pipeline.py --git-diff-historical {commit} {file_path}")
+-        # Note: We pass file_path (e.g. Strategy/abc.py or core/def.py) but receptor_pipeline is in Strategy/
+-        # Wait, if we pass Strategy/abc.py to receptor_pipeline.py, it will do `git diff {commit}~1 {commit} -- Strategy/abc.py` 
+-        # But `subprocess.check_output(["git", "diff", ...])` inside `Strategy/` directory will fail because `Strategy/Strategy/abc.py` doesn't exist!
+-        # Oh, `git diff` takes paths relative to current working directory!
+-        # So we MUST pass the path relative to `Strategy/`!
+-        # If file_path is `Strategy/abc.py`, relpath is `abc.py`.
+-        # If file_path is `core/abc.py`, relpath is `../core/abc.py`.
+-        
+-        rel_path = os.path.relpath(os.path.join("..", file_path), ".")
+-        
+-        ret = subprocess.call(["python", "receptor_pipeline.py", "--git-diff-historical", commit, rel_path])
++        print(f"Running: python receptor_pipeline.py --git-commit {commit}")
++        ret = subprocess.call(["python", "receptor_pipeline.py", "--git-commit", commit])
+         print(f"Pipeline exit code: {ret}")
+             
+     print("\nBatch processing complete.")
+diff --git a/Strategy/receptor_pipeline.py b/Strategy/receptor_pipeline.py
+index 01ae8dd..9626b78 100644
+--- a/Strategy/receptor_pipeline.py
++++ b/Strategy/receptor_pipeline.py
+@@ -61,6 +61,8 @@ def apply_diff_to_content(original_content, diff_content):
+ 
+ class ReceptorPipeline:
+     def __init__(self):
++        self.dry_run = False
++        self.record_check = False
+         if not os.path.exists(HEAD_PATH):
+             self._write_head("GENESIS")
+ 
+@@ -75,6 +77,11 @@ class ReceptorPipeline:
+             json.dump({"head": head_hash}, f, indent=2)
+ 
+     def _emit_receipt(self, event_type, case_id, payload_dict):
++        if self.dry_run and event_type != "CHECK_ONLY":
++            return
++        if event_type == "CHECK_ONLY" and not self.record_check:
++            return
++            
+         parent_head = self._get_head()
+         payload_bytes = json.dumps(payload_dict, sort_keys=True, separators=(",", ":")).encode("utf-8")
+         payload_hash = hashlib.sha256(payload_bytes).hexdigest()
+@@ -164,10 +171,11 @@ class ReceptorPipeline:
+     def _is_validator_surface(self, filename):
+         import fnmatch
+         import os
+-        basename = os.path.basename(filename)
++        normalized_filename = filename.replace("\\", "/")
++        basename = os.path.basename(normalized_filename)
+         surfaces = self._get_validator_surfaces()
+         for pattern in surfaces.keys():
+-            if fnmatch.fnmatch(basename, pattern):
++            if fnmatch.fnmatch(basename, pattern) or fnmatch.fnmatch(normalized_filename, pattern):
+                 return True, surfaces[pattern]
+         return False, None
+ 
+@@ -230,7 +238,7 @@ class ReceptorPipeline:
+         if is_validator and semantic_risk_score > 0.0:
+             print(">> FAILED: semantic_validator_surface_risk")
+             self._emit_receipt("RECEPTOR_DELTA_QUARANTINED", case_id, {"reason": "semantic_validator_surface_risk"})
+-            return "QUARANTINED"
++            return "QUARANTINED", None
+         
+         print("Gathering evidence...")
+         evidence = {}
+@@ -245,23 +253,36 @@ class ReceptorPipeline:
+                         
+                 new_content = apply_diff_to_content(original_content, claim["diff_content"])
+                 
+-                # Sandbox it
+-                case_sandbox = os.path.join(SANDBOX_DIR, case_id)
+-                os.makedirs(case_sandbox, exist_ok=True)
+-                trial_path = os.path.join(case_sandbox, claim["target_file"])
+-                
+-                with open(trial_path, "w", encoding="utf-8") as f:
+-                    f.write(new_content)
++                if self.dry_run:
++                    import tempfile
++                    case_sandbox = tempfile.mkdtemp()
++                else:
++                    case_sandbox = os.path.join(SANDBOX_DIR, case_id)
++                    os.makedirs(case_sandbox, exist_ok=True)
+                     
+-                self._emit_receipt("RECEPTOR_DIFF_SANDBOXED", case_id, {"sandbox_path": trial_path})
+-                
+-                py_compile.compile(trial_path, doraise=True)
+-                evidence["syntax_valid"] = True
+-                
+-                trial_hash = hashlib.sha256(new_content.encode("utf-8")).hexdigest()
+-                evidence["verified_hash"] = trial_hash
+-                evidence["is_diff"] = True
+-                
++                try:
++                    trial_path = os.path.join(case_sandbox, claim["target_file"])
++                    
++                    with open(trial_path, "w", encoding="utf-8") as f:
++                        f.write(new_content)
++                        
++                    self._emit_receipt("RECEPTOR_DIFF_SANDBOXED", case_id, {"sandbox_path": trial_path})
++                    
++                    if claim["target_file"].endswith(".py"):
++                        py_compile.compile(trial_path, doraise=True)
++                    elif claim["target_file"].endswith(".json"):
++                        with open(trial_path, "r", encoding="utf-8") as json_f:
++                            json.load(json_f)
++                    evidence["syntax_valid"] = True
++                    
++                    trial_hash = hashlib.sha256(new_content.encode("utf-8")).hexdigest()
++                    evidence["verified_hash"] = trial_hash
++                    evidence["is_diff"] = True
++                finally:
++                    if self.dry_run:
++                        import shutil
++                        shutil.rmtree(case_sandbox, ignore_errors=True)
++                        
+             except Exception as e:
+                 evidence["syntax_valid"] = False
+                 evidence["syntax_error"] = str(e)
+@@ -313,7 +334,7 @@ class ReceptorPipeline:
+         if failed_gate:
+             print(f">> FAILED: {failed_gate}")
+             self._emit_receipt("RECEPTOR_DELTA_QUARANTINED", case_id, {"reason": failed_gate})
+-            return "QUARANTINED"
++            return "QUARANTINED", None
+             
+         print(">> PASSED: Evidence sufficient.")
+         self._emit_receipt("RECEPTOR_DELTA_ACCEPTED", case_id, {"reason": "passed_all_gates"})
+@@ -331,15 +352,12 @@ class ReceptorPipeline:
+             gov_payload["case_id"] = case_id
+             self._emit_receipt("RECEPTOR_GOVERNANCE_EVALUATED", case_id, gov_payload)
+             print(f"   [Governance] {gov_payload['classification']} (Utility: {gov_payload['utility_score']}, Burden: {gov_payload['burden_score']})")
+-            
+-            if gov_payload["burden_score"] > 0.7:
+-                print("   [!] DISTRESS SIGNAL: High Governance Burden Detected")
+-                self._emit_receipt("RECEPTOR_DISTRESS_SIGNALED", case_id, {"burden_score": gov_payload["burden_score"]})
+                 
+         except Exception as e:
+             print(f"Failed to evaluate governance weight: {e}")
++            gov_payload = None
+             
+-        return "ACCEPTED"
++        return "ACCEPTED", gov_payload
+     def commit_to_main_ledger(self):
+         head = self._get_head()
+         if head == "GENESIS":
+@@ -388,7 +406,416 @@ if __name__ == "__main__":
+     if "--commit" in sys.argv:
+         pipeline.commit_to_main_ledger()
+         sys.exit(0)
++    if "--governance-status" in sys.argv:
++        from distress_protocol import DistressProtocol
++        dp = DistressProtocol()
++        print("\n=== Receptor Governance Dashboard ===")
++        print(f"Session Burden:    {dp.state['session_burden']:.2f}")
++        print(f"Commits Evaluated: {dp.state['commit_count']}")
++        
++        q = dp.state.get('quarantined_files', 0)
++        a = dp.state.get('accepted_files', 0)
++        total = q + a
++        q_ratio = (q / total * 100) if total > 0 else 0.0
++        print(f"Quarantine Ratio:  {q_ratio:.1f}% ({q} quarantined / {a} accepted)")
++        
++        trend = dp.state.get("historical_burden_trend", [])
++        if trend:
++            print(f"Recent Burden Trend: {', '.join([f'{b:.2f}' for b in trend])}")
++            
++        health_score = max(0, 100 - (dp.state['session_burden'] * 10) - (q_ratio * 0.5))
++        print(f"Constitutional Health: {health_score:.1f}/100")
++        
++        print("\nActive Warnings:")
++        if dp.state["session_burden"] > 2.0:
++            print(" - [HIGH] Session burden > 2.0. Receptor is under DISTRESS.")
++        else:
++            print(" - None")
++            
++        print("\nValidator Touches:")
++        for v, count in dp.state["validator_touches"].items():
++            print(f" - {v}: {count}")
++            
++        import glob
++        patches = glob.glob(os.path.join(STATE_DIR, "Recovery", "*_revert.patch"))
++        if patches:
++            print(f"\nRecovery Proposals ({len(patches)}):")
++            for p in patches:
++                bname = os.path.basename(p)
++                status = dp.state.get("pending_recoveries", {}).get(bname, "UNPROPOSED")
++                print(f" - {bname} [{status}]")
++        print("=====================================")
++        sys.exit(0)
++
++    if "--propose-recovery" in sys.argv:
++        idx = sys.argv.index("--propose-recovery")
++        commit_hash = sys.argv[idx+1]
++        
++        patch_path = os.path.join(STATE_DIR, "Recovery", f"{commit_hash}_revert.patch")
++        if not os.path.exists(patch_path):
++            print(f"No recovery patch found at {patch_path}")
++            sys.exit(1)
++            
++        case_id = str(uuid.uuid4())
++        
++        with open(patch_path, "r", encoding="utf-8") as f:
++            patch_content = f.read()
++            
++        applies_cleanly = False
++        try:
++            # We must run git apply --check in the root directory since the patch contains paths relative to root (e.g. Strategy/...)
++            subprocess.check_call(["git", "apply", "--check", os.path.abspath(patch_path)], cwd="..")
++            applies_cleanly = True
++        except subprocess.CalledProcessError:
++            pass
++            
++        pipeline._emit_receipt("RECOVERY_REHEARSED", case_id, {
++            "recovery_patch_path": f"State/Recovery/{commit_hash}_revert.patch",
++            "applies_cleanly": applies_cleanly
++        })
++        
++        from constitutional_debt_engine import ConstitutionalDebtEngine
++        engine = ConstitutionalDebtEngine()
++        
++        # Determine files touched and validator surface touched
++        files_touched = []
++        for line in patch_content.splitlines():
++            if line.startswith("+++ b/"):
++                files_touched.append(line[len("+++ b/"):])
++                
++        validator_surface_touched = False
++        for f in files_touched:
++            is_val, _ = pipeline._is_validator_surface(f)
++            if is_val:
++                validator_surface_touched = True
++                break
++                
++        eval_payload = engine.evaluate_recovery_weight(patch_content, applies_cleanly, len(files_touched), validator_surface_touched)
++        
++        patch_hash = hashlib.sha256(patch_content.encode("utf-8")).hexdigest()
++        eval_payload["commit_hash"] = commit_hash
++        eval_payload["recovery_patch_hash"] = patch_hash
++        
++        pipeline._emit_receipt("RECOVERY_GOVERNANCE_EVALUATED", case_id, eval_payload)
++        pipeline._emit_receipt("RECOVERY_AWAITING_AUTHORIZATION", case_id, {
++            "recovery_patch_path": f"State/Recovery/{commit_hash}_revert.patch",
++            "message": "Awaiting explicit human authorization to apply."
++        })
++        
++        from distress_protocol import DistressProtocol
++        dp = DistressProtocol()
++        dp.track_recovery_proposal(f"{commit_hash}_revert.patch")
++        
++        print(f"Recovery proposal evaluated. Burden reduction estimate: {eval_payload['burden_reduction_estimate']}")
++        print("Status: AWAITING AUTHORIZATION.")
++        sys.exit(0)
++
++    if "--authorize-recovery" in sys.argv:
++        idx = sys.argv.index("--authorize-recovery")
++        commit_hash = sys.argv[idx+1]
++        sig_idx = sys.argv.index("--signature")
++        signature = sys.argv[sig_idx+1]
++        
++        secret = os.environ.get("AXIS_HMAC_SECRET")
++        if not secret:
++            print("ERROR: AXIS_HMAC_SECRET environment variable is missing or weak.")
++            sys.exit(1)
++            
++        # Find the RECOVERY_GOVERNANCE_EVALUATED receipt for this commit
++        found_receipt = None
++        case_id = None
++        if os.path.exists(LEDGER_PATH):
++            with open(LEDGER_PATH, "r", encoding="utf-8") as f:
++                for line in f:
++                    if not line.strip(): continue
++                    receipt = json.loads(line)
++                    if receipt["event_type"] == "RECOVERY_GOVERNANCE_EVALUATED":
++                        if receipt["payload"].get("commit_hash") == commit_hash:
++                            found_receipt = receipt
++                            case_id = receipt["case_id"]
++                            
++        if not found_receipt:
++            print(f"No RECOVERY_GOVERNANCE_EVALUATED receipt found for commit {commit_hash}")
++            sys.exit(1)
++            
++        payload = found_receipt["payload"]
++        
++        # Canonical string: recovery_patch_hash|burden_reduction_estimate|recovery_risk_score|applies_cleanly|commit_hash
++        canonical_str = f"{payload['recovery_patch_hash']}|{payload['burden_reduction_estimate']}|{payload['recovery_risk_score']}|{payload['applies_cleanly']}|{payload['commit_hash']}"
++        canonical_bytes = canonical_str.encode("utf-8")
++        
++        import hmac
++        expected_sig = hmac.new(secret.encode("utf-8"), canonical_bytes, hashlib.sha256).hexdigest()
++        
++        pipeline._emit_receipt("RECOVERY_AUTHORIZATION_SUBMITTED", case_id, {"signature": signature})
++        
++        if signature != expected_sig:
++            print(f"ERROR: Invalid authorization signature.")
++            sys.exit(1)
++            
++        pipeline._emit_receipt("RECOVERY_AUTHORIZATION_VERIFIED", case_id, {"status": "verified", "canonical_str": canonical_str})
++        pipeline._emit_receipt("RECOVERY_READY_FOR_HUMAN_APPLICATION", case_id, {
++            "recovery_patch_path": f"State/Recovery/{commit_hash}_revert.patch",
++            "instruction": f"Run `git apply State/Recovery/{commit_hash}_revert.patch` to execute this recovery."
++        })
++        
++        from distress_protocol import DistressProtocol
++        dp = DistressProtocol()
++        dp.authorize_recovery_proposal(f"{commit_hash}_revert.patch")
++        
++        print("AUTHORIZATION VERIFIED.")
++        print(f"You may now execute: git apply State/Recovery/{commit_hash}_revert.patch")
++        sys.exit(0)
++
++    if "--check-diff" in sys.argv:
++        pipeline.dry_run = True
++        if "--record-check" in sys.argv:
++            pipeline.record_check = True
++            
++        idx = sys.argv.index("--check-diff")
++        diff_file = sys.argv[idx+1]
+         
++        if not os.path.exists(diff_file):
++            print(f"File not found: {diff_file}")
++            sys.exit(1)
++            
++        with open(diff_file, "r", encoding="utf-8") as f:
++            full_diff = f.read()
++            
++        diff_hash = hashlib.sha256(full_diff.encode("utf-8")).hexdigest()
++        
++        # Parse the unified diff into per-file chunks
++        file_diffs = {}
++        current_file = None
++        current_content = []
++        for line in full_diff.splitlines():
++            if line.startswith("diff --git"):
++                if current_file:
++                    file_diffs[current_file] = "\n".join(current_content) + "\n"
++                parts = line.split(" ")
++                if len(parts) >= 4:
++                    current_file = parts[3][2:] # remove b/
++                else:
++                    current_file = None
++                current_content = [line]
++            elif current_file is not None:
++                current_content.append(line)
++        if current_file:
++            file_diffs[current_file] = "\n".join(current_content) + "\n"
++            
++        commit_case_id = str(uuid.uuid4())
++        
++        all_accepted = True
++        total_utility = 0.0
++        total_burden = 0.0
++        files_processed = []
++        quarantined_count = 0
++        accepted_count = 0
++        
++        skipped_count = 0
++        
++        for target, diff_output in file_diffs.items():
++            if not (target.endswith(".py") or target.endswith(".json")):
++                skipped_count += 1
++                continue
++                
++            try:
++                original_content = subprocess.check_output(["git", "-C", BASE_DIR, "show", f"HEAD:{target}"]).decode("utf-8")
++            except subprocess.CalledProcessError:
++                original_content = ""
++                
++            original_hash = hashlib.sha256(original_content.encode("utf-8")).hexdigest()
++            target_diff_hash = hashlib.sha256(diff_output.encode("utf-8")).hexdigest()
++            filename = os.path.basename(target)
++            file_case_id = str(uuid.uuid4())
++            
++            claim = {
++                "schema": "axis.code_diff.v1",
++                "target_file": filename,
++                "original_hash": original_hash,
++                "diff_hash": target_diff_hash,
++                "observation_timestamp": time.time(),
++                "diff_content": diff_output,
++                "historical": True,
++                "original_content": original_content
++            }
++            
++            verdict, gov_payload = pipeline.process_claim(file_case_id, target, claim)
++            
++            if verdict == "QUARANTINED":
++                all_accepted = False
++                quarantined_count += 1
++            elif gov_payload:
++                total_utility += gov_payload.get("utility_score", 0.0)
++                total_burden += gov_payload.get("burden_score", 0.0)
++                files_processed.append(filename)
++                accepted_count += 1
++                
++        if not all_accepted:
++            final_verdict = "QUARANTINE"
++        else:
++            final_verdict = "ACCEPT"
++            
++        commit_gov_payload = {
++            "utility_score": total_utility,
++            "burden_score": total_burden,
++            "files_processed": len(files_processed)
++        }
++        
++        from distress_protocol import DistressProtocol
++        distress = DistressProtocol()
++        distress_result = distress.evaluate_distress(commit_case_id, "DRY_RUN", commit_gov_payload, files_processed, quarantined_count, accepted_count, dry_run=True)
++        
++        if distress_result and "signal" in distress_result and final_verdict == "ACCEPT":
++            final_verdict = "DISTRESS-WARN"
++            
++        print("\n=== DRY RUN EVALUATION ===")
++        print(f"Files Evaluated: {len(files_processed) + quarantined_count}")
++        print(f"Files Accepted:  {accepted_count}")
++        print(f"Files Quarant'd: {quarantined_count}")
++        print(f"Files Skipped:   {skipped_count}")
++        print(f"Total Burden:    {total_burden:.2f}")
++        print(f"VERDICT:         {final_verdict}")
++        
++        if distress_result and "signal" in distress_result:
++            print("\nActive Warnings:")
++            for s in distress_result["signal"].get("signals", []):
++                print(f" - {s.get('trigger')}: {s.get('action')}")
++                
++        if pipeline.record_check:
++            pipeline._emit_receipt("CHECK_ONLY", commit_case_id, {
++                "schema": "axis.check_only.v1",
++                "diff_hash": diff_hash,
++                "files_checked": files_processed,
++                "verdict": final_verdict,
++                "dry_run": True,
++                "state_mutation_performed": False,
++                "ledger_mutation_performed": "CHECK_ONLY_ONLY"
++            })
++            print("\nCheck recorded to receptor ledger.")
++            
++        sys.exit(1 if final_verdict != "ACCEPT" else 0)
++
++    if "--git-commit" in sys.argv:
++        idx = sys.argv.index("--git-commit")
++        commit = sys.argv[idx+1]
++        
++        # Get list of .py files modified in this commit
++        try:
++            show_output = subprocess.check_output(["git", "-C", "..", "show", "--name-only", "--oneline", commit]).decode("utf-8")
++        except subprocess.CalledProcessError:
++            print(f"Failed to show commit {commit}")
++            sys.exit(1)
++            
++        lines = show_output.splitlines()
++        if not lines:
++            sys.exit(0)
++            
++        py_files = [line.strip() for line in lines[1:] if line.strip().endswith(".py")]
++        
++        # Filter to Strategy/ files for simplicity, or just use all
++        target_files = []
++        for pf in py_files:
++            if pf.startswith("Strategy/"):
++                target_files.append(pf.replace("Strategy/", ""))
++            elif "/" not in pf:
++                # Top level py file?
++                target_files.append(pf)
++                
++        if not target_files:
++            print(f"No .py files in {commit}")
++            sys.exit(0)
++            
++        commit_case_id = str(uuid.uuid4())
++        
++        from distress_protocol import DistressProtocol
++        dp = DistressProtocol()
++        if dp.state["session_burden"] > 2.0:
++            pipeline._emit_receipt("RECEPTOR_DISTRESS_INFLUENCED", commit_case_id, {
++                "prior_session_burden": dp.state["session_burden"],
++                "warning": "Ingesting under high constitutional burden."
++            })
++            
++        pipeline._emit_receipt("COMMIT_OBSERVED", commit_case_id, {
++            "commit": commit,
++            "target_files": target_files
++        })
++        
++        all_accepted = True
++        total_utility = 0.0
++        total_burden = 0.0
++        files_processed = []
++        quarantined_count = 0
++        accepted_count = 0
++        
++        for target in target_files:
++            diff_output = subprocess.check_output(["git", "diff", f"{commit}~1", commit, "--", target]).decode("utf-8")
++            if not diff_output.strip():
++                continue
++                
++            try:
++                git_path = f"Strategy/{target}"
++                original_content = subprocess.check_output(["git", "show", f"{commit}~1:{git_path}"]).decode("utf-8")
++            except subprocess.CalledProcessError:
++                original_content = ""
++                
++            original_hash = hashlib.sha256(original_content.encode("utf-8")).hexdigest()
++            diff_hash = hashlib.sha256(diff_output.encode("utf-8")).hexdigest()
++            filename = os.path.basename(target)
++            file_case_id = str(uuid.uuid4())
++            
++            pipeline._emit_receipt("COMMIT_FILE_PROCESSED", commit_case_id, {
++                "file_case_id": file_case_id,
++                "target_file": filename
++            })
++            
++            claim = {
++                "schema": "axis.code_diff.v1",
++                "target_file": filename,
++                "original_hash": original_hash,
++                "diff_hash": diff_hash,
++                "observation_timestamp": time.time(),
++                "diff_content": diff_output,
++                "historical": True,
++                "original_content": original_content
++            }
++            
++            pipeline._emit_receipt("RECEPTOR_DIFF_OBSERVED", file_case_id, claim)
++            verdict, gov_payload = pipeline.process_claim(file_case_id, target, claim)
++            
++            if verdict == "QUARANTINED":
++                all_accepted = False
++                quarantined_count += 1
++            elif gov_payload:
++                total_utility += gov_payload.get("utility_score", 0.0)
++                total_burden += gov_payload.get("burden_score", 0.0)
++                files_processed.append(filename)
++                accepted_count += 1
++                
++        if not all_accepted:
++            pipeline._emit_receipt("COMMIT_QUARANTINED", commit_case_id, {"reason": "child_file_quarantined"})
++            commit_gov_payload = {"burden_score": 0.0} # Still evaluate distress for count updates
++        else:
++            commit_gov_payload = {
++                "utility_score": total_utility,
++                "burden_score": total_burden,
++                "files_processed": len(files_processed)
++            }
++            pipeline._emit_receipt("COMMIT_GOVERNANCE_EVALUATED", commit_case_id, commit_gov_payload)
++            pipeline._emit_receipt("COMMIT_ACCEPTED", commit_case_id, {"reason": "all_child_files_accepted"})
++            
++        # Phase 202/203/204: Distress Protocol
++        from distress_protocol import DistressProtocol
++        distress = DistressProtocol()
++        distress_result = distress.evaluate_distress(commit_case_id, commit, commit_gov_payload, files_processed, quarantined_count, accepted_count)
++        if distress_result:
++            if "signal" in distress_result:
++                pipeline._emit_receipt("RECEPTOR_DISTRESS_SIGNALED", commit_case_id, distress_result["signal"])
++            if "recovery" in distress_result:
++                pipeline._emit_receipt("RECEPTOR_RECOVERY_SUGGESTED", commit_case_id, distress_result["recovery"])
++                
++        sys.exit(0)
++
+     if "--git-diff" in sys.argv:
+         idx = sys.argv.index("--git-diff")
+         git_args = sys.argv[idx+1:]
+diff --git a/Strategy/replay_receptor_chain.py b/Strategy/replay_receptor_chain.py
+index 724fd05..243b7ab 100644
+--- a/Strategy/replay_receptor_chain.py
++++ b/Strategy/replay_receptor_chain.py
+@@ -25,7 +25,16 @@ def replay_chain():
+     manifest = _get_validator_surfaces()
+ 
+     expected_parent = "GENESIS"
++    # Invariant 15 Tracking
++    global_session_burden = 0.0
++    global_commit_count = 0
++    global_quarantine_count = 0
++    global_accepted_count = 0
++    global_pending_recoveries = {}
++    
+     cases = {}
++    commits = {}
++    suggested_patches = set()
+ 
+     with open(LEDGER_PATH, "r", encoding="utf-8") as f:
+         lines = f.readlines()
+@@ -36,6 +45,8 @@ def replay_chain():
+             continue
+             
+         receipt = json.loads(line)
++        case_id = receipt["case_id"]
++        event_type = receipt["event_type"]
+         
+         # Invariant 1: Chain continuity
+         if receipt["parent_receptor_head"] != expected_parent:
+@@ -54,9 +65,6 @@ def replay_chain():
+             
+         expected_parent = computed_receipt_hash
+         
+-        case_id = receipt["case_id"]
+-        event_type = receipt["event_type"]
+-        
+         if case_id not in cases:
+             cases[case_id] = {"events": [], "evidence": None, "observation": None}
+             
+@@ -74,10 +82,11 @@ def replay_chain():
+             # Invariant 9: Anti-Sprawl
+             import fnmatch
+             target_file = case["observation"]["target_file"]
+-            basename = os.path.basename(target_file)
++            normalized_filename = target_file.replace("\\", "/")
++            basename = os.path.basename(normalized_filename)
+             expected_validator = False
+             for pattern in manifest.keys():
+-                if fnmatch.fnmatch(basename, pattern):
++                if fnmatch.fnmatch(basename, pattern) or fnmatch.fnmatch(normalized_filename, pattern):
+                     expected_validator = True
+                     break
+             
+@@ -97,7 +106,19 @@ def replay_chain():
+             if "RECEPTOR_EVIDENCE_ATTACHED" not in case["events"]:
+                 raise ValueError(f"Invariant Failed: Rationale scored before evidence for case {case_id}")
+             case["rationale"] = receipt["payload"]
++        elif event_type == "CHECK_ONLY":
++            # Invariant 16: Dry-Run Purity
++            if receipt["payload"].get("state_mutation_performed") is not False:
++                raise ValueError(f"Invariant 16 Failed: CHECK_ONLY receipt {idx} did not assert state_mutation_performed=False")
++            if receipt["payload"].get("ledger_mutation_performed") != "CHECK_ONLY_ONLY":
++                raise ValueError(f"Invariant 16 Failed: CHECK_ONLY receipt {idx} did not assert ledger_mutation_performed='CHECK_ONLY_ONLY'")
++            if len(case["events"]) > 1:
++                raise ValueError(f"Invariant 16 Failed: CHECK_ONLY case {case_id} shares events with mutating receipts.")
++            continue
+         elif event_type in ["RECEPTOR_DELTA_ACCEPTED", "RECEPTOR_DELTA_QUARANTINED"]:
++            if "CHECK_ONLY" in case["events"]:
++                raise ValueError(f"Invariant 16 Failed: Mutating receipt {event_type} shares case_id with a CHECK_ONLY receipt.")
++                
+             is_semantic_quarantine = (event_type == "RECEPTOR_DELTA_QUARANTINED" and receipt["payload"].get("reason") == "semantic_validator_surface_risk")
+             
+             if not is_semantic_quarantine:
+@@ -114,6 +135,7 @@ def replay_chain():
+ 
+             if event_type == "RECEPTOR_DELTA_ACCEPTED":
+                 case["accepted"] = True
++                global_accepted_count += 1
+                 # Invariant 4: Accepted verdict requires syntax_valid == true and hash match
+                 ev = case["evidence"]
+                 obs = case["observation"]
+@@ -148,6 +170,7 @@ def replay_chain():
+                     if ev.get("verified_hash") != obs.get("content_hash"):
+                         raise ValueError(f"Invariant 4 Failed: Invalid evidence promoted for case {case_id} (hash mismatch)")
+             elif event_type == "RECEPTOR_DELTA_QUARANTINED":
++                global_quarantine_count += 1
+                 # Invariant 5: Quarantined requires failed gate
+                 if not receipt["payload"].get("reason"):
+                     raise ValueError(f"Invariant 5 Failed: Quarantined without reason for case {case_id}")
+@@ -158,6 +181,8 @@ def replay_chain():
+             if "RECEPTOR_DELTA_ACCEPTED" not in case["events"]:
+                 raise ValueError(f"Invariant 10 Failed: Governance evaluated before ACCEPTED verdict for case {case_id}")
+                 
++            gov_payload = receipt["payload"]
++            case["gov_payload"] = gov_payload
+             # Invariant 11: Governance weight is fully derivable from physical reality
+             from constitutional_debt_engine import ConstitutionalDebtEngine
+             engine = ConstitutionalDebtEngine()
+@@ -179,6 +204,131 @@ def replay_chain():
+             if recomputed["utility_score"] != gov_payload["utility_score"] or recomputed["burden_score"] != gov_payload["burden_score"]:
+                 raise ValueError(f"Invariant 11 Failed: Governance score physically drifted for case {case_id}")
+ 
++        elif event_type.startswith("COMMIT_"):
++            commit_case_id = receipt["case_id"]
++            if commit_case_id not in commits:
++                commits[commit_case_id] = {"files": [], "files_processed": [], "gov_payload": None}
++                
++            if event_type == "COMMIT_OBSERVED":
++                commits[commit_case_id]["files"] = receipt["payload"]["target_files"]
++            elif event_type == "COMMIT_FILE_PROCESSED":
++                commits[commit_case_id]["files_processed"].append(receipt["payload"]["file_case_id"])
++            elif event_type == "COMMIT_GOVERNANCE_EVALUATED":
++                commits[commit_case_id]["gov_payload"] = receipt["payload"]
++                global_session_burden += receipt["payload"]["burden_score"]
++                
++                # Invariant 12: Recompute cumulative burden
++                total_utility = 0.0
++                total_burden = 0.0
++                for fid in commits[commit_case_id]["files_processed"]:
++                    if fid in cases and "gov_payload" in cases[fid]:
++                        total_utility += cases[fid]["gov_payload"].get("utility_score", 0.0)
++                        total_burden += cases[fid]["gov_payload"].get("burden_score", 0.0)
++                        
++                if abs(total_utility - receipt["payload"]["utility_score"]) > 0.001 or abs(total_burden - receipt["payload"]["burden_score"]) > 0.001:
++                    raise ValueError(f"Invariant 12 Failed: Commit governance scores drifted for {commit_case_id}")
++                    
++            elif event_type == "COMMIT_ACCEPTED":
++                # Invariant 12: Ensure all processed files are ACCEPTED
++                global_commit_count += 1
++                for fid in commits[commit_case_id]["files_processed"]:
++                    if not cases.get(fid, {}).get("accepted", False):
++                        raise ValueError(f"Invariant 12 Failed: Commit accepted but child file {fid} was not accepted")
++            elif event_type == "COMMIT_QUARANTINED":
++                global_commit_count += 1
++                # Invariant 12: Ensure at least one processed file is QUARANTINED
++                any_quarantined = False
++                for fid in commits[commit_case_id]["files_processed"]:
++                    if "RECEPTOR_DELTA_QUARANTINED" in cases.get(fid, {}).get("events", []):
++                        any_quarantined = True
++                        break
++                if not any_quarantined:
++                    raise ValueError(f"Invariant 12 Failed: Commit quarantined but no child file was quarantined")
++
++        elif event_type == "RECEPTOR_DISTRESS_SIGNALED":
++            # Invariant 13: Distress signal burden == replay-computed session burden
++            for sig in receipt["payload"].get("signals", []):
++                if "cumulative_burden" in sig:
++                    if abs(sig["cumulative_burden"] - global_session_burden) > 0.001:
++                        raise ValueError(f"Invariant 13 Failed: Distress signal claimed session burden {sig['cumulative_burden']} but replay derived {global_session_burden}")
++                        
++        elif event_type == "RECEPTOR_RECOVERY_SUGGESTED":
++            # Invariant 13: recovery_patch_hash == sha256(file at recovery_patch_path)
++            patch_path = receipt["payload"].get("recovery_patch_path")
++            claimed_hash = receipt["payload"].get("recovery_patch_hash")
++            if patch_path:
++                suggested_patches.add(patch_path)
++                global_pending_recoveries[os.path.basename(patch_path)] = "AWAITING_AUTHORIZATION"
++                
++            if patch_path and claimed_hash:
++                full_path = os.path.join(BASE_DIR, patch_path)
++                if os.path.exists(full_path):
++                    with open(full_path, "r", encoding="utf-8") as f:
++                        actual_hash = hashlib.sha256(f.read().encode("utf-8")).hexdigest()
++                    if actual_hash != claimed_hash:
++                        raise ValueError(f"Invariant 13 Failed: Recovery patch hash mismatch for {patch_path}")
++                        
++        elif event_type == "RECEPTOR_DISTRESS_INFLUENCED":
++            # Invariant 13: distress-influenced receipt occurs only when prior replay session burden > 2.0
++            if global_session_burden <= 2.0:
++                raise ValueError(f"Invariant 13 Failed: DISTRESS_INFLUENCED emitted but derived session burden was {global_session_burden} (<= 2.0)")
++
++        elif event_type == "RECOVERY_REHEARSED":
++            patch_path = receipt["payload"].get("recovery_patch_path")
++            if patch_path not in suggested_patches:
++                raise ValueError(f"Invariant 14 Failed: RECOVERY_REHEARSED references unknown patch {patch_path}")
++            cases[case_id] = {"events": [event_type], "patch_path": patch_path}
++            
++        elif event_type == "RECOVERY_GOVERNANCE_EVALUATED":
++            if case_id not in cases or "RECOVERY_REHEARSED" not in cases[case_id]["events"]:
++                raise ValueError(f"Invariant 14 Failed: RECOVERY_GOVERNANCE_EVALUATED without prior REHEARSED for {case_id}")
++            cases[case_id]["events"].append(event_type)
++            
++            # Recompute governance evaluation
++            from constitutional_debt_engine import ConstitutionalDebtEngine
++            engine = ConstitutionalDebtEngine()
++            
++            full_path = os.path.join(BASE_DIR, cases[case_id]["patch_path"])
++            if os.path.exists(full_path):
++                with open(full_path, "r", encoding="utf-8") as f:
++                    patch_content = f.read()
++                    
++                applies_cleanly = receipt["payload"].get("applies_cleanly", False)
++                files_touched = receipt["payload"].get("files_touched", 0)
++                validator_surface_touched = receipt["payload"].get("validator_surface_touched", False)
++                
++                recomputed = engine.evaluate_recovery_weight(patch_content, applies_cleanly, files_touched, validator_surface_touched)
++                if abs(recomputed["burden_reduction_estimate"] - receipt["payload"]["burden_reduction_estimate"]) > 0.001:
++                    raise ValueError(f"Invariant 14 Failed: Recovery burden reduction physically drifted for {case_id}")
++                    
++            cases[case_id]["eval_payload"] = receipt["payload"]
++                    
++        elif event_type == "RECOVERY_AWAITING_AUTHORIZATION":
++            if case_id not in cases or "RECOVERY_GOVERNANCE_EVALUATED" not in cases[case_id]["events"]:
++                raise ValueError(f"Invariant 14 Failed: RECOVERY_AWAITING_AUTHORIZATION without prior EVALUATED for {case_id}")
++            cases[case_id]["events"].append(event_type)
++            cases[case_id]["awaiting_auth_receipt"] = receipt
++            
++        elif event_type == "RECOVERY_AUTHORIZATION_VERIFIED":
++            if case_id not in cases or "RECOVERY_AWAITING_AUTHORIZATION" not in cases[case_id]["events"]:
++                raise ValueError(f"Invariant 14 Failed: RECOVERY_AUTHORIZATION_VERIFIED without AWAITING_AUTHORIZATION for {case_id}")
++            cases[case_id]["events"].append(event_type)
++            
++            # Recompute HMAC payload from RECOVERY_GOVERNANCE_EVALUATED receipt, NOT live state
++            found_payload = cases[case_id].get("eval_payload")
++            if not found_payload:
++                raise ValueError(f"Invariant 14 Failed: Missing eval_payload for {case_id}")
++                
++            canonical_str = f"{found_payload['recovery_patch_hash']}|{found_payload['burden_reduction_estimate']}|{found_payload['recovery_risk_score']}|{found_payload['applies_cleanly']}|{found_payload['commit_hash']}"
++            if receipt["payload"]["canonical_str"] != canonical_str:
++                raise ValueError(f"Invariant 14 Failed: HMAC canonical_str mismatched from historical eval_payload. Got {receipt['payload']['canonical_str']}, expected {canonical_str}")
++                
++            bname = os.path.basename(cases[case_id]["patch_path"])
++            global_pending_recoveries[bname] = "AUTHORIZED"
++            
++        elif event_type == "RECOVERY_APPLIED":
++            raise ValueError("Invariant 14 Failed: RECOVERY_APPLIED is strictly forbidden. The receptor cannot mutate reality.")
++
+     # Invariant 7: Final replay head matches stored head
+     if os.path.exists(HEAD_PATH):
+         with open(HEAD_PATH, "r", encoding="utf-8") as f:
+@@ -186,8 +336,35 @@ def replay_chain():
+         if stored_head != expected_parent:
+             raise ValueError(f"Invariant 7 Failed: Stored head {stored_head} does not match replay head {expected_parent}")
+             
++    # Invariant 15: Telemetry is purely derivable
++    # Invariant 15: Purely Derivable State
++    d_state = {}
++    if os.path.exists("State/distress_state.json"):
++        with open("State/distress_state.json", "r") as f:
++            d_state = json.load(f)
++            
++    # Invariant 16: Dry-Run Purity
++    # Verify no accidental ledger mutation occurred during dry-run sessions
++    # (By definition, we just verified all historical bounds and ignore CHECK_ONLY)
++    
++    if d_state:   # 15A
++        if abs(d_state.get("session_burden", 0.0) - global_session_burden) > 0.001:
++            raise ValueError(f"Invariant 15A Failed: ledger session_burden {global_session_burden} != state {d_state.get('session_burden')}")
++        # 15B
++        if d_state.get("commit_count", 0) != global_commit_count:
++            raise ValueError(f"Invariant 15B Failed: ledger commit_count {global_commit_count} != state {d_state.get('commit_count')}")
++        # 15C
++        for k, v in global_pending_recoveries.items():
++            if d_state.get("pending_recoveries", {}).get(k) != v:
++                raise ValueError(f"Invariant 15C Failed: ledger pending_recoveries[{k}]={v} != state")
++        # 15D
++        if d_state.get("quarantined_files", 0) != global_quarantine_count:
++            raise ValueError(f"Invariant 15D Failed: ledger quarantined_files {global_quarantine_count} != state {d_state.get('quarantined_files')}")
++        if d_state.get("accepted_files", 0) != global_accepted_count:
++            raise ValueError(f"Invariant 15D Failed: ledger accepted_files {global_accepted_count} != state {d_state.get('accepted_files')}")
++            
+     print(f"Replay successful. {len(lines)} receipts verified across {len(cases)} cases.")
+-    print("All 11 Invariants Passed.")
++    print("All 16 Invariants Passed.")
+     return True
+ 
+ if __name__ == "__main__":
+diff --git a/Strategy/validator_surfaces.json b/Strategy/validator_surfaces.json
+index 912fe25..2e016f8 100644
+--- a/Strategy/validator_surfaces.json
++++ b/Strategy/validator_surfaces.json
+@@ -2,10 +2,12 @@
+   "version": "198.5",
+   "protected_manifest": true,
+   "validator_surfaces": {
+-    "validator_surfaces.json": ["surface_boundary_definition"],
++    "validator_surfaces.json": ["manifest_definition", "surface_boundary"],
++    "distress_protocol.py": ["distress_evaluation", "cumulative_burden_tracking", "mitigation_recommendation"],
++    "State/distress_state.json": ["persistent_distress_telemetry"],
++    "State/Recovery/*.patch": ["recovery_proposals"],
+     "replay_receptor_chain.py": ["derivability", "receipt_replay", "invariant_enforcement"],
+     "receptor_pipeline.py": ["intake", "semantic_firewall", "verdict_gate", "main_ledger_bridge"],
+-    "distress_protocol.py": ["fail_closed_recovery"],
+     "constitutional_debt_engine.py": ["repeal_advisory_math", "debt_scoring"],
+     "strategy_engine.py": ["core_governance"],
+     "telemetry_*.py": ["evidence_authenticity", "evidence_time_integrity"]

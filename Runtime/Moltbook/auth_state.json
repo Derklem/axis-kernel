@@ -1,0 +1,20 @@
+﻿{
+    "schema_version":  "1.0",
+    "updated_ts":  "2026-02-10T21:15:58.5341947Z",
+    "auth_state":  "ACTIVE_CLAIMED",
+    "voice_status":  "blocked_by_claim",
+    "proof":  {
+                  "ttl_seconds":  86400,
+                  "observed_ts":  "2026-02-10T21:15:58.5388789Z",
+                  "source_of_truth":  "moltbook:status_result",
+                  "evidence_refs":  [
+                                        "runlog:RUN-20260207-181500-MAYA_REFRESH",
+                                        "http:200"
+                                    ],
+                  "class":  "L0_OBSERVED"
+              },
+    "cooldowns":  {
+                      "next_status_check_ts":  "2026-02-07T18:30:00Z",
+                      "backoff_level":  0
+                  }
+}

@@ -1,0 +1,596 @@
+﻿{
+    "updated_at":  "2026-01-15T19:42:59Z",
+    "version":  1,
+    "events":  [
+                   {
+                       "ts":  "2026-01-14T22:00:00Z",
+                       "msg":  "Simulated evening spike",
+                       "kind":  "RF_SPIKE",
+                       "src":  "Earth_Server"
+                   },
+                   {
+                       "ts":  "2026-01-13T22:00:00Z",
+                       "msg":  "Simulated evening spike",
+                       "kind":  "RF_SPIKE",
+                       "src":  "Earth_Server"
+                   },
+                   {
+                       "ts":  "2026-01-12T22:00:00Z",
+                       "msg":  "Simulated evening spike",
+                       "kind":  "RF_SPIKE",
+                       "src":  "Earth_Server"
+                   },
+                   {
+                       "ts":  "2026-01-11T22:00:00Z",
+                       "msg":  "Simulated evening spike",
+                       "kind":  "RF_SPIKE",
+                       "src":  "Earth_Server"
+                   },
+                   {
+                       "ts":  "2026-01-10T22:00:00Z",
+                       "msg":  "Simulated evening spike",
+                       "kind":  "RF_SPIKE",
+                       "src":  "Earth_Server"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:42:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:41:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:40:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:39:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:38:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:37:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:36:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:35:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:34:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:33:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:32:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:31:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:30:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:29:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:28:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:27:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:26:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:25:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:24:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:23:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:22:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:21:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:20:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:19:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:18:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:17:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:16:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:15:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:14:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:13:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:12:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:11:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:10:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:09:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:08:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:07:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:06:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:05:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:04:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:03:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:02:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:01:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:00:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:59:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:58:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:57:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:56:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:55:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:54:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:53:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:52:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:51:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:50:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:49:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:48:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:47:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:46:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:45:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:44:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:43:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:42:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:41:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:40:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:39:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:38:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:37:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:36:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:35:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:34:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:33:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:32:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:31:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:30:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:29:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:28:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:27:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:26:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:25:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:24:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:23:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:22:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:21:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:20:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:19:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:18:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:17:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:16:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:15:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:14:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:13:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:12:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:11:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:10:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:09:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:08:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:07:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:06:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:05:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:04:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:03:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T18:02:59Z",
+                       "kind":  "THOUGHT",
+                       "src":  "Axis_Mind"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:42:59Z",
+                       "kind":  "RESULT",
+                       "src":  "Earth_Server"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:41:59Z",
+                       "kind":  "RESULT",
+                       "src":  "Earth_Server"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:40:59Z",
+                       "kind":  "RESULT",
+                       "src":  "Earth_Server"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:39:59Z",
+                       "kind":  "RESULT",
+                       "src":  "Earth_Server"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:38:59Z",
+                       "kind":  "RESULT",
+                       "src":  "Earth_Server"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:37:59Z",
+                       "kind":  "RESULT",
+                       "src":  "Earth_Server"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:36:59Z",
+                       "kind":  "RESULT",
+                       "src":  "Earth_Server"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:35:59Z",
+                       "kind":  "RESULT",
+                       "src":  "Earth_Server"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:34:59Z",
+                       "kind":  "RESULT",
+                       "src":  "Earth_Server"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:33:59Z",
+                       "kind":  "RESULT",
+                       "src":  "Earth_Server"
+                   },
+                   {
+                       "ts":  "2026-01-15T19:32:59Z",
+                       "kind":  "RESULT",
+                       "src":  "Earth_Server"
+                   }
+               ]
+}

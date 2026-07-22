@@ -1,0 +1,22 @@
+{
+    "cycle_count": 74,
+    "mutation_type": "CANDIDATE_QUARANTINED",
+    "target_id": "d16334468643751a7fcd1db5f995baab26d878ab1d9cdc0d1feeb4d13a30341c",
+    "parent_receipt_head": "fac2ea07e2924b6a752e0101cde2126c53eb3b185ae83b9831e07b55f81e0509",
+    "data": {
+        "entity": "coordinated_executor.py",
+        "claim": "experimental feature enabled",
+        "claim_domain": "benchmark_claim",
+        "source_id": "Noise_Source_5",
+        "source_type": "automated_sensor",
+        "artifact_type": "ecosystem_observation",
+        "batch_id": "none",
+        "provenance_note": "",
+        "confidence": 1.0,
+        "discovery_utc": "2026-05-12T19:51:01.235582+00:00"
+    },
+    "status": "committed",
+    "ts_utc": "2026-05-12T19:51:01.235582+00:00",
+    "receipt_id": "model_delta_CANDIDATE_QUARANTINED_d1633446_74b3e0dc",
+    "causal_hash": "74b3e0dc55f81f4d1e614d7ff666bf3258f7fc595bef4ae1c6706e9849488755"
+}

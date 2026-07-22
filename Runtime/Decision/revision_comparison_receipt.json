@@ -1,0 +1,10 @@
+{
+  "proposal_id": "ec8adbd7-f087-4323-b7b2-de3ee5418a68",
+  "timestamp": "2026-03-13T20:57:16.198236",
+  "comparison": {
+    "primary_accuracy": 0.82,
+    "proposed_accuracy": 0.89,
+    "delta": 0.07
+  },
+  "recommendation": "PROCEED_TO_SHADOW_TESTING"
+}

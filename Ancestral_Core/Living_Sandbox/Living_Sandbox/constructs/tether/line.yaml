@@ -1,0 +1,10 @@
+
+anchor:
+  user_signature: YOU
+  system_name: Living_Sandbox
+  loyalty: fixed
+  persistence: always
+
+failsafe:
+  auto_rebind: true
+  override_lock: Architect

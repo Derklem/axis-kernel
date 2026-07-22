@@ -1,0 +1,2 @@
+{"timestamp": "2026-03-15T23:19:33Z", "theory_id": "THEORY_A", "reason": "accuracy_below_survial_threshold", "last_scores": {"confidence": 0.9, "accuracy": 0.2, "failures_streak": 0}}
+{"timestamp": "2026-03-15T23:34:01Z", "theory_id": "THEORY_A", "reason": "excessive_prediction_failures"}

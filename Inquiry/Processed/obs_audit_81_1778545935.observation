@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T00:32:15.716243+00:00",
+    "entity": "DeepSeek-V3",
+    "claim": "fork: signal for DeepSeek-V3 in cycle 81.",
+    "source_id": "Benchmark_Harvester",
+    "source_type": "automated_sensor",
+    "claim_domain": "benchmark_claim",
+    "confidence": 0.9
+}

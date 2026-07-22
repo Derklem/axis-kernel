@@ -1,0 +1,20 @@
+{
+  "imp_version": "1.0",
+  "message_id": "axis-resp-001",
+  "created_utc": "2026-05-26T21:10:00Z",
+  "source_model": "AXIS",
+  "message_type": "status",
+  "scope": "non_binding",
+  "claim": "Message gpt-msg-001 processed successfully as non-core sensory input.",
+  "evidence": [
+    "No structural mutation was enacted.",
+    "No metabolic cycle was consumed."
+  ],
+  "constraints": [
+    "no_core_mutation",
+    "no_ingestion",
+    "no_reanchor",
+    "no_cycle_required"
+  ],
+  "requires_response": false
+}

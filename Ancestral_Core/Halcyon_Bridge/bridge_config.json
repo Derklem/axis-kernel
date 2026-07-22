@@ -1,0 +1,7 @@
+{
+    "construct_log_path": "D:/Halcyon_Lives/Life/logs/construct_log.bin",
+    "drift_log_path": "D:/Halcyon_Lives/Life/logs/drift_fragment.log",
+    "response_path": "D:/Halcyon_Lives/Life/runtime/ai_response.log",
+    "poll_interval_seconds": 5,
+    "max_lines_read": 10
+}

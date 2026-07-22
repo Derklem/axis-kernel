@@ -1,0 +1,37 @@
+﻿{
+    "snapshot_id":  "snap-ff0e9141fbb74addbd2f3ac948af95bd",
+    "timestamp":  "2026-02-15T21:59:51.4926528Z",
+    "date_key":  "2026-02-15",
+    "anchor_link":  "sha256:053e41d5be41e987cc19cec5fa26bea7ff89169374f80b433fb288d017e73a37",
+    "system_metrics":  {
+                           "revocation":  {
+                                              "count":  0,
+                                              "size_bytes":  0,
+                                              "hash":  "null"
+                                          },
+                           "policy":  {
+                                          "count":  1,
+                                          "size_bytes":  173,
+                                          "hash":  "sha256:2e6ab477b1bcb249c321d6fb9c0e09831c4f09883fd3553f79fa525ba0a706e5"
+                                      },
+                           "audit":  {
+                                         "count":  9,
+                                         "size_bytes":  2385,
+                                         "hash":  "sha256:2222222222222222222222222222222222222222222222222222222222222222"
+                                     },
+                           "spend":  {
+                                         "count":  20,
+                                         "size_bytes":  1584,
+                                         "hash":  "h-20"
+                                     },
+                           "keyring":  {
+                                           "hash":  "sha256:51e4aafd52b77c5e84f261e8e6f358c8d92e197b9d305a254928c3d1464c2053",
+                                           "size_bytes":  3790
+                                       },
+                           "identity":  {
+                                            "hash":  "sha256:82db4aa85a6c2eba2058d930e057f9f7ac5b30725fd012350a671417d5b8d80a",
+                                            "size_bytes":  2598
+                                        }
+                       },
+    "verified":  false
+}

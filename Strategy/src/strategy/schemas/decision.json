@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "decision_schema_version",
+    "decision_version",
+    "evaluator_version",
+    "decision",
+    "reason_code",
+    "input_root"
+  ],
+  "properties": {
+    "decision_schema_version": {
+      "const": "1.0.0"
+    },
+    "decision_version": {
+      "type": "string"
+    },
+    "evaluator_version": {
+      "type": "string"
+    },
+    "decision": {
+      "enum": ["PROBE", "HOLD"]
+    },
+    "reason_code": {
+      "enum": ["INSUFFICIENT_CONFIDENCE", "INSUFFICIENT_EVIDENCE", "THRESHOLDS_SATISFIED"]
+    },
+    "input_root": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  }
+}

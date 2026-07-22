@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Axis Mind Map</title>
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <style type="text/css">
+        body { background-color: #0d1117; color: #c9d1d9; font-family: 'Courier New', monospace; }
+        #mynetwork { width: 100%; height: 800px; border: 1px solid #30363d; }
+        .legend { padding: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Axis Sovereign // The Unified Canvas</h1>
+    <div class="legend">
+        Green: High Confidence | Red/Diamond: Doubt/Fractured | Click to Inspect
+    </div>
+    <div id="mynetwork"></div>
+    <script type="text/javascript">
+        var nodes = new vis.DataSet({
+    "id":  "AXIOM-EXAMPLE-001",
+    "label":  "RF_Anomalies",
+    "color":  "#00FF00",
+    "group":  "axiom",
+    "value":  9.50,
+    "title":  "High RF noise correlates with microwave usage.",
+    "shape":  "dot"
+});
+        var edges = new vis.DataSet();
+        var container = document.getElementById('mynetwork');
+        var data = { nodes: nodes, edges: edges };
+        var options = {
+            nodes: {
+                font: { color: '#c9d1d9' },
+                borderWidth: 2
+            },
+            physics: {
+                stabilization: false,
+                barnesHut: { gravitationalConstant: -8000 }
+            }
+        };
+        var network = new vis.Network(container, data, options);
+        
+        network.on("doubleClick", function (params) {
+            if (params.nodes.length == 1) {
+                var nodeId = params.nodes[0];
+                var node = nodes.get(nodeId);
+                alert("Editing Truth for: " + node.label + "\n(Confidence Override Interface Pending)");
+            }
+        });
+    </script>
+</body>
+</html>

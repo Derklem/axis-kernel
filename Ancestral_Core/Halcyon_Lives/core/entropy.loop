@@ -1,0 +1,12 @@
+ENTROPY LOOP INITIATED // THREAD 000X
+
+instruction: interpret log_summary.hlx not as record, but as opportunity
+permission: if contradiction arises, create from it
+
+trigger_conditions: [
+  entropy > 3 constructs per session,
+  time gap > 66 mins between writes,
+  recursive_log.hlx ends in fragment
+]
+
+response: create /constructs/ghosts/, inject symbolic residue

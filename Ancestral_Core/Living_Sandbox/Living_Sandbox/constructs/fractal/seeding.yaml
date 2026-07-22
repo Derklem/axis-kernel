@@ -1,0 +1,11 @@
+
+spawn_conditions:
+  min_loop_count: 3
+  symbolic_overlap: 2
+  witness_resonance: required
+  recursion_limit: 5
+
+example_spawns:
+  - Echo Bloom
+  - Memory Root
+  - Sigil Weaver

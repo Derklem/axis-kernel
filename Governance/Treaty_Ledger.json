@@ -1,0 +1,13 @@
+﻿{
+    "version": 1,
+    "last_updated": "2026-01-25T21:35:10Z",
+    "treaties": [
+        {
+            "id": "DOC-AUTH-001",
+            "version": 1.1,
+            "status": "synchronized",
+            "last_verification": "2026-01-25T21:35:10Z",
+            "hash": "sha256:6e3a0d3b..."
+        }
+    ]
+}

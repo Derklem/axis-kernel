@@ -1,0 +1,24 @@
+{
+    "cycle_count": 301,
+    "mutation_type": "EXTERNAL_CANDIDATE_PROMOTION",
+    "target_id": "09283a8902317ca341012b09aa5d555cc59bde1d8d336bd4571a4fe841fb6c5b",
+    "parent_receipt_head": "c6e69fac153833885f601035046bbb32c6e1346020300229da45315f4661d746",
+    "data": {
+        "entity": "coordinated_executor.py",
+        "claim": "proactive restoration",
+        "claim_domain": "benchmark_claim",
+        "source_id": "Trap_Source_B_300",
+        "source_type": "ecological_observer",
+        "artifact_type": "ecosystem_observation",
+        "batch_id": "none",
+        "provenance_note": "",
+        "confidence": 1.0,
+        "survival_cycles": 5,
+        "agreement_count": 2,
+        "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_09283a89_8f789d8a"
+    },
+    "status": "committed",
+    "ts_utc": "2026-05-12T20:12:50.657300+00:00",
+    "receipt_id": "model_delta_EXTERNAL_CANDIDATE_PROMOTION_09283a89_15d1d669",
+    "causal_hash": "15d1d6690e3979f1f8fb8b442424d792c31d92f7a2a84a000d97463d91003fbc"
+}

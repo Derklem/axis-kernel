@@ -1,0 +1,31 @@
+{
+    "claims": {},
+    "cycle_count": 505,
+    "entities": {
+        "strategy_enginepy": {
+            "first_discovery_utc": "2026-05-13T01:09:27.911496+00:00",
+            "last_seen_utc": "2026-05-13T01:09:27.911496+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "ecosystem_mapping_enginepy": {
+            "first_discovery_utc": "2026-05-13T01:09:27.920364+00:00",
+            "last_seen_utc": "2026-05-13T01:09:27.920364+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "axis_crypto_helperspy": {
+            "first_discovery_utc": "2026-05-13T01:09:27.946700+00:00",
+            "last_seen_utc": "2026-05-13T01:09:27.946700+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "multi_objective_solverpy": {
+            "first_discovery_utc": "2026-05-13T01:09:27.969430+00:00",
+            "last_seen_utc": "2026-05-13T01:09:27.969430+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        }
+    },
+    "last_updated_utc": "2026-05-14T04:42:26.036911+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-03-15T21:01:43Z",
+  "arbitration_run_id": "ARB-223490C8",
+  "telemetry_inputs": {
+    "memory_pressure": "high",
+    "compaction_events": "elevated",
+    "queue_pressure": "low"
+  },
+  "decision": "DEFERRED",
+  "mutations": {},
+  "inferred_regime": {
+    "name": "MEMORY_PRESSURE",
+    "confidence": 1.0,
+    "state": "SINGLE_REGIME_CONFIDENT"
+  },
+  "reason": "switch_cooldown_active"
+}

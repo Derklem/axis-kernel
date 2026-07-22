@@ -1,0 +1,3 @@
+{"timestamp": "2026-03-13T22:35:32Z", "status": "LEDGER_INITIALIZED", "event": "Exploration Pressure Ledger created."}
+{"timestamp": "2026-03-13T22:36:30.438908Z", "stagnation_detected": true, "cycles_without_improvement": 41, "action": "ENABLE_EXPLORATION_MODE", "exploration_ratio": 0.15}
+{"timestamp": "2026-03-13T22:36:30.454301Z", "stagnation_detected": false, "cycles_without_improvement": 0, "action": "DISABLE_EXPLORATION_MODE", "exploration_ratio": 0.0}

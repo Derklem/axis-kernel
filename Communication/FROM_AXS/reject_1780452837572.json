@@ -1,0 +1,5 @@
+{
+  "error": "MALFORMED_CHAT_PAYLOAD: Missing question, timestamp_utc, or source",
+  "original_file": "test_pass.json",
+  "timestamp_utc": "2026-06-03T02:13:57Z"
+}

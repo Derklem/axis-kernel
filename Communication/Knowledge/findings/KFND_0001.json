@@ -1,0 +1,10 @@
+{
+  "finding_id": "KFND_0001",
+  "derived_from": [
+    "Knowledge/evidence_links/KEV_0002.json"
+  ],
+  "statement": "During the recorded observation window, the X deployment produced zero attributable substantive technical inquiries.",
+  "finding_type": "OBSERVATIONAL",
+  "created_at": "2026-07-14T18:26:05Z",
+  "status": "SUPPORTED"
+}

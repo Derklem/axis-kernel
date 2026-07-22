@@ -1,0 +1,50 @@
+{
+    "version":  1,
+    "log_id":  "PILOT-LOG-2026-001",
+    "sessions":  [
+                     {
+                         "shadow_risk_start":  null,
+                         "channel":  "VerificationScript",
+                         "session_id":  "SESS-20260122-B89C4C78",
+                         "pilot_id":  "PILOT-ANTIGRAV-DEV",
+                         "bias_mode_start":  null,
+                         "trust_band":  "medium",
+                         "started_utc":  "2026-01-23T01:41:15Z",
+                         "ended_utc":  "2026-01-23T01:41:16Z"
+                     },
+                     {
+                         "shadow_risk_start":  null,
+                         "channel":  "VerificationScript",
+                         "session_id":  "SESS-20260122-808BBFF4",
+                         "pilot_id":  "PILOT-ANTIGRAV-DEV",
+                         "bias_mode_start":  null,
+                         "trust_band":  "medium",
+                         "started_utc":  "2026-01-23T01:41:35Z",
+                         "ended_utc":  "2026-01-23T01:41:35Z"
+                     },
+                     {
+                         "session_id":  "SESS-20260122-06248DAF",
+                         "pilot_id":  "PILOT-ANTIGRAV-DEV",
+                         "started_utc":  "2026-01-23T01:46:41Z",
+                         "ended_utc":  "2026-01-23T01:46:41Z",
+                         "channel":  "VerificationScript",
+                         "trust_band":  "medium",
+                         "shadow_risk_start":  null,
+                         "bias_mode_start":  null,
+                         "shadow_risk_end":  null,
+                         "bias_mode_end":  null
+                     },
+                     {
+                         "session_id":  "SESS-20260122-D24CE933",
+                         "pilot_id":  "PILOT-ANTIGRAV-DEV",
+                         "started_utc":  "2026-01-23T02:22:30Z",
+                         "ended_utc":  "2026-01-23T02:22:31Z",
+                         "channel":  "Verify78",
+                         "trust_band":  "medium",
+                         "shadow_risk_start":  null,
+                         "bias_mode_start":  null,
+                         "shadow_risk_end":  null,
+                         "bias_mode_end":  null
+                     }
+                 ]
+}

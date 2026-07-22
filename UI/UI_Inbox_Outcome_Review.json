@@ -1,0 +1,67 @@
+﻿{
+    "version":  1,
+    "inbox_id":  "UI-INBOX-OUTCOME-REVIEW",
+    "generated_at_utc":  "2026-01-23T02:35:19.4463660Z",
+    "cards":  [
+                  {
+                      "card_id":  "OUTCOME-STRTEST80-OFB20260122183519STRTEST80",
+                      "feedback_id":  "OFB-20260122183519-STRTEST80",
+                      "strategy_id":  "STR-TEST-80",
+                      "pilot_id":  "PILOT-TEST",
+                      "proposed_result":  "failure",
+                      "shadow_hint":  null,
+                      "subtitle":  "Proposed failure @ 2026-01-23T02:35:19.2379404Z (pilot=PILOT-TEST)",
+                      "status":  "pending",
+                      "actions":  [
+                                      {
+                                          "action_id":  "anchor_mark_success",
+                                          "label":  "Mark as Success",
+                                          "feedback_id":  "OFB-20260122183519-STRTEST80",
+                                          "kind":  "primary"
+                                      },
+                                      {
+                                          "action_id":  "anchor_mark_failure",
+                                          "label":  "Confirm Failure",
+                                          "feedback_id":  "OFB-20260122183519-STRTEST80",
+                                          "kind":  "danger"
+                                      },
+                                      {
+                                          "action_id":  "anchor_mark_warning",
+                                          "label":  "Mark as Warning",
+                                          "feedback_id":  "OFB-20260122183519-STRTEST80",
+                                          "kind":  "secondary"
+                                      }
+                                  ]
+                  },
+                  {
+                      "card_id":  "OUTCOME-STRTEST80-OFB20260122183500STRTEST80",
+                      "feedback_id":  "OFB-20260122183500-STRTEST80",
+                      "strategy_id":  "STR-TEST-80",
+                      "pilot_id":  "PILOT-TEST",
+                      "proposed_result":  "failure",
+                      "shadow_hint":  null,
+                      "subtitle":  "Proposed failure @ 2026-01-23T02:35:00.5587345Z (pilot=PILOT-TEST)",
+                      "status":  "pending",
+                      "actions":  [
+                                      {
+                                          "action_id":  "anchor_mark_success",
+                                          "label":  "Mark as Success",
+                                          "feedback_id":  "OFB-20260122183500-STRTEST80",
+                                          "kind":  "primary"
+                                      },
+                                      {
+                                          "action_id":  "anchor_mark_failure",
+                                          "label":  "Confirm Failure",
+                                          "feedback_id":  "OFB-20260122183500-STRTEST80",
+                                          "kind":  "danger"
+                                      },
+                                      {
+                                          "action_id":  "anchor_mark_warning",
+                                          "label":  "Mark as Warning",
+                                          "feedback_id":  "OFB-20260122183500-STRTEST80",
+                                          "kind":  "secondary"
+                                      }
+                                  ]
+                  }
+              ]
+}

@@ -1,0 +1,19 @@
+﻿{
+    "timestamp":  "2026-01-27T18:55:45.1126676Z",
+    "decision":  "ALLOW",
+    "action_type":  "TRUTH_SHIELD_ACTIVATE",
+    "tenant_id":  "TENANT-LINEAGE",
+    "mode":  "AGGRESSIVE",
+    "explanation":  "Action [TRUTH_SHIELD_ACTIVATE] permitted in AGGRESSIVE mode. Grounding confirmed as TENUOUS (Confidence: 0.45).",
+    "epistemic_basis":  {
+                            "epistemic_status":  "TENUOUS",
+                            "claim_id":  "FIXTURE-TENUOUS",
+                            "status_confidence":  0.45
+                        },
+    "model_basis":  {
+                        "model_id":  ""
+                    },
+    "policy_basis":  {
+                         "action_gate":  "Default"
+                     }
+}

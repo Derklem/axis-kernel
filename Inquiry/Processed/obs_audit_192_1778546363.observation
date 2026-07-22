@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T00:39:23.682152+00:00",
+    "entity": "Claude-35-Sonnet",
+    "claim": "standard update: signal for Claude-35-Sonnet in cycle 192.",
+    "source_id": "Benchmark_Harvester",
+    "source_type": "automated_sensor",
+    "claim_domain": "rumor_claim",
+    "confidence": 0.55
+}

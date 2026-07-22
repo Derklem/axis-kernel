@@ -1,0 +1,15 @@
+﻿{
+    "id":  "CINT-20260118-140104",
+    "evidence_files":  [
+
+                       ],
+    "requested_roles":  [
+                            "logic_engine",
+                            "intuition_engine",
+                            "strategy_engine"
+                        ],
+    "created_at":  "2026-01-18T22:01:04.1173798Z",
+    "topic":  "TEST",
+    "question":  "Can you hear me?",
+    "status":  "pending"
+}

@@ -1,0 +1,11 @@
+diff --git a/Strategy/axis_error_codes.py b/Strategy/axis_error_codes.py
+index 50fd4af..6a0bb15 100644
+--- a/Strategy/axis_error_codes.py
++++ b/Strategy/axis_error_codes.py
+@@ -1,5 +1,6 @@
+ # Phase 177: Axis Structural Rejection Taxonomy
+ 
++# Added a helpful comment
+ class AxisErrorCode:
+     # --- Governance & Authority ---
+     ERR_SOVEREIGNTY_VETO = "ERR_SOVEREIGNTY_VETO"

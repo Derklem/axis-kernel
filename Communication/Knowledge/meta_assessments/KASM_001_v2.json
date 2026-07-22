@@ -1,0 +1,33 @@
+{
+  "meta_assessment_id": "KASM_001_v2",
+  "claim_id": "KCLM_001_v2",
+  "supersedes": "Knowledge/meta_assessments/KASM_001_v1.json",
+  "created_at": "2026-07-14T23:50:00Z",
+  "revision_reason": "Corrected relation of KEV_0001 and downgraded empirical support.",
+  "based_on": [
+    "KEV_0002",
+    "KEV_0003"
+  ],
+  "assessed_at": "2026-07-14T23:50:00Z",
+  "verdict": "PROVISIONALLY_CONSISTENT",
+  "evidence_summary": {
+    "independent_supporting_lineages": 2,
+    "independent_contradicting_lineages": 0,
+    "qualifying_lineages": 0
+  },
+  "confidence": {
+    "empirical_support": {
+      "level": "LOW",
+      "basis": "Two heterogeneous negative cases do not warrant MODERATE support for an audience theory."
+    },
+    "scope_stability": {
+      "level": "LOW",
+      "basis": "Results may depend on specific payload, platform mechanics, and unknown exposure denominators rather than audience alone."
+    }
+  },
+  "remaining_uncertainties": [
+    "Unknown or incomparable exposure denominators",
+    "Results do not establish *why* inquiries were absent (was it audience, algorithm, or payload?)"
+  ],
+  "next_discriminating_experiment": "Observe KCLM_002 (EXP_019) to see if a specialized broadcast alters the outcome."
+}

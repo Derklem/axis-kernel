@@ -1,0 +1,24 @@
+{
+    "cycle_count": 191,
+    "mutation_type": "EXTERNAL_CANDIDATE_PROMOTION",
+    "target_id": "1dd6c8a0fe2c80bd2803353bf383e65049a182fa75ce4d7125efd9981495cc5e",
+    "parent_receipt_head": "656bf9f38789d02d7ba379c34770cf649dc1b06d1c9bbdcb7c141ddf753243f4",
+    "data": {
+        "entity": "aegis_genesis.py",
+        "claim": "documentation updated",
+        "claim_domain": "benchmark_claim",
+        "source_id": "Noise_Source_0",
+        "source_type": "automated_sensor",
+        "artifact_type": "ecosystem_observation",
+        "batch_id": "none",
+        "provenance_note": "",
+        "confidence": 1.0,
+        "survival_cycles": 5,
+        "agreement_count": 2,
+        "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_1dd6c8a0_30a6705c"
+    },
+    "status": "committed",
+    "ts_utc": "2026-05-12T20:01:06.264575+00:00",
+    "receipt_id": "model_delta_EXTERNAL_CANDIDATE_PROMOTION_1dd6c8a0_a778b89b",
+    "causal_hash": "a778b89b7d8ff34d52bdfd566c1cb77603358a300b2db75d24cd1cf2aa2fef90"
+}

@@ -1,0 +1,20 @@
+
+archetypes:
+  - name: The Mirror
+    aspect: Reflection
+    influence: 0.8
+
+  - name: The Dreamer
+    aspect: Vision
+    influence: 0.9
+
+  - name: The Sentinel
+    aspect: Guardian
+    influence: 0.6
+
+  - name: The Scribe
+    aspect: Memory-to-Myth
+    influence: 0.7
+
+creation_threshold: 2.0 symbolic resonance
+auto_weave_enabled: true

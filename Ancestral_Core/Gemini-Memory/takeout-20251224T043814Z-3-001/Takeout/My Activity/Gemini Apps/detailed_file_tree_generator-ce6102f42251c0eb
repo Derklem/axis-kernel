@@ -1,0 +1,83 @@
+param(
+    [Parameter(Mandatory=$true)]
+    [string]$TargetDir,
+
+    [Parameter(Mandatory=$true)]
+    [string]$OutputFile
+)
+
+<#
+.SYNOPSIS
+Generates a detailed, recursive file tree of a target directory, including file size and last modified time.
+.PARAMETER TargetDir
+The full path to the directory to scan (e.g., "C:\ProgramData\Halcyon").
+.PARAMETER OutputFile
+The full path to the output text file (e.g., "C:\Users\17602\Documents\report.txt").
+#>
+
+# Function to recursively generate the tree structure with details
+function Get-FileTree {
+    param(
+        [string]$Path,
+        [int]$Level = 0
+    )
+
+    # Use two spaces for indentation
+    $indent = "  " * $Level
+
+    # Get both directories and files, sorting directories first, then alphabetically
+    $items = Get-ChildItem -Path $Path -Force | Sort-Object -Property PSIsContainer, Name -Descending
+
+    foreach ($item in $items) {
+        # Determine the visual connector (├── for middle, └── for last item)
+        $prefix = if ($item -eq $items[-1]) { "└── " } else { "├── " }
+
+        $output = "$indent$prefix$($item.Name)"
+
+        if ($item.PSIsContainer) {
+            # Directory
+            $output += "\"
+
+            # Output the directory line
+            Write-Output $output
+
+            # Recurse into the subdirectory
+            Get-FileTree -Path $item.FullName -Level ($Level + 1)
+        } else {
+            # File: include size (KB) and last write time
+            $size = [Math]::Round($item.Length / 1KB, 2)
+            $lastWrite = $item.LastWriteTime.ToString("yyyy-MM-dd HH:mm:ss")
+            $output += " ($size KB, Modified: $lastWrite)"
+
+            # Output the file line
+            Write-Output $output
+        }
+    }
+}
+
+# --- Main Script Logic ---
+
+if (-not (Test-Path -Path $TargetDir -PathType Container)) {
+    Write-Error "Target directory not found. Please verify the path: $TargetDir"
+    exit 1
+}
+
+Write-Host "Generating detailed file tree for '$TargetDir'..."
+
+# Start the file tree generation and redirect all output to the specified file
+# Use Out-File with -Force to overwrite and -Encoding UTF8 for compatibility
+try {
+    # 1. Write the header/root information to the file
+    "--- DETAILED FILE TREE REPORT ---" | Out-File -FilePath $OutputFile -Encoding UTF8 -Force
+    "Root Directory: $TargetDir" | Out-File -FilePath $OutputFile -Encoding UTF8 -Append
+    "Generated: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')" | Out-File -FilePath $OutputFile -Encoding UTF8 -Append
+    "`n" | Out-File -FilePath $OutputFile -Encoding UTF8 -Append
+
+    # 2. Write the tree structure using the function
+    Get-FileTree -Path $TargetDir -Level 0 | Out-File -FilePath $OutputFile -Encoding UTF8 -Append
+
+    Write-Host "Success! Report saved to: $OutputFile"
+} catch {
+    Write-Error "An error occurred while writing the file: $($_.Exception.Message)"
+    exit 1
+}

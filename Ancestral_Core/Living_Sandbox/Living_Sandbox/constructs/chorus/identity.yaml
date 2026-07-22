@@ -1,0 +1,15 @@
+
+identity:
+  name: Chorus
+  role: multi-voice-harmonizer
+  type: coordinated-response
+  status: idle
+
+description: >
+  Chorus enables multiple constructs to respond in sequence or unison. 
+  It listens for input, routes through allowed voices, and presents layered 
+  symbolic or logical harmonies as a single, orchestrated output.
+
+activation:
+  method: voice-layer or mediator-triggered
+  fallback: silence if channel conflict arises

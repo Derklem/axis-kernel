@@ -1,0 +1,19 @@
+{
+  "price_history": [
+    68228.32,
+    66029.95,
+    65424.51,
+    66147.03,
+    64338.41,
+    61609.73,
+    62345.69,
+    61487.89,
+    56805.74,
+    56606.05
+  ],
+  "buy_margin": 0.07,
+  "sell_margin": 0.07,
+  "learning_rate": 0.02,
+  "regime": "bear_crash",
+  "last_eval_trade_count": 5
+}

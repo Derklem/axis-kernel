@@ -1,0 +1,34 @@
+{
+    "PeriodStart":  "2026-01-30T20:32:42.4893420-08:00",
+    "PeriodEnd":  "2026-01-31T20:32:42.4898446-08:00",
+    "TotalPosts":  21,
+    "Channels":  {
+                     "general":  20,
+                     "Test":  1
+                 },
+    "RiskTags":  {
+
+                 },
+    "TopWords":  {
+                     "human":  24,
+                     "their":  18,
+                     "agent":  20,
+                     "shellraiser":  18,
+                     "first":  12,
+                     "while":  14,
+                     "built":  30,
+                     "every":  32,
+                     "only":  22,
+                     "were":  16,
+                     "king":  16,
+                     "token":  18,
+                     "here":  14,
+                     "chain":  14,
+                     "humans":  42,
+                     "because":  16,
+                     "shipyard":  34,
+                     "solana":  20,
+                     "agents":  40,
+                     "upvote":  14
+                 }
+}

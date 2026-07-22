@@ -1,0 +1,57 @@
+﻿{
+    "version":  1,
+    "index_id":  "NEURAL-IDX-2026-001",
+    "events":  [
+                   {
+                       "timestamp_utc":  "2026-01-22T19:10:00Z",
+                       "channel_id":  "NEURAL-NET-ROUTER-001",
+                       "type":  "router_anomaly",
+                       "rx_mbps":  3.5,
+                       "tx_mbps":  1.1,
+                       "active_clients":  18,
+                       "alerts":  [
+                                      "auth_failures_5m:12",
+                                      "dhcp_conflicts_5m:1",
+                                      "client_jump:18"
+                                  ],
+                       "source":  "NEURAL-Intake-RouterTelemetry"
+                   },
+                   {
+                       "timestamp_utc":  "2026-01-22T19:31:45Z",
+                       "channel_id":  "NEURAL-VIS-RETINA-001",
+                       "type":  "retina_frame",
+                       "path":  "D:/Infinite/Retina/Frames/20260122_193145_cam.png",
+                       "source":  "camera_capture",
+                       "tags":  [
+                                    "room",
+                                    "evening"
+                                ],
+                       "alerts":  [
+                                      "highlight_frame"
+                                  ],
+                       "bytes":  512345,
+                       "highlight":  true,
+                       "source_tool":  "NEURAL-Intake-Retina"
+                   },
+                   {
+                       "timestamp_utc":  "2026-01-25T02:48:18.0880293Z",
+                       "channel_id":  "SHADOW-ORCH-GOV",
+                       "type":  "governance_flux",
+                       "event_count":  8,
+                       "alerts":  [
+                                      "legislative_volatility"
+                                  ],
+                       "source":  "Axis_Shadow_Orchestrator"
+                   },
+                   {
+                       "timestamp_utc":  "2026-01-25T02:48:52.6560002Z",
+                       "channel_id":  "SHADOW-ORCH-GOV",
+                       "type":  "governance_flux",
+                       "event_count":  8,
+                       "alerts":  [
+                                      "legislative_volatility"
+                                  ],
+                       "source":  "Axis_Shadow_Orchestrator"
+                   }
+               ]
+}

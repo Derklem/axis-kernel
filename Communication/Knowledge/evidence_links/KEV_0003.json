@@ -1,0 +1,14 @@
+{
+  "evidence_link_id": "KEV_0003",
+  "claim_id": "KCLM_001",
+  "source_artifact": "assessments/asm_018_discord.v2.json",
+  "relation": "SUPPORTS",
+  "independence_group": "EXP_018_DISCORD",
+  "proposition_supported": "The tested broadcast on a general personal Discord channel produced zero on-target technical inquiries.",
+  "strength": "DIRECT_WITH_LIMITATIONS",
+  "limitations": [
+    "single channel",
+    "single message",
+    "exposure limited to active users during window"
+  ]
+}

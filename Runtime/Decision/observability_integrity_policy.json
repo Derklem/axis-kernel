@@ -1,0 +1,31 @@
+{
+  "version": "1.0",
+  "freshness_windows_seconds": {
+    "queue_depth": 30,
+    "retry_pressure": 30,
+    "api_latency_ms_p95": 60,
+    "latency_variance": 60,
+    "queue_pressure": 30,
+    "compaction_events": 120,
+    "memory_pressure": 30
+  },
+  "signal_thresholds": {
+    "healthy_min_score": 0.8,
+    "degraded_min_score": 0.55,
+    "untrustworthy_min_score": 0.3
+  },
+  "bundle_thresholds": {
+    "healthy_min_score": 0.8,
+    "degraded_min_score": 0.6,
+    "minimum_decision_use_score": 0.7
+  },
+  "hard_blocks": {
+    "block_if_required_signal_missing": true,
+    "block_if_source_quarantined": true,
+    "block_if_bundle_contradiction_exceeds_limit": true
+  },
+  "contradiction_limits": {
+    "max_covariance_break_score": 0.4,
+    "max_semantic_conflict_score": 0.35
+  }
+}

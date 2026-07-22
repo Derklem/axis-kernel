@@ -1,0 +1,4 @@
+{ "schema": "axis.key_ledger.v1", "ts": "2026-02-13T16:25:00Z", "id": "GENESIS", "type": "GENESIS", "key_id": "NONE", "status": "ACTIVE", "message": "Key Ledger Genesis" }
+{"schema":"axis.key_ledger.v1","ts":"2026-02-14T00:19:40.6655222Z","id":"3ea6b789-6ed3-4146-aed0-6afa895dcf86","type":"REVOKE","key_id":"k_system_tester_v1","status":"REVOKED","message":"Revoked via FullLoop Verification"}
+{"schema":"axis.key_ledger.v1","ts":"2026-02-14T00:28:24.0823198Z","id":"d0e03627-bdd7-4b8e-9bd5-0d95f82176d9","type":"REVOKE","key_id":"k_system_tester_v1","status":"REVOKED","message":"Revoked via FullLoop Verification"}
+{"schema":"axis.key_ledger.v1","ts":"2026-02-14T00:29:06.4295778Z","id":"7117bc75-2d43-480a-a994-edd68738c065","type":"REVOKE","key_id":"k_system_tester_v1","status":"REVOKED","message":"Revoked via FullLoop Verification"}

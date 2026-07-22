@@ -1,0 +1,5 @@
+{"timestamp": "2026-03-14T12:32:00Z", "status": "LEDGER_INITIALIZED", "message": "Continuous Experiment Ledger created."}
+{"timestamp": "2026-03-14T19:32:15.530812Z", "domain": "HIGH_HAZARD_DB_CORRUPTION", "action": "EXPERIMENT_LAUNCHED", "phase": "COLLECTING_OBSERVATIONS"}
+{"timestamp": "2026-03-14T19:32:15.530812Z", "domain": "LOW_PRIORITY_RECURRING_NOISE", "action": "EXPERIMENT_LAUNCHED", "phase": "COLLECTING_OBSERVATIONS"}
+{"timestamp": "2026-03-14T19:32:22.175562Z", "domain": "HIGH_HAZARD_DB_CORRUPTION", "action": "EXPERIMENT_QUARANTINED", "reason": "Reality divergence threshold breached. Isolation enforced."}
+{"timestamp": "2026-03-14T19:32:22.175562Z", "domain": "LOW_PRIORITY_RECURRING_NOISE", "action": "OBSERVATION_COMPLETE_SENT_FOR_ADJUDICATION"}

@@ -1,0 +1,173 @@
+﻿{
+    "host":  "DESKTOP-MHQRMOO",
+    "timestamp":  "2026-01-15T23:55:30Z",
+    "neighbors":  [
+                      {
+                          "IPAddress":  "239.255.255.250",
+                          "LinkLayerAddress":  "01-00-5E-7F-FF-FA",
+                          "State":  6
+                      },
+                      {
+                          "IPAddress":  "224.0.0.252",
+                          "LinkLayerAddress":  "01-00-5E-00-00-FC",
+                          "State":  6
+                      },
+                      {
+                          "IPAddress":  "224.0.0.251",
+                          "LinkLayerAddress":  "01-00-5E-00-00-FB",
+                          "State":  6
+                      },
+                      {
+                          "IPAddress":  "224.0.0.22",
+                          "LinkLayerAddress":  "01-00-5E-00-00-16",
+                          "State":  6
+                      },
+                      {
+                          "IPAddress":  "169.254.255.255",
+                          "LinkLayerAddress":  "FF-FF-FF-FF-FF-FF",
+                          "State":  6
+                      },
+                      {
+                          "IPAddress":  "224.0.0.22",
+                          "LinkLayerAddress":  "01-00-5E-00-00-16",
+                          "State":  6
+                      },
+                      {
+                          "IPAddress":  "239.255.255.250",
+                          "LinkLayerAddress":  "01-00-5E-7F-FF-FA",
+                          "State":  6
+                      },
+                      {
+                          "IPAddress":  "224.0.0.22",
+                          "LinkLayerAddress":  "01-00-5E-00-00-16",
+                          "State":  6
+                      },
+                      {
+                          "IPAddress":  "255.255.255.255",
+                          "LinkLayerAddress":  "FF-FF-FF-FF-FF-FF",
+                          "State":  6
+                      },
+                      {
+                          "IPAddress":  "239.255.255.250",
+                          "LinkLayerAddress":  "01-00-5E-7F-FF-FA",
+                          "State":  6
+                      },
+                      {
+                          "IPAddress":  "224.0.0.252",
+                          "LinkLayerAddress":  "01-00-5E-00-00-FC",
+                          "State":  6
+                      },
+                      {
+                          "IPAddress":  "224.0.0.251",
+                          "LinkLayerAddress":  "01-00-5E-00-00-FB",
+                          "State":  6
+                      },
+                      {
+                          "IPAddress":  "224.0.0.22",
+                          "LinkLayerAddress":  "01-00-5E-00-00-16",
+                          "State":  6
+                      },
+                      {
+                          "IPAddress":  "192.168.1.255",
+                          "LinkLayerAddress":  "FF-FF-FF-FF-FF-FF",
+                          "State":  6
+                      },
+                      {
+                          "IPAddress":  "192.168.1.16",
+                          "LinkLayerAddress":  "B2-8D-2C-64-86-81",
+                          "State":  5
+                      },
+                      {
+                          "IPAddress":  "192.168.1.11",
+                          "LinkLayerAddress":  "BC-C7-46-C4-3E-DE",
+                          "State":  5
+                      },
+                      {
+                          "IPAddress":  "192.168.1.7",
+                          "LinkLayerAddress":  "E4-F0-42-7B-DD-52",
+                          "State":  5
+                      },
+                      {
+                          "IPAddress":  "192.168.1.6",
+                          "LinkLayerAddress":  "D8-6C-63-40-25-23",
+                          "State":  5
+                      },
+                      {
+                          "IPAddress":  "192.168.1.1",
+                          "LinkLayerAddress":  "80-CC-9C-39-91-31",
+                          "State":  5
+                      },
+                      {
+                          "IPAddress":  "239.255.255.250",
+                          "LinkLayerAddress":  "01-00-5E-7F-FF-FA",
+                          "State":  6
+                      },
+                      {
+                          "IPAddress":  "224.0.0.22",
+                          "LinkLayerAddress":  "01-00-5E-00-00-16",
+                          "State":  6
+                      },
+                      {
+                          "IPAddress":  "239.255.255.250",
+                          "LinkLayerAddress":  "",
+                          "State":  6
+                      },
+                      {
+                          "IPAddress":  "224.0.0.251",
+                          "LinkLayerAddress":  "",
+                          "State":  6
+                      },
+                      {
+                          "IPAddress":  "224.0.0.22",
+                          "LinkLayerAddress":  "",
+                          "State":  6
+                      },
+                      {
+                          "IPAddress":  "239.255.255.250",
+                          "LinkLayerAddress":  "",
+                          "State":  6
+                      },
+                      {
+                          "IPAddress":  "224.0.0.22",
+                          "LinkLayerAddress":  "",
+                          "State":  6
+                      }
+                  ],
+    "interfaces":  [
+                       {
+                           "InterfaceAlias":  "Ethernet 3",
+                           "IPAddress":  "169.254.117.222",
+                           "PrefixLength":  16
+                       },
+                       {
+                           "InterfaceAlias":  "Local Area Connection* 10",
+                           "IPAddress":  "169.254.47.245",
+                           "PrefixLength":  16
+                       },
+                       {
+                           "InterfaceAlias":  "Local Area Connection* 9",
+                           "IPAddress":  "169.254.53.141",
+                           "PrefixLength":  16
+                       },
+                       {
+                           "InterfaceAlias":  "Ethernet",
+                           "IPAddress":  "192.168.1.2",
+                           "PrefixLength":  24
+                       },
+                       {
+                           "InterfaceAlias":  "Wi-Fi",
+                           "IPAddress":  "169.254.173.25",
+                           "PrefixLength":  16
+                       },
+                       {
+                           "InterfaceAlias":  "Tailscale",
+                           "IPAddress":  "169.254.83.107",
+                           "PrefixLength":  16
+                       },
+                       {
+                           "InterfaceAlias":  "Loopback Pseudo-Interface 1",
+                           "IPAddress":  "127.0.0.1",
+                           "PrefixLength":  8
+                       }
+                   ]
+}

@@ -1,0 +1,3130 @@
+﻿[SOVEREIGN_LATTICE_NODE] :: New Tools Tree Map
+Generated: 2025-07-28 03:35:46
+Root: C:\Users\17602\Desktop\New Tools
+
+├── drift_sandbox_lattice
+│   ├── archive_stub.xml
+│   ├── playground.yaml
+│   ├── pulse_index.json
+│   ├── README.md
+│   ├── README.txt
+│   ├── scratchpad.txt
+│   ├── sigil_entry.sig
+│   ├── trigger.key
+│   └── triggerkey.txt
+├── openrefine-3.9.3
+│   ├── licenses
+│   │   ├── apache license, version 2.0 - license-2.0.txt
+│   │   ├── apache software license - version 2.0 - license-2.0.txt
+│   │   ├── apache-2.0 - license-2.0.txt
+│   │   ├── bsd-3-clause - license.txt
+│   │   ├── cddl + gplv2 with classpath exception - cddl+gpl-1.1.txt
+│   │   ├── chrome_frame.LICENSE.txt
+│   │   ├── datejs.LICENSE.txt
+│   │   ├── eclipse public license - version 1.0 - epl-v10.html
+│   │   ├── eclipse public license - version 2.0 - epl-2.0.html
+│   │   ├── freebase_suggest.LICENSE.txt
+│   │   ├── imgareaselect.LICENSE.txt
+│   │   ├── jquery.eventstack.LICENSE.txt
+│   │   ├── jquery.i18n.LICENSE.txt
+│   │   ├── jquery.LICENSE.txt
+│   │   ├── jquery_ui.LICENSE.txt
+│   │   ├── mozilla public license, version 2.0 - index.txt
+│   │   ├── new bsd license - bsd-license.html
+│   │   ├── simile-ajax.2.3.0.LICENSE.txt
+│   │   └── the mit license - mit-license.html
+│   ├── server
+│   │   └── target
+│   │       ├── jre
+│   │       │   ├── bin
+│   │       │   │   ├── client
+│   │       │   │   │   └── jvm.dll
+│   │       │   │   ├── server
+│   │       │   │   │   └── jvm.dll
+│   │       │   │   ├── api-ms-win-core-console-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-core-console-l1-2-0.dll
+│   │       │   │   ├── api-ms-win-core-datetime-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-core-debug-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-core-errorhandling-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-core-fibers-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-core-fibers-l1-1-1.dll
+│   │       │   │   ├── api-ms-win-core-file-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-core-file-l1-2-0.dll
+│   │       │   │   ├── api-ms-win-core-file-l2-1-0.dll
+│   │       │   │   ├── api-ms-win-core-handle-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-core-heap-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-core-interlocked-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-core-kernel32-legacy-l1-1-1.dll
+│   │       │   │   ├── api-ms-win-core-libraryloader-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-core-localization-l1-2-0.dll
+│   │       │   │   ├── api-ms-win-core-memory-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-core-namedpipe-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-core-processenvironment-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-core-processthreads-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-core-processthreads-l1-1-1.dll
+│   │       │   │   ├── api-ms-win-core-profile-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-core-rtlsupport-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-core-string-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-core-synch-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-core-synch-l1-2-0.dll
+│   │       │   │   ├── api-ms-win-core-sysinfo-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-core-sysinfo-l1-2-0.dll
+│   │       │   │   ├── api-ms-win-core-timezone-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-core-util-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-crt-conio-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-crt-convert-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-crt-environment-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-crt-filesystem-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-crt-heap-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-crt-locale-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-crt-math-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-crt-multibyte-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-crt-private-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-crt-process-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-crt-runtime-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-crt-stdio-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-crt-string-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-crt-time-l1-1-0.dll
+│   │       │   │   ├── api-ms-win-crt-utility-l1-1-0.dll
+│   │       │   │   ├── awt.dll
+│   │       │   │   ├── dt_socket.dll
+│   │       │   │   ├── fontmanager.dll
+│   │       │   │   ├── freetype.dll
+│   │       │   │   ├── instrument.dll
+│   │       │   │   ├── j2gss.dll
+│   │       │   │   ├── j2pcsc.dll
+│   │       │   │   ├── j2pkcs11.dll
+│   │       │   │   ├── jaas.dll
+│   │       │   │   ├── jabswitch.exe
+│   │       │   │   ├── jaccessinspector.exe
+│   │       │   │   ├── jaccesswalker.exe
+│   │       │   │   ├── jaotc.exe
+│   │       │   │   ├── java.dll
+│   │       │   │   ├── java.exe
+│   │       │   │   ├── javaaccessbridge.dll
+│   │       │   │   ├── javajpeg.dll
+│   │       │   │   ├── javaw.exe
+│   │       │   │   ├── jawt.dll
+│   │       │   │   ├── jdwp.dll
+│   │       │   │   ├── jfr.exe
+│   │       │   │   ├── jimage.dll
+│   │       │   │   ├── jjs.exe
+│   │       │   │   ├── jli.dll
+│   │       │   │   ├── jrunscript.exe
+│   │       │   │   ├── jsound.dll
+│   │       │   │   ├── keytool.exe
+│   │       │   │   ├── kinit.exe
+│   │       │   │   ├── klist.exe
+│   │       │   │   ├── ktab.exe
+│   │       │   │   ├── lcms.dll
+│   │       │   │   ├── le.dll
+│   │       │   │   ├── management.dll
+│   │       │   │   ├── management_agent.dll
+│   │       │   │   ├── management_ext.dll
+│   │       │   │   ├── mlib_image.dll
+│   │       │   │   ├── msvcp140.dll
+│   │       │   │   ├── net.dll
+│   │       │   │   ├── nio.dll
+│   │       │   │   ├── pack200.exe
+│   │       │   │   ├── prefs.dll
+│   │       │   │   ├── rmi.dll
+│   │       │   │   ├── rmid.exe
+│   │       │   │   ├── rmiregistry.exe
+│   │       │   │   ├── splashscreen.dll
+│   │       │   │   ├── sspi_bridge.dll
+│   │       │   │   ├── sunec.dll
+│   │       │   │   ├── sunmscapi.dll
+│   │       │   │   ├── ucrtbase.dll
+│   │       │   │   ├── unpack.dll
+│   │       │   │   ├── unpack200.exe
+│   │       │   │   ├── vcruntime140.dll
+│   │       │   │   ├── vcruntime140_1.dll
+│   │       │   │   ├── verify.dll
+│   │       │   │   ├── w2k_lsa_auth.dll
+│   │       │   │   ├── windowsaccessbridge-64.dll
+│   │       │   │   └── zip.dll
+│   │       │   ├── conf
+│   │       │   │   ├── management
+│   │       │   │   │   ├── jmxremote.access
+│   │       │   │   │   ├── jmxremote.password.template
+│   │       │   │   │   └── management.properties
+│   │       │   │   ├── security
+│   │       │   │   │   ├── policy
+│   │       │   │   │   │   ├── limited
+│   │       │   │   │   │   │   ├── default_local.policy
+│   │       │   │   │   │   │   ├── default_US_export.policy
+│   │       │   │   │   │   │   └── exempt_local.policy
+│   │       │   │   │   │   ├── unlimited
+│   │       │   │   │   │   │   ├── default_local.policy
+│   │       │   │   │   │   │   └── default_US_export.policy
+│   │       │   │   │   │   └── README.txt
+│   │       │   │   │   ├── java.policy
+│   │       │   │   │   └── java.security
+│   │       │   │   ├── logging.properties
+│   │       │   │   ├── net.properties
+│   │       │   │   └── sound.properties
+│   │       │   ├── legal
+│   │       │   │   ├── java.base
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── aes.md
+│   │       │   │   │   ├── asm.md
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   ├── cldr.md
+│   │       │   │   │   ├── c-libutl.md
+│   │       │   │   │   ├── icu.md
+│   │       │   │   │   ├── LICENSE
+│   │       │   │   │   ├── public_suffix.md
+│   │       │   │   │   ├── siphash.md
+│   │       │   │   │   ├── unicode.md
+│   │       │   │   │   └── zlib.md
+│   │       │   │   ├── java.compiler
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── java.datatransfer
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── java.desktop
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   ├── colorimaging.md
+│   │       │   │   │   ├── freetype.md
+│   │       │   │   │   ├── giflib.md
+│   │       │   │   │   ├── harfbuzz.md
+│   │       │   │   │   ├── jpeg.md
+│   │       │   │   │   ├── lcms.md
+│   │       │   │   │   ├── libpng.md
+│   │       │   │   │   ├── LICENSE
+│   │       │   │   │   └── mesa3d.md
+│   │       │   │   ├── java.instrument
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── java.logging
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── java.management
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── java.management.rmi
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── java.naming
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── java.net.http
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── java.prefs
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── java.rmi
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── java.scripting
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── java.se
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── java.security.jgss
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── java.security.sasl
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── java.smartcardio
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── java.sql
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── java.sql.rowset
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── java.transaction.xa
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── java.xml
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   ├── bcel.md
+│   │       │   │   │   ├── dom.md
+│   │       │   │   │   ├── jcup.md
+│   │       │   │   │   ├── LICENSE
+│   │       │   │   │   ├── xalan.md
+│   │       │   │   │   └── xerces.md
+│   │       │   │   ├── java.xml.crypto
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   ├── LICENSE
+│   │       │   │   │   └── santuario.md
+│   │       │   │   ├── jdk.accessibility
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── jdk.aot
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── jdk.charsets
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── jdk.crypto.cryptoki
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   ├── LICENSE
+│   │       │   │   │   ├── pkcs11cryptotoken.md
+│   │       │   │   │   └── pkcs11wrapper.md
+│   │       │   │   ├── jdk.crypto.ec
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   ├── ecc.md
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── jdk.crypto.mscapi
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── jdk.dynalink
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   ├── dynalink.md
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── jdk.httpserver
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── jdk.internal.ed
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── jdk.internal.le
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   ├── jline.md
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── jdk.internal.vm.ci
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── jdk.internal.vm.compiler
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── jdk.internal.vm.compiler.management
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── jdk.jdwp.agent
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── jdk.jfr
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── jdk.jsobject
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── jdk.localedata
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   ├── cldr.md
+│   │       │   │   │   ├── LICENSE
+│   │       │   │   │   └── thaidict.md
+│   │       │   │   ├── jdk.management
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── jdk.management.agent
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── jdk.management.jfr
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── jdk.naming.dns
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── jdk.naming.ldap
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── jdk.naming.rmi
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── jdk.net
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── jdk.pack
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── jdk.scripting.nashorn
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   ├── double-conversion.md
+│   │       │   │   │   ├── joni.md
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── jdk.scripting.nashorn.shell
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── jdk.sctp
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── jdk.security.auth
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── jdk.security.jgss
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── jdk.unsupported
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   ├── jdk.xml.dom
+│   │       │   │   │   ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │   │   ├── ASSEMBLY_EXCEPTION
+│   │       │   │   │   └── LICENSE
+│   │       │   │   └── jdk.zipfs
+│   │       │   │       ├── ADDITIONAL_LICENSE_INFO
+│   │       │   │       ├── ASSEMBLY_EXCEPTION
+│   │       │   │       └── LICENSE
+│   │       │   ├── lib
+│   │       │   │   ├── client
+│   │       │   │   │   └── Xusage.txt
+│   │       │   │   ├── jfr
+│   │       │   │   │   ├── default.jfc
+│   │       │   │   │   └── profile.jfc
+│   │       │   │   ├── security
+│   │       │   │   │   ├── blocked.certs
+│   │       │   │   │   ├── cacerts
+│   │       │   │   │   ├── default.policy
+│   │       │   │   │   └── public_suffix_list.dat
+│   │       │   │   ├── server
+│   │       │   │   │   └── Xusage.txt
+│   │       │   │   ├── classlist
+│   │       │   │   ├── fontconfig.bfc
+│   │       │   │   ├── fontconfig.properties.src
+│   │       │   │   ├── jawt.lib
+│   │       │   │   ├── jrt-fs.jar
+│   │       │   │   ├── jvm.cfg
+│   │       │   │   ├── jvm.lib
+│   │       │   │   ├── modules
+│   │       │   │   ├── psfont.properties.ja
+│   │       │   │   ├── psfontj2d.properties
+│   │       │   │   ├── tzdb.dat
+│   │       │   │   └── tzmappings
+│   │       │   ├── NOTICE
+│   │       │   └── release
+│   │       └── lib
+│   │           ├── native
+│   │           │   └── windows
+│   │           │       └── jdatapath.dll
+│   │           ├── butterfly-1.2.6.jar
+│   │           ├── commons-collections-3.2.2.jar
+│   │           ├── commons-io-2.18.0.jar
+│   │           ├── commons-lang-2.6.jar
+│   │           ├── commons-lang3-3.17.0.jar
+│   │           ├── javax.servlet-api-4.0.1.jar
+│   │           ├── jetty-http-10.0.16.jar
+│   │           ├── jetty-io-10.0.16.jar
+│   │           ├── jetty-security-10.0.16.jar
+│   │           ├── jetty-server-10.0.16.jar
+│   │           ├── jetty-servlet-10.0.16.jar
+│   │           ├── jetty-servlet-api-4.0.6.jar
+│   │           ├── jetty-util-10.0.16.jar
+│   │           ├── jetty-webapp-10.0.16.jar
+│   │           ├── jetty-xml-10.0.16.jar
+│   │           ├── lessen-1.0.jar
+│   │           ├── localizer-1.31.jar
+│   │           ├── log4j-1.2-api-2.24.3.jar
+│   │           ├── log4j-api-2.24.3.jar
+│   │           ├── log4j-core-2.24.3.jar
+│   │           ├── log4j-slf4j2-impl-2.24.3.jar
+│   │           ├── openrefine-3.9.3-server.jar
+│   │           ├── oro-2.0.8.jar
+│   │           ├── rhino-1.7.15.jar
+│   │           ├── slf4j-api-2.0.16.jar
+│   │           └── velocity-1.6.3.jar
+│   ├── webapp
+│   │   ├── extensions
+│   │   │   ├── database
+│   │   │   │   ├── licenses
+│   │   │   │   │   └── jdbc-client.LICENSE.txt
+│   │   │   │   ├── module
+│   │   │   │   │   ├── images
+│   │   │   │   │   │   ├── fonts
+│   │   │   │   │   │   │   ├── glyphicons-halflings-regular.eot
+│   │   │   │   │   │   │   ├── glyphicons-halflings-regular.svg
+│   │   │   │   │   │   │   ├── glyphicons-halflings-regular.ttf
+│   │   │   │   │   │   │   ├── glyphicons-halflings-regular.woff
+│   │   │   │   │   │   │   └── glyphicons-halflings-regular.woff2
+│   │   │   │   │   │   ├── more_option-vert-16.png
+│   │   │   │   │   │   └── more-option-horiz-16.png
+│   │   │   │   │   ├── langs
+│   │   │   │   │   │   ├── translation-ar.json
+│   │   │   │   │   │   ├── translation-bn.json
+│   │   │   │   │   │   ├── translation-bn_IN.json
+│   │   │   │   │   │   ├── translation-br.json
+│   │   │   │   │   │   ├── translation-ca.json
+│   │   │   │   │   │   ├── translation-ceb.json
+│   │   │   │   │   │   ├── translation-cs.json
+│   │   │   │   │   │   ├── translation-da.json
+│   │   │   │   │   │   ├── translation-de.json
+│   │   │   │   │   │   ├── translation-el.json
+│   │   │   │   │   │   ├── translation-en.json
+│   │   │   │   │   │   ├── translation-en_GB.json
+│   │   │   │   │   │   ├── translation-es.json
+│   │   │   │   │   │   ├── translation-eu.json
+│   │   │   │   │   │   ├── translation-fa.json
+│   │   │   │   │   │   ├── translation-fi.json
+│   │   │   │   │   │   ├── translation-fil.json
+│   │   │   │   │   │   ├── translation-fr.json
+│   │   │   │   │   │   ├── translation-he.json
+│   │   │   │   │   │   ├── translation-hi.json
+│   │   │   │   │   │   ├── translation-hu.json
+│   │   │   │   │   │   ├── translation-id.json
+│   │   │   │   │   │   ├── translation-it.json
+│   │   │   │   │   │   ├── translation-iu.json
+│   │   │   │   │   │   ├── translation-ja.json
+│   │   │   │   │   │   ├── translation-ko.json
+│   │   │   │   │   │   ├── translation-ml.json
+│   │   │   │   │   │   ├── translation-mr.json
+│   │   │   │   │   │   ├── translation-nb_NO.json
+│   │   │   │   │   │   ├── translation-nl.json
+│   │   │   │   │   │   ├── translation-pa.json
+│   │   │   │   │   │   ├── translation-pa_PK.json
+│   │   │   │   │   │   ├── translation-pl.json
+│   │   │   │   │   │   ├── translation-pt.json
+│   │   │   │   │   │   ├── translation-pt_BR.json
+│   │   │   │   │   │   ├── translation-pt_PT.json
+│   │   │   │   │   │   ├── translation-ro.json
+│   │   │   │   │   │   ├── translation-ru.json
+│   │   │   │   │   │   ├── translation-sv.json
+│   │   │   │   │   │   ├── translation-ta.json
+│   │   │   │   │   │   ├── translation-tl.json
+│   │   │   │   │   │   ├── translation-tr.json
+│   │   │   │   │   │   ├── translation-uk.json
+│   │   │   │   │   │   ├── translation-zh_Hans.json
+│   │   │   │   │   │   └── translation-zh_Hant.json
+│   │   │   │   │   ├── MOD-INF
+│   │   │   │   │   │   ├── lib
+│   │   │   │   │   │   │   ├── caffeine-2.9.3.jar
+│   │   │   │   │   │   │   ├── checker-qual-3.42.0.jar
+│   │   │   │   │   │   │   ├── commons-lang3-3.17.0.jar
+│   │   │   │   │   │   │   ├── encoder-1.3.1.jar
+│   │   │   │   │   │   │   ├── error_prone_annotations-2.36.0.jar
+│   │   │   │   │   │   │   ├── failureaccess-1.0.2.jar
+│   │   │   │   │   │   │   ├── google-http-client-1.45.3.jar
+│   │   │   │   │   │   │   ├── google-http-client-jackson2-1.45.3.jar
+│   │   │   │   │   │   │   ├── grpc-api-1.69.0.jar
+│   │   │   │   │   │   │   ├── grpc-context-1.69.0.jar
+│   │   │   │   │   │   │   ├── guava-33.4.0-jre.jar
+│   │   │   │   │   │   │   ├── httpclient5-5.4.1.jar
+│   │   │   │   │   │   │   ├── httpcore5-5.3.2.jar
+│   │   │   │   │   │   │   ├── httpcore5-h2-5.3.1.jar
+│   │   │   │   │   │   │   ├── j2objc-annotations-3.0.0.jar
+│   │   │   │   │   │   │   ├── jasypt-1.9.3.jar
+│   │   │   │   │   │   │   ├── jcl-over-slf4j-1.7.36.jar
+│   │   │   │   │   │   │   ├── jna-5.13.0.jar
+│   │   │   │   │   │   │   ├── jna-platform-5.13.0.jar
+│   │   │   │   │   │   │   ├── jsr305-3.0.2.jar
+│   │   │   │   │   │   │   ├── listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar
+│   │   │   │   │   │   │   ├── localizer-1.31.jar
+│   │   │   │   │   │   │   ├── mariadb-java-client-3.5.1.jar
+│   │   │   │   │   │   │   ├── mysql-connector-java-8.0.30.jar
+│   │   │   │   │   │   │   ├── opencensus-api-0.31.1.jar
+│   │   │   │   │   │   │   ├── opencensus-contrib-http-util-0.31.1.jar
+│   │   │   │   │   │   │   ├── openrefine-database.jar
+│   │   │   │   │   │   │   ├── postgresql-42.7.4.jar
+│   │   │   │   │   │   │   ├── protobuf-java-3.19.4.jar
+│   │   │   │   │   │   │   ├── sqlite-jdbc-3.47.2.0.jar
+│   │   │   │   │   │   │   └── waffle-jna-3.3.0.jar
+│   │   │   │   │   │   ├── .gitignore
+│   │   │   │   │   │   ├── controller.js
+│   │   │   │   │   │   ├── dbextension.properties
+│   │   │   │   │   │   └── module.properties
+│   │   │   │   │   ├── scripts
+│   │   │   │   │   │   ├── index
+│   │   │   │   │   │   │   ├── database-import-controller.js
+│   │   │   │   │   │   │   ├── database-import-form.html
+│   │   │   │   │   │   │   ├── database-parsing-panel.html
+│   │   │   │   │   │   │   ├── database-source-ui.js
+│   │   │   │   │   │   │   ├── jquery.contextMenu.js
+│   │   │   │   │   │   │   └── jquery.ui.position.js
+│   │   │   │   │   │   ├── project
+│   │   │   │   │   │   │   └── database-exporters.js
+│   │   │   │   │   │   └── database-extension.js
+│   │   │   │   │   ├── styles
+│   │   │   │   │   │   ├── database-import.css
+│   │   │   │   │   │   └── jquery.contextMenu.css
+│   │   │   │   │   ├── index.vt
+│   │   │   │   │   └── macros.vm
+│   │   │   │   ├── .eclipse-pmd
+│   │   │   │   ├── .eslintrc.json
+│   │   │   │   ├── .travis.yml
+│   │   │   │   └── README.md
+│   │   │   ├── jython
+│   │   │   │   ├── module
+│   │   │   │   │   └── MOD-INF
+│   │   │   │   │       ├── lib
+│   │   │   │   │       │   ├── jython-standalone-2.7.4.jar
+│   │   │   │   │       │   ├── localizer-1.31.jar
+│   │   │   │   │       │   └── openrefine-jython.jar
+│   │   │   │   │       ├── controller.js
+│   │   │   │   │       └── module.properties
+│   │   │   │   └── .gitignore
+│   │   │   ├── pc-axis
+│   │   │   │   └── module
+│   │   │   │       ├── langs
+│   │   │   │       │   └── translation-en.json
+│   │   │   │       ├── MOD-INF
+│   │   │   │       │   ├── lib
+│   │   │   │       │   │   ├── localizer-1.31.jar
+│   │   │   │       │   │   └── openrefine-pcaxis.jar
+│   │   │   │       │   ├── controller.js
+│   │   │   │       │   └── module.properties
+│   │   │   │       └── scripts
+│   │   │   │           ├── pc-axis-parser-ui.html
+│   │   │   │           └── pc-axis-parser-ui.js
+│   │   │   └── wikibase
+│   │   │       ├── module
+│   │   │       │   ├── images
+│   │   │       │   │   ├── close-map.png
+│   │   │       │   │   ├── Critical.png
+│   │   │       │   │   ├── Critical.svg
+│   │   │       │   │   ├── Important.png
+│   │   │       │   │   ├── Important.svg
+│   │   │       │   │   ├── Information.png
+│   │   │       │   │   ├── Information.svg
+│   │   │       │   │   ├── Warning.png
+│   │   │       │   │   ├── Warning.svg
+│   │   │       │   │   ├── Wikibase_logo.png
+│   │   │       │   │   ├── wikidata.png
+│   │   │       │   │   └── Wikidata-logo-en.svg
+│   │   │       │   ├── langs
+│   │   │       │   │   ├── translation-ar.json
+│   │   │       │   │   ├── translation-bn.json
+│   │   │       │   │   ├── translation-bn_IN.json
+│   │   │       │   │   ├── translation-br.json
+│   │   │       │   │   ├── translation-ca.json
+│   │   │       │   │   ├── translation-ceb.json
+│   │   │       │   │   ├── translation-cs.json
+│   │   │       │   │   ├── translation-da.json
+│   │   │       │   │   ├── translation-de.json
+│   │   │       │   │   ├── translation-el.json
+│   │   │       │   │   ├── translation-en.json
+│   │   │       │   │   ├── translation-en_GB.json
+│   │   │       │   │   ├── translation-es.json
+│   │   │       │   │   ├── translation-eu.json
+│   │   │       │   │   ├── translation-fa.json
+│   │   │       │   │   ├── translation-fi.json
+│   │   │       │   │   ├── translation-fil.json
+│   │   │       │   │   ├── translation-fr.json
+│   │   │       │   │   ├── translation-he.json
+│   │   │       │   │   ├── translation-hi.json
+│   │   │       │   │   ├── translation-hu.json
+│   │   │       │   │   ├── translation-id.json
+│   │   │       │   │   ├── translation-it.json
+│   │   │       │   │   ├── translation-iu.json
+│   │   │       │   │   ├── translation-ja.json
+│   │   │       │   │   ├── translation-ko.json
+│   │   │       │   │   ├── translation-ml.json
+│   │   │       │   │   ├── translation-mr.json
+│   │   │       │   │   ├── translation-nb_NO.json
+│   │   │       │   │   ├── translation-nl.json
+│   │   │       │   │   ├── translation-pa.json
+│   │   │       │   │   ├── translation-pa_PK.json
+│   │   │       │   │   ├── translation-pl.json
+│   │   │       │   │   ├── translation-pt.json
+│   │   │       │   │   ├── translation-pt_BR.json
+│   │   │       │   │   ├── translation-pt_PT.json
+│   │   │       │   │   ├── translation-ro.json
+│   │   │       │   │   ├── translation-ru.json
+│   │   │       │   │   ├── translation-sv.json
+│   │   │       │   │   ├── translation-ta.json
+│   │   │       │   │   ├── translation-tl.json
+│   │   │       │   │   ├── translation-tr.json
+│   │   │       │   │   ├── translation-uk.json
+│   │   │       │   │   ├── translation-zh_Hans.json
+│   │   │       │   │   └── translation-zh_Hant.json
+│   │   │       │   ├── MOD-INF
+│   │   │       │   │   ├── lib
+│   │   │       │   │   │   ├── annotations-13.0.jar
+│   │   │       │   │   │   ├── commons-codec-1.17.2.jar
+│   │   │       │   │   │   ├── commons-compress-1.27.1.jar
+│   │   │       │   │   │   ├── commons-io-2.18.0.jar
+│   │   │       │   │   │   ├── commons-lang3-3.17.0.jar
+│   │   │       │   │   │   ├── jackson-datatype-jdk8-2.17.2.jar
+│   │   │       │   │   │   ├── kotlin-stdlib-1.8.21.jar
+│   │   │       │   │   │   ├── kotlin-stdlib-common-1.8.21.jar
+│   │   │       │   │   │   ├── kotlin-stdlib-jdk7-1.8.21.jar
+│   │   │       │   │   │   ├── kotlin-stdlib-jdk8-1.8.21.jar
+│   │   │       │   │   │   ├── localizer-1.31.jar
+│   │   │       │   │   │   ├── okhttp-4.12.0.jar
+│   │   │       │   │   │   ├── okhttp-signpost-1.1.0.jar
+│   │   │       │   │   │   ├── okhttp-urlconnection-4.12.0.jar
+│   │   │       │   │   │   ├── okio-3.6.0.jar
+│   │   │       │   │   │   ├── okio-jvm-3.6.0.jar
+│   │   │       │   │   │   ├── openrefine-wikidata.jar
+│   │   │       │   │   │   ├── signpost-core-1.2.1.2.jar
+│   │   │       │   │   │   ├── threeten-extra-1.8.0.jar
+│   │   │       │   │   │   ├── wdtk-datamodel-0.16.0.jar
+│   │   │       │   │   │   ├── wdtk-util-0.16.0.jar
+│   │   │       │   │   │   └── wdtk-wikibaseapi-0.16.0.jar
+│   │   │       │   │   ├── controller.js
+│   │   │       │   │   └── module.properties
+│   │   │       │   ├── scripts
+│   │   │       │   │   ├── dialogs
+│   │   │       │   │   │   ├── add-wikibase-dialog.html
+│   │   │       │   │   │   ├── import-schema-dialog.html
+│   │   │       │   │   │   ├── import-schema-dialog.js
+│   │   │       │   │   │   ├── logged-in-dialog.html
+│   │   │       │   │   │   ├── manage-account-dialog.js
+│   │   │       │   │   │   ├── owner-only-consumer-login-dialog.html
+│   │   │       │   │   │   ├── password-login-dialog.html
+│   │   │       │   │   │   ├── perform-edits-dialog.html
+│   │   │       │   │   │   ├── perform-edits-dialog.js
+│   │   │       │   │   │   ├── save-schema-dialog.html
+│   │   │       │   │   │   ├── save-schema-dialog.js
+│   │   │       │   │   │   ├── schema-list-item.html
+│   │   │       │   │   │   ├── schema-management-dialog.html
+│   │   │       │   │   │   ├── schema-management-dialog.js
+│   │   │       │   │   │   ├── statement-configuration-dialog.html
+│   │   │       │   │   │   ├── statement-configuration-dialog.js
+│   │   │       │   │   │   ├── wikibase-dialog.html
+│   │   │       │   │   │   ├── wikibase-dialog.js
+│   │   │       │   │   │   └── wikibase-item.html
+│   │   │       │   │   ├── ajv.js
+│   │   │       │   │   ├── ajv.min.js
+│   │   │       │   │   ├── better-suggest.js
+│   │   │       │   │   ├── commons-manifest-v2.0.js
+│   │   │       │   │   ├── issues-tab.html
+│   │   │       │   │   ├── jquery.uls.data.js
+│   │   │       │   │   ├── lang-suggest.js
+│   │   │       │   │   ├── menu-bar-extension.js
+│   │   │       │   │   ├── preview-renderer.js
+│   │   │       │   │   ├── preview-tab.html
+│   │   │       │   │   ├── schema-alignment.js
+│   │   │       │   │   ├── schema-alignment-tab.html
+│   │   │       │   │   ├── template-manager.js
+│   │   │       │   │   ├── warnings-renderer.js
+│   │   │       │   │   ├── wikibase-manager.js
+│   │   │       │   │   ├── wikibase-manifest-schema-v1.js
+│   │   │       │   │   ├── wikibase-manifest-schema-v2.js
+│   │   │       │   │   ├── wikibase-suggest.js
+│   │   │       │   │   ├── wikidata-extension-manager.js
+│   │   │       │   │   └── wikidata-manifest-v1.0.js
+│   │   │       │   └── styles
+│   │   │       │       ├── dialogs
+│   │   │       │       │   ├── add-wikibase-dialog.css
+│   │   │       │       │   ├── import-schema-dialog.css
+│   │   │       │       │   ├── manage-account-dialog.css
+│   │   │       │       │   ├── perform-edits.css
+│   │   │       │       │   ├── save-schema-dialog.css
+│   │   │       │       │   ├── schema-management-dialog.css
+│   │   │       │       │   ├── statement-configuration-dialog.css
+│   │   │       │       │   └── wikibase-dialog.css
+│   │   │       │       └── schema-alignment.css
+│   │   │       ├── .gitignore
+│   │   │       └── credits.txt
+│   │   ├── modules
+│   │   │   └── core
+│   │   │       ├── 3rdparty
+│   │   │       │   ├── jquery.i18n
+│   │   │       │   │   ├── languages
+│   │   │       │   │   │   ├── bs.js
+│   │   │       │   │   │   ├── dsb.js
+│   │   │       │   │   │   ├── fi.js
+│   │   │       │   │   │   ├── ga.js
+│   │   │       │   │   │   ├── he.js
+│   │   │       │   │   │   ├── hsb.js
+│   │   │       │   │   │   ├── hu.js
+│   │   │       │   │   │   ├── hy.js
+│   │   │       │   │   │   ├── la.js
+│   │   │       │   │   │   ├── ml.js
+│   │   │       │   │   │   ├── os.js
+│   │   │       │   │   │   ├── ru.js
+│   │   │       │   │   │   ├── sl.js
+│   │   │       │   │   │   └── uk.js
+│   │   │       │   │   ├── CLDRPluralRuleParser.js
+│   │   │       │   │   ├── jquery.i18n.emitter.bidi.js
+│   │   │       │   │   ├── jquery.i18n.emitter.js
+│   │   │       │   │   ├── jquery.i18n.fallbacks.js
+│   │   │       │   │   ├── jquery.i18n.js
+│   │   │       │   │   ├── jquery.i18n.language.js
+│   │   │       │   │   ├── jquery.i18n.messagestore.js
+│   │   │       │   │   └── jquery.i18n.parser.js
+│   │   │       │   ├── select2
+│   │   │       │   │   ├── select2.css
+│   │   │       │   │   └── select2.js
+│   │   │       │   ├── tablesorter
+│   │   │       │   │   ├── jquery.tablesorter.js
+│   │   │       │   │   └── theme.blue.css
+│   │   │       │   ├── jquery.js
+│   │   │       │   ├── jquery-migrate.js
+│   │   │       │   ├── js.cookie.js
+│   │   │       │   └── underscore.js
+│   │   │       ├── externals
+│   │   │       │   ├── imgareaselect
+│   │   │       │   │   ├── css
+│   │   │       │   │   │   └── imgareaselect-default.css
+│   │   │       │   │   └── jquery.imgareaselect.js
+│   │   │       │   ├── jquery-ui
+│   │   │       │   │   ├── css
+│   │   │       │   │   │   └── ui-lightness
+│   │   │       │   │   │       ├── images
+│   │   │       │   │   │       │   ├── ui-bg_diagonals-thick_18_b81900_40x40.png
+│   │   │       │   │   │       │   ├── ui-bg_diagonals-thick_20_666666_40x40.png
+│   │   │       │   │   │       │   ├── ui-bg_glass_100_f6f6f6_1x400.png
+│   │   │       │   │   │       │   ├── ui-bg_glass_100_fdf5ce_1x400.png
+│   │   │       │   │   │       │   ├── ui-bg_glass_65_ffffff_1x400.png
+│   │   │       │   │   │       │   ├── ui-bg_gloss-wave_35_f6a828_500x100.png
+│   │   │       │   │   │       │   ├── ui-bg_highlight-soft_100_eeeeee_1x100.png
+│   │   │       │   │   │       │   ├── ui-bg_highlight-soft_75_ffe45c_1x100.png
+│   │   │       │   │   │       │   ├── ui-icons_222222_256x240.png
+│   │   │       │   │   │       │   ├── ui-icons_228ef1_256x240.png
+│   │   │       │   │   │       │   ├── ui-icons_ef8c08_256x240.png
+│   │   │       │   │   │       │   ├── ui-icons_ffd27a_256x240.png
+│   │   │       │   │   │       │   └── ui-icons_ffffff_256x240.png
+│   │   │       │   │   │       ├── jquery-ui.css
+│   │   │       │   │   │       ├── jquery-ui.min.css
+│   │   │       │   │   │       └── theme.css
+│   │   │       │   │   ├── jquery-ui.js
+│   │   │       │   │   └── jquery-ui.min.js
+│   │   │       │   └── suggest
+│   │   │       │       ├── css
+│   │   │       │       │   └── suggest-4_3.css
+│   │   │       │       └── suggest-4_3a.js
+│   │   │       ├── images
+│   │   │       │   ├── checks-map.png
+│   │   │       │   ├── close.png
+│   │   │       │   ├── close-map.png
+│   │   │       │   ├── down-arrow.png
+│   │   │       │   ├── facet-resize-handle.png
+│   │   │       │   ├── favicon.png
+│   │   │       │   ├── large-spinner.gif
+│   │   │       │   ├── leftpanel-showhide.png
+│   │   │       │   ├── logo-gem-126.png
+│   │   │       │   ├── logo-gem-126.svg
+│   │   │       │   ├── logo-openrefine-550.png
+│   │   │       │   ├── menu-dropdown.png
+│   │   │       │   ├── menu-opener.png
+│   │   │       │   ├── minimize-map.png
+│   │   │       │   ├── right-arrow.png
+│   │   │       │   ├── scatterplot-icons.png
+│   │   │       │   ├── slider-handle.png
+│   │   │       │   ├── small-spinner.gif
+│   │   │       │   ├── star.png
+│   │   │       │   └── star-flag-map.png
+│   │   │       ├── langs
+│   │   │       │   ├── translation-ar.json
+│   │   │       │   ├── translation-bn.json
+│   │   │       │   ├── translation-bn_IN.json
+│   │   │       │   ├── translation-br.json
+│   │   │       │   ├── translation-ca.json
+│   │   │       │   ├── translation-ceb.json
+│   │   │       │   ├── translation-cs.json
+│   │   │       │   ├── translation-da.json
+│   │   │       │   ├── translation-de.json
+│   │   │       │   ├── translation-el.json
+│   │   │       │   ├── translation-en.json
+│   │   │       │   ├── translation-en_GB.json
+│   │   │       │   ├── translation-es.json
+│   │   │       │   ├── translation-eu.json
+│   │   │       │   ├── translation-fa.json
+│   │   │       │   ├── translation-fi.json
+│   │   │       │   ├── translation-fil.json
+│   │   │       │   ├── translation-fr.json
+│   │   │       │   ├── translation-he.json
+│   │   │       │   ├── translation-hi.json
+│   │   │       │   ├── translation-hu.json
+│   │   │       │   ├── translation-id.json
+│   │   │       │   ├── translation-it.json
+│   │   │       │   ├── translation-iu.json
+│   │   │       │   ├── translation-ja.json
+│   │   │       │   ├── translation-ko.json
+│   │   │       │   ├── translation-ml.json
+│   │   │       │   ├── translation-mr.json
+│   │   │       │   ├── translation-nb_NO.json
+│   │   │       │   ├── translation-nl.json
+│   │   │       │   ├── translation-pa.json
+│   │   │       │   ├── translation-pa_PK.json
+│   │   │       │   ├── translation-pl.json
+│   │   │       │   ├── translation-pt.json
+│   │   │       │   ├── translation-pt_BR.json
+│   │   │       │   ├── translation-pt_PT.json
+│   │   │       │   ├── translation-ro.json
+│   │   │       │   ├── translation-ru.json
+│   │   │       │   ├── translation-sv.json
+│   │   │       │   ├── translation-ta.json
+│   │   │       │   ├── translation-tl.json
+│   │   │       │   ├── translation-tr.json
+│   │   │       │   ├── translation-uk.json
+│   │   │       │   ├── translation-zh.json
+│   │   │       │   └── translation-zh_Hant.json
+│   │   │       ├── MOD-INF
+│   │   │       │   ├── controller.js
+│   │   │       │   └── module.properties
+│   │   │       ├── scripts
+│   │   │       │   ├── dialogs
+│   │   │       │   │   ├── add-column-by-reconciliation.js
+│   │   │       │   │   ├── add-function-dialog.html
+│   │   │       │   │   ├── add-rows-dialog.html
+│   │   │       │   │   ├── add-rows-dialog.js
+│   │   │       │   │   ├── apply-operations-dialog.html
+│   │   │       │   │   ├── apply-operations-dialog.js
+│   │   │       │   │   ├── clustering-dialog.html
+│   │   │       │   │   ├── clustering-dialog.js
+│   │   │       │   │   ├── clustering-functions-dialog.html
+│   │   │       │   │   ├── clustering-functions-dialog.js
+│   │   │       │   │   ├── column-reordering-dialog.html
+│   │   │       │   │   ├── column-reordering-dialog.js
+│   │   │       │   │   ├── common-transform-dialog.html
+│   │   │       │   │   ├── common-transform-dialog.js
+│   │   │       │   │   ├── custom-tabular-exporter-dialog.html
+│   │   │       │   │   ├── custom-tabular-exporter-dialog.js
+│   │   │       │   │   ├── export-project-dialog.html
+│   │   │       │   │   ├── expression-column-dialog.html
+│   │   │       │   │   ├── expression-column-dialog.js
+│   │   │       │   │   ├── expression-preview-dialog.html
+│   │   │       │   │   ├── expression-preview-dialog.js
+│   │   │       │   │   ├── extract-operations-dialog.html
+│   │   │       │   │   ├── extract-operations-dialog.js
+│   │   │       │   │   ├── http-headers-dialog.html
+│   │   │       │   │   ├── http-headers-dialog.js
+│   │   │       │   │   ├── remove-duplicate-rows-dialog.html
+│   │   │       │   │   ├── remove-duplicate-rows-dialog.js
+│   │   │       │   │   ├── scatterplot-dialog.html
+│   │   │       │   │   ├── scatterplot-dialog.js
+│   │   │       │   │   ├── sql-exporter-dialog.html
+│   │   │       │   │   ├── sql-exporter-dialog.js
+│   │   │       │   │   ├── templating-exporter-dialog.html
+│   │   │       │   │   └── templating-exporter-dialog.js
+│   │   │       │   ├── facets
+│   │   │       │   │   ├── facet.js
+│   │   │       │   │   ├── list-facet.js
+│   │   │       │   │   ├── range-facet.js
+│   │   │       │   │   ├── scatterplot-facet.js
+│   │   │       │   │   ├── text-search-facet.js
+│   │   │       │   │   └── timerange-facet.js
+│   │   │       │   ├── index
+│   │   │       │   │   ├── default-importing-controller
+│   │   │       │   │   │   ├── controller.js
+│   │   │       │   │   │   ├── file-selection-panel.html
+│   │   │       │   │   │   ├── file-selection-panel.js
+│   │   │       │   │   │   ├── parsing-panel.html
+│   │   │       │   │   │   └── parsing-panel.js
+│   │   │       │   │   ├── default-importing-sources
+│   │   │       │   │   │   ├── import-from-clipboard-form.html
+│   │   │       │   │   │   ├── import-from-computer-form.html
+│   │   │       │   │   │   ├── import-from-web-form.html
+│   │   │       │   │   │   └── sources.js
+│   │   │       │   │   ├── parser-interfaces
+│   │   │       │   │   │   ├── excel-parser-ui.html
+│   │   │       │   │   │   ├── excel-parser-ui.js
+│   │   │       │   │   │   ├── fixed-width-parser-ui.html
+│   │   │       │   │   │   ├── fixed-width-parser-ui.js
+│   │   │       │   │   │   ├── json-parser-select-ui.html
+│   │   │       │   │   │   ├── json-parser-ui.html
+│   │   │       │   │   │   ├── json-parser-ui.js
+│   │   │       │   │   │   ├── line-based-parser-ui.html
+│   │   │       │   │   │   ├── line-based-parser-ui.js
+│   │   │       │   │   │   ├── preview-table.js
+│   │   │       │   │   │   ├── rdf-triples-parser-ui.html
+│   │   │       │   │   │   ├── rdf-triples-parser-ui.js
+│   │   │       │   │   │   ├── separator-based-parser-ui.html
+│   │   │       │   │   │   ├── separator-based-parser-ui.js
+│   │   │       │   │   │   ├── wikitext-parser-ui.html
+│   │   │       │   │   │   ├── wikitext-parser-ui.js
+│   │   │       │   │   │   ├── xml-parser-select-ui.html
+│   │   │       │   │   │   ├── xml-parser-ui.html
+│   │   │       │   │   │   └── xml-parser-ui.js
+│   │   │       │   │   ├── create-project-error-panel.html
+│   │   │       │   │   ├── create-project-progress-panel.html
+│   │   │       │   │   ├── create-project-ui.js
+│   │   │       │   │   ├── create-project-ui-source-selection.html
+│   │   │       │   │   ├── edit-metadata-dialog.js
+│   │   │       │   │   ├── import-project-ui.html
+│   │   │       │   │   ├── import-project-ui.js
+│   │   │       │   │   ├── lang-settings-ui.html
+│   │   │       │   │   ├── lang-settings-ui.js
+│   │   │       │   │   ├── manage-extensions-ui.html
+│   │   │       │   │   ├── manage-extensions-ui.js
+│   │   │       │   │   ├── open-project-ui.html
+│   │   │       │   │   ├── open-project-ui.js
+│   │   │       │   │   └── select-encoding-dialog.html
+│   │   │       │   ├── project
+│   │   │       │   │   ├── browsing-engine.js
+│   │   │       │   │   ├── edit-metadata-dialog.html
+│   │   │       │   │   ├── exporters.js
+│   │   │       │   │   ├── extension-bar.js
+│   │   │       │   │   ├── history-entry.html
+│   │   │       │   │   ├── history-panel.html
+│   │   │       │   │   ├── history-panel.js
+│   │   │       │   │   ├── operation-icons.js
+│   │   │       │   │   ├── process-panel.js
+│   │   │       │   │   ├── progress-panel.html
+│   │   │       │   │   ├── scripting.js
+│   │   │       │   │   └── summary-bar.js
+│   │   │       │   ├── reconciliation
+│   │   │       │   │   ├── add-standard-service-dialog.html
+│   │   │       │   │   ├── recon-dialog.html
+│   │   │       │   │   ├── recon-dialog.js
+│   │   │       │   │   ├── recon-dialog-2.html
+│   │   │       │   │   ├── recon-dialog-2.js
+│   │   │       │   │   ├── recon-manager.js
+│   │   │       │   │   ├── standard-service-panel.html
+│   │   │       │   │   └── standard-service-panel.js
+│   │   │       │   ├── util
+│   │   │       │   │   ├── ajax.js
+│   │   │       │   │   ├── confirm-history-erasure-dialog.html
+│   │   │       │   │   ├── csrf.js
+│   │   │       │   │   ├── custom-suggest.js
+│   │   │       │   │   ├── dialog.js
+│   │   │       │   │   ├── dom.js
+│   │   │       │   │   ├── encoding.js
+│   │   │       │   │   ├── filter-lists-search.js
+│   │   │       │   │   ├── host.js
+│   │   │       │   │   ├── i18n.js
+│   │   │       │   │   ├── menu.js
+│   │   │       │   │   ├── misc.js
+│   │   │       │   │   ├── select-encoding-dialog.html
+│   │   │       │   │   ├── sign.js
+│   │   │       │   │   ├── string.js
+│   │   │       │   │   └── url.js
+│   │   │       │   ├── views
+│   │   │       │   │   └── data-table
+│   │   │       │   │       ├── cell-renderers
+│   │   │       │   │       │   ├── error-renderer.js
+│   │   │       │   │       │   ├── null-renderer.js
+│   │   │       │   │       │   ├── recon-renderer.js
+│   │   │       │   │       │   ├── registry.js
+│   │   │       │   │       │   └── simple-value-renderer.js
+│   │   │       │   │       ├── add-column-by-fetching-urls-dialog.html
+│   │   │       │   │       ├── add-column-by-reconciliation.html
+│   │   │       │   │       ├── add-column-dialog.html
+│   │   │       │   │       ├── add-q-column-dialog.html
+│   │   │       │   │       ├── cell-editor.html
+│   │   │       │   │       ├── cell-recon-preview-popup-header.html
+│   │   │       │   │       ├── cell-recon-search-for-match.html
+│   │   │       │   │       ├── cell-ui.js
+│   │   │       │   │       ├── column-header.html
+│   │   │       │   │       ├── column-header-ui.js
+│   │   │       │   │       ├── column-join.html
+│   │   │       │   │       ├── copy-recon-across-columns-dialog.html
+│   │   │       │   │       ├── data-table-view.js
+│   │   │       │   │       ├── key-value-columnize.html
+│   │   │       │   │       ├── menu-edit-cells.js
+│   │   │       │   │       ├── menu-edit-column.js
+│   │   │       │   │       ├── menu-facets.js
+│   │   │       │   │       ├── menu-reconcile.js
+│   │   │       │   │       ├── rename-column.html
+│   │   │       │   │       ├── replace-dialog.html
+│   │   │       │   │       ├── sorting-criterion-dialog.html
+│   │   │       │   │       ├── split-column-dialog.html
+│   │   │       │   │       ├── split-multi-valued-cells-dialog.html
+│   │   │       │   │       ├── text-transform-dialog.html
+│   │   │       │   │       ├── transpose-columns-into-rows.html
+│   │   │       │   │       └── warn-of-pending-sort.html
+│   │   │       │   ├── widgets
+│   │   │       │   │   ├── histogram-widget.js
+│   │   │       │   │   └── slider-widget.js
+│   │   │       │   ├── index.js
+│   │   │       │   ├── preferences.js
+│   │   │       │   └── project.js
+│   │   │       ├── styles
+│   │   │       │   ├── dialogs
+│   │   │       │   │   ├── clustering-dialog.css
+│   │   │       │   │   ├── clustering-functions-dialog.css
+│   │   │       │   │   ├── column-reordering-dialog.css
+│   │   │       │   │   ├── confirm-history-erasure-dialog.less
+│   │   │       │   │   ├── custom-tabular-exporter-dialog.css
+│   │   │       │   │   ├── expression-preview-dialog.css
+│   │   │       │   │   ├── recon-service-selection-dialog.css
+│   │   │       │   │   ├── remove-duplicate-rows-dialog.css
+│   │   │       │   │   ├── scatterplot-dialog.css
+│   │   │       │   │   └── sql-exporter-dialog.css
+│   │   │       │   ├── index
+│   │   │       │   │   ├── create-project-ui.css
+│   │   │       │   │   ├── default-importing-controller.css
+│   │   │       │   │   ├── default-importing-file-selection-panel.css
+│   │   │       │   │   ├── default-importing-parsing-panel.css
+│   │   │       │   │   ├── default-importing-sources.css
+│   │   │       │   │   ├── fixed-width-parser-ui.css
+│   │   │       │   │   ├── import-project-ui.css
+│   │   │       │   │   ├── json-parser-ui.css
+│   │   │       │   │   ├── open-project-ui.css
+│   │   │       │   │   ├── wikitext-parser-ui.css
+│   │   │       │   │   └── xml-parser-ui.css
+│   │   │       │   ├── project
+│   │   │       │   │   ├── facets.css
+│   │   │       │   │   ├── process.css
+│   │   │       │   │   └── sidebar.css
+│   │   │       │   ├── reconciliation
+│   │   │       │   │   ├── add-column-by-reconciliation.css
+│   │   │       │   │   ├── recon-dialog.css
+│   │   │       │   │   └── standard-service-panel.css
+│   │   │       │   ├── util
+│   │   │       │   │   ├── custom-suggest.css
+│   │   │       │   │   ├── dialog.css
+│   │   │       │   │   ├── encoding.css
+│   │   │       │   │   └── menu.css
+│   │   │       │   ├── views
+│   │   │       │   │   ├── column-join.css
+│   │   │       │   │   └── data-table-view.css
+│   │   │       │   ├── widgets
+│   │   │       │   │   ├── histogram-widget.css
+│   │   │       │   │   └── slider-widget.css
+│   │   │       │   ├── common.css
+│   │   │       │   ├── index.css
+│   │   │       │   ├── jquery-ui-overrides.css
+│   │   │       │   ├── project.css
+│   │   │       │   └── theme.css
+│   │   │       ├── about.html
+│   │   │       ├── about.js
+│   │   │       ├── error.vt
+│   │   │       ├── index.vt
+│   │   │       ├── macros.vm
+│   │   │       ├── preferences.vt
+│   │   │       └── project.vt
+│   │   └── WEB-INF
+│   │       ├── lib
+│   │       │   ├── annotations-12.0.jar
+│   │       │   ├── arithcode-1.2.jar
+│   │       │   ├── butterfly-1.2.6.jar
+│   │       │   ├── caffeine-3.1.8.jar
+│   │       │   ├── checker-qual-3.43.0.jar
+│   │       │   ├── clojure-1.12.0.jar
+│   │       │   ├── collection-0.7.jar
+│   │       │   ├── com.wcohen.secondstring-0.1.jar
+│   │       │   ├── commons-beanutils-1.9.4.jar
+│   │       │   ├── commons-cli-1.5.0.jar
+│   │       │   ├── commons-codec-1.17.2.jar
+│   │       │   ├── commons-collections-3.2.2.jar
+│   │       │   ├── commons-collections4-4.4.jar
+│   │       │   ├── commons-compress-1.27.1.jar
+│   │       │   ├── commons-csv-1.10.0.jar
+│   │       │   ├── commons-digester-2.1.jar
+│   │       │   ├── commons-fileupload-1.5.jar
+│   │       │   ├── commons-io-2.18.0.jar
+│   │       │   ├── commons-lang-2.6.jar
+│   │       │   ├── commons-logging-1.3.2.jar
+│   │       │   ├── commons-math3-3.6.1.jar
+│   │       │   ├── commons-text-1.13.0.jar
+│   │       │   ├── commons-validator-1.9.0.jar
+│   │       │   ├── core.specs.alpha-0.4.74.jar
+│   │       │   ├── core-3.9.3.jar
+│   │       │   ├── curvesapi-1.08.jar
+│   │       │   ├── error_prone_annotations-2.36.0.jar
+│   │       │   ├── failureaccess-1.0.2.jar
+│   │       │   ├── grel-3.9.3.jar
+│   │       │   ├── gson-2.10.1.jar
+│   │       │   ├── guava-33.4.0-jre.jar
+│   │       │   ├── httpclient-4.5.14.jar
+│   │       │   ├── httpclient5-5.4.1.jar
+│   │       │   ├── httpclient-cache-4.5.14.jar
+│   │       │   ├── httpcore-4.4.16.jar
+│   │       │   ├── httpcore5-5.3.2.jar
+│   │       │   ├── httpcore5-h2-5.3.1.jar
+│   │       │   ├── j2objc-annotations-3.0.0.jar
+│   │       │   ├── jackson-annotations-2.18.2.jar
+│   │       │   ├── jackson-core-2.18.2.jar
+│   │       │   ├── jackson-databind-2.18.2.jar
+│   │       │   ├── jackson-datatype-jdk8-2.18.2.jar
+│   │       │   ├── jakarta.json-2.0.1.jar
+│   │       │   ├── java-rdfa-1.0.0-BETA1.jar
+│   │       │   ├── javax.activation-api-1.2.0.jar
+│   │       │   ├── jaxb-api-2.3.1.jar
+│   │       │   ├── jcl-over-slf4j-1.7.36.jar
+│   │       │   ├── jena-arq-4.10.0.jar
+│   │       │   ├── jena-base-4.10.0.jar
+│   │       │   ├── jena-core-4.10.0.jar
+│   │       │   ├── jena-iri-4.10.0.jar
+│   │       │   ├── jetty-http-10.0.16.jar
+│   │       │   ├── jetty-io-10.0.16.jar
+│   │       │   ├── jetty-servlets-10.0.16.jar
+│   │       │   ├── jetty-util-10.0.16.jar
+│   │       │   ├── json-20231013.jar
+│   │       │   ├── jsonic-1.2.11.jar
+│   │       │   ├── jsonld-java-0.13.4.jar
+│   │       │   ├── jsoup-1.18.3.jar
+│   │       │   ├── jsr305-3.0.2.jar
+│   │       │   ├── juniversalchardet-2.5.0.jar
+│   │       │   ├── language-detector-0.6.jar
+│   │       │   ├── lessen-1.0.jar
+│   │       │   ├── libthrift-0.19.0.jar
+│   │       │   ├── listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar
+│   │       │   ├── localizer-1.31.jar
+│   │       │   ├── marc4j-2.9.6.jar
+│   │       │   ├── odfdom-java-0.12.0.jar
+│   │       │   ├── openrefine-main.jar
+│   │       │   ├── oro-2.0.8.jar
+│   │       │   ├── poi-5.4.0.jar
+│   │       │   ├── poi-ooxml-5.4.0.jar
+│   │       │   ├── poi-ooxml-lite-5.4.0.jar
+│   │       │   ├── protobuf-java-3.24.3.jar
+│   │       │   ├── ptk-common-3.0.8.jar
+│   │       │   ├── rats-runtime-1.15.0.jar
+│   │       │   ├── rhino-1.7.15.jar
+│   │       │   ├── RoaringBitmap-1.0.0.jar
+│   │       │   ├── serializer-2.7.3.jar
+│   │       │   ├── slf4j-simple-1.7.36.jar
+│   │       │   ├── SparseBitSet-1.3.jar
+│   │       │   ├── spec.alpha-0.5.238.jar
+│   │       │   ├── swc-parser-lazy-3.1.9.jar
+│   │       │   ├── titanium-json-ld-1.3.2.jar
+│   │       │   ├── univocity-parsers-2.9.1.jar
+│   │       │   ├── utils-3.0.8.jar
+│   │       │   ├── velocity-1.6.3.jar
+│   │       │   ├── velocity-engine-core-2.4.1.jar
+│   │       │   ├── vicino-1.2.1.jar
+│   │       │   ├── xercesImpl-2.12.2.jar
+│   │       │   └── xmlbeans-5.3.0.jar
+│   │       ├── butterfly.properties
+│   │       ├── jetty-web.xml
+│   │       ├── modules.properties
+│   │       ├── velocity.properties
+│   │       └── web.xml
+│   ├── LICENSE.txt
+│   ├── licenses.xml
+│   ├── openrefine.exe
+│   ├── openrefine.l4j.ini
+│   ├── README.md
+│   ├── refine.bat
+│   └── refine.ini
+├── Orca-main
+│   ├── .github
+│   │   └── FUNDING.yml
+│   ├── desktop
+│   │   ├── sources
+│   │   │   ├── links
+│   │   │   │   └── main.css
+│   │   │   ├── scripts
+│   │   │   │   ├── core
+│   │   │   │   │   ├── io
+│   │   │   │   │   │   ├── cc.js
+│   │   │   │   │   │   ├── midi.js
+│   │   │   │   │   │   ├── mono.js
+│   │   │   │   │   │   ├── osc.js
+│   │   │   │   │   │   └── udp.js
+│   │   │   │   │   ├── io.js
+│   │   │   │   │   ├── library.js
+│   │   │   │   │   ├── operator.js
+│   │   │   │   │   ├── orca.js
+│   │   │   │   │   └── transpose.js
+│   │   │   │   ├── lib
+│   │   │   │   │   ├── acels.js
+│   │   │   │   │   ├── history.js
+│   │   │   │   │   ├── source.js
+│   │   │   │   │   └── theme.js
+│   │   │   │   ├── client.js
+│   │   │   │   ├── clock.js
+│   │   │   │   ├── commander.js
+│   │   │   │   └── cursor.js
+│   │   │   └── index.html
+│   │   ├── .nvmrc
+│   │   ├── icon.icns
+│   │   ├── icon.ico
+│   │   ├── icon.png
+│   │   ├── icon.svg
+│   │   ├── main.js
+│   │   ├── package.json
+│   │   └── package-lock.json
+│   ├── resources
+│   │   ├── listener.js
+│   │   ├── logo.svg
+│   │   ├── MANUAL.txt
+│   │   ├── preview.hardware.jpg
+│   │   ├── preview.jpg
+│   │   └── TUTORIAL.md
+│   ├── .gitignore
+│   ├── .nojekyll
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── LICENSE.md
+│   ├── manifest.json
+│   ├── README.md
+│   └── sw.js
+├── pd-0.55-2-i386
+│   ├── bin
+│   │   ├── libwinpthread-1.dll
+│   │   ├── msvcr90.dll
+│   │   ├── msvcrt.dll
+│   │   ├── pd.com
+│   │   ├── pd.def
+│   │   ├── pd.dll
+│   │   ├── pd.exe
+│   │   ├── pd.lib
+│   │   ├── pdfontloader.dll
+│   │   ├── pdreceive.exe
+│   │   ├── pdsend.exe
+│   │   ├── pthreadVC.dll
+│   │   ├── pthreadVC.lib
+│   │   ├── tcl85.dll
+│   │   ├── tclpip85.dll
+│   │   ├── tclsh85.exe
+│   │   ├── tk85.dll
+│   │   └── wish85.exe
+│   ├── doc
+│   │   ├── 1.manual
+│   │   │   ├── resources
+│   │   │   │   ├── 1.2.1.png
+│   │   │   │   ├── 1.2.2.png
+│   │   │   │   ├── 1.2.3.png
+│   │   │   │   ├── 2.1.1.png
+│   │   │   │   ├── 2.1.10.png
+│   │   │   │   ├── 2.1.11.png
+│   │   │   │   ├── 2.1.12.png
+│   │   │   │   ├── 2.1.13.png
+│   │   │   │   ├── 2.1.14.png
+│   │   │   │   ├── 2.1.2.png
+│   │   │   │   ├── 2.1.3.png
+│   │   │   │   ├── 2.1.4.png
+│   │   │   │   ├── 2.1.5.png
+│   │   │   │   ├── 2.1.6.png
+│   │   │   │   ├── 2.1.7.png
+│   │   │   │   ├── 2.1.8.png
+│   │   │   │   ├── 2.1.9.png
+│   │   │   │   ├── 2.10.1.png
+│   │   │   │   ├── 2.10.2.png
+│   │   │   │   ├── 2.10.3.png
+│   │   │   │   ├── 2.10.4.png
+│   │   │   │   ├── 2.10.5.png
+│   │   │   │   ├── 2.10.6.png
+│   │   │   │   ├── 2.11.1.png
+│   │   │   │   ├── 2.2.1.png
+│   │   │   │   ├── 2.2.10.png
+│   │   │   │   ├── 2.2.2.png
+│   │   │   │   ├── 2.2.3.png
+│   │   │   │   ├── 2.2.4.png
+│   │   │   │   ├── 2.2.5.png
+│   │   │   │   ├── 2.2.6.png
+│   │   │   │   ├── 2.2.7.png
+│   │   │   │   ├── 2.2.8.png
+│   │   │   │   ├── 2.2.9.png
+│   │   │   │   ├── 2.3.1.png
+│   │   │   │   ├── 2.3.10.png
+│   │   │   │   ├── 2.3.11.png
+│   │   │   │   ├── 2.3.12.png
+│   │   │   │   ├── 2.3.13.png
+│   │   │   │   ├── 2.3.14.png
+│   │   │   │   ├── 2.3.15.png
+│   │   │   │   ├── 2.3.16.png
+│   │   │   │   ├── 2.3.17.png
+│   │   │   │   ├── 2.3.18.png
+│   │   │   │   ├── 2.3.19.png
+│   │   │   │   ├── 2.3.2.png
+│   │   │   │   ├── 2.3.20.png
+│   │   │   │   ├── 2.3.21.png
+│   │   │   │   ├── 2.3.22.png
+│   │   │   │   ├── 2.3.23.png
+│   │   │   │   ├── 2.3.24.png
+│   │   │   │   ├── 2.3.25.png
+│   │   │   │   ├── 2.3.26.png
+│   │   │   │   ├── 2.3.27.png
+│   │   │   │   ├── 2.3.3.png
+│   │   │   │   ├── 2.3.4.png
+│   │   │   │   ├── 2.3.5.png
+│   │   │   │   ├── 2.3.6.png
+│   │   │   │   ├── 2.3.7.png
+│   │   │   │   ├── 2.3.8.png
+│   │   │   │   ├── 2.3.9.png
+│   │   │   │   ├── 2.4.1.png
+│   │   │   │   ├── 2.4.10.png
+│   │   │   │   ├── 2.4.11.png
+│   │   │   │   ├── 2.4.12.png
+│   │   │   │   ├── 2.4.13.png
+│   │   │   │   ├── 2.4.14.png
+│   │   │   │   ├── 2.4.15.png
+│   │   │   │   ├── 2.4.16.png
+│   │   │   │   ├── 2.4.2.png
+│   │   │   │   ├── 2.4.3.png
+│   │   │   │   ├── 2.4.4.png
+│   │   │   │   ├── 2.4.5.png
+│   │   │   │   ├── 2.4.6.png
+│   │   │   │   ├── 2.4.7.png
+│   │   │   │   ├── 2.4.8.png
+│   │   │   │   ├── 2.4.9.png
+│   │   │   │   ├── 2.5.1.png
+│   │   │   │   ├── 2.6.1.png
+│   │   │   │   ├── 2.8.1.png
+│   │   │   │   ├── 2.8.2.png
+│   │   │   │   ├── 2.8.3.png
+│   │   │   │   ├── 2.8.4.png
+│   │   │   │   ├── 2.8.5.png
+│   │   │   │   ├── 2.8.6.png
+│   │   │   │   ├── 2.9.1.png
+│   │   │   │   ├── 2.9.2.png
+│   │   │   │   ├── 2.9.3.png
+│   │   │   │   ├── 2.9.4.png
+│   │   │   │   ├── 2.9.5.png
+│   │   │   │   ├── 2.9.6.png
+│   │   │   │   ├── 3.3.1.png
+│   │   │   │   ├── 3.3.2.png
+│   │   │   │   ├── 3.3.3.png
+│   │   │   │   ├── 3.3.4.png
+│   │   │   │   ├── 3.3.5.png
+│   │   │   │   ├── 3.3.6.png
+│   │   │   │   ├── 3.4.1.png
+│   │   │   │   ├── 3.4.2.png
+│   │   │   │   ├── 3.4.3.png
+│   │   │   │   ├── 4.1.1.png
+│   │   │   │   ├── 4.3.1.png
+│   │   │   │   ├── 4.3.2.png
+│   │   │   │   ├── 4.3.3.png
+│   │   │   │   ├── 4.3.4.png
+│   │   │   │   ├── 4.3.5.png
+│   │   │   │   ├── 4.3.6.png
+│   │   │   │   ├── 4.4.1.png
+│   │   │   │   ├── 4.4.2.png
+│   │   │   │   ├── 4.4.3.png
+│   │   │   │   ├── chapter1.htm
+│   │   │   │   ├── chapter2.htm
+│   │   │   │   ├── chapter3.htm
+│   │   │   │   ├── chapter4.htm
+│   │   │   │   ├── chapter5.htm
+│   │   │   │   ├── chapter6.htm
+│   │   │   │   ├── favicon.ico
+│   │   │   │   ├── icon.png
+│   │   │   │   └── pdmanual.css
+│   │   │   └── index.htm
+│   │   ├── 2.control.examples
+│   │   │   ├── 00.INTRO.txt
+│   │   │   ├── 01.PART1.hello.pd
+│   │   │   ├── 02.editing.pd
+│   │   │   ├── 03.connections.pd
+│   │   │   ├── 04.messages.pd
+│   │   │   ├── 05.counter.pd
+│   │   │   ├── 06.more.counters.pd
+│   │   │   ├── 07.time.pd
+│   │   │   ├── 08.depthfirst.pd
+│   │   │   ├── 09.send_receive.pd
+│   │   │   ├── 10.more.messages.pd
+│   │   │   ├── 11.review.pd
+│   │   │   ├── 12.PART2.subpatch.pd
+│   │   │   ├── 13.locality.pd
+│   │   │   ├── 14.dollarsigns.pd
+│   │   │   ├── 15.array.pd
+│   │   │   ├── 15.file.txt
+│   │   │   ├── 16.more.arrays.pd
+│   │   │   ├── 17.PART3.midi.pd
+│   │   │   ├── 18.conditional.pd
+│   │   │   ├── 19.random.pd
+│   │   │   ├── 20.weighted-random.pd
+│   │   │   ├── 21.markov.chain.pd
+│   │   │   ├── 22.random-walk.pd
+│   │   │   ├── 23.sequencing.pd
+│   │   │   ├── 24.loops.pd
+│   │   │   ├── dollarsign.pd
+│   │   │   ├── dollarsign2.pd
+│   │   │   ├── gop-abs.pd
+│   │   │   └── sendnumber.pd
+│   │   ├── 3.audio.examples
+│   │   │   ├── A00.intro.pd
+│   │   │   ├── A01.sinewave.pd
+│   │   │   ├── A02.amplitude.pd
+│   │   │   ├── A03.line.pd
+│   │   │   ├── A04.line2.pd
+│   │   │   ├── A05.output.subpatch.pd
+│   │   │   ├── A06.frequency.pd
+│   │   │   ├── A07.fusion.pd
+│   │   │   ├── A08.beating.pd
+│   │   │   ├── A09.frequency.mod.pd
+│   │   │   ├── A10.review.pd
+│   │   │   ├── adsr.pd
+│   │   │   ├── B01.wavetables.pd
+│   │   │   ├── B02.two-wavetables.pd
+│   │   │   ├── B03.tabread4~.pd
+│   │   │   ├── B04.tabread4.interpolation.pd
+│   │   │   ├── B05.tabread.FM.pd
+│   │   │   ├── B06.table.switching.pd
+│   │   │   ├── B07.sampler.scratch.pd
+│   │   │   ├── B08.sampler.loop.pd
+│   │   │   ├── B09.sampler.loop.smooth.pd
+│   │   │   ├── B10.sampler.sliding.loop.pd
+│   │   │   ├── B11.sampler.nodoppler.pd
+│   │   │   ├── B12.sampler.transpose.pd
+│   │   │   ├── B13.sampler.overlap.pd
+│   │   │   ├── B14.sampler.rockafella.pd
+│   │   │   ├── B15.tabread4~-onset.pd
+│   │   │   ├── B16.long-varispeed.pd
+│   │   │   ├── buttercoef3.pd
+│   │   │   ├── butterworth3~.pd
+│   │   │   ├── C01.nyquist.pd
+│   │   │   ├── C02.sawtooth-foldover.pd
+│   │   │   ├── C03.zipper.noise.pd
+│   │   │   ├── C04.control.to.signal.pd
+│   │   │   ├── C05.sampler.oneshot.pd
+│   │   │   ├── C06.signal.to.control.pd
+│   │   │   ├── C07.envelope.follower.pd
+│   │   │   ├── C08.analog.sequencer.pd
+│   │   │   ├── C09.sample.hold.pd
+│   │   │   ├── C10.monophonic.synth.pd
+│   │   │   ├── D01.envelope.gen.pd
+│   │   │   ├── D02.adsr.pd
+│   │   │   ├── D03.envelope.dB.pd
+│   │   │   ├── D04.envelope.quartic.pd
+│   │   │   ├── D05.envelope.pitch.pd
+│   │   │   ├── D06.envelope.portamento.pd
+│   │   │   ├── D07.additive.pd
+│   │   │   ├── D08.table.spectrum.pd
+│   │   │   ├── D09.shepard.tone.pd
+│   │   │   ├── D10.sampler.notes.pd
+│   │   │   ├── D11.sampler.poly.pd
+│   │   │   ├── D12.sampler.bis.pd
+│   │   │   ├── D13.additive.qlist.pd
+│   │   │   ├── D14.vibrato.pd
+│   │   │   ├── E01.spectrum.pd
+│   │   │   ├── E02.ring.modulation.pd
+│   │   │   ├── E03.octave.divider.pd
+│   │   │   ├── E04.difference.tone.pd
+│   │   │   ├── E05.chebyshev.pd
+│   │   │   ├── E06.exponential.pd
+│   │   │   ├── E07.evenodd.pd
+│   │   │   ├── E08.phase.mod.pd
+│   │   │   ├── E09.FM.spectrum.pd
+│   │   │   ├── E10.complex.FM.pd
+│   │   │   ├── F01.pulse.pd
+│   │   │   ├── F02.just.say.pd
+│   │   │   ├── F03.pulse.spectrum.pd
+│   │   │   ├── F04.waveshaping.pulse.pd
+│   │   │   ├── F05.ring.modulation.pd
+│   │   │   ├── F06.packets.pd
+│   │   │   ├── F07.packet.spectrum.pd
+│   │   │   ├── F08.two.cosines.pd
+│   │   │   ├── F09.declickit.pd
+│   │   │   ├── F10.sweepable.FM.pd
+│   │   │   ├── F11.anharmonic.FM.pd
+│   │   │   ├── F12.paf.pd
+│   │   │   ├── F13.paf.control.pd
+│   │   │   ├── F14.wave.packet.pd
+│   │   │   ├── filter-graph1.pd
+│   │   │   ├── filter-graph2.pd
+│   │   │   ├── G01.delay.pd
+│   │   │   ├── G02.delay.loop.pd
+│   │   │   ├── G03.delay.variable.pd
+│   │   │   ├── G04.control.blocksize.pd
+│   │   │   ├── G05.execution.order.pd
+│   │   │   ├── G06.octave.doubler.pd
+│   │   │   ├── G07.shaker.pd
+│   │   │   ├── G08.reverb.pd
+│   │   │   ├── G09.pitchshift.pd
+│   │   │   ├── H01.low-pass.pd
+│   │   │   ├── H02.high-pass.pd
+│   │   │   ├── H03.band-pass.pd
+│   │   │   ├── H04.filter.sweep.pd
+│   │   │   ├── H05.filter.floyd.pd
+│   │   │   ├── H06.envelope.follower.pd
+│   │   │   ├── H07.measure.spectrum.pd
+│   │   │   ├── H08.heterodyning.pd
+│   │   │   ├── H09.ssb.modulation.pd
+│   │   │   ├── H10.measurement.pd
+│   │   │   ├── H11.shelving.pd
+│   │   │   ├── H12.peaking.pd
+│   │   │   ├── H13.butterworth.pd
+│   │   │   ├── H14.all.pass.pd
+│   │   │   ├── H15.phaser.pd
+│   │   │   ├── H16.adsr.filter.text.pd
+│   │   │   ├── I01.Fourier.analysis.pd
+│   │   │   ├── I02.Hann.window.pd
+│   │   │   ├── I03.resynthesis.pd
+│   │   │   ├── I04.noisegate.pd
+│   │   │   ├── I05.compressor.pd
+│   │   │   ├── I06.timbre.stamp.pd
+│   │   │   ├── I07.phase.vocoder.pd
+│   │   │   ├── I08.pvoc.reverb.pd
+│   │   │   ├── I09.sheep.from.goats.pd
+│   │   │   ├── I10.phase.bash.pd
+│   │   │   ├── J01.even.odd.pd
+│   │   │   ├── J02.trapezoids.pd
+│   │   │   ├── J03.pulse.width.mod.pd
+│   │   │   ├── J04.corners.pd
+│   │   │   ├── J05.triangle.pd
+│   │   │   ├── J06.enveloping.pd
+│   │   │   ├── J07.oversampling.pd
+│   │   │   ├── J08.classicsynth.pd
+│   │   │   ├── J09.bandlimited.pd
+│   │   │   ├── osc-voice.pd
+│   │   │   ├── partial.pd
+│   │   │   ├── qlist.txt
+│   │   │   ├── qlist-sampler.txt
+│   │   │   ├── reverb-echo.pd
+│   │   │   ├── sampvoice.pd
+│   │   │   ├── sampvoice2.pd
+│   │   │   ├── shepvoice.pd
+│   │   │   └── spectrum-partial.pd
+│   │   ├── 4.data.structures
+│   │   │   ├── 01.scalars.pd
+│   │   │   ├── 02.getting.data.pd
+│   │   │   ├── 03.setting.data.pd
+│   │   │   ├── 04.append.pd
+│   │   │   ├── 05.symbol.text.pd
+│   │   │   ├── 06.array.pd
+│   │   │   ├── 07.graph.on.parent.pd
+│   │   │   ├── 08.file.pd
+│   │   │   ├── 09.sequencer.pd
+│   │   │   ├── 10.interaction.pd
+│   │   │   ├── 11.scaling.pd
+│   │   │   ├── 12.onoff.pd
+│   │   │   ├── 13.array.controls.pd
+│   │   │   ├── 14.beat-patterns.pd
+│   │   │   ├── 15.sliderule.pd
+│   │   │   ├── 16.FFT-plot.pd
+│   │   │   ├── 17.partialtracer.pd
+│   │   │   ├── 18.scope2d.pd
+│   │   │   ├── add-trace.pd
+│   │   │   ├── beat-maker.pd
+│   │   │   ├── data-array.pd
+│   │   │   ├── file.txt
+│   │   │   ├── osc-voice.pd
+│   │   │   └── voice.pd
+│   │   ├── 5.reference
+│   │   │   ├── acoustics-help.pd
+│   │   │   ├── acoustics-tilde-help.pd
+│   │   │   ├── adc~_dac~-help.pd
+│   │   │   ├── all_guis.pd
+│   │   │   ├── append-help.pd
+│   │   │   ├── array-object-help.pd
+│   │   │   ├── array-object-help.txt
+│   │   │   ├── bag-help.pd
+│   │   │   ├── bang~-help.pd
+│   │   │   ├── bang-help.pd
+│   │   │   ├── binops-help.pd
+│   │   │   ├── binops-other-help.pd
+│   │   │   ├── binops-tilde-help.pd
+│   │   │   ├── biquad~-help.pd
+│   │   │   ├── block~-help.pd
+│   │   │   ├── bng-help.pd
+│   │   │   ├── bp~-help.pd
+│   │   │   ├── canvas-help.pd
+│   │   │   ├── change-help.pd
+│   │   │   ├── clip~-help.pd
+│   │   │   ├── clip-help.pd
+│   │   │   ├── clone-abs-a.pd
+│   │   │   ├── clone-abs-b.pd
+│   │   │   ├── clone-abs-c.pd
+│   │   │   ├── clone-help.pd
+│   │   │   ├── cnv-help.pd
+│   │   │   ├── cos~-help.pd
+│   │   │   ├── cpole~-help.pd
+│   │   │   ├── cputime-help.pd
+│   │   │   ├── czero_rev~-help.pd
+│   │   │   ├── czero~-help.pd
+│   │   │   ├── declare-help.pd
+│   │   │   ├── delay-help.pd
+│   │   │   ├── delay-tilde-objects-help.pd
+│   │   │   ├── draw-shapes-help.pd
+│   │   │   ├── drawtext-help.pd
+│   │   │   ├── ds-text.txt
+│   │   │   ├── element-help.pd
+│   │   │   ├── env~-help.pd
+│   │   │   ├── expr-help.pd
+│   │   │   ├── fft~-help.pd
+│   │   │   ├── file-help.pd
+│   │   │   ├── float-help.pd
+│   │   │   ├── framp~-help.pd
+│   │   │   ├── fudi-format-parse-help.pd
+│   │   │   ├── get-help.pd
+│   │   │   ├── getsize-help.pd
+│   │   │   ├── gui-boxes-help.pd
+│   │   │   ├── help-intro.pd
+│   │   │   ├── hip~-help.pd
+│   │   │   ├── inlet-outlet-help.pd
+│   │   │   ├── int-help.pd
+│   │   │   ├── key-input-help.pd
+│   │   │   ├── line~-help.pd
+│   │   │   ├── line-help.pd
+│   │   │   ├── list-help.pd
+│   │   │   ├── loadbang-help.pd
+│   │   │   ├── lop~-help.pd
+│   │   │   ├── makefilename-help.pd
+│   │   │   ├── makenote-help.pd
+│   │   │   ├── message-help.pd
+│   │   │   ├── metro-help.pd
+│   │   │   ├── midi-help.pd
+│   │   │   ├── moses-help.pd
+│   │   │   ├── namecanvas-help.pd
+│   │   │   ├── nbx-help.pd
+│   │   │   ├── netsend-receive-help.pd
+│   │   │   ├── noise~-help.pd
+│   │   │   ├── openpanel-help.pd
+│   │   │   ├── osc~-help.pd
+│   │   │   ├── osc-format-parse-help.pd
+│   │   │   ├── pack-help.pd
+│   │   │   ├── pdcontrol-abs.pd
+│   │   │   ├── pdcontrol-help.pd
+│   │   │   ├── pd-messages.pd
+│   │   │   ├── phasor~-help.pd
+│   │   │   ├── pipe-help.pd
+│   │   │   ├── plot-help.pd
+│   │   │   ├── pointer-help.pd
+│   │   │   ├── poly-help.pd
+│   │   │   ├── print~-help.pd
+│   │   │   ├── print-help.pd
+│   │   │   ├── qlist.txt
+│   │   │   ├── qlist-help.pd
+│   │   │   ├── radio-help.pd
+│   │   │   ├── random-help.pd
+│   │   │   ├── readsf~-help.pd
+│   │   │   ├── realtime-help.pd
+│   │   │   ├── route-help.pd
+│   │   │   ├── rpole~-help.pd
+│   │   │   ├── rzero_rev~-help.pd
+│   │   │   ├── rzero~-help.pd
+│   │   │   ├── samphold~-help.pd
+│   │   │   ├── samplerate~-help.pd
+│   │   │   ├── savepanel-help.pd
+│   │   │   ├── savestate-ex1.pd
+│   │   │   ├── savestate-ex2.pd
+│   │   │   ├── savestate-ex3.pd
+│   │   │   ├── savestate-help.pd
+│   │   │   ├── scalar-object-help.pd
+│   │   │   ├── select-help.pd
+│   │   │   ├── send-receive-help.pd
+│   │   │   ├── send-receive-tilde-help.pd
+│   │   │   ├── set-dsp-tgl.pd
+│   │   │   ├── set-help.pd
+│   │   │   ├── setsize.txt
+│   │   │   ├── setsize-help.pd
+│   │   │   ├── sig~-help.pd
+│   │   │   ├── sliders-help.pd
+│   │   │   ├── slop~-help.pd
+│   │   │   ├── snake-tilde-help.pd
+│   │   │   ├── snapshot~-help.pd
+│   │   │   ├── soundfiler-help.pd
+│   │   │   ├── spigot-help.pd
+│   │   │   ├── stripnote-help.pd
+│   │   │   ├── struct-help.pd
+│   │   │   ├── swap-help.pd
+│   │   │   ├── symbol-help.pd
+│   │   │   ├── table.txt
+│   │   │   ├── tabosc4~-help.pd
+│   │   │   ├── tabplay~-help.pd
+│   │   │   ├── tabread~-help.pd
+│   │   │   ├── tabread4~-help.pd
+│   │   │   ├── tabread4-help.pd
+│   │   │   ├── tabread-help.pd
+│   │   │   ├── tabsend-receive~-help.pd
+│   │   │   ├── tabwrite~-help.pd
+│   │   │   ├── tabwrite-help.pd
+│   │   │   ├── textfile.txt
+│   │   │   ├── textfile-help.pd
+│   │   │   ├── text-help.pd
+│   │   │   ├── text-object-help.pd
+│   │   │   ├── text-object-help.txt
+│   │   │   ├── threshold~-help.pd
+│   │   │   ├── throw~-catch~-help.pd
+│   │   │   ├── timer-help.pd
+│   │   │   ├── toggle-help.pd
+│   │   │   ├── trace-help.pd
+│   │   │   ├── trigger-help.pd
+│   │   │   ├── trigonometric-help.pd
+│   │   │   ├── unops-help.pd
+│   │   │   ├── unops-tilde-help.pd
+│   │   │   ├── unpack-help.pd
+│   │   │   ├── until-help.pd
+│   │   │   ├── value-help.pd
+│   │   │   ├── vcf~-help.pd
+│   │   │   ├── vline~-help.pd
+│   │   │   ├── vsnapshot~-help.pd
+│   │   │   ├── vu-help.pd
+│   │   │   └── writesf~-help.pd
+│   │   ├── 6.externs
+│   │   │   ├── 0.README.txt
+│   │   │   ├── dspobj~.c
+│   │   │   ├── makefile
+│   │   │   ├── obj1.c
+│   │   │   ├── obj2.c
+│   │   │   ├── obj3.c
+│   │   │   ├── obj4.c
+│   │   │   ├── obj5.c
+│   │   │   ├── test-dspobj~.pd
+│   │   │   ├── test-obj1.pd
+│   │   │   ├── test-obj2.pd
+│   │   │   ├── test-obj3.pd
+│   │   │   ├── test-obj4.pd
+│   │   │   └── test-obj5.pd
+│   │   ├── 7.stuff
+│   │   │   ├── soundfile-tools
+│   │   │   │   ├── 1.ring-mod.pd
+│   │   │   │   ├── 2.band-pass.pd
+│   │   │   │   ├── 3.phase-vocoder.pd
+│   │   │   │   ├── 4.looper.pd
+│   │   │   │   ├── 5.reverb.pd
+│   │   │   │   ├── 6.vocoder.pd
+│   │   │   │   └── README.txt
+│   │   │   ├── synth
+│   │   │   │   ├── 1.poly.synth.pd
+│   │   │   │   ├── gadsr.pd
+│   │   │   │   ├── numset.pd
+│   │   │   │   ├── preset.pd
+│   │   │   │   ├── preset1.txt
+│   │   │   │   ├── preset2.txt
+│   │   │   │   ├── preset3.txt
+│   │   │   │   ├── preset4.txt
+│   │   │   │   ├── README.txt
+│   │   │   │   └── synthvoice.pd
+│   │   │   └── tools
+│   │   │       ├── latency.pd
+│   │   │       ├── load-meter.pd
+│   │   │       ├── miditester.pd
+│   │   │       ├── sizingtest.pd
+│   │   │       └── testtone.pd
+│   │   ├── 8.topics
+│   │   │   ├── compander-limiter.htm
+│   │   │   ├── expr.htm
+│   │   │   ├── fudi.htm
+│   │   │   ├── slop-compander-patch.png
+│   │   │   ├── slop-peak-meter-graph.png
+│   │   │   ├── slop-peak-meter-patch.png
+│   │   │   ├── slop-slew-limit.png
+│   │   │   ├── slop-slew-limiting-patch.png
+│   │   │   ├── slop-tilde.htm
+│   │   │   └── slop-tilde-1-curves.png
+│   │   └── sound
+│   │       ├── bell.aiff
+│   │       ├── voice.wav
+│   │       └── voice2.wav
+│   ├── extra
+│   │   ├── bob~
+│   │   │   ├── bob~.dll
+│   │   │   ├── bob~-help.pd
+│   │   │   └── README.txt
+│   │   ├── bonk~
+│   │   │   ├── bonk~.dll
+│   │   │   ├── bonk~-help.pd
+│   │   │   └── templates.txt
+│   │   ├── choice
+│   │   │   ├── choice.dll
+│   │   │   └── choice-help.pd
+│   │   ├── fiddle~
+│   │   │   ├── fiddle~.dll
+│   │   │   └── fiddle~-help.pd
+│   │   ├── loop~
+│   │   │   ├── loop~.dll
+│   │   │   ├── loop~-help.pd
+│   │   │   └── test-loop~.pd
+│   │   ├── lrshift~
+│   │   │   ├── lrshift~.dll
+│   │   │   └── lrshift~-help.pd
+│   │   ├── pd~
+│   │   │   ├── pd~.dll
+│   │   │   ├── pd~-help.pd
+│   │   │   ├── pd~-subprocess.pd
+│   │   │   └── pdsched.dll
+│   │   ├── pique
+│   │   │   ├── pique.dll
+│   │   │   └── pique-help.pd
+│   │   ├── sigmund~
+│   │   │   ├── sigmund~.dll
+│   │   │   └── sigmund~-help.pd
+│   │   ├── stdout
+│   │   │   ├── stdout.dll
+│   │   │   └── stdout-help.pd
+│   │   ├── complex-mod~.pd
+│   │   ├── complex-mod~-help.pd
+│   │   ├── hilbert~.pd
+│   │   ├── hilbert~-help.pd
+│   │   ├── output~.pd
+│   │   ├── output~-help.pd
+│   │   ├── README.txt
+│   │   ├── rev1~.pd
+│   │   ├── rev1~-help.pd
+│   │   ├── rev1-final.pd
+│   │   ├── rev1-stage.pd
+│   │   ├── rev2~.pd
+│   │   ├── rev2~-help.pd
+│   │   ├── rev3~.pd
+│   │   └── rev3~-help.pd
+│   ├── font
+│   │   ├── DejaVuSansMono.ttf
+│   │   ├── DejaVuSansMono-Bold.ttf
+│   │   ├── DejaVuSansMono-BoldOblique.ttf
+│   │   ├── DejaVuSansMono-Oblique.ttf
+│   │   ├── LICENSE
+│   │   └── README.txt
+│   ├── lib
+│   │   ├── dde1.3
+│   │   │   ├── pkgIndex.tcl
+│   │   │   └── tcldde13.dll
+│   │   ├── reg1.2
+│   │   │   ├── pkgIndex.tcl
+│   │   │   └── tclreg12.dll
+│   │   ├── tcl8
+│   │   │   ├── 8.4
+│   │   │   │   ├── platform
+│   │   │   │   │   └── shell-1.1.4.tm
+│   │   │   │   ├── http-2.7.13.tm
+│   │   │   │   └── platform-1.0.14.tm
+│   │   │   └── 8.5
+│   │   │       ├── msgcat-1.5.2.tm
+│   │   │       └── tcltest-2.3.8.tm
+│   │   ├── tcl8.5
+│   │   │   ├── encoding
+│   │   │   │   ├── ascii.enc
+│   │   │   │   ├── big5.enc
+│   │   │   │   ├── cp1250.enc
+│   │   │   │   ├── cp1251.enc
+│   │   │   │   ├── cp1252.enc
+│   │   │   │   ├── cp1253.enc
+│   │   │   │   ├── cp1254.enc
+│   │   │   │   ├── cp1255.enc
+│   │   │   │   ├── cp1256.enc
+│   │   │   │   ├── cp1257.enc
+│   │   │   │   ├── cp1258.enc
+│   │   │   │   ├── cp437.enc
+│   │   │   │   ├── cp737.enc
+│   │   │   │   ├── cp775.enc
+│   │   │   │   ├── cp850.enc
+│   │   │   │   ├── cp852.enc
+│   │   │   │   ├── cp855.enc
+│   │   │   │   ├── cp857.enc
+│   │   │   │   ├── cp860.enc
+│   │   │   │   ├── cp861.enc
+│   │   │   │   ├── cp862.enc
+│   │   │   │   ├── cp863.enc
+│   │   │   │   ├── cp864.enc
+│   │   │   │   ├── cp865.enc
+│   │   │   │   ├── cp866.enc
+│   │   │   │   ├── cp869.enc
+│   │   │   │   ├── cp874.enc
+│   │   │   │   ├── cp932.enc
+│   │   │   │   ├── cp936.enc
+│   │   │   │   ├── cp949.enc
+│   │   │   │   ├── cp950.enc
+│   │   │   │   ├── dingbats.enc
+│   │   │   │   ├── ebcdic.enc
+│   │   │   │   ├── euc-cn.enc
+│   │   │   │   ├── euc-jp.enc
+│   │   │   │   ├── euc-kr.enc
+│   │   │   │   ├── gb12345.enc
+│   │   │   │   ├── gb1988.enc
+│   │   │   │   ├── gb2312.enc
+│   │   │   │   ├── gb2312-raw.enc
+│   │   │   │   ├── iso2022.enc
+│   │   │   │   ├── iso2022-jp.enc
+│   │   │   │   ├── iso2022-kr.enc
+│   │   │   │   ├── iso8859-1.enc
+│   │   │   │   ├── iso8859-10.enc
+│   │   │   │   ├── iso8859-13.enc
+│   │   │   │   ├── iso8859-14.enc
+│   │   │   │   ├── iso8859-15.enc
+│   │   │   │   ├── iso8859-16.enc
+│   │   │   │   ├── iso8859-2.enc
+│   │   │   │   ├── iso8859-3.enc
+│   │   │   │   ├── iso8859-4.enc
+│   │   │   │   ├── iso8859-5.enc
+│   │   │   │   ├── iso8859-6.enc
+│   │   │   │   ├── iso8859-7.enc
+│   │   │   │   ├── iso8859-8.enc
+│   │   │   │   ├── iso8859-9.enc
+│   │   │   │   ├── jis0201.enc
+│   │   │   │   ├── jis0208.enc
+│   │   │   │   ├── jis0212.enc
+│   │   │   │   ├── koi8-r.enc
+│   │   │   │   ├── koi8-u.enc
+│   │   │   │   ├── ksc5601.enc
+│   │   │   │   ├── macCentEuro.enc
+│   │   │   │   ├── macCroatian.enc
+│   │   │   │   ├── macCyrillic.enc
+│   │   │   │   ├── macDingbats.enc
+│   │   │   │   ├── macGreek.enc
+│   │   │   │   ├── macIceland.enc
+│   │   │   │   ├── macJapan.enc
+│   │   │   │   ├── macRoman.enc
+│   │   │   │   ├── macRomania.enc
+│   │   │   │   ├── macThai.enc
+│   │   │   │   ├── macTurkish.enc
+│   │   │   │   ├── macUkraine.enc
+│   │   │   │   ├── shiftjis.enc
+│   │   │   │   ├── symbol.enc
+│   │   │   │   └── tis-620.enc
+│   │   │   ├── http1.0
+│   │   │   │   ├── http.tcl
+│   │   │   │   └── pkgIndex.tcl
+│   │   │   ├── msgs
+│   │   │   │   ├── af.msg
+│   │   │   │   ├── af_za.msg
+│   │   │   │   ├── ar.msg
+│   │   │   │   ├── ar_in.msg
+│   │   │   │   ├── ar_jo.msg
+│   │   │   │   ├── ar_lb.msg
+│   │   │   │   ├── ar_sy.msg
+│   │   │   │   ├── be.msg
+│   │   │   │   ├── bg.msg
+│   │   │   │   ├── bn.msg
+│   │   │   │   ├── bn_in.msg
+│   │   │   │   ├── ca.msg
+│   │   │   │   ├── cs.msg
+│   │   │   │   ├── da.msg
+│   │   │   │   ├── de.msg
+│   │   │   │   ├── de_at.msg
+│   │   │   │   ├── de_be.msg
+│   │   │   │   ├── el.msg
+│   │   │   │   ├── en_au.msg
+│   │   │   │   ├── en_be.msg
+│   │   │   │   ├── en_bw.msg
+│   │   │   │   ├── en_ca.msg
+│   │   │   │   ├── en_gb.msg
+│   │   │   │   ├── en_hk.msg
+│   │   │   │   ├── en_ie.msg
+│   │   │   │   ├── en_in.msg
+│   │   │   │   ├── en_nz.msg
+│   │   │   │   ├── en_ph.msg
+│   │   │   │   ├── en_sg.msg
+│   │   │   │   ├── en_za.msg
+│   │   │   │   ├── en_zw.msg
+│   │   │   │   ├── eo.msg
+│   │   │   │   ├── es.msg
+│   │   │   │   ├── es_ar.msg
+│   │   │   │   ├── es_bo.msg
+│   │   │   │   ├── es_cl.msg
+│   │   │   │   ├── es_co.msg
+│   │   │   │   ├── es_cr.msg
+│   │   │   │   ├── es_do.msg
+│   │   │   │   ├── es_ec.msg
+│   │   │   │   ├── es_gt.msg
+│   │   │   │   ├── es_hn.msg
+│   │   │   │   ├── es_mx.msg
+│   │   │   │   ├── es_ni.msg
+│   │   │   │   ├── es_pa.msg
+│   │   │   │   ├── es_pe.msg
+│   │   │   │   ├── es_pr.msg
+│   │   │   │   ├── es_py.msg
+│   │   │   │   ├── es_sv.msg
+│   │   │   │   ├── es_uy.msg
+│   │   │   │   ├── es_ve.msg
+│   │   │   │   ├── et.msg
+│   │   │   │   ├── eu.msg
+│   │   │   │   ├── eu_es.msg
+│   │   │   │   ├── fa.msg
+│   │   │   │   ├── fa_in.msg
+│   │   │   │   ├── fa_ir.msg
+│   │   │   │   ├── fi.msg
+│   │   │   │   ├── fo.msg
+│   │   │   │   ├── fo_fo.msg
+│   │   │   │   ├── fr.msg
+│   │   │   │   ├── fr_be.msg
+│   │   │   │   ├── fr_ca.msg
+│   │   │   │   ├── fr_ch.msg
+│   │   │   │   ├── ga.msg
+│   │   │   │   ├── ga_ie.msg
+│   │   │   │   ├── gl.msg
+│   │   │   │   ├── gl_es.msg
+│   │   │   │   ├── gv.msg
+│   │   │   │   ├── gv_gb.msg
+│   │   │   │   ├── he.msg
+│   │   │   │   ├── hi.msg
+│   │   │   │   ├── hi_in.msg
+│   │   │   │   ├── hr.msg
+│   │   │   │   ├── hu.msg
+│   │   │   │   ├── id.msg
+│   │   │   │   ├── id_id.msg
+│   │   │   │   ├── is.msg
+│   │   │   │   ├── it.msg
+│   │   │   │   ├── it_ch.msg
+│   │   │   │   ├── ja.msg
+│   │   │   │   ├── kl.msg
+│   │   │   │   ├── kl_gl.msg
+│   │   │   │   ├── ko.msg
+│   │   │   │   ├── ko_kr.msg
+│   │   │   │   ├── kok.msg
+│   │   │   │   ├── kok_in.msg
+│   │   │   │   ├── kw.msg
+│   │   │   │   ├── kw_gb.msg
+│   │   │   │   ├── lt.msg
+│   │   │   │   ├── lv.msg
+│   │   │   │   ├── mk.msg
+│   │   │   │   ├── mr.msg
+│   │   │   │   ├── mr_in.msg
+│   │   │   │   ├── ms.msg
+│   │   │   │   ├── ms_my.msg
+│   │   │   │   ├── mt.msg
+│   │   │   │   ├── nb.msg
+│   │   │   │   ├── nl.msg
+│   │   │   │   ├── nl_be.msg
+│   │   │   │   ├── nn.msg
+│   │   │   │   ├── pl.msg
+│   │   │   │   ├── pt.msg
+│   │   │   │   ├── pt_br.msg
+│   │   │   │   ├── ro.msg
+│   │   │   │   ├── ru.msg
+│   │   │   │   ├── ru_ua.msg
+│   │   │   │   ├── sh.msg
+│   │   │   │   ├── sk.msg
+│   │   │   │   ├── sl.msg
+│   │   │   │   ├── sq.msg
+│   │   │   │   ├── sr.msg
+│   │   │   │   ├── sv.msg
+│   │   │   │   ├── sw.msg
+│   │   │   │   ├── ta.msg
+│   │   │   │   ├── ta_in.msg
+│   │   │   │   ├── te.msg
+│   │   │   │   ├── te_in.msg
+│   │   │   │   ├── th.msg
+│   │   │   │   ├── tr.msg
+│   │   │   │   ├── uk.msg
+│   │   │   │   ├── vi.msg
+│   │   │   │   ├── zh.msg
+│   │   │   │   ├── zh_cn.msg
+│   │   │   │   ├── zh_hk.msg
+│   │   │   │   ├── zh_sg.msg
+│   │   │   │   └── zh_tw.msg
+│   │   │   ├── opt0.4
+│   │   │   │   ├── optparse.tcl
+│   │   │   │   └── pkgIndex.tcl
+│   │   │   ├── tzdata
+│   │   │   │   ├── Africa
+│   │   │   │   │   ├── Abidjan
+│   │   │   │   │   ├── Accra
+│   │   │   │   │   ├── Addis_Ababa
+│   │   │   │   │   ├── Algiers
+│   │   │   │   │   ├── Asmara
+│   │   │   │   │   ├── Asmera
+│   │   │   │   │   ├── Bamako
+│   │   │   │   │   ├── Bangui
+│   │   │   │   │   ├── Banjul
+│   │   │   │   │   ├── Bissau
+│   │   │   │   │   ├── Blantyre
+│   │   │   │   │   ├── Brazzaville
+│   │   │   │   │   ├── Bujumbura
+│   │   │   │   │   ├── Cairo
+│   │   │   │   │   ├── Casablanca
+│   │   │   │   │   ├── Ceuta
+│   │   │   │   │   ├── Conakry
+│   │   │   │   │   ├── Dakar
+│   │   │   │   │   ├── Dar_es_Salaam
+│   │   │   │   │   ├── Djibouti
+│   │   │   │   │   ├── Douala
+│   │   │   │   │   ├── El_Aaiun
+│   │   │   │   │   ├── Freetown
+│   │   │   │   │   ├── Gaborone
+│   │   │   │   │   ├── Harare
+│   │   │   │   │   ├── Johannesburg
+│   │   │   │   │   ├── Juba
+│   │   │   │   │   ├── Kampala
+│   │   │   │   │   ├── Khartoum
+│   │   │   │   │   ├── Kigali
+│   │   │   │   │   ├── Kinshasa
+│   │   │   │   │   ├── Lagos
+│   │   │   │   │   ├── Libreville
+│   │   │   │   │   ├── Lome
+│   │   │   │   │   ├── Luanda
+│   │   │   │   │   ├── Lubumbashi
+│   │   │   │   │   ├── Lusaka
+│   │   │   │   │   ├── Malabo
+│   │   │   │   │   ├── Maputo
+│   │   │   │   │   ├── Maseru
+│   │   │   │   │   ├── Mbabane
+│   │   │   │   │   ├── Mogadishu
+│   │   │   │   │   ├── Monrovia
+│   │   │   │   │   ├── Nairobi
+│   │   │   │   │   ├── Ndjamena
+│   │   │   │   │   ├── Niamey
+│   │   │   │   │   ├── Nouakchott
+│   │   │   │   │   ├── Ouagadougou
+│   │   │   │   │   ├── Porto-Novo
+│   │   │   │   │   ├── Sao_Tome
+│   │   │   │   │   ├── Timbuktu
+│   │   │   │   │   ├── Tripoli
+│   │   │   │   │   ├── Tunis
+│   │   │   │   │   └── Windhoek
+│   │   │   │   ├── America
+│   │   │   │   │   ├── Argentina
+│   │   │   │   │   │   ├── Buenos_Aires
+│   │   │   │   │   │   ├── Catamarca
+│   │   │   │   │   │   ├── ComodRivadavia
+│   │   │   │   │   │   ├── Cordoba
+│   │   │   │   │   │   ├── Jujuy
+│   │   │   │   │   │   ├── La_Rioja
+│   │   │   │   │   │   ├── Mendoza
+│   │   │   │   │   │   ├── Rio_Gallegos
+│   │   │   │   │   │   ├── Salta
+│   │   │   │   │   │   ├── San_Juan
+│   │   │   │   │   │   ├── San_Luis
+│   │   │   │   │   │   ├── Tucuman
+│   │   │   │   │   │   └── Ushuaia
+│   │   │   │   │   ├── Indiana
+│   │   │   │   │   │   ├── Indianapolis
+│   │   │   │   │   │   ├── Knox
+│   │   │   │   │   │   ├── Marengo
+│   │   │   │   │   │   ├── Petersburg
+│   │   │   │   │   │   ├── Tell_City
+│   │   │   │   │   │   ├── Vevay
+│   │   │   │   │   │   ├── Vincennes
+│   │   │   │   │   │   └── Winamac
+│   │   │   │   │   ├── Kentucky
+│   │   │   │   │   │   ├── Louisville
+│   │   │   │   │   │   └── Monticello
+│   │   │   │   │   ├── North_Dakota
+│   │   │   │   │   │   ├── Beulah
+│   │   │   │   │   │   ├── Center
+│   │   │   │   │   │   └── New_Salem
+│   │   │   │   │   ├── Adak
+│   │   │   │   │   ├── Anchorage
+│   │   │   │   │   ├── Anguilla
+│   │   │   │   │   ├── Antigua
+│   │   │   │   │   ├── Araguaina
+│   │   │   │   │   ├── Aruba
+│   │   │   │   │   ├── Asuncion
+│   │   │   │   │   ├── Atikokan
+│   │   │   │   │   ├── Atka
+│   │   │   │   │   ├── Bahia
+│   │   │   │   │   ├── Bahia_Banderas
+│   │   │   │   │   ├── Barbados
+│   │   │   │   │   ├── Belem
+│   │   │   │   │   ├── Belize
+│   │   │   │   │   ├── Blanc-Sablon
+│   │   │   │   │   ├── Boa_Vista
+│   │   │   │   │   ├── Bogota
+│   │   │   │   │   ├── Boise
+│   │   │   │   │   ├── Buenos_Aires
+│   │   │   │   │   ├── Cambridge_Bay
+│   │   │   │   │   ├── Campo_Grande
+│   │   │   │   │   ├── Cancun
+│   │   │   │   │   ├── Caracas
+│   │   │   │   │   ├── Catamarca
+│   │   │   │   │   ├── Cayenne
+│   │   │   │   │   ├── Cayman
+│   │   │   │   │   ├── Chicago
+│   │   │   │   │   ├── Chihuahua
+│   │   │   │   │   ├── Coral_Harbour
+│   │   │   │   │   ├── Cordoba
+│   │   │   │   │   ├── Costa_Rica
+│   │   │   │   │   ├── Creston
+│   │   │   │   │   ├── Cuiaba
+│   │   │   │   │   ├── Curacao
+│   │   │   │   │   ├── Danmarkshavn
+│   │   │   │   │   ├── Dawson
+│   │   │   │   │   ├── Dawson_Creek
+│   │   │   │   │   ├── Denver
+│   │   │   │   │   ├── Detroit
+│   │   │   │   │   ├── Dominica
+│   │   │   │   │   ├── Edmonton
+│   │   │   │   │   ├── Eirunepe
+│   │   │   │   │   ├── El_Salvador
+│   │   │   │   │   ├── Ensenada
+│   │   │   │   │   ├── Fort_Nelson
+│   │   │   │   │   ├── Fort_Wayne
+│   │   │   │   │   ├── Fortaleza
+│   │   │   │   │   ├── Glace_Bay
+│   │   │   │   │   ├── Godthab
+│   │   │   │   │   ├── Goose_Bay
+│   │   │   │   │   ├── Grand_Turk
+│   │   │   │   │   ├── Grenada
+│   │   │   │   │   ├── Guadeloupe
+│   │   │   │   │   ├── Guatemala
+│   │   │   │   │   ├── Guayaquil
+│   │   │   │   │   ├── Guyana
+│   │   │   │   │   ├── Halifax
+│   │   │   │   │   ├── Havana
+│   │   │   │   │   ├── Hermosillo
+│   │   │   │   │   ├── Indianapolis
+│   │   │   │   │   ├── Inuvik
+│   │   │   │   │   ├── Iqaluit
+│   │   │   │   │   ├── Jamaica
+│   │   │   │   │   ├── Jujuy
+│   │   │   │   │   ├── Juneau
+│   │   │   │   │   ├── Knox_IN
+│   │   │   │   │   ├── Kralendijk
+│   │   │   │   │   ├── La_Paz
+│   │   │   │   │   ├── Lima
+│   │   │   │   │   ├── Los_Angeles
+│   │   │   │   │   ├── Louisville
+│   │   │   │   │   ├── Lower_Princes
+│   │   │   │   │   ├── Maceio
+│   │   │   │   │   ├── Managua
+│   │   │   │   │   ├── Manaus
+│   │   │   │   │   ├── Marigot
+│   │   │   │   │   ├── Martinique
+│   │   │   │   │   ├── Matamoros
+│   │   │   │   │   ├── Mazatlan
+│   │   │   │   │   ├── Mendoza
+│   │   │   │   │   ├── Menominee
+│   │   │   │   │   ├── Merida
+│   │   │   │   │   ├── Metlakatla
+│   │   │   │   │   ├── Mexico_City
+│   │   │   │   │   ├── Miquelon
+│   │   │   │   │   ├── Moncton
+│   │   │   │   │   ├── Monterrey
+│   │   │   │   │   ├── Montevideo
+│   │   │   │   │   ├── Montreal
+│   │   │   │   │   ├── Montserrat
+│   │   │   │   │   ├── Nassau
+│   │   │   │   │   ├── New_York
+│   │   │   │   │   ├── Nipigon
+│   │   │   │   │   ├── Nome
+│   │   │   │   │   ├── Noronha
+│   │   │   │   │   ├── Ojinaga
+│   │   │   │   │   ├── Panama
+│   │   │   │   │   ├── Pangnirtung
+│   │   │   │   │   ├── Paramaribo
+│   │   │   │   │   ├── Phoenix
+│   │   │   │   │   ├── Port_of_Spain
+│   │   │   │   │   ├── Port-au-Prince
+│   │   │   │   │   ├── Porto_Acre
+│   │   │   │   │   ├── Porto_Velho
+│   │   │   │   │   ├── Puerto_Rico
+│   │   │   │   │   ├── Rainy_River
+│   │   │   │   │   ├── Rankin_Inlet
+│   │   │   │   │   ├── Recife
+│   │   │   │   │   ├── Regina
+│   │   │   │   │   ├── Resolute
+│   │   │   │   │   ├── Rio_Branco
+│   │   │   │   │   ├── Rosario
+│   │   │   │   │   ├── Santa_Isabel
+│   │   │   │   │   ├── Santarem
+│   │   │   │   │   ├── Santiago
+│   │   │   │   │   ├── Santo_Domingo
+│   │   │   │   │   ├── Sao_Paulo
+│   │   │   │   │   ├── Scoresbysund
+│   │   │   │   │   ├── Shiprock
+│   │   │   │   │   ├── Sitka
+│   │   │   │   │   ├── St_Barthelemy
+│   │   │   │   │   ├── St_Johns
+│   │   │   │   │   ├── St_Kitts
+│   │   │   │   │   ├── St_Lucia
+│   │   │   │   │   ├── St_Thomas
+│   │   │   │   │   ├── St_Vincent
+│   │   │   │   │   ├── Swift_Current
+│   │   │   │   │   ├── Tegucigalpa
+│   │   │   │   │   ├── Thule
+│   │   │   │   │   ├── Thunder_Bay
+│   │   │   │   │   ├── Tijuana
+│   │   │   │   │   ├── Toronto
+│   │   │   │   │   ├── Tortola
+│   │   │   │   │   ├── Vancouver
+│   │   │   │   │   ├── Virgin
+│   │   │   │   │   ├── Whitehorse
+│   │   │   │   │   ├── Winnipeg
+│   │   │   │   │   ├── Yakutat
+│   │   │   │   │   └── Yellowknife
+│   │   │   │   ├── Antarctica
+│   │   │   │   │   ├── Casey
+│   │   │   │   │   ├── Davis
+│   │   │   │   │   ├── DumontDUrville
+│   │   │   │   │   ├── Macquarie
+│   │   │   │   │   ├── Mawson
+│   │   │   │   │   ├── McMurdo
+│   │   │   │   │   ├── Palmer
+│   │   │   │   │   ├── Rothera
+│   │   │   │   │   ├── South_Pole
+│   │   │   │   │   ├── Syowa
+│   │   │   │   │   ├── Troll
+│   │   │   │   │   └── Vostok
+│   │   │   │   ├── Arctic
+│   │   │   │   │   └── Longyearbyen
+│   │   │   │   ├── Asia
+│   │   │   │   │   ├── Aden
+│   │   │   │   │   ├── Almaty
+│   │   │   │   │   ├── Amman
+│   │   │   │   │   ├── Anadyr
+│   │   │   │   │   ├── Aqtau
+│   │   │   │   │   ├── Aqtobe
+│   │   │   │   │   ├── Ashgabat
+│   │   │   │   │   ├── Ashkhabad
+│   │   │   │   │   ├── Baghdad
+│   │   │   │   │   ├── Bahrain
+│   │   │   │   │   ├── Baku
+│   │   │   │   │   ├── Bangkok
+│   │   │   │   │   ├── Beirut
+│   │   │   │   │   ├── Bishkek
+│   │   │   │   │   ├── Brunei
+│   │   │   │   │   ├── Calcutta
+│   │   │   │   │   ├── Chita
+│   │   │   │   │   ├── Choibalsan
+│   │   │   │   │   ├── Chongqing
+│   │   │   │   │   ├── Chungking
+│   │   │   │   │   ├── Colombo
+│   │   │   │   │   ├── Dacca
+│   │   │   │   │   ├── Damascus
+│   │   │   │   │   ├── Dhaka
+│   │   │   │   │   ├── Dili
+│   │   │   │   │   ├── Dubai
+│   │   │   │   │   ├── Dushanbe
+│   │   │   │   │   ├── Gaza
+│   │   │   │   │   ├── Harbin
+│   │   │   │   │   ├── Hebron
+│   │   │   │   │   ├── Ho_Chi_Minh
+│   │   │   │   │   ├── Hong_Kong
+│   │   │   │   │   ├── Hovd
+│   │   │   │   │   ├── Irkutsk
+│   │   │   │   │   ├── Istanbul
+│   │   │   │   │   ├── Jakarta
+│   │   │   │   │   ├── Jayapura
+│   │   │   │   │   ├── Jerusalem
+│   │   │   │   │   ├── Kabul
+│   │   │   │   │   ├── Kamchatka
+│   │   │   │   │   ├── Karachi
+│   │   │   │   │   ├── Kashgar
+│   │   │   │   │   ├── Kathmandu
+│   │   │   │   │   ├── Katmandu
+│   │   │   │   │   ├── Khandyga
+│   │   │   │   │   ├── Kolkata
+│   │   │   │   │   ├── Krasnoyarsk
+│   │   │   │   │   ├── Kuala_Lumpur
+│   │   │   │   │   ├── Kuching
+│   │   │   │   │   ├── Kuwait
+│   │   │   │   │   ├── Macao
+│   │   │   │   │   ├── Macau
+│   │   │   │   │   ├── Magadan
+│   │   │   │   │   ├── Makassar
+│   │   │   │   │   ├── Manila
+│   │   │   │   │   ├── Muscat
+│   │   │   │   │   ├── Nicosia
+│   │   │   │   │   ├── Novokuznetsk
+│   │   │   │   │   ├── Novosibirsk
+│   │   │   │   │   ├── Omsk
+│   │   │   │   │   ├── Oral
+│   │   │   │   │   ├── Phnom_Penh
+│   │   │   │   │   ├── Pontianak
+│   │   │   │   │   ├── Pyongyang
+│   │   │   │   │   ├── Qatar
+│   │   │   │   │   ├── Qyzylorda
+│   │   │   │   │   ├── Rangoon
+│   │   │   │   │   ├── Riyadh
+│   │   │   │   │   ├── Saigon
+│   │   │   │   │   ├── Sakhalin
+│   │   │   │   │   ├── Samarkand
+│   │   │   │   │   ├── Seoul
+│   │   │   │   │   ├── Shanghai
+│   │   │   │   │   ├── Singapore
+│   │   │   │   │   ├── Srednekolymsk
+│   │   │   │   │   ├── Taipei
+│   │   │   │   │   ├── Tashkent
+│   │   │   │   │   ├── Tbilisi
+│   │   │   │   │   ├── Tehran
+│   │   │   │   │   ├── Tel_Aviv
+│   │   │   │   │   ├── Thimbu
+│   │   │   │   │   ├── Thimphu
+│   │   │   │   │   ├── Tokyo
+│   │   │   │   │   ├── Ujung_Pandang
+│   │   │   │   │   ├── Ulaanbaatar
+│   │   │   │   │   ├── Ulan_Bator
+│   │   │   │   │   ├── Urumqi
+│   │   │   │   │   ├── Ust-Nera
+│   │   │   │   │   ├── Vientiane
+│   │   │   │   │   ├── Vladivostok
+│   │   │   │   │   ├── Yakutsk
+│   │   │   │   │   ├── Yekaterinburg
+│   │   │   │   │   └── Yerevan
+│   │   │   │   ├── Atlantic
+│   │   │   │   │   ├── Azores
+│   │   │   │   │   ├── Bermuda
+│   │   │   │   │   ├── Canary
+│   │   │   │   │   ├── Cape_Verde
+│   │   │   │   │   ├── Faeroe
+│   │   │   │   │   ├── Faroe
+│   │   │   │   │   ├── Jan_Mayen
+│   │   │   │   │   ├── Madeira
+│   │   │   │   │   ├── Reykjavik
+│   │   │   │   │   ├── South_Georgia
+│   │   │   │   │   ├── St_Helena
+│   │   │   │   │   └── Stanley
+│   │   │   │   ├── Australia
+│   │   │   │   │   ├── ACT
+│   │   │   │   │   ├── Adelaide
+│   │   │   │   │   ├── Brisbane
+│   │   │   │   │   ├── Broken_Hill
+│   │   │   │   │   ├── Canberra
+│   │   │   │   │   ├── Currie
+│   │   │   │   │   ├── Darwin
+│   │   │   │   │   ├── Eucla
+│   │   │   │   │   ├── Hobart
+│   │   │   │   │   ├── LHI
+│   │   │   │   │   ├── Lindeman
+│   │   │   │   │   ├── Lord_Howe
+│   │   │   │   │   ├── Melbourne
+│   │   │   │   │   ├── North
+│   │   │   │   │   ├── NSW
+│   │   │   │   │   ├── Perth
+│   │   │   │   │   ├── Queensland
+│   │   │   │   │   ├── South
+│   │   │   │   │   ├── Sydney
+│   │   │   │   │   ├── Tasmania
+│   │   │   │   │   ├── Victoria
+│   │   │   │   │   ├── West
+│   │   │   │   │   └── Yancowinna
+│   │   │   │   ├── Brazil
+│   │   │   │   │   ├── Acre
+│   │   │   │   │   ├── DeNoronha
+│   │   │   │   │   ├── East
+│   │   │   │   │   └── West
+│   │   │   │   ├── Canada
+│   │   │   │   │   ├── Atlantic
+│   │   │   │   │   ├── Central
+│   │   │   │   │   ├── Eastern
+│   │   │   │   │   ├── East-Saskatchewan
+│   │   │   │   │   ├── Mountain
+│   │   │   │   │   ├── Newfoundland
+│   │   │   │   │   ├── Pacific
+│   │   │   │   │   ├── Saskatchewan
+│   │   │   │   │   └── Yukon
+│   │   │   │   ├── Chile
+│   │   │   │   │   ├── Continental
+│   │   │   │   │   └── EasterIsland
+│   │   │   │   ├── Etc
+│   │   │   │   │   ├── GMT
+│   │   │   │   │   ├── GMT+0
+│   │   │   │   │   ├── GMT+1
+│   │   │   │   │   ├── GMT+10
+│   │   │   │   │   ├── GMT+11
+│   │   │   │   │   ├── GMT+12
+│   │   │   │   │   ├── GMT+2
+│   │   │   │   │   ├── GMT+3
+│   │   │   │   │   ├── GMT+4
+│   │   │   │   │   ├── GMT+5
+│   │   │   │   │   ├── GMT+6
+│   │   │   │   │   ├── GMT+7
+│   │   │   │   │   ├── GMT+8
+│   │   │   │   │   ├── GMT+9
+│   │   │   │   │   ├── GMT0
+│   │   │   │   │   ├── GMT-0
+│   │   │   │   │   ├── GMT-1
+│   │   │   │   │   ├── GMT-10
+│   │   │   │   │   ├── GMT-11
+│   │   │   │   │   ├── GMT-12
+│   │   │   │   │   ├── GMT-13
+│   │   │   │   │   ├── GMT-14
+│   │   │   │   │   ├── GMT-2
+│   │   │   │   │   ├── GMT-3
+│   │   │   │   │   ├── GMT-4
+│   │   │   │   │   ├── GMT-5
+│   │   │   │   │   ├── GMT-6
+│   │   │   │   │   ├── GMT-7
+│   │   │   │   │   ├── GMT-8
+│   │   │   │   │   ├── GMT-9
+│   │   │   │   │   ├── Greenwich
+│   │   │   │   │   ├── UCT
+│   │   │   │   │   ├── Universal
+│   │   │   │   │   ├── UTC
+│   │   │   │   │   └── Zulu
+│   │   │   │   ├── Europe
+│   │   │   │   │   ├── Amsterdam
+│   │   │   │   │   ├── Andorra
+│   │   │   │   │   ├── Athens
+│   │   │   │   │   ├── Belfast
+│   │   │   │   │   ├── Belgrade
+│   │   │   │   │   ├── Berlin
+│   │   │   │   │   ├── Bratislava
+│   │   │   │   │   ├── Brussels
+│   │   │   │   │   ├── Bucharest
+│   │   │   │   │   ├── Budapest
+│   │   │   │   │   ├── Busingen
+│   │   │   │   │   ├── Chisinau
+│   │   │   │   │   ├── Copenhagen
+│   │   │   │   │   ├── Dublin
+│   │   │   │   │   ├── Gibraltar
+│   │   │   │   │   ├── Guernsey
+│   │   │   │   │   ├── Helsinki
+│   │   │   │   │   ├── Isle_of_Man
+│   │   │   │   │   ├── Istanbul
+│   │   │   │   │   ├── Jersey
+│   │   │   │   │   ├── Kaliningrad
+│   │   │   │   │   ├── Kiev
+│   │   │   │   │   ├── Lisbon
+│   │   │   │   │   ├── Ljubljana
+│   │   │   │   │   ├── London
+│   │   │   │   │   ├── Luxembourg
+│   │   │   │   │   ├── Madrid
+│   │   │   │   │   ├── Malta
+│   │   │   │   │   ├── Mariehamn
+│   │   │   │   │   ├── Minsk
+│   │   │   │   │   ├── Monaco
+│   │   │   │   │   ├── Moscow
+│   │   │   │   │   ├── Nicosia
+│   │   │   │   │   ├── Oslo
+│   │   │   │   │   ├── Paris
+│   │   │   │   │   ├── Podgorica
+│   │   │   │   │   ├── Prague
+│   │   │   │   │   ├── Riga
+│   │   │   │   │   ├── Rome
+│   │   │   │   │   ├── Samara
+│   │   │   │   │   ├── San_Marino
+│   │   │   │   │   ├── Sarajevo
+│   │   │   │   │   ├── Simferopol
+│   │   │   │   │   ├── Skopje
+│   │   │   │   │   ├── Sofia
+│   │   │   │   │   ├── Stockholm
+│   │   │   │   │   ├── Tallinn
+│   │   │   │   │   ├── Tirane
+│   │   │   │   │   ├── Tiraspol
+│   │   │   │   │   ├── Uzhgorod
+│   │   │   │   │   ├── Vaduz
+│   │   │   │   │   ├── Vatican
+│   │   │   │   │   ├── Vienna
+│   │   │   │   │   ├── Vilnius
+│   │   │   │   │   ├── Volgograd
+│   │   │   │   │   ├── Warsaw
+│   │   │   │   │   ├── Zagreb
+│   │   │   │   │   ├── Zaporozhye
+│   │   │   │   │   └── Zurich
+│   │   │   │   ├── Indian
+│   │   │   │   │   ├── Antananarivo
+│   │   │   │   │   ├── Chagos
+│   │   │   │   │   ├── Christmas
+│   │   │   │   │   ├── Cocos
+│   │   │   │   │   ├── Comoro
+│   │   │   │   │   ├── Kerguelen
+│   │   │   │   │   ├── Mahe
+│   │   │   │   │   ├── Maldives
+│   │   │   │   │   ├── Mauritius
+│   │   │   │   │   ├── Mayotte
+│   │   │   │   │   └── Reunion
+│   │   │   │   ├── Mexico
+│   │   │   │   │   ├── BajaNorte
+│   │   │   │   │   ├── BajaSur
+│   │   │   │   │   └── General
+│   │   │   │   ├── Pacific
+│   │   │   │   │   ├── Apia
+│   │   │   │   │   ├── Auckland
+│   │   │   │   │   ├── Bougainville
+│   │   │   │   │   ├── Chatham
+│   │   │   │   │   ├── Chuuk
+│   │   │   │   │   ├── Easter
+│   │   │   │   │   ├── Efate
+│   │   │   │   │   ├── Enderbury
+│   │   │   │   │   ├── Fakaofo
+│   │   │   │   │   ├── Fiji
+│   │   │   │   │   ├── Funafuti
+│   │   │   │   │   ├── Galapagos
+│   │   │   │   │   ├── Gambier
+│   │   │   │   │   ├── Guadalcanal
+│   │   │   │   │   ├── Guam
+│   │   │   │   │   ├── Honolulu
+│   │   │   │   │   ├── Johnston
+│   │   │   │   │   ├── Kiritimati
+│   │   │   │   │   ├── Kosrae
+│   │   │   │   │   ├── Kwajalein
+│   │   │   │   │   ├── Majuro
+│   │   │   │   │   ├── Marquesas
+│   │   │   │   │   ├── Midway
+│   │   │   │   │   ├── Nauru
+│   │   │   │   │   ├── Niue
+│   │   │   │   │   ├── Norfolk
+│   │   │   │   │   ├── Noumea
+│   │   │   │   │   ├── Pago_Pago
+│   │   │   │   │   ├── Palau
+│   │   │   │   │   ├── Pitcairn
+│   │   │   │   │   ├── Pohnpei
+│   │   │   │   │   ├── Ponape
+│   │   │   │   │   ├── Port_Moresby
+│   │   │   │   │   ├── Rarotonga
+│   │   │   │   │   ├── Saipan
+│   │   │   │   │   ├── Samoa
+│   │   │   │   │   ├── Tahiti
+│   │   │   │   │   ├── Tarawa
+│   │   │   │   │   ├── Tongatapu
+│   │   │   │   │   ├── Truk
+│   │   │   │   │   ├── Wake
+│   │   │   │   │   ├── Wallis
+│   │   │   │   │   └── Yap
+│   │   │   │   ├── SystemV
+│   │   │   │   │   ├── AST4
+│   │   │   │   │   ├── AST4ADT
+│   │   │   │   │   ├── CST6
+│   │   │   │   │   ├── CST6CDT
+│   │   │   │   │   ├── EST5
+│   │   │   │   │   ├── EST5EDT
+│   │   │   │   │   ├── HST10
+│   │   │   │   │   ├── MST7
+│   │   │   │   │   ├── MST7MDT
+│   │   │   │   │   ├── PST8
+│   │   │   │   │   ├── PST8PDT
+│   │   │   │   │   ├── YST9
+│   │   │   │   │   └── YST9YDT
+│   │   │   │   ├── US
+│   │   │   │   │   ├── Alaska
+│   │   │   │   │   ├── Aleutian
+│   │   │   │   │   ├── Arizona
+│   │   │   │   │   ├── Central
+│   │   │   │   │   ├── Eastern
+│   │   │   │   │   ├── East-Indiana
+│   │   │   │   │   ├── Hawaii
+│   │   │   │   │   ├── Indiana-Starke
+│   │   │   │   │   ├── Michigan
+│   │   │   │   │   ├── Mountain
+│   │   │   │   │   ├── Pacific
+│   │   │   │   │   ├── Pacific-New
+│   │   │   │   │   └── Samoa
+│   │   │   │   ├── CET
+│   │   │   │   ├── CST6CDT
+│   │   │   │   ├── Cuba
+│   │   │   │   ├── EET
+│   │   │   │   ├── Egypt
+│   │   │   │   ├── Eire
+│   │   │   │   ├── EST
+│   │   │   │   ├── EST5EDT
+│   │   │   │   ├── GB
+│   │   │   │   ├── GB-Eire
+│   │   │   │   ├── GMT
+│   │   │   │   ├── GMT+0
+│   │   │   │   ├── GMT0
+│   │   │   │   ├── GMT-0
+│   │   │   │   ├── Greenwich
+│   │   │   │   ├── Hongkong
+│   │   │   │   ├── HST
+│   │   │   │   ├── Iceland
+│   │   │   │   ├── Iran
+│   │   │   │   ├── Israel
+│   │   │   │   ├── Jamaica
+│   │   │   │   ├── Japan
+│   │   │   │   ├── Kwajalein
+│   │   │   │   ├── Libya
+│   │   │   │   ├── MET
+│   │   │   │   ├── MST
+│   │   │   │   ├── MST7MDT
+│   │   │   │   ├── Navajo
+│   │   │   │   ├── NZ
+│   │   │   │   ├── NZ-CHAT
+│   │   │   │   ├── Poland
+│   │   │   │   ├── Portugal
+│   │   │   │   ├── PRC
+│   │   │   │   ├── PST8PDT
+│   │   │   │   ├── ROC
+│   │   │   │   ├── ROK
+│   │   │   │   ├── Singapore
+│   │   │   │   ├── Turkey
+│   │   │   │   ├── UCT
+│   │   │   │   ├── Universal
+│   │   │   │   ├── UTC
+│   │   │   │   ├── WET
+│   │   │   │   ├── W-SU
+│   │   │   │   └── Zulu
+│   │   │   ├── auto.tcl
+│   │   │   ├── clock.tcl
+│   │   │   ├── history.tcl
+│   │   │   ├── init.tcl
+│   │   │   ├── package.tcl
+│   │   │   ├── parray.tcl
+│   │   │   ├── safe.tcl
+│   │   │   ├── tclIndex
+│   │   │   ├── tm.tcl
+│   │   │   └── word.tcl
+│   │   ├── tk8.5
+│   │   │   ├── demos
+│   │   │   │   ├── images
+│   │   │   │   │   ├── earth.gif
+│   │   │   │   │   ├── earthris.gif
+│   │   │   │   │   ├── face.xbm
+│   │   │   │   │   ├── flagdown.xbm
+│   │   │   │   │   ├── flagup.xbm
+│   │   │   │   │   ├── gray25.xbm
+│   │   │   │   │   ├── letters.xbm
+│   │   │   │   │   ├── noletter.xbm
+│   │   │   │   │   ├── pattern.xbm
+│   │   │   │   │   ├── tcllogo.gif
+│   │   │   │   │   └── teapot.ppm
+│   │   │   │   ├── anilabel.tcl
+│   │   │   │   ├── aniwave.tcl
+│   │   │   │   ├── arrow.tcl
+│   │   │   │   ├── bind.tcl
+│   │   │   │   ├── bitmap.tcl
+│   │   │   │   ├── browse
+│   │   │   │   ├── button.tcl
+│   │   │   │   ├── check.tcl
+│   │   │   │   ├── clrpick.tcl
+│   │   │   │   ├── colors.tcl
+│   │   │   │   ├── combo.tcl
+│   │   │   │   ├── cscroll.tcl
+│   │   │   │   ├── ctext.tcl
+│   │   │   │   ├── dialog1.tcl
+│   │   │   │   ├── dialog2.tcl
+│   │   │   │   ├── en.msg
+│   │   │   │   ├── entry1.tcl
+│   │   │   │   ├── entry2.tcl
+│   │   │   │   ├── entry3.tcl
+│   │   │   │   ├── filebox.tcl
+│   │   │   │   ├── floor.tcl
+│   │   │   │   ├── form.tcl
+│   │   │   │   ├── goldberg.tcl
+│   │   │   │   ├── hello
+│   │   │   │   ├── hscale.tcl
+│   │   │   │   ├── icon.tcl
+│   │   │   │   ├── image1.tcl
+│   │   │   │   ├── image2.tcl
+│   │   │   │   ├── items.tcl
+│   │   │   │   ├── ixset
+│   │   │   │   ├── knightstour.tcl
+│   │   │   │   ├── label.tcl
+│   │   │   │   ├── labelframe.tcl
+│   │   │   │   ├── license.terms
+│   │   │   │   ├── mclist.tcl
+│   │   │   │   ├── menu.tcl
+│   │   │   │   ├── menubu.tcl
+│   │   │   │   ├── msgbox.tcl
+│   │   │   │   ├── nl.msg
+│   │   │   │   ├── paned1.tcl
+│   │   │   │   ├── paned2.tcl
+│   │   │   │   ├── pendulum.tcl
+│   │   │   │   ├── plot.tcl
+│   │   │   │   ├── puzzle.tcl
+│   │   │   │   ├── radio.tcl
+│   │   │   │   ├── README
+│   │   │   │   ├── rmt
+│   │   │   │   ├── rolodex
+│   │   │   │   ├── ruler.tcl
+│   │   │   │   ├── sayings.tcl
+│   │   │   │   ├── search.tcl
+│   │   │   │   ├── spin.tcl
+│   │   │   │   ├── states.tcl
+│   │   │   │   ├── style.tcl
+│   │   │   │   ├── tclIndex
+│   │   │   │   ├── tcolor
+│   │   │   │   ├── text.tcl
+│   │   │   │   ├── textpeer.tcl
+│   │   │   │   ├── timer
+│   │   │   │   ├── toolbar.tcl
+│   │   │   │   ├── tree.tcl
+│   │   │   │   ├── ttkbut.tcl
+│   │   │   │   ├── ttkmenu.tcl
+│   │   │   │   ├── ttknote.tcl
+│   │   │   │   ├── ttkpane.tcl
+│   │   │   │   ├── ttkprogress.tcl
+│   │   │   │   ├── ttkscale.tcl
+│   │   │   │   ├── twind.tcl
+│   │   │   │   ├── unicodeout.tcl
+│   │   │   │   ├── vscale.tcl
+│   │   │   │   └── widget
+│   │   │   ├── images
+│   │   │   │   ├── logo.eps
+│   │   │   │   ├── logo100.gif
+│   │   │   │   ├── logo64.gif
+│   │   │   │   ├── logoLarge.gif
+│   │   │   │   ├── logoMed.gif
+│   │   │   │   ├── pwrdLogo.eps
+│   │   │   │   ├── pwrdLogo100.gif
+│   │   │   │   ├── pwrdLogo150.gif
+│   │   │   │   ├── pwrdLogo175.gif
+│   │   │   │   ├── pwrdLogo200.gif
+│   │   │   │   ├── pwrdLogo75.gif
+│   │   │   │   ├── README
+│   │   │   │   └── tai-ku.gif
+│   │   │   ├── msgs
+│   │   │   │   ├── cs.msg
+│   │   │   │   ├── da.msg
+│   │   │   │   ├── de.msg
+│   │   │   │   ├── el.msg
+│   │   │   │   ├── en.msg
+│   │   │   │   ├── en_gb.msg
+│   │   │   │   ├── eo.msg
+│   │   │   │   ├── es.msg
+│   │   │   │   ├── fr.msg
+│   │   │   │   ├── hu.msg
+│   │   │   │   ├── it.msg
+│   │   │   │   ├── nl.msg
+│   │   │   │   ├── pl.msg
+│   │   │   │   ├── pt.msg
+│   │   │   │   ├── ru.msg
+│   │   │   │   └── sv.msg
+│   │   │   ├── ttk
+│   │   │   │   ├── altTheme.tcl
+│   │   │   │   ├── aquaTheme.tcl
+│   │   │   │   ├── button.tcl
+│   │   │   │   ├── clamTheme.tcl
+│   │   │   │   ├── classicTheme.tcl
+│   │   │   │   ├── combobox.tcl
+│   │   │   │   ├── cursors.tcl
+│   │   │   │   ├── defaults.tcl
+│   │   │   │   ├── entry.tcl
+│   │   │   │   ├── fonts.tcl
+│   │   │   │   ├── menubutton.tcl
+│   │   │   │   ├── notebook.tcl
+│   │   │   │   ├── panedwindow.tcl
+│   │   │   │   ├── progress.tcl
+│   │   │   │   ├── scale.tcl
+│   │   │   │   ├── scrollbar.tcl
+│   │   │   │   ├── sizegrip.tcl
+│   │   │   │   ├── spinbox.tcl
+│   │   │   │   ├── treeview.tcl
+│   │   │   │   ├── ttk.tcl
+│   │   │   │   ├── utils.tcl
+│   │   │   │   ├── vistaTheme.tcl
+│   │   │   │   ├── winTheme.tcl
+│   │   │   │   └── xpTheme.tcl
+│   │   │   ├── bgerror.tcl
+│   │   │   ├── button.tcl
+│   │   │   ├── choosedir.tcl
+│   │   │   ├── clrpick.tcl
+│   │   │   ├── comdlg.tcl
+│   │   │   ├── console.tcl
+│   │   │   ├── dialog.tcl
+│   │   │   ├── entry.tcl
+│   │   │   ├── focus.tcl
+│   │   │   ├── listbox.tcl
+│   │   │   ├── menu.tcl
+│   │   │   ├── mkpsenc.tcl
+│   │   │   ├── msgbox.tcl
+│   │   │   ├── obsolete.tcl
+│   │   │   ├── optMenu.tcl
+│   │   │   ├── palette.tcl
+│   │   │   ├── panedwindow.tcl
+│   │   │   ├── pkgIndex.tcl
+│   │   │   ├── safetk.tcl
+│   │   │   ├── scale.tcl
+│   │   │   ├── scrlbar.tcl
+│   │   │   ├── spinbox.tcl
+│   │   │   ├── tclIndex
+│   │   │   ├── tearoff.tcl
+│   │   │   ├── text.tcl
+│   │   │   ├── tk.tcl
+│   │   │   ├── tkAppInit.c
+│   │   │   ├── tkfbox.tcl
+│   │   │   ├── unsupported.tcl
+│   │   │   └── xmfbox.tcl
+│   │   ├── libtcl85.a
+│   │   ├── libtclstub85.a
+│   │   ├── libtk85.a
+│   │   ├── libtkstub85.a
+│   │   ├── tclConfig.sh
+│   │   └── tkConfig.sh
+│   ├── po
+│   │   ├── az.msg
+│   │   ├── bg.msg
+│   │   ├── de.msg
+│   │   ├── el.msg
+│   │   ├── en.msg
+│   │   ├── en_ca.msg
+│   │   ├── eo.msg
+│   │   ├── es.msg
+│   │   ├── eu.msg
+│   │   ├── fr.msg
+│   │   ├── gu.msg
+│   │   ├── he.msg
+│   │   ├── hi.msg
+│   │   ├── hu.msg
+│   │   ├── id.msg
+│   │   ├── it.msg
+│   │   ├── ja.msg
+│   │   ├── ko.msg
+│   │   ├── nl.msg
+│   │   ├── pa.msg
+│   │   ├── pl.msg
+│   │   ├── pt_br.msg
+│   │   ├── pt_pt.msg
+│   │   ├── ru.msg
+│   │   ├── sq.msg
+│   │   ├── sv.msg
+│   │   ├── uk.msg
+│   │   ├── vi.msg
+│   │   └── zh_tw.msg
+│   ├── src
+│   │   ├── g_all_guis.h
+│   │   ├── g_canvas.h
+│   │   ├── g_undo.h
+│   │   ├── m_imp.h
+│   │   ├── m_pd.h
+│   │   ├── pthreadVC.dll
+│   │   ├── pthreadVC.lib
+│   │   ├── s_net.h
+│   │   ├── s_stuff.h
+│   │   ├── sched.h
+│   │   ├── semaphore.h
+│   │   └── x_vexp.h
+│   ├── startup
+│   │   └── disabled
+│   ├── tcl
+│   │   ├── about.txt
+│   │   ├── apple_events.tcl
+│   │   ├── AppMain.tcl
+│   │   ├── dialog_array.tcl
+│   │   ├── dialog_audio.tcl
+│   │   ├── dialog_canvas.tcl
+│   │   ├── dialog_data.tcl
+│   │   ├── dialog_find.tcl
+│   │   ├── dialog_font.tcl
+│   │   ├── dialog_gatom.tcl
+│   │   ├── dialog_iemgui.tcl
+│   │   ├── dialog_message.tcl
+│   │   ├── dialog_midi.tcl
+│   │   ├── dialog_path.tcl
+│   │   ├── dialog_preferences.tcl
+│   │   ├── dialog_startup.tcl
+│   │   ├── helpbrowser.tcl
+│   │   ├── license.txt
+│   │   ├── opt_parser.tcl
+│   │   ├── pd.ico
+│   │   ├── pd_bindings.tcl
+│   │   ├── pd_connect.tcl
+│   │   ├── pd_deken.tcl
+│   │   ├── pd_docsdir.tcl
+│   │   ├── pd_guiprefs.tcl
+│   │   ├── pd_i18n.tcl
+│   │   ├── pd_menucommands.tcl
+│   │   ├── pd_menus.tcl
+│   │   ├── pd-gui.tcl
+│   │   ├── pdtcl_compat.tcl
+│   │   ├── pdtk_canvas.tcl
+│   │   ├── pdtk_text.tcl
+│   │   ├── pdtk_textwindow.tcl
+│   │   ├── pdwindow.tcl
+│   │   ├── pkg_mkIndex.tcl
+│   │   ├── pkgIndex.tcl
+│   │   ├── preferencewindow.tcl
+│   │   ├── Readme.txt
+│   │   ├── scrollbox.tcl
+│   │   ├── scrollboxwindow.tcl
+│   │   └── wheredoesthisgo.tcl
+│   ├── LICENSE.txt
+│   └── README.txt
+├── Pure Data — Pd Community Site_files
+│   ├── colophon_anybrowser.png
+│   ├── colophon_css.png
+│   ├── colophon_sec508.gif
+│   ├── colophon_wai-aa.gif
+│   ├── colophon_xhtml.png
+│   ├── iem_powered.gif
+│   ├── list.png
+│   ├── logo
+│   ├── logo(1)
+│   ├── mail_icon.gif
+│   ├── newsitem_icon.gif
+│   ├── next.png
+│   ├── pdwebring.png
+│   ├── plone_powered.gif
+│   ├── ploneScripts2304.js.download
+│   ├── ploneScripts2882.js.download
+│   ├── ploneStyles2410.css
+│   ├── ploneStyles2700.css
+│   ├── previous.png
+│   ├── print_icon.gif
+│   └── random.png
+├── Structure Synth_files
+│   ├── AJS.js.download
+│   ├── AJS_fx.js.download
+│   ├── arrow2.gif
+│   ├── box1s.jpg
+│   ├── default.css
+│   ├── flowers.jpg
+│   ├── gb_scripts.js.download
+│   ├── gb_styles.css
+│   ├── sflogo.php
+│   ├── ss1s.jpg
+│   ├── swfobject.js.download
+│   └── syntopia.png
+├── zdog-master
+│   ├── .github
+│   │   ├── contributing.md
+│   │   └── issue_template.md
+│   ├── demos
+│   │   ├── box-cross
+│   │   │   ├── box-cross.js
+│   │   │   └── index.html
+│   │   ├── dot-cube
+│   │   │   ├── dot-cube.js
+│   │   │   └── index.html
+│   │   ├── fullscreen
+│   │   │   ├── fullscreen.js
+│   │   │   └── index.html
+│   │   ├── hello-world-canvas
+│   │   │   ├── hello-world-canvas.js
+│   │   │   └── index.html
+│   │   ├── hello-world-svg
+│   │   │   ├── hello-world-svg.js
+│   │   │   └── index.html
+│   │   ├── hemisphere-cone-ball
+│   │   │   ├── hemisphere-cone-ball.js
+│   │   │   └── index.html
+│   │   ├── houses
+│   │   │   ├── houses.js
+│   │   │   └── index.html
+│   │   ├── kid-kit
+│   │   │   ├── index.html
+│   │   │   └── kid-kit.js
+│   │   ├── kirby-parasol
+│   │   │   ├── index.html
+│   │   │   └── kirby-parasol.js
+│   │   ├── no-illo-canvas
+│   │   │   ├── index.html
+│   │   │   └── no-illo-canvas.js
+│   │   ├── no-illo-svg
+│   │   │   ├── index.html
+│   │   │   └── no-illo-svg.js
+│   │   ├── path-commands
+│   │   │   ├── index.html
+│   │   │   └── path-commands.js
+│   │   ├── resize
+│   │   │   ├── index.html
+│   │   │   └── resize.js
+│   │   ├── shade-and-shades
+│   │   │   ├── index.html
+│   │   │   └── shade-and-shades.js
+│   │   ├── shapes
+│   │   │   ├── index.html
+│   │   │   └── shapes.js
+│   │   ├── solids
+│   │   │   ├── index.html
+│   │   │   └── solids.js
+│   │   ├── strutter
+│   │   │   ├── index.html
+│   │   │   └── strutter.js
+│   │   ├── zdog-logo
+│   │   │   ├── index.html
+│   │   │   └── zdog-logo.js
+│   │   └── .eslintrc.js
+│   ├── dist
+│   │   ├── zdog.dist.js
+│   │   └── zdog.dist.min.js
+│   ├── js
+│   │   ├── anchor.js
+│   │   ├── boilerplate.js
+│   │   ├── box.js
+│   │   ├── canvas-renderer.js
+│   │   ├── cone.js
+│   │   ├── cylinder.js
+│   │   ├── dragger.js
+│   │   ├── ellipse.js
+│   │   ├── group.js
+│   │   ├── hemisphere.js
+│   │   ├── illustration.js
+│   │   ├── index.js
+│   │   ├── path-command.js
+│   │   ├── polygon.js
+│   │   ├── rect.js
+│   │   ├── rounded-rect.js
+│   │   ├── shape.js
+│   │   ├── svg-renderer.js
+│   │   └── vector.js
+│   ├── tasks
+│   │   ├── .eslintrc.js
+│   │   ├── bundle.js
+│   │   └── version.js
+│   ├── .eslintrc.js
+│   ├── .gitignore
+│   ├── bower.json
+│   ├── package.json
+│   ├── package-lock.json
+│   └── README.md
+├── Pure Data — Pd Community Site.html
+├── README_FOR_THE_CURIOUS.txt
+└── Structure Synth.html
+
+[AXIS] :: AWAKE. Tree complete. Ready to ripple.

@@ -1,0 +1,6 @@
+Folder PATH listing
+Volume serial number is 80DE-95A4
+C:\USERS\17602\DESKTOP\AEGIS_PROJECT\~\AEGIS_CORE
+Invalid path - \USERS\17602\DESKTOP\AEGIS_PROJECT\~\AEGIS_CORE
+No subfolders exist 
+

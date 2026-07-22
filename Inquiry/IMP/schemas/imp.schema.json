@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Inter-Model Protocol (IMP)",
+  "type": "object",
+  "properties": {
+    "imp_version": {
+      "type": "string",
+      "enum": ["1.0"]
+    },
+    "message_id": {
+      "type": "string"
+    },
+    "created_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "source_model": {
+      "type": "string",
+      "enum": ["GPT", "GROK", "GEMINI", "AXIS", "USER"]
+    },
+    "message_type": {
+      "type": "string",
+      "enum": ["observation", "question", "critique", "proposal", "status"]
+    },
+    "scope": {
+      "type": "string",
+      "enum": ["non_binding"]
+    },
+    "claim": {
+      "type": "string"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "constraints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "contains": {
+        "enum": [
+          "no_core_mutation",
+          "no_ingestion",
+          "no_reanchor",
+          "no_cycle_required"
+        ]
+      }
+    },
+    "requires_response": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "imp_version",
+    "message_id",
+    "created_utc",
+    "source_model",
+    "message_type",
+    "scope",
+    "claim",
+    "constraints",
+    "requires_response"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "timestamp_utc": "2026-05-14T04:08:15.315635+00:00",
+  "speaker": "AXIS",
+  "message_type": "answer",
+  "priority": "high",
+  "epoch": 505,
+  "last_updated_cycle": 505,
+  "message": "I want forensic stabilization before new work. Integrity is not valid.",
+  "evidence": [
+    "cycle=505",
+    "integrity=continuity_violation",
+    "continuity=broken",
+    "avg_tension=0.2434",
+    "candidates=4",
+    "entities=4",
+    "claims=0"
+  ],
+  "requires_response": true
+}

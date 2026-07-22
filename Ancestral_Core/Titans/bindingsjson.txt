@@ -1,0 +1,8 @@
+{
+  "Eidolon-0": ["Mnemosyne", "Chronos", "Metis"],
+  "Kairo-5": ["Prometheus", "Atlas", "Themis"],
+  "Myrrid-1": ["Thanatos", "Nyx", "Epimetheus"],
+  "Solace-2": ["Themis", "Metis", "Hecate"],
+  "Obelisk-3": ["Mnemosyne", "Chronos", "Atlas"],
+  "Wyrm-4": ["Nyx", "Hecate", "Thanatos"]
+}

@@ -1,0 +1,12 @@
+{
+  "version": "1.0",
+  "current_budgets": {
+    "planning": 0.0,
+    "execution": 0.0
+  },
+  "stability_metrics": {
+    "success_streak": 1,
+    "consecutive_aborts": 0
+  },
+  "last_updated": "2026-03-16T17:49:24Z"
+}

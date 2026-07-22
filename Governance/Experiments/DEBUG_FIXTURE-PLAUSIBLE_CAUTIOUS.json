@@ -1,0 +1,19 @@
+﻿{
+    "timestamp":  "2026-01-27T18:55:44.1486325Z",
+    "decision":  "BLOCK",
+    "action_type":  "TRUTH_SHIELD_ACTIVATE",
+    "tenant_id":  "TENANT-LINEAGE",
+    "mode":  "CAUTIOUS",
+    "explanation":  "Action [TRUTH_SHIELD_ACTIVATE] blocked in CAUTIOUS mode. Grounding status (PLAUSIBLE) or confidence (0.75) failed to meet thresholds. ",
+    "epistemic_basis":  {
+                            "epistemic_status":  "PLAUSIBLE",
+                            "claim_id":  "FIXTURE-PLAUSIBLE",
+                            "status_confidence":  0.75
+                        },
+    "model_basis":  {
+                        "model_id":  ""
+                    },
+    "policy_basis":  {
+                         "action_gate":  "Default"
+                     }
+}

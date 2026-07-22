@@ -1,0 +1,15 @@
+{
+    "cycle_count": 31,
+    "mutation_type": "CANDIDATE_FRACTURED",
+    "target_id": "aebd13943de204748ec506abc57718d5f0abab0ae5707026fb7035335fec151e",
+    "parent_receipt_head": "a35d1e0c6e051f712357b696df661711600b4014d741dd01769621f11fbba2df",
+    "data": {
+        "entity": "axis_crypto_helperspy",
+        "claim": "[cryptographic_authority] axis_crypto_helpers.py has 67 lines, 0 oversized functions (>120 lines), debt_score=0.00. Target: Extract long methods for maintainability.",
+        "reason": "chronic_quorum_failure_20_cycles"
+    },
+    "status": "committed",
+    "ts_utc": "2026-07-22T00:07:37.738206+00:00",
+    "receipt_id": "model_delta_CANDIDATE_FRACTURED_aebd1394_8ada87c4",
+    "causal_hash": "8ada87c4f6a0af295e36e9cd64a9e57e179a90364cd21d7434253f6f4db5e0e9"
+}

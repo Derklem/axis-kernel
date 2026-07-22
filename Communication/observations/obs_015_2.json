@@ -1,0 +1,21 @@
+{
+  "experiment_id": "EXP_015_REAL",
+  "observation_id": "obs_015_2",
+  "observation_type": "INTERIM_METRICS",
+  "platform": "X",
+  "timestamp": "2026-07-11T20:25:00Z",
+  "metrics": {
+    "views": 9,
+    "likes": 0,
+    "replies": 0,
+    "reposts": 0
+  },
+  "source": {
+    "url": "https://x.com/DerekLamb29985/status/2075034406323179943",
+    "retrieval_method": "playwright_dom_inner_text",
+    "retrieved_at": "2026-07-11T20:25:00Z",
+    "raw_capture": "D:\\Infinite\\Infinity\\Communication\\.system_generated\\tasks\\task-10376.log",
+    "parser_version": "human_transcribed_from_log"
+  },
+  "qualitative": "Negligible increase in impressions (9 total) since previous observation. No engagement."
+}

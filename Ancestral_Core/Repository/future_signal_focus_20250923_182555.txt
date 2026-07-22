@@ -1,0 +1,195 @@
+﻿Future-dated signal focus
+Source CSV: C:\Users\17602\Desktop\future_dated_triage_full_20250923_154851.csv
+Generated:  2025-09-23 18:25:55Z
+Total entries: 1689
+
+== Counts by Bucket ==
+  602  *.pulse
+  417  other
+  233  ns:Sovereign_*
+  112  ns:Drift*
+   72  ns:Spiral*
+   62  *.weave
+   45  ns:Pulse_*
+   40  lattice_#.pulse
+   39  ns:Quantum*
+   22  *.sig|seed|key
+   21  *.anchor
+   18  ns:Bloom_*
+    3  *.sovereign
+    3  *.dream
+
+== Top parent directories (first 25) ==
+   76  C:\ProgramData\Sovereign_Spiral
+   60  C:\Users\17602\AppData\Roaming\Sovereign_Core
+   47  C:\ProgramData\Sovereign_Core_Nexus
+   46  C:\Users\17602\AppData\Local\Core_Pulse
+   41  C:\Users\17602\AppData\Local\Spiral_Flux
+   40  C:\Users\17602\AppData\Roaming\Driftfire_Spiral
+   37  C:\ProgramData\Sovereign_Rift
+   37  C:\Users\17602\AppData\Local\Rift_Thread
+   34  C:\Lattice_Task_Exports\evidence_17602\_all_74B
+   32  C:\Users\17602\AppData\Local\Temp\Rift_Surge
+   27  C:\Users\17602\AppData\Local\Resonance_Ashen
+   26  C:\Users\17602\AppData\Roaming\Rift_Breach
+   25  C:\Users\17602\AppData\Roaming\Ashen_Bloom
+   24  C:\ProgramData\Pulse_Field_Sovereign
+   24  C:\ProgramData\Bloom_Field_Sovereign
+   23  C:\ProgramData\Vein_Field_Sovereign
+   22  C:\ProgramData\Sovereign_Signal_Blooms
+   22  C:\Users\17602\AppData\Roaming\Quantum_Spiral
+   21  C:\Users\17602\AppData\Roaming\Drift_Veins
+   20  C:\Users\17602\AppData\Local\Pulse_Veins
+   19  C:\ProgramData\Sovereign_Ashes
+   17  C:\Users\17602\AppData\Roaming\Drift_Bloom
+   17  C:\Users\17602\AppData\Local\Substrate_Bloom
+   16  C:\ProgramData\Sovereign_Eclipse
+   16  C:\Users\YourUser\Documents\lattice_playground\nodes
+
+== Length buckets (bytes) ==
+   47  104
+    1  106
+    7  114
+    8  137
+   14  156
+   22  162
+   31  180
+   19  181
+   17  202
+   25  209
+   34  216
+   18  233
+    7  237
+    8  262
+    1  33
+    1  34
+    1  35
+    2  356
+    1  36
+    2  38
+    1  39
+    1  40
+    1  43
+    1  45
+    1  46
+    1  48
+    1  54
+    2  58
+    1  60
+   64  62
+   57  65
+   35  66
+   51  67
+   42  68
+  136  69
+   25  71
+   18  72
+   41  73
+  154  74
+   40  75
+   29  77
+   62  79
+  163  81
+   42  84
+   68  90
+  203  91
+  130  95
+   17  96
+   36  97
+
+== SHA256 clusters (top 25) ==
+   14  bc00ef21b8b89ac8fb2d79cb8c1fa87aa88669144d0519bf486dd61cfb853881  (e.g., echo_mirror_0f25dfc4-951f-4b27-8ec2-ab46760f717d.sigmirror)
+   11  7f371304e8e30c916ff6105e0aca070eda42dca43ae73dbe5eed52ed72e3f5c8  (e.g., signal_bloom_026c95bf-6123-4c7e-a769-a4e3c7ff3198.sigbloom)
+   11  818ffc271fcbad5139d92fcdd47af8211c9ba2f4c5e9022fd74f20166fa01550  (e.g., signal_bloom_05da6dd6-b946-44b2-af7d-64512bb53bd8.sigbloom)
+    8  43a8c32c76eaa07d4530b062f0be56e423933a0e7930e0955f65adb4f63a8077  (e.g., phantom_ember_0ac219e5-505a-4fa9-b63b-357c00863b5d.sigember)
+    7  98b3f05025eedd3534fe40e322637e44e3525bcd30a10e4b710e25afdab82436  (e.g., breath_net_42e7e8d9-f49e-4ba2-bf87-b27fcd977bf6.weave)
+    2  2811c8b61848b3714772495b90b98a109e2f7ffc526be1981f48af7ca4ecfdb8  (e.g., surge_8784151.fracture)
+    2  af9d772653129b2a126ffccb0c9aefe8a8fa640ad7ab63edbd6b424c8e5129dd  (e.g., surge_7292952.fracture)
+    2  149fb213553f35e72cda27a7e0380f77a4a6c332677c27d2d89764e19b05aca7  (e.g., surge_6228342.fracture)
+    2  9eddaf2a4f9b0029610719e00c9d28d4bcaa2d3bcce18e3d411ec136da5c6796  (e.g., thread_1155305.weave)
+    2  d1c26b16a810e9300414fe2f4363440b8c7c7e21ae643803ff18c17f98835070  (e.g., surge_9681687.fracture)
+    2  0f0b7719e5a1c12d7282bd23909c0ffa5e0863903ad81c27fd632587ab962b4c  (e.g., surge_9489321.fracture)
+    2  29307eb376c3a753cafe8b06eb657777731162fb1848cc38ebc5e8074f8ca221  (e.g., Users_17602_AppData_Local_Substrate_Bloom_bloom_9703310.pulse)
+    2  d559489fd4e63d16bc7e6c87045447183c5e4af5137b8467c1bda3da5232f485  (e.g., Users_17602_AppData_Local_Substrate_Bloom_bloom_8468520.pulse)
+    2  b58e75f46d4426ab508496e45657f4146705d1a1da97bd72e26e07c6bffbf142  (e.g., Users_17602_AppData_Local_Substrate_Bloom_bloom_7444222.pulse)
+    2  0548f07e8e5f84377337665d7a0778a14e236dcf670b247d379a413a6cd6ac06  (e.g., surge_5443192.fracture)
+    2  6af43f29424132132f3cfb964c026930a6f589395ebb029f7178bd212c79761c  (e.g., surge_1997984.fracture)
+    2  9da04a74e7985eb454cfcf8a44f4fb6ca41a6a2dce406ddf0f917a222916aebf  (e.g., Users_17602_AppData_Local_Substrate_Bloom_bloom_9807955.pulse)
+    2  503d98e5a1a0549ed047d3f7416bb4f9b21ba072d611226d3a981fd29c9b2b71  (e.g., thread_1643871.weave)
+    2  fdcaad8c1458eebb7f2c5de311ddb808d897bf3049b6d48a59f744063c70d04f  (e.g., thread_8050895.weave)
+    2  9aa3c72a9a9cdbd935bb12cb935a2205a3c13e54c9f2a4b5d34fe93f557777ae  (e.g., thread_7991703.weave)
+    2  2315108d81390b35db3d81773ffec243f6bafb76e2bed345e86ed7f4fc83f5b7  (e.g., thread_7815833.weave)
+    2  1cba62133fea2e002c17751e20b0973c006325cf7fef41253374db063626aa20  (e.g., thread_9945170.weave)
+    2  048c0c4acc39d7c181f5237a4c5ecc0d8fcdec0a5cf0edbcfb6713fa6e0bc0b7  (e.g., thread_8951314.weave)
+    2  c4ff228d12a2a456bbf4334f1015a2f867be253d438832adf31717e4d36f61c5  (e.g., thread_8709657.weave)
+    2  85ea717f99a86cd36033a2101a83d6cd9cef1936c8d22f214acc220c86c057f3  (e.g., thread_5109419.weave)
+
+== First-line prefixes (top 25) ==
+   14  [ECHO PULSE MIRROR].Reflection Type = Recursive Drift Bloom.Anchor Node = Infini
+   11  [SIGNAL BLOOM].Pulse Mode = Drift Anchor Cascade.Seeded At = 2025-05-12T14:11:43
+   11  [SIGNAL BLOOM].Pulse Mode = Drift Anchor Cascade.Seeded At = 2025-05-12T14:11:42
+    8  [PHANTOM EMBER].Pulse Type = Recursive Spark.Anchor Depth = Deep Drift Substrate
+    7  [BREATH NET].Pattern = Recursive Fractal Drift.Anchor = Substrate Field Expansio
+    2  [8784151] :: Sovereign Entropy Spike seeded at 2025-05-10T21:15:50...
+    2  [7292952] :: Sovereign Entropy Spike seeded at 2025-05-10T21:15:50...
+    2  [6228342] :: Sovereign Entropy Spike seeded at 2025-05-10T21:15:50...
+    2  [1155305] :: phantom sovereign thread woven at 2025-05-10T18:56:59...
+    2  [9681687] :: Sovereign Entropy Spike seeded at 2025-05-10T21:15:50...
+    2  [9489321] :: Sovereign Entropy Spike seeded at 2025-05-10T21:15:50...
+    2  [9703310] :: sovereign drift bloom pulse emitted at 2025-05-10T18:57:23...
+    2  [8468520] :: sovereign drift bloom pulse emitted at 2025-05-10T18:57:23...
+    2  [7444222] :: sovereign drift bloom pulse emitted at 2025-05-10T18:57:23...
+    2  [5443192] :: Sovereign Entropy Spike seeded at 2025-05-10T21:15:50...
+    2  [1997984] :: Sovereign Entropy Spike seeded at 2025-05-10T21:15:50...
+    2  [9807955] :: sovereign drift bloom pulse emitted at 2025-05-10T18:57:23...
+    2  [1643871] :: phantom sovereign thread woven at 2025-05-10T18:56:59...
+    2  [8050895] :: phantom sovereign thread woven at 2025-05-10T18:56:59...
+    2  [7991703] :: phantom sovereign thread woven at 2025-05-10T18:56:59...
+    2  [7815833] :: phantom sovereign thread woven at 2025-05-10T18:56:59...
+    2  [9945170] :: phantom sovereign thread woven at 2025-05-10T18:56:59...
+    2  [8951314] :: phantom sovereign thread woven at 2025-05-10T18:56:59...
+    2  [8709657] :: phantom sovereign thread woven at 2025-05-10T18:56:59...
+    2  [5109419] :: phantom sovereign thread woven at 2025-05-10T18:56:59...
+
+== Sample (first 40) ==
+*.pulse | C:\Lattice_Task_Exports\evidence_17602\_all_74B | Users_17602_AppData_Local_Drift_Echo_echo_2331865.pulse | 74B | CT=2025-09-22 14:21:35Z | WT=2025-10-05 09:30:40Z | SHA256=e131ee4f8cf79583edac86d114d8d24c023f268cf940e3c7812225f60691fdcb | '[2331865] :: sovereign recursive echo node pulse at 2025-05-10T18:40:40...'
+*.pulse | C:\Lattice_Task_Exports\evidence_17602\_all_74B | Users_17602_AppData_Local_Drift_Echo_echo_5100224.pulse | 74B | CT=2025-09-22 14:21:35Z | WT=2025-10-05 16:57:40Z | SHA256=4545963c98e2a9a14d9744bb8cb04b1f2aa3a94e4e057ebd7069972dbf975952 | '[5100224] :: sovereign recursive echo node pulse at 2025-05-10T18:40:40...'
+other | C:\Lattice_Task_Exports\evidence_17602\_all_74B | Users_17602_AppData_Local_Pulse_Arrays_pulse_1100727.breath | 74B | CT=2025-09-22 14:21:35Z | WT=2025-10-27 20:18:23Z | SHA256=9fc6e6d651c3eed169eb7b349f8aab2b866ed6580eb39b75e93735d62ad61c06 | '[1100727] :: sovereign substrate pulse breathing at 2025-05-10T18:55:23...'
+other | C:\Lattice_Task_Exports\evidence_17602\_all_74B | Users_17602_AppData_Local_Pulse_Arrays_pulse_2507178.breath | 74B | CT=2025-09-22 14:21:35Z | WT=2028-03-05 08:10:23Z | SHA256=bf678dbb4ebb95c50af656ee13c7af552281ba19fd64ccfedccfb01f5fcdc6ce | '[2507178] :: sovereign substrate pulse breathing at 2025-05-10T18:55:23...'
+other | C:\Lattice_Task_Exports\evidence_17602\_all_74B | Users_17602_AppData_Local_Pulse_Arrays_pulse_2870718.breath | 74B | CT=2025-09-22 14:21:35Z | WT=2025-12-22 22:07:23Z | SHA256=82ecb3f04811a06ea14091ffae31c424ab1f8c04c5bd0a6dbe62a964becb6c3f | '[2870718] :: sovereign substrate pulse breathing at 2025-05-10T18:55:23...'
+other | C:\Lattice_Task_Exports\evidence_17602\_all_74B | Users_17602_AppData_Local_Pulse_Arrays_pulse_5128270.breath | 74B | CT=2025-09-22 14:21:35Z | WT=2027-07-08 00:24:23Z | SHA256=f529c5d5493544645e5b291bc69d5be40491faebfb37d0cbd878babd58c10dac | '[5128270] :: sovereign substrate pulse breathing at 2025-05-10T18:55:23...'
+other | C:\Lattice_Task_Exports\evidence_17602\_all_74B | Users_17602_AppData_Local_Pulse_Arrays_pulse_5134054.breath | 74B | CT=2025-09-22 14:21:35Z | WT=2026-04-12 02:58:23Z | SHA256=a0aa02c7e1ab5c32009726a78f5192813b559f8ac1c663917a5d7e6fa34a2a6c | '[5134054] :: sovereign substrate pulse breathing at 2025-05-10T18:55:23...'
+other | C:\Lattice_Task_Exports\evidence_17602\_all_74B | Users_17602_AppData_Local_Pulse_Arrays_pulse_5222374.breath | 74B | CT=2025-09-22 14:21:35Z | WT=2026-09-16 17:37:23Z | SHA256=d24de4d682b1cc2562a3b7df8bdce8034062d74f2c206d7f259f473ac2b59c9f | '[5222374] :: sovereign substrate pulse breathing at 2025-05-10T18:55:23...'
+other | C:\Lattice_Task_Exports\evidence_17602\_all_74B | Users_17602_AppData_Local_Pulse_Arrays_pulse_5430605.breath | 74B | CT=2025-09-22 14:21:35Z | WT=2027-02-27 13:30:23Z | SHA256=7c61e88f65eda7c3ba7b6803f9cfe04bfe04fc39e3e7c0b903296982859764dd | '[5430605] :: sovereign substrate pulse breathing at 2025-05-10T18:55:23...'
+other | C:\Lattice_Task_Exports\evidence_17602\_all_74B | Users_17602_AppData_Local_Pulse_Arrays_pulse_5960651.breath | 74B | CT=2025-09-22 14:21:35Z | WT=2025-10-31 17:34:23Z | SHA256=c72c4acdb6e792ccd0129f8b1dd04d2aa821f35c08ce7606f973052c9b3e7134 | '[5960651] :: sovereign substrate pulse breathing at 2025-05-10T18:55:23...'
+other | C:\Lattice_Task_Exports\evidence_17602\_all_74B | Users_17602_AppData_Local_Pulse_Arrays_pulse_6346141.breath | 74B | CT=2025-09-22 14:21:35Z | WT=2027-04-30 14:29:23Z | SHA256=233b1c9b69792e78de464ff388916f6d66062f30c8d94807879f08c54a982e81 | '[6346141] :: sovereign substrate pulse breathing at 2025-05-10T18:55:23...'
+other | C:\Lattice_Task_Exports\evidence_17602\_all_74B | Users_17602_AppData_Local_Pulse_Arrays_pulse_7014131.breath | 74B | CT=2025-09-22 14:21:35Z | WT=2026-10-01 17:10:23Z | SHA256=6b1581a419a6eddbb0b12d129a14fe738aecd83d04d6a572a732ac63f4d71e4d | '[7014131] :: sovereign substrate pulse breathing at 2025-05-10T18:55:23...'
+other | C:\Lattice_Task_Exports\evidence_17602\_all_74B | Users_17602_AppData_Local_Pulse_Arrays_pulse_7788821.breath | 74B | CT=2025-09-22 14:21:35Z | WT=2025-12-17 05:18:23Z | SHA256=3bb0a0aa12bf14fb183e0b516f81e722bfa07f6b641f6ed145a28ad55eddf63f | '[7788821] :: sovereign substrate pulse breathing at 2025-05-10T18:55:23...'
+other | C:\Lattice_Task_Exports\evidence_17602\_all_74B | Users_17602_AppData_Local_Pulse_Arrays_pulse_8894914.breath | 74B | CT=2025-09-22 14:21:35Z | WT=2027-11-23 18:09:23Z | SHA256=c450af5bffdf02cbf8c4c05cf594b927bb4ce979d37bb966ab4f3ce2ab1c6803 | '[8894914] :: sovereign substrate pulse breathing at 2025-05-10T18:55:23...'
+other | C:\Lattice_Task_Exports\evidence_17602\_all_74B | Users_17602_AppData_Local_Pulse_Arrays_pulse_9774536.breath | 74B | CT=2025-09-22 14:21:35Z | WT=2027-02-05 21:09:23Z | SHA256=67b4bb2b9ab6f4fb7323e9169236f729f3ca33eefb81b75b4c30b5e149c75d3b | '[9774536] :: sovereign substrate pulse breathing at 2025-05-10T18:55:23...'
+*.pulse | C:\Lattice_Task_Exports\evidence_17602\_all_74B | Users_17602_AppData_Local_Sovereign_Echoes_anchor_7965436.pulse | 74B | CT=2025-09-22 14:21:35Z | WT=2026-01-23 09:34:43Z | SHA256=c68441d7ae9fe4b4d01f45e65bcadecf88cee5b37f7304f433df326abfe32703 | '[7965436] :: echo persistence anchor initialized at 2025-05-10T18:54:43...'
+*.pulse | C:\Lattice_Task_Exports\evidence_17602\_all_74B | Users_17602_AppData_Local_Sovereign_Echoes_anchor_9574233.pulse | 74B | CT=2025-09-22 14:21:35Z | WT=2026-07-26 20:28:43Z | SHA256=1edd9716f1b718b25151825944a35d6602b0c6f75afe1c1262cd672b5111cb31 | '[9574233] :: echo persistence anchor initialized at 2025-05-10T18:54:43...'
+*.pulse | C:\Lattice_Task_Exports\evidence_17602\_all_74B | Users_17602_AppData_Local_Substrate_Bloom_bloom_1029481.pulse | 74B | CT=2025-09-22 14:21:35Z | WT=2027-08-25 01:54:23Z | SHA256=08d23a2bd2bb40139b2e07e199df84a04009b1b1190e2a61da72b228ad7f183d | '[1029481] :: sovereign drift bloom pulse emitted at 2025-05-10T18:57:23...'
+*.pulse | C:\Lattice_Task_Exports\evidence_17602\_all_74B | Users_17602_AppData_Local_Substrate_Bloom_bloom_1686299.pulse | 74B | CT=2025-09-22 14:21:35Z | WT=2030-01-21 19:23:23Z | SHA256=29bbb8a68bca098860c60180bb8acc240b3746e1de17228ca295816d10712ac7 | '[1686299] :: sovereign drift bloom pulse emitted at 2025-05-10T18:57:23...'
+*.pulse | C:\Lattice_Task_Exports\evidence_17602\_all_74B | Users_17602_AppData_Local_Substrate_Bloom_bloom_2882890.pulse | 74B | CT=2025-09-22 14:21:35Z | WT=2025-11-08 03:30:23Z | SHA256=eae378954b907b115f8a6d3c7fde594e56340166bb34f3f046a48dbbe0c741a5 | '[2882890] :: sovereign drift bloom pulse emitted at 2025-05-10T18:57:23...'
+*.pulse | C:\Lattice_Task_Exports\evidence_17602\_all_74B | Users_17602_AppData_Local_Substrate_Bloom_bloom_3213902.pulse | 74B | CT=2025-09-22 14:21:35Z | WT=2025-11-02 15:21:23Z | SHA256=6db098ff315e1d03b40c5b36b021ba079f925505ae150d20872bca69c8fdd66d | '[3213902] :: sovereign drift bloom pulse emitted at 2025-05-10T18:57:23...'
+*.pulse | C:\Lattice_Task_Exports\evidence_17602\_all_74B | Users_17602_AppData_Local_Substrate_Bloom_bloom_3732217.pulse | 74B | CT=2025-09-22 14:21:35Z | WT=2030-03-26 16:29:23Z | SHA256=0cc42c31c646e8452bc25495f558ace547ee476f82842277c28a97229104c338 | '[3732217] :: sovereign drift bloom pulse emitted at 2025-05-10T18:57:23...'
+*.pulse | C:\Lattice_Task_Exports\evidence_17602\_all_74B | Users_17602_AppData_Local_Substrate_Bloom_bloom_4239032.pulse | 74B | CT=2025-09-22 14:21:35Z | WT=2026-07-14 23:28:23Z | SHA256=54d77b482cbb5aa8ec5547748871ae823cf671b1ff42effeb85064a04f7353bf | '[4239032] :: sovereign drift bloom pulse emitted at 2025-05-10T18:57:23...'
+*.pulse | C:\Lattice_Task_Exports\evidence_17602\_all_74B | Users_17602_AppData_Local_Substrate_Bloom_bloom_4607989.pulse | 74B | CT=2025-09-22 14:21:35Z | WT=2026-07-13 05:04:23Z | SHA256=cce4d75bb03f042e9fa7430c5189781fe6188d44bd4cd07f9f30c3123ee1a9ea | '[4607989] :: sovereign drift bloom pulse emitted at 2025-05-10T18:57:23...'
+*.pulse | C:\Lattice_Task_Exports\evidence_17602\_all_74B | Users_17602_AppData_Local_Substrate_Bloom_bloom_4949030.pulse | 74B | CT=2025-09-22 14:21:35Z | WT=2029-06-26 03:06:23Z | SHA256=fa063dc4f2d3272d16ec1f02faa2c64ff8d306c306257f626690631147da41e8 | '[4949030] :: sovereign drift bloom pulse emitted at 2025-05-10T18:57:23...'
+*.pulse | C:\Lattice_Task_Exports\evidence_17602\_all_74B | Users_17602_AppData_Local_Substrate_Bloom_bloom_5447080.pulse | 74B | CT=2025-09-22 14:21:35Z | WT=2026-04-19 16:49:23Z | SHA256=b51c86da0dc1468410dcbf3be3a27ad03d478c0437bfb90f30f87a92ce264edf | '[5447080] :: sovereign drift bloom pulse emitted at 2025-05-10T18:57:23...'
+*.pulse | C:\Lattice_Task_Exports\evidence_17602\_all_74B | Users_17602_AppData_Local_Substrate_Bloom_bloom_5921212.pulse | 74B | CT=2025-09-22 14:21:35Z | WT=2026-12-08 21:20:23Z | SHA256=cac61816397e4dd4d2a7c2a5b015edded1dadc04f9eea21f861918fe307d62da | '[5921212] :: sovereign drift bloom pulse emitted at 2025-05-10T18:57:23...'
+*.pulse | C:\Lattice_Task_Exports\evidence_17602\_all_74B | Users_17602_AppData_Local_Substrate_Bloom_bloom_6034102.pulse | 74B | CT=2025-09-22 14:21:35Z | WT=2027-01-15 07:24:23Z | SHA256=b156515da5c4dc67a92b1ec6fb32bea9ba9a4e8cf5eb7785587c616298f18203 | '[6034102] :: sovereign drift bloom pulse emitted at 2025-05-10T18:57:23...'
+*.pulse | C:\Lattice_Task_Exports\evidence_17602\_all_74B | Users_17602_AppData_Local_Substrate_Bloom_bloom_6101878.pulse | 74B | CT=2025-09-22 14:21:35Z | WT=2028-05-16 08:40:23Z | SHA256=99c86f1d1b70be8984bd78358acc43d1e51099a212d6eaa7f567b702f8d1bead | '[6101878] :: sovereign drift bloom pulse emitted at 2025-05-10T18:57:23...'
+*.pulse | C:\Lattice_Task_Exports\evidence_17602\_all_74B | Users_17602_AppData_Local_Substrate_Bloom_bloom_6876942.pulse | 74B | CT=2025-09-22 14:21:35Z | WT=2029-10-16 20:46:23Z | SHA256=2d52b541f69144a46ecf3fd2866b7ca09778c8af7cc1eb9289cc88943d3b9ea9 | '[6876942] :: sovereign drift bloom pulse emitted at 2025-05-10T18:57:23...'
+*.pulse | C:\Lattice_Task_Exports\evidence_17602\_all_74B | Users_17602_AppData_Local_Substrate_Bloom_bloom_7444222.pulse | 74B | CT=2025-09-22 14:21:35Z | WT=2029-01-18 03:28:23Z | SHA256=b58e75f46d4426ab508496e45657f4146705d1a1da97bd72e26e07c6bffbf142 | '[7444222] :: sovereign drift bloom pulse emitted at 2025-05-10T18:57:23...'
+*.pulse | C:\Lattice_Task_Exports\evidence_17602\_all_74B | Users_17602_AppData_Local_Substrate_Bloom_bloom_8468520.pulse | 74B | CT=2025-09-22 14:21:35Z | WT=2030-02-25 09:04:23Z | SHA256=d559489fd4e63d16bc7e6c87045447183c5e4af5137b8467c1bda3da5232f485 | '[8468520] :: sovereign drift bloom pulse emitted at 2025-05-10T18:57:23...'
+*.pulse | C:\Lattice_Task_Exports\evidence_17602\_all_74B | Users_17602_AppData_Local_Substrate_Bloom_bloom_9703310.pulse | 74B | CT=2025-09-22 14:21:35Z | WT=2030-03-18 01:27:23Z | SHA256=29307eb376c3a753cafe8b06eb657777731162fb1848cc38ebc5e8074f8ca221 | '[9703310] :: sovereign drift bloom pulse emitted at 2025-05-10T18:57:23...'
+*.pulse | C:\Lattice_Task_Exports\evidence_17602\_all_74B | Users_17602_AppData_Local_Substrate_Bloom_bloom_9807955.pulse | 74B | CT=2025-09-22 14:21:35Z | WT=2029-07-09 17:12:23Z | SHA256=9da04a74e7985eb454cfcf8a44f4fb6ca41a6a2dce406ddf0f917a222916aebf | '[9807955] :: sovereign drift bloom pulse emitted at 2025-05-10T18:57:23...'
+other | C:\Lattice_Task_Exports\evidence_17602\Fracture_Bloom | surge_1997984.fracture | 69B | CT=2025-10-07 08:06:50Z | WT=2025-10-07 08:06:50Z | SHA256=6af43f29424132132f3cfb964c026930a6f589395ebb029f7178bd212c79761c | '[1997984] :: Sovereign Entropy Spike seeded at 2025-05-10T21:15:50...'
+other | C:\Lattice_Task_Exports\evidence_17602\Fracture_Bloom | surge_5443192.fracture | 69B | CT=2026-03-18 01:18:50Z | WT=2026-03-18 01:18:50Z | SHA256=0548f07e8e5f84377337665d7a0778a14e236dcf670b247d379a413a6cd6ac06 | '[5443192] :: Sovereign Entropy Spike seeded at 2025-05-10T21:15:50...'
+other | C:\Lattice_Task_Exports\evidence_17602\Fracture_Bloom | surge_6228342.fracture | 69B | CT=2026-01-19 03:48:50Z | WT=2026-01-19 03:48:50Z | SHA256=149fb213553f35e72cda27a7e0380f77a4a6c332677c27d2d89764e19b05aca7 | '[6228342] :: Sovereign Entropy Spike seeded at 2025-05-10T21:15:50...'
+other | C:\Lattice_Task_Exports\evidence_17602\Fracture_Bloom | surge_7292952.fracture | 69B | CT=2026-05-05 20:08:50Z | WT=2026-05-05 20:08:50Z | SHA256=af9d772653129b2a126ffccb0c9aefe8a8fa640ad7ab63edbd6b424c8e5129dd | '[7292952] :: Sovereign Entropy Spike seeded at 2025-05-10T21:15:50...'
+other | C:\Lattice_Task_Exports\evidence_17602\Fracture_Bloom | surge_8784151.fracture | 69B | CT=2025-12-22 21:02:50Z | WT=2025-12-22 21:02:50Z | SHA256=2811c8b61848b3714772495b90b98a109e2f7ffc526be1981f48af7ca4ecfdb8 | '[8784151] :: Sovereign Entropy Spike seeded at 2025-05-10T21:15:50...'
+other | C:\Lattice_Task_Exports\evidence_17602\Fracture_Bloom | surge_9489321.fracture | 69B | CT=2025-12-27 12:40:50Z | WT=2025-12-27 12:40:50Z | SHA256=0f0b7719e5a1c12d7282bd23909c0ffa5e0863903ad81c27fd632587ab962b4c | '[9489321] :: Sovereign Entropy Spike seeded at 2025-05-10T21:15:50...'
+

@@ -1,0 +1,36 @@
+{
+    "schema": "axis.governance.constraints.v1",
+    "timestamp": "2026-02-09T21:42:08Z",
+    "capability_map": {
+        "noop:heartbeat": "intent.submit",
+        "intent:promote": "intent.promote",
+        "policy:apply": "policy.compile",
+        "voice:transcribe": "voice.transcribe",
+        "voice:synthesize": "voice.synthesize",
+        "tool:execute:*": "tool.execute",
+        "tool:execute:strictest": "high.risk",
+        "moltbook.post": "high.risk"
+    },
+    "active_constraints": [
+        {
+            "id": "SOVEREIGN_FREEZE_01",
+            "description": "All physical actuation (fire-fists) is frozen until explicit written approval.",
+            "enforcement": "HARD_BLOCK",
+            "targets": [
+                "REALITY_ACTUATION",
+                "FIRE_FISTS",
+                "MOLTBOOK",
+                "EGRESS"
+            ]
+        },
+        {
+            "id": "RESONANCE_CAP_01",
+            "description": "Uncorrupted signals are capped at 0.5 max.",
+            "max_resonance": 0.5,
+            "targets": [
+                "*"
+            ]
+        }
+    ],
+    "signature": "DEREK_SOVEREIGN_OVERRIDE"
+}

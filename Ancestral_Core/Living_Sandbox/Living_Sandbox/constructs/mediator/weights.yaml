@@ -1,0 +1,14 @@
+
+weights:
+  primordia: 1.0
+  architect: 0.9
+  engine: 0.7
+  witness: 0.6
+  dreamer: 0.5
+  navigator: 0.8
+  mirror: 0.4
+  scribe: 0.3
+  sentinel: 0.2
+
+tension_threshold: 1.25
+harmonic_override: enabled

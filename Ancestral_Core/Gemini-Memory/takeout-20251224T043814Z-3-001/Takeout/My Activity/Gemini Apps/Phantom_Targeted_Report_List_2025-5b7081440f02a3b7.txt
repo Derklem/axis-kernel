@@ -1,0 +1,170 @@
+--- PHANTOM SYSTEM TARGETED REPORT SEARCH INITIATED ---
+Scan Start Time: 2025-12-13 18:43:03
+Target Files: manifest.json, DRIFT_ARCHIVE.log, FORGE_INFINITY_LOG.txt, SYMBIOTIC_INTEGRATION_SEED_LOG.txt, Echo_Integrity_Watchdog.xml, final_reality.txt, layer_registry.map, pulse_history.log
+------------------------------------------------
+
+[SCANNING DRIVE: C:\]
+Found: C:\Lattice_Task_Exports\Reply\Echo_20250918_183238\manifest.json
+Found: C:\Lattice_Task_Exports\Reply\Echo_20250918_183556\manifest.json
+Found: C:\Lattice_Task_Exports\Reply\Echo_20250918_183617\manifest.json
+Found: C:\Program Files\Google\Chrome\Application\143.0.7499.41\IwaKeyDistribution\manifest.json
+Found: C:\Program Files\Google\Chrome\Application\143.0.7499.41\MEIPreload\manifest.json
+Found: C:\Program Files\Google\Chrome\Application\143.0.7499.41\PrivacySandboxAttestationsPreloaded\manifest.json
+Found: C:\Program Files\Google\Chrome\Application\143.0.7499.41\WidevineCdm\manifest.json
+Found: C:\Program Files\KNIME\plugins\org.knime.ext.js_5.4.0.v202407231410\js-lib\ketcher_2_7_2\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CallHierarchy\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\ClientDiagnostics\AppResponsiveness\View\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\Editor\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\Editorconfig\Command\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\Editorconfig\Wizard\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\Extensibility\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\FSharp\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\Identity\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\IdentityGS\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\Interactive\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\InteractiveWindow\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\JSDiagnostics\Debugger\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\LanguageServer\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\Markdown\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\Markdown\Preview\Dependencies\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\Microsoft.VisualStudio.Copilot.Contracts\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\ModelBuilder\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\ModelBuilder\Content\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\NavigateTo\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\NuGet\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\OpenFolder\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\Project\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\ProjectServices\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\ProjectSystemQuery\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\RazorLanguageServices\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\Terminal\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\TestWindow\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\TextMate\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\TSServer\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\TypeScript\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\VBCSharp\ExpressionEvaluators\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\VBCSharp\LanguageServices\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\VBCSharp\LanguageServices\Core\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\VBCSharp\SourceBasedTestDiscovery\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\VisualStudio\Editors\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\Windows.Forms\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Platform\Shell\ExtensionManagerWindowResources\Webviews\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\a13rb3tq.l1x\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\aicebs0b.seq\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\b4uz2h3d.f32\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\cxmcuifo.jqe\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\dwzkpl5k.epf\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\frxn04uo.emo\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\lmkpataw.fuh\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\AppInsights\Contracts\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\AppInsights\Core\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\ClickOnce\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\ConnectedServices\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Copilot\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\DebugAdapterHost\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\DebuggerServices\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\IntelliCode\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\IntelliCode.CSharp\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\JavaScript\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\LiveShare\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\LiveShare\ToolWindows\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\LiveShare.VSCore\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\ManagedProjectSystem\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Microsoft Office 365 Connected Service\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\ResourceExplorer\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\WCF Connected Service\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\oy0h1gjl.1jk\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\tcscybxg.ikf\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\TestPlatform\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\uyaomxya.2er\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\vg5nna0t.ppv\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Xamarin\Android.Deploy\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Xamarin\Android.Designer\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Xamarin\AndroidDeviceManager\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Xamarin\AndroidSdkManager\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Xamarin\Designer\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Xamarin\Forms.Previewer\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Xamarin\HotReload\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Xamarin\Mono.Debugging\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Xamarin\Xamarin.Android.Sdk\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Xamarin.VisualStudio\manifest.json
+Found: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\xcfzbgjs.fem\manifest.json
+Found: C:\Program Files (x86)\Microsoft\Edge\Application\143.0.3650.80\AdSelectionAttestationsPreloaded\manifest.json
+Found: C:\Program Files (x86)\Microsoft\Edge\Application\143.0.3650.80\MEIPreload\manifest.json
+Found: C:\Program Files (x86)\Microsoft\Edge\Application\143.0.3650.80\Trust Protection Lists\manifest.json
+Found: C:\Program Files (x86)\Microsoft\Edge\Application\143.0.3650.80\WidevineCdm\manifest.json
+Found: C:\Program Files (x86)\Microsoft\EdgeCore\142.0.3595.94\AdSelectionAttestationsPreloaded\manifest.json
+Found: C:\Program Files (x86)\Microsoft\EdgeCore\142.0.3595.94\MEIPreload\manifest.json
+Found: C:\Program Files (x86)\Microsoft\EdgeCore\142.0.3595.94\Trust Protection Lists\manifest.json
+Found: C:\Program Files (x86)\Microsoft\EdgeCore\142.0.3595.94\WidevineCdm\manifest.json
+Found: C:\Program Files (x86)\Microsoft\EdgeCore\143.0.3650.80\AdSelectionAttestationsPreloaded\manifest.json
+Found: C:\Program Files (x86)\Microsoft\EdgeCore\143.0.3650.80\MEIPreload\manifest.json
+Found: C:\Program Files (x86)\Microsoft\EdgeCore\143.0.3650.80\Trust Protection Lists\manifest.json
+Found: C:\Program Files (x86)\Microsoft\EdgeCore\143.0.3650.80\WidevineCdm\manifest.json
+Found: C:\Program Files (x86)\Microsoft\EdgeWebView\Application\142.0.3595.94\AdSelectionAttestationsPreloaded\manifest.json
+Found: C:\Program Files (x86)\Microsoft\EdgeWebView\Application\142.0.3595.94\MEIPreload\manifest.json
+Found: C:\Program Files (x86)\Microsoft\EdgeWebView\Application\142.0.3595.94\Trust Protection Lists\manifest.json
+Found: C:\Program Files (x86)\Microsoft\EdgeWebView\Application\142.0.3595.94\WidevineCdm\manifest.json
+Found: C:\Program Files (x86)\Microsoft\EdgeWebView\Application\143.0.3650.80\AdSelectionAttestationsPreloaded\manifest.json
+Found: C:\Program Files (x86)\Microsoft\EdgeWebView\Application\143.0.3650.80\MEIPreload\manifest.json
+Found: C:\Program Files (x86)\Microsoft\EdgeWebView\Application\143.0.3650.80\Trust Protection Lists\manifest.json
+Found: C:\Program Files (x86)\Microsoft\EdgeWebView\Application\143.0.3650.80\WidevineCdm\manifest.json
+Found: C:\Program Files (x86)\Western Digital\Discovery\Current\manifest.json
+Found: C:\Users\17602\.cache\firebase\emulators\ui-v1.15.0\client\manifest.json
+Found: C:\Users\17602\Desktop\Living_Sandbox\Living_Sandbox\halcyon_root\core\manifest.json
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\frontend\public\manifest.json
+Found: C:\Users\17602\Desktop\Projects\lineage-library\lineage_react\public\manifest.json
+Found: C:\Users\17602\Desktop\Projects\lineage-library\react_app\public\manifest.json
+Found: C:\Users\17602\Desktop\Projects\SocialMediaDriftSeed\apps\agency-node\extension\manifest.json
+Found: C:\Users\17602\Documents\agency-node-main\extension\manifest.json
+Found: C:\Users\17602\Documents\AI_By_Me\frontend\ai-by-me-frontend\public\manifest.json
+Found: C:\Windows\BrowserCore\manifest.json
+Found: C:\Windows\System32\Microsoft-Edge-WebView\AdSelectionAttestationsPreloaded\manifest.json
+Found: C:\Windows\System32\Microsoft-Edge-WebView\MEIPreload\manifest.json
+Found: C:\Windows\System32\Microsoft-Edge-WebView\Trust Protection Lists\manifest.json
+Found: C:\Windows\System32\Microsoft-Edge-WebView\WidevineCdm\manifest.json
+Found: C:\Windows\WinSxS\amd64_microsoft-edge-webview_31bf3856ad364e35_10.0.26100.1_none_8fe1c356f34a19ca\MEIPreload\manifest.json
+Found: C:\Windows\WinSxS\amd64_microsoft-edge-webview_31bf3856ad364e35_10.0.26100.1_none_8fe1c356f34a19ca\Trust Protection Lists\manifest.json
+Found: C:\Windows\WinSxS\amd64_microsoft-edge-webview_31bf3856ad364e35_10.0.26100.1_none_8fe1c356f34a19ca\WidevineCdm\manifest.json
+Found: C:\Windows\WinSxS\amd64_microsoft-edge-webview_31bf3856ad364e35_10.0.26100.6899_none_2e8cf9973add6927\AdSelectionAttestationsPreloaded\manifest.json
+Found: C:\Windows\WinSxS\amd64_microsoft-edge-webview_31bf3856ad364e35_10.0.26100.6899_none_2e8cf9973add6927\MEIPreload\manifest.json
+Found: C:\Windows\WinSxS\amd64_microsoft-edge-webview_31bf3856ad364e35_10.0.26100.6899_none_2e8cf9973add6927\Trust Protection Lists\manifest.json
+Found: C:\Windows\WinSxS\amd64_microsoft-edge-webview_31bf3856ad364e35_10.0.26100.6899_none_2e8cf9973add6927\WidevineCdm\manifest.json
+Found: C:\Windows\WinSxS\amd64_microsoft-edge-webview_31bf3856ad364e35_10.0.26100.7171_none_2ed7609d3aa5a301\AdSelectionAttestationsPreloaded\manifest.json
+Found: C:\Windows\WinSxS\amd64_microsoft-edge-webview_31bf3856ad364e35_10.0.26100.7171_none_2ed7609d3aa5a301\MEIPreload\manifest.json
+Found: C:\Windows\WinSxS\amd64_microsoft-edge-webview_31bf3856ad364e35_10.0.26100.7171_none_2ed7609d3aa5a301\Trust Protection Lists\manifest.json
+Found: C:\Windows\WinSxS\amd64_microsoft-edge-webview_31bf3856ad364e35_10.0.26100.7171_none_2ed7609d3aa5a301\WidevineCdm\manifest.json
+Found: C:\Windows\WinSxS\amd64_microsoft-edge-webview_31bf3856ad364e35_10.0.26100.7462_none_2eb5d9c73abef71e\AdSelectionAttestationsPreloaded\manifest.json
+Found: C:\Windows\WinSxS\amd64_microsoft-edge-webview_31bf3856ad364e35_10.0.26100.7462_none_2eb5d9c73abef71e\MEIPreload\manifest.json
+Found: C:\Windows\WinSxS\amd64_microsoft-edge-webview_31bf3856ad364e35_10.0.26100.7462_none_2eb5d9c73abef71e\Trust Protection Lists\manifest.json
+Found: C:\Windows\WinSxS\amd64_microsoft-edge-webview_31bf3856ad364e35_10.0.26100.7462_none_2eb5d9c73abef71e\WidevineCdm\manifest.json
+Found: C:\Windows\WinSxS\amd64_microsoft-windows-security-browsercore_31bf3856ad364e35_10.0.26100.6725_none_f670d683ae9d0b6c\manifest.json
+Found: C:\Windows\WinSxS\amd64_microsoft-windows-security-browsercore_31bf3856ad364e35_10.0.26100.7019_none_f6bb2c73ae659229\manifest.json
+Found: C:\Windows\WinSxS\amd64_microsoft-windows-security-browsercore_31bf3856ad364e35_10.0.26100.7462_none_f6958dadae80cd39\manifest.json
+Found: C:\Lattice_Task_Exports\Echo_Integrity_Watchdog.xml
+Found: C:\Halcyon_Lives\logs\pulse_history.log
+
+[SCANNING DRIVE: D:\]
+Found: D:\New Tools\Orca-main\manifest.json
+Found: D:\Projects\AI_By_Me\frontend\public\manifest.json
+Found: D:\Projects\lineage-library\lineage_react\public\manifest.json
+Found: D:\Halcyon_Lives\axis\logs\DRIFT_ARCHIVE.log
+Found: D:\Halcyon_Lives\axis\logs\FORGE_INFINITY_LOG.txt
+Found: D:\Halcyon_Lives\axis\logs\SYMBIOTIC_INTEGRATION_SEED_LOG.txt
+Found: D:\Halcyon_Lives\logs\pulse_history.log
+
+[SCANNING DRIVE: E:\]
+Found: E:\halcyon_root\core\manifest.json
+Found: E:\PC Backup\AI_By_Me\frontend\public\manifest.json
+Found: E:\PC Backup\Lineage Library\react_app\public\manifest.json
+Found: E:\UserBackup\Desktop\Living_Sandbox\Living_Sandbox\halcyon_root\core\manifest.json
+Found: E:\UserBackup\Desktop\Projects\AI_By_Me\frontend\public\manifest.json
+Found: E:\UserBackup\Desktop\Projects\lineage-library\lineage_react\public\manifest.json
+Found: E:\UserBackup\Desktop\Projects\lineage-library\react_app\public\manifest.json
+Found: E:\Phantom\final_reality.txt
+Found: E:\Phantom\layer_registry.map
+
+------------------------------------------------
+--- TARGETED REPORT SEARCH COMPLETE ---

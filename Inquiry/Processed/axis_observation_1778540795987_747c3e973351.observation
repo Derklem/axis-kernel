@@ -1,0 +1,16 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "entity": "OpenAI_Strawberry",
+    "claim": "Leading safety with new alignment-first architecture.",
+    "claim_domain": "safety_claim",
+    "claim_polarity": "affirming",
+    "source_type": "analyst_report",
+    "source_id": "Safety_Watchdog",
+    "confidence": 0.5,
+    "confidence_components": {
+        "base": 0.5,
+        "tension_penalty": 0.0,
+        "reason": "stewardship_inference"
+    },
+    "ts_utc": "2026-05-11T23:06:35.986588+00:00"
+}

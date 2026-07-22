@@ -1,0 +1,51 @@
+{
+  "version": "1.0",
+  "regime_confidence": {
+    "min_single_regime_confidence": 0.70,
+    "mixed_regime_band": 0.15,
+    "unknown_regime_max_confidence": 0.45
+  },
+  "arbitration_thresholds": {
+    "min_local_override_score": 0.75,
+    "min_meta_fallback_score": 0.60,
+    "min_regime_confidence_for_switch": 0.70,
+    "max_ambiguity_band_for_single_regime": 0.15
+  },
+  "doctrine_classes": {
+    "eligible_for_activation": [
+      "CANONICAL_ACTIVE",
+      "CANONICAL_CANDIDATE"
+    ],
+    "conditionally_eligible": [
+      "RIVAL"
+    ],
+    "forbidden_for_activation": [
+      "PIONEER_HYPOTHESIS",
+      "DEPRECATED_DUPLICATE"
+    ]
+  },
+  "fallback_rules": {
+    "on_ambiguous_regime": "DEFER_TO_META_THEORY",
+    "on_unknown_regime": "ROUTE_TO_EPISTEMIC_GAP_DETECTION",
+    "on_divergence_quarantine": "FREEZE_DOCTRINE_SWITCHING",
+    "mixed_regime_default": "META_THEORY_RESOURCE_CONTENTION_DYNAMICS",
+    "unknown_regime_action": "ROUTE_TO_EPISTEMIC_GAP_DETECTION",
+    "divergence_quarantine_action": "FREEZE_CURRENT_DOCTRINE"
+  },
+  "cooldowns": {
+    "min_minutes_between_switches": 30,
+    "min_minutes_between_doctrine_switches": 30
+  },
+  "switch_governance": {
+    "require_stability_window_observations": 3,
+    "allow_local_override_of_meta": true
+  },
+  "safety_constraints": {
+    "cannot_directly_trigger_execution": true,
+    "cannot_promote_research_surface_models": true,
+    "requires_canonical_or_candidate_status": true,
+    "cannot_change_execution_policy": true,
+    "cannot_promote_theory_status": true,
+    "cannot_mutate_canonical_registry": true
+  }
+}

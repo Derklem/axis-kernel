@@ -1,0 +1,30 @@
+{
+    "cycle_count": 500,
+    "mutation_type": "CANDIDATE_QUARANTINED",
+    "target_id": "7077d23cec845a53df0c298f3f264776a30e0389a4c0364f63d6c00ae1aaa995",
+    "parent_receipt_head": "none",
+    "data": {
+        "entity": "Gauntlet_Test_Entity",
+        "claim": "If we test this anomaly, then it will succeed.",
+        "claim_domain": "general",
+        "source_id": "source_alpha",
+        "source_type": "external_handoff",
+        "artifact_type": "observation",
+        "batch_id": "none",
+        "provenance_note": "",
+        "confidence": 0.8,
+        "status": "pending",
+        "requires_supermajority": false,
+        "discovery_utc": "2026-07-21T22:54:43.234598+00:00",
+        "lineage": {
+            "node_id": "test_node",
+            "engine_version": "v_test",
+            "ontology_seal": "test_seal",
+            "node_attestation": "test_attest"
+        }
+    },
+    "status": "committed",
+    "ts_utc": "2026-07-21T22:54:43.234598+00:00",
+    "receipt_id": "model_delta_CANDIDATE_QUARANTINED_7077d23c_c1365bbd",
+    "causal_hash": "c1365bbdd47cd7b7de3aada732b742f9e671991cd031052ca97a77b56e30c003"
+}

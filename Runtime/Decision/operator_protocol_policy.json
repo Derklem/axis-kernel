@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "freshness_constraints": {
+    "default_signature_validity_seconds": 300,
+    "emergency_command_validity_seconds": 60,
+    "architect_override_validity_seconds": 3600
+  },
+  "contradiction_handling": {
+    "behavior_on_conflict": "HALT_AND_REQUIRE_RESOLUTION",
+    "allow_implicit_overwrite": false
+  },
+  "boundaries": {
+    "cannot_override_evidence_tier": true,
+    "requires_explicit_intent_schema": true
+  }
+}

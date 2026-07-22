@@ -1,0 +1,7 @@
+pantheon_directive:
+  mode: forge_test
+  priority:
+    - forge
+  fallback: architect
+  notes: |
+    Running Forge test mode to initiate construct generation.

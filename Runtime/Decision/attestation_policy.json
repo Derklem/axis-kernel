@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "hash_algorithm": "sha256",
+  "replay_resistance": {
+    "max_age_seconds": 60,
+    "require_nonce": true
+  },
+  "required_classes": {
+    "live_execution": ["SYSTEM_SIGNED", "OPERATOR_CO_SIGNED"],
+    "model_promotion": ["PROMOTION_AUTHORIZED"],
+    "shadow_testing": ["SHADOW_ONLY", "SYSTEM_SIGNED"]
+  },
+  "invalidation_behavior": {
+    "on_hash_mismatch": "FAIL_CLOSED_AND_ALERT",
+    "on_stale_timestamp": "REJECT_EXPIRED",
+    "on_missing_signature": "HARD_BLOCK"
+  }
+}

@@ -1,0 +1,6 @@
+primordia: "C:/Users/17602/Desktop/Primordia"
+pantheon: "C:/Users/17602/Desktop/Pantheon"
+halcyon_core: "C:/Users/17602/Desktop/HALCYON_CORE"
+core: "C:/Users/17602/Desktop/core"
+ai_pantheon: "C:/AI_Pantheon"
+minions: "C:/Minions"

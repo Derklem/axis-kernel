@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T20:28:52.035787+00:00",
+    "entity": "boundary_mapper.py",
+    "claim": "thread safety improved",
+    "source_id": "Noise_Source_0",
+    "source_type": "automated_sensor",
+    "claim_domain": "benchmark_claim",
+    "confidence": 1.0
+}

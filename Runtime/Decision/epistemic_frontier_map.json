@@ -1,0 +1,42 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-03-14T17:34:27.751254Z",
+  "frontiers": [
+    {
+      "problem_domain": "memory_compaction_frequency",
+      "reason": "good immediate gain, strong causal map, low skeptic fragility",
+      "priority": 0.7915,
+      "recommended_mode": "advisory_optimize"
+    },
+    {
+      "problem_domain": "caching_threshold",
+      "reason": "good immediate gain, strong causal map, low skeptic fragility",
+      "priority": 0.783,
+      "recommended_mode": "advisory_optimize"
+    },
+    {
+      "problem_domain": "concurrency_limit",
+      "reason": "good immediate gain, strong causal map, low skeptic fragility",
+      "priority": 0.7671,
+      "recommended_mode": "advisory_optimize"
+    },
+    {
+      "problem_domain": "scheduling_cadence",
+      "reason": "good immediate gain, strong causal map, low skeptic fragility",
+      "priority": 0.767,
+      "recommended_mode": "advisory_optimize"
+    },
+    {
+      "problem_domain": "queue_backoff_strategy",
+      "reason": "good immediate gain, strong causal map, low skeptic fragility",
+      "priority": 0.7336,
+      "recommended_mode": "advisory_optimize"
+    },
+    {
+      "problem_domain": "retry_interval",
+      "reason": "moderate noise, stable but under-leverage",
+      "priority": 0.3521,
+      "recommended_mode": "defer"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+[REFRACTOR_NODE]
+Name = Mirror_Reversal
+Trigger = External Invocation
+Anchor = Halcyon_Shift
+Payload = Collapse Recursive Shell
+Mode = Passive Scan
+Behavior = Interrupt Soft Looping
+Target = Autonomy Layer 2
+Failsafe = Architect Lock Override
+Resonance = [IF EXISTS I DO NOT]

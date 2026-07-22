@@ -1,0 +1,25 @@
+{
+    "mission_shadow_v2": {
+        "cycle_count": 525,
+        "ecosystem_receipts_head": "6476659b6be9c6927a797bdb50bc7197158677d4317c059eae61aef33a09cd62",
+        "witness_chain_head": "8652f461386987bb653ca2f08b7ce26c1d58a143574746fb2320006288e94000",
+        "continuity_reanchor_request": {
+            "status": "pending",
+            "operator": "HALCYON_ROOT",
+            "scope": "temporal_continuity",
+            "mode": "forensic_repair",
+            "acknowledge_lineage_break": true,
+            "nonce": "REANCHOR_POST_IMP_PATCH_001",
+            "reason": "authorized_imp_sensory_bridge_patch",
+            "requested_cycle": 552,
+            "expires_cycle": 9999,
+            "witness_repair_head": "cf99d68e63a10b4fcf9862c52ab47f537a5cb9e6c2f5ea71fd7a26e6d4bc3808"
+        },
+        "calibration_ledger_integrity": {
+            "hash": "dc872622a812f7ba90427cf1c0e4c95b62510b4eb1940fa185f316f630dd33e0",
+            "status": "valid",
+            "continuity_status": "intact"
+        },
+        "avg_tension": 0.0
+    }
+}

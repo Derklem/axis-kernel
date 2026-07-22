@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "optimization_domains": [
+    "retry_interval",
+    "concurrency_limit",
+    "caching_threshold",
+    "scheduling_cadence",
+    "memory_compaction_frequency",
+    "queue_backoff_strategy"
+  ],
+  "execution_mode": "ADVISORY_ONLY",
+  "requirements": {
+    "minimum_confidence_threshold": 0.60,
+    "require_simulation_proof": true,
+    "execution_requirement": "CO_SIGNER"
+  }
+}

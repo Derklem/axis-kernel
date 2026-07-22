@@ -1,0 +1,47 @@
+
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "policy_hash": { "type": "string" },
+    "schema_hash": { "type": "string" },
+    "builder_version": { "type": "string" },
+    "timestamp_utc": { "type": "number" },
+    "tasks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "candidate_id": { "type": "string" },
+          "priority_score": { "type": "number" },
+          "score_breakdown": {
+            "type": "object",
+            "additionalProperties": { "type": "number" }
+          },
+          "execution_mode": { "type": "string" }
+        },
+        "required": ["candidate_id", "priority_score", "score_breakdown", "execution_mode"],
+        "additionalProperties": false
+      }
+    },
+    "receipt_hashes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-f0-9]{64}$"
+      }
+    },
+    "receipts_root_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "receipts": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "required": ["policy_hash", "schema_hash", "builder_version", "timestamp_utc", "tasks", "receipt_hashes", "receipts_root_hash"],
+  "additionalProperties": false
+}

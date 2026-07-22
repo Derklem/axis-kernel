@@ -1,0 +1,15 @@
+﻿{
+    "timestamp_utc":  "2026-05-17T00:40:27.6573998Z",
+    "speaker":  "USER",
+    "constraints":  [
+                        "read_only",
+                        "no_cycle",
+                        "no_self_improvement",
+                        "no_refactor",
+                        "no_ingestion",
+                        "summarize_only",
+                        "no_state_mutation"
+                    ],
+    "question":  "What specific condition or metric should be repeatedly monitored before autonomous mutation is considered safe again?",
+    "message_type":  "bounded_read_only_inquiry"
+}

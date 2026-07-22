@@ -1,0 +1,14 @@
+{
+  "active_revisions": {},
+  "shadow_testing": {
+    "ec8adbd7-f087-4323-b7b2-de3ee5418a68": {
+      "component_type": "INTERACTION_STRENGTH",
+      "params": {
+        "latency_congestion_coefficient": 1.5
+      },
+      "observation_steps_remaining": 5,
+      "started_at": "2026-03-13T20:57:16.207092"
+    }
+  },
+  "quarantined": {}
+}

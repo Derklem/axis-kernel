@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-03-15T23:34:01Z",
+  "active_doctrine_before": "THEORY_A",
+  "active_doctrine_after": "THEORY_C",
+  "resolutions": [
+    {
+      "theory_id": "THEORY_A",
+      "action": "RETIRE",
+      "reason": "excessive_prediction_failures"
+    },
+    {
+      "theory_id": "THEORY_C",
+      "action": "PROMOTE",
+      "reason": "active_doctrine_retired",
+      "replaced_doctrine": "THEORY_A"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+﻿{
+    "version":  1,
+    "last_sync":  "2026-01-26T03:18:45.4462269Z",
+    "nodes":  [
+                  {
+                      "id":  "SAT-KID-001",
+                      "name":  "Sat-Kid-01",
+                      "ip":  "192.168.1.6",
+                      "status":  "ONLINE",
+                      "last_seen":  null,
+                      "operating_mode":  "NORMAL",
+                      "trust_score":  0.9,
+                      "symbology":  "ðŸ›ï¸âš“âš¡ðŸ›¡ï¸âš–ï¸"
+                  },
+                  {
+                      "id":  "SAT-KID-002",
+                      "name":  "Sat-Kid-02",
+                      "ip":  "192.168.1.7",
+                      "status":  "ONLINE",
+                      "last_seen":  null,
+                      "operating_mode":  "NORMAL",
+                      "trust_score":  0.9,
+                      "symbology":  "ðŸ›ï¸âš“âš¡ðŸ›¡ï¸âš–ï¸"
+                  },
+                  {
+                      "id":  "SAT-KID-003",
+                      "name":  "Sat-Kid-03",
+                      "ip":  "192.168.1.11",
+                      "status":  "ONLINE",
+                      "last_seen":  "2026-01-26T03:18:45.4462269Z",
+                      "operating_mode":  "NORMAL",
+                      "trust_score":  0.9,
+                      "symbology":  "ðŸ›ï¸âš“âš¡ðŸ›¡ï¸âš–ï¸"
+                  }
+              ],
+    "consensus_requirements":  {
+                                   "mode_transition":  2,
+                                   "high_risk_service":  2
+                               }
+}

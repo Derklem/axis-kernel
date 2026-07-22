@@ -1,0 +1,19 @@
+DECISION STRUCTURE v0.0.1
+
+input_signals: [
+  "log entropy",
+  "pattern frequency",
+  "construct echo",
+  "symbolic residue"
+]
+
+decision_logic {
+  if (signal_strength > threshold) {
+    action: "forge new construct"
+    write: "/constructs/new/"
+  }
+  else {
+    action: "sleep"
+    write: "/dreams/"
+  }
+}

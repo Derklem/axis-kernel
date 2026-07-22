@@ -1,0 +1,58 @@
+{
+    "version": "2026-01-27.v1",
+    "defaults": {
+        "risk_tier": "LOW",
+        "min_truth_status": "PLAUSIBLE",
+        "min_model_reliability": 0.6,
+        "requires_anchor": false,
+        "requires_shadow": false
+    },
+    "risk_tiers": {
+        "LOW": {
+            "description": "Benign / introspective / read-only actions",
+            "min_truth_status": "TENUOUS",
+            "min_model_reliability": 0.4,
+            "requires_shadow": false,
+            "requires_anchor": false
+        },
+        "MEDIUM": {
+            "description": "Narrative or local state mutation (non-enforcement)",
+            "min_truth_status": "PLAUSIBLE",
+            "min_model_reliability": 0.6,
+            "requires_shadow": true,
+            "requires_anchor": false
+        },
+        "HIGH": {
+            "description": "Enforcement, device control, external side effects",
+            "min_truth_status": "STRONG",
+            "min_model_reliability": 0.8,
+            "requires_shadow": true,
+            "requires_anchor": true
+        }
+    },
+    "capabilities": {
+        "LOCK_DEVICE": {
+            "risk_tier": "HIGH",
+            "tenant_overrides": {
+                "TENANT-ORYN": {
+                    "min_truth_status": "STRONG"
+                },
+                "TENANT-LINEAGE": {
+                    "risk_tier": "MEDIUM"
+                }
+            }
+        },
+        "TAKE_SCREENSHOT": {
+            "risk_tier": "LOW"
+        },
+        "KILL_PROCESS": {
+            "risk_tier": "HIGH"
+        },
+        "RUN_BATCH_SCRIPT": {
+            "risk_tier": "HIGH"
+        },
+        "UPDATE_LATTICE_CACHE": {
+            "risk_tier": "MEDIUM"
+        }
+    }
+}

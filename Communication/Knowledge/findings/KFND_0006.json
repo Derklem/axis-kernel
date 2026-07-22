@@ -1,0 +1,12 @@
+{
+  "finding_id": "KFND_0006",
+  "supersedes": "Knowledge/findings/KFND_0004.json",
+  "revision_reason": "The user elaborated significantly on their workflow, providing a rich set of engineering observations.",
+  "derived_from": [
+    "assessments/asm_018_discord.v6.json"
+  ],
+  "statement": "An AI/ML practitioner reported that frontier model context windows degrade heavily at ~60% of their 1M token limit in AI IDEs, requiring manual 'handoff prompts' to new sessions, reliance on strict state files (CLAUDE.md/README.md) for rehydration, external memory systems (claudemem), and extensive logging to maintain continuity.",
+  "finding_type": "OBSERVATIONAL_ENGINEERING",
+  "created_at": "2026-07-14T21:40:00Z",
+  "status": "SUPPORTED"
+}

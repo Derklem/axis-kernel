@@ -1,0 +1,29 @@
+﻿{
+    "version":  1,
+    "metric_id":  "METRIC-RETINA-001",
+    "last_updated_utc":  "2026-01-22T19:31:45Z",
+    "frames_total":  1,
+    "frames_highlighted":  1,
+    "last_source":  "camera_capture",
+    "last_frame_path":  "D:/Infinite/Retina/Frames/20260122_193145_cam.png",
+    "last_frame_tags":  [
+                            "room",
+                            "evening"
+                        ],
+    "status":  "active",
+    "alerts":  [
+                   "highlight_frame"
+               ],
+    "history":  [
+                    {
+                        "timestamp_utc":  "2026-01-22T19:31:45Z",
+                        "source":  "camera_capture",
+                        "bytes":  512345,
+                        "tags":  [
+                                     "room",
+                                     "evening"
+                                 ],
+                        "highlight":  true
+                    }
+                ]
+}

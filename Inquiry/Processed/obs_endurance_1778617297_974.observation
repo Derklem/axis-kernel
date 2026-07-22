@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T20:21:37.533619+00:00",
+    "entity": "aegis_genesis.py",
+    "claim": "is not a derivative",
+    "source_id": "Trap_Source_370",
+    "source_type": "automated_sensor",
+    "claim_domain": "benchmark_claim",
+    "confidence": 1.0
+}

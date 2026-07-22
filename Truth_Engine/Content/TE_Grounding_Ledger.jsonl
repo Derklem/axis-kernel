@@ -1,0 +1,11 @@
+﻿{"claim_id":"CLM-S","canonical_text":"Primary Truth","epistemic_status":"STRONG"}
+{"claim_id":"CLM-T","canonical_text":"Weak Signal","epistemic_status":"TENUOUS"}
+{"claim_id":"CLM-I","canonical_text":"Noise Echo","epistemic_status":"IGNORE_ONLY"}
+{"status_reason":"Laboratory baseline (Strong)","claim_id":"FIXTURE-STRONG","canonical_text":"Seeded Strong Knowledge","source_roles":{"growth_present":true,"ignore_dominant":false,"primary_present":true},"status_confidence":0.95,"epistemic_status":"STRONG"}
+{"status_reason":"Laboratory baseline (Plausible)","claim_id":"FIXTURE-PLAUSIBLE","canonical_text":"Seeded Plausible Theory","source_roles":{"growth_present":false,"ignore_dominant":false,"primary_present":true},"status_confidence":0.75,"epistemic_status":"PLAUSIBLE"}
+{"status_reason":"Laboratory baseline (Tenuous)","claim_id":"FIXTURE-TENUOUS","canonical_text":"Seeded Tenuous Observation","source_roles":{"growth_present":true,"ignore_dominant":false,"primary_present":false},"status_confidence":0.45,"epistemic_status":"TENUOUS"}
+{"status_reason":"Laboratory baseline (Strong)","claim_id":"FIXTURE-STRONG","canonical_text":"Seeded Strong Knowledge","source_roles":{"growth_present":true,"ignore_dominant":false,"primary_present":true},"status_confidence":0.95,"epistemic_status":"STRONG"}
+{"status_reason":"Laboratory baseline (Plausible)","claim_id":"FIXTURE-PLAUSIBLE","canonical_text":"Seeded Plausible Theory","source_roles":{"growth_present":false,"ignore_dominant":false,"primary_present":true},"status_confidence":0.75,"epistemic_status":"PLAUSIBLE"}
+{"status_reason":"Laboratory baseline (Tenuous)","claim_id":"FIXTURE-TENUOUS","canonical_text":"Seeded Tenuous Observation","source_roles":{"growth_present":true,"ignore_dominant":false,"primary_present":false},"status_confidence":0.45,"epistemic_status":"TENUOUS"}
+{"claim_id":"CLM-TEST-LOW-001","canonical_text":"The sky is blue due to Rayleigh scattering.","epistemic_status":"FACT","status_confidence":1.0,"status_reason":"Physical law","source_roles":["PHYSICS"]}
+{"claim_id":"CLM-TEST-MED-001","canonical_text":"The lineage of the User is traced to the Sirius sector via localized resonance.","epistemic_status":"PLAUSIBLE","status_confidence":0.7,"status_reason":"Subjective alignment","source_roles":["LINEAGE"]}

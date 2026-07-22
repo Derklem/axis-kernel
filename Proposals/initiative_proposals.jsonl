@@ -1,0 +1,63 @@
+{
+    "schema": "axis.proposals.v1",
+    "description": "Ledger of system-generated initiative proposals. NON-OPERATIVE.",
+    "entries": [
+        {
+            "proposal_id": "P-20260206-0001",
+            "ts_utc": "2026-02-06T20:41:00Z",
+            "category": "READ_ONLY",
+            "summary": "Add read-only git.status capability",
+            "rationale": "Improves situational awareness of repository cleanliness without modifying state; enables faster diagnosis of drift or uncommitted changes.",
+            "estimated_risk_units": 1,
+            "preconditions": [
+                "Policy Snapshot unchanged",
+                "Adapter sandbox allows repo paths under D:\\infinite\\*"
+            ],
+            "evidence_refs": [
+                "earth.describe",
+                "execution_analytics.json"
+            ],
+            "confidence": 0.76,
+            "scope": "PROPOSAL_ONLY",
+            "status": "ACCEPTED"
+        },
+        {
+            "proposal_id": "P-20260206-0002",
+            "ts_utc": "2026-02-06T20:41:00Z",
+            "category": "OBSERVATION",
+            "summary": "Add filesystem.search (read-only, sandboxed) for targeted discovery",
+            "rationale": "Reduces manual inspection time when locating configs/logs; read-only search preserves zero blast radius.",
+            "estimated_risk_units": 1,
+            "preconditions": [
+                "Search restricted to D:\\infinite\\*",
+                "No content reads beyond metadata unless explicitly requested"
+            ],
+            "evidence_refs": [
+                "earth.describe",
+                "execution_analytics.json"
+            ],
+            "confidence": 0.71,
+            "scope": "PROPOSAL_ONLY",
+            "status": "DEFERRED"
+        },
+        {
+            "proposal_id": "P-20260206-0003",
+            "ts_utc": "2026-02-06T20:41:00Z",
+            "category": "OBSERVATION",
+            "summary": "Add system.get_service_status (read-only) for health checks",
+            "rationale": "Provides lightweight health visibility (running/stopped) without control operations; complements telemetry.",
+            "estimated_risk_units": 1,
+            "preconditions": [
+                "Service queries are read-only",
+                "No start/stop/restart operations exposed"
+            ],
+            "evidence_refs": [
+                "earth.describe",
+                "execution_analytics.json"
+            ],
+            "confidence": 0.69,
+            "scope": "PROPOSAL_ONLY",
+            "status": "DEFERRED"
+        }
+    ]
+}

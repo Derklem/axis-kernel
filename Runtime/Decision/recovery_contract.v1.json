@@ -1,0 +1,8 @@
+{
+    "version":  "recovery_contract.v1",
+    "state_schema_version":  "state.v1",
+    "dag_version":  "recovery_dag.v1",
+    "preflight_version":  "preflight.v1",
+    "autorc_policy_version":  "autorc.v1",
+    "compatibility_mode":  "strict"
+}

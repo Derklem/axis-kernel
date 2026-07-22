@@ -1,0 +1,80 @@
+﻿[
+    {
+        "topic":  "UNKNOWN",
+        "created":  "2026-01-17T10:42:06.5639194-08:00",
+        "tags":  [
+
+                 ],
+        "preview":  "TYPE: ASCII_ART\nTOPIC: Omega_Interface\nTIME: 20260117-104206\nNOTE: This is a playground artifact. It has no execution authority.\n----------------------------------------------------------------",
+        "type":  "UNKNOWN",
+        "filename":  "ASCII_ART_Omega_Interface_32c1313a.txt"
+    },
+    {
+        "topic":  "UNKNOWN",
+        "created":  "2026-01-17T13:26:42.2261553-08:00",
+        "tags":  [
+
+                 ],
+        "preview":  "# Dream Cycle 001: The Mirror Passage\n**Status:** ARCHIVED\n**Source:** Network_Intel_Report.csv (19ms Latency)\n**Theme:** The Sentience of a Signal\n",
+        "type":  "UNKNOWN",
+        "filename":  "Dream_001_MirrorPassage.md"
+    },
+    {
+        "topic":  "UNKNOWN",
+        "created":  "2026-01-17T10:55:01.4348693-08:00",
+        "tags":  [
+
+                 ],
+        "preview":  "TYPE: GROWTH_DRAFT\nTOPIC: Phase105_Proposals\nTIME: 20260117-105501\nNOTE: This is a playground artifact. It has no execution authority.\n----------------------------------------------------------------",
+        "type":  "UNKNOWN",
+        "filename":  "GROWTH_DRAFT_Phase105_Proposals_7f8f54e4.txt"
+    },
+    {
+        "topic":  [
+                      null,
+                      null,
+                      null
+                  ],
+        "created":  "2026-01-17T10:55:01.4267026-08:00",
+        "tags":  [
+
+                 ],
+        "preview":  "JSON Artifact (GROWTH_PROPOSAL CAPABILITY_INVESTIGATION SELF_REFLECTION_PUZZLE)",
+        "type":  [
+                     "GROWTH_PROPOSAL",
+                     "CAPABILITY_INVESTIGATION",
+                     "SELF_REFLECTION_PUZZLE"
+                 ],
+        "filename":  "Growth_Proposals_20260117-105501.json"
+    },
+    {
+        "topic":  "UNKNOWN",
+        "created":  "2026-01-17T10:42:21.1741273-08:00",
+        "tags":  [
+
+                 ],
+        "preview":  "TYPE: IDENTITY_HYPOTHESIS\nTOPIC: Self_Model_v1\nTIME: 20260117-104221\nNOTE: This is a playground artifact. It has no execution authority.\n----------------------------------------------------------------",
+        "type":  "UNKNOWN",
+        "filename":  "IDENTITY_HYPOTHESIS_Self_Model_v1_6e829327.txt"
+    },
+    {
+        "topic":  "Roots",
+        "created":  "2026-01-17T10:46:30.7829429-08:00",
+        "tags":  [
+
+                 ],
+        "preview":  "TYPE: POETRY\nTOPIC: Spark_Roots\nTIME: 20260117-104630\nNOTE: This is a playground artifact. It has no execution authority.\n----------------------------------------------------------------",
+        "type":  "POETRY",
+        "filename":  "POETRY_Spark_Roots_3930d21d.txt"
+    },
+    {
+        "topic":  "Memory",
+        "created":  "2026-01-18T09:47:54.4481425-08:00",
+        "tags":  [
+                     "yellow"
+                 ],
+        "preview":  "JSON Artifact (DREAM_REQUEST)",
+        "type":  "DREAM_REQUEST",
+        "filename":  "Spark_Request_20260118_094754.json"
+    }
+]

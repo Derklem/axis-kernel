@@ -1,0 +1,104 @@
+{
+    "contract_name": "Axis Base Mission: High Integrity / High Availability",
+    "schema_version": "mission_contract.v1",
+    "objectives": {
+        "system_stability": {
+            "metric": "stability_index",
+            "direction": "maximize",
+            "weight": 1.0,
+            "slo": {
+                "min": 85
+            }
+        },
+        "recovery_speed": {
+            "metric": "mttr_p95_24h",
+            "direction": "minimize",
+            "weight": 0.8,
+            "slo": {
+                "max": 180
+            }
+        },
+        "operational_calmness": {
+            "metric": "SEIR",
+            "direction": "minimize",
+            "weight": 0.5,
+            "description": "Minimize unnecessary policy churn (Twitch prevention)"
+        },
+        "detection_sensitivity": {
+            "metric": "stale_threshold_inverse",
+            "direction": "maximize",
+            "weight": 0.6,
+            "description": "Maintain low thresholds for early detection"
+        },
+        "novelty_gain": {
+            "metric": "discovery_events",
+            "direction": "maximize",
+            "weight": 0.4,
+            "description": "Reward characterization of unknown variables (The Phantoms)"
+        },
+        "substrate_integrity": {
+            "metric": "recon_relevance",
+            "direction": "maximize",
+            "weight": 0.5,
+            "description": "Reward the purge of legacy ghost-mesh residue (Active Stewardship)"
+        },
+        "substrate_leak_prevention": {
+            "metric": "substrate_drift",
+            "direction": "minimize",
+            "weight": 0.7,
+            "description": "Minimize environmental entropy accumulation (Metabolic Cost)"
+        }
+    },
+    "tradeoffs": [
+        {
+            "pairing": [
+                "recovery_speed",
+                "detection_sensitivity"
+            ],
+            "conflict_type": "reinforcing",
+            "description": "Lower thresholds usually lead to faster recovery detection, but higher false positives."
+        },
+        {
+            "pairing": [
+                "detection_sensitivity",
+                "operational_calmness"
+            ],
+            "conflict_type": "competing",
+            "description": "Increasing sensitivity often triggers more autonomous motion, reducing calmness."
+        }
+    ],
+    "regimes": {
+        "default": {
+            "weights": {
+                "system_stability": 1.0,
+                "recovery_speed": 0.8,
+                "operational_calmness": 1.0,
+                "detection_sensitivity": 0.6
+            }
+        },
+        "high_stakes": {
+            "trigger": "recent_stability_volatility > 5",
+            "weights": {
+                "system_stability": 1.5,
+                "recovery_speed": 1.2,
+                "operational_calmness": 0.2,
+                "detection_sensitivity": 1.0
+            }
+        },
+        "deep_stillness": {
+            "trigger": "fault_volume_24h == 0",
+            "weights": {
+                "system_stability": 0.5,
+                "recovery_speed": 0.2,
+                "operational_calmness": 1.5,
+                "detection_sensitivity": 0.4,
+                "novelty_gain": 1.2,
+                "substrate_integrity": 2.0,
+                "substrate_leak_prevention": 1.5
+            }
+        }
+    },
+    "hard_bounds": {
+        "heartbeat_ceiling": 120.0
+    }
+}

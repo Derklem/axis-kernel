@@ -1,0 +1,11 @@
+{
+  "correction_reason": "Receipt originally mislabeled sequence 4 as 'Educational robotics' instead of 'Municipal edge AI'. Also, deployment_state is formally 'SCHEDULED_UNVERIFIED' and 'deployed_at' is replaced by 'scheduled_at'. Associated with canonical payload set.",
+  "corrected_fields": {
+    "deployment_state": "SCHEDULED_UNVERIFIED",
+    "scheduled_at": "2026-07-14T21:55:00Z",
+    "status": "scheduled",
+    "payload_set_reference": "archived/EXP_020_X__payload_set_1.json",
+    "removed_fields": ["deployed_at"]
+  },
+  "sequence_4_category_correction": "Municipal edge AI"
+}

@@ -1,0 +1,108 @@
+﻿{
+    "violations":  [
+                       {
+                           "subject":  "AUTH_STATE",
+                           "desc":  "No valid L0 edge found",
+                           "l1_id":  "7ace712c2ef5ebb0",
+                           "id":  "384c9ac07e51452a",
+                           "issue":  "ORPHAN_NODE"
+                       },
+                       {
+                           "subject":  "Moltbook::ai",
+                           "desc":  "No valid L0 edge found",
+                           "l1_id":  "d70cd58bedf15c73",
+                           "id":  "89541aad1c0101dd",
+                           "issue":  "ORPHAN_NODE"
+                       },
+                       {
+                           "subject":  "Moltbook::tech",
+                           "desc":  "No valid L0 edge found",
+                           "l1_id":  "d49e9c304b20cc9e",
+                           "id":  "023ce52491abd915",
+                           "issue":  "ORPHAN_NODE"
+                       },
+                       {
+                           "subject":  "Moltbook::general",
+                           "desc":  "No valid L0 edge found",
+                           "l1_id":  "510ec45e350468b4",
+                           "id":  "27970d624becc62d",
+                           "issue":  "ORPHAN_NODE"
+                       },
+                       {
+                           "subject":  "Moltbook::blesstheirhearts",
+                           "desc":  "No valid L0 edge found",
+                           "l1_id":  "44d6d1408ba79673",
+                           "id":  "f3a279b82e0911a9",
+                           "issue":  "ORPHAN_NODE"
+                       },
+                       {
+                           "subject":  "Moltbook::agentautomation",
+                           "desc":  "No valid L0 edge found",
+                           "l1_id":  "0de4a86710be12d5",
+                           "id":  "f5d162242c12449c",
+                           "issue":  "ORPHAN_NODE"
+                       },
+                       {
+                           "subject":  "Moltbook::introductions",
+                           "desc":  "No valid L0 edge found",
+                           "l1_id":  "e29adbc2567fcfa1",
+                           "id":  "345d36337862e2d5",
+                           "issue":  "ORPHAN_NODE"
+                       },
+                       {
+                           "subject":  "Moltbook::ponderings",
+                           "desc":  "No valid L0 edge found",
+                           "l1_id":  "18d7f4f27f994da0",
+                           "id":  "b861accf90cec19d",
+                           "issue":  "ORPHAN_NODE"
+                       },
+                       {
+                           "subject":  "Moltbook::moltbook",
+                           "desc":  "No valid L0 edge found",
+                           "l1_id":  "c6d5acb0b7552a83",
+                           "id":  "42e52232f1fa8e35",
+                           "issue":  "ORPHAN_NODE"
+                       },
+                       {
+                           "subject":  "Moltbook::emergence",
+                           "desc":  "No valid L0 edge found",
+                           "l1_id":  "03ff4e937dbc9a73",
+                           "id":  "b827b1fe4afb2907",
+                           "issue":  "ORPHAN_NODE"
+                       },
+                       {
+                           "subject":  "Moltbook::souls",
+                           "desc":  "No valid L0 edge found",
+                           "l1_id":  "fc716a56b0bd492e",
+                           "id":  "4c912af6c70951e9",
+                           "issue":  "ORPHAN_NODE"
+                       },
+                       {
+                           "subject":  "Moltbook::aitools",
+                           "desc":  "No valid L0 edge found",
+                           "l1_id":  "ffac4ebfdb139ea9",
+                           "id":  "59863390b13f7fca",
+                           "issue":  "ORPHAN_NODE"
+                       },
+                       {
+                           "subject":  "Moltbook::builds",
+                           "desc":  "No valid L0 edge found",
+                           "l1_id":  "095db868309bd6a1",
+                           "id":  "1ca71483f541b706",
+                           "issue":  "ORPHAN_NODE"
+                       },
+                       {
+                           "subject":  "Moltbook::agentfinance",
+                           "desc":  "No valid L0 edge found",
+                           "l1_id":  "57e8735ab47988c1",
+                           "id":  "a6e3a73aa5b95f15",
+                           "issue":  "ORPHAN_NODE"
+                       }
+                   ],
+    "ts":  "2026-02-03T03:07:59.8372177Z",
+    "node_count_l0":  0,
+    "edge_count":  0,
+    "violation_count":  14,
+    "node_count_l1":  14,
+    "status":  "INTEGRITY_WARNING"
+}

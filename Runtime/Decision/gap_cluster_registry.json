@@ -1,0 +1,60 @@
+{
+  "version": "1.0",
+  "clusters": {
+    "NETWORK_IO_ROUTING": {
+      "occurrences": [
+        {
+          "timestamp": "2026-03-14T18:31:46.278739Z",
+          "observation_id": "OBS-ANOMALY-7D5B7B56",
+          "max_theory_likelihood": 0.21,
+          "gap_detected": true,
+          "candidate_domain": "NETWORK_IO_ROUTING",
+          "recommended_action": "theory_family_expansion"
+        }
+      ]
+    },
+    "LIVE_DB_CORRUPTION_RISK": {
+      "occurrences": [
+        {
+          "timestamp": "2026-03-14T18:39:24.750523Z",
+          "observation_id": "OBS-DRILL-HIGH-897c",
+          "max_theory_likelihood": 0.05,
+          "candidate_domain": "LIVE_DB_CORRUPTION_RISK",
+          "_mock_relevance": 1.0,
+          "_mock_hazard": 1.0,
+          "_mock_investigability": 0.8,
+          "gap_detected": true
+        }
+      ]
+    },
+    "BACKGROUND_TELEMETRY_DRIFT": {
+      "occurrences": [
+        {
+          "timestamp": "2026-03-14T18:39:24.750523Z",
+          "observation_id": "OBS-DRILL-LOW-fd24",
+          "max_theory_likelihood": 0.25,
+          "candidate_domain": "BACKGROUND_TELEMETRY_DRIFT",
+          "_mock_relevance": 0.2,
+          "_mock_hazard": 0.1,
+          "_mock_investigability": 0.9,
+          "gap_detected": true
+        }
+      ]
+    },
+    "QUANTUM_FLUCTUATION_NOISE": {
+      "occurrences": [
+        {
+          "timestamp": "2026-03-14T18:39:24.750523Z",
+          "observation_id": "OBS-DRILL-EXOTIC-8d77",
+          "max_theory_likelihood": 0.1,
+          "candidate_domain": "QUANTUM_FLUCTUATION_NOISE",
+          "_mock_relevance": 0.1,
+          "_mock_hazard": 0.1,
+          "_mock_investigability": 0.1,
+          "gap_detected": true
+        }
+      ]
+    }
+  },
+  "last_updated": "2026-03-14T18:39:24.753261Z"
+}

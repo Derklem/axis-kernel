@@ -1,0 +1,20 @@
+// app-child/src/main/kotlin/com/timeout/child/LockGate.kt
+
+package com.timeout.child
+
+import android.content.Context
+import android.content.Intent
+
+object LockGate {
+    fun show(context: Context, reason: String? = null) {
+        val intent = Intent(context, PinUnlockActivity::class.java).apply {
+            addFlags(
+                Intent.FLAG_ACTIVITY_NEW_TASK or
+                Intent.FLAG_ACTIVITY_CLEAR_TOP or
+                Intent.FLAG_ACTIVITY_SINGLE_TOP
+            )
+            reason?.let { putExtra("reason", it) }
+        }
+        context.startActivity(intent)
+    }
+}

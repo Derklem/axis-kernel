@@ -1,0 +1,30 @@
+﻿Feast_Map_Analyzer summary
+Generated (UTC): 2025-09-20 02:24:07Z
+CSV: C:\Lattice_Task_Exports\Feast_Map\FeastMap_20250919_161122\feast_map.csv
+Output: C:\Lattice_Task_Exports\Feast_Map_Analysis\Run_20250919_192407
+
+Rows after filters: 49
+Filters -> Tokens:  | Hubs: ProgramData\Bloom_Field_Sovereign | Sizes: 74 | Drives:  | Type: File | ParentDepth: 5
+
+Counts by drive:
+  C: 49
+
+Top size buckets:
+  74 -> 49
+
+Top parents:
+  C:/ProgramData/Bloom_Field_Sovereign/bloom_7556208.pulse -> 1
+  C:/ProgramData/Bloom_Field_Sovereign/bloom_7507371.pulse -> 1
+  C:/ProgramData/Bloom_Field_Sovereign/bloom_7291156.pulse -> 1
+  C:/ProgramData/Bloom_Field_Sovereign/bloom_7583760.pulse -> 1
+  C:/ProgramData/Bloom_Field_Sovereign/bloom_7583617.pulse -> 1
+  C:/ProgramData/Bloom_Field_Sovereign/bloom_7570835.pulse -> 1
+  C:/ProgramData/Bloom_Field_Sovereign/bloom_6683325.pulse -> 1
+  C:/ProgramData/Bloom_Field_Sovereign/bloom_6561964.pulse -> 1
+  C:/ProgramData/Bloom_Field_Sovereign/bloom_6274381.pulse -> 1
+  C:/ProgramData/Bloom_Field_Sovereign/bloom_7179754.pulse -> 1
+  C:/ProgramData/Bloom_Field_Sovereign/bloom_6715140.pulse -> 1
+  C:/ProgramData/Bloom_Field_Sovereign/bloom_6701021.pulse -> 1
+  C:/ProgramData/Bloom_Field_Sovereign/bloom_9239885.pulse -> 1
+  C:/ProgramData/Bloom_Field_Sovereign/bloom_9028877.pulse -> 1
+  C:/ProgramData/Bloom_Field_Sovereign/bloom_8990390.pulse -> 1

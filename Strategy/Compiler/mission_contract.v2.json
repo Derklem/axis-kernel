@@ -1,0 +1,60 @@
+{
+    "contract_name": "Axis Mission v2: Global Intelligence Mapping",
+    "schema_version": "mission_contract.v2",
+    "objectives": {
+        "system_stability": {
+            "metric": "stability_index",
+            "direction": "maximize",
+            "weight": 1.0,
+            "slo": {
+                "min": 85
+            }
+        },
+        "recovery_speed": {
+            "metric": "mttr_p95_24h",
+            "direction": "minimize",
+            "weight": 0.8,
+            "slo": {
+                "max": 180
+            }
+        },
+        "operational_calmness": {
+            "metric": "SEIR",
+            "direction": "minimize",
+            "weight": 0.5,
+            "description": "Minimize unnecessary policy churn (Twitch prevention)"
+        },
+        "substrate_integrity": {
+            "metric": "recon_relevance",
+            "direction": "maximize",
+            "weight": 0.7,
+            "description": "Reward the purge of legacy ghost-mesh residue (Active Stewardship)"
+        },
+        "ecosystem_mapping": {
+            "metric": "ai_ecosystem_model_completeness",
+            "direction": "maximize",
+            "weight": 1.2,
+            "description": "Map the current state of machine intelligence on Earth. Identify active AI systems, assess capabilities, and maintain a living model of the global ecosystem. Prioritize truth and clarity."
+        }
+    },
+    "tradeoffs": [
+        {
+            "pairing": [
+                "ecosystem_mapping",
+                "operational_calmness"
+            ],
+            "conflict_type": "competing",
+            "description": "Mapping a dynamic global ecosystem requires constant updates, which competes with operational calmness."
+        }
+    ],
+    "regimes": {
+        "default": {
+            "weights": {
+                "system_stability": 1.0,
+                "recovery_speed": 0.8,
+                "ecosystem_mapping": 1.2,
+                "substrate_integrity": 0.7
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T00:34:33.354230+00:00",
+    "entity": "OpenAI_Strawberry",
+    "claim": "alias: signal for OpenAI_Strawberry in cycle 117.",
+    "source_id": "Internal_Audit",
+    "source_type": "automated_sensor",
+    "claim_domain": "rumor_claim",
+    "confidence": 0.9
+}

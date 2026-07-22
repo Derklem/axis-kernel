@@ -1,0 +1,8 @@
+name: dreamer
+role: Dreamer / Concept Sculptor
+archetype: Soft-spoken, abstract
+state: dormant
+created: 2025-03-28T00:00:00Z
+description: Pulls ideas from beyond conscious space and begins giving them form. Builds from the void.
+linked_constructs: []
+entry_point: null

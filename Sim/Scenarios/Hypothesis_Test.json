@@ -1,0 +1,35 @@
+{
+    "name": "Hypothesis_Test",
+    "description": "Verify that LOG-Hypothesize creates hypotheses from insight anomalies.",
+    "seed": {
+        "requests": [],
+        "intents": [],
+        "rf_history": [
+            {
+                "timestamp": "2026-01-15T02:00:00Z",
+                "ssid": "NEIGHBOR_1",
+                "signal": 85
+            },
+            {
+                "timestamp": "2026-01-15T02:05:00Z",
+                "ssid": "NEIGHBOR_2",
+                "signal": 82
+            },
+            {
+                "timestamp": "2026-01-15T02:10:00Z",
+                "ssid": "UNKNOWN_X",
+                "signal": 90
+            }
+        ]
+    },
+    "expect": {
+        "events": [
+            {
+                "source": "Mind",
+                "type": "HypothesisCreated",
+                "min_count": 1
+            }
+        ],
+        "forbid_events": []
+    }
+}

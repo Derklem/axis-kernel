@@ -1,0 +1,18 @@
+{
+    "cycle_count": 505,
+    "mutation_type": "CODE_REFACTOR_APPLIED",
+    "target_id": "multi_objective_solver.py",
+    "parent_receipt_head": "e1ac0e538bfaa4ae96720ab1841fbddfe1891b50a9ada9c79e0c1ea09787036b",
+    "data": {
+        "action": "extract_method",
+        "pre_hash": "478d47d7f3bf29e2",
+        "post_hash": "04cccdfbdeea4113",
+        "backup_path": "multi_objective_solver.py.backup.1778642463",
+        "proposal_id": "REFACTOR-1778642463",
+        "delta_summary": "Decompose oversized function 'evaluate_proposal' (735 lines) to reduce structural debt."
+    },
+    "status": "committed",
+    "ts_utc": "2026-05-13T03:21:04.105116+00:00",
+    "receipt_id": "model_delta_CODE_REFACTOR_APPLIED_multi_ob_ee37e01e",
+    "causal_hash": "ee37e01eae09efffaae8bcfac0f186f6540a72e5ab36fe2d8eca0dc25867f5a9"
+}

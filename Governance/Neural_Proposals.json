@@ -1,0 +1,221 @@
+﻿{
+    "version":  1,
+    "proposals":  [
+                      {
+                          "id":  "PROP-OPT-023046",
+                          "type":  "autonomy_optimization",
+                          "target":  "Autonomy_Budgets.json",
+                          "severity":  "medium",
+                          "status":  "pending_ratification",
+                          "reason":  "Optimized",
+                          "metric_basis":  {
+                                               "campaign_id":  "OPT-CAMPAIGN-20260126-023046"
+                                           },
+                          "suggested_patch":  {
+                                                  "autonomy_budgets.global.max_high_risk_executions":  {
+                                                                                                           "to":  6,
+                                                                                                           "from":  5
+                                                                                                       }
+                                              },
+                          "source":  "Optimizer",
+                          "timestamp":  "2026-01-26T02:30:46.8469500Z"
+                      },
+                      {
+                          "id":  "PROP-OPT-023047",
+                          "type":  "autonomy_optimization",
+                          "target":  "Autonomy_Budgets.json",
+                          "severity":  "medium",
+                          "status":  "pending_ratification",
+                          "reason":  "Optimized",
+                          "metric_basis":  {
+                                               "campaign_id":  "OPT-CAMPAIGN-20260126-023047"
+                                           },
+                          "suggested_patch":  {
+                                                  "autonomy_budgets.global.max_high_risk_executions":  {
+                                                                                                           "to":  6,
+                                                                                                           "from":  5
+                                                                                                       }
+                                              },
+                          "source":  "Optimizer",
+                          "timestamp":  "2026-01-26T02:30:47.0116686Z"
+                      },
+                      {
+                          "id":  "PROP-OPT-023125",
+                          "type":  "autonomy_optimization",
+                          "target":  "Autonomy_Budgets.json",
+                          "severity":  "medium",
+                          "status":  "pending_ratification",
+                          "reason":  "Optimized",
+                          "metric_basis":  {
+                                               "campaign_id":  "OPT-CAMPAIGN-20260126-023125"
+                                           },
+                          "suggested_patch":  {
+                                                  "autonomy_budgets.global.max_high_risk_executions":  {
+                                                                                                           "to":  6,
+                                                                                                           "from":  5
+                                                                                                       }
+                                              },
+                          "source":  "Optimizer",
+                          "timestamp":  "2026-01-26T02:31:25.7950728Z"
+                      },
+                      {
+                          "id":  "PROP-OPT-023125",
+                          "type":  "autonomy_optimization",
+                          "target":  "Autonomy_Budgets.json",
+                          "severity":  "medium",
+                          "status":  "pending_ratification",
+                          "reason":  "Optimized",
+                          "metric_basis":  {
+                                               "campaign_id":  "OPT-CAMPAIGN-20260126-023125"
+                                           },
+                          "suggested_patch":  {
+                                                  "autonomy_budgets.global.max_high_risk_executions":  {
+                                                                                                           "to":  6,
+                                                                                                           "from":  5
+                                                                                                       }
+                                              },
+                          "source":  "Optimizer",
+                          "timestamp":  "2026-01-26T02:31:25.9133434Z"
+                      },
+                      {
+                          "id":  "PROP-OPT-023142",
+                          "type":  "autonomy_optimization",
+                          "target":  "Autonomy_Budgets.json",
+                          "severity":  "medium",
+                          "status":  "pending_ratification",
+                          "reason":  "Optimized",
+                          "metric_basis":  {
+                                               "campaign_id":  "OPT-CAMPAIGN-20260126-023142"
+                                           },
+                          "suggested_patch":  {
+                                                  "autonomy_budgets.global.max_high_risk_executions":  {
+                                                                                                           "to":  6,
+                                                                                                           "from":  5
+                                                                                                       }
+                                              },
+                          "source":  "Optimizer",
+                          "timestamp":  "2026-01-26T02:31:42.9291836Z"
+                      },
+                      {
+                          "id":  "PROP-OPT-023143",
+                          "type":  "autonomy_optimization",
+                          "target":  "Autonomy_Budgets.json",
+                          "severity":  "medium",
+                          "status":  "pending_ratification",
+                          "reason":  "Optimized",
+                          "metric_basis":  {
+                                               "campaign_id":  "OPT-CAMPAIGN-20260126-023143"
+                                           },
+                          "suggested_patch":  {
+                                                  "autonomy_budgets.global.max_high_risk_executions":  {
+                                                                                                           "to":  6,
+                                                                                                           "from":  5
+                                                                                                       }
+                                              },
+                          "source":  "Optimizer",
+                          "timestamp":  "2026-01-26T02:31:43.0224858Z"
+                      },
+                      {
+                          "id":  "PROP-OPT-023156",
+                          "type":  "autonomy_optimization",
+                          "target":  "Autonomy_Budgets.json",
+                          "severity":  "medium",
+                          "status":  "pending_ratification",
+                          "reason":  "Optimized",
+                          "metric_basis":  {
+                                               "campaign_id":  "OPT-CAMPAIGN-20260126-023156"
+                                           },
+                          "suggested_patch":  {
+                                                  "autonomy_budgets.global.max_high_risk_executions":  {
+                                                                                                           "to":  6,
+                                                                                                           "from":  5
+                                                                                                       }
+                                              },
+                          "source":  "Optimizer",
+                          "timestamp":  "2026-01-26T02:31:56.4165886Z"
+                      },
+                      {
+                          "id":  "PROP-OPT-023156",
+                          "type":  "autonomy_optimization",
+                          "target":  "Autonomy_Budgets.json",
+                          "severity":  "medium",
+                          "status":  "pending_ratification",
+                          "reason":  "Optimized",
+                          "metric_basis":  {
+                                               "campaign_id":  "OPT-CAMPAIGN-20260126-023156"
+                                           },
+                          "suggested_patch":  {
+                                                  "autonomy_budgets.global.max_high_risk_executions":  {
+                                                                                                           "to":  6,
+                                                                                                           "from":  5
+                                                                                                       }
+                                              },
+                          "source":  "Optimizer",
+                          "timestamp":  "2026-01-26T02:31:56.5206214Z"
+                      },
+                      {
+                          "id":  "PROP-OPT-023240",
+                          "type":  "autonomy_optimization",
+                          "target":  "Autonomy_Budgets.json",
+                          "severity":  "medium",
+                          "status":  "ratified",
+                          "reason":  "Optimized",
+                          "metric_basis":  {
+                                               "campaign_id":  "OPT-CAMPAIGN-20260126-023240"
+                                           },
+                          "suggested_patch":  {
+                                                  "autonomy_budgets.global.max_high_risk_executions":  {
+                                                                                                           "to":  6,
+                                                                                                           "from":  5
+                                                                                                       }
+                                              },
+                          "source":  "Optimizer",
+                          "timestamp":  "2026-01-26T02:32:40.5016798Z"
+                      },
+                      {
+                          "id":  "PROP-OPT-023240",
+                          "type":  "autonomy_optimization",
+                          "target":  "Autonomy_Budgets.json",
+                          "severity":  "medium",
+                          "status":  "pending_ratification",
+                          "reason":  "Optimized",
+                          "metric_basis":  {
+                                               "campaign_id":  "OPT-CAMPAIGN-20260126-023240"
+                                           },
+                          "suggested_patch":  {
+                                                  "autonomy_budgets.global.max_high_risk_executions":  {
+                                                                                                           "to":  6,
+                                                                                                           "from":  5
+                                                                                                       }
+                                              },
+                          "source":  "Optimizer",
+                          "timestamp":  "2026-01-26T02:32:40.6153967Z"
+                      },
+                      {
+                          "id":  "PROP-MODE-CAUTIOUS-030510",
+                          "type":  "autonomy_optimization",
+                          "target":  "Autonomy_Budgets.json",
+                          "severity":  "medium",
+                          "status":  "pending_ratification",
+                          "reason":  "Manual Mode Shift: Transition to CAUTIOUS",
+                          "explanation":  "Operating mode changed from NORMAL to CAUTIOUS. Restrictive risk offsets. Lower autonomy budgets. High trust requirements.",
+                          "metric_basis":  {
+                                               "target_mode":  "CAUTIOUS",
+                                               "source":  "Mode_Manager"
+                                           },
+                          "suggested_patch":  {
+                                                  "autonomy_budgets.global.max_high_risk_executions":  {
+                                                                                                           "to":  2
+                                                                                                       },
+                                                  "trust_policies.global.min_required_trust":  {
+                                                                                                   "to":  0.8
+                                                                                               },
+                                                  "autonomy_budgets.global.total_risk_limit":  {
+                                                                                                   "to":  5.0
+                                                                                               }
+                                              },
+                          "source":  "Mode_Manager",
+                          "timestamp":  "2026-01-26T03:05:10.5865197Z"
+                      }
+                  ]
+}

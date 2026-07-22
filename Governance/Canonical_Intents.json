@@ -1,0 +1,123 @@
+{
+    "meta": {
+        "version": "1.0",
+        "status": "RATIFIED",
+        "ratified_by": "USER",
+        "lock_level": "SEMANTIC_FREEZE"
+    },
+    "intents": {
+        "CHANGE_AUTONOMY_MODE": {
+            "id": "INT-001",
+            "description": "Adjust the system's autonomy level.",
+            "parameters": {
+                "mode": {
+                    "type": "enum",
+                    "values": [
+                        "OBSERVE_ONLY",
+                        "CAUTIOUS",
+                        "NORMAL",
+                        "AGGRESSIVE"
+                    ],
+                    "required": true
+                }
+            },
+            "risk_profile": {
+                "OBSERVE_ONLY": "LOW",
+                "CAUTIOUS": "LOW",
+                "NORMAL": "MEDIUM",
+                "AGGRESSIVE": "HIGH"
+            }
+        },
+        "ADJUST_RESOURCE_LIMIT": {
+            "id": "INT-002",
+            "description": "Modify resource allocation limits for system components.",
+            "parameters": {
+                "component": {
+                    "type": "string",
+                    "required": false
+                },
+                "metric": {
+                    "type": "enum",
+                    "values": [
+                        "memory_mb",
+                        "cpu_percent"
+                    ],
+                    "required": true
+                },
+                "direction": {
+                    "type": "enum",
+                    "values": [
+                        "INCREASE",
+                        "DECREASE"
+                    ],
+                    "required": true
+                },
+                "amount_percent": {
+                    "type": "integer",
+                    "min": 1,
+                    "max": 20,
+                    "default": 10
+                }
+            },
+            "risk_profile": "MEDIUM"
+        },
+        "REQUEST_CAPABILITY": {
+            "id": "INT-003",
+            "description": "Request permission to use a specific tool or subsystem.",
+            "parameters": {
+                "capability_id": {
+                    "type": "string",
+                    "required": true
+                },
+                "duration_minutes": {
+                    "type": "integer",
+                    "default": 60
+                }
+            },
+            "risk_profile": "VARIES"
+        },
+        "RATIFY_PROPOSAL": {
+            "id": "INT-004",
+            "description": "Formally approve a pending governance proposal.",
+            "parameters": {
+                "proposal_id": {
+                    "type": "string",
+                    "required": true
+                },
+                "decision": {
+                    "type": "enum",
+                    "values": [
+                        "APPROVE",
+                        "REJECT"
+                    ],
+                    "required": true
+                },
+                "note": {
+                    "type": "string",
+                    "required": false
+                }
+            },
+            "risk_profile": "HIGH"
+        },
+        "UPDATE_ROADMAP": {
+            "id": "INT-005",
+            "description": "Add or modify a phase in the strategic task list.",
+            "parameters": {
+                "phase_name": {
+                    "type": "string",
+                    "required": true
+                },
+                "action": {
+                    "type": "enum",
+                    "values": [
+                        "ADD",
+                        "MODIFY",
+                        "COMPLETE"
+                    ],
+                    "required": true
+                }
+            },
+            "risk_profile": "LOW"
+        }
+    }
+}

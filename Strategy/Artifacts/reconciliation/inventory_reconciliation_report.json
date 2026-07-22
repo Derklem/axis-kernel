@@ -1,0 +1,767 @@
+{
+  "schema_version": "reconciliation.v1",
+  "ts_utc": "2026-04-16T20:08:56.789403+00:00",
+  "audit_scope": "PHANTOM_GHOST_MESH_RECONCILIATION",
+  "contract": "FORENSIC_READ_ONLY",
+  "findings": [
+    {
+      "pid": 1800,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "command_line": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe Warehouse\\adaptive_synthesizer.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\adaptive_synthesizer.py",
+      "source_hash": "68767e359d0088544500fd4e2c9f755ac57887233d8af0618b0597704ab45df2",
+      "classification": "authorized_active_extension",
+      "role_definition": "unknown",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: adaptive_synthesizer.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 2072,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "command_line": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe Warehouse\\librarian_mapper.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\librarian_mapper.py",
+      "source_hash": "063190fd92185668ce513a87c4cf91787627e499b4c98a12d4c65b96cc379d7a",
+      "classification": "authorized_active_extension",
+      "role_definition": "Memory/Knowledge mapping",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: librarian_mapper.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 2376,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe",
+      "command_line": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe Warehouse\\stewardship_engine.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\stewardship_engine.py",
+      "source_hash": "869773a56d1067abd77cc8bd7c9783f9a2c774c97f44629b1dbab58fba711cff",
+      "classification": "authorized_active_extension",
+      "role_definition": "unknown",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: stewardship_engine.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 4044,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe",
+      "command_line": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe Warehouse\\librarian_mapper.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\librarian_mapper.py",
+      "source_hash": "063190fd92185668ce513a87c4cf91787627e499b4c98a12d4c65b96cc379d7a",
+      "classification": "authorized_active_extension",
+      "role_definition": "Memory/Knowledge mapping",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: librarian_mapper.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 4436,
+      "process_identity": "powershell.exe",
+      "executable_path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "command_line": "powershell -Command python d:\\infinite\\Warehouse\\forensic_auditor.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\python d:\\infinite\\Warehouse\\forensic_auditor.py",
+      "source_hash": null,
+      "classification": "legacy_orphan",
+      "role_definition": "unknown",
+      "confidence_score": 0.4,
+      "evidence": [
+        "Matched CMDLINE pattern: forensic_auditor.py",
+        "Active process status: running",
+        "Source file present: False"
+      ]
+    },
+    {
+      "pid": 6852,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe",
+      "command_line": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe Warehouse\\relevance_mapper.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\relevance_mapper.py",
+      "source_hash": "143523a93fd013c71dbf2d376f569b92e7d32a054401088f2090727e32abcc25",
+      "classification": "authorized_active_extension",
+      "role_definition": "unknown",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: relevance_mapper.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 6956,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "command_line": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe Warehouse\\relevance_memory_processor.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\relevance_memory_processor.py",
+      "source_hash": "ff35ebe3b5b058309f3f358de38766e7d5dc525cba8f88943ea2371d79ac72f9",
+      "classification": "authorized_active_extension",
+      "role_definition": "unknown",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: relevance_memory_processor.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 7136,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "command_line": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe Warehouse\\domain_calibrator.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\domain_calibrator.py",
+      "source_hash": "d871bfd5add86f8b364e4301d51644dbfe6a6a5fae854ad1c6281f0a46d35cb6",
+      "classification": "authorized_active_extension",
+      "role_definition": "unknown",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: domain_calibrator.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 8400,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "command_line": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe Warehouse\\boundary_mapper.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\boundary_mapper.py",
+      "source_hash": "cee1250eb7be5c241671ac5dd29817abfd64a40954ba57161329cf0828441bdd",
+      "classification": "authorized_active_extension",
+      "role_definition": "unknown",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: boundary_mapper.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 8668,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe",
+      "command_line": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe Warehouse\\adaptive_synthesizer.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\adaptive_synthesizer.py",
+      "source_hash": "68767e359d0088544500fd4e2c9f755ac57887233d8af0618b0597704ab45df2",
+      "classification": "authorized_active_extension",
+      "role_definition": "unknown",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: adaptive_synthesizer.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 9072,
+      "process_identity": "powershell.exe",
+      "executable_path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "command_line": "powershell -Command python nexus_watchdog_v2.py",
+      "owning_runtime": "Core",
+      "source_module_path": "d:\\infinite\\python nexus_watchdog_v2.py",
+      "source_hash": null,
+      "classification": "legacy_orphan",
+      "role_definition": "Supervisor/Root",
+      "confidence_score": 0.4,
+      "evidence": [
+        "Matched CMDLINE pattern: python nexus_watchdog_v2.py",
+        "Active process status: running",
+        "Source file present: False"
+      ]
+    },
+    {
+      "pid": 9172,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "command_line": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe Warehouse\\reconciliation_engine.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\reconciliation_engine.py",
+      "source_hash": "c4682824aabb0f9e0c43d9cc668e612039fa8b7708578d82e34d2ac4aa12a8cb",
+      "classification": "authorized_active_extension",
+      "role_definition": "unknown",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: reconciliation_engine.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 9340,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe",
+      "command_line": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe Warehouse\\hypothesis_reducer.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\hypothesis_reducer.py",
+      "source_hash": "7668d4aa6bb8f5f94f34ccb63910efaf2baa252f5f87f90dec89e29ffb4fc659",
+      "classification": "authorized_active_extension",
+      "role_definition": "unknown",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: hypothesis_reducer.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 9416,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe",
+      "command_line": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe Warehouse\\question_generator.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\question_generator.py",
+      "source_hash": "d0d646528f216888cbc5af46e356dc2cc9797da37d8507ae03ca1c9fefdd57bd",
+      "classification": "authorized_active_extension",
+      "role_definition": "unknown",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: question_generator.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 10552,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "command_line": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe Warehouse\\relevance_mapper.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\relevance_mapper.py",
+      "source_hash": "143523a93fd013c71dbf2d376f569b92e7d32a054401088f2090727e32abcc25",
+      "classification": "authorized_active_extension",
+      "role_definition": "unknown",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: relevance_mapper.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 10616,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "command_line": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe Warehouse\\relevance_memory.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\relevance_memory.py",
+      "source_hash": "6bd12711fa57f9945219a8f632a27f6ca658bbb0109226f78521a18959156ed5",
+      "classification": "authorized_active_extension",
+      "role_definition": "unknown",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: relevance_memory.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 10748,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe",
+      "command_line": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe Warehouse\\boundary_mapper.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\boundary_mapper.py",
+      "source_hash": "cee1250eb7be5c241671ac5dd29817abfd64a40954ba57161329cf0828441bdd",
+      "classification": "authorized_active_extension",
+      "role_definition": "unknown",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: boundary_mapper.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 11364,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe",
+      "command_line": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe Warehouse\\execution_trust_calibrator.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\execution_trust_calibrator.py",
+      "source_hash": "8fbe78ccd79b10c75b34696b910d35a057a9f17752e15c4cdbdc9842dd7ea0d4",
+      "classification": "authorized_active_extension",
+      "role_definition": "unknown",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: execution_trust_calibrator.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 12284,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe",
+      "command_line": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe Warehouse\\meaning_stability.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\meaning_stability.py",
+      "source_hash": "cc70e6802ad04c3bfc4cc4e1f28b23fd061978acf50a2e4bb50c51a35644b672",
+      "classification": "authorized_active_extension",
+      "role_definition": "Actuation/Gatekeeping",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: meaning_stability.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 12980,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe",
+      "command_line": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe Warehouse\\approval_memory.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\approval_memory.py",
+      "source_hash": "8a35518da57813ecbcbacb05d92139ee2486d86c8e005276584299a1850a5d58",
+      "classification": "authorized_active_extension",
+      "role_definition": "unknown",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: approval_memory.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 13572,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "command_line": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe Warehouse\\curiosity_engine.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\curiosity_engine.py",
+      "source_hash": "1806cec4c0ae8576476eeafe76568f7435e3aa7c19bbab7c09b0abb5bb50391d",
+      "classification": "authorized_active_extension",
+      "role_definition": "Discovery/Interrogation",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: curiosity_engine.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 14724,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe",
+      "command_line": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe Warehouse\\domain_calibrator.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\domain_calibrator.py",
+      "source_hash": "d871bfd5add86f8b364e4301d51644dbfe6a6a5fae854ad1c6281f0a46d35cb6",
+      "classification": "authorized_active_extension",
+      "role_definition": "unknown",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: domain_calibrator.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 14976,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "command_line": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe Warehouse\\question_memory.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\question_memory.py",
+      "source_hash": "7639bf5e16fe899555cad4ba5469f26b43b46d6fb2695a67785d52f7b0695d72",
+      "classification": "authorized_active_extension",
+      "role_definition": "unknown",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: question_memory.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 15096,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe",
+      "command_line": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe Warehouse\\relevance_memory_processor.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\relevance_memory_processor.py",
+      "source_hash": "ff35ebe3b5b058309f3f358de38766e7d5dc525cba8f88943ea2371d79ac72f9",
+      "classification": "authorized_active_extension",
+      "role_definition": "unknown",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: relevance_memory_processor.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 15600,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "command_line": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe Warehouse\\stewardship_engine.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\stewardship_engine.py",
+      "source_hash": "869773a56d1067abd77cc8bd7c9783f9a2c774c97f44629b1dbab58fba711cff",
+      "classification": "authorized_active_extension",
+      "role_definition": "unknown",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: stewardship_engine.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 16136,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "command_line": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe d:\\infinite\\Warehouse\\forensic_auditor.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\forensic_auditor.py",
+      "source_hash": "fba041d54b201a62bb8fa3267b697c144979b13746e35a0ac850184732b5536c",
+      "classification": "authorized_active_extension",
+      "role_definition": "unknown",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: forensic_auditor.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 16268,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "command_line": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe Warehouse\\meaning_stability.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\meaning_stability.py",
+      "source_hash": "cc70e6802ad04c3bfc4cc4e1f28b23fd061978acf50a2e4bb50c51a35644b672",
+      "classification": "authorized_active_extension",
+      "role_definition": "Actuation/Gatekeeping",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: meaning_stability.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 16708,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe",
+      "command_line": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe Warehouse\\curiosity_engine.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\curiosity_engine.py",
+      "source_hash": "1806cec4c0ae8576476eeafe76568f7435e3aa7c19bbab7c09b0abb5bb50391d",
+      "classification": "authorized_active_extension",
+      "role_definition": "Discovery/Interrogation",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: curiosity_engine.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 16948,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe",
+      "command_line": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe Warehouse\\question_memory.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\question_memory.py",
+      "source_hash": "7639bf5e16fe899555cad4ba5469f26b43b46d6fb2695a67785d52f7b0695d72",
+      "classification": "authorized_active_extension",
+      "role_definition": "unknown",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: question_memory.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 17148,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "command_line": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe Warehouse\\execution_trust_calibrator.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\execution_trust_calibrator.py",
+      "source_hash": "8fbe78ccd79b10c75b34696b910d35a057a9f17752e15c4cdbdc9842dd7ea0d4",
+      "classification": "authorized_active_extension",
+      "role_definition": "unknown",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: execution_trust_calibrator.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 17564,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe",
+      "command_line": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe Warehouse\\execution_dryrun.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\execution_dryrun.py",
+      "source_hash": "3566c9718bf631dc305070db9f98efcf97accefc17158a625b386465a96da199",
+      "classification": "authorized_active_extension",
+      "role_definition": "unknown",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: execution_dryrun.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 17700,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "command_line": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe Warehouse\\hypothesis_reducer.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\hypothesis_reducer.py",
+      "source_hash": "7668d4aa6bb8f5f94f34ccb63910efaf2baa252f5f87f90dec89e29ffb4fc659",
+      "classification": "authorized_active_extension",
+      "role_definition": "unknown",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: hypothesis_reducer.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 18264,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "command_line": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe nexus_watchdog_v2.py",
+      "owning_runtime": "Core",
+      "source_module_path": "d:\\infinite\\nexus_watchdog_v2.py",
+      "source_hash": "fa60a4a766e0743815fff2ad8700e3164e57053edc28d2655fb881f3eebc2b61",
+      "classification": "authorized_active_extension",
+      "role_definition": "Supervisor/Root",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: nexus_watchdog_v2.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 18448,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "command_line": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe Warehouse\\stewardship_executor.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\stewardship_executor.py",
+      "source_hash": "0b395e4516ed5db19bffeeafc9b36fa11719d5f5800a95aa44004046d0b822db",
+      "classification": "authorized_active_extension",
+      "role_definition": "unknown",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: stewardship_executor.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 18468,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "command_line": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe Warehouse\\approval_memory.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\approval_memory.py",
+      "source_hash": "8a35518da57813ecbcbacb05d92139ee2486d86c8e005276584299a1850a5d58",
+      "classification": "authorized_active_extension",
+      "role_definition": "unknown",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: approval_memory.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 18556,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe",
+      "command_line": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe Warehouse\\execution_gatekeeper.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\execution_gatekeeper.py",
+      "source_hash": "4b0d69326796a14e0ab4259ed10a64fb0bfeb0f4ff04697c768ef788143a5e31",
+      "classification": "authorized_active_extension",
+      "role_definition": "unknown",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: execution_gatekeeper.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 18868,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe",
+      "command_line": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe Warehouse\\reconciliation_engine.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\reconciliation_engine.py",
+      "source_hash": "c4682824aabb0f9e0c43d9cc668e612039fa8b7708578d82e34d2ac4aa12a8cb",
+      "classification": "authorized_active_extension",
+      "role_definition": "unknown",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: reconciliation_engine.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 18872,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "command_line": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe Warehouse\\execution_gatekeeper.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\execution_gatekeeper.py",
+      "source_hash": "4b0d69326796a14e0ab4259ed10a64fb0bfeb0f4ff04697c768ef788143a5e31",
+      "classification": "authorized_active_extension",
+      "role_definition": "unknown",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: execution_gatekeeper.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 18908,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe",
+      "command_line": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe C:\\Users\\17602\\Desktop\\ai_by_me_public\\web_api_light.py",
+      "owning_runtime": "Core",
+      "source_module_path": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\web_api_light.py",
+      "source_hash": "a4964ff7ef5227fe404539d8ed9846b354112c6207ff9caeb5d12b291efd264d",
+      "classification": "authorized_active_extension",
+      "role_definition": "Interface/Observatory",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: web_api_light.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 18932,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "command_line": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe Warehouse\\execution_dryrun.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\execution_dryrun.py",
+      "source_hash": "3566c9718bf631dc305070db9f98efcf97accefc17158a625b386465a96da199",
+      "classification": "authorized_active_extension",
+      "role_definition": "unknown",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: execution_dryrun.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 18976,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe",
+      "command_line": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe Warehouse\\relevance_memory.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\relevance_memory.py",
+      "source_hash": "6bd12711fa57f9945219a8f632a27f6ca658bbb0109226f78521a18959156ed5",
+      "classification": "authorized_active_extension",
+      "role_definition": "unknown",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: relevance_memory.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 19016,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe",
+      "command_line": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\.venv\\Scripts\\python.exe Warehouse\\stewardship_executor.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\stewardship_executor.py",
+      "source_hash": "0b395e4516ed5db19bffeeafc9b36fa11719d5f5800a95aa44004046d0b822db",
+      "classification": "authorized_active_extension",
+      "role_definition": "unknown",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: stewardship_executor.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 19084,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "command_line": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe Warehouse\\question_generator.py",
+      "owning_runtime": "Warehouse",
+      "source_module_path": "d:\\infinite\\Warehouse\\question_generator.py",
+      "source_hash": "d0d646528f216888cbc5af46e356dc2cc9797da37d8507ae03ca1c9fefdd57bd",
+      "classification": "authorized_active_extension",
+      "role_definition": "unknown",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: question_generator.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    },
+    {
+      "pid": 19264,
+      "process_identity": "python.exe",
+      "executable_path": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "command_line": "C:\\Users\\Halcy\\AppData\\Local\\Programs\\Python\\Python311\\python.exe C:\\Users\\17602\\Desktop\\ai_by_me_public\\web_api_light.py",
+      "owning_runtime": "Core",
+      "source_module_path": "C:\\Users\\17602\\Desktop\\ai_by_me_public\\web_api_light.py",
+      "source_hash": "a4964ff7ef5227fe404539d8ed9846b354112c6207ff9caeb5d12b291efd264d",
+      "classification": "authorized_active_extension",
+      "role_definition": "Interface/Observatory",
+      "confidence_score": 0.95,
+      "evidence": [
+        "Matched CMDLINE pattern: web_api_light.py",
+        "Active process status: running",
+        "Source file present: True"
+      ]
+    }
+  ],
+  "summary": {
+    "total_anomalies": 44,
+    "resolved_to_source": 42,
+    "ambiguous": 0,
+    "orphans": 2
+  },
+  "recommendations": {
+    "action": "RECONCILE_INVENTORY",
+    "justification": "All 21 phantoms resolve to verified Warehouse source modules. System is functionally coherent but inventory-fragmented.",
+    "requires_human_approval": true
+  }
+}

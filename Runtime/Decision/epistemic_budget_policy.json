@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "global_budget_caps": {
+    "max_concurrent_unknown_domains": 5,
+    "max_high_priority_unknowns": 2,
+    "max_budget_fraction_for_unknowns": 0.35
+  },
+  "allocation_weights": {
+    "explanatory_severity": 0.30,
+    "operational_relevance": 0.25,
+    "recurrence_density": 0.20,
+    "hazard_potential": 0.15,
+    "investigability": 0.10
+  },
+  "default_actions": {
+    "high_score_threshold": 0.75,
+    "medium_score_threshold": 0.40
+  },
+  "last_updated": "2026-03-14T11:40:00Z"
+}

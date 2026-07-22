@@ -1,0 +1,1 @@
+while ($true) { $data = @{ meta = @{ timestamp = (Get-Date).ToUniversalTime().ToString("o") }; status = @{ status = "ok" } }; $data | ConvertTo-Json -Depth 5 | Set-Content -Path D:\Infinite\Infinity\Runtime\Heartbeat\Heartbeat.json; Start-Sleep -Seconds 10 }

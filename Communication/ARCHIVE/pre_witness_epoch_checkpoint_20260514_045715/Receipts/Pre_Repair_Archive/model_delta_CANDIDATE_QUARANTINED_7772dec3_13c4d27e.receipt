@@ -1,0 +1,22 @@
+{
+    "cycle_count": 489,
+    "mutation_type": "CANDIDATE_QUARANTINED",
+    "target_id": "7772dec37f96d0981bc983f4e4a3d8bb8772298bb18eea1f7c12f62793bb1ae9",
+    "parent_receipt_head": "eba9c7c6bd0fc9554bf85ec2d8400b80adaf3c8a735491547d061c2b29224c83",
+    "data": {
+        "entity": "coordinated_reconciliation_engine.py",
+        "claim": "appears stable but was previously redundant",
+        "claim_domain": "benchmark_claim",
+        "source_id": "Trap_Source_490",
+        "source_type": "automated_sensor",
+        "artifact_type": "ecosystem_observation",
+        "batch_id": "none",
+        "provenance_note": "",
+        "confidence": 1.0,
+        "discovery_utc": "2026-05-12T20:40:11.407768+00:00"
+    },
+    "status": "committed",
+    "ts_utc": "2026-05-12T20:40:11.407768+00:00",
+    "receipt_id": "model_delta_CANDIDATE_QUARANTINED_7772dec3_13c4d27e",
+    "causal_hash": "13c4d27ec41c46ae6afd78877cc07c9236872df37ed15175f9010b16bbc323c3"
+}

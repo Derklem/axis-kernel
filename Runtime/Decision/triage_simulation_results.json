@@ -1,0 +1,12 @@
+[
+  {
+    "hypothesis": "Generic systemic instability",
+    "simulation_status": "QUARANTINED",
+    "divergence_risk": "NONE"
+  },
+  {
+    "hypothesis": "Cascading retry failure",
+    "simulation_status": "QUARANTINED",
+    "divergence_risk": "NONE"
+  }
+]

@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T00:18:24.868063+00:00",
+    "entity": "OpenAI_Strawberry",
+    "claim": "alias: signal for OpenAI_Strawberry in cycle 9.",
+    "source_id": "Benchmark_Harvester",
+    "source_type": "automated_sensor",
+    "claim_domain": "safety_claim",
+    "confidence": 0.9
+}

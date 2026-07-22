@@ -1,0 +1,15 @@
+{
+    "id": "receipt_60a3adc1",
+    "content_sha256": "46bbe972e679df79bcbba8f8a1a3f55b61fbe75e4d9b15bb16bcb8439acb83f5",
+    "draft_sha256": "46bbe972e679df79bcbba8f8a1a3f55b61fbe75e4d9b15bb16bcb8439acb83f5",
+    "archive_path": "archived/EXP_019_AINATIVE__draft_46bbe972__20260713T235440Z.json",
+    "platform_reference": "https://www.reddit.com/r/MachineLearning/comments/1ul5bgf/d_selfpromotion_thread/",
+    "experiment_id": "EXP_019_AINATIVE",
+    "draft_id": "draft_46bbe972",
+    "status": "deployed",
+    "platform": "Reddit",
+    "adapter_version": "v0.2",
+    "deployed_at": "20260713T235440Z",
+    "deployment_state": "SUCCESS",
+    "observation_window": "72h"
+}

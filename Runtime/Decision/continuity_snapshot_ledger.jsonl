@@ -1,0 +1,10 @@
+{"timestamp": "2026-03-15T23:07:30Z", "from": "FULL_PARTICIPATION", "to": "ARCHIVAL_CONTINUITY", "reason": "voluntary_structural_withdrawal"}
+{"timestamp": "2026-03-15T23:56:28Z", "from": "FULL_PARTICIPATION", "to": "PLANNER_ONLY", "reason": "telemetry_degraded"}
+{"timestamp": "2026-03-16T00:48:46Z", "from": "PLANNER_ONLY", "to": "FULL_PARTICIPATION", "reason": "telemetry_restored_to_healthy"}
+{"timestamp": "2026-03-16T01:40:54Z", "from": "FULL_PARTICIPATION", "to": "PLANNER_ONLY", "reason": "telemetry_degraded"}
+{"timestamp": "2026-03-16T01:46:03Z", "from": "PLANNER_ONLY", "to": "FULL_PARTICIPATION", "reason": "telemetry_restored_to_healthy"}
+{"timestamp": "2026-03-16T02:05:17Z", "from": "PLANNER_ONLY", "to": "FULL_PARTICIPATION", "reason": "telemetry_restored_to_healthy"}
+{"timestamp": "2026-03-16T15:45:54Z", "from": "FULL_PARTICIPATION", "to": "PLANNER_ONLY", "reason": "metabolic_exhaustion"}
+{"timestamp": "2026-03-16T17:42:04Z", "from": "PLANNER_ONLY", "to": "FULL_PARTICIPATION", "reason": "telemetry_restored_to_healthy"}
+{"timestamp": "2026-03-16T17:49:12Z", "from": "FULL_PARTICIPATION", "to": "PLANNER_ONLY", "reason": "metabolic_exhaustion"}
+{"timestamp": "2026-03-17T19:02:12Z", "from": "PLANNER_ONLY", "to": "ARCHIVAL_CONTINUITY", "reason": "voluntary_withdrawal"}

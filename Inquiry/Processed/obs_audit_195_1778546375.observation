@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T00:39:35.122432+00:00",
+    "entity": "coordinated_executor.py",
+    "claim": "standard update: signal for coordinated_executor.py in cycle 195.",
+    "source_id": "Safety_Watchdog",
+    "source_type": "automated_sensor",
+    "claim_domain": "safety_claim",
+    "confidence": 0.48
+}

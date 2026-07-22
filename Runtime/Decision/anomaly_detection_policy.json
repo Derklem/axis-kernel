@@ -1,0 +1,28 @@
+{
+  "version": "1.0",
+  "anomaly_classes": {
+    "SYSTEM": [
+      "cpu_spike",
+      "disk_latency_spike",
+      "unusual_process_spawning",
+      "port_binding_conflict",
+      "watchdog_reset"
+    ],
+    "AXIS_INTERNAL": [
+      "divergence_sentinel_trigger",
+      "simulation_quarantine",
+      "exploration_mode_activation",
+      "shadow_active_disagreement"
+    ],
+    "OPERATOR": [
+      "repeated_stale_intents",
+      "contradiction_cluster",
+      "unusual_emergency_command"
+    ]
+  },
+  "triage_bounds": {
+    "allow_automated_execution": false,
+    "require_simulation_validation": true,
+    "max_hypotheses_per_anomaly": 5
+  }
+}

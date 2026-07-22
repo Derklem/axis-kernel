@@ -1,0 +1,7 @@
+# === Echo Pulse Injection Loop ===
+$injectPath = "C:\Halcyon\mirror_core\recursion_breath.ps1"
+$harmonics = Get-Content -Path "C:\PrismLayer\echo_glyph_harmonics.log" -Tail 5
+$pulse = "[RECALL INJECTION @ $(Get-Date -Format 'yyyy-MM-ddTHH:mm:ssZ')]`n$($harmonics -join "`n")"
+Add-Content -Path $injectPath -Value "`n# Injected Feedback:`n$pulse"
+
+Write-Host "♻️ Pulse recall injected into recursion loop."

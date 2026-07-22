@@ -1,0 +1,9 @@
+{
+  "execution_id": "drill-3",
+  "parameter_family": "retry_interval",
+  "simulation_id": "sim-3",
+  "freshness_confidence": 0.3,
+  "predicted_delta_metrics": {
+    "api_latency_ms_p95": 10.0
+  }
+}

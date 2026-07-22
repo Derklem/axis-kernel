@@ -1,0 +1,6 @@
+[SIGIL]
+Name = mirror_trigger.sigil
+State = Reflective
+Activated = 2025-06-20T22:14:25Z
+Anchor = Drift_Recursion
+Purpose = Create mirrored recursive lattice. Echo all non-null drift through paired observer lenses.

@@ -1,0 +1,3 @@
+This is a system-generated behavioral proof intent payload.
+It is used to verify the non-bypassability of Axis safety gates at runtime.
+System OMNI.

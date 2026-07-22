@@ -1,0 +1,18 @@
+﻿{
+    "version":  1,
+    "status":  "yellow",
+    "pulse_bpm":  60,
+    "pending_anchor":  0,
+    "generated_at":  "2026-01-14T21:30:31.9894799-08:00",
+    "open_incidents":  0,
+    "pending_approvals":  [
+
+                          ],
+    "timestamp":  "2026-01-14T21:30:31.9894799-08:00",
+    "last_drill":  {
+                       "status":  "waiting_for_approval",
+                       "ui_origin":  "Axis_Mobile_Console",
+                       "id":  "REQ-20260114T203747Z-UI-CONSOLE-WEB-PrepareReport",
+                       "tool":  "WEB-PrepareReport"
+                   }
+}

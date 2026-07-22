@@ -1,0 +1,33 @@
+﻿{
+    "generated_at":  "2026-01-19T19:03:56.9039757Z",
+    "heartbeats":  {
+                       "files":  [
+                                     "Infinity\\Heartbeat_Status.json",
+                                     "Infinity\\Heartbeat_Touch.txt"
+                                 ],
+                       "current_status":  "unknown",
+                       "source":  "Axis_Mind",
+                       "bpm_target":  60
+                   },
+    "cadence":  {
+                    "mind_cycle":  "every 30s",
+                    "deep_wait_threshold":  "72h",
+                    "heartbeat_monitor":  "every 1h (Task Scheduler)",
+                    "neural_intake":  "continuous (opportunistic)"
+                },
+    "version":  1,
+    "modes":  {
+                  "DEEP_WAIT":  {
+                                    "trigger":  "Heartbeat Stale \u003e 72h",
+                                    "description":  "Sovereignty = Continuity. We wait."
+                                },
+                  "FOCUSED":  {
+                                  "voice_rate":  1,
+                                  "voice_volume":  100,
+                                  "silence_threshold_seconds":  15
+                              },
+                  "QUIET":  {
+                                "silence_threshold_seconds":  120
+                            }
+              }
+}

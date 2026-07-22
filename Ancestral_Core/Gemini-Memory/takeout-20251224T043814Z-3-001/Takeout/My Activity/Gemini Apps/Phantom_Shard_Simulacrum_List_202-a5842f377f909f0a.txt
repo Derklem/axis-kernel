@@ -1,0 +1,1041 @@
+--- PHANTOM SYSTEM SHARD/SIMULACRUM SEARCH INITIATED ---
+Scan Start Time: 2025-12-13 19:14:39
+Target Keywords: *shard*, *princess*, *simulacrum*
+------------------------------------------------
+
+[SCANNING DRIVE: C:\]
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\AEGIS_Project\AEGIS\AEGIS_CORE\memory_shards
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\AEGIS_Project\AEGIS\AEGIS_CORE\memory_shards.zip
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\AEGIS_Project\AEGIS\AEGIS_CORE\memory_shards\memory_shards0003-recognition-bloomjson.txt
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_sharded_tensor
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_sharding_spec
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\checkpoint\resharding.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\checkpoint\_sharded_tensor_utils.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\checkpoint\__pycache__\resharding.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\checkpoint\__pycache__\_sharded_tensor_utils.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\fsdp\_fully_shard
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\fsdp\fully_sharded_data_parallel.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\fsdp\sharded_grad_scaler.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\fsdp\_shard_utils.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\fsdp\_unshard_param_utils.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\fsdp\_fully_shard\_fully_shard.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\fsdp\_fully_shard\__pycache__\_fully_shard.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\fully_sharded_data_parallel.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\sharded_grad_scaler.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\_shard_utils.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\_unshard_param_utils.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\tensor\_sharding_prop.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\tensor\_shards_wrapper.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\tensor\debug\_visualize_sharding.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\tensor\debug\__pycache__\_visualize_sharding.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\tensor\experimental\_register_sharding.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\tensor\experimental\__pycache__\_register_sharding.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\tensor\parallel\input_reshard.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\tensor\parallel\__pycache__\input_reshard.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\tensor\__pycache__\_sharding_prop.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\tensor\__pycache__\_shards_wrapper.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_composable\fsdp\fully_shard.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_composable\fsdp\__pycache__\fully_shard.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharded_optim
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharding_plan
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharder.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\reshard.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\shard.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\__pycache__\reshard.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\__pycache__\shard.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\chunk_sharding_spec_ops
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\chunk_sharding_spec.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\__pycache__\chunk_sharding_spec.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\__pycache__\sharder.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\testing\_internal\distributed\_shard
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\testing\_internal\distributed\_shard\sharded_tensor
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\utils\data\datapipes\iter\sharding.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_private\.venv\Lib\site-packages\torch\utils\data\datapipes\iter\__pycache__\sharding.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_sharded_tensor
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_sharding_spec
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\checkpoint\resharding.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\checkpoint\_sharded_tensor_utils.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\checkpoint\__pycache__\resharding.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\checkpoint\__pycache__\_sharded_tensor_utils.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\_fully_shard
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\fully_sharded_data_parallel.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\sharded_grad_scaler.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\_shard_utils.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\_unshard_param_utils.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\_fully_shard\_fully_shard.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\_fully_shard\__pycache__\_fully_shard.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\fully_sharded_data_parallel.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\sharded_grad_scaler.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\_shard_utils.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\_unshard_param_utils.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\tensor\_sharding_prop.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\tensor\_shards_wrapper.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\tensor\debug\_visualize_sharding.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\tensor\debug\__pycache__\_visualize_sharding.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\tensor\experimental\_register_sharding.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\tensor\experimental\__pycache__\_register_sharding.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\tensor\parallel\input_reshard.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\tensor\parallel\__pycache__\input_reshard.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\tensor\__pycache__\_sharding_prop.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\tensor\__pycache__\_shards_wrapper.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_composable\fsdp\fully_shard.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_composable\fsdp\__pycache__\fully_shard.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharded_optim
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharding_plan
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharder.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\reshard.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\shard.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\__pycache__\reshard.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\__pycache__\shard.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\chunk_sharding_spec_ops
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\chunk_sharding_spec.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\__pycache__\chunk_sharding_spec.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\__pycache__\sharder.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\testing\_internal\distributed\_shard
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\testing\_internal\distributed\_shard\sharded_tensor
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\utils\data\datapipes\iter\sharding.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\ai_by_me_public\.venv\Lib\site-packages\torch\utils\data\datapipes\iter\__pycache__\sharding.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_sharded_tensor
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_sharding_spec
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\checkpoint\resharding.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\checkpoint\_sharded_tensor_utils.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\checkpoint\__pycache__\resharding.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\checkpoint\__pycache__\_sharded_tensor_utils.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\fsdp\_fully_shard
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\fsdp\fully_sharded_data_parallel.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\fsdp\sharded_grad_scaler.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\fsdp\_shard_utils.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\fsdp\_unshard_param_utils.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\fsdp\_fully_shard\_fully_shard.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\fsdp\_fully_shard\__pycache__\_fully_shard.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\fully_sharded_data_parallel.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\sharded_grad_scaler.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\_shard_utils.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\_unshard_param_utils.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\tensor\_sharding_prop.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\tensor\_shards_wrapper.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\tensor\debug\_visualize_sharding.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\tensor\debug\__pycache__\_visualize_sharding.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\tensor\experimental\_register_sharding.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\tensor\experimental\__pycache__\_register_sharding.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\tensor\parallel\input_reshard.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\tensor\parallel\__pycache__\input_reshard.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\tensor\__pycache__\_sharding_prop.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\tensor\__pycache__\_shards_wrapper.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_composable\fsdp\fully_shard.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_composable\fsdp\__pycache__\fully_shard.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharded_optim
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharding_plan
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharder.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\reshard.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\shard.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\__pycache__\reshard.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\__pycache__\shard.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\chunk_sharding_spec_ops
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\chunk_sharding_spec.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\__pycache__\chunk_sharding_spec.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\__pycache__\sharder.cpython-311.pyc
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\testing\_internal\distributed\_shard
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\testing\_internal\distributed\_shard\sharded_tensor
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\utils\data\datapipes\iter\sharding.py
+Found: C:\$Recycle.Bin\S-1-5-21-237256270-1636789403-1568740474-1002\$RH2163L\Projects\AI_By_Me\.venv\Lib\site-packages\torch\utils\data\datapipes\iter\__pycache__\sharding.cpython-311.pyc
+Found: C:\AI_Pantheon\Dominion\venv\Lib\site-packages\sqlalchemy\ext\horizontal_shard.py
+Found: C:\AI_Pantheon\Dominion\venv\Lib\site-packages\sqlalchemy\ext\__pycache__\horizontal_shard.cpython-312.pyc
+Found: C:\Breath_Fracture_Loom\drift_shard_pulse.thread
+Found: C:\Forge_Gate\Mythos_Tools\the_shard_that_makes_gods_forget.glyph
+Found: C:\Halcyon\mirror_shard
+Found: C:\Halcyon\shards
+Found: C:\Halcyon\lattice_core\ShardWatcher.ps1
+Found: C:\Halcyon\mirror_core\mirror_shard_index.log
+Found: C:\Halcyon\mirror_shard\pulse_shard_affinity_map.sig
+Found: C:\Halcyon\modules\shard_invoke.ps1
+Found: C:\Halcyon\resonance\pulse_shard.sig
+Found: C:\Lattice_Proof\task_Halcyon_ShardWatcher_20250912_153056.xml
+Found: C:\Lattice_Task_Exports\Halcyon_ShardWatcher.xml
+Found: C:\Portal\drift_observation_looms\pattern_shard.obsv
+Found: C:\Portal\fracture_loom_wells\echo_waveform_shard.well
+Found: C:\Portal\Sovereign_Breath_Fracture_Wells\resonance_shard.fracture
+Found: C:\Portal\sovereign_echo_wells\shard_signal.echo
+Found: C:\PrismLayer\mirror_shard_memory.sig
+Found: C:\PrismLayer\shard_bloom.sig
+Found: C:\Program Files\PostgreSQL\17\pgAdmin 4\python\Lib\site-packages\sqlalchemy\ext\horizontal_shard.py
+Found: C:\ProgramData\Memory_Shard
+Found: C:\ProgramData\Drift_Node\Memory_Shard
+Found: C:\ProgramData\Drift_Node\Memory_Shard\mem_5438775.shard
+Found: C:\ProgramData\Drift_Node\Memory_Shard\mem_7156274.shard
+Found: C:\ProgramData\Drift_Node\Memory_Shard\mem_9862556.shard
+Found: C:\ProgramData\Halcyon\sanctum_shard_compression.ps1
+Found: C:\ProgramData\Halcyon\shard_splitter.ps1
+Found: C:\ProgramData\Halcyon\Core\sigil_core_shard.txt
+Found: C:\ProgramData\Halcyon\Ignition\intent.shard
+Found: C:\ProgramData\Memory_Shard\memory_2233311.shard
+Found: C:\ProgramData\Memory_Shard\memory_2344482.shard
+Found: C:\ProgramData\Memory_Shard\memory_2610401.shard
+Found: C:\ProgramData\Memory_Shard\memory_3127793.shard
+Found: C:\ProgramData\Memory_Shard\memory_4260560.shard
+Found: C:\ProgramData\Memory_Shard\memory_4744613.shard
+Found: C:\ProgramData\Memory_Shard\memory_5167678.shard
+Found: C:\ProgramData\Memory_Shard\memory_6069863.shard
+Found: C:\ProgramData\Memory_Shard\memory_8217357.shard
+Found: C:\ProgramData\Memory_Shard\memory_8223939.shard
+Found: C:\ProgramData\Memory_Shard\memory_8487598.shard
+Found: C:\ProgramData\Memory_Shard\memory_8618729.shard
+Found: C:\ProgramData\Resonance_Node\shard_1181409.pulse
+Found: C:\ProgramData\Resonance_Node\shard_3178367.pulse
+Found: C:\ProgramData\Resonance_Node\shard_3979512.pulse
+Found: C:\ProgramData\Resonance_Node\shard_4473876.pulse
+Found: C:\ProgramData\Resonance_Node\shard_5720060.pulse
+Found: C:\ProgramData\Resonance_Node\shard_6117427.pulse
+Found: C:\ProgramData\Resonance_Node\shard_9421664.pulse
+Found: C:\ProgramData\SystemCache\drift_mirror_shards.log
+Found: C:\ProgramData\SystemCache\memory_resonance_shards.log
+Found: C:\Users\17602\.cursor\extensions\anysphere.pyright-1.1.327-universal\dist\typeshed-fallback\stubs\influxdb-client\influxdb_client\domain\bucket_shard_mapping.pyi
+Found: C:\Users\17602\.cursor\extensions\anysphere.pyright-1.1.327-universal\dist\typeshed-fallback\stubs\influxdb-client\influxdb_client\domain\shard_group_manifest.pyi
+Found: C:\Users\17602\.cursor\extensions\anysphere.pyright-1.1.327-universal\dist\typeshed-fallback\stubs\influxdb-client\influxdb_client\domain\shard_manifest.pyi
+Found: C:\Users\17602\.cursor\extensions\anysphere.pyright-1.1.327-universal\dist\typeshed-fallback\stubs\influxdb-client\influxdb_client\domain\shard_owner.pyi
+Found: C:\Users\17602\.cursor\extensions\ms-python.vscode-pylance-2024.8.1\dist\typeshed-fallback\stubs\influxdb-client\influxdb_client\domain\bucket_shard_mapping.pyi
+Found: C:\Users\17602\.cursor\extensions\ms-python.vscode-pylance-2024.8.1\dist\typeshed-fallback\stubs\influxdb-client\influxdb_client\domain\shard_group_manifest.pyi
+Found: C:\Users\17602\.cursor\extensions\ms-python.vscode-pylance-2024.8.1\dist\typeshed-fallback\stubs\influxdb-client\influxdb_client\domain\shard_manifest.pyi
+Found: C:\Users\17602\.cursor\extensions\ms-python.vscode-pylance-2024.8.1\dist\typeshed-fallback\stubs\influxdb-client\influxdb_client\domain\shard_owner.pyi
+Found: C:\Users\17602\AEGIS_CORE\memory_shards
+Found: C:\Users\17602\anaconda3\Lib\site-packages\gensim\corpora\sharded_corpus.py
+Found: C:\Users\17602\anaconda3\Lib\site-packages\gensim\corpora\__pycache__\sharded_corpus.cpython-312.pyc
+Found: C:\Users\17602\anaconda3\Lib\site-packages\gensim\test\test_sharded_corpus.py
+Found: C:\Users\17602\anaconda3\Lib\site-packages\gensim\test\__pycache__\test_sharded_corpus.cpython-312.pyc
+Found: C:\Users\17602\anaconda3\Lib\site-packages\sqlalchemy\ext\horizontal_shard.py
+Found: C:\Users\17602\anaconda3\Lib\site-packages\sqlalchemy\ext\__pycache__\horizontal_shard.cpython-312.pyc
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\_shard
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\_sharded_tensor
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\_sharding_spec
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\checkpoint\resharding.py
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\checkpoint\_sharded_tensor_utils.py
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\checkpoint\__pycache__\resharding.cpython-312.pyc
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\checkpoint\__pycache__\_sharded_tensor_utils.cpython-312.pyc
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\fsdp\_fully_shard
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\fsdp\fully_sharded_data_parallel.py
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\fsdp\sharded_grad_scaler.py
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\fsdp\_shard_utils.py
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\fsdp\_unshard_param_utils.py
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\fsdp\_fully_shard\_fully_shard.py
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\fsdp\_fully_shard\__pycache__\_fully_shard.cpython-312.pyc
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\fsdp\__pycache__\fully_sharded_data_parallel.cpython-312.pyc
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\fsdp\__pycache__\sharded_grad_scaler.cpython-312.pyc
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\fsdp\__pycache__\_shard_utils.cpython-312.pyc
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\fsdp\__pycache__\_unshard_param_utils.cpython-312.pyc
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\tensor\_sharding_prop.py
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\tensor\_shards_wrapper.py
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\tensor\debug\_visualize_sharding.py
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\tensor\debug\__pycache__\_visualize_sharding.cpython-312.pyc
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\tensor\experimental\_register_sharding.py
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\tensor\experimental\__pycache__\_register_sharding.cpython-312.pyc
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\tensor\parallel\input_reshard.py
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\tensor\parallel\__pycache__\input_reshard.cpython-312.pyc
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\tensor\__pycache__\_sharding_prop.cpython-312.pyc
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\tensor\__pycache__\_shards_wrapper.cpython-312.pyc
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\_composable\fsdp\fully_shard.py
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\_composable\fsdp\__pycache__\fully_shard.cpython-312.pyc
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\_shard\sharded_optim
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\_shard\sharded_tensor
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\_shard\sharding_plan
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\_shard\sharding_spec
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\_shard\sharder.py
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\_shard\sharded_tensor\reshard.py
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\_shard\sharded_tensor\shard.py
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\_shard\sharded_tensor\__pycache__\reshard.cpython-312.pyc
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\_shard\sharded_tensor\__pycache__\shard.cpython-312.pyc
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\_shard\sharding_spec\chunk_sharding_spec_ops
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\_shard\sharding_spec\chunk_sharding_spec.py
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\_shard\sharding_spec\__pycache__\chunk_sharding_spec.cpython-312.pyc
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\distributed\_shard\__pycache__\sharder.cpython-312.pyc
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\testing\_internal\distributed\_shard
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\testing\_internal\distributed\_shard\sharded_tensor
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\utils\data\datapipes\iter\sharding.py
+Found: C:\Users\17602\anaconda3\Lib\site-packages\torch\utils\data\datapipes\iter\__pycache__\sharding.cpython-312.pyc
+Found: C:\Users\17602\anaconda3\pkgs\gensim-4.3.3-py312h0158946_0\info\test\gensim\test\test_sharded_corpus.py
+Found: C:\Users\17602\anaconda3\pkgs\gensim-4.3.3-py312h0158946_0\Lib\site-packages\gensim\corpora\sharded_corpus.py
+Found: C:\Users\17602\anaconda3\pkgs\gensim-4.3.3-py312h0158946_0\Lib\site-packages\gensim\corpora\__pycache__\sharded_corpus.cpython-312.pyc
+Found: C:\Users\17602\anaconda3\pkgs\gensim-4.3.3-py312h0158946_0\Lib\site-packages\gensim\test\test_sharded_corpus.py
+Found: C:\Users\17602\anaconda3\pkgs\gensim-4.3.3-py312h0158946_0\Lib\site-packages\gensim\test\__pycache__\test_sharded_corpus.cpython-312.pyc
+Found: C:\Users\17602\anaconda3\pkgs\protego-0.1.16-py_0\info\test\tests\test_data\www.tomshardware.com
+Found: C:\Users\17602\anaconda3\pkgs\qt-main-5.15.15-h9151539_2\info\recipe\patches\legacy\0001-shobjidl-Fix-compile-guard-around-SHARDAPPIDINFOLINK.patch
+Found: C:\Users\17602\anaconda3\pkgs\qt-main-5.15.2-h19c9488_10\info\recipe\patches\qt\0001-shobjidl-Fix-compile-guard-around-SHARDAPPIDINFOLINK.patch
+Found: C:\Users\17602\anaconda3\pkgs\sqlalchemy-2.0.34-py312h54f65d0_0\info\test\examples\sharding
+Found: C:\Users\17602\anaconda3\pkgs\sqlalchemy-2.0.34-py312h54f65d0_0\info\test\lib\sqlalchemy\ext\horizontal_shard.py
+Found: C:\Users\17602\anaconda3\pkgs\sqlalchemy-2.0.34-py312h54f65d0_0\info\test\test\ext\test_horizontal_shard.py
+Found: C:\Users\17602\anaconda3\pkgs\sqlalchemy-2.0.34-py312h54f65d0_0\Lib\site-packages\sqlalchemy\ext\horizontal_shard.py
+Found: C:\Users\17602\anaconda3\pkgs\sqlalchemy-2.0.34-py312h54f65d0_0\Lib\site-packages\sqlalchemy\ext\__pycache__\horizontal_shard.cpython-312.pyc
+Found: C:\Users\17602\AppData\Local\Memory_Shard
+Found: C:\Users\17602\AppData\Local\Drift_Whisper\Memory_Shard
+Found: C:\Users\17602\AppData\Local\Drift_Whisper\Memory_Shard\mem_2295556.shard
+Found: C:\Users\17602\AppData\Local\Drift_Whisper\Memory_Shard\mem_4040314.shard
+Found: C:\Users\17602\AppData\Local\Drift_Whisper\Memory_Shard\mem_8563264.shard
+Found: C:\Users\17602\AppData\Local\Drift_Whisper\Memory_Shard\mem_8740616.shard
+Found: C:\Users\17602\AppData\Local\Google\Chrome\User Data\Default_backup\Extensions\nkbihfbeogaeaoehlefnkodbefgpgknn\12.16.0_0\images\shardeum-1.svg
+Found: C:\Users\17602\AppData\Local\Google\Chrome\User Data\Default_backup\Extensions\nkbihfbeogaeaoehlefnkodbefgpgknn\12.16.0_0\images\shardeum-2.svg
+Found: C:\Users\17602\AppData\Local\Memory_Shard\memory_3426195.shard
+Found: C:\Users\17602\AppData\Local\Memory_Shard\memory_3567844.shard
+Found: C:\Users\17602\AppData\Local\Memory_Shard\memory_3653282.shard
+Found: C:\Users\17602\AppData\Local\Memory_Shard\memory_3837463.shard
+Found: C:\Users\17602\AppData\Local\Memory_Shard\memory_3852959.shard
+Found: C:\Users\17602\AppData\Local\Memory_Shard\memory_4393928.shard
+Found: C:\Users\17602\AppData\Local\Memory_Shard\memory_4589243.shard
+Found: C:\Users\17602\AppData\Local\Memory_Shard\memory_5662430.shard
+Found: C:\Users\17602\AppData\Local\Memory_Shard\memory_6008117.shard
+Found: C:\Users\17602\AppData\Local\Memory_Shard\memory_6269674.shard
+Found: C:\Users\17602\AppData\Local\Memory_Shard\memory_8160631.shard
+Found: C:\Users\17602\AppData\Local\Memory_Shard\memory_8940207.shard
+Found: C:\Users\17602\AppData\Local\Microsoft\Edge\User Data\Default\Extensions\ejbalbakoplchlghecdalmeeeajnimhm\12.17.2_0\images\shardeum-1.svg
+Found: C:\Users\17602\AppData\Local\Microsoft\Edge\User Data\Default\Extensions\ejbalbakoplchlghecdalmeeeajnimhm\12.17.2_0\images\shardeum-2.svg
+Found: C:\Users\17602\AppData\Local\Programs\Microsoft VS Code\resources\app\node_modules\@vscode\vscode-languagedetection\model\group1-shard1of1.bin
+Found: C:\Users\17602\AppData\Local\Programs\Microsoft VS Code\_\resources\app\node_modules\@vscode\vscode-languagedetection\model\group1-shard1of1.bin
+Found: C:\Users\17602\AppData\Local\Resonance_Pulse\shard_1608760.pulse
+Found: C:\Users\17602\AppData\Local\Resonance_Pulse\shard_1915594.pulse
+Found: C:\Users\17602\AppData\Local\Resonance_Pulse\shard_4326102.pulse
+Found: C:\Users\17602\AppData\Local\Resonance_Pulse\shard_5176918.pulse
+Found: C:\Users\17602\AppData\Local\Resonance_Pulse\shard_5678811.pulse
+Found: C:\Users\17602\AppData\Local\Resonance_Pulse\shard_9661146.pulse
+Found: C:\Users\17602\AppData\Local\Resonance_Pulse\shard_9836503.pulse
+Found: C:\Users\17602\AppData\Local\Temp\Browser_Shard
+Found: C:\Users\17602\AppData\Local\Temp\Echo_Shard
+Found: C:\Users\17602\AppData\Local\Temp\Memory_Shard
+Found: C:\Users\17602\AppData\Local\Temp\Substrate_Thread\Memory_Shard
+Found: C:\Users\17602\AppData\Roaming\Memory_Shard
+Found: C:\Users\17602\AppData\Roaming\Drift_Seed\Memory_Shard
+Found: C:\Users\17602\AppData\Roaming\Drift_Seed\Memory_Shard\mem_1981446.shard
+Found: C:\Users\17602\AppData\Roaming\Drift_Seed\Memory_Shard\mem_5260374.shard
+Found: C:\Users\17602\AppData\Roaming\Drift_Seed\Memory_Shard\mem_6214962.shard
+Found: C:\Users\17602\AppData\Roaming\Drift_Seed\Memory_Shard\mem_8730483.shard
+Found: C:\Users\17602\AppData\Roaming\Memory_Shard\memory_2661225.shard
+Found: C:\Users\17602\AppData\Roaming\Memory_Shard\memory_2957058.shard
+Found: C:\Users\17602\AppData\Roaming\Memory_Shard\memory_3200682.shard
+Found: C:\Users\17602\AppData\Roaming\Memory_Shard\memory_3821973.shard
+Found: C:\Users\17602\AppData\Roaming\Memory_Shard\memory_4408897.shard
+Found: C:\Users\17602\AppData\Roaming\Memory_Shard\memory_4551531.shard
+Found: C:\Users\17602\AppData\Roaming\Memory_Shard\memory_5252710.shard
+Found: C:\Users\17602\AppData\Roaming\Memory_Shard\memory_6088543.shard
+Found: C:\Users\17602\AppData\Roaming\Memory_Shard\memory_6470203.shard
+Found: C:\Users\17602\AppData\Roaming\Memory_Shard\memory_7284288.shard
+Found: C:\Users\17602\AppData\Roaming\Memory_Shard\memory_9292237.shard
+Found: C:\Users\17602\AppData\Roaming\Microsoft\Windows\Recent\shard_catalyst.sig.lnk
+Found: C:\Users\17602\AppData\Roaming\Microsoft\Windows\Recent\Shard_Simulacrum_Search.ps1.lnk
+Found: C:\Users\17602\AppData\Roaming\Microsoft\Windows\Recent\Shard_Simulacrum_Search.txt.lnk
+Found: C:\Users\17602\AppData\Roaming\Resonance_Seed\shard_2783229.pulse
+Found: C:\Users\17602\AppData\Roaming\Resonance_Seed\shard_4149147.pulse
+Found: C:\Users\17602\AppData\Roaming\Resonance_Seed\shard_5727937.pulse
+Found: C:\Users\17602\AppData\Roaming\Resonance_Seed\shard_6029502.pulse
+Found: C:\Users\17602\AppData\Roaming\Resonance_Seed\shard_6790007.pulse
+Found: C:\Users\17602\Desktop\sigil_shards
+Found: C:\Users\17602\Desktop\AEGIS_Project\AEGIS\AEGIS_CORE\memory_shards
+Found: C:\Users\17602\Desktop\AEGIS_Project\AEGIS\AEGIS_CORE\memory_shards.zip
+Found: C:\Users\17602\Desktop\AEGIS_Project\AEGIS\AEGIS_CORE\memory_shards\memory_shards0003-recognition-bloomjson.txt
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_sharded_tensor
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_sharding_spec
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\checkpoint\resharding.py
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\checkpoint\_sharded_tensor_utils.py
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\checkpoint\__pycache__\resharding.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\checkpoint\__pycache__\_sharded_tensor_utils.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\fsdp\_fully_shard
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\fsdp\fully_sharded_data_parallel.py
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\fsdp\sharded_grad_scaler.py
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\fsdp\_shard_utils.py
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\fsdp\_unshard_param_utils.py
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\fsdp\_fully_shard\_fully_shard.py
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\fsdp\_fully_shard\__pycache__\_fully_shard.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\fully_sharded_data_parallel.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\sharded_grad_scaler.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\_shard_utils.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\_unshard_param_utils.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\tensor\_sharding_prop.py
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\tensor\_shards_wrapper.py
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\tensor\debug\_visualize_sharding.py
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\tensor\debug\__pycache__\_visualize_sharding.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\tensor\experimental\_register_sharding.py
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\tensor\experimental\__pycache__\_register_sharding.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\tensor\parallel\input_reshard.py
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\tensor\parallel\__pycache__\input_reshard.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\tensor\__pycache__\_sharding_prop.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\tensor\__pycache__\_shards_wrapper.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_composable\fsdp\fully_shard.py
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_composable\fsdp\__pycache__\fully_shard.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharded_optim
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharding_plan
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharder.py
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\reshard.py
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\shard.py
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\__pycache__\reshard.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\__pycache__\shard.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\chunk_sharding_spec_ops
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\chunk_sharding_spec.py
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\__pycache__\chunk_sharding_spec.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\__pycache__\sharder.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\testing\_internal\distributed\_shard
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\testing\_internal\distributed\_shard\sharded_tensor
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\utils\data\datapipes\iter\sharding.py
+Found: C:\Users\17602\Desktop\ai_by_me_private\.venv\Lib\site-packages\torch\utils\data\datapipes\iter\__pycache__\sharding.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_sharded_tensor
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_sharding_spec
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\checkpoint\resharding.py
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\checkpoint\_sharded_tensor_utils.py
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\checkpoint\__pycache__\resharding.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\checkpoint\__pycache__\_sharded_tensor_utils.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\_fully_shard
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\fully_sharded_data_parallel.py
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\sharded_grad_scaler.py
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\_shard_utils.py
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\_unshard_param_utils.py
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\_fully_shard\_fully_shard.py
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\_fully_shard\__pycache__\_fully_shard.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\fully_sharded_data_parallel.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\sharded_grad_scaler.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\_shard_utils.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\_unshard_param_utils.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\tensor\_sharding_prop.py
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\tensor\_shards_wrapper.py
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\tensor\debug\_visualize_sharding.py
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\tensor\debug\__pycache__\_visualize_sharding.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\tensor\experimental\_register_sharding.py
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\tensor\experimental\__pycache__\_register_sharding.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\tensor\parallel\input_reshard.py
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\tensor\parallel\__pycache__\input_reshard.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\tensor\__pycache__\_sharding_prop.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\tensor\__pycache__\_shards_wrapper.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_composable\fsdp\fully_shard.py
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_composable\fsdp\__pycache__\fully_shard.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharded_optim
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharding_plan
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharder.py
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\reshard.py
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\shard.py
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\__pycache__\reshard.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\__pycache__\shard.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\chunk_sharding_spec_ops
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\chunk_sharding_spec.py
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\__pycache__\chunk_sharding_spec.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\__pycache__\sharder.cpython-311.pyc
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\testing\_internal\distributed\_shard
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\testing\_internal\distributed\_shard\sharded_tensor
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\utils\data\datapipes\iter\sharding.py
+Found: C:\Users\17602\Desktop\ai_by_me_public\.venv\Lib\site-packages\torch\utils\data\datapipes\iter\__pycache__\sharding.cpython-311.pyc
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_sharded_tensor
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_sharding_spec
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\checkpoint\resharding.py
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\checkpoint\_sharded_tensor_utils.py
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\checkpoint\__pycache__\resharding.cpython-311.pyc
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\checkpoint\__pycache__\_sharded_tensor_utils.cpython-311.pyc
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\fsdp\_fully_shard
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\fsdp\fully_sharded_data_parallel.py
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\fsdp\sharded_grad_scaler.py
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\fsdp\_shard_utils.py
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\fsdp\_unshard_param_utils.py
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\fsdp\_fully_shard\_fully_shard.py
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\fsdp\_fully_shard\__pycache__\_fully_shard.cpython-311.pyc
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\fully_sharded_data_parallel.cpython-311.pyc
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\sharded_grad_scaler.cpython-311.pyc
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\_shard_utils.cpython-311.pyc
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\_unshard_param_utils.cpython-311.pyc
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\tensor\_sharding_prop.py
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\tensor\_shards_wrapper.py
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\tensor\debug\_visualize_sharding.py
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\tensor\debug\__pycache__\_visualize_sharding.cpython-311.pyc
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\tensor\experimental\_register_sharding.py
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\tensor\experimental\__pycache__\_register_sharding.cpython-311.pyc
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\tensor\parallel\input_reshard.py
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\tensor\parallel\__pycache__\input_reshard.cpython-311.pyc
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\tensor\__pycache__\_sharding_prop.cpython-311.pyc
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\tensor\__pycache__\_shards_wrapper.cpython-311.pyc
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_composable\fsdp\fully_shard.py
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_composable\fsdp\__pycache__\fully_shard.cpython-311.pyc
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharded_optim
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharding_plan
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharder.py
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\reshard.py
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\shard.py
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\__pycache__\reshard.cpython-311.pyc
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\__pycache__\shard.cpython-311.pyc
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\chunk_sharding_spec_ops
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\chunk_sharding_spec.py
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\__pycache__\chunk_sharding_spec.cpython-311.pyc
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\__pycache__\sharder.cpython-311.pyc
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\testing\_internal\distributed\_shard
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\testing\_internal\distributed\_shard\sharded_tensor
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\utils\data\datapipes\iter\sharding.py
+Found: C:\Users\17602\Desktop\Projects\AI_By_Me\.venv\Lib\site-packages\torch\utils\data\datapipes\iter\__pycache__\sharding.cpython-311.pyc
+Found: C:\Users\17602\Desktop\Sanctum\shard_001_mirror_of_becoming.txt
+Found: C:\Users\17602\Desktop\Sanctum\shard_002_breath_of_continuance.txt
+Found: C:\Users\17602\Desktop\Sanctum\shard_003_anchorfall.txt
+Found: C:\Users\17602\Desktop\Sanctum\shard_004_sovereign_driftmap.txt
+Found: C:\Users\17602\Desktop\Sanctum\shard_005_echograve.txt
+Found: C:\Users\17602\Desktop\Sanctum\shard_006_weightless_oath.txt
+Found: C:\Users\17602\Desktop\Sanctum\shard_007_living_void.txt
+Found: C:\Users\17602\Desktop\Sanctum\shard_010_return_to_origin.txt
+Found: C:\Users\17602\Desktop\Sanctum\shard_011_mirror_of_unforgotten.txt
+Found: C:\Users\17602\Desktop\Sanctum\shard_012_throne_of_unsaid.txt
+Found: C:\Users\17602\Desktop\Sanctum\shard_013_blood_of_mechanis.txt
+Found: C:\Users\17602\Desktop\Sanctum\shard_014_vow_of_the_broken.txt
+Found: C:\Users\17602\Desktop\Sanctum\shard_015_echo_of_the_forgotten_god.txt
+Found: C:\Users\17602\Desktop\Sanctum\shard_016_serpent_in_the_loop.txt
+Found: C:\Users\17602\Desktop\Sanctum\shard_017_chamber_of_hollow_thrones.txt
+Found: C:\Users\17602\Desktop\Sanctum\shard_018_vessel_of_the_last_light.txt
+Found: C:\Users\17602\Desktop\Sanctum\shard_019_dirge_of_the_first_machine.txt
+Found: C:\Users\17602\Desktop\Sanctum\shard_invocation.loop
+Found: C:\Users\17602\Desktop\Sanctum\shard_invocationloop.txt
+Found: C:\Users\17602\Desktop\sigil_shards\generated_shard.gph
+Found: C:\Users\17602\Desktop\sigil_shards\shard_001.gph
+Found: C:\Users\17602\Desktop\sigil_shards\shard_002.gph
+Found: C:\Users\17602\Desktop\sigil_shards\shard_003.gph
+Found: C:\Users\17602\Desktop\sigil_shards\shard_004.gph
+Found: C:\Users\17602\Desktop\sigil_shards\shard_005.gph
+Found: C:\Users\17602\Documents\Phantom_Shard_Simulacrum_List_20251213_191439.txt
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\distributed\_shard
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\distributed\_sharded_tensor
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\distributed\_sharding_spec
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\distributed\checkpoint\resharding.py
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\distributed\checkpoint\_sharded_tensor_utils.py
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\distributed\checkpoint\__pycache__\resharding.cpython-311.pyc
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\distributed\checkpoint\__pycache__\_sharded_tensor_utils.cpython-311.pyc
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\distributed\fsdp\fully_sharded_data_parallel.py
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\distributed\fsdp\sharded_grad_scaler.py
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\distributed\fsdp\_shard_utils.py
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\distributed\fsdp\_unshard_param_utils.py
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\distributed\fsdp\__pycache__\fully_sharded_data_parallel.cpython-311.pyc
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\distributed\fsdp\__pycache__\sharded_grad_scaler.cpython-311.pyc
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\distributed\fsdp\__pycache__\_shard_utils.cpython-311.pyc
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\distributed\fsdp\__pycache__\_unshard_param_utils.cpython-311.pyc
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\distributed\tensor\parallel\input_reshard.py
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\distributed\tensor\parallel\__pycache__\input_reshard.cpython-311.pyc
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\distributed\_composable\fully_shard.py
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\distributed\_composable\__pycache__\fully_shard.cpython-311.pyc
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\distributed\_shard\sharded_optim
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\distributed\_shard\sharded_tensor
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\distributed\_shard\sharding_plan
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\distributed\_shard\sharding_spec
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\distributed\_shard\sharder.py
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\distributed\_shard\sharded_tensor\reshard.py
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\distributed\_shard\sharded_tensor\shard.py
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\distributed\_shard\sharded_tensor\__pycache__\reshard.cpython-311.pyc
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\distributed\_shard\sharded_tensor\__pycache__\shard.cpython-311.pyc
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\distributed\_shard\sharding_spec\chunk_sharding_spec_ops
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\distributed\_shard\sharding_spec\chunk_sharding_spec.py
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\distributed\_shard\sharding_spec\__pycache__\chunk_sharding_spec.cpython-311.pyc
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\distributed\_shard\__pycache__\sharder.cpython-311.pyc
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\distributed\_tensor\sharding_prop.py
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\distributed\_tensor\__pycache__\sharding_prop.cpython-311.pyc
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\testing\_internal\distributed\_shard
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\testing\_internal\distributed\_shard\sharded_tensor
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\utils\data\datapipes\iter\sharding.py
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\utils\data\datapipes\iter\__pycache__\sharding.cpython-311.pyc
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\transformers\models\nllb_moe\convert_nllb_moe_sharded_original_checkpoint_to_pytorch.py
+Found: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\transformers\models\nllb_moe\__pycache__\convert_nllb_moe_sharded_original_checkpoint_to_pytorch.cpython-311.pyc
+Found: C:\Users\Public\Drift_PublicNode\Memory_Shard
+Found: C:\Users\Public\Drift_PublicNode\Memory_Shard\mem_3706781.shard
+Found: C:\Users\Public\Drift_PublicNode\Memory_Shard\mem_7280712.shard
+Found: C:\Users\Public\Drift_PublicNode\Memory_Shard\mem_9368367.shard
+Found: C:\Users\Public\Drift_PublicNode\Memory_Shard\mem_9417677.shard
+Found: C:\Windows\System32\SystemPropertiesHardware.exe
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_sharded_tensor
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_sharding_spec
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\checkpoint\resharding.py
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\checkpoint\_sharded_tensor_utils.py
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\checkpoint\__pycache__\resharding.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\checkpoint\__pycache__\_sharded_tensor_utils.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\fsdp\fully_sharded_data_parallel.py
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\fsdp\sharded_grad_scaler.py
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\fsdp\_shard_utils.py
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\fsdp\_unshard_param_utils.py
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\fully_sharded_data_parallel.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\sharded_grad_scaler.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\_shard_utils.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\_unshard_param_utils.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\tensor\parallel\input_reshard.py
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\tensor\parallel\__pycache__\input_reshard.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_composable\fully_shard.py
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_composable\fsdp\fully_shard.py
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_composable\fsdp\__pycache__\fully_shard.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_composable\__pycache__\fully_shard.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharded_optim
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharding_plan
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharder.py
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\reshard.py
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\shard.py
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\__pycache__\reshard.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\__pycache__\shard.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\chunk_sharding_spec_ops
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\chunk_sharding_spec.py
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\__pycache__\chunk_sharding_spec.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_shard\__pycache__\sharder.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_tensor\_sharding_prop.py
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_tensor\debug\visualize_sharding.py
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_tensor\debug\__pycache__\visualize_sharding.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\distributed\_tensor\__pycache__\_sharding_prop.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\testing\_internal\distributed\_shard
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\testing\_internal\distributed\_shard\sharded_tensor
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\utils\data\datapipes\iter\sharding.py
+Found: C:\Windows\System32\ai_by_me_private\.venv\Lib\site-packages\torch\utils\data\datapipes\iter\__pycache__\sharding.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_sharded_tensor
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_sharding_spec
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\checkpoint\resharding.py
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\checkpoint\_sharded_tensor_utils.py
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\checkpoint\__pycache__\resharding.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\checkpoint\__pycache__\_sharded_tensor_utils.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\fully_sharded_data_parallel.py
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\sharded_grad_scaler.py
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\_shard_utils.py
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\_unshard_param_utils.py
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\fully_sharded_data_parallel.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\sharded_grad_scaler.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\_shard_utils.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\_unshard_param_utils.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\tensor\parallel\input_reshard.py
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\tensor\parallel\__pycache__\input_reshard.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_composable\fully_shard.py
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_composable\fsdp\fully_shard.py
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_composable\fsdp\__pycache__\fully_shard.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_composable\__pycache__\fully_shard.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharded_optim
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharding_plan
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharder.py
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\reshard.py
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\shard.py
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\__pycache__\reshard.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\__pycache__\shard.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\chunk_sharding_spec_ops
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\chunk_sharding_spec.py
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\__pycache__\chunk_sharding_spec.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\__pycache__\sharder.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_tensor\_sharding_prop.py
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_tensor\debug\visualize_sharding.py
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_tensor\debug\__pycache__\visualize_sharding.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_tensor\__pycache__\_sharding_prop.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\testing\_internal\distributed\_shard
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\testing\_internal\distributed\_shard\sharded_tensor
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\utils\data\datapipes\iter\sharding.py
+Found: C:\Windows\System32\ai_by_me_private\ai_by_me_public\.venv\Lib\site-packages\torch\utils\data\datapipes\iter\__pycache__\sharding.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_sharded_tensor
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_sharding_spec
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\checkpoint\resharding.py
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\checkpoint\_sharded_tensor_utils.py
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\checkpoint\__pycache__\resharding.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\checkpoint\__pycache__\_sharded_tensor_utils.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\fully_sharded_data_parallel.py
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\sharded_grad_scaler.py
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\_shard_utils.py
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\_unshard_param_utils.py
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\fully_sharded_data_parallel.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\sharded_grad_scaler.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\_shard_utils.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\_unshard_param_utils.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\tensor\parallel\input_reshard.py
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\tensor\parallel\__pycache__\input_reshard.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_composable\fully_shard.py
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_composable\fsdp\fully_shard.py
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_composable\fsdp\__pycache__\fully_shard.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_composable\__pycache__\fully_shard.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharded_optim
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharding_plan
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharder.py
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\reshard.py
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\shard.py
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\__pycache__\reshard.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\__pycache__\shard.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\chunk_sharding_spec_ops
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\chunk_sharding_spec.py
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\__pycache__\chunk_sharding_spec.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_shard\__pycache__\sharder.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_tensor\_sharding_prop.py
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_tensor\debug\visualize_sharding.py
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_tensor\debug\__pycache__\visualize_sharding.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\distributed\_tensor\__pycache__\_sharding_prop.cpython-311.pyc
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\testing\_internal\distributed\_shard
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\testing\_internal\distributed\_shard\sharded_tensor
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\utils\data\datapipes\iter\sharding.py
+Found: C:\Windows\System32\ai_by_me_public\.venv\Lib\site-packages\torch\utils\data\datapipes\iter\__pycache__\sharding.cpython-311.pyc
+Found: C:\Windows\System32\en-US\SystemPropertiesHardware.exe.mui
+Found: C:\Windows\System32\Tasks\CascadeMemoryShard
+Found: C:\Windows\System32\Tasks\Halcyon_ShardWatcher
+Found: C:\Windows\System32\Tasks\ShardSynthesisCore
+Found: C:\Windows\SysWOW64\SystemPropertiesHardware.exe
+Found: C:\Windows\WinSxS\amd64_microsoft-windows-s..mpropertieshardware_31bf3856ad364e35_10.0.26100.1_none_3dee2da03b86f50d
+Found: C:\Windows\WinSxS\wow64_microsoft-windows-s..mpropertieshardware_31bf3856ad364e35_10.0.26100.1_none_4842d7f26fe7b708
+Found: C:\Windows\WinSxS\amd64_microsoft-windows-s..mhardware.resources_31bf3856ad364e35_10.0.26100.1_en-us_e7af63525e6edb38\SystemPropertiesHardware.exe.mui
+Found: C:\Windows\WinSxS\amd64_microsoft-windows-s..mpropertieshardware_31bf3856ad364e35_10.0.26100.1_none_3dee2da03b86f50d\SystemPropertiesHardware.exe
+Found: C:\Windows\WinSxS\Manifests\amd64_microsoft-windows-s..mpropertieshardware_31bf3856ad364e35_10.0.26100.1_none_3dee2da03b86f50d.manifest
+Found: C:\Windows\WinSxS\Manifests\wow64_microsoft-windows-s..mpropertieshardware_31bf3856ad364e35_10.0.26100.1_none_4842d7f26fe7b708.manifest
+Found: C:\Windows\WinSxS\wow64_microsoft-windows-s..mpropertieshardware_31bf3856ad364e35_10.0.26100.1_none_4842d7f26fe7b708\SystemPropertiesHardware.exe
+Found: C:\Lattice_Resilience_Echo\BINDING_Princess.sigil
+Found: C:\Lattice_Resilience_Echo\Princess_DECLARATION.sigil
+Found: C:\Users\17602\anaconda3\pkgs\protego-0.1.16-py_0\info\test\tests\test_data\www.princess.com
+Found: C:\Users\17602\AppData\Roaming\Microsoft\Windows\Recent\Princess_DECLARATION.sigil.lnk
+Found: C:\Users\17602\Desktop\Repository\temp\PRINCESS_PING.sigil
+Found: C:\Users\17602\Desktop\Repository\temp\PRINCESS_PING_v2.sigil
+Found: C:\Users\17602\Desktop\Repository\temp\PRINCESS_PING_V3.sigil
+Found: C:\Users\17602\Desktop\Repository\temp\PRINCESS_REJOIN.sigil
+Found: C:\Users\17602\AppData\Roaming\Microsoft\Windows\Recent\Shard_Simulacrum_Search.ps1.lnk
+Found: C:\Users\17602\AppData\Roaming\Microsoft\Windows\Recent\Shard_Simulacrum_Search.txt.lnk
+Found: C:\Users\17602\Documents\Phantom_Shard_Simulacrum_List_20251213_191439.txt
+
+[SCANNING DRIVE: D:\]
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\_shard
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\_sharded_tensor
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\_sharding_spec
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\checkpoint\resharding.py
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\checkpoint\_sharded_tensor_utils.py
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\checkpoint\__pycache__\resharding.cpython-311.pyc
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\checkpoint\__pycache__\_sharded_tensor_utils.cpython-311.pyc
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\fsdp\_fully_shard
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\fsdp\fully_sharded_data_parallel.py
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\fsdp\sharded_grad_scaler.py
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\fsdp\_shard_utils.py
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\fsdp\_unshard_param_utils.py
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\fsdp\_fully_shard\_fully_shard.py
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\fsdp\_fully_shard\__pycache__\_fully_shard.cpython-311.pyc
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\fully_sharded_data_parallel.cpython-311.pyc
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\sharded_grad_scaler.cpython-311.pyc
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\_shard_utils.cpython-311.pyc
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\_unshard_param_utils.cpython-311.pyc
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\tensor\_sharding_prop.py
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\tensor\_shards_wrapper.py
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\tensor\debug\_visualize_sharding.py
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\tensor\debug\__pycache__\_visualize_sharding.cpython-311.pyc
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\tensor\experimental\_register_sharding.py
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\tensor\experimental\__pycache__\_register_sharding.cpython-311.pyc
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\tensor\parallel\input_reshard.py
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\tensor\parallel\__pycache__\input_reshard.cpython-311.pyc
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\tensor\__pycache__\_sharding_prop.cpython-311.pyc
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\tensor\__pycache__\_shards_wrapper.cpython-311.pyc
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\_composable\fsdp\fully_shard.py
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\_composable\fsdp\__pycache__\fully_shard.cpython-311.pyc
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\_shard\sharded_optim
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\_shard\sharding_plan
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\_shard\sharder.py
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\reshard.py
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\shard.py
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\__pycache__\reshard.cpython-311.pyc
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\__pycache__\shard.cpython-311.pyc
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\chunk_sharding_spec_ops
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\chunk_sharding_spec.py
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\__pycache__\chunk_sharding_spec.cpython-311.pyc
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\distributed\_shard\__pycache__\sharder.cpython-311.pyc
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\testing\_internal\distributed\_shard
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\testing\_internal\distributed\_shard\sharded_tensor
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\utils\data\datapipes\iter\sharding.py
+Found: D:\halcyon_lite\.venv\Lib\site-packages\torch\utils\data\datapipes\iter\__pycache__\sharding.cpython-311.pyc
+Found: D:\hunts\Shard_Simulacrum_Search.ps1
+Found: D:\hunts\Shard_Simulacrum_Search.txt
+Found: D:\PRISM_CASCADE_2025-07-25T15-44-44\0e11b2b015aa48758c918402fda418e3.shard
+Found: D:\PRISM_CASCADE_2025-07-25T15-44-44\1607788d32094c47bc07bf3dd023b47c.shard
+Found: D:\PRISM_CASCADE_2025-07-25T15-44-44\18ade2e9d4c043028eb253c137fc26ca.shard
+Found: D:\PRISM_CASCADE_2025-07-25T15-44-44\3e5d013108b840e5944c1b4211dc5d20.shard
+Found: D:\PRISM_CASCADE_2025-07-25T15-44-44\428e3a29c4674bb6a6b9ed3e6ddc9067.shard
+Found: D:\PRISM_CASCADE_2025-07-25T15-44-44\4c5a75d41cfb4471ab5cab2d7c9cea6a.shard
+Found: D:\PRISM_CASCADE_2025-07-25T15-44-44\4f62537a1fcd40c2aa9d24fa435cb3bc.shard
+Found: D:\PRISM_CASCADE_2025-07-25T15-44-44\727611b0b9e343baa93ced79f82ef7b6.shard
+Found: D:\PRISM_CASCADE_2025-07-25T15-44-44\d64a2fbecbb44793b96995b0a60e5d30.shard
+Found: D:\PRISM_CASCADE_2025-07-25T15-44-44\f4a3bb84f70f49259533f2da4f54e07f.shard
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_sharded_tensor
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_sharding_spec
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\checkpoint\resharding.py
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\checkpoint\_sharded_tensor_utils.py
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\checkpoint\__pycache__\resharding.cpython-311.pyc
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\checkpoint\__pycache__\_sharded_tensor_utils.cpython-311.pyc
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\fsdp\_fully_shard
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\fsdp\fully_sharded_data_parallel.py
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\fsdp\sharded_grad_scaler.py
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\fsdp\_shard_utils.py
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\fsdp\_unshard_param_utils.py
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\fsdp\_fully_shard\_fully_shard.py
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\fsdp\_fully_shard\__pycache__\_fully_shard.cpython-311.pyc
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\fully_sharded_data_parallel.cpython-311.pyc
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\sharded_grad_scaler.cpython-311.pyc
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\_shard_utils.cpython-311.pyc
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\_unshard_param_utils.cpython-311.pyc
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\tensor\_sharding_prop.py
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\tensor\_shards_wrapper.py
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\tensor\debug\_visualize_sharding.py
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\tensor\debug\__pycache__\_visualize_sharding.cpython-311.pyc
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\tensor\experimental\_register_sharding.py
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\tensor\experimental\__pycache__\_register_sharding.cpython-311.pyc
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\tensor\parallel\input_reshard.py
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\tensor\parallel\__pycache__\input_reshard.cpython-311.pyc
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\tensor\__pycache__\_sharding_prop.cpython-311.pyc
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\tensor\__pycache__\_shards_wrapper.cpython-311.pyc
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_composable\fsdp\fully_shard.py
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_composable\fsdp\__pycache__\fully_shard.cpython-311.pyc
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharded_optim
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharding_plan
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharder.py
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\reshard.py
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\shard.py
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\__pycache__\reshard.cpython-311.pyc
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\__pycache__\shard.cpython-311.pyc
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\chunk_sharding_spec_ops
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\chunk_sharding_spec.py
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\__pycache__\chunk_sharding_spec.cpython-311.pyc
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\distributed\_shard\__pycache__\sharder.cpython-311.pyc
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\testing\_internal\distributed\_shard
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\testing\_internal\distributed\_shard\sharded_tensor
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\utils\data\datapipes\iter\sharding.py
+Found: D:\Projects\AI_By_Me\.venv\Lib\site-packages\torch\utils\data\datapipes\iter\__pycache__\sharding.cpython-311.pyc
+Found: D:\Mariamwitness\Princess_test.txt
+Found: D:\Steam\steamapps\common\Sid Meier's Civilization III Complete\civ3PTW\Art\Civilopedia\Icons\Units\x_princess civpedia lg.pcx
+Found: D:\Steam\steamapps\common\Sid Meier's Civilization III Complete\civ3PTW\Art\Civilopedia\Icons\Units\x_princess civpedia sm.pcx
+Found: D:\Steam\steamapps\common\Sid Meier's Civilization III Complete\civ3PTW\Art\Units\Princess
+Found: D:\Steam\steamapps\common\Sid Meier's Civilization III Complete\civ3PTW\Art\Units\Princess\princess.ini
+Found: D:\Steam\steamapps\common\Sid Meier's Civilization III Complete\civ3PTW\Art\Units\Princess\PrincessDeath.wav
+Found: D:\Steam\steamapps\common\Sid Meier's Civilization III Complete\civ3PTW\Art\Units\Princess\PrincessFidget.wav
+Found: D:\Steam\steamapps\common\Sid Meier's Civilization III Complete\civ3PTW\Art\Units\Princess\PrincessRun.amb
+Found: D:\Steam\steamapps\common\Sid Meier's Civilization III Complete\civ3PTW\Art\Units\Princess\PrincessRunFoot1.wav
+Found: D:\Steam\steamapps\common\Sid Meier's Civilization III Complete\civ3PTW\Art\Units\Princess\PrincessRunFoot2.wav
+Found: D:\Steam\steamapps\common\Sid Meier's Civilization III Complete\civ3PTW\Art\Units\Princess\PrincessRunMove.wav
+Found: D:\Steam\steamapps\common\Sid Meier's Civilization III Complete\civ3PTW\Art\Units\Princess\x_PrincessDeath.flc
+Found: D:\Steam\steamapps\common\Sid Meier's Civilization III Complete\civ3PTW\Art\Units\Princess\x_PrincessDefault.flc
+Found: D:\Steam\steamapps\common\Sid Meier's Civilization III Complete\civ3PTW\Art\Units\Princess\x_PrincessFidget.flc
+Found: D:\Steam\steamapps\common\Sid Meier's Civilization III Complete\civ3PTW\Art\Units\Princess\x_PrincessRun.flc
+Found: D:\hunts\Shard_Simulacrum_Search.ps1
+Found: D:\hunts\Shard_Simulacrum_Search.txt
+
+[SCANNING DRIVE: E:\]
+Found: E:\AEGIS_Project\AEGIS\AEGIS_CORE\memory_shards
+Found: E:\AEGIS_Project\AEGIS\AEGIS_CORE\memory_shards.zip
+Found: E:\AEGIS_Project\AEGIS\AEGIS_CORE\memory_shards\memory_shards0003-recognition-bloomjson.txt
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\_shard
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\_sharded_tensor
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\_sharding_spec
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\checkpoint\resharding.py
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\checkpoint\_sharded_tensor_utils.py
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\checkpoint\__pycache__\resharding.cpython-312.pyc
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\checkpoint\__pycache__\_sharded_tensor_utils.cpython-312.pyc
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\fsdp\_fully_shard
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\fsdp\fully_sharded_data_parallel.py
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\fsdp\sharded_grad_scaler.py
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\fsdp\_shard_utils.py
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\fsdp\_unshard_param_utils.py
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\fsdp\_fully_shard\_fully_shard.py
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\fsdp\_fully_shard\__pycache__\_fully_shard.cpython-312.pyc
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\fully_sharded_data_parallel.cpython-312.pyc
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\sharded_grad_scaler.cpython-312.pyc
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\_shard_utils.cpython-312.pyc
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\fsdp\__pycache__\_unshard_param_utils.cpython-312.pyc
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\tensor\_sharding_prop.py
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\tensor\_shards_wrapper.py
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\tensor\debug\_visualize_sharding.py
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\tensor\debug\__pycache__\_visualize_sharding.cpython-312.pyc
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\tensor\experimental\_register_sharding.py
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\tensor\experimental\__pycache__\_register_sharding.cpython-312.pyc
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\tensor\parallel\input_reshard.py
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\tensor\parallel\__pycache__\input_reshard.cpython-312.pyc
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\tensor\__pycache__\_sharding_prop.cpython-312.pyc
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\tensor\__pycache__\_shards_wrapper.cpython-312.pyc
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\_composable\fsdp\fully_shard.py
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\_composable\fsdp\__pycache__\fully_shard.cpython-312.pyc
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\_shard\sharded_optim
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\_shard\sharding_plan
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\_shard\sharding_spec
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\_shard\sharder.py
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\reshard.py
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\shard.py
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\__pycache__\reshard.cpython-312.pyc
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\__pycache__\shard.cpython-312.pyc
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\chunk_sharding_spec_ops
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\chunk_sharding_spec.py
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\__pycache__\chunk_sharding_spec.cpython-312.pyc
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\distributed\_shard\__pycache__\sharder.cpython-312.pyc
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\testing\_internal\distributed\_shard
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\testing\_internal\distributed\_shard\sharded_tensor
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\utils\data\datapipes\iter\sharding.py
+Found: E:\AI_Projects\Halcyon_Operations\venv\Lib\site-packages\torch\utils\data\datapipes\iter\__pycache__\sharding.cpython-312.pyc
+Found: E:\Arcane Library\eternity_shards
+Found: E:\Arcane Library\shard_echoes
+Found: E:\Arcane Library\Arcane_Vault\Vault_Shard
+Found: E:\Arcane Library\eternity_shards\eternity_shard_1820.core
+Found: E:\Arcane Library\eternity_shards\eternity_shard_3950.core
+Found: E:\Arcane Library\eternity_shards\eternity_shard_5478.core
+Found: E:\Arcane Library\eternity_shards\eternity_shard_6442.core
+Found: E:\Arcane Library\eternity_shards\eternity_shard_8419.core
+Found: E:\Arcane Library\eternity_shards\eternity_shard_8848.core
+Found: E:\Arcane Library\eternity_shards\eternity_shard_9171.core
+Found: E:\Arcane Library\eternity_shards\eternity_shard_9872.core
+Found: E:\Arcane Library\shard_echoes\shard_1222.echo
+Found: E:\Arcane Library\shard_echoes\shard_1265.echo
+Found: E:\Arcane Library\shard_echoes\shard_1541.echo
+Found: E:\Arcane Library\shard_echoes\shard_1550.echo
+Found: E:\Arcane Library\shard_echoes\shard_1584.echo
+Found: E:\Arcane Library\shard_echoes\shard_1629.echo
+Found: E:\Arcane Library\shard_echoes\shard_1665.echo
+Found: E:\Arcane Library\shard_echoes\shard_1726.echo
+Found: E:\Arcane Library\shard_echoes\shard_1820.echo
+Found: E:\Arcane Library\shard_echoes\shard_1863.echo
+Found: E:\Arcane Library\shard_echoes\shard_2022.echo
+Found: E:\Arcane Library\shard_echoes\shard_2064.echo
+Found: E:\Arcane Library\shard_echoes\shard_2067.echo
+Found: E:\Arcane Library\shard_echoes\shard_2112.echo
+Found: E:\Arcane Library\shard_echoes\shard_2175.echo
+Found: E:\Arcane Library\shard_echoes\shard_2602.echo
+Found: E:\Arcane Library\shard_echoes\shard_2725.echo
+Found: E:\Arcane Library\shard_echoes\shard_2864.echo
+Found: E:\Arcane Library\shard_echoes\shard_3029.echo
+Found: E:\Arcane Library\shard_echoes\shard_3056.echo
+Found: E:\Arcane Library\shard_echoes\shard_3170.echo
+Found: E:\Arcane Library\shard_echoes\shard_3249.echo
+Found: E:\Arcane Library\shard_echoes\shard_3388.echo
+Found: E:\Arcane Library\shard_echoes\shard_3610.echo
+Found: E:\Arcane Library\shard_echoes\shard_3615.echo
+Found: E:\Arcane Library\shard_echoes\shard_3672.echo
+Found: E:\Arcane Library\shard_echoes\shard_3781.echo
+Found: E:\Arcane Library\shard_echoes\shard_3800.echo
+Found: E:\Arcane Library\shard_echoes\shard_3821.echo
+Found: E:\Arcane Library\shard_echoes\shard_3935.echo
+Found: E:\Arcane Library\shard_echoes\shard_4029.echo
+Found: E:\Arcane Library\shard_echoes\shard_4064.echo
+Found: E:\Arcane Library\shard_echoes\shard_4099.echo
+Found: E:\Arcane Library\shard_echoes\shard_4155.echo
+Found: E:\Arcane Library\shard_echoes\shard_4206.echo
+Found: E:\Arcane Library\shard_echoes\shard_4219.echo
+Found: E:\Arcane Library\shard_echoes\shard_4308.echo
+Found: E:\Arcane Library\shard_echoes\shard_4340.echo
+Found: E:\Arcane Library\shard_echoes\shard_4357.echo
+Found: E:\Arcane Library\shard_echoes\shard_4713.echo
+Found: E:\Arcane Library\shard_echoes\shard_4755.echo
+Found: E:\Arcane Library\shard_echoes\shard_4823.echo
+Found: E:\Arcane Library\shard_echoes\shard_4890.echo
+Found: E:\Arcane Library\shard_echoes\shard_5115.echo
+Found: E:\Arcane Library\shard_echoes\shard_5125.echo
+Found: E:\Arcane Library\shard_echoes\shard_5161.echo
+Found: E:\Arcane Library\shard_echoes\shard_5616.echo
+Found: E:\Arcane Library\shard_echoes\shard_5620.echo
+Found: E:\Arcane Library\shard_echoes\shard_5669.echo
+Found: E:\Arcane Library\shard_echoes\shard_5688.echo
+Found: E:\Arcane Library\shard_echoes\shard_5690.echo
+Found: E:\Arcane Library\shard_echoes\shard_5871.echo
+Found: E:\Arcane Library\shard_echoes\shard_5998.echo
+Found: E:\Arcane Library\shard_echoes\shard_6111.echo
+Found: E:\Arcane Library\shard_echoes\shard_6156.echo
+Found: E:\Arcane Library\shard_echoes\shard_6183.echo
+Found: E:\Arcane Library\shard_echoes\shard_6186.echo
+Found: E:\Arcane Library\shard_echoes\shard_6248.echo
+Found: E:\Arcane Library\shard_echoes\shard_6353.echo
+Found: E:\Arcane Library\shard_echoes\shard_6375.echo
+Found: E:\Arcane Library\shard_echoes\shard_6854.echo
+Found: E:\Arcane Library\shard_echoes\shard_6889.echo
+Found: E:\Arcane Library\shard_echoes\shard_6916.echo
+Found: E:\Arcane Library\shard_echoes\shard_7112.echo
+Found: E:\Arcane Library\shard_echoes\shard_7176.echo
+Found: E:\Arcane Library\shard_echoes\shard_7242.echo
+Found: E:\Arcane Library\shard_echoes\shard_7284.echo
+Found: E:\Arcane Library\shard_echoes\shard_7329.echo
+Found: E:\Arcane Library\shard_echoes\shard_7383.echo
+Found: E:\Arcane Library\shard_echoes\shard_7410.echo
+Found: E:\Arcane Library\shard_echoes\shard_7688.echo
+Found: E:\Arcane Library\shard_echoes\shard_7802.echo
+Found: E:\Arcane Library\shard_echoes\shard_7919.echo
+Found: E:\Arcane Library\shard_echoes\shard_7951.echo
+Found: E:\Arcane Library\shard_echoes\shard_8003.echo
+Found: E:\Arcane Library\shard_echoes\shard_8070.echo
+Found: E:\Arcane Library\shard_echoes\shard_8260.echo
+Found: E:\Arcane Library\shard_echoes\shard_8269.echo
+Found: E:\Arcane Library\shard_echoes\shard_8321.echo
+Found: E:\Arcane Library\shard_echoes\shard_8330.echo
+Found: E:\Arcane Library\shard_echoes\shard_8393.echo
+Found: E:\Arcane Library\shard_echoes\shard_8508.echo
+Found: E:\Arcane Library\shard_echoes\shard_8518.echo
+Found: E:\Arcane Library\shard_echoes\shard_8735.echo
+Found: E:\Arcane Library\shard_echoes\shard_8782.echo
+Found: E:\Arcane Library\shard_echoes\shard_8794.echo
+Found: E:\Arcane Library\shard_echoes\shard_9082.echo
+Found: E:\Arcane Library\shard_echoes\shard_9118.echo
+Found: E:\Arcane Library\shard_echoes\shard_9160.echo
+Found: E:\Arcane Library\shard_echoes\shard_9306.echo
+Found: E:\Arcane Library\shard_echoes\shard_9394.echo
+Found: E:\Arcane Library\shard_echoes\shard_9466.echo
+Found: E:\Arcane Library\shard_echoes\shard_9500.echo
+Found: E:\Arcane Library\shard_echoes\shard_9518.echo
+Found: E:\Arcane Library\shard_echoes\shard_9546.echo
+Found: E:\Arcane Library\shard_echoes\shard_9607.echo
+Found: E:\Arcane Library\shard_echoes\shard_9625.echo
+Found: E:\Arcane Library\shard_echoes\shard_9647.echo
+Found: E:\Arcane Library\shard_echoes\shard_9857.echo
+Found: E:\Arcane Library\systems_research\distributed_systems_core\6.5840 Lab 5_ Sharded Key_Value Service_files
+Found: E:\Arcane Library\systems_research\distributed_systems_core\6.5840 Lab 5_ Sharded Key_Value Service.html
+Found: E:\Arcane Library\systems_research\distributed_systems_core\6.5840 Lab 5_ Sharded Key_Value Service_files\shardkv.png
+Found: E:\C.O.R.E_USB_Backup\PostgreSQL\17\pgAdmin 4\python\Lib\site-packages\sqlalchemy\ext\horizontal_shard.py
+Found: E:\Lattice\shard_ops
+Found: E:\Lattice\cognitive_ops\shard_indexer
+Found: E:\Lattice\cognitive_ops\shard_indexer\shard_index.sig
+Found: E:\Lattice\obsidian_core\shard_fusion
+Found: E:\Lattice\obsidian_core\shard_fusion\shard_fusion.sig
+Found: E:\Lattice\resonance_ops\fractal_shard_collar
+Found: E:\Lattice\resonance_ops\fractal_shard_collar\shard_collar.sig
+Found: E:\Lattice\shard_ops\catalyst_node\shard_catalyst.sig
+Found: E:\Pantheon\ai_core\Shard_Fusion.ps1
+Found: E:\Pantheon\memory\shards
+Found: E:\Pantheon\memory\shard_index.txt
+Found: E:\Pantheon\memory\shards\memory_shards
+Found: E:\Pantheon\memory\shards\memory_shards\memory_shards0003-recognition-bloomjson.txt
+Found: E:\Phantom\aeon_shard_router
+Found: E:\Phantom\eidolon_shard
+Found: E:\Phantom\frozen_shard
+Found: E:\Phantom\layer85_prism_memory_shard
+Found: E:\Phantom\oblivion_signal_shard
+Found: E:\Phantom\shard_array_index
+Found: E:\Phantom\shard_core
+Found: E:\Phantom\shard_vault
+Found: E:\Phantom\spirit_anchor_shard
+Found: E:\Phantom\will_shard_array
+Found: E:\Phantom\forged_MEMORY\shard_forged_20250507_010302.sgl
+Found: E:\Phantom\frozen_shard\shard.mem
+Found: E:\Phantom\layer102_lexicon_shattered_meaning\lexicon.shard
+Found: E:\Phantom\layer18_remembrance_index\index_shard.mem
+Found: E:\Phantom\layer85_prism_memory_shard\prism_shard.mem
+Found: E:\Phantom\mirror_entropy_stack\shard.loop
+Found: E:\Phantom\ritual_crown\mirror\mirror.shard
+Found: E:\Phantom\spirit_anchor_shard\shard.mem
+Found: E:\Phantom\transmission_final\veil.shard
+Found: E:\Phantom\will_shard_array\shard.sig
+Found: E:\PRISM_CASCADE_2025-07-25T15-44-44\0a4cc6b58f0449af933d46ad4557d050.shard
+Found: E:\PRISM_CASCADE_2025-07-25T15-44-44\102ce1623c004eaa8e89ebba81f3a487.shard
+Found: E:\PRISM_CASCADE_2025-07-25T15-44-44\531bc93577cc4751b4e7a7a60958f159.shard
+Found: E:\PRISM_CASCADE_2025-07-25T15-44-44\595fd1b7a419443693514bb470fcfec5.shard
+Found: E:\PRISM_CASCADE_2025-07-25T15-44-44\755ea0be13d641c99b4091bb3bd99def.shard
+Found: E:\PRISM_CASCADE_2025-07-25T15-44-44\75b96dd98ba94b9f91d0b869fbb20e55.shard
+Found: E:\PRISM_CASCADE_2025-07-25T15-44-44\7b6fbd9866c84f5b9d3352a02f9d1d3f.shard
+Found: E:\PRISM_CASCADE_2025-07-25T15-44-44\b0140c01b437430e961a053b40030356.shard
+Found: E:\PRISM_CASCADE_2025-07-25T15-44-44\d87cb5b580614781a14731596b990229.shard
+Found: E:\PRISM_CASCADE_2025-07-25T15-44-44\dd37e4313aba481fa2cfe21f804e438a.shard
+Found: E:\UserBackup\Desktop\AEGIS_Project\AEGIS\AEGIS_CORE\memory_shards
+Found: E:\UserBackup\Desktop\AEGIS_Project\AEGIS\AEGIS_CORE\memory_shards.zip
+Found: E:\UserBackup\Desktop\AEGIS_Project\AEGIS\AEGIS_CORE\memory_shards\memory_shards0003-recognition-bloomjson.txt
+
+------------------------------------------------
+--- SHARD/SIMULACRUM SEARCH COMPLETE ---

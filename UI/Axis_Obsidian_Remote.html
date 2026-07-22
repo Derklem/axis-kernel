@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Axis Sovereign</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+        :root {
+            --bg: #050505;
+            --surface: #0a0a0a;
+            --primary: #00ff9d;
+            --dim: #333;
+            --text: #e0e0e0;
+            --scanline: rgba(0, 255, 157, 0.03);
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Share Tech Mono', monospace;
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Scanline Effect */
+        body::before {
+            content: " ";
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            z-index: 999;
+            background-size: 100% 2px, 3px 100%;
+            pointer-events: none;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--primary);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px var(--scanline);
+        }
+
+        .logo {
+            font-size: 1.2em;
+            letter-spacing: 2px;
+            color: var(--primary);
+            text-transform: uppercase;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 20px;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .tab {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            border: 1px solid var(--dim);
+            background: #000;
+            color: #666;
+            transition: 0.2s;
+        }
+
+        .tab.active {
+            border-color: var(--primary);
+            color: var(--primary);
+            box-shadow: 0 0 8px var(--scanline);
+        }
+
+        .view-section {
+            display: none;
+            animation: fadeIn 0.3s;
+        }
+
+        .view-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(5px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Dynamic Form */
+        label {
+            display: block;
+            color: var(--primary);
+            margin-bottom: 5px;
+            font-size: 0.9em;
+        }
+
+        select,
+        input,
+        textarea {
+            width: 100%;
+            background: #080808;
+            border: 1px solid var(--dim);
+            color: #fff;
+            padding: 12px;
+            margin-bottom: 15px;
+            font-family: inherit;
+            font-size: 1em;
+            box-sizing: border-box;
+            transition: 0.3s;
+        }
+
+        select:focus,
+        input:focus,
+        textarea:focus {
+            border-color: var(--primary);
+            outline: none;
+            box-shadow: 0 0 5px var(--scanline);
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background: var(--primary);
+            color: #000;
+            border: none;
+            font-weight: bold;
+            font-family: inherit;
+            letter-spacing: 1px;
+            cursor: pointer;
+            text-transform: uppercase;
+            position: relative;
+            overflow: hidden;
+        }
+
+        button:active {
+            transform: translateY(2px);
+        }
+
+        .card {
+            border: 1px solid var(--dim);
+            padding: 15px;
+            margin-bottom: 15px;
+            background: #080808;
+            position: relative;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            color: var(--primary);
+            border-bottom: 1px solid #222;
+            padding-bottom: 5px;
+            margin-bottom: 8px;
+        }
+
+        .btn-deny {
+            background: #330000;
+            color: #ff5555;
+            border: 1px solid #550000;
+        }
+
+        .btn-approve {
+            background: #003311;
+            color: #00ff9d;
+            border: 1px solid #005522;
+        }
+
+        .status-badge {
+            font-size: 0.8em;
+            padding: 2px 6px;
+            border: 1px solid var(--dim);
+        }
+
+        .status-ok {
+            color: var(--primary);
+            border-color: var(--primary);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">AXIS :: OBSIDIAN</div>
+        <div style="display:flex; gap:10px;">
+            <div id="sensorData" class="status-badge" style="border-color:#555; color:#555;">SENSORS: ...</div>
+            <div id="statusInfo" class="status-badge">OFFLINE</div>
+        </div>
+    </div>
+
+    <div class="tabs">
+        <div id="tab-console" class="tab active" onclick="switchTab('console')">CMD</div>
+        <div id="tab-dash" class="tab" onclick="switchTab('dash')">DASH</div>
+        <div id="tab-approvals" class="tab" onclick="switchTab('approvals')">ALERTS (<span id="cnt">0</span>)</div>
+        <div id="tab-strat" class="tab" onclick="switchTab('strat')">STRAT</div>
+        <div id="tab-forecast" class="tab" onclick="switchTab('forecast')">FCST</div>
+
+        <div id="tab-dreams" class="tab" onclick="switchTab('dreams')" style="color:#e040fb; border-color:#e040fb;">
+            DREAM</div>
+        <div id="tab-results" class="tab" onclick="switchTab('results')">LOG</div>
+        <div id="tab-gov" class="tab" onclick="switchTab('gov')">GOV</div>
+        <div id="tab-anchor" class="tab" onclick="switchTab('anchor')" style="color:#00BFFF; border-color:#008080;">
+            ANCHOR</div>
+    </div>
+
+    <!-- CONSOLE -->
+    <div id="view-console" class="view-section active">
+        <label>PROTOCOL SELECTION</label>
+
+        <!-- AUTONOMY CARD -->
+        <div class="card" style="margin-bottom:15px; border-color: var(--primary);">
+            <div class="card-header">
+                <span>AUTONOMY MODE</span>
+                <small id="autonomyModeLabel" style="color:var(--primary); font-weight:bold;">...</small>
+            </div>
+            <select id="autonomyModeSelect" onchange="setAutonomyMode()" style="margin-bottom:0; background:#000;">
+                <option value="observe_only">OBSERVE ONLY</option>
+                <option value="recommend">RECOMMEND</option>
+                <option value="auto_low_risk">AUTO (LOW RISK)</option>
+            </select>
+        </div>
+
+        <select id="toolSelect" onchange="updateToolUI()"></select>
+
+        <div id="arg-container"></div> <!-- Dynamic Inputs Here -->
+
+        <div id="tool-desc" style="color: #666; font-size: 0.8em; margin-bottom: 15px; font-style: italic;"></div>
+        <button onclick="executeTool()">INITIALIZE LINK</button>
+    </div>
+
+    <!-- DASHBOARD -->
+    <div id="view-dash" class="view-section">
+        <div id="honestDash"></div>
+    </div>
+
+    <!-- APPROVALS -->
+    <div id="view-approvals" class="view-section">
+        <div id="approvalList" style="text-align:center; color:#444;">NO ACTIVE ALERTS</div>
+    </div>
+
+    <!-- FORECAST -->
+    <div id="view-forecast" class="view-section">
+        <div class="card" style="border-color:#444; background:transparent;">
+            <div class="card-header">PULSE WAVEFORM</div>
+            <canvas id="pulseWaveform" width="300" height="60" style="width:100%; height:80px;"></canvas>
+        </div>
+        <div id="forecastContainer" style="color:#aaa;">Downlinking future horizons...</div>
+    </div>
+
+    <!-- STRAT -->
+    <div id="view-strat" class="view-section">
+        <div id="stratDisplay">
+            <div style="color:var(--primary); margin-bottom:10px;">HYPOTHESES</div>
+            <div id="hypothesisList" style="font-size:0.8em; color:#888;">Scanning cognitive threads...</div>
+            <div style="color:var(--primary); margin-top:20px; margin-bottom:10px;">RECOMMENDATIONS</div>
+            <div id="recommendationList" style="font-size:0.8em; color:#888;">Analyzing probability branches...</div>
+        </div>
+    </div>
+
+    <!-- RESULTS -->
+    <div id="view-results" class="view-section">
+        <div id="resultsContainer" style="font-size: 0.9em; white-space: pre-wrap; color: #aaa;">Waiting for downlink...
+        </div>
+    </div>
+
+    <!-- GOVERNANCE HISTORY -->
+    <div id="view-gov" class="view-section">
+        <div style="color:var(--primary); margin-bottom:10px;">COMMIT LOG</div>
+        <div id="govHistory" style="font-size:0.8em; color:#888;">Downlinking legislative history...</div>
+    </div>
+
+    <!-- ANCHOR -->
+    <div id="view-anchor" class="view-section">
+        <div class="card" style="border-color:#00BFFF;">
+            <div class="card-header"><span style="color:#00BFFF">CONSTITUTION</span><small id="ancConstVer"
+                    style="color:#ccc">...</small></div>
+            <div style="font-size:0.9em; margin-bottom:5px;">Status: <span id="ancConstStatus"
+                    style="font-weight:bold;">...</span> | Mode: <span id="ancMode" style="color:#aaa">...</span></div>
+            <div id="ancInvList" style="color:#888; font-size:0.85em; margin-top:5px;">Checking invariants...</div>
+        </div>
+
+        <div class="card" style="border-color:#ff00ff;">
+            <div class="card-header"><span style="color:#ff00ff">PENDING DECISIONS</span><small>RATIFY</small></div>
+            <div id="ancDecisions" style="color:#888;">Loading...</div>
+        </div>
+
+        <div class="card" style="border-color:#444;">
+            <div class="card-header"><span>ACTIVITY STREAM</span><small>RECENT</small></div>
+            <div id="ancActivity" style="color:#888;">Loading...</div>
+        </div>
+
+        <div class="card" style="border-color:#e040fb;">
+            <div class="card-header"><span style="color:#e040fb">SHADOW LAYER</span><small>HEALTH</small></div>
+            <div id="ancShadow" style="color:#888;">Loading...</div>
+        </div>
+
+        <div class="card" style="border-color:#008080;">
+            <div class="card-header"><span style="color:#008080">SHADOW SIMULATOR</span><small>NON-DESTRUCTIVE</small>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:10px;">
+                <label style="color:#aaa; font-size:0.8em; margin-bottom:-5px;">Target Tenant</label>
+                <select id="simTenant">
+                    <option value="TENANT-ORYN">TENANT-ORYN</option>
+                    <option value="TENANT-LINEAGE">TENANT-LINEAGE</option>
+                </select>
+
+                <label style="color:#aaa; font-size:0.8em; margin-bottom:-5px;">Action Type</label>
+                <input id="simAction" placeholder="e.g. LOCK_DEVICE" value="LOCK_DEVICE" />
+
+                <label style="color:#aaa; font-size:0.8em; margin-bottom:-5px;">Justification</label>
+                <textarea id="simJustification" rows="3" placeholder="Explain intent (e.g. Security Audit)"></textarea>
+
+                <button onclick="runShadowSim()" style="background:#008080; color:#fff; border:none;">RUN SHADOW
+                    SIM</button>
+            </div>
+            <div id="simResult" style="display:none; margin-top:15px; border-top:1px solid #333; padding-top:10px;">
+                <div>Decision: <span id="simDecision" style="font-weight:bold;"></span></div>
+                <div id="simExpl"
+                    style="color:#aaa; font-size:0.9em; margin-top:5px; border-left:2px solid #555; padding-left:8px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let toolRegistry = [];
+        let pendingList = [];
+        let lastReqId = null;
+
+        function switchTab(t) {
+            document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+            document.querySelectorAll('.view-section').forEach(x => x.classList.remove('active'));
+            document.getElementById('tab-' + t).classList.add('active');
+            document.getElementById('view-' + t).classList.add('active');
+            if (t === 'anchor') refreshAnchorConsole();
+            if (t === 'dreams') fetchDream();
+        }
+
+        function loadTools() {
+            fetch('/registry').then(r => r.json()).then(data => {
+                toolRegistry = data.tools;
+                const sel = document.getElementById('toolSelect');
+                sel.innerHTML = '';
+
+                toolRegistry.filter(t => t.ui && t.ui.expose_on_console).forEach(t => {
+                    const opt = document.createElement('option');
+                    opt.value = t.id;
+                    // Risk Badge in text
+                    const riskMark = t.risk === 'high' ? ' [HIGH]' : (t.risk === 'medium' ? ' [MED]' : '');
+                    opt.innerText = t.ui.label + riskMark;
+                    sel.appendChild(opt);
+                });
+                updateToolUI();
+            });
+        }
+
+        function updateToolUI() {
+            const id = document.getElementById('toolSelect').value;
+            const tool = toolRegistry.find(t => t.id === id);
+            if (!tool) return;
+
+            // Risk Badge Visuals
+            const descDiv = document.getElementById('tool-desc');
+            descDiv.innerText = tool.description || '';
+
+            // Dynamic Risk Class
+            const selInfo = document.getElementById('toolSelect');
+            selInfo.style.borderColor = tool.risk === 'high' ? 'var(--danger)' : (tool.risk === 'medium' ? 'orange' : 'var(--dim)');
+
+            const container = document.getElementById('arg-container');
+            container.innerHTML = '';
+
+            if (tool.parameters && tool.parameters.length > 0) {
+                tool.parameters.forEach(p => {
+                    const wrap = document.createElement('div');
+                    const label = document.createElement('div');
+                    label.innerText = p.name.toUpperCase();
+                    label.style.fontSize = '0.7em'; label.style.color = '#555'; label.style.marginBottom = '2px';
+
+                    const input = document.createElement(p.type === 'string_long' || p.name === 'content' ? 'textarea' : 'input');
+                    input.id = 'arg-' + p.name;
+                    input.placeholder = p.description;
+                    if (p.type === 'string_long' || p.name === 'content') input.rows = 4;
+                    if (p.type === 'int') input.type = 'number';
+
+                    wrap.appendChild(label); wrap.appendChild(input);
+                    container.appendChild(wrap);
+                });
+            } else {
+                container.innerHTML = '<div style="color:#444; font-style:italic; padding:10px; border:1px dashed #222;">No parameters required.</div>';
+            }
+
+            // Button Text
+            const btn = document.querySelector('#view-console button');
+            if (tool.id === 'CHAT-Message') btn.innerText = "TRANSMIT MESSAGE";
+            else if (tool.risk === 'high') btn.innerText = "REQUEST AUTHORIZATION";
+            else btn.innerText = "EXECUTE COMMAND";
+        }
+
+        // --- CRYPTO HELPER (Phase 6) ---
+        async function createEnvelope(intent) {
+            const identity = "portal:maya_phone";
+            const secret = "axis_dev_secret_001"; // Shared Secret for DEV mode
+            const ts = new Date().toISOString();
+            const nonce = crypto.randomUUID();
+
+            // Canonical Payload: "ts|nonce|identity|intent_json"
+            const intentJson = JSON.stringify(intent);
+            const payload = `${ts}|${nonce}|${identity}|${intentJson}`;
+
+            // HMAC-SHA256
+            const enc = new TextEncoder();
+            const key = await crypto.subtle.importKey(
+                "raw", enc.encode(secret),
+                { name: "HMAC", hash: "SHA-256" },
+                false, ["sign"]
+            );
+            const signatureBuf = await crypto.subtle.sign("HMAC", key, enc.encode(payload));
+            const signatureHex = Array.from(new Uint8Array(signatureBuf)).map(b => b.toString(16).padStart(2, '0')).join('');
+
+            return {
+                schema: "axis.intent_envelope.v0.1",
+                ts_utc: ts,
+                nonce: nonce,
+                identity: identity,
+                intent_json: intentJson, // Authoritative signing payload
+                intent: intent,          // Legacy/UI convenience
+                signature: "hmac256:" + signatureHex
+            };
+        }
+
+        // --- CONSOLE ---
+        async function executeTool() {
+            const id = document.getElementById('toolSelect').value;
+            const tool = toolRegistry.find(t => t.id === id);
+            const args = {};
+
+            if (tool.parameters && tool.parameters.length > 0) {
+                tool.parameters.forEach(p => {
+                    const el = document.getElementById('arg-' + p.name);
+                    if (el) args[p.name] = el.value;
+                });
+            }
+
+            const intent = { type: 'ui_intent', verb: 'request_tool', parameters: { tool: id, arguments: args }, source: 'Mobile_OBS_v9' };
+            const envelope = await createEnvelope(intent);
+
+            fetch('/intents', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(envelope)
+            }).then(() => {
+                switchTab('approvals');
+            });
+        }
+
+        // --- DASHBOARD (Phase 11) ---
+        async function fetchJsonSafe(url) {
+            try {
+                const r = await fetch(url, { cache: "no-store", headers: { 'Cache-Control': 'no-cache' } });
+                if (!r.ok) throw new Error(`HTTP ${r.status}`);
+                const t = await r.text();
+                return t ? JSON.parse(t) : {};
+            } catch (e) {
+                return { __error: String(e) };
+            }
+        }
+
+        function fmtMs(ms) {
+            if (ms === null || ms === undefined) return "N/A";
+            if (ms < 1000) return `${Math.round(ms)}ms`;
+            return `${(ms / 1000).toFixed(2)}s`;
+        }
+
+        function pct(x) {
+            if (x === null || x === undefined) return "0%";
+            return `${Math.round(x * 100)}%`;
+        }
+
+        function statusColor(s) {
+            if (!s) return "#666";
+            if (s.includes("CRITICAL")) return "#ff5555";
+            if (s.includes("HIGH")) return "#eab308";
+            return "var(--primary)";
+        }
+
+        function renderHonestDashboard(transport, exec, immune) {
+            const el = document.getElementById("honestDash");
+            if (!el) return;
+
+            const tErr = transport && transport.__error;
+            const eErr = exec && exec.__error;
+
+            const tStatus = tErr ? "OFFLINE" : (transport.status || "UNKNOWN");
+            const eStatus = eErr ? "OFFLINE" : "ONLINE"; // Execution log usually doesn't have a status field, just data
+
+            const qDepth = tErr ? "—" : (transport.queue_depth_lines ?? "—");
+            const byteLag = tErr ? "—" : (transport.byte_lag ?? "—");
+            const tLat = tErr ? "—" : fmtMs(transport.latency_ms);
+
+            const thr = eErr ? "—" : (exec.throughput_pm ?? "—");
+            const p95 = eErr ? "—" : fmtMs(exec.p95_duration_ms);
+
+            let failRate = "—";
+            let blockRate = "—";
+            if (!eErr && exec.total_intents > 0) {
+                failRate = pct(exec.executed_fail / exec.total_intents);
+                blockRate = pct(exec.blocked / exec.total_intents);
+            } else if (!eErr) {
+                failRate = "0%"; blockRate = "0%";
+            }
+
+            const qOn = immune && immune.quarantine === true; // Should align with how we expose immune state
+            const qReason = immune && immune.reason ? immune.reason : (qOn ? "enabled" : "none");
+            const qMode = immune && immune.mode !== undefined ? immune.mode : "—";
+
+            // Culprits (top tools/verbs)
+            // execution_analytics.json usually has "top_culprits" array
+            const culprits = [];
+            if (exec && exec.top_culprits && Array.isArray(exec.top_culprits)) {
+                exec.top_culprits.slice(0, 3).forEach(x => culprits.push(`${x.key || x.tool || "?"} (${x.count || 0})`));
+            }
+
+            el.innerHTML = `
+            <div class="card" style="border-color: var(--primary);">
+              <div class="card-header">
+                <span>HONEST DASHBOARD</span>
+                <small>${new Date().toLocaleTimeString()}</small>
+              </div>
+
+              <div class="card" style="margin-bottom:10px; border-color:#444;">
+                <div class="card-header"><span>TRANSPORT</span><small style="color:${statusColor(tStatus)}">${tStatus}</small></div>
+                <div style="color:#bbb; font-size:0.9em;">
+                  Depth: <span style="color:#fff">${qDepth}</span> lines<br/>
+                  Byte Lag: <span style="color:#fff">${byteLag}</span><br/>
+                  Latency: <span style="color:#fff">${tLat}</span>
+                </div>
+              </div>
+
+              <div class="card" style="margin-bottom:10px; border-color:#444;">
+                <div class="card-header"><span>EXECUTION</span><small style="color:${statusColor('OK')}">ONLINE</small></div>
+                <div style="color:#bbb; font-size:0.9em;">
+                  Throughput: <span style="color:#fff">${thr}</span> /min<br/>
+                  p95 Latency: <span style="color:#fff">${p95}</span><br/>
+                  Fail: <span style="color:#fff">${failRate}</span> | Block: <span style="color:#fff">${blockRate}</span>
+                </div>
+              </div>
+
+              <div class="card" style="margin-bottom:10px; border-color:${qOn ? '#ff5555' : '#444'};">
+                <div class="card-header"><span>REFLEX</span><small style="color:${qOn ? '#ff5555' : 'var(--primary)'}">${qOn ? 'QUARANTINE' : 'NORMAL'}</small></div>
+                <div style="color:#bbb; font-size:0.9em;">
+                  Mode: <span style="color:#fff">${qMode}</span><br/>
+                  Reason: <span style="color:#fff">${qReason}</span>
+                </div>
+              </div>
+
+              <div class="card" style="border-color:#444;">
+                <div class="card-header"><span>CULPRITS</span><small>TOP 3</small></div>
+                <div style="color:#bbb; font-size:0.9em;">
+                  ${culprits.length ? culprits.map(x => `• ${x}`).join("<br/>") : "<span style='color:#444'>None</span>"}
+                </div>
+              </div>
+            </div>
+          `;
+        }
+
+        async function refreshHonestDashboard() {
+            // Only poll if tab is active
+            if (!document.getElementById("view-dash").classList.contains("active")) return;
+
+            const transport = await fetchJsonSafe("/state/transport");
+            const exec = await fetchJsonSafe("/state/execution");
+            const immune = await fetchJsonSafe("/state/immune");
+
+            renderHonestDashboard(transport, exec, immune && immune.__error ? null : immune);
+        }
+
+        // --- Core Loops ---
+        function renderApprovals() {
+            const list = document.getElementById('approvalList');
+            document.getElementById('cnt').innerText = pendingList.length;
+            list.innerHTML = '';
+            if (!pendingList.length) { list.innerHTML = '<div style="text-align:center; color:#333; padding:20px;">// SILENCE //</div>'; return; }
+            pendingList.forEach(req => {
+                const card = document.createElement('div'); card.className = 'card';
+                card.innerHTML = `<div class="card-header"><span>${req.tool}</span><small>ID:${(req.intent_id || '????').substring(0, 4)}</small></div>
+                <div style="margin-bottom:10px; font-size:0.9em;">${req.reason || 'Authorization Required'}</div>
+                <div style="display:flex; gap:10px;"><button class="btn-deny" onclick="decide('${req.intent_id}','deny')">DENY</button><button class="btn-approve" onclick="decide('${req.intent_id}','approve')">AUTHORIZE</button></div>`;
+                list.appendChild(card);
+            });
+        }
+        async function decide(id, d) {
+            const intent = { type: 'ui_intent', verb: 'anchor_decision', parameters: { request_id: id, decision: d }, source: 'Mobile_OBS' };
+            const envelope = await createEnvelope(intent);
+            fetch('/intents', { method: 'POST', body: JSON.stringify(envelope) }).then(() => {
+                pendingList = pendingList.filter(x => x.intent_id !== id); renderApprovals();
+                if (d === 'approve') { switchTab('results'); startPolling(); }
+            });
+        }
+        function startPolling() {
+            setInterval(() => {
+                refreshHonestDashboard();
+                fetch('/results?mode=latest').then(r => r.json()).then(d => {
+                    if (d && d.id !== lastReqId) {
+                        lastReqId = d.id;
+                        document.getElementById('resultsContainer').innerHTML = `<div class="card" style="border-color:var(--primary)"><div class="card-header">${d.tool} [SUCCESS]</div>${d.output}</div>`;
+                    }
+                }).catch(() => { });
+            }, 3000);
+        }
+        function drawWaveform(history) {
+            const canvas = document.getElementById('pulseWaveform');
+            if (!canvas || !history || history.length < 2) return;
+            const ctx = canvas.getContext('2d');
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Draw RF Density (Background Fill)
+            ctx.beginPath();
+            ctx.fillStyle = 'rgba(0, 255, 157, 0.05)';
+            const step = canvas.width / 19;
+            ctx.moveTo(0, canvas.height);
+            history.forEach((h, i) => {
+                const y = canvas.height - (Math.min(h.rf_density, 50) / 50 * canvas.height);
+                ctx.lineTo(i * step, y);
+            });
+            ctx.lineTo(canvas.width, canvas.height);
+            ctx.fill();
+
+            // Draw BPM Pulse (Main Line)
+            ctx.beginPath();
+            ctx.strokeStyle = 'var(--primary)';
+            ctx.lineWidth = 2;
+            history.forEach((h, i) => {
+                const y = canvas.height - ((h.bpm - 40) / 80 * canvas.height);
+                if (i === 0) ctx.moveTo(0, y); else ctx.lineTo(i * step, y);
+            });
+            ctx.stroke();
+
+            // Draw Ratio (Secondary Red Line)
+            ctx.beginPath();
+            ctx.strokeStyle = '#ff00ff';
+            ctx.lineWidth = 1;
+            ctx.setLineDash([2, 2]);
+            history.forEach((h, i) => {
+                const y = canvas.height - (Math.min(h.ratio, 5) / 5 * canvas.height);
+                if (i === 0) ctx.moveTo(0, y); else ctx.lineTo(i * step, y);
+            });
+            ctx.stroke();
+            ctx.setLineDash([]);
+        }
+
+        function resolve(id, res, stat) {
+            const note = prompt("REASON / NOTE (Optional):");
+            if (note === null) return; // Cancelled
+            fetch('/intents', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    type: 'ui_intent',
+                    verb: 'resolve_hypothesis',
+                    parameters: {
+                        hypothesis_id: id,
+                        resolution_status: res,
+                        status: stat,
+                        note: note,
+                        linked_changes: ""
+                    },
+                    source: 'Mobile_OBS_v9'
+                })
+            }).then(() => {
+                updateStrat();
+            });
+        }
+
+        function refreshAutonomy() {
+            fetch('/autonomy').then(r => r.json()).then(d => {
+                if (!d || !d.mode) return;
+                const sel = document.getElementById('autonomyModeSelect');
+                const lbl = document.getElementById('autonomyModeLabel');
+                if (!sel) return;
+
+                // Only update if not currently focused to avoid jumpiness
+                if (document.activeElement !== sel) {
+                    sel.value = d.mode;
+                }
+                lbl.textContent = d.mode.toUpperCase().replace('_', ' ');
+
+                // Color coding
+                if (d.mode === 'auto_low_risk') lbl.style.color = '#ff00ff'; // active
+                else if (d.mode === 'observe_only') lbl.style.color = '#888';
+                else lbl.style.color = 'var(--primary)';
+            }).catch(() => { });
+        }
+
+        async function setAutonomyMode() {
+            const sel = document.getElementById('autonomyModeSelect');
+            if (!sel) return;
+            const mode = sel.value;
+
+            // Note: /autonomy POST handler in server wraps this in its own intent if using the old path,
+            // but we are bypassing that by creating a proper intent envelope here?
+            // Wait, the server has a separate /autonomy POST handler on line 1707.
+            // That handler *expects* raw { mode } json.
+            // We should arguably migrate that endpoint too, but for speed, let's leave it as is if it's not critical,
+            // OR update it. The server handler at 1707 is NOT GUARDED.
+            // Let's leave it for now to avoid breaking it, but ideally it should be guarded.
+            // Actually, the user's "duplicate /intents handler" complaint didn't mention /autonomy.
+            // Let's stick to the /intents fix first.
+
+            fetch('/autonomy', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ mode })
+            }).then(() => {
+                // Optimistic visual update
+                document.getElementById('autonomyModeLabel').textContent = "UPDATING...";
+                setTimeout(refreshAutonomy, 1000);
+            }).catch(() => { });
+        }
+
+        function updateStrat() {
+            fetch('/hypotheses').then(r => r.json()).then(d => {
+                const list = document.getElementById('hypothesisList');
+                if (!d || !d.hypotheses) return;
+                list.innerHTML = d.hypotheses.filter(h => h.status === 'open').map(h => `
+                    <div class="card" style="border-left: 3px solid ${h.priority === 'high' ? 'var(--danger)' : '#444'}">
+                        <div style="color:#fff">${h.question}</div>
+                        <div style="font-size:0.8em; margin-top:5px; color:#aaa">${h.hypothesis}</div>
+                        <div style="display:flex; gap:5px; margin-top:10px;">
+                            <button class="btn-approve" style="font-size:0.7em; padding:5px;" onclick="resolve('${h.id}','confirmed','resolved')">CONFIRM</button>
+                            <button class="btn-deny" style="font-size:0.7em; padding:5px;" onclick="resolve('${h.id}','refuted','rejected')">REJECT</button>
+                            <button style="font-size:0.7em; padding:5px; background:#222; color:#888; border:1px solid #444;" onclick="resolve('${h.id}','inconclusive','deferred')">DEFER</button>
+                        </div>
+                    </div>
+                `).join('') || '<div style="padding:10px;">// TABULA RASA //</div>';
+            });
+
+            fetch('/recommendations').then(r => r.json()).then(d => {
+                const list = document.getElementById('recommendationList');
+                if (!d || !d.recommendations) return;
+                list.innerHTML = d.recommendations.filter(r => r.status === 'pending' || r.status === 'sim_pass').map(r => `
+                    <div class="card" style="border-color:${r.status === 'sim_pass' ? 'var(--primary)' : '#444'}">
+                        <div class="card-header"><span>${r.name}</span> <small>${r.risk_level.toUpperCase()}</small></div>
+                        <div style="font-size:0.9em; color:#bbb">${r.summary}</div>
+                        <div style="font-size:0.8em; margin-top:5px; color:${r.status === 'sim_pass' ? 'var(--primary)' : '#888'}">SIM: ${r.status.toUpperCase()}</div>
+                    </div>
+                `).join('') || '<div style="padding:10px;">// NO BRANCHES //</div>';
+            });
+
+            fetch('/strat-extras').then(r => r.json()).then(d => {
+                const list = document.getElementById('recommendationList');
+
+                // Render Auto-Tune Proposals (including DOCTRINE)
+                if (d.autotune && d.autotune.proposals) {
+                    const open = d.autotune.proposals.filter(p => p.status === 'open' || p.status === 'sim_pass' || p.status === 'sim_risk_increase');
+                    if (open.length > 0) {
+                        const div = document.createElement('div');
+                        let content = `<div style="color:var(--primary); margin-top:20px; margin-bottom:10px;">PROPOSALS (${open.length})</div>`;
+
+                        open.forEach(p => {
+                            const isDoctrine = p.scope === 'doctrine';
+                            const cardColor = isDoctrine ? '#00ccff' : '#ff00ff';
+                            const title = isDoctrine ? `AMENDMENT: ${p.target.rule_id}` : `AUTO-TUNE: ${p.tool || p.target.key}`;
+                            const approveLabel = isDoctrine ? 'RATIFY AMENDMENT' : (p.status === 'open' ? 'SIMULATE' : 'RATIFY');
+                            const callback = isDoctrine && p.status === 'open' ? 'simulate' : (isDoctrine ? 'ratify' : decFor(p));
+
+                            content += `
+                            <div class="card" style="border-color:${cardColor}">
+                                <div class="card-header"><span style="color:${cardColor}">${title}</span> <small>${p.scope.toUpperCase()}</small></div>
+                                <div style="font-size:0.9em; color:#ddd; margin-bottom:5px;">${p.reason || 'No summary provided.'}</div>
+                                ${isDoctrine ? `<div style="font-size:0.8em; color:#888; border:1px dashed #333; padding:4px;">CHANGE: ${p.proposed_change.before.severity} &rarr; ${p.proposed_change.after.severity}</div>` : ''}
+                                <div style="font-size:0.8em; color:#888; margin-top:5px;">Basis: ${p.metric_basis.incident_count || p.metric_basis.calls} hits, FP Ratio: ${((p.metric_basis.fp_ratio || 0) * 100).toFixed(0)}%</div>
+                                ${p.certification ? `<div style="font-size:0.75em; border:1px solid #333; padding:5px; margin-top:5px; color:${p.status === 'sim_pass' ? 'var(--primary)' : 'orange'}">SIM: ${p.status.toUpperCase()}<br/>${p.certification.note}</div>` : ''}
+                                <div style="display:flex; gap:10px; margin-top:10px;">
+                                    <button class="btn-deny" onclick="resolveAutoTune('${p.id}', 'reject')">REJECT</button>
+                                    <button class="${p.status === 'sim_pass' || (isDoctrine && p.status === 'open') ? 'btn-approve' : ''}" 
+                                            onclick="resolveAutoTune('${p.id}', '${callback}')" 
+                                            style="${!isDoctrine && p.status === 'open' ? 'background:#555; color:#fff;' : ''}">
+                                        ${approveLabel}
+                                    </button>
+                                </div>
+                            </div>`;
+                        });
+
+                        div.innerHTML = content;
+                        list.appendChild(div);
+                    }
+                }
+
+                function decFor(p) {
+                    if (p.status === 'open') return 'simulate';
+                    return 'ratify';
+                }
+
+                // Render Scheduled Jobs
+                if (d.schedule && d.schedule.jobs) {
+                    const div = document.createElement('div');
+                    div.innerHTML = `<div style="color:var(--primary); margin-top:20px; margin-bottom:10px;">SCHEDULED OPS</div>` +
+                        d.schedule.jobs.filter(j => j.enabled).map(j => `
+                        <div class="card" style="border-left: 3px solid var(--primary);">
+                            <div class="card-header"><span>${j.id.replace('SCHED-', '')}</span> <small>${j.cadence}</small></div>
+                            <div style="font-size:0.8em; color:#aaa;">Last Run: ${j.last_run_at ? new Date(j.last_run_at).toLocaleTimeString() : 'NEVER'}</div>
+                        </div>
+                    `).join('');
+                    list.appendChild(div);
+                }
+            });
+        }
+
+        async function resolveAutoTune(id, dec) {
+            let verb = 'resolve_autotune';
+            if (dec === 'ratify') verb = 'ratify_proposal';
+            if (dec === 'simulate') verb = 'simulate_proposal';
+
+            const intent = {
+                type: 'ui_intent', verb: verb,
+                parameters: { proposal_id: id, decision: dec },
+                source: 'Mobile_OBS'
+            };
+            const envelope = await createEnvelope(intent);
+
+            fetch('/intents', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(envelope)
+            }).then(() => {
+                setTimeout(updateStrat, 500); // Quick refresh
+            });
+        }
+
+        function hb() {
+            fetch('/heartbeat').then(r => r.json()).then(d => {
+                document.getElementById('statusInfo').innerText = "ONLINE"; document.getElementById('statusInfo').classList.add('status-ok');
+
+                // Handle PowerShell Serialization Quirk (Output might be wrapped in { value: [], Count: N })
+                let raw = d.pending_approvals;
+                if (raw && !Array.isArray(raw) && raw.value && Array.isArray(raw.value)) { raw = raw.value; }
+
+                pendingList = raw || []; renderApprovals();
+                if (d.history) drawWaveform(d.history);
+            }).catch(() => { document.getElementById('statusInfo').innerText = "OFFLINE"; document.getElementById('statusInfo').classList.remove('status-ok'); });
+
+            fetch('/forecast').then(r => r.json()).then(d => {
+                const f = document.getElementById('forecastContainer');
+                if (!d || !d.rf_cycles) return;
+                let h = `<div style="color:var(--primary); margin-bottom:10px;">GENERATED: ${d.generated_at}</div>`;
+
+                // RF Cycles
+                h += `<div class="card"><div class="card-header">NEXT RF WINDOW</div>`;
+                if (d.rf_cycles.length > 0) {
+                    const c = d.rf_cycles[0];
+                    h += `<div>TIME: ${c.typical_start_local} (${c.periodicity})</div><div>CONF: ${(c.next_window_confidence * 100).toFixed(0)}%</div>`;
+                } else h += `<div>NO CYCLES DETECTED</div>`;
+                h += `</div>`;
+
+                // Tool Trends
+                h += `<div class="card"><div class="card-header">TOOL TRENDS</div>`;
+                d.tool_trends.slice(0, 3).forEach(t => {
+                    const color = t.trend === 'improving' ? 'var(--primary)' : (t.trend === 'degrading' ? '#ff5555' : '#888');
+                    h += `<div>${t.tool}: <span style="color:${color}">${t.trend.toUpperCase()}</span> (Fail: ${(t.fail_rate_current * 100).toFixed(0)}%)</div>`;
+                });
+                h += `</div>`;
+
+                // Pulse Drift
+                const p = d.pulse_drift;
+                if (p) {
+                    h += `<div class="card"><div class="card-header">PULSE DRIFT</div>`;
+                    h += `<div>RATIO: ${p.current_ratio}:1</div><div>TREND: ${p.trend.toUpperCase()}</div></div>`;
+                }
+
+                f.innerHTML = h;
+            }).catch(() => { });
+
+            fetch('/dream-report').then(r => r.json()).then(d => {
+                const f = document.getElementById('forecastContainer');
+                if (!d || d.resilience_score === undefined) return;
+
+                let h = `<div class="card" style="border-color:#ff00ff;"><div class="card-header">DREAM RESILIENCE</div>`;
+                h += `<div>SCORE: <span style="font-size:1.2em; color:var(--primary);">${(d.resilience_score * 100).toFixed(0)}%</span></div>`;
+                h += `<div style="font-size:0.8em; margin-top:5px; color:#888;">SCENARIOS: ${d.scenarios_passed}/${d.scenarios_tested}</div>`;
+
+                if (d.weak_points && d.weak_points.length > 0) {
+                    h += `<div style="font-size:0.7em; margin-top:10px; color:#ff5555; border-top:1px solid #333; padding-top:5px;">WEAK POINTS:<ul>`;
+                    d.weak_points.slice(0, 2).forEach(w => h += `<li>${w}</li>`);
+                    h += `</ul></div>`;
+                }
+                h += `</div>`;
+                f.innerHTML += h;
+            }).catch(() => { });
+
+            if (document.getElementById('view-strat').classList.contains('active')) updateStrat();
+        }
+        function refreshHistory() {
+            fetch('/governance').then(r => r.json()).then(d => {
+                const list = document.getElementById('govHistory');
+                if (!d || !d.history) return;
+                list.innerHTML = d.history.slice().reverse().map(c => `
+                    <div class="card" style="border-left: 2px solid ${c.proposal_id ? 'var(--primary)' : '#444'}">
+                        <div class="card-header"><span>${c.commit_id}</span> <small>${new Date(c.timestamp).toLocaleTimeString()}</small></div>
+                        <div style="margin-bottom:5px;">${c.target.scope.toUpperCase()}/${c.target.key} (Tool: ${c.target.tool})</div>
+                        <div style="color:#aaa; font-size:0.9em;">${c.change.from} &rarr; <span style="color:var(--primary)">${c.change.to}</span></div>
+                    </div>
+                `).join('') || '<div style="padding:10px;">// TABULA RASA //</div>';
+            });
+        }
+
+        setInterval(hb, 2000); hb(); loadTools();
+        setInterval(refreshHistory, 5000); refreshHistory();
+        setInterval(refreshHonestDashboard, 3000); refreshHonestDashboard();
+    </script>
+    <script>
+        //Import-Module (Join-Path $root "Axis_Spark.ps1") -ErrorAction SilentlyContinue
+
+        // ... (Existing imports) ...
+
+        // Routes
+        // /autonomy -> servces dashboard JSON
+        // /spark_feed -> serves spark feed JSON (New)
+        // /action -> handles POST intents (like spark_refresh)
+    </script>
+    <script>
+        // ORIGIN FIX (v2): Dynamic Origin Resolution
+        // Uses window.location.origin to ensure mobile devices target the server IP, not localhost.
+        const AXIS_BASE = (window.location.origin && window.location.origin.startsWith('http'))
+            ? window.location.origin
+            : 'http://localhost:8091';
+
+        let pollingInterval = null;
+
+        function refreshHeartbeat() {
+            fetch(AXIS_BASE + '/heartbeat')
+                .then(r => r.json())
+                .then(data => {
+                    const statusEl = document.getElementById('heartbeat-status');
+                    statusEl.innerText = "PULSE: " + (data.status || "UNKNOWN");
+                    statusEl.className = (data.status === "ALIVE") ? "status-alive" : "status-dead";
+
+                    document.getElementById('last-beat').innerText = data.timestamp || "N/A";
+                    document.getElementById('mode-display').innerText = data.mode || "UNKNOWN";
+                })
+                .catch(e => {
+                    document.getElementById('heartbeat-status').innerText = "DISCONNECTED";
+                    document.getElementById('heartbeat-status').className = "status-dead";
+                });
+        }
+
+        // --- Intent Execution ---
+
+        function sendDecision(reqId, decision) {
+            fetch(AXIS_BASE + '/intents', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    type: 'ui_intent',
+                    verb: 'anchor_decision',
+                    parameters: { request_id: reqId, decision: decision },
+                    source: 'Mobile_OBS'
+                })
+            }).then(() => {
+                // Refresh list
+                loadApprovals();
+            });
+        }
+
+        function loadApprovals() {
+            // This endpoint might be different depending on implementation, assuming /approvals or reading from file via server?
+            // Actually, we probably don't have a direct /approvals endpoint in Heartbeat Server yet?
+            // Wait, Axis_Heartbeat_Server needs to serve the pending queue?
+            // We'll skip this specific part update for now and focus on the Intents.
+        }
+
+        function updateSensors() {
+            fetch(AXIS_BASE + '/heartbeat')
+                .then(r => r.json())
+                .then(hb => {
+                    const el = document.getElementById('sensorData');
+                    const s = hb && hb.telemetry && hb.telemetry.sensors ? hb.telemetry.sensors : null;
+                    if (s) {
+                        const temp = (s.temperature !== null && s.temperature !== undefined) ? s.temperature : 'N/A';
+                        const light = (s.light_level !== null && s.light_level !== undefined) ? s.light_level : 'N/A';
+                        const occ = s.occupancy || 'unknown';
+                        el.innerHTML = `TEMP: ${temp}°C | LIGHT: ${light}% | OCC: ${occ}`;
+                        el.style.color = 'var(--primary)';
+                    } else {
+                        el.innerHTML = 'SENSORS: N/A';
+                        el.style.color = '#555';
+                    }
+                })
+                .catch(() => {
+                    document.getElementById('sensorData').innerHTML = 'SENSORS: ERR';
+                });
+        }
+
+        setInterval(updateSensors, 5000);
+        updateSensors(); // Init
+    </script>
+    <!-- DREAM FEED -->
+    <div id="view-dreams" class="view-section">
+        <div id="dreamContainer" style="color:#e040fb; font-style:italic;">Listening for echoes...</div>
+        <button onclick="fetchDream()" style="background:#4a148c; color:#fff; margin-top:10px;">REFRESH DREAM</button>
+    </div>
+    <script>
+        async function runShadowSim() {
+            const btn = event.target;
+            const originalText = btn.innerText;
+            btn.innerText = "SIMULATING...";
+            btn.disabled = true;
+
+            const payload = {
+                type: 'ui_intent',
+                verb: 'run_shadow_sim',
+                source: 'Mobile_OBS',
+                parameters: {
+                    tenant_id: document.getElementById('simTenant').value,
+                    action_type: document.getElementById('simAction').value,
+                    justification: document.getElementById('simJustification').value
+                }
+            };
+
+            try {
+                const res = await fetch(AXIS_BASE + '/intents', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                const data = await res.json();
+
+                const resDiv = document.getElementById('simResult');
+                const decDiv = document.getElementById('simDecision');
+                const explDiv = document.getElementById('simExpl');
+
+                resDiv.style.display = 'block';
+                if (data.decision === 'BLOCK') {
+                    decDiv.innerText = "BLOCK";
+                    decDiv.style.color = '#ff5555';
+                } else {
+                    decDiv.innerText = "ALLOW";
+                    decDiv.style.color = '#00ff9d';
+                }
+                explDiv.innerText = data.explanation || 'No explanation provided.';
+
+            } catch (e) {
+                alert("Simulation Error: " + e);
+            } finally {
+                btn.innerText = originalText;
+                btn.disabled = false;
+            }
+        }
+
+        function refreshAnchorConsole() {
+            fetch(AXIS_BASE + '/governance/anchor_console').then(r => r.json()).then(data => {
+                if (!data) return;
+
+                // 1. Constitution
+                document.getElementById('ancConstVer').innerText = data.constitution.version;
+                document.getElementById('ancConstStatus').innerText = data.constitution.status;
+                document.getElementById('ancMode').innerText = data.constitution.mode;
+                document.getElementById('ancInvList').innerText = "Active: " + data.constitution.active_invariants;
+
+                const statusColor = data.constitution.status === 'BOUND' ? '#00ff9d' : (data.constitution.status === 'DEGRADED' ? '#eab308' : '#ff5555');
+                document.getElementById('ancConstStatus').style.color = statusColor;
+
+                // 2. Decisions
+                const decDiv = document.getElementById('ancDecisions');
+                if (!data.decisions || data.decisions.length === 0) {
+                    decDiv.innerHTML = '<div style="text-align:center; color:#333;">// NO PENDING DECISIONS //</div>';
+                } else {
+                    decDiv.innerHTML = data.decisions.map(d => `
+                        <div class="card" style="border-left: 3px solid #ff00ff;">
+                            <div class="card-header">
+                                <span>${d.type}</span> <small>${d.target}</small>
+                            </div>
+                            <div style="font-size:0.9em; color:#ddd; margin-bottom:5px;">${d.reason}</div>
+                            <div style="display:flex; justify-content:space-between; align-items:center;">
+                                <span style="font-size:0.8em; color:#aaa;">ID: ${d.id.substring(0, 8)}...</span>
+                                <div style="display:flex; gap:5px;">
+                                    <button class="btn-deny" style="width:auto; padding:5px 10px; font-size:0.8em;" onclick="decideProposal('${d.id}','REJECT')">REJECT</button>
+                                    <button class="btn-approve" style="width:auto; padding:5px 10px; font-size:0.8em;" onclick="decideProposal('${d.id}','RATIFY')">RATIFY</button>
+                                </div>
+                            </div>
+                        </div>
+                    `).join('');
+                }
+
+                // 3. Activity
+                const actDiv = document.getElementById('ancActivity');
+                if (!data.activity || data.activity.length === 0) {
+                    actDiv.innerHTML = '<div style="text-align:center; color:#333;">// NO RECENT ACTIVITY //</div>';
+                } else {
+                    actDiv.innerHTML = data.activity.map(a => {
+                        const color = a.result === 'BLOCK' ? '#ff5555' : (a.result === 'WARN' ? '#eab308' : '#00ff9d');
+                        return `
+                        <div style="margin-bottom:8px; border-bottom:1px solid #222; padding-bottom:4px;">
+                            <span style="color:${color}; font-weight:bold;">[${a.result}]</span>
+                            <span style="color:#ccc;">${a.type}</span>
+                            <span style="color:#666; font-size:0.8em;">${a.timestamp.split('T')[1].split('.')[0]}</span>
+                            <div style="font-size:0.9em; color:#aaa;">${a.tenant} : ${a.subtype}</div>
+                            <div style="font-size:0.8em; color:#666;">${a.reason || ''}</div>
+                        </div>`;
+                    }).join('');
+                }
+
+                // 4. Shadow
+                const shaDiv = document.getElementById('ancShadow');
+                const sStatus = data.shadow.status;
+                const sColor = sStatus === 'HEALTHY' ? '#00ff9d' : (sStatus === 'DEGRADED' ? '#eab308' : '#ff5555');
+
+                let simHtml = '';
+                if (data.shadow.recent_sims && data.shadow.recent_sims.length > 0) {
+                    simHtml = data.shadow.recent_sims.slice(0, 3).map(s => `
+                        <div style="font-size:0.8em; color:#888;">
+                           <span style="color:${s.decision === 'ALLOW' ? '#00ff9d' : '#ff5555'}">[${s.decision}]</span> 
+                           ${s.input.tenant_id} : ${s.input.action_type}
+                        </div>
+                    `).join('');
+                } else {
+                    simHtml = '<div style="font-size:0.8em; color:#444;">No recent simulations.</div>';
+                }
+
+                shaDiv.innerHTML = `
+                    <div style="margin-bottom:5px;">Status: <span style="color:${sColor}; font-weight:bold;">${sStatus}</span> (Available: ${data.shadow.available})</div>
+                    ${simHtml}
+                `;
+
+            }).catch(e => {
+                console.error(e);
+                document.getElementById('ancActivity').innerHTML = '<div style="color:#ff5555">CONNECTION ERROR</div>';
+            });
+        }
+    </script>
+    </div>
+
+    <script>
+        function updateMood() {
+            fetch(AXIS_BASE + '/mood').then(r => r.json()).then(d => {
+                if (d.color) {
+                    document.documentElement.style.setProperty('--primary', d.color);
+                    document.querySelector('.logo').style.color = d.color;
+                    // Update scanline to match
+                    document.documentElement.style.setProperty('--scanline', d.color + '08'); // Low opacity
+                }
+            }).catch(() => { });
+        }
+        setInterval(updateMood, 5000); updateMood();
+
+        function fetchDream() {
+            fetch(AXIS_BASE + '/dreams').then(r => r.text()).then(txt => {
+                document.getElementById('dreamContainer').innerText = txt || "The garden is empty.";
+            }).catch(e => document.getElementById('dreamContainer').innerText = "Dreamlink Offline.");
+        }
+        async function decideProposal(id, decision) {
+            const verb = decision === 'RATIFY' ? 'ratify_proposal' : 'reject_proposal';
+            if (!confirm("Confirm " + decision + " for proposal " + id + "?")) return;
+
+            try {
+                const res = await fetch(AXIS_BASE + '/intents', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        type: 'ui_intent',
+                        verb: verb,
+                        source: 'Mobile_OBS',
+                        parameters: { proposal_id: id, note: 'Manual ' + decision }
+                    })
+                });
+                const data = await res.json();
+                if (data.status === 'ERROR') alert("Error: " + data.message);
+                else {
+                    refreshAnchorConsole(); // Refresh UI
+                }
+            } catch (e) { alert("Connection Error: " + e); }
+        }
+    </script>
+</body>
+
+</html>

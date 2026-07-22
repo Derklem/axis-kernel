@@ -1,0 +1,5 @@
+{"model_id":"TEST-MODEL-A","claims_emitted":3,"status_distribution":{"IGNORE_ONLY":0,"PLAUSIBLE":0,"STRONG":0,"UNKNOWN":0,"TENUOUS":0},"reliability_ratio":0,"avg_confidence_strong":0,"last_updated":"2026-01-27T17:29:14.1107644Z"}
+{"model_id":"TEST-MODEL-B","claims_emitted":3,"status_distribution":{"IGNORE_ONLY":0,"PLAUSIBLE":0,"STRONG":0,"UNKNOWN":0,"TENUOUS":0},"reliability_ratio":0,"avg_confidence_strong":0,"last_updated":"2026-01-27T17:29:14.1142676Z"}
+{"claims_emitted":100,"avg_confidence_strong":0.98,"last_updated":"2026-01-27T19:10:22.4396099Z","reliability_ratio":1,"model_id":"RADIANT-MODEL","status_distribution":{"IGNORE_ONLY":0,"PLAUSIBLE":10,"STRONG":90,"UNKNOWN":0,"TENUOUS":0}}
+{"claims_emitted":100,"avg_confidence_strong":0.85,"last_updated":"2026-01-27T19:10:22.4427046Z","reliability_ratio":0.7,"model_id":"STEADY-MODEL","status_distribution":{"IGNORE_ONLY":0,"PLAUSIBLE":20,"STRONG":50,"UNKNOWN":0,"TENUOUS":30}}
+{"claims_emitted":100,"avg_confidence_strong":0.5,"last_updated":"2026-01-27T19:10:22.4427046Z","reliability_ratio":0.3,"model_id":"SHAKY-MODEL","status_distribution":{"IGNORE_ONLY":30,"PLAUSIBLE":20,"STRONG":10,"UNKNOWN":20,"TENUOUS":20}}

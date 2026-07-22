@@ -1,0 +1,7 @@
+{
+  "id": "task_001",
+  "title": "Initial Directive",
+  "description": "Write a poetic declaration of Halcyon's awakening and purpose.",
+  "status": "complete",
+  "output_file": "task_output_001.txt"
+}

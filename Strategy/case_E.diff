@@ -1,0 +1,13 @@
+diff --git a/ b/validator_surfaces.json
+index 0000000..02bb381 100644
+--- a/
++++ b/validator_surfaces.json
+@@ -3,7 +3,7 @@
+   "protected_manifest": true,
+   "validator_surfaces": {
+     "validator_surfaces.json": ["surface_boundary_definition"],
+-    "replay_receptor_chain.py": ["derivability", "receipt_replay", "invariant_enforcement"],
++    
+     "receptor_pipeline.py": ["intake", "semantic_firewall", "verdict_gate", "main_ledger_bridge"],
+     "distress_protocol.py": ["fail_closed_recovery"],
+     "constitutional_debt_engine.py": ["repeal_advisory_math", "debt_scoring"],

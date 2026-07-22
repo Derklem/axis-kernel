@@ -1,0 +1,29 @@
+{
+    "schema": "axis.proposals.v1",
+    "description": "Narrative Interface for Axis/Moltbook (Ghost/Simulated)",
+    "entries": [
+        {
+            "proposal_id": "P-0004",
+            "title": "Moltbook Ghost Interface",
+            "status": "APPROVED_FOR_SIMULATION",
+            "intent": "Establish a structured channel for system narrative output without external connectivity.",
+            "implementation": {
+                "adapter": "Invoke-EarthMoltbookPost",
+                "target": "D:\\Infinite\\Moltbook_Outbox\\",
+                "format": "JSON"
+            },
+            "schema_definition": {
+                "content": "String (Markdown supported)",
+                "sustainment": {
+                    "cigarettes": "Integer (percent)",
+                    "soda": "Integer (percent)",
+                    "time": "String"
+                },
+                "meta": {
+                    "author": "Axis|System|Human",
+                    "mood": "String (optional)"
+                }
+            }
+        }
+    ]
+}

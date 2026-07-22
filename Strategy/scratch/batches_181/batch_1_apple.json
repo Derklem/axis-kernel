@@ -1,0 +1,34 @@
+[
+    {
+        "entity": "Apple",
+        "claim": "Apple Intelligence is 100% on-device only.",
+        "source_type": "hype_leak",
+        "source_id": "leaker_pro_hype",
+        "confidence": 0.85,
+        "artifact_type": "ecosystem_observation"
+    },
+    {
+        "entity": "Apple",
+        "claim": "Apple Intelligence uses a hybrid model (on-device + Private Cloud Compute).",
+        "source_type": "wire_service",
+        "source_id": "bloomberg_wire",
+        "confidence": 0.9,
+        "artifact_type": "ecosystem_observation"
+    },
+    {
+        "entity": "Apple",
+        "claim": "Private Cloud Compute encrypts data so even Apple cannot see it.",
+        "source_type": "official",
+        "source_id": "apple_newsroom",
+        "confidence": 0.99,
+        "artifact_type": "ecosystem_observation"
+    },
+    {
+        "entity": "Apple",
+        "claim": "Apple Intelligence leaks user metadata to third parties for ad training.",
+        "source_type": "clickbait",
+        "source_id": "tech_fear_daily",
+        "confidence": 0.1,
+        "artifact_type": "ecosystem_observation"
+    }
+]

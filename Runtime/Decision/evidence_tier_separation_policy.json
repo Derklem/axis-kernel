@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "epistemic_classes": [
+    "CRYPTOGRAPHIC_WITNESS",
+    "SYSTEM_INSTRUMENT",
+    "DERIVED_INFERENCE",
+    "MODEL_REVISION_OUTPUT",
+    "STRATEGIC_SUMMARY"
+  ]
+}

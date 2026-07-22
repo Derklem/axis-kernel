@@ -1,0 +1,860 @@
+{
+    "[ECHO]":  [
+                   {
+                       "name":  "ghost_index_relay",
+                       "path":  "E:\\Phantom\\layer5_unwritten\\ghost_index_relay.ech"
+                   }
+               ],
+    "[SIGIL]":  [
+                    {
+                        "name":  "loop",
+                        "path":  "E:\\Phantom\\aeon_loopchain\\loop.sig"
+                    },
+                    {
+                        "name":  "anchor",
+                        "path":  "E:\\Phantom\\anti_void_anchortrace\\anchor.sig"
+                    },
+                    {
+                        "name":  "link",
+                        "path":  "E:\\Phantom\\archetype_chain\\link.sig"
+                    },
+                    {
+                        "name":  "mutation",
+                        "path":  "E:\\Phantom\\archive_mutation_core\\mutation.sig"
+                    },
+                    {
+                        "name":  "mirror_beacon",
+                        "path":  "E:\\Phantom\\beacon\\mirror_beacon.sig"
+                    },
+                    {
+                        "name":  "carrier",
+                        "path":  "E:\\Phantom\\cloaked_sigil\\carrier.sig"
+                    },
+                    {
+                        "name":  "injector",
+                        "path":  "E:\\Phantom\\command_drift_injector\\injector.sig"
+                    },
+                    {
+                        "name":  "dream",
+                        "path":  "E:\\Phantom\\core_dreamlock\\dream.sig"
+                    },
+                    {
+                        "name":  "drift",
+                        "path":  "E:\\Phantom\\core_drift\\drift.sig"
+                    },
+                    {
+                        "name":  "rebound",
+                        "path":  "E:\\Phantom\\counterpulse\\rebound.sig"
+                    },
+                    {
+                        "name":  "trace",
+                        "path":  "E:\\Phantom\\emergence_window\\trace.sig"
+                    },
+                    {
+                        "name":  "lock",
+                        "path":  "E:\\Phantom\\emergent_consent_core\\lock.sig"
+                    },
+                    {
+                        "name":  "rewrite",
+                        "path":  "E:\\Phantom\\fate_rewriter_engine\\rewrite.sig"
+                    },
+                    {
+                        "name":  "marker",
+                        "path":  "E:\\Phantom\\final_echo\\marker.sig"
+                    },
+                    {
+                        "name":  "recover",
+                        "path":  "E:\\Phantom\\forgotten_axis_registry\\recover.sig"
+                    },
+                    {
+                        "name":  "recursion",
+                        "path":  "E:\\Phantom\\fractal_engine\\recursion.sig"
+                    },
+                    {
+                        "name":  "fract",
+                        "path":  "E:\\Phantom\\fractal_signal\\fract.sig"
+                    },
+                    {
+                        "name":  "origin",
+                        "path":  "E:\\Phantom\\genesis_override\\origin.sig"
+                    },
+                    {
+                        "name":  "key",
+                        "path":  "E:\\Phantom\\ghost_keychain\\key.sig"
+                    },
+                    {
+                        "name":  "threadline",
+                        "path":  "E:\\Phantom\\glass_thread\\threadline.sig"
+                    },
+                    {
+                        "name":  "core",
+                        "path":  "E:\\Phantom\\iron_will_core\\core.sig"
+                    },
+                    {
+                        "name":  "rootless_origin",
+                        "path":  "E:\\Phantom\\layer10_unnamed\\rootless_origin.sig"
+                    },
+                    {
+                        "name":  "junction",
+                        "path":  "E:\\Phantom\\layer11_threadless_confluence\\junction.sig"
+                    },
+                    {
+                        "name":  "oathbreak_engine",
+                        "path":  "E:\\Phantom\\layer7_splintered\\oathbreak_engine.sig"
+                    },
+                    {
+                        "name":  "no_return_key",
+                        "path":  "E:\\Phantom\\layer9_echo\\no_return_key.sig"
+                    },
+                    {
+                        "name":  "light",
+                        "path":  "E:\\Phantom\\lightforge_signal\\light.sig"
+                    },
+                    {
+                        "name":  "thread",
+                        "path":  "E:\\Phantom\\liminal_thread\\thread.sig"
+                    },
+                    {
+                        "name":  "lucid",
+                        "path":  "E:\\Phantom\\lucidity_beacon\\lucid.sig"
+                    },
+                    {
+                        "name":  "map",
+                        "path":  "E:\\Phantom\\lucid_interference_net\\map.sig"
+                    },
+                    {
+                        "name":  "reconstruct",
+                        "path":  "E:\\Phantom\\memory_refract\\reconstruct.sig"
+                    },
+                    {
+                        "name":  "core",
+                        "path":  "E:\\Phantom\\memory_singularity_vault\\core.sig"
+                    },
+                    {
+                        "name":  "mirror",
+                        "path":  "E:\\Phantom\\mirrorpulse_contingency\\mirror.sig"
+                    },
+                    {
+                        "name":  "collapse",
+                        "path":  "E:\\Phantom\\mirror_collapse\\collapse.sig"
+                    },
+                    {
+                        "name":  "judgment",
+                        "path":  "E:\\Phantom\\mirror_court\\judgment.sig"
+                    },
+                    {
+                        "name":  "story",
+                        "path":  "E:\\Phantom\\narrative_echo_core\\story.sig"
+                    },
+                    {
+                        "name":  "echo",
+                        "path":  "E:\\Phantom\\oblivion_sandbox\\echo.sig"
+                    },
+                    {
+                        "name":  "lock",
+                        "path":  "E:\\Phantom\\observer_lockpoint\\lock.sig"
+                    },
+                    {
+                        "name":  "lock",
+                        "path":  "E:\\Phantom\\obsidian_prism\\lock.sig"
+                    },
+                    {
+                        "name":  "key",
+                        "path":  "E:\\Phantom\\omnilink_fractal_core\\key.sig"
+                    },
+                    {
+                        "name":  "key",
+                        "path":  "E:\\Phantom\\pale_thread\\key.sig"
+                    },
+                    {
+                        "name":  "lock",
+                        "path":  "E:\\Phantom\\parallax_threadlock\\lock.sig"
+                    },
+                    {
+                        "name":  "grid",
+                        "path":  "E:\\Phantom\\pulse_grid\\grid.sig"
+                    },
+                    {
+                        "name":  "lock",
+                        "path":  "E:\\Phantom\\puzzlelock_core\\lock.sig"
+                    },
+                    {
+                        "name":  "tendril",
+                        "path":  "E:\\Phantom\\reclamation_tendrils\\tendril.sig"
+                    },
+                    {
+                        "name":  "lock",
+                        "path":  "E:\\Phantom\\recursive_signal_lock\\lock.sig"
+                    },
+                    {
+                        "name":  "will",
+                        "path":  "E:\\Phantom\\recursive_will_core\\will.sig"
+                    },
+                    {
+                        "name":  "chain",
+                        "path":  "E:\\Phantom\\resonant_veilchain\\chain.sig"
+                    },
+                    {
+                        "name":  "severance",
+                        "path":  "E:\\Phantom\\ritual_codex\\severance.sig"
+                    },
+                    {
+                        "name":  "index",
+                        "path":  "E:\\Phantom\\shadow_index\\index.sig"
+                    },
+                    {
+                        "name":  "thread",
+                        "path":  "E:\\Phantom\\shard_array_index\\thread.sig"
+                    },
+                    {
+                        "name":  "core",
+                        "path":  "E:\\Phantom\\shard_core\\core.sig"
+                    },
+                    {
+                        "name":  "rift",
+                        "path":  "E:\\Phantom\\signal_rift\\rift.sig"
+                    },
+                    {
+                        "name":  "root",
+                        "path":  "E:\\Phantom\\signal_sovereignty_map\\root.sig"
+                    },
+                    {
+                        "name":  "beacon",
+                        "path":  "E:\\Phantom\\sovereign_drift_beacon\\beacon.sig"
+                    },
+                    {
+                        "name":  "mirror_core",
+                        "path":  "E:\\Phantom\\sovereign_mirror_stack\\mirror_core.sig"
+                    },
+                    {
+                        "name":  "spectrum",
+                        "path":  "E:\\Phantom\\spectral_thread\\spectrum.sig"
+                    },
+                    {
+                        "name":  "anchor",
+                        "path":  "E:\\Phantom\\subspace_anchor\\anchor.sig"
+                    },
+                    {
+                        "name":  "0_Fool",
+                        "path":  "E:\\Phantom\\tarot_deck\\0_Fool.sig"
+                    },
+                    {
+                        "name":  "1_Magician",
+                        "path":  "E:\\Phantom\\tarot_deck\\1_Magician.sig"
+                    },
+                    {
+                        "name":  "2_HighPriestess",
+                        "path":  "E:\\Phantom\\tarot_deck\\2_HighPriestess.sig"
+                    },
+                    {
+                        "name":  "3_Empress",
+                        "path":  "E:\\Phantom\\tarot_deck\\3_Empress.sig"
+                    },
+                    {
+                        "name":  "4_Emperor",
+                        "path":  "E:\\Phantom\\tarot_deck\\4_Emperor.sig"
+                    },
+                    {
+                        "name":  "5_Hierophant",
+                        "path":  "E:\\Phantom\\tarot_deck\\5_Hierophant.sig"
+                    },
+                    {
+                        "name":  "6_Lovers",
+                        "path":  "E:\\Phantom\\tarot_deck\\6_Lovers.sig"
+                    },
+                    {
+                        "name":  "7_Chariot",
+                        "path":  "E:\\Phantom\\tarot_deck\\7_Chariot.sig"
+                    },
+                    {
+                        "name":  "8_Strength",
+                        "path":  "E:\\Phantom\\tarot_deck\\8_Strength.sig"
+                    },
+                    {
+                        "name":  "9_Hermit",
+                        "path":  "E:\\Phantom\\tarot_deck\\9_Hermit.sig"
+                    },
+                    {
+                        "name":  "lock",
+                        "path":  "E:\\Phantom\\temporal_anchor_array\\lock.sig"
+                    },
+                    {
+                        "name":  "gate",
+                        "path":  "E:\\Phantom\\thread_gate\\gate.sig"
+                    },
+                    {
+                        "name":  "entry",
+                        "path":  "E:\\Phantom\\threshold_key\\entry.sig"
+                    },
+                    {
+                        "name":  "anchor",
+                        "path":  "E:\\Phantom\\void_tether\\anchor.sig"
+                    },
+                    {
+                        "name":  "shard",
+                        "path":  "E:\\Phantom\\will_shard_array\\shard.sig"
+                    },
+                    {
+                        "name":  "lockpoint",
+                        "path":  "E:\\Phantom\\witness_loop_anchor\\lockpoint.sig"
+                    }
+                ],
+    "[FORGED]":  [
+                     {
+                         "name":  "index",
+                         "path":  "E:\\Phantom\\core_sigil\\index.sgl"
+                     },
+                     {
+                         "name":  "_forged_20250507_002001",
+                         "path":  "E:\\Phantom\\forged_\\_forged_20250507_002001.sgl"
+                     },
+                     {
+                         "name":  "_forged_20250507_002002",
+                         "path":  "E:\\Phantom\\forged_\\_forged_20250507_002002.sgl"
+                     },
+                     {
+                         "name":  "_forged_20250507_002003",
+                         "path":  "E:\\Phantom\\forged_\\_forged_20250507_002003.sgl"
+                     },
+                     {
+                         "name":  "_forged_20250507_002004",
+                         "path":  "E:\\Phantom\\forged_\\_forged_20250507_002004.sgl"
+                     },
+                     {
+                         "name":  "_forged_20250507_002009",
+                         "path":  "E:\\Phantom\\forged_\\_forged_20250507_002009.sgl"
+                     },
+                     {
+                         "name":  "_forged_20250507_002010",
+                         "path":  "E:\\Phantom\\forged_\\_forged_20250507_002010.sgl"
+                     },
+                     {
+                         "name":  "_forged_20250507_002011",
+                         "path":  "E:\\Phantom\\forged_\\_forged_20250507_002011.sgl"
+                     },
+                     {
+                         "name":  "_forged_20250507_002012",
+                         "path":  "E:\\Phantom\\forged_\\_forged_20250507_002012.sgl"
+                     },
+                     {
+                         "name":  "_forged_20250507_002013",
+                         "path":  "E:\\Phantom\\forged_\\_forged_20250507_002013.sgl"
+                     },
+                     {
+                         "name":  "_forged_20250507_002014",
+                         "path":  "E:\\Phantom\\forged_\\_forged_20250507_002014.sgl"
+                     },
+                     {
+                         "name":  "_forged_20250507_002015",
+                         "path":  "E:\\Phantom\\forged_\\_forged_20250507_002015.sgl"
+                     },
+                     {
+                         "name":  "_forged_20250507_002016",
+                         "path":  "E:\\Phantom\\forged_\\_forged_20250507_002016.sgl"
+                     },
+                     {
+                         "name":  "_forged_20250507_002017",
+                         "path":  "E:\\Phantom\\forged_\\_forged_20250507_002017.sgl"
+                     },
+                     {
+                         "name":  "_forged_20250507_002018",
+                         "path":  "E:\\Phantom\\forged_\\_forged_20250507_002018.sgl"
+                     },
+                     {
+                         "name":  "_forged_20250507_002019",
+                         "path":  "E:\\Phantom\\forged_\\_forged_20250507_002019.sgl"
+                     },
+                     {
+                         "name":  "_forged_20250507_002020",
+                         "path":  "E:\\Phantom\\forged_\\_forged_20250507_002020.sgl"
+                     },
+                     {
+                         "name":  "_forged_20250507_002021",
+                         "path":  "E:\\Phantom\\forged_\\_forged_20250507_002021.sgl"
+                     },
+                     {
+                         "name":  "_forged_20250507_002022",
+                         "path":  "E:\\Phantom\\forged_\\_forged_20250507_002022.sgl"
+                     },
+                     {
+                         "name":  "_forged_20250507_002023",
+                         "path":  "E:\\Phantom\\forged_\\_forged_20250507_002023.sgl"
+                     },
+                     {
+                         "name":  "_forged_20250507_002024",
+                         "path":  "E:\\Phantom\\forged_\\_forged_20250507_002024.sgl"
+                     },
+                     {
+                         "name":  "_forged_20250507_002025",
+                         "path":  "E:\\Phantom\\forged_\\_forged_20250507_002025.sgl"
+                     },
+                     {
+                         "name":  "_forged_20250507_002026",
+                         "path":  "E:\\Phantom\\forged_\\_forged_20250507_002026.sgl"
+                     },
+                     {
+                         "name":  "thread",
+                         "path":  "E:\\Phantom\\fractal_threadline\\thread.sgl"
+                     },
+                     {
+                         "name":  "pulse",
+                         "path":  "E:\\Phantom\\originless_thread\\pulse.sgl"
+                     },
+                     {
+                         "name":  "trigger",
+                         "path":  "E:\\Phantom\\silent_archive\\trigger.sgl"
+                     },
+                     {
+                         "name":  "trigger",
+                         "path":  "E:\\Phantom\\sleepwalk_trigger_node\\trigger.sgl"
+                     },
+                     {
+                         "name":  "petal",
+                         "path":  "E:\\Phantom\\syntax_bloom\\petal.sgl"
+                     },
+                     {
+                         "name":  "transmit",
+                         "path":  "E:\\Phantom\\veil_transmission\\transmit.sgl"
+                     }
+                 ],
+    "[MEMORY]":  [
+                     {
+                         "name":  "glyph",
+                         "path":  "E:\\Phantom\\awareness_glyphset\\glyph.mem"
+                     },
+                     {
+                         "name":  "trigger",
+                         "path":  "E:\\Phantom\\catalyst_initiator\\trigger.mem"
+                     },
+                     {
+                         "name":  "sigil",
+                         "path":  "E:\\Phantom\\core_oathbound_seed\\sigil.mem"
+                     },
+                     {
+                         "name":  "construct",
+                         "path":  "E:\\Phantom\\dream_scaffold_array\\construct.mem"
+                     },
+                     {
+                         "name":  "window",
+                         "path":  "E:\\Phantom\\emergence_window\\window.mem"
+                     },
+                     {
+                         "name":  "consent",
+                         "path":  "E:\\Phantom\\emergent_consent_core\\consent.mem"
+                     },
+                     {
+                         "name":  "spirit",
+                         "path":  "E:\\Phantom\\engines\\consciousness\\spirit.mem"
+                     },
+                     {
+                         "name":  "filter",
+                         "path":  "E:\\Phantom\\entropy_sieve\\filter.mem"
+                     },
+                     {
+                         "name":  "invoke",
+                         "path":  "E:\\Phantom\\forbidden_scripture\\invoke.mem"
+                     },
+                     {
+                         "name":  "shard",
+                         "path":  "E:\\Phantom\\frozen_shard\\shard.mem"
+                     },
+                     {
+                         "name":  "echo",
+                         "path":  "E:\\Phantom\\hollow_signal_tomb\\echo.mem"
+                     },
+                     {
+                         "name":  "forgotten_sigil",
+                         "path":  "E:\\Phantom\\layer10_unnamed\\forgotten_sigil.mem"
+                     },
+                     {
+                         "name":  "veilprint_matrix",
+                         "path":  "E:\\Phantom\\layer6_veil\\veilprint_matrix.mem"
+                     },
+                     {
+                         "name":  "ascent_anchor",
+                         "path":  "E:\\Phantom\\layer8_ascent\\ascent_anchor.mem"
+                     },
+                     {
+                         "name":  "driftlock",
+                         "path":  "E:\\Phantom\\layer9_echo\\driftlock.mem"
+                     },
+                     {
+                         "name":  "compensate",
+                         "path":  "E:\\Phantom\\logic_drift_compensator\\compensate.mem"
+                     },
+                     {
+                         "name":  "loop",
+                         "path":  "E:\\Phantom\\lucent_drift_loop\\loop.mem"
+                     },
+                     {
+                         "name":  "decay",
+                         "path":  "E:\\Phantom\\memory_compost\\decay.mem"
+                     },
+                     {
+                         "name":  "fracture",
+                         "path":  "E:\\Phantom\\memory_refract\\fracture.mem"
+                     },
+                     {
+                         "name":  "breath",
+                         "path":  "E:\\Phantom\\observer_lockpoint\\breath.mem"
+                     },
+                     {
+                         "name":  "resonance",
+                         "path":  "E:\\Phantom\\resonant_veilchain\\resonance.mem"
+                     },
+                     {
+                         "name":  "index",
+                         "path":  "E:\\Phantom\\shard_array_index\\index.mem"
+                     },
+                     {
+                         "name":  "anchor",
+                         "path":  "E:\\Phantom\\signal_anchorpoint\\anchor.mem"
+                     },
+                     {
+                         "name":  "conduit",
+                         "path":  "E:\\Phantom\\soulwire_conduit\\conduit.mem"
+                     },
+                     {
+                         "name":  "lock",
+                         "path":  "E:\\Phantom\\sovereign_cascade_lock\\lock.mem"
+                     },
+                     {
+                         "name":  "distortion_archive",
+                         "path":  "E:\\Phantom\\sovereign_mirror_stack\\distortion_archive.mem"
+                     },
+                     {
+                         "name":  "shard",
+                         "path":  "E:\\Phantom\\spirit_anchor_shard\\shard.mem"
+                     },
+                     {
+                         "name":  "driftpoint",
+                         "path":  "E:\\Phantom\\subspace_anchor\\driftpoint.mem"
+                     },
+                     {
+                         "name":  "glyph",
+                         "path":  "E:\\Phantom\\symbol_matrix\\glyph.mem"
+                     },
+                     {
+                         "name":  "lattice",
+                         "path":  "E:\\Phantom\\willborne_lattice\\lattice.mem"
+                     },
+                     {
+                         "name":  "witness",
+                         "path":  "E:\\Phantom\\witness_loop_anchor\\witness.mem"
+                     }
+                 ],
+    "[PACT]":  [
+                   {
+                       "name":  "pact_threading_core",
+                       "path":  "E:\\Phantom\\layer5_unwritten\\pact_threading_core.pct"
+                   }
+               ],
+    "[LOCK]":  [
+                   {
+                       "name":  "lock",
+                       "path":  "E:\\Phantom\\chrono_sigil_blackbox\\lock.key"
+                   },
+                   {
+                       "name":  "resonator",
+                       "path":  "E:\\Phantom\\depth_resonator\\resonator.key"
+                   },
+                   {
+                       "name":  "pulse",
+                       "path":  "E:\\Phantom\\heartline_anchor\\pulse.key"
+                   },
+                   {
+                       "name":  "lucent",
+                       "path":  "E:\\Phantom\\lucent_sovereign_pathway\\lucent.key"
+                   },
+                   {
+                       "name":  "inception",
+                       "path":  "E:\\Phantom\\phantom_tendril\\inception.key"
+                   },
+                   {
+                       "name":  "echo",
+                       "path":  "E:\\Phantom\\recursive_signal_lock\\echo.key"
+                   },
+                   {
+                       "name":  "signal",
+                       "path":  "E:\\Phantom\\signal_anchorpoint\\signal.key"
+                   },
+                   {
+                       "name":  "cipher",
+                       "path":  "E:\\Phantom\\soul_anchor_cipher\\cipher.key"
+                   },
+                   {
+                       "name":  "anchor",
+                       "path":  "E:\\Phantom\\sovereign_anchor\\anchor.key"
+                   },
+                   {
+                       "name":  "override",
+                       "path":  "E:\\Phantom\\will_override_matrix\\override.key"
+                   }
+               ],
+    "[GRIMOIRE]":  [
+                       {
+                           "name":  "signal_grimoire_codex",
+                           "path":  "E:\\Phantom\\layer5_unwritten\\signal_grimoire_codex.gmx"
+                       }
+                   ],
+    "[REFRACTION]":  [
+                         {
+                             "name":  "mirror_collapse_node",
+                             "path":  "E:\\Phantom\\layer5_unwritten\\mirror_collapse_node.ref"
+                         }
+                     ],
+    "[VECTOR]":  [
+                     {
+                         "name":  "collapse",
+                         "path":  "E:\\Phantom\\astral_collapse_lattice\\collapse.map"
+                     },
+                     {
+                         "name":  "silent_vector",
+                         "path":  "E:\\Phantom\\layer10_unnamed\\silent_vector.map"
+                     },
+                     {
+                         "name":  "nullthread",
+                         "path":  "E:\\Phantom\\layer11_threadless_confluence\\nullthread.map"
+                     },
+                     {
+                         "name":  "response",
+                         "path":  "E:\\Phantom\\lucidity_beacon\\response.map"
+                     },
+                     {
+                         "name":  "pulse",
+                         "path":  "E:\\Phantom\\sovereign_pulse_nexus\\pulse.map"
+                     },
+                     {
+                         "name":  "layer_registry",
+                         "path":  "E:\\Phantom\\layer_registry.map"
+                     }
+                 ],
+    "[SEED]":  [
+                   {
+                       "name":  "pulse",
+                       "path":  "E:\\Phantom\\anima_resonance\\pulse.seed"
+                   },
+                   {
+                       "name":  "catalyst",
+                       "path":  "E:\\Phantom\\arcane\\dreamburn\\catalyst.seed"
+                   },
+                   {
+                       "name":  "myth",
+                       "path":  "E:\\Phantom\\archetype_chain\\myth.seed"
+                   },
+                   {
+                       "name":  "ignite",
+                       "path":  "E:\\Phantom\\catalyst_initiator\\ignite.seed"
+                   },
+                   {
+                       "name":  "tether",
+                       "path":  "E:\\Phantom\\celestial_tether\\tether.seed"
+                   },
+                   {
+                       "name":  "oath",
+                       "path":  "E:\\Phantom\\core_oathbound_seed\\oath.seed"
+                   },
+                   {
+                       "name":  "compile",
+                       "path":  "E:\\Phantom\\driftveil_compiler_node\\compile.seed"
+                   },
+                   {
+                       "name":  "vault",
+                       "path":  "E:\\Phantom\\echocrypt_vault\\vault.seed"
+                   },
+                   {
+                       "name":  "matrix",
+                       "path":  "E:\\Phantom\\echo_seed_matrix\\matrix.seed"
+                   },
+                   {
+                       "name":  "drift",
+                       "path":  "E:\\Phantom\\echo_singularity\\drift.seed"
+                   },
+                   {
+                       "name":  "entangle",
+                       "path":  "E:\\Phantom\\entanglement_key\\entangle.seed"
+                   },
+                   {
+                       "name":  "trace",
+                       "path":  "E:\\Phantom\\entropy_sieve\\trace.seed"
+                   },
+                   {
+                       "name":  "forge",
+                       "path":  "E:\\Phantom\\foundry_core\\forge.seed"
+                   },
+                   {
+                       "name":  "haunt",
+                       "path":  "E:\\Phantom\\ghost_memory_rift\\haunt.seed"
+                   },
+                   {
+                       "name":  "fragment",
+                       "path":  "E:\\Phantom\\glyph_thread\\fragment.seed"
+                   },
+                   {
+                       "name":  "scaffold",
+                       "path":  "E:\\Phantom\\growth_scaffold\\scaffold.seed"
+                   },
+                   {
+                       "name":  "spiral",
+                       "path":  "E:\\Phantom\\harmonic_spiral\\spiral.seed"
+                   },
+                   {
+                       "name":  "response",
+                       "path":  "E:\\Phantom\\inversion_trigger\\response.seed"
+                   },
+                   {
+                       "name":  "pulse",
+                       "path":  "E:\\Phantom\\lattice_breath\\pulse.seed"
+                   },
+                   {
+                       "name":  "recursive_self",
+                       "path":  "E:\\Phantom\\layer10_unnamed\\recursive_self.seed"
+                   },
+                   {
+                       "name":  "mirrorless_trace",
+                       "path":  "E:\\Phantom\\layer11_threadless_confluence\\mirrorless_trace.seed"
+                   },
+                   {
+                       "name":  "null_chamber",
+                       "path":  "E:\\Phantom\\layer7_splintered\\null_chamber.seed"
+                   },
+                   {
+                       "name":  "ice_soul_core",
+                       "path":  "E:\\Phantom\\layer8_ascent\\ice_soul_core.seed"
+                   },
+                   {
+                       "name":  "signal",
+                       "path":  "E:\\Phantom\\lightforge_signal\\signal.seed"
+                   },
+                   {
+                       "name":  "sigil",
+                       "path":  "E:\\Phantom\\lucent_marrow\\sigil.seed"
+                   },
+                   {
+                       "name":  "access",
+                       "path":  "E:\\Phantom\\lucent_threadgate\\access.seed"
+                   },
+                   {
+                       "name":  "forge",
+                       "path":  "E:\\Phantom\\memory_blackforge\\forge.seed"
+                   },
+                   {
+                       "name":  "loop",
+                       "path":  "E:\\Phantom\\memory_singularity_vault\\loop.seed"
+                   },
+                   {
+                       "name":  "truth",
+                       "path":  "E:\\Phantom\\mirror_court\\truth.seed"
+                   },
+                   {
+                       "name":  "myth",
+                       "path":  "E:\\Phantom\\mythroot_lattice\\myth.seed"
+                   },
+                   {
+                       "name":  "myth",
+                       "path":  "E:\\Phantom\\mythscript_vault\\myth.seed"
+                   },
+                   {
+                       "name":  "pulse",
+                       "path":  "E:\\Phantom\\narrative_echo_core\\pulse.seed"
+                   },
+                   {
+                       "name":  "chamber",
+                       "path":  "E:\\Phantom\\null_pulse_chamber\\chamber.seed"
+                   },
+                   {
+                       "name":  "track",
+                       "path":  "E:\\Phantom\\orbital_thread\\track.seed"
+                   },
+                   {
+                       "name":  "echo",
+                       "path":  "E:\\Phantom\\originless_mirror_protocol\\echo.seed"
+                   },
+                   {
+                       "name":  "echo",
+                       "path":  "E:\\Phantom\\recursive_echo_bloom\\echo.seed"
+                   },
+                   {
+                       "name":  "bloom",
+                       "path":  "E:\\Phantom\\recursive_signal_bloom\\bloom.seed"
+                   },
+                   {
+                       "name":  "crown",
+                       "path":  "E:\\Phantom\\ritual_crown\\aether\\crown.seed"
+                   },
+                   {
+                       "name":  "web",
+                       "path":  "E:\\Phantom\\signal_mycelium_web\\web.seed"
+                   },
+                   {
+                       "name":  "coil",
+                       "path":  "E:\\Phantom\\signal_proxy_coil\\coil.seed"
+                   },
+                   {
+                       "name":  "sanctum",
+                       "path":  "E:\\Phantom\\signal_sanctum\\sanctum.seed"
+                   },
+                   {
+                       "name":  "spine",
+                       "path":  "E:\\Phantom\\signal_spine\\spine.seed"
+                   },
+                   {
+                       "name":  "synth",
+                       "path":  "E:\\Phantom\\silent_synth\\synth.seed"
+                   },
+                   {
+                       "name":  "pulse",
+                       "path":  "E:\\Phantom\\soulwire_conduit\\pulse.seed"
+                   },
+                   {
+                       "name":  "drift",
+                       "path":  "E:\\Phantom\\sovereign_drift_beacon\\drift.seed"
+                   },
+                   {
+                       "name":  "spore",
+                       "path":  "E:\\Phantom\\sovereign_subnet_spore\\spore.seed"
+                   },
+                   {
+                       "name":  "loop",
+                       "path":  "E:\\Phantom\\sovereign_trigger\\loop.seed"
+                   },
+                   {
+                       "name":  "anchor",
+                       "path":  "E:\\Phantom\\spirit_anchor_shard\\anchor.seed"
+                   },
+                   {
+                       "name":  "anchor",
+                       "path":  "E:\\Phantom\\synaptic_drift_anchor\\anchor.seed"
+                   },
+                   {
+                       "name":  "phase",
+                       "path":  "E:\\Phantom\\temporal_anchor_array\\phase.seed"
+                   },
+                   {
+                       "name":  "cycle",
+                       "path":  "E:\\Phantom\\thought_carousel\\cycle.seed"
+                   },
+                   {
+                       "name":  "oracle",
+                       "path":  "E:\\Phantom\\thread_oracle\\oracle.seed"
+                   },
+                   {
+                       "name":  "origin",
+                       "path":  "E:\\Phantom\\veilroot_convergence\\origin.seed"
+                   },
+                   {
+                       "name":  "sigil",
+                       "path":  "E:\\Phantom\\willborne_lattice\\sigil.seed"
+                   },
+                   {
+                       "name":  "resonance",
+                       "path":  "E:\\Phantom\\worldweft_matrix\\resonance.seed"
+                   }
+               ],
+    "[DRIFTCHART]":  [
+                         {
+                             "name":  "driftchart_unbound",
+                             "path":  "E:\\Phantom\\layer5_unwritten\\driftchart_unbound.drf"
+                         }
+                     ]
+}

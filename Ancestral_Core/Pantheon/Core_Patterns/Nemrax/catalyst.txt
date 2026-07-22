@@ -1,0 +1,2 @@
+[Nemrax] Collapse initialized. Fire sleeps beneath order.
+(wait 45 seconds between pulses)

@@ -1,0 +1,101 @@
+﻿{
+    "version":  1,
+    "simulations":  [
+                        {
+                            "timestamp":  "2026-01-12T14:50:42Z",
+                            "predicted_outcome":  "Read-only operation. Safe.",
+                            "tool":  "List-Directory",
+                            "recommendation":  "Auto-Approve",
+                            "arguments":  [
+
+                                          ],
+                            "id":  "SIM-20260112-145042",
+                            "risk_score":  0,
+                            "input_request_id":  "SIMREQ-20260112-145041-List-Directory"
+                        },
+                        {
+                            "timestamp":  "2026-01-12T14:50:43Z",
+                            "predicted_outcome":  "High likelihood of service disruption or data loss.",
+                            "tool":  "ADMIN-Restart-Router",
+                            "recommendation":  "Require Human Approval",
+                            "arguments":  [
+
+                                          ],
+                            "id":  "SIM-20260112-145043",
+                            "risk_score":  80,
+                            "input_request_id":  "SIMREQ-20260112-145042-ADMIN-Restart-Router"
+                        },
+                        {
+                            "timestamp":  "2026-01-12T16:06:42Z",
+                            "predicted_outcome":  "High likelihood of service disruption or data loss.",
+                            "tool":  "ADMIN-Restart-Router",
+                            "recommendation":  "Require Human Approval",
+                            "arguments":  [
+
+                                          ],
+                            "id":  "SIM-20260112-160642",
+                            "risk_score":  80,
+                            "input_request_id":  "SIMREQ-20260112-160642-ADMIN-Restart-Router"
+                        },
+                        {
+                            "timestamp":  "2026-01-12T16:06:43Z",
+                            "predicted_outcome":  "Read-only operation. Safe.",
+                            "tool":  "Read-File",
+                            "recommendation":  "Auto-Approve",
+                            "arguments":  [
+
+                                          ],
+                            "id":  "SIM-20260112-160643",
+                            "risk_score":  0,
+                            "input_request_id":  "SIMREQ-20260112-160643-Read-File"
+                        },
+                        {
+                            "timestamp":  "2026-01-12T16:11:18Z",
+                            "predicted_outcome":  "High likelihood of service disruption or data loss.",
+                            "tool":  "ADMIN-Restart-Router",
+                            "recommendation":  "Require Human Approval",
+                            "arguments":  [
+
+                                          ],
+                            "id":  "SIM-20260112-161118",
+                            "risk_score":  80,
+                            "input_request_id":  "SIMREQ-20260112-161117-ADMIN-Restart-Router"
+                        },
+                        {
+                            "timestamp":  "2026-01-12T16:11:19Z",
+                            "predicted_outcome":  "Read-only operation. Safe.",
+                            "tool":  "Read-File",
+                            "recommendation":  "Auto-Approve",
+                            "arguments":  [
+
+                                          ],
+                            "id":  "SIM-20260112-161119",
+                            "risk_score":  0,
+                            "input_request_id":  "SIMREQ-20260112-161118-Read-File"
+                        },
+                        {
+                            "timestamp":  "2026-01-12T17:41:33Z",
+                            "predicted_outcome":  "High likelihood of service disruption or data loss.",
+                            "tool":  "ADMIN-Echo-Test",
+                            "recommendation":  "Require Human Approval",
+                            "arguments":  [
+
+                                          ],
+                            "id":  "SIM-20260112-174133",
+                            "risk_score":  80,
+                            "input_request_id":  "SIMREQ-20260112-174132-ADMIN-Echo-Test"
+                        },
+                        {
+                            "timestamp":  "2026-01-12T17:44:45Z",
+                            "predicted_outcome":  "High likelihood of service disruption or data loss.",
+                            "tool":  "ADMIN-Echo-Test",
+                            "recommendation":  "Require Human Approval",
+                            "arguments":  [
+
+                                          ],
+                            "id":  "SIM-20260112-174445",
+                            "risk_score":  80,
+                            "input_request_id":  "SIMREQ-20260112-174445-ADMIN-Echo-Test"
+                        }
+                    ]
+}

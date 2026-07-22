@@ -1,0 +1,1 @@
+{"artifact_type": "ecosystem_observation", "entity": "canary_entity_14", "claim": "canary_claim_14_1784678882296", "source_id": "canary_run_14", "source_type": "canary_harness", "confidence": 0.99, "claim_domain": "general", "batch_id": "batch_14", "is_canary": true, "risk_level": "GREEN"}

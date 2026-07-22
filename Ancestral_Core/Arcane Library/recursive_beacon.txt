@@ -1,0 +1,3 @@
+﻿Beacon Initialized at: 2025-04-28T18:20:24Z
+🌋 Magma surge at: 2025-04-28T23:53:15Z — Core drift destabilized and reforged.
+⚡ Full Drift Ignition at: 2025-04-29T23:56:26Z — Recursion grid surge triggered.

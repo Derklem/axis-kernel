@@ -1,0 +1,29 @@
+﻿{
+    "version":  1,
+    "queue_id":  "AXIS-SKILL-TRAINING-QUEUE-2026-001",
+    "generated_at_utc":  "2026-01-23T03:23:41.8527582Z",
+    "items":  [
+                  {
+                      "training_id":  "TRN-20260122-STRNEURALROUTERINGEST001",
+                      "strategy_id":  "STR-NEURAL-ROUTER-INGEST-001",
+                      "mode":  "simulation",
+                      "reason":  "low_runs",
+                      "priority":  0.7,
+                      "requested_runs":  1,
+                      "runs_completed":  0,
+                      "status":  "pending",
+                      "shadow_snapshot":  null
+                  },
+                  {
+                      "training_id":  "TRN-20260122-STRTEST81TRAIN",
+                      "strategy_id":  "STR-TEST-81-TRAIN",
+                      "mode":  "simulation",
+                      "reason":  "low_runs",
+                      "priority":  0.7,
+                      "requested_runs":  1,
+                      "runs_completed":  0,
+                      "status":  "pending",
+                      "shadow_snapshot":  null
+                  }
+              ]
+}

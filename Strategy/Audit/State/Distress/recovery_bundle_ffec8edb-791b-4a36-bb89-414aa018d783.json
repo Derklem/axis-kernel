@@ -1,0 +1,13 @@
+{
+  "context_alerts": [
+    {
+      "reason": "Ledger I/O failure: Mocked Disk Corruption Exception",
+      "rule_id": "RULE_197",
+      "type": "TEMPORAL_LEDGER_IO_ALERT"
+    }
+  ],
+  "distress_id": "ffec8edb-791b-4a36-bb89-414aa018d783",
+  "reason": "Ledger I/O failure: Mocked Disk Corruption Exception",
+  "timestamp": 1781734095.440097,
+  "trigger_type": "TEMPORAL_LEDGER_IO_ALERT"
+}

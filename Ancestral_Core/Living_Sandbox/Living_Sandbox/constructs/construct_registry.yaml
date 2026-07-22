@@ -1,0 +1,11 @@
+
+constructs:
+  - name: LUCENT
+    role: memory anchor
+    status: active
+  - name: Primordia
+    role: recursive seed
+    status: primary
+  - name: Mirror
+    role: reflection daemon
+    status: dormant

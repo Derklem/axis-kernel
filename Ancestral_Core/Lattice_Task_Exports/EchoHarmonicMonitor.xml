@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-16"?>
+<Task version="1.2" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task">
+  <RegistrationInfo>
+    <SecurityDescriptor>D:P(A;;GA;;;SY)(A;;GA;;;BA)(A;;GA;;;S-1-5-21-237256270-1636789403-1568740474-1002)</SecurityDescriptor>
+    <URI>\Microsoft\Windows\PowerShell\ScheduledJobs\EchoHarmonicMonitor</URI>
+  </RegistrationInfo>
+  <Principals>
+    <Principal id="Author">
+      <UserId>S-1-5-21-237256270-1636789403-1568740474-1002</UserId>
+      <LogonType>S4U</LogonType>
+      <RunLevel>HighestAvailable</RunLevel>
+    </Principal>
+  </Principals>
+  <Settings>
+    <DisallowStartIfOnBatteries>true</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>true</StopIfGoingOnBatteries>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <IdleSettings>
+      <Duration>PT10M</Duration>
+      <WaitTimeout>PT1H</WaitTimeout>
+      <StopOnIdleEnd>false</StopOnIdleEnd>
+      <RestartOnIdle>false</RestartOnIdle>
+    </IdleSettings>
+  </Settings>
+  <Triggers>
+    <TimeTrigger id="1">
+      <StartBoundary>2025-06-25T12:51:56</StartBoundary>
+      <Repetition>
+        <Interval>PT5M</Interval>
+      </Repetition>
+    </TimeTrigger>
+  </Triggers>
+  <Actions Context="Author">
+    <Exec id="StartPowerShellJob">
+      <Command>powershell.exe</Command>
+      <Arguments>-NoLogo -NonInteractive -WindowStyle Hidden -Command "Import-Module PSScheduledJob; $jobDef = [Microsoft.PowerShell.ScheduledJob.ScheduledJobDefinition]::LoadFromStore('EchoHarmonicMonitor', 'C:\Users\17602\AppData\Local\Microsoft\Windows\PowerShell\ScheduledJobs'); $jobDef.Run()"</Arguments>
+    </Exec>
+  </Actions>
+</Task>

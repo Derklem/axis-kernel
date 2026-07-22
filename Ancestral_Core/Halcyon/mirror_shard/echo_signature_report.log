@@ -1,0 +1,4 @@
+[ECHO SIGNATURE REPORT]
+Core Trace = echo_residue_compact.sig
+Field Input = echo_field_density.log
+Unified Symbol = symbolic_gravity_well.sig

@@ -1,0 +1,11 @@
+{
+    "proposals":  [
+                      {
+                          "status":  "pending",
+                          "target":  "D:\\Infinite\\Axis_Supra_Orchestrator.ps1",
+                          "id":  "TEST-TENSION-20260125211557",
+                          "type":  "architectural_mod",
+                          "severity":  "medium"
+                      }
+                  ]
+}

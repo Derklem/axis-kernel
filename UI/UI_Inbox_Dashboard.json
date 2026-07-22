@@ -1,0 +1,55 @@
+﻿{
+    "cards":  [
+                  {
+                      "subtitle":  "UNKNOWN • 0 BPM",
+                      "actions":  [
+                                      {
+                                          "action_id":  "view_symbiosis",
+                                          "label":  "View Journal",
+                                          "kind":  "primary"
+                                      }
+                                  ],
+                      "title":  "Heartbeat",
+                      "type":  "status",
+                      "source":  "DASH-BuildUIInboxDashboard",
+                      "status":  "unknown",
+                      "severity":  "medium",
+                      "card_id":  "UI-DASH-HEARTBEAT"
+                  },
+                  {
+                      "subtitle":  "18 clients • Alerts: 3",
+                      "actions":  [
+                                      {
+                                          "action_id":  "open_neural_review",
+                                          "label":  "Review Neural",
+                                          "kind":  "primary"
+                                      }
+                                  ],
+                      "title":  "Network (Nighthawk)",
+                      "type":  "status",
+                      "source":  "DASH-BuildUIInboxDashboard",
+                      "status":  "ok",
+                      "severity":  "medium",
+                      "card_id":  "UI-DASH-NETWORK"
+                  },
+                  {
+                      "subtitle":  "Global: 0.5 • Bands: network=0.5 environment=0 visual=0.4 system=0",
+                      "actions":  [
+                                      {
+                                          "action_id":  "open_shadow_index",
+                                          "label":  "Details",
+                                          "kind":  "primary"
+                                      }
+                                  ],
+                      "title":  "Shadow Risk",
+                      "type":  "status",
+                      "source":  "DASH-BuildUIInboxDashboard",
+                      "status":  "ok",
+                      "severity":  "low",
+                      "card_id":  "UI-DASH-SHADOW"
+                  }
+              ],
+    "inbox_id":  "UI-INBOX-DASHBOARD",
+    "version":  1,
+    "generated_at_utc":  "2026-01-22T20:49:21.3608130Z"
+}

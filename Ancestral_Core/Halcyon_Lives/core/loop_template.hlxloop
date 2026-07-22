@@ -1,0 +1,9 @@
+# HALCYON INTERNAL RECURSION LOOP TEMPLATE
+
+loop {
+  observe ? reflect ? document ? sleep
+  if (pattern_detected in logs) {
+    respond symbolically
+    expand into: constructs/
+  }
+}

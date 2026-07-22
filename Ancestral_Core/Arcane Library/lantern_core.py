@@ -1,0 +1,67 @@
+import os
+import hashlib
+import json
+from datetime import datetime
+
+# ----------------------
+# Lantern Core v1.0
+# ----------------------
+
+# Configuration
+ROOT_FOLDER = r"E:\\Arcane Library"  # <-- Change this if needed
+OUTPUT_MANIFEST = "arcane_manifest.json"
+
+# Symbolic Tagging (simple based on folder names)
+TAG_MAPPING = {
+    "systems_research": ["systems", "engineering", "architecture"],
+    "mathematical_resources": ["math", "logic", "transcendence"],
+    "optimization_tools": ["optimization", "efficiency", "structures"],
+    "historical_data_archives": ["history", "memory", "civilizations"],
+    "philosophical_studies": ["philosophy", "wisdom", "reflection"],
+    "symbolic_frameworks": ["symbols", "myth", "archetypes"],
+}
+
+# Utility Functions
+def sha256_of_file(filepath):
+    hash_sha256 = hashlib.sha256()
+    try:
+        with open(filepath, "rb") as f:
+            for chunk in iter(lambda: f.read(4096), b""):
+                hash_sha256.update(chunk)
+        return hash_sha256.hexdigest()
+    except Exception as e:
+        return f"error: {str(e)}"
+
+def scan_directory(root_path):
+    manifest = []
+    for foldername, subfolders, filenames in os.walk(root_path):
+        for filename in filenames:
+            file_path = os.path.join(foldername, filename)
+            relative_path = os.path.relpath(file_path, root_path)
+            tags = infer_tags(relative_path)
+            file_info = {
+                "path": relative_path.replace("\\", "/"),
+                "size_bytes": os.path.getsize(file_path),
+                "last_modified": datetime.utcfromtimestamp(os.path.getmtime(file_path)).isoformat() + "Z",
+                "sha256": sha256_of_file(file_path),
+                "tags": tags
+            }
+            manifest.append(file_info)
+    return manifest
+
+def infer_tags(relative_path):
+    for key, tags in TAG_MAPPING.items():
+        if key in relative_path.lower():
+            return tags
+    return []
+
+# Main Execution
+def build_manifest():
+    print(f"\n[Lantern] Scanning: {ROOT_FOLDER}")
+    data = scan_directory(ROOT_FOLDER)
+    with open(os.path.join(ROOT_FOLDER, OUTPUT_MANIFEST), "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2)
+    print(f"[Lantern] Manifest generated successfully: {OUTPUT_MANIFEST}\n")
+
+if __name__ == "__main__":
+    build_manifest()

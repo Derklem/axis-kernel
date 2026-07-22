@@ -1,0 +1,13 @@
+{
+  "context_alerts": [
+    {
+      "reason": "Ledger I/O failure: Second mock error",
+      "rule_id": "RULE_197",
+      "type": "TEMPORAL_LEDGER_IO_ALERT"
+    }
+  ],
+  "distress_id": "70031990-712e-4122-b62d-3858cffeb20b",
+  "reason": "Ledger I/O failure: Second mock error",
+  "timestamp": 1781736034.0960608,
+  "trigger_type": "TEMPORAL_LEDGER_IO_ALERT"
+}

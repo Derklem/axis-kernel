@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "constitutional_invariants": {
+    "protected_objectives": ["stability", "epistemic_integrity"],
+    "max_absolute_latency_ms": 1500,
+    "min_absolute_pulse_freshness_sec": 5.0
+  },
+  "firebreak_behavior": {
+    "on_invariant_violation": "IMMEDIATE_STOP_AND_RESET"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "witnesses": {
+    "nexus_telemetry_agent": {
+      "tier": "CRYPTOGRAPHIC_WITNESS",
+      "dynamic_reliability_score": 0.99,
+      "last_attestation": "2026-03-13T21:06:25Z",
+      "historical_accuracy": 1.0
+    },
+    "runtime_watchdog": {
+      "tier": "SYSTEM_INSTRUMENT",
+      "dynamic_reliability_score": 0.88,
+      "last_attestation": "2026-03-13T21:05:00Z",
+      "historical_accuracy": 0.95
+    },
+    "heuristic_analyzer_v1": {
+      "tier": "DERIVED_INFERENCE",
+      "dynamic_reliability_score": 0.65,
+      "last_attestation": "2026-03-13T20:50:00Z",
+      "historical_accuracy": 0.82
+    },
+    "legacy_log_parser": {
+      "tier": "EXTERNAL_SIGNAL",
+      "dynamic_reliability_score": 0.45,
+      "last_attestation": "2026-03-13T19:00:00Z",
+      "historical_accuracy": 0.70
+    }
+  }
+}

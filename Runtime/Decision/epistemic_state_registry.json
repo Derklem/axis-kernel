@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "domains": {
+    "LIVE_DB_CORRUPTION_RISK": {
+      "current_state": "THEORY_EXPANSION_REQUIRED",
+      "active_queue": "theory_expansion_request_queue.jsonl",
+      "last_transition": "2026-03-14T19:11:23.954035Z",
+      "transition_reason": "No plural candidate theories available."
+    },
+    "DRILL_DOMAIN_A_UNDERSPECIFIED": {
+      "current_state": "THEORY_EXPANSION_REQUIRED",
+      "active_queue": "theory_expansion_request_queue.jsonl",
+      "last_transition": "2026-03-14T19:11:23.955312Z",
+      "transition_reason": "No plural candidate theories available."
+    },
+    "DRILL_DOMAIN_B_UNOBSERVABLE": {
+      "current_state": "INSTRUMENTATION_REQUIRED",
+      "active_queue": "instrumentation_request_queue.jsonl",
+      "last_transition": "2026-03-14T19:11:23.956312Z",
+      "transition_reason": "Candidate theory exists but lacks discriminating observables."
+    },
+    "DRILL_DOMAIN_C_MATURE": {
+      "current_state": "READY_FOR_EXPERIMENT_DESIGN",
+      "active_queue": "experiment_routing_queue.jsonl",
+      "last_transition": "2026-03-14T19:11:23.965599Z",
+      "transition_reason": "Plural theories and intervention variable present."
+    }
+  },
+  "last_updated": "2026-03-14T19:11:31.384732Z"
+}

@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T00:30:03.018004+00:00",
+    "entity": "boundary_mapper.py",
+    "claim": "standard update: signal for boundary_mapper.py in cycle 46.",
+    "source_id": "Benchmark_Harvester",
+    "source_type": "automated_sensor",
+    "claim_domain": "rumor_claim",
+    "confidence": 0.84
+}

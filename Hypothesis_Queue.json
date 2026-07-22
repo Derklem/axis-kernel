@@ -1,0 +1,251 @@
+﻿{
+    "anchor_signature":  null,
+    "version":  1,
+    "anchor_id":  null,
+    "hypotheses":  [
+                       {
+                           "id":  "HYP-20260116-001425-w32h",
+                           "created_at":  "2026-01-16T00:14:25.6842878Z",
+                           "basis":  {
+                                         "events":  [
+
+                                                    ],
+                                         "snapshot_id":  "INSIGHT-SNAPSHOT",
+                                         "metrics":  [
+                                                         "reliability_heatmap.FS-ListDir.fail_rate"
+                                                     ]
+                                     },
+                           "hypothesis":  "High failure rate indicates policy friction, hardware timeout, or contract misalignment for FS-ListDir.",
+                           "question":  "Why is tool \u0027FS-ListDir\u0027 failing in 100% of cases?",
+                           "anchor_id":  "1569",
+                           "notes":  null,
+                           "source":  "INSIGHT_ENGINE",
+                           "anchor_signature":  "6E24BA17A986554A42B379843EEFC0E26919623757EAA62062F06F3877498DDB",
+                           "last_reviewed_at":  null,
+                           "confidence":  0.5,
+                           "priority":  "high",
+                           "status":  "open",
+                           "tags":  [
+                                        "reliability",
+                                        "failure",
+                                        "FS-ListDir"
+                                    ],
+                           "linked_strategies":  [
+
+                                                 ]
+                       },
+                       {
+                           "id":  "HYP-20260116-001425-7gnk",
+                           "created_at":  "2026-01-16T00:14:25.6705607Z",
+                           "basis":  {
+                                         "events":  [
+
+                                                    ],
+                                         "snapshot_id":  "INSIGHT-SNAPSHOT",
+                                         "metrics":  [
+                                                         "reliability_heatmap.NET-RFScan.fail_rate"
+                                                     ]
+                                     },
+                           "hypothesis":  "High failure rate indicates policy friction, hardware timeout, or contract misalignment for NET-RFScan.",
+                           "question":  "Why is tool \u0027NET-RFScan\u0027 failing in 100% of cases?",
+                           "anchor_id":  "1569",
+                           "notes":  null,
+                           "source":  "INSIGHT_ENGINE",
+                           "anchor_signature":  "6E24BA17A986554A42B379843EEFC0E26919623757EAA62062F06F3877498DDB",
+                           "last_reviewed_at":  null,
+                           "confidence":  0.5,
+                           "priority":  "high",
+                           "status":  "open",
+                           "tags":  [
+                                        "reliability",
+                                        "failure",
+                                        "NET-RFScan"
+                                    ],
+                           "linked_strategies":  [
+
+                                                 ]
+                       },
+                       {
+                           "id":  "HYP-20260116-001425-d45n",
+                           "created_at":  "2026-01-16T00:14:25.7071300Z",
+                           "basis":  {
+                                         "events":  [
+
+                                                    ],
+                                         "snapshot_id":  "INSIGHT-SNAPSHOT",
+                                         "metrics":  [
+                                                         "operational_pulse.ratio"
+                                                     ]
+                                     },
+                           "hypothesis":  "A thought-to-action ratio of 13939 suggests the system is simulating heavily without executing real-world tool requests.",
+                           "question":  "Why is the system currently in a Hyper-Reflective state?",
+                           "anchor_id":  "1569",
+                           "notes":  null,
+                           "source":  "INSIGHT_ENGINE",
+                           "anchor_signature":  "6E24BA17A986554A42B379843EEFC0E26919623757EAA62062F06F3877498DDB",
+                           "last_reviewed_at":  null,
+                           "confidence":  0.5,
+                           "priority":  "medium",
+                           "status":  "open",
+                           "tags":  [
+                                        "pulse",
+                                        "bias",
+                                        "reflectivity"
+                                    ],
+                           "linked_strategies":  [
+
+                                                 ]
+                       },
+                       {
+                           "id":  "HYP-20260116-001425-f647",
+                           "created_at":  "2026-01-16T00:14:25.6964784Z",
+                           "basis":  {
+                                         "events":  [
+
+                                                    ],
+                                         "snapshot_id":  "INSIGHT-SNAPSHOT",
+                                         "metrics":  [
+                                                         "reliability_heatmap.CHAT-Message.fail_rate"
+                                                     ]
+                                     },
+                           "hypothesis":  "High failure rate indicates policy friction, hardware timeout, or contract misalignment for CHAT-Message.",
+                           "question":  "Why is tool \u0027CHAT-Message\u0027 failing in 100% of cases?",
+                           "anchor_id":  "1569",
+                           "notes":  null,
+                           "source":  "INSIGHT_ENGINE",
+                           "anchor_signature":  "6E24BA17A986554A42B379843EEFC0E26919623757EAA62062F06F3877498DDB",
+                           "last_reviewed_at":  null,
+                           "confidence":  0.5,
+                           "priority":  "high",
+                           "status":  "open",
+                           "tags":  [
+                                        "reliability",
+                                        "failure",
+                                        "CHAT-Message"
+                                    ],
+                           "linked_strategies":  [
+
+                                                 ]
+                       },
+                       {
+                           "resolution_note":  "Heuristic check failed.",
+                           "hypothesis":  "Aliens are contacting us.",
+                           "resolution_status":  "refuted",
+                           "tags":  [
+                                        "aliens"
+                                    ],
+                           "resolution_source":  "auto_heuristic",
+                           "confidence":  0.1,
+                           "status":  "resolved",
+                           "id":  "HYP-SIM-LOW-FIDELITY",
+                           "librarian_processed":  true
+                       },
+                       {
+                           "resolution_note":  "User confirmed microwave was running.",
+                           "hypothesis":  "RF noise correlates with microwave usage.",
+                           "resolution_status":  "confirmed",
+                           "tags":  [
+                                        "rf",
+                                        "interference"
+                                    ],
+                           "resolution_source":  "anchor_manual",
+                           "confidence":  0.95,
+                           "status":  "resolved",
+                           "id":  "HYP-SIM-HIGH-FIDELITY",
+                           "librarian_processed":  true
+                       },
+                       {
+                           "id":  "HYP-20260116-001425-onmq",
+                           "created_at":  "2026-01-16T00:14:25.6552410Z",
+                           "basis":  {
+                                         "events":  [
+
+                                                    ],
+                                         "snapshot_id":  "INSIGHT-SNAPSHOT",
+                                         "metrics":  [
+                                                         "reliability_heatmap.ADMIN-Read-File.fail_rate"
+                                                     ]
+                                     },
+                           "hypothesis":  "High failure rate indicates policy friction, hardware timeout, or contract misalignment for ADMIN-Read-File.",
+                           "question":  "Why is tool \u0027ADMIN-Read-File\u0027 failing in 100% of cases?",
+                           "anchor_id":  "1569",
+                           "notes":  null,
+                           "source":  "INSIGHT_ENGINE",
+                           "anchor_signature":  "6E24BA17A986554A42B379843EEFC0E26919623757EAA62062F06F3877498DDB",
+                           "last_reviewed_at":  null,
+                           "confidence":  0.5,
+                           "priority":  "high",
+                           "status":  "open",
+                           "tags":  [
+                                        "reliability",
+                                        "failure",
+                                        "ADMIN-Read-File"
+                                    ],
+                           "linked_strategies":  [
+
+                                                 ]
+                       },
+                       {
+                           "id":  "HYP-20260116-001425-6ya3",
+                           "created_at":  "2026-01-16T00:14:25.6362662Z",
+                           "basis":  {
+                                         "events":  [
+
+                                                    ],
+                                         "snapshot_id":  "INSIGHT-SNAPSHOT",
+                                         "metrics":  [
+                                                         "reliability_heatmap.FS-WriteFile.fail_rate"
+                                                     ]
+                                     },
+                           "hypothesis":  "High failure rate indicates policy friction, hardware timeout, or contract misalignment for FS-WriteFile.",
+                           "question":  "Why is tool \u0027FS-WriteFile\u0027 failing in 100% of cases?",
+                           "anchor_id":  "1569",
+                           "notes":  null,
+                           "source":  "INSIGHT_ENGINE",
+                           "anchor_signature":  "6E24BA17A986554A42B379843EEFC0E26919623757EAA62062F06F3877498DDB",
+                           "last_reviewed_at":  null,
+                           "confidence":  0.5,
+                           "priority":  "high",
+                           "status":  "open",
+                           "tags":  [
+                                        "reliability",
+                                        "failure",
+                                        "FS-WriteFile"
+                                    ],
+                           "linked_strategies":  [
+
+                                                 ]
+                       },
+                       {
+                           "source":  "Dream:Spark_Request_20260118_094754.json",
+                           "id":  "HYP-ENTROPY-712703879",
+                           "priority":  "MED",
+                           "question":  "Entropy Simulation: Memory",
+                           "tags":  [
+                                        "entropy",
+                                        "dream_bridge"
+                                    ],
+                           "created_at":  "2026-01-18T10:42:55.1371609-08:00",
+                           "state":  "OPEN",
+                           "status":  "open",
+                           "hypothesis":  "If you were entropy, how would specific concept \u0027Memory\u0027 end? Projected Outcome -\u003e [Simulate]"
+                       },
+                       {
+                           "id":  "HYP-20260124-145650-L665",
+                           "question":  "Is doctrine coverage insufficient for this class of critical violation?",
+                           "hypothesis":  "Doctrine rules for highly sensitive resources are incomplete, mis-scoped, or bypassed by an unanticipated execution path.",
+                           "status":  "open",
+                           "priority":  "high",
+                           "created_at":  "2026-01-24T14:56:50.2768905-08:00",
+                           "source":  "Incident_Playbook",
+                           "source_incident":  "INC-20260124-145650-CDO9",
+                           "playbook_id":  "PB-DOCTRINE-CRIT-001",
+                           "tags":  [
+                                        "doctrine_violation",
+                                        "critical",
+                                        "incident",
+                                        "playbook"
+                                    ]
+                       }
+                   ]
+}

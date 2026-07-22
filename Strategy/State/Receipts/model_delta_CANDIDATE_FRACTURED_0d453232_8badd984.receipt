@@ -1,0 +1,15 @@
+{
+    "cycle_count": 10,
+    "mutation_type": "CANDIDATE_FRACTURED",
+    "target_id": "0d453232b749702f0837be6e9f696f9db7fc54c1c741ad101990a2da823eb0df",
+    "parent_receipt_head": "130f518da269541a0d4dd59c5a6243569c156ccb40f992e099f8f1cf9176dd6f",
+    "data": {
+        "entity": "multi_objective_solverpy",
+        "claim": "[arbitration_engine] multi_objective_solver.py has 948 lines, 1 oversized functions (>120 lines), debt_score=0.15. Target: Extract long methods for maintainability.",
+        "reason": "chronic_quorum_failure_20_cycles"
+    },
+    "status": "committed",
+    "ts_utc": "2026-07-21T23:37:59.820976+00:00",
+    "receipt_id": "model_delta_CANDIDATE_FRACTURED_0d453232_8badd984",
+    "causal_hash": "8badd98431ed269d8b318cea697a5b54e389c496d69ff0d81a0c5f8eee84d494"
+}

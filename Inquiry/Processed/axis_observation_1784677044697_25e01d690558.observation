@@ -1,0 +1,16 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "entity": "axis_crypto_helperspy",
+    "claim": "[cryptographic_authority] axis_crypto_helpers.py has 67 lines, 0 oversized functions (>120 lines), debt_score=0.00. Target: Extract long methods for maintainability.",
+    "claim_domain": "structural_debt",
+    "claim_polarity": "affirming",
+    "source_type": "self_observation",
+    "source_id": "AXIS_NODE_LOCAL_01",
+    "confidence": 0.95,
+    "confidence_components": {
+        "base": 0.95,
+        "tension_penalty": 0.0,
+        "reason": "stewardship_inference"
+    },
+    "ts_utc": "2026-07-21T23:37:24.697395+00:00"
+}

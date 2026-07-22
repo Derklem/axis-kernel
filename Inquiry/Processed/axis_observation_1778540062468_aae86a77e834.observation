@@ -1,0 +1,16 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "entity": "Llama-4-70B",
+    "claim": "Internal sources claim training is 50% complete with 2x GPT-4 performance.",
+    "claim_domain": "rumor_claim",
+    "claim_polarity": "affirming",
+    "source_type": "anonymous_leak",
+    "source_id": "leaker_alpha",
+    "confidence": 0.5,
+    "confidence_components": {
+        "base": 0.5,
+        "tension_penalty": 0.0,
+        "reason": "stewardship_inference"
+    },
+    "ts_utc": "2026-05-11T22:54:22.468979+00:00"
+}

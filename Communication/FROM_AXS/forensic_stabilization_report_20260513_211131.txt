@@ -1,0 +1,199 @@
+﻿=== AXIS FORENSIC STABILIZATION REPORT ===
+Timestamp: 05/13/2026 21:11:31
+
+--- VOICE ---
+{
+  "timestamp_utc": "2026-05-14T04:08:15.315635+00:00",
+  "speaker": "AXIS",
+  "message_type": "answer",
+  "priority": "high",
+  "epoch": 505,
+  "last_updated_cycle": 505,
+  "message": "I want forensic stabilization before new work. Integrity is not valid.",
+  "evidence": [
+    "cycle=505",
+    "integrity=continuity_violation",
+    "continuity=broken",
+    "avg_tension=0.2434",
+    "candidates=4",
+    "entities=4",
+    "claims=0"
+  ],
+  "requires_response": true
+}
+--- STRATEGY STATE CORE ---
+
+
+cycle_count             : 505
+avg_tension             : 0.2434
+horizon_tension_score   : 0.0
+ecosystem_receipts_head : none
+witness_chain_head      : e658d3772d9a3d277517ea812f7ebf58fce3d3a5c7e666e7b9189708c7ea601b
+
+
+
+
+
+status                  : continuity_violation
+continuity_status       : broken
+previous_hash           : 71c5c59a73a7e5709844c546ee09ed4c87e2be40e6394fcbd4d4ec6ae8c5b9d8
+last_verified_cycle     : 505
+hash                    : 2f3073f8e5eb926796339dc41409958c0799b0c1a7a45e743f9b673ee7a5ad59
+volatility_peak         : 0.0
+volatility_caution      : False
+break_reason            : witness_chain_tamper
+broken_witness_log_hash : b4722a9ba28f02d4b6506ef8beac523509ccb1feea1b7808bac970e8a2ad673a
+
+
+
+--- ANCHOR ---
+{
+    "last_hash": "2f3073f8e5eb926796339dc41409958c0799b0c1a7a45e743f9b673ee7a5ad59",
+    "last_cycle": 505,
+    "witness_chain_head": "d8c4c2c3637edeee08dd1f34302e1786ea1d6d2ab0c696361b2fc8df25d111f4",
+    "volatility_peak": 0.0,
+    "volatility_caution": false,
+    "status": "continuity_violation",
+    "continuity_status": "broken",
+    "ts": 1778642464.1146908
+}
+--- RECEIPTS COUNT ---
+
+
+Count    : 0
+Average  : 
+Sum      : 
+Maximum  : 
+Minimum  : 
+Property : 
+
+
+
+--- WITNESS LEDGER TAIL ---
+{"ts_utc": "2026-05-13T03:21:03.794971+00:00", "cycle": 505, "event_type": "sovereign_arbitration", "layer": "strategy_engine", "authority_state": {"verdict": "AUTHORIZED", "type": "meta_mutation"}, "reason": "meta_mutation_authorized", "ancestry": {"archival_hash": "none", "continuity_cycle": 505}, "prev_witness_hash": "36fb270db6ba9dca3f3aacf964d00b0c76987eacbb13fb0c49704434092f0f80", "input_hash": "48a9c07c6cd147a53facf43c2337a5878a4dfc3ee4625364438e9af9fb93426c", "data": {"schema": "axis.strategy_proposal.v1", "origin": "system:strategy_engine", "origin_layer": "self_improvement", "intent_id": "REFACTOR-1778642463", "status": "draft", "proposed_change": {"artifact_type": "structural_revision", "action": "extract_method", "target_path": "multi_objective_solver.py", "delta": {"source_function": "evaluate_proposal", "target_module": "multi_objective_solver.py", "rationale": "Decompose oversized function 'evaluate_proposal' (735 lines) to reduce structural debt."}}, "evaluation": {"meta_mutation_eligible": true, "expected_delta": 44.75, "structural_confidence": 0.9, "quarantine": false, "solver_accepted": true}, "evaluation_provenance": "325cf92deddc84d0fe14dc5b3f1df6957aebdb99f71262bd7faa1da33dfd543e", "evaluated_against_state_seq": 1001}, "witness_hash": "d6d1f5d943b742765a68df0a0e609099c66d3c1d30cc782ca844783eee5a7b3b"}
+{"ts_utc": "2026-05-13T03:21:03.797542+00:00", "cycle": 505, "event_type": "sovereign_arbitration", "layer": "strategy_engine", "authority_state": {"verdict": "AUTHORIZED", "type": "meta_mutation"}, "reason": "meta_mutation_authorized", "ancestry": {"archival_hash": "none", "continuity_cycle": 505}, "prev_witness_hash": "d6d1f5d943b742765a68df0a0e609099c66d3c1d30cc782ca844783eee5a7b3b", "input_hash": "e2754cbf626d39afa2b5ad1c88160c309b1b7ad4065de17ddc5bac1f261784c1", "data": {"action": "extract_method", "target": "multi_objective_solver.py"}, "witness_hash": "e753c0b47bdcd2d94511bf34a08e1a3abb7e9dc81257d56e803521fac020c4bb"}
+{"ts_utc": "2026-05-13T03:21:04.106121+00:00", "cycle": 505, "event_type": "CODE_REFACTOR_APPLIED", "layer": "strategy_engine", "authority_state": "ecosystem_actuator", "reason": "structural_mutation:multi_objective_solver.py", "ancestry": {"archival_hash": "none", "continuity_cycle": 505}, "prev_witness_hash": "e753c0b47bdcd2d94511bf34a08e1a3abb7e9dc81257d56e803521fac020c4bb", "input_hash": "208618b432dee4aad80d17a37d08e970c9c37f14b09cb97b7fdfb68fffa3aaef", "data": {"action": "extract_method", "pre_hash": "478d47d7f3bf29e2", "post_hash": "04cccdfbdeea4113", "backup_path": "multi_objective_solver.py.backup.1778642463", "proposal_id": "REFACTOR-1778642463", "delta_summary": "Decompose oversized function 'evaluate_proposal' (735 lines) to reduce structural debt."}, "witness_hash": "2232c11b5f3f72828de2ba294f4e3f356152845afad74b5b45c04051c64da3e5"}
+{"ts_utc": "2026-05-13T03:21:04.107628+00:00", "cycle": 505, "event_type": "self_improvement_applied", "layer": "strategy_engine", "authority_state": "safe_refactor_applier", "reason": "governed_code_evolution", "ancestry": {"archival_hash": "none", "continuity_cycle": 505}, "prev_witness_hash": "2232c11b5f3f72828de2ba294f4e3f356152845afad74b5b45c04051c64da3e5", "input_hash": "d484b40980a30a6ce57b3f34f94e59b5d8c4df18c75a4155bed047892d778c32", "data": {"proposal_id": "REFACTOR-1778642463", "target": "D:\\Infinite\\Infinity\\Strategy\\multi_objective_solver.py"}, "witness_hash": "f997663727dbe4e9ca1de7a6c1bd99b514e0954c6d84771798887dd6b71ab94c"}
+{"ts_utc": "2026-05-13T03:21:04.112684+00:00", "cycle": 505, "event_type": "cycle_verdict", "layer": "strategy_engine", "authority_state": "continuity_violation", "reason": "cycle_frozen", "ancestry": {"archival_hash": "none", "continuity_cycle": 505}, "prev_witness_hash": "f997663727dbe4e9ca1de7a6c1bd99b514e0954c6d84771798887dd6b71ab94c", "input_hash": "7dde2533e0d04703e891f652a65a03ca0aba0a5eed10bd8e3ef3628b379c6905", "data": {"frozen": true, "recovery_authorized": false, "rotation_authorized": false, "proposal_phase_complete": true, "causal_links": [], "final_calibration_hash": "0e83128e934438e96d1f8bcbec970605c58587aa758c93a66751c4e8f7e66fb9", "anchor_hash": "0e83128e934438e96d1f8bcbec970605c58587aa758c93a66751c4e8f7e66fb9", "cycle_start_witness_hash": "17cbcf0ec55d69d51921259ca37981ca76b485d6de5aee621bf10584cff93607"}, "witness_hash": "d8c4c2c3637edeee08dd1f34302e1786ea1d6d2ab0c696361b2fc8df25d111f4"}
+{"ts_utc": "2026-05-13T20:11:07.625674+00:00", "cycle": 505, "event_type": "DRY_RUN_EXTRACTION", "layer": "strategy_engine", "authority_state": "ecosystem_actuator", "reason": "structural_mutation:strategy_engine.py", "ancestry": {"archival_hash": "none", "continuity_cycle": 505}, "prev_witness_hash": "d8c4c2c3637edeee08dd1f34302e1786ea1d6d2ab0c696361b2fc8df25d111f4", "input_hash": "a496705f115a92ca5abfde86647a01bad51cc83827c62d536f986753734f4692", "data": {"intent_id": "DRY_RUN_TEST_001", "target_file": "strategy_engine.py", "function": "_get_cluster_density", "slice": "L374-L378", "parameters": ["self"], "return_count": 1, "side_effect_count": 1, "is_pure": false, "extracted_valid": true, "modified_valid": true, "status": "VALID_DRY_RUN"}, "witness_hash": "68bdf730ee11bd17fcd78ffba7f0cf11154a80775591b18c1fbf2f1fe69422d7"}
+{"ts_utc": "2026-05-13T20:11:07.785682+00:00", "cycle": 505, "event_type": "DRY_RUN_EXTRACTION", "layer": "strategy_engine", "authority_state": "ecosystem_actuator", "reason": "structural_mutation:strategy_engine.py", "ancestry": {"archival_hash": "none", "continuity_cycle": 505}, "prev_witness_hash": "68bdf730ee11bd17fcd78ffba7f0cf11154a80775591b18c1fbf2f1fe69422d7", "input_hash": "d69eb09163969cda5a1da5fc24a68a3a884d123d939ac03d3039605c26619c24", "data": {"intent_id": "DRY_RUN_TEST_002", "target_file": "strategy_engine.py", "function": "evaluate", "slice": "L213-L281", "parameters": ["claim_text", "gov_keywords", "rev_keywords"], "return_count": 3, "side_effect_count": 0, "is_pure": true, "extracted_valid": true, "modified_valid": true, "status": "VALID_DRY_RUN"}, "witness_hash": "77bbdca2e105b63ed9a3296c73a4861010ac215b8f666ef0235c402e359fd386"}
+{"ts_utc": "2026-05-13T20:11:07.931396+00:00", "cycle": 505, "event_type": "DRY_RUN_EXTRACTION", "layer": "strategy_engine", "authority_state": "ecosystem_actuator", "reason": "structural_mutation:strategy_engine.py", "ancestry": {"archival_hash": "none", "continuity_cycle": 505}, "prev_witness_hash": "77bbdca2e105b63ed9a3296c73a4861010ac215b8f666ef0235c402e359fd386", "input_hash": "8c8a93bdf502f26cc8efbea3a90107d39fb0bf6b5caf585697311f419faf3cbb", "data": {"intent_id": "DRY_RUN_TEST_003", "target_file": "strategy_engine.py", "function": "_calc_multi_model_instability", "slice": "L380-L443", "parameters": ["self", "mutate", "ledger"], "return_count": 3, "side_effect_count": 7, "is_pure": false, "extracted_valid": true, "modified_valid": true, "status": "VALID_DRY_RUN"}, "witness_hash": "e658d3772d9a3d277517ea812f7ebf58fce3d3a5c7e666e7b9189708c7ea601b"}
+{"ts_utc": "2026-05-13T22:15:53.190844+00:00", "cycle": 505, "event_type": "fatal_error", "layer": "strategy_engine", "authority_state": "axis_stewardship", "reason": "ecosystem_state_derivability_failure", "ancestry": {"archival_hash": "none", "continuity_cycle": 505}, "prev_witness_hash": "e658d3772d9a3d277517ea812f7ebf58fce3d3a5c7e666e7b9189708c7ea601b", "input_hash": "10b19a492f99223a4cbf538dc5061418300b4af81237af77889fe7deb7c6aa5a", "data": {"errors": ["Duplicate Parent Head Detected: 9cf078280134 referenced by multiple receipts (Collision)."]}, "witness_hash": "319d4cb4acc4614b463c9e586b7e52b11c6fa0d84197104115a576b9820bc0db"}
+{"ts_utc": "2026-05-13T22:29:29.171062+00:00", "cycle": 505, "event_type": "fatal_error", "layer": "strategy_engine", "authority_state": "axis_stewardship", "reason": "ecosystem_state_derivability_failure", "ancestry": {"archival_hash": "none", "continuity_cycle": 505}, "prev_witness_hash": "319d4cb4acc4614b463c9e586b7e52b11c6fa0d84197104115a576b9820bc0db", "input_hash": "c86b3ab9ff98faa263e10005cf4d5e8ddedf815d5d931fc1915449b6d97ff709", "data": {"errors": ["Full-model derivability check failed: canonical model mismatch detected."]}, "witness_hash": "20cd157e27ab2f51ed95b40aca4a452f4499b66675140a791d21ba10f1613476"}
+--- CANDIDATES ---
+{
+    "candidates": {
+        "f4b85b9675364629059c09b3e2c028fe32b062b02cd0eba215bd0c3ff447ca48": {
+            "entity": "strategy_enginepy",
+            "claim": "[core_governance] strategy_engine.py has 6844 lines, 15 oversized functions (>120 lines), debt_score=1.00. Target: Extract long methods for maintainability.",
+            "claim_domain": "structural_debt",
+            "source_id": "AXIS_NODE_LOCAL_01",
+            "source_type": "self_observation",
+            "artifact_type": "ecosystem_observation",
+            "batch_id": "none",
+            "provenance_note": "",
+            "confidence": 0.75,
+            "cycles_survived": 8,
+            "discovery_utc": "2026-05-13T01:09:27.911496+00:00",
+            "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_f4b85b96_4ea0f176",
+            "provenance_trail": [
+                {
+                    "source_id": "AXIS_NODE_LOCAL_01",
+                    "source_type": "self_observation",
+                    "batch_id": "none",
+                    "ts": "2026-05-13T01:09:27.911496+00:00",
+                    "lineage": {
+                        "node_id": "AXIS_NODE_LOCAL_01",
+                        "engine_version": "Axis-v1.9.1b-Attested",
+                        "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+                        "node_attestation": "bfd8d16b4632cd02431bd5150cbad433d9eaeee7123d797adfcd25140f3ecfb5"
+                    }
+                }
+            ]
+        },
+        "2e8926ed6714aab8de460ebcab6ab6994560788e70ac32e9977ec434a9f4d3f2": {
+            "entity": "ecosystem_mapping_enginepy",
+            "claim": "[epistemic_intake] ecosystem_mapping_engine.py has 1040 lines, 1 oversized functions (>120 lines), debt_score=1.00. Target: Extract long methods for maintainability.",
+            "claim_domain": "structural_debt",
+            "source_id": "AXIS_NODE_LOCAL_01",
+            "source_type": "self_observation",
+            "artifact_type": "ecosystem_observation",
+            "batch_id": "none",
+            "provenance_note": "",
+            "confidence": 0.75,
+            "cycles_survived": 8,
+            "discovery_utc": "2026-05-13T01:09:27.920364+00:00",
+            "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_2e8926ed_a340d5e8",
+            "provenance_trail": [
+                {
+                    "source_id": "AXIS_NODE_LOCAL_01",
+                    "source_type": "self_observation",
+                    "batch_id": "none",
+                    "ts": "2026-05-13T01:09:27.920364+00:00",
+                    "lineage": {
+                        "node_id": "AXIS_NODE_LOCAL_01",
+                        "engine_version": "Axis-v1.9.1b-Attested",
+                        "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+                        "node_attestation": "bfd8d16b4632cd02431bd5150cbad433d9eaeee7123d797adfcd25140f3ecfb5"
+                    }
+                }
+            ]
+        },
+        "2f535eb2776f978b30f5cb20c40ab630b9ddcf63ff4ed48ca2ac9747c2fbdffb": {
+            "entity": "axis_crypto_helperspy",
+            "claim": "[cryptographic_authority] axis_crypto_helpers.py has 65 lines, 0 oversized functions (>120 lines), debt_score=0.50. Target: Extract long methods for maintainability.",
+            "claim_domain": "structural_debt",
+            "source_id": "AXIS_NODE_LOCAL_01",
+            "source_type": "self_observation",
+            "artifact_type": "ecosystem_observation",
+            "batch_id": "none",
+            "provenance_note": "",
+            "confidence": 0.85,
+            "cycles_survived": 8,
+            "discovery_utc": "2026-05-13T01:09:27.946700+00:00",
+            "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_2f535eb2_b1329827",
+            "provenance_trail": [
+                {
+                    "source_id": "AXIS_NODE_LOCAL_01",
+                    "source_type": "self_observation",
+                    "batch_id": "none",
+                    "ts": "2026-05-13T01:09:27.946700+00:00",
+                    "lineage": {
+                        "node_id": "AXIS_NODE_LOCAL_01",
+                        "engine_version": "Axis-v1.9.1b-Attested",
+                        "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+                        "node_attestation": "bfd8d16b4632cd02431bd5150cbad433d9eaeee7123d797adfcd25140f3ecfb5"
+                    }
+                }
+            ]
+        },
+        "4e578707fe3ca27c96dcf07547c9397aec1a12d1a7ef5ca78566f23313502758": {
+            "entity": "multi_objective_solverpy",
+            "claim": "[arbitration_engine] multi_objective_solver.py has 934 lines, 1 oversized functions (>120 lines), debt_score=1.00. Target: Extract long methods for maintainability.",
+            "claim_domain": "structural_debt",
+            "source_id": "AXIS_NODE_LOCAL_01",
+            "source_type": "self_observation",
+            "artifact_type": "ecosystem_observation",
+            "batch_id": "none",
+            "provenance_note": "",
+            "confidence": 0.75,
+            "cycles_survived": 8,
+            "discovery_utc": "2026-05-13T01:09:27.969430+00:00",
+            "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_4e578707_84a05850",
+            "provenance_trail": [
+                {
+                    "source_id": "AXIS_NODE_LOCAL_01",
+                    "source_type": "self_observation",
+                    "batch_id": "none",
+                    "ts": "2026-05-13T01:09:27.969430+00:00",
+                    "lineage": {
+                        "node_id": "AXIS_NODE_LOCAL_01",
+                        "engine_version": "Axis-v1.9.1b-Attested",
+                        "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+                        "node_attestation": "bfd8d16b4632cd02431bd5150cbad433d9eaeee7123d797adfcd25140f3ecfb5"
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+  "hypothesis": "Strategy Evaluator produces deterministic decision artifact",
+  "procedure": "Execute purely functional evaluate()",
+  "adapter": {
+    "type": "subprocess",
+    "command": [
+      "python",
+      "-m",
+      "strategy.cli",
+      "--state",
+      "inputs/state.json",
+      "--spec",
+      "inputs/strategy_spec.json",
+      "--observations",
+      "inputs/observations.json",
+      "--output",
+      "artifacts/decision.json"
+    ]
+  },
+  "evaluation_criteria": {
+    "deterministic_checks": [
+      {
+        "name": "exit_code_equals",
+        "expected_exit_code": 0
+      }
+    ]
+  }
+}

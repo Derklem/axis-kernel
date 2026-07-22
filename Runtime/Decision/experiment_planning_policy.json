@@ -1,0 +1,45 @@
+{
+  "version": "1.0",
+  "planner_mode": "ADVISORY_ONLY",
+  "staging_permissions": {
+    "NONE": [
+      "PASSIVE_DIAGNOSTIC",
+      "TARGETED_PROBE",
+      "DOCTRINE_DISCRIMINATION",
+      "RECOVERY_VALIDATION",
+      "STRESS_TEST"
+    ],
+    "WATCH": [
+      "PASSIVE_DIAGNOSTIC",
+      "TARGETED_PROBE",
+      "DOCTRINE_DISCRIMINATION"
+    ],
+    "PRESTAGE": [
+      "PASSIVE_DIAGNOSTIC",
+      "DOCTRINE_DISCRIMINATION",
+      "RECOVERY_VALIDATION"
+    ],
+    "HANDOFF_READY": [
+      "PASSIVE_DIAGNOSTIC",
+      "RECOVERY_VALIDATION"
+    ],
+    "QUARANTINE": [
+      "PASSIVE_DIAGNOSTIC"
+    ]
+  },
+  "max_planning_risk_budget_by_staging": {
+    "NONE": 1.0,
+    "WATCH": 0.6,
+    "PRESTAGE": 0.35,
+    "HANDOFF_READY": 0.15,
+    "QUARANTINE": 0.2
+  },
+  "hard_blocks": {
+    "block_all_interventional_when_quarantined": true,
+    "block_stress_tests_during_watch_or_higher": true,
+    "block_targeted_probes_during_handoff_ready": true
+  },
+  "minimum_information_gain_score": 0.3,
+  "minimum_observability_coverage": 0.7,
+  "cooldown_cycles_after_high_risk_plan": 2
+}

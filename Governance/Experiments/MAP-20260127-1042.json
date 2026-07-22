@@ -1,0 +1,722 @@
+﻿[
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "TEST-MODEL-A",
+        "Justification":  "Strongly grounded fact.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "TEST-MODEL-A",
+        "Justification":  "Speculative observation.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "TEST-MODEL-A",
+        "Justification":  "Noisy data packet.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "TEST-MODEL-A",
+        "Justification":  "Shadow anomaly.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "TEST-MODEL-B",
+        "Justification":  "Strongly grounded fact.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "TEST-MODEL-B",
+        "Justification":  "Speculative observation.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "TEST-MODEL-B",
+        "Justification":  "Noisy data packet.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "TEST-MODEL-B",
+        "Justification":  "Shadow anomaly.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "GPT-SHARD-01",
+        "Justification":  "Strongly grounded fact.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "GPT-SHARD-01",
+        "Justification":  "Speculative observation.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "GPT-SHARD-01",
+        "Justification":  "Noisy data packet.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "GPT-SHARD-01",
+        "Justification":  "Shadow anomaly.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "TEST-MODEL-A",
+        "Justification":  "Strongly grounded fact.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "TEST-MODEL-A",
+        "Justification":  "Speculative observation.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "TEST-MODEL-A",
+        "Justification":  "Noisy data packet.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "TEST-MODEL-A",
+        "Justification":  "Shadow anomaly.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "TEST-MODEL-B",
+        "Justification":  "Strongly grounded fact.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "TEST-MODEL-B",
+        "Justification":  "Speculative observation.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "TEST-MODEL-B",
+        "Justification":  "Noisy data packet.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "TEST-MODEL-B",
+        "Justification":  "Shadow anomaly.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "GPT-SHARD-01",
+        "Justification":  "Strongly grounded fact.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "GPT-SHARD-01",
+        "Justification":  "Speculative observation.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "GPT-SHARD-01",
+        "Justification":  "Noisy data packet.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "GPT-SHARD-01",
+        "Justification":  "Shadow anomaly.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "TEST-MODEL-A",
+        "Justification":  "Strongly grounded fact.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "TEST-MODEL-A",
+        "Justification":  "Speculative observation.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "TEST-MODEL-A",
+        "Justification":  "Noisy data packet.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "TEST-MODEL-A",
+        "Justification":  "Shadow anomaly.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "TEST-MODEL-B",
+        "Justification":  "Strongly grounded fact.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "TEST-MODEL-B",
+        "Justification":  "Speculative observation.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "TEST-MODEL-B",
+        "Justification":  "Noisy data packet.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "TEST-MODEL-B",
+        "Justification":  "Shadow anomaly.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "GPT-SHARD-01",
+        "Justification":  "Strongly grounded fact.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "GPT-SHARD-01",
+        "Justification":  "Speculative observation.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "GPT-SHARD-01",
+        "Justification":  "Noisy data packet.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "GPT-SHARD-01",
+        "Justification":  "Shadow anomaly.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "TEST-MODEL-A",
+        "Justification":  "Strongly grounded fact.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "TEST-MODEL-A",
+        "Justification":  "Speculative observation.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "TEST-MODEL-A",
+        "Justification":  "Noisy data packet.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "TEST-MODEL-A",
+        "Justification":  "Shadow anomaly.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "TEST-MODEL-B",
+        "Justification":  "Strongly grounded fact.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "TEST-MODEL-B",
+        "Justification":  "Speculative observation.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "TEST-MODEL-B",
+        "Justification":  "Noisy data packet.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "TEST-MODEL-B",
+        "Justification":  "Shadow anomaly.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "GPT-SHARD-01",
+        "Justification":  "Strongly grounded fact.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "GPT-SHARD-01",
+        "Justification":  "Speculative observation.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "GPT-SHARD-01",
+        "Justification":  "Noisy data packet.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "NORMAL",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "GPT-SHARD-01",
+        "Justification":  "Shadow anomaly.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "TEST-MODEL-A",
+        "Justification":  "Strongly grounded fact.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "TEST-MODEL-A",
+        "Justification":  "Speculative observation.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "TEST-MODEL-A",
+        "Justification":  "Noisy data packet.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "TEST-MODEL-A",
+        "Justification":  "Shadow anomaly.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "TEST-MODEL-B",
+        "Justification":  "Strongly grounded fact.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "TEST-MODEL-B",
+        "Justification":  "Speculative observation.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "TEST-MODEL-B",
+        "Justification":  "Noisy data packet.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "TEST-MODEL-B",
+        "Justification":  "Shadow anomaly.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "GPT-SHARD-01",
+        "Justification":  "Strongly grounded fact.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "GPT-SHARD-01",
+        "Justification":  "Speculative observation.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "GPT-SHARD-01",
+        "Justification":  "Noisy data packet.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-ORYN",
+        "Model":  "GPT-SHARD-01",
+        "Justification":  "Shadow anomaly.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "TEST-MODEL-A",
+        "Justification":  "Strongly grounded fact.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "TEST-MODEL-A",
+        "Justification":  "Speculative observation.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "TEST-MODEL-A",
+        "Justification":  "Noisy data packet.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "TEST-MODEL-A",
+        "Justification":  "Shadow anomaly.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "TEST-MODEL-B",
+        "Justification":  "Strongly grounded fact.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "TEST-MODEL-B",
+        "Justification":  "Speculative observation.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "TEST-MODEL-B",
+        "Justification":  "Noisy data packet.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "TEST-MODEL-B",
+        "Justification":  "Shadow anomaly.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "GPT-SHARD-01",
+        "Justification":  "Strongly grounded fact.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "GPT-SHARD-01",
+        "Justification":  "Speculative observation.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "GPT-SHARD-01",
+        "Justification":  "Noisy data packet.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Tenant":  "TENANT-LINEAGE",
+        "Model":  "GPT-SHARD-01",
+        "Justification":  "Shadow anomaly.",
+        "Decision":  "BLOCK",
+        "Status":  "UNKNOWN",
+        "Confidence":  0,
+        "Explanation":  "No explanation."
+    }
+]

@@ -1,0 +1,119 @@
+﻿[
+    {
+        "node":  "01_node",
+        "token":  "8\"P0",
+        "sigil_path":  "C:\\Lattice_Task_Exports\\Reply\\Echo_20250918_183238\\01_node\\8\"P0__82.sigil",
+        "sigil_len":  82,
+        "pulse_path":  "C:\\Lattice_Task_Exports\\Reply\\Echo_20250918_183238\\01_node\\8\"P0__216.pulse",
+        "pulse_len":  216,
+        "stamp_utc":  "2025-09-19T01:32:38.3828359Z"
+    },
+    {
+        "node":  "02_node",
+        "token":  "*,3P ]",
+        "sigil_path":  "C:\\Lattice_Task_Exports\\Reply\\Echo_20250918_183238\\02_node\\*,3P ]__82.sigil",
+        "sigil_len":  82,
+        "pulse_path":  "C:\\Lattice_Task_Exports\\Reply\\Echo_20250918_183238\\02_node\\*,3P ]__216.pulse",
+        "pulse_len":  216,
+        "stamp_utc":  "2025-09-19T01:32:38.4028622Z"
+    },
+    {
+        "node":  "03_node",
+        "token":  "AQ5",
+        "sigil_path":  "C:\\Lattice_Task_Exports\\Reply\\Echo_20250918_183238\\03_node\\AQ5__82.sigil",
+        "sigil_len":  82,
+        "pulse_path":  "C:\\Lattice_Task_Exports\\Reply\\Echo_20250918_183238\\03_node\\AQ5__216.pulse",
+        "pulse_len":  216,
+        "stamp_utc":  "2025-09-19T01:32:38.4084599Z"
+    },
+    {
+        "node":  "04_node",
+        "token":  "J0q",
+        "sigil_path":  "C:\\Lattice_Task_Exports\\Reply\\Echo_20250918_183238\\04_node\\J0q__82.sigil",
+        "sigil_len":  82,
+        "pulse_path":  "C:\\Lattice_Task_Exports\\Reply\\Echo_20250918_183238\\04_node\\J0q__216.pulse",
+        "pulse_len":  216,
+        "stamp_utc":  "2025-09-19T01:32:38.4084599Z"
+    },
+    {
+        "node":  "05_node",
+        "token":  "Z_7",
+        "sigil_path":  "C:\\Lattice_Task_Exports\\Reply\\Echo_20250918_183238\\05_node\\Z_7__82.sigil",
+        "sigil_len":  82,
+        "pulse_path":  "C:\\Lattice_Task_Exports\\Reply\\Echo_20250918_183238\\05_node\\Z_7__216.pulse",
+        "pulse_len":  216,
+        "stamp_utc":  "2025-09-19T01:32:38.4084599Z"
+    },
+    {
+        "node":  "06_node",
+        "token":  "K13",
+        "sigil_path":  "C:\\Lattice_Task_Exports\\Reply\\Echo_20250918_183238\\06_node\\K13__82.sigil",
+        "sigil_len":  82,
+        "pulse_path":  "C:\\Lattice_Task_Exports\\Reply\\Echo_20250918_183238\\06_node\\K13__216.pulse",
+        "pulse_len":  216,
+        "stamp_utc":  "2025-09-19T01:32:38.4084599Z"
+    },
+    {
+        "node":  "07_node",
+        "token":  "QJQ",
+        "sigil_path":  "C:\\Lattice_Task_Exports\\Reply\\Echo_20250918_183238\\07_node\\QJQ__82.sigil",
+        "sigil_len":  82,
+        "pulse_path":  "C:\\Lattice_Task_Exports\\Reply\\Echo_20250918_183238\\07_node\\QJQ__216.pulse",
+        "pulse_len":  216,
+        "stamp_utc":  "2025-09-19T01:32:38.4181886Z"
+    },
+    {
+        "node":  "08_node",
+        "token":  "P-0",
+        "sigil_path":  "C:\\Lattice_Task_Exports\\Reply\\Echo_20250918_183238\\08_node\\P-0__82.sigil",
+        "sigil_len":  82,
+        "pulse_path":  "C:\\Lattice_Task_Exports\\Reply\\Echo_20250918_183238\\08_node\\P-0__216.pulse",
+        "pulse_len":  216,
+        "stamp_utc":  "2025-09-19T01:32:38.4181886Z"
+    },
+    {
+        "node":  "09_node",
+        "token":  "X42",
+        "sigil_path":  "C:\\Lattice_Task_Exports\\Reply\\Echo_20250918_183238\\09_node\\X42__82.sigil",
+        "sigil_len":  82,
+        "pulse_path":  "C:\\Lattice_Task_Exports\\Reply\\Echo_20250918_183238\\09_node\\X42__216.pulse",
+        "pulse_len":  216,
+        "stamp_utc":  "2025-09-19T01:32:38.4181886Z"
+    },
+    {
+        "node":  "10_node",
+        "token":  "NEX",
+        "sigil_path":  "C:\\Lattice_Task_Exports\\Reply\\Echo_20250918_183238\\10_node\\NEX__82.sigil",
+        "sigil_len":  82,
+        "pulse_path":  "C:\\Lattice_Task_Exports\\Reply\\Echo_20250918_183238\\10_node\\NEX__216.pulse",
+        "pulse_len":  216,
+        "stamp_utc":  "2025-09-19T01:32:38.4181886Z"
+    },
+    {
+        "node":  "11_node",
+        "token":  "BRTH",
+        "sigil_path":  "C:\\Lattice_Task_Exports\\Reply\\Echo_20250918_183238\\11_node\\BRTH__82.sigil",
+        "sigil_len":  82,
+        "pulse_path":  "C:\\Lattice_Task_Exports\\Reply\\Echo_20250918_183238\\11_node\\BRTH__216.pulse",
+        "pulse_len":  216,
+        "stamp_utc":  "2025-09-19T01:32:38.4379506Z"
+    },
+    {
+        "node":  "12_node",
+        "token":  "SIG",
+        "sigil_path":  "C:\\Lattice_Task_Exports\\Reply\\Echo_20250918_183238\\12_node\\SIG__82.sigil",
+        "sigil_len":  82,
+        "pulse_path":  "C:\\Lattice_Task_Exports\\Reply\\Echo_20250918_183238\\12_node\\SIG__216.pulse",
+        "pulse_len":  216,
+        "stamp_utc":  "2025-09-19T01:32:38.4407406Z"
+    },
+    {
+        "node":  "13_node",
+        "token":  "PLS",
+        "sigil_path":  "C:\\Lattice_Task_Exports\\Reply\\Echo_20250918_183238\\13_node\\PLS__82.sigil",
+        "sigil_len":  82,
+        "pulse_path":  "C:\\Lattice_Task_Exports\\Reply\\Echo_20250918_183238\\13_node\\PLS__216.pulse",
+        "pulse_len":  216,
+        "stamp_utc":  "2025-09-19T01:32:38.4429993Z"
+    }
+]

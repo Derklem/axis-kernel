@@ -1,0 +1,28 @@
+{
+    "version": 1,
+    "curriculum_id": "AXIS-SKILL-CURR-2026-001",
+    "default": {
+        "min_runs_before_trust": 5,
+        "max_failure_rate_auto": 0.2,
+        "min_success_rate_auto": 0.8,
+        "min_days_between_training": 1
+    },
+    "skills": [
+        {
+            "strategy_id": "STR-NEURAL-ROUTER-INGEST-001",
+            "enabled": true,
+            "preferred_mode": "simulation",
+            "max_daily_training_runs": 3,
+            "min_days_between_training": 0,
+            "notes": "Safe to practice frequently."
+        },
+        {
+            "strategy_id": "STR-TEST-81-TRAIN",
+            "enabled": true,
+            "preferred_mode": "simulation",
+            "max_daily_training_runs": 5,
+            "min_days_between_training": 0,
+            "notes": "Test strategy for Phase 81 verification."
+        }
+    ]
+}

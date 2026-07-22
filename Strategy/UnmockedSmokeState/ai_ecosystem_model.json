@@ -1,0 +1,55 @@
+{
+    "claims": {},
+    "cycle_count": 660,
+    "entities": {
+        "strategy_enginepy": {
+            "first_discovery_utc": "2026-05-13T01:09:27.911496+00:00",
+            "last_seen_utc": "2026-05-13T01:09:27.911496+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "ecosystem_mapping_enginepy": {
+            "first_discovery_utc": "2026-05-13T01:09:27.920364+00:00",
+            "last_seen_utc": "2026-05-13T01:09:27.920364+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "axis_crypto_helperspy": {
+            "first_discovery_utc": "2026-05-13T01:09:27.946700+00:00",
+            "last_seen_utc": "2026-05-13T01:09:27.946700+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "multi_objective_solverpy": {
+            "first_discovery_utc": "2026-05-13T01:09:27.969430+00:00",
+            "last_seen_utc": "2026-05-13T01:09:27.969430+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "USER_DIRECTIVE": {
+            "first_discovery_utc": "2026-05-17T02:14:29.533616+00:00",
+            "last_seen_utc": "2026-05-17T02:14:29.533616+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "MARKET_SIGNAL": {
+            "first_discovery_utc": "2026-05-17T03:51:13.864188+00:00",
+            "last_seen_utc": "2026-05-17T03:51:13.864188+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "market_data": {
+            "first_discovery_utc": "2026-05-18T05:29:17.394812+00:00",
+            "last_seen_utc": "2026-05-18T05:29:17.394812+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        },
+        "smoke_entity_unmocked": {
+            "first_discovery_utc": "2026-06-15T22:56:07.475698+00:00",
+            "last_seen_utc": "2026-06-15T22:56:07.475698+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        }
+    },
+    "last_updated_utc": "2026-06-15T22:56:07.480286+00:00"
+}

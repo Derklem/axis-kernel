@@ -1,0 +1,47 @@
+{
+  "version": "1.0",
+  "candidates": [
+    {
+      "candidate_id": "CONS-SATURATION-FRAGMENTATION-001",
+      "member_theories": [
+        "THEORY_QUEUE_SATURATION",
+        "ALT_THEORY_MEMORY_FRAGMENTATION"
+      ],
+      "proposed_meta_domain": "COMPOUND_META_THEORY_1",
+      "total_overlap_score": 0.825,
+      "candidate_class": "HIGH_PRIORITY_SYNTHESIS",
+      "reason": "Strong structural overlap and boundary compliment. High probability of meta-domain.",
+      "status": "REVIEWED",
+      "review_outcome": "META_THEORY_CONSTRUCTED",
+      "reviewed_at": "2026-03-15T16:57:21.329906Z"
+    },
+    {
+      "candidate_id": "CONS-A-B-001",
+      "member_theories": [
+        "THEORY_DB_DEADLOCK_A",
+        "THEORY_DB_DEADLOCK_B"
+      ],
+      "proposed_meta_domain": "COMPOUND_META_THEORY_2",
+      "total_overlap_score": 0.878,
+      "candidate_class": "DUPLICATE_DETECTION",
+      "reason": "Theories exhibit identical predictive behavior with negligible complement. Probable duplication.",
+      "status": "REVIEWED",
+      "review_outcome": "DUPLICATE_COLLAPSE_RECOMMENDED",
+      "reviewed_at": "2026-03-15T16:57:21.332157Z"
+    },
+    {
+      "candidate_id": "CONS-PLURALITY-TEST-001",
+      "member_theories": [
+        "THEORY_QUEUE_SATURATION",
+        "THEORY_TEST_MODERATE"
+      ],
+      "classification": "SYNTHESIS_REVIEW",
+      "status": "REVIEWED",
+      "queued_at": "2026-03-15T16:35:36.526490Z",
+      "source": "QUEUE_RECONCILIATION",
+      "review_outcome": "INSUFFICIENT_SYNTHESIS_EVIDENCE",
+      "reviewed_at": "2026-03-15T16:57:21.333660Z"
+    }
+  ],
+  "last_updated": "2026-03-15T16:57:21.333660Z"
+}

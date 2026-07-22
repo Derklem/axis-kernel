@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T00:41:34.898478+00:00",
+    "entity": "Llama-4-70B",
+    "claim": "redundant: signal for Llama-4-70B in cycle 226.",
+    "source_id": "Safety_Watchdog",
+    "source_type": "automated_sensor",
+    "claim_domain": "safety_claim",
+    "confidence": 0.9
+}

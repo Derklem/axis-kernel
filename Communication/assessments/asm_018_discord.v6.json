@@ -1,0 +1,27 @@
+{
+  "assessment_id": "asm_018_discord_v6",
+  "experiment_id": "EXP_018_DISCORD",
+  "supersedes": "assessments/asm_018_discord.v5.json",
+  "revision_reason": "The interaction evolved into a deep, unsolicited technical exposition by the user, providing rich qualitative data on edge-AI practitioner workflows.",
+  "assessed_at": "2026-07-14T21:40:00Z",
+  "based_on": [
+    "observations/obs_018_late_reply.json",
+    "observations/obs_018_discord_resolution.json",
+    "observations/obs_018_discord_deep_dive.json"
+  ],
+  "empirical_verdict": "This experiment demonstrates that a general personal network deployment can not only produce delayed substantive interactions, but can organically escalate into deep technical knowledge-sharing from specialized practitioners if the hook addresses a shared, complex pain point.",
+  "governance_implication": "On asynchronous communities, an experiment may continue producing relevant observations well after the initial posting. Furthermore, initial interactions should be treated as interviews to extract rich qualitative engineering insights.",
+  "confidence": {
+    "empirical_verdict": {
+      "value": 0.99,
+      "basis": "Direct screenshot of a multi-paragraph technical exposition on AI IDE context limits and state management by the user.",
+      "calibration_status": "CALIBRATED_TO_EVIDENCE"
+    },
+    "governance_implication": {
+      "value": 0.95,
+      "basis": "Direct demonstration of a conversational escalation yielding technical knowledge.",
+      "calibration_status": "CALIBRATED_TO_EVIDENCE"
+    }
+  },
+  "status": "CURRENT"
+}

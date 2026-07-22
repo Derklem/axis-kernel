@@ -1,0 +1,26 @@
+{
+    "schema": "axis.identity_registry.v0.1",
+    "identities": {
+        "portal:maya_phone": {
+            "public_key": "simulate_ed25519_key_for_v1",
+            "crypto_mode": "DEV_SHARED_SECRET",
+            "shared_secret": "axis_dev_secret_001",
+            "tier": "T1_OBSERVED",
+            "capabilities": [
+                "SUBMIT_INTENT",
+                "VOTE_APPROVAL"
+            ],
+            "created_utc": "2026-02-05T04:00:00Z"
+        },
+        "portal:voice_local": {
+            "public_key": "local_bypass",
+            "crypto_mode": "NONE",
+            "tier": "3",
+            "capabilities": [
+                "SUBMIT_INTENT",
+                "EXECUTE_LOCAL"
+            ],
+            "created_utc": "2026-02-21T04:00:00Z"
+        }
+    }
+}

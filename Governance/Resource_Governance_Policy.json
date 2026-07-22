@@ -1,0 +1,42 @@
+﻿{
+    "version":  "2026-01-27.v1",
+    "global":  {
+                   "hard_memory_floor_mb":  2048,
+                   "critical_cpu_threshold":  95
+               },
+    "mode_map":  {
+                     "observe_only":  "CAUTIOUS",
+                     "auto_low_risk":  "NORMAL",
+                     "auto_high_risk":  "AGGRESSIVE",
+                     "full_autonomy":  "AGGRESSIVE",
+                     "default":  "NORMAL"
+                 },
+    "modes":  {
+                  "CAUTIOUS":  {
+                                   "max_total_mem_mb":  13517,
+                                   "max_single_proc_mb":  2048
+                               },
+                  "NORMAL":  {
+                                 "max_total_mem_mb":  16384,
+                                 "max_single_proc_mb":  3072
+                             },
+                  "AGGRESSIVE":  {
+                                     "max_total_mem_mb":  24576,
+                                     "max_single_proc_mb":  6144
+                                 }
+              },
+    "process_classes":  [
+                            {
+                                "name":  "language_server_windows_x64",
+                                "class":  "AUX",
+                                "priority":  "MEDIUM",
+                                "notes":  "Known heavy process; throttle in CAUTIOUS mode."
+                            },
+                            {
+                                "name":  "pwsh",
+                                "class":  "CORE",
+                                "priority":  "HIGH",
+                                "notes":  "Core runtime; allow higher ceiling."
+                            }
+                        ]
+}

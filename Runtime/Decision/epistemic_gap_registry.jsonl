@@ -1,0 +1,2 @@
+{"timestamp": "2026-03-14T11:32:00Z", "status": "LEDGER_INITIALIZED", "message": "Epistemic Gap Registry created."}
+{"timestamp": "2026-03-14T18:31:46.278739Z", "observation_id": "OBS-ANOMALY-7D5B7B56", "max_theory_likelihood": 0.21, "gap_detected": true, "candidate_domain": "NETWORK_IO_ROUTING", "recommended_action": "theory_family_expansion", "status": "BUDGETED"}

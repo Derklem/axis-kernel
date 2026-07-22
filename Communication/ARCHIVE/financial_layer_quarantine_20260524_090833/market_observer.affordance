@@ -1,0 +1,12 @@
+{
+    "affordance_id": "market_observer",
+    "type": "external_read",
+    "description": "Reads live BTC market price data into the ecosystem.",
+    "actuation_method": "_actuate_external_read",
+    "target_domain": "financial",
+    "cost": 0.05,
+    "confidence_threshold": 0.80,
+    "structural_impact": 0.1,
+    "reversibility": 1.0,
+    "policy_hash": "none"
+}

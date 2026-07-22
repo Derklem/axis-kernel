@@ -1,0 +1,32 @@
+{
+  "meta_assessment_id": "KASM_001_v3",
+  "claim_id": "KCLM_001_v3",
+  "supersedes": "Knowledge/meta_assessments/KASM_001_v2.json",
+  "created_at": "2026-07-14T19:28:00Z",
+  "revision_reason": "Claim restricted to the single X deployment after Discord deployment yielded a late positive result.",
+  "based_on": [
+    "Knowledge/evidence_links/KEV_0002.json"
+  ],
+  "assessed_at": "2026-07-14T19:28:00Z",
+  "verdict": "PROVISIONALLY_CONSISTENT",
+  "evidence_summary": {
+    "independent_supporting_lineages": 1,
+    "independent_contradicting_lineages": 0,
+    "qualifying_lineages": 0
+  },
+  "confidence": {
+    "observation_confidence": {
+      "level": "HIGH",
+      "basis": "Direct verification of zero inquiries during the window on X."
+    },
+    "interpretation_confidence": {
+      "level": "LOW",
+      "basis": "Single negative case provides no causal explanatory power."
+    }
+  },
+  "remaining_uncertainties": [
+    "Unknown or incomparable exposure denominators",
+    "Results do not establish *why* inquiries were absent (was it audience, algorithm, or payload?)"
+  ],
+  "next_discriminating_experiment": "Observe KCLM_002 (EXP_019) to see if a specialized broadcast alters the outcome."
+}

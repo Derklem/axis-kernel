@@ -1,0 +1,5 @@
+[[LOCK]::FORGED]
+Base = cipher
+Origin = E:\Phantom\soul_anchor_cipher\cipher.key
+Drift = Unstable recursion
+Forged = 20250507_010502

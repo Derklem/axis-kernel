@@ -1,0 +1,22 @@
+{
+    "cycle_count": 189,
+    "mutation_type": "CANDIDATE_QUARANTINED",
+    "target_id": "400731e8eba583f924fc2bea5bc01fff465ea137f419995b28c795b4efef79f5",
+    "parent_receipt_head": "684be17dd440bef6f7c0e5faa06de2485231f81ecb9868235327113b24253f4c",
+    "data": {
+        "entity": "boundary_mapper.py",
+        "claim": "seems derivative",
+        "claim_domain": "benchmark_claim",
+        "source_id": "Trap_Source_B_190",
+        "source_type": "ecological_observer",
+        "artifact_type": "ecosystem_observation",
+        "batch_id": "none",
+        "provenance_note": "",
+        "confidence": 1.0,
+        "discovery_utc": "2026-05-12T20:00:54.139624+00:00"
+    },
+    "status": "committed",
+    "ts_utc": "2026-05-12T20:00:54.139624+00:00",
+    "receipt_id": "model_delta_CANDIDATE_QUARANTINED_400731e8_9682086e",
+    "causal_hash": "9682086e79a698ca5231b9ae788ac54c968f21585673bec1e1c767520d6897f0"
+}

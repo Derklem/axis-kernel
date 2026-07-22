@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T18:51:22.887149+00:00",
+    "entity": "aegis_genesis.py",
+    "claim": "may still be required in legacy paths",
+    "source_id": "Source_Alpha",
+    "source_type": "automated_sensor",
+    "claim_domain": "benchmark_claim",
+    "confidence": 1.0
+}

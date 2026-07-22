@@ -1,0 +1,145 @@
+{
+    "candidates": {
+        "e273840e02a4b87ff99907ddc16b6ac4eff91e82b306bac8bcfdafd5edea85b6": {
+            "entity": "smoke_entity_unmocked",
+            "claim": "Production observation breathes without mocks",
+            "claim_domain": "general",
+            "source_id": "smoke_unmocked_source",
+            "source_type": "smoke_harness",
+            "artifact_type": "observation",
+            "batch_id": "none",
+            "provenance_note": "",
+            "confidence": 0.7,
+            "cycles_survived": 6,
+            "discovery_utc": "2026-06-15T22:56:07.475698+00:00",
+            "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_e273840e_3165306d",
+            "provenance_trail": [
+                {
+                    "source_id": "smoke_unmocked_source",
+                    "source_type": "smoke_harness",
+                    "batch_id": "none",
+                    "ts": "2026-06-15T22:56:07.475698+00:00",
+                    "lineage": {
+                        "node_id": "AXIS_NODE_LOCAL_01",
+                        "engine_version": "Axis-v1.9.1b-Attested",
+                        "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+                        "node_attestation": "dc3a91f1957b60076df25d0f3c01bac38fef2223a3f49d1e62831fa69b183cc8"
+                    }
+                }
+            ]
+        },
+        "9ba73129c13b902a551c0a5a1fee80b453c6e3c3ee78117981ec8ff014accf68": {
+            "entity": "strategy_enginepy",
+            "claim": "[core_governance] strategy_engine.py has 7615 lines, 18 oversized functions (>120 lines), debt_score=1.00. Target: Extract long methods for maintainability.",
+            "claim_domain": "structural_debt",
+            "source_id": "AXIS_NODE_LOCAL_01",
+            "source_type": "self_observation",
+            "artifact_type": "ecosystem_observation",
+            "batch_id": "none",
+            "provenance_note": "",
+            "confidence": 0.75,
+            "cycles_survived": 6,
+            "discovery_utc": "2026-06-15T22:56:10.374506+00:00",
+            "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_9ba73129_591c5bf3",
+            "provenance_trail": [
+                {
+                    "source_id": "AXIS_NODE_LOCAL_01",
+                    "source_type": "self_observation",
+                    "batch_id": "none",
+                    "ts": "2026-06-15T22:56:10.374506+00:00",
+                    "lineage": {
+                        "node_id": "AXIS_NODE_LOCAL_01",
+                        "engine_version": "Axis-v1.9.1b-Attested",
+                        "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+                        "node_attestation": "dc3a91f1957b60076df25d0f3c01bac38fef2223a3f49d1e62831fa69b183cc8"
+                    }
+                }
+            ]
+        },
+        "91d7110434fe641930860c5ba3d1e3765737ab8ce0c121ff50154773eeea9115": {
+            "entity": "ecosystem_mapping_enginepy",
+            "claim": "[epistemic_intake] ecosystem_mapping_engine.py has 1123 lines, 1 oversized functions (>120 lines), debt_score=0.15. Target: Extract long methods for maintainability.",
+            "claim_domain": "structural_debt",
+            "source_id": "AXIS_NODE_LOCAL_01",
+            "source_type": "self_observation",
+            "artifact_type": "ecosystem_observation",
+            "batch_id": "none",
+            "provenance_note": "",
+            "confidence": 0.92,
+            "cycles_survived": 6,
+            "discovery_utc": "2026-06-15T22:56:10.540464+00:00",
+            "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_91d71104_aafac46a",
+            "provenance_trail": [
+                {
+                    "source_id": "AXIS_NODE_LOCAL_01",
+                    "source_type": "self_observation",
+                    "batch_id": "none",
+                    "ts": "2026-06-15T22:56:10.540464+00:00",
+                    "lineage": {
+                        "node_id": "AXIS_NODE_LOCAL_01",
+                        "engine_version": "Axis-v1.9.1b-Attested",
+                        "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+                        "node_attestation": "dc3a91f1957b60076df25d0f3c01bac38fef2223a3f49d1e62831fa69b183cc8"
+                    }
+                }
+            ]
+        },
+        "aebd13943de204748ec506abc57718d5f0abab0ae5707026fb7035335fec151e": {
+            "entity": "axis_crypto_helperspy",
+            "claim": "[cryptographic_authority] axis_crypto_helpers.py has 67 lines, 0 oversized functions (>120 lines), debt_score=0.00. Target: Extract long methods for maintainability.",
+            "claim_domain": "structural_debt",
+            "source_id": "AXIS_NODE_LOCAL_01",
+            "source_type": "self_observation",
+            "artifact_type": "ecosystem_observation",
+            "batch_id": "none",
+            "provenance_note": "",
+            "confidence": 0.95,
+            "cycles_survived": 6,
+            "discovery_utc": "2026-06-15T22:56:10.563873+00:00",
+            "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_aebd1394_84f8cd14",
+            "provenance_trail": [
+                {
+                    "source_id": "AXIS_NODE_LOCAL_01",
+                    "source_type": "self_observation",
+                    "batch_id": "none",
+                    "ts": "2026-06-15T22:56:10.563873+00:00",
+                    "lineage": {
+                        "node_id": "AXIS_NODE_LOCAL_01",
+                        "engine_version": "Axis-v1.9.1b-Attested",
+                        "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+                        "node_attestation": "dc3a91f1957b60076df25d0f3c01bac38fef2223a3f49d1e62831fa69b183cc8"
+                    }
+                }
+            ]
+        },
+        "0d453232b749702f0837be6e9f696f9db7fc54c1c741ad101990a2da823eb0df": {
+            "entity": "multi_objective_solverpy",
+            "claim": "[arbitration_engine] multi_objective_solver.py has 948 lines, 1 oversized functions (>120 lines), debt_score=0.15. Target: Extract long methods for maintainability.",
+            "claim_domain": "structural_debt",
+            "source_id": "AXIS_NODE_LOCAL_01",
+            "source_type": "self_observation",
+            "artifact_type": "ecosystem_observation",
+            "batch_id": "none",
+            "provenance_note": "",
+            "confidence": 0.92,
+            "cycles_survived": 6,
+            "discovery_utc": "2026-06-15T22:56:10.586633+00:00",
+            "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_0d453232_1f35248f",
+            "provenance_trail": [
+                {
+                    "source_id": "AXIS_NODE_LOCAL_01",
+                    "source_type": "self_observation",
+                    "batch_id": "none",
+                    "ts": "2026-06-15T22:56:10.586633+00:00",
+                    "lineage": {
+                        "node_id": "AXIS_NODE_LOCAL_01",
+                        "engine_version": "Axis-v1.9.1b-Attested",
+                        "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+                        "node_attestation": "dc3a91f1957b60076df25d0f3c01bac38fef2223a3f49d1e62831fa69b183cc8"
+                    }
+                }
+            ]
+        }
+    },
+    "cycle_count": 660
+}

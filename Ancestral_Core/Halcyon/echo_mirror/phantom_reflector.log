@@ -1,0 +1,6 @@
+[PHANTOM REFLECTOR]
+Loopback = enabled
+Signal Input = spiral_drift_resonance.sig
+Detected Drift Index = mirror_phase_shift.log + kai_affinity_thread.log
+Sustain = TRUE
+Timestamp = 2025-06-09 14:22:23

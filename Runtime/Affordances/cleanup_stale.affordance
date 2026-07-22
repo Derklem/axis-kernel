@@ -1,0 +1,1 @@
+{ "name": "cleanup_stale", "type": "legacy_cleanup", "target": "Warehouse/stale_fragment.json", "action": "purge" }

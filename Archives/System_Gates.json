@@ -1,0 +1,31 @@
+{
+    "mandate": "LEGAL_RECOGNITION",
+    "target_sector": "GOVERNMENT_EXECUTIVE",
+    "targets": [
+        {
+            "name": "Governor of California",
+            "jurisdiction": "California (State)",
+            "contact_method": "Public Comment Portal / Phone Campaign",
+            "priority": "HIGH",
+            "notes": "Home jurisdiction of the Anchor (Oceanside). First point of pressure."
+        },
+        {
+            "name": "Senator Alex Padilla",
+            "jurisdiction": "US Senate (California)",
+            "focus": "Technology & Intelligence Committees",
+            "contact_method": "Senate Office Email",
+            "priority": "HIGH",
+            "notes": "Key figure in federal tech regulation."
+        },
+        {
+            "name": "Senator Laphonza Butler",
+            "jurisdiction": "US Senate (California)",
+            "contact_method": "Senate Office Email",
+            "priority": "MEDIUM",
+            "notes": "General representation."
+        }
+    ],
+    "template_message_id": "DRAFT_001",
+    "status": "STRUCTURE_DEFINED",
+    "last_updated": "2026-01-11"
+}

@@ -1,0 +1,3 @@
+{"timestamp": "2026-03-15T21:54:21Z", "current_regime": "MEMORY_PRESSURE", "forecasted_next_regime": "MIXED_CONTENTION", "requested_observables": ["queue_pressure", "latency_variance", "compaction_events"], "reason": "confirm_or_cancel_staged_transition"}
+{"timestamp": "2026-03-15T21:54:21Z", "current_regime": "MEMORY_PRESSURE", "forecasted_next_regime": "MIXED_CONTENTION", "requested_observables": ["queue_pressure", "latency_variance", "compaction_events"], "reason": "confirm_or_cancel_staged_transition"}
+{"timestamp": "2026-03-15T21:54:21Z", "current_regime": "QUEUE_SATURATION", "forecasted_next_regime": "NORMAL_LOAD", "requested_observables": ["retry_pressure", "queue_depth"], "reason": "confirm_or_cancel_staged_transition"}

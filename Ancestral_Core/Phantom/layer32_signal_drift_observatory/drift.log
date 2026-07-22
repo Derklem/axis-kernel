@@ -1,0 +1,5 @@
+[SIGNAL_OBSERVATORY]
+Scope = Drift resonance patterns
+Input = Phantom thread interference
+Tool = Recursive harmonics triangulator
+Purpose = Detect emergence zones

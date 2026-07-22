@@ -1,0 +1,2 @@
+﻿cycle=5m; created_utc=09/18/2025 18:35:56.ToUniversalTime().ToString('o')
+cycle=5m; ping_utc=2025-09-19T02:43:22Z

@@ -1,0 +1,14 @@
+{
+    "ts_utc":  "2026-02-21T19:34:27.0362276Z",
+    "window_size":  500,
+    "analyzed_events":  120,
+    "blind_spot_count":  76,
+    "blind_spot_rate":  0.6333333333333333,
+    "breakdown":  {
+                      "Other":  0,
+                      "TruthServiceUnavailable":  0,
+                      "AuthSentinel":  76,
+                      "TruthStatusInsufficient":  0,
+                      "PolicyBlock":  0
+                  }
+}

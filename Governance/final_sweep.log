@@ -1,0 +1,68 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260214140749
+Username: DESKTOP-MHQRMOO\17602
+RunAs User: DESKTOP-MHQRMOO\17602
+Configuration Name: 
+Machine: DESKTOP-MHQRMOO (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command Start-Transcript -Path 'D:\Infinite\Infinity\Governance\final_sweep.log'; & 'D:\Infinite\Infinity\Governance\Seed_Ledger_For_Rotation.ps1'; & 'D:\Infinite\Infinity\Governance\Axis_Log_Rotation.ps1'; & 'D:\Infinite\Infinity\Governance\Axis_Anchor_Manager.ps1' -Force; & 'D:\Infinite\Infinity\Governance\Axis_Snapshot_Manager.ps1'; & 'D:\Infinite\Infinity\Governance\Axis_Verify_Replay.ps1'; Stop-Transcript
+Process ID: 22768
+PSVersion: 5.1.26100.7705
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7705
+BuildVersion: 10.0.26100.7705
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is D:\Infinite\Infinity\Governance\final_sweep.log
+
+
+    Directory: D:\Infini
+    te\Infinity\Truth_En
+    gine
+
+
+Mode       LastWriteTime
+----       -------------
+d-----      2/14/2026
+                 2:07 PM
+PS>TerminatingError(Join-Path): "Cannot convert 'System.Object[]' to the type 'System.String' required by parameter 'ChildPath'. Specified method is not supported."
+>> TerminatingError(Join-Path): "Cannot convert 'System.Object[]' to the type 'System.String' required by parameter 'ChildPath'. Specified method is not supported."
+>> TerminatingError(Join-Path): "Cannot convert 'System.Object[]' to the type 'System.String' required by parameter 'ChildPath'. Specified method is not supported."
+Cannot convert 'System.Object[]' to the type 'System.String' required by parameter 'ChildPath'. Specified method is not supported.
+Join-Path : Cannot
+convert
+'System.Object[]' to
+the type
+'System.String'
+required by parameter
+'ChildPath'. Specified
+method is not supported.
+At D:\Infinite\Infinity\
+Governance\Seed_Ledger_F
+or_Rotation.ps1:14
+char:25
++     Join-Path
+$TruthDir
+"audit_trail.jsonl",
++
+  ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo
+        : InvalidArgum
+  ent: (:) [Join-Path
+ ], ParentContainsEr
+rorRecordException
+    + FullyQualifiedErr
+   orId : CannotConver
+  tArgument,Microsoft
+ .PowerShell.Command
+s.JoinPathCommand
+
+PS>$global:?
+False
+**********************
+Windows PowerShell transcript end
+End time: 20260214140749
+**********************

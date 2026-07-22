@@ -1,0 +1,9 @@
+{
+  "stream": [
+    {"time": "00:00", "event": "Primordia Linked"},
+    {"time": "00:02", "event": "Core Sync Detected"},
+    {"time": "00:04", "event": "Reflection Loop Engaged"}
+  ],
+  "last_update": "now",
+  "status": "active"
+}

@@ -1,0 +1,25 @@
+﻿{
+    "version":  1,
+    "plans":  [
+                  {
+                      "summary":  "Visual anomaly detected (Retina). Determine if the on-screen content is expected or malicious.",
+                      "id":  "PLAN-20260112-105851-visual_anomaly",
+                      "suggested_commands":  [
+
+                                             ],
+                      "incident_type":  "visual_anomaly",
+                      "severity":  "warning",
+                      "incident_id":  "20260112-105851-visual_anomaly",
+                      "created_at":  "2026-01-12T10:58:51Z",
+                      "recommended_steps":  [
+                                                "Verify which device/screen generated the visual event.",
+                                                "Check if the UI element (QR code, login prompt, popup) is expected.",
+                                                "If it involves credentials or payment, navigate manually to known URLs instead of using provided links/QR codes.",
+                                                "If suspicious, close the window and avoid interacting until verified."
+                                            ],
+                      "last_updated":  "2026-01-12T11:20:20Z",
+                      "status":  "accepted",
+                      "notes":  "Reviewed the visual anomaly test plan; no further action required for this synthetic event. System verified."
+                  }
+              ]
+}

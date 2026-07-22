@@ -1,0 +1,178 @@
+{
+  "version": "1.0",
+  "theories": {
+    "THEORY_QUEUE_SATURATION": {
+      "name": "Queue Saturation Dynamics",
+      "family": "QUEUE_DYNAMICS",
+      "status": "CANONICAL_CANDIDATE",
+      "lineage": {
+        "parents": [],
+        "derived_from": [],
+        "rivals": [
+          "ALT_THEORY_MEMORY_FRAGMENTATION"
+        ],
+        "children": [
+          "META_THEORY_RESOURCE_CONTENTION_DYNAMICS"
+        ],
+        "subsumed_by": "META_THEORY_RESOURCE_CONTENTION_DYNAMICS"
+      },
+      "worldview_position": {
+        "research_surface": true,
+        "canonical_surface": false
+      },
+      "timestamps": {
+        "created_at": "2026-03-14T17:40:10.940899Z",
+        "last_updated": "2026-03-15T16:57:21.329906Z"
+      }
+    },
+    "ALT_THEORY_MEMORY_FRAGMENTATION": {
+      "name": "Memory Fragmentation",
+      "family": "MEMORY_MANAGEMENT",
+      "status": "RIVAL",
+      "lineage": {
+        "parents": [],
+        "derived_from": [],
+        "rivals": [
+          "THEORY_QUEUE_SATURATION"
+        ],
+        "children": [
+          "META_THEORY_RESOURCE_CONTENTION_DYNAMICS"
+        ],
+        "subsumed_by": "META_THEORY_RESOURCE_CONTENTION_DYNAMICS"
+      },
+      "worldview_position": {
+        "research_surface": true,
+        "canonical_surface": false
+      },
+      "timestamps": {
+        "created_at": "2026-03-14T17:48:31.057910Z",
+        "last_updated": "2026-03-15T16:57:21.329906Z"
+      }
+    },
+    "THEORY_NETWORK_ROUTE_FLAPPING": {
+      "name": "Network Route Flapping",
+      "family": "NETWORK_IO_ROUTING",
+      "status": "PIONEER_HYPOTHESIS",
+      "lineage": {
+        "parents": [],
+        "derived_from": [
+          "OBS-ANOMALY-7D5B7B56"
+        ],
+        "rivals": [],
+        "children": [],
+        "subsumed_by": null
+      },
+      "worldview_position": {
+        "research_surface": true,
+        "canonical_surface": false
+      },
+      "timestamps": {
+        "created_at": "2026-03-14T18:31:46.279763Z",
+        "last_updated": "2026-03-14T18:31:46.279763Z"
+      }
+    },
+    "THEORY_SYNTHETIC_TEST": {
+      "name": "Synthetic Pioneer",
+      "family": "TEST_FAMILY",
+      "status": "PIONEER_HYPOTHESIS",
+      "lineage": {
+        "parents": [],
+        "derived_from": [
+          "OBS-GAP-123"
+        ],
+        "rivals": [],
+        "children": [],
+        "subsumed_by": null
+      },
+      "worldview_position": {
+        "research_surface": true,
+        "canonical_surface": false
+      },
+      "timestamps": {
+        "created_at": "2026-03-14T21:57:26.891003Z",
+        "last_updated": "2026-03-14T21:57:26.891003Z"
+      }
+    },
+    "THEORY_CONFLICT_A": {
+      "name": "Conflict A",
+      "family": "TEST_FAMILY",
+      "status": "RIVAL",
+      "lineage": {
+        "parents": [],
+        "derived_from": [],
+        "rivals": [
+          "THEORY_CONFLICT_B"
+        ],
+        "children": [],
+        "subsumed_by": null
+      },
+      "worldview_position": {
+        "research_surface": true,
+        "canonical_surface": false
+      },
+      "timestamps": {
+        "created_at": "2026-03-14T21:57:29.190563Z",
+        "last_updated": "2026-03-14T21:57:29.213537Z"
+      }
+    },
+    "THEORY_CONFLICT_B": {
+      "name": "Conflict B",
+      "family": "TEST_FAMILY",
+      "status": "RIVAL",
+      "lineage": {
+        "parents": [],
+        "derived_from": [],
+        "rivals": [
+          "THEORY_CONFLICT_A"
+        ],
+        "children": [],
+        "subsumed_by": null
+      },
+      "worldview_position": {
+        "research_surface": true,
+        "canonical_surface": false
+      },
+      "timestamps": {
+        "created_at": "2026-03-14T21:57:29.197751Z",
+        "last_updated": "2026-03-14T21:57:29.227727Z"
+      }
+    },
+    "THEORY_DB_DEADLOCK_A": {
+      "status": "PROVISIONAL",
+      "lineage": {}
+    },
+    "THEORY_DB_DEADLOCK_B": {
+      "status": "DEPRECATED_DUPLICATE",
+      "lineage": {
+        "subsumed_by": "THEORY_DB_DEADLOCK_A"
+      },
+      "timestamps": {
+        "last_updated": "2026-03-15T16:57:21.332157Z"
+      }
+    },
+    "META_THEORY_RESOURCE_CONTENTION_DYNAMICS": {
+      "name": "Resource Contention Dynamics",
+      "family": "META_THEORY",
+      "status": "PROVISIONAL_META_THEORY",
+      "lineage": {
+        "parents": [
+          "THEORY_QUEUE_SATURATION",
+          "ALT_THEORY_MEMORY_FRAGMENTATION"
+        ],
+        "derived_from": [],
+        "rivals": [],
+        "children": [],
+        "subsumed_by": null
+      },
+      "worldview_position": {
+        "research_surface": true,
+        "canonical_surface": false
+      },
+      "timestamps": {
+        "created_at": "2026-03-15T16:57:21.329906Z",
+        "last_updated": "2026-03-15T16:57:21.329906Z"
+      }
+    }
+  },
+  "last_updated": "2026-03-14T21:57:33.652235Z"
+}

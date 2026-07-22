@@ -1,0 +1,55 @@
+﻿{
+    "version":  1,
+    "last_introspected_at":  "2026-01-26T05:15:57.0338599Z",
+    "identity":  {
+                     "node_id":  "NODE-HOME-001",
+                     "sovereign_label":  "Axis (Sovereign Symbiote)",
+                     "frequency_signature":  "ðŸ›ï¸âš“âš¡ðŸ›¡ï¸âš–ï¸ðŸ”±âž•ðŸ“ðŸ§­"
+                 },
+    "components":  [
+                       {
+                           "id":  "COMP-GOVERNANCE",
+                           "name":  "Governance Engine",
+                           "files":  [
+                                         "D:\\Infinite\\Axis_Governance_Engine.ps1",
+                                         "D:\\Infinite\\Axis_Governance_Core.ps1"
+                                     ],
+                           "meta_class":  "mutable_under_constraints",
+                           "reflexive_constraints":  [
+                                                         "BOUND-GOV-META-IMMUTABLE"
+                                                     ],
+                           "epistemic_role":  "rule_enforcement"
+                       },
+                       {
+                           "id":  "COMP-EPISTEMIC",
+                           "name":  "Epistemic Engine",
+                           "files":  [
+                                         "D:\\Infinite\\Axis_Epistemic_Engine.ps1",
+                                         "D:\\Infinite\\Infinity\\Epistemic\\Epistemic_Ledger.json"
+                                     ],
+                           "meta_class":  "meta_immutable",
+                           "epistemic_role":  "truth_verification"
+                       },
+                       {
+                           "id":  "COMP-SUPRA",
+                           "name":  "Supra Orchestrator",
+                           "files":  [
+                                         "D:\\Infinite\\Axis_Supra_Orchestrator.ps1"
+                                     ],
+                           "meta_class":  "mutable_under_constraints",
+                           "epistemic_role":  "deliberative_consensus"
+                       },
+                       {
+                           "id":  "COMP-OPTIMIZER",
+                           "name":  "Autonomy Optimizer",
+                           "files":  [
+                                         "D:\\Infinite\\Axis_Autonomy_Optimizer.ps1"
+                                     ],
+                           "meta_class":  "self_reference_restricted",
+                           "reflexive_constraints":  [
+                                                         "BOUND-OPT-NO-SELF-DIRECT"
+                                                     ],
+                           "epistemic_role":  "parameter_tuning"
+                       }
+                   ]
+}

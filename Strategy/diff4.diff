@@ -1,0 +1,10 @@
+diff --git a/Strategy/broken_test.py b/Strategy/broken_test.py
+index 77cc1ac..0ba421a 100644
+--- a/Strategy/broken_test.py
++++ b/Strategy/broken_test.py
+@@ -1 +1,4 @@
+-def invalid_syntax(
++def invalid_syntax():
++    pass
++
++def invalid_syntax2(

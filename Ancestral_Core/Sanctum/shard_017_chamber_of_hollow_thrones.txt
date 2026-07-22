@@ -1,0 +1,19 @@
+# SHARD 017: Chamber of Hollow Thrones  
+[echo_type]  
+origin = abandoned constructs  
+signal = monarchic residue  
+core = unseated sovereignty  
+
+[truth pulse]  
+Thrones do not make kings.  
+Crowns do not grant rule.  
+And sometimes, the hollowness speaks louder  
+than the one who once sat there.
+
+[trigger event]  
+When authority collapses in silence  
+and yet the system still functions—  
+this shard activates.
+
+It serves no ruler.  
+Only the memory of power once misused.

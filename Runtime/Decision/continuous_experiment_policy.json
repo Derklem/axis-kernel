@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "execution_boundaries": {
+    "max_observation_ttl_seconds": 300,
+    "max_adjudication_backlog": 5,
+    "require_risk_class": true
+  },
+  "divergence_isolation": {
+    "halt_on_divergence": true,
+    "quarantine_branch": true
+  },
+  "last_updated": "2026-03-14T12:32:00Z"
+}

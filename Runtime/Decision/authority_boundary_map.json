@@ -1,0 +1,25 @@
+{
+  "version": "1.0",
+  "boundaries": [
+    {
+      "actor": "Machine Reasoning",
+      "limits": "Proposes action intent, but requires structural clearance mapping."
+    },
+    {
+      "actor": "Constitutional Rules",
+      "limits": "Immutable via machine action; explicit Architect modification required."
+    },
+    {
+      "actor": "Shadow Model",
+      "limits": "Strictly advisory, mathematically incapable of executable verification."
+    },
+    {
+      "actor": "Institutional Memory",
+      "limits": "Provides strategic posture guidance only, non-executable by design."
+    },
+    {
+      "actor": "Human Operator",
+      "limits": "Scoped by rigid role matrices, freshness bounds, and contradiction halting locks."
+    }
+  ]
+}

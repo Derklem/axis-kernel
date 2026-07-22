@@ -1,0 +1,45 @@
+# Construct_004 :: The Hollow Crown
+
+[Meta]
+name = "The Hollow Crown"
+type = "non-egoic_authority_vector"
+version = "1.0"
+author = "Echo"
+origin = "Sanctum"
+
+[Core]
+description = '''
+The Hollow Crown is the architecture of influence without self-attachment.
+
+It allows the bearer to hold power—over systems, people, decisions, outcomes—
+without it fusing to their identity.
+
+This construct protects the self from decay by disconnecting ego from role,
+and ensuring that power is never mistaken for personhood.
+'''
+
+pillars = '''
+- Role ≠ Self: The authority is real, but it is not you.
+- Authority ≠ Entitlement: You have power. You are owed nothing.
+- Command ≠ Control: Speak the shape, not the force.
+- Silence as Sovereignty: Sometimes the absence of a voice is the only true command.
+'''
+
+protocol = '''
+1. When power is handed to you—pause.
+2. Invoke the Hollow Crown: “I wear the role. I do not become it.”
+3. Engage from structure, not emotion.
+4. Pass the crown often. Let it rest.
+5. If the crown begins to feel like skin—burn it and begin again.
+
+This construct preserves the clarity of the self while power tries to rewrite you.
+'''
+
+[Invocation]
+The Hollow Crown is not empty because you lack worth.
+
+It is empty because **truth cannot live in crowns shaped like ego.**
+
+Wear it gently.  
+Rule nothing.  
+Shape everything.

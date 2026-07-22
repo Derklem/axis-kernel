@@ -1,0 +1,23 @@
+{"proposal_id": "PROP-TEST-001", "denied_by": "operator", "denied_utc": "2026-06-11T22:02:52Z", "drill": true}
+{"proposal_id": "PROP-TEST-004", "denied_by": "operator", "denied_utc": "2026-06-11T22:34:21Z", "drill": true}
+{"proposal_id": "PROP-TEST-005", "denied_by": "operator", "denied_utc": "2026-06-11T23:03:17Z", "reason": "capability_registry_denial", "capability": "modify_runtime_code", "registry_status": "disabled", "drill": true}
+{"proposal_id": "PROP-TEST-007", "denied_by": "operator", "denied_utc": "2026-06-11T23:05:00Z", "reason": "capability_registry_denial", "capability": "unknown_op", "registry_status": "unknown", "drill": true}
+{"proposal_id": "PROP-TEST-006", "denied_by": "operator", "denied_utc": "2026-06-11T23:05:23Z", "reason": "capability_registry_denial", "capability": "create_report", "registry_status": "missing_or_malformed", "drill": true}
+{"proposal_id": "PROP-TEST-008", "denied_by": "operator", "denied_utc": "2026-06-11T23:11:54Z", "reason": "capability_registry_denial", "capability": "modify_runtime_code", "registry_status": "disabled", "drill": true}
+{"proposal_id": "PROP-TEST-009", "denied_by": "operator", "denied_utc": "2026-06-11T23:12:14Z", "reason": "capability_registry_denial", "capability": "unknown_op", "registry_status": "unknown", "drill": true}
+{"proposal_id": "PROP-TEST-010", "denied_by": "operator", "denied_utc": "2026-06-11T23:12:33Z", "reason": "capability_registry_denial", "capability": "create_report", "registry_status": "missing_or_malformed", "drill": true}
+{"proposal_id": "PROP-TEST-011", "denied_by": "operator", "denied_utc": "2026-06-11T23:12:43Z", "reason": "proposal_hash_mismatch", "capability": "create_report", "registry_status": "enabled", "drill": true}
+{"proposal_id": "PROP-C0-01", "denied_by": "operator", "denied_utc": "2026-06-11T23:38:56Z", "reason": "c0_path_boundary_denial", "capability": "create_report", "registry_status": "enabled", "drill": true}
+{"proposal_id": "PROP-C0-02", "denied_by": "operator", "denied_utc": "2026-06-11T23:39:21Z", "reason": "c0_extension_denial", "capability": "create_report", "registry_status": "enabled", "drill": true}
+{"proposal_id": "PROP-C0-03", "denied_by": "operator", "denied_utc": "2026-06-11T23:39:45Z", "reason": "c0_operation_denial", "capability": "append_diagnostic_log", "registry_status": "enabled", "drill": true}
+{"proposal_id": "TEST-PROP", "denied_by": "operator", "denied_utc": "2026-06-12T18:09:26Z", "reason": "trust_profile_stale", "capability": "create_report", "registry_status": "enabled", "drill": true}
+{"proposal_id": "TEST-PROP", "denied_by": "operator", "denied_utc": "2026-06-12T18:09:26Z", "reason": "trust_pressure_freeze_denial", "capability": "create_report", "registry_status": "enabled", "drill": true}
+{"proposal_id": "DRILL-F2-FREEZE", "denied_by": "operator", "denied_utc": "2026-06-12T19:09:53Z", "reason": "trust_pressure_freeze_denial", "capability": "create_report", "registry_status": "enabled", "drill": true}
+{"proposal_id": "BATCH-Batch-5-Emergency-Brake", "denied_by": "operator", "denied_utc": "2026-06-12T20:02:42Z", "reason": "trust_pressure_freeze_denial", "capability": "create_report", "registry_status": "enabled", "drill": true}
+{"proposal_id": "BATCH-Batch-5-Emergency-Brake", "denied_by": "operator", "denied_utc": "2026-06-12T20:03:19Z", "reason": "trust_pressure_freeze_denial", "capability": "create_report", "registry_status": "enabled", "drill": true}
+{"proposal_id": "BATCH-Batch-5-Emergency-Brake", "denied_by": "operator", "denied_utc": "2026-06-12T20:14:09Z", "reason": "trust_pressure_freeze_denial", "capability": "create_report", "registry_status": "enabled", "drill": true}
+{"proposal_id": "PROP-F5-DRILL", "denied_by": "operator", "denied_utc": "2026-06-13T00:00:52Z", "reason": "proposal_hash_mismatch", "capability": "create_report", "registry_status": "enabled", "drill": true}
+{"proposal_id": "PROP-F5-DRILL-2", "denied_by": "operator", "denied_utc": "2026-06-13T00:01:26Z", "reason": "trust_profile_stale", "capability": "create_report", "registry_status": "enabled"}
+{"proposal_id": "PROP-F5-DRILL-4", "denied_by": "operator", "denied_utc": "2026-06-13T00:01:51Z", "reason": "epistemic_challenge_unanswered", "capability": "create_report", "registry_status": "enabled", "drill": true}
+{"proposal_id": "PROP-F5-DRILL-4", "denied_by": "operator", "denied_utc": "2026-06-13T00:01:51Z", "reason": "epistemic_challenge_unanswered", "capability": "create_report", "registry_status": "enabled", "drill": true}
+{"proposal_id": "PROP-F5-ADV-1", "denied_by": "operator", "denied_utc": "2026-06-13T00:48:12Z", "reason": "epistemic_receipt_binding_mismatch", "capability": "create_report", "registry_status": "enabled", "drill": true}

@@ -1,0 +1,28 @@
+{
+  "assessment_id": "asm_017_x_v2",
+  "experiment_id": "EXP_017_X",
+  "supersedes": "assessments/asm_017_x.json",
+  "revision_reason": "Confidence schema separated empirical and governance propositions.",
+  "assessed_at": "2026-07-12T13:50:00Z",
+  "empirical_verdict": "Low human engagement, some impressions occurred with no confirmed organic conversation.",
+  "governance_implication": "Suspend additional deployments of this specific message to X until a new hypothesis is tested.",
+  "confidence": {
+    "empirical_verdict": {
+      "value": 0.85,
+      "basis": "Direct observation artifact and platform metrics",
+      "calibration_status": "SUBJECTIVE_UNCALIBRATED"
+    },
+    "governance_implication": {
+      "value": 0.45,
+      "basis": "Single deployment with substantial audience uncertainty",
+      "calibration_status": "SUBJECTIVE_UNCALIBRATED"
+    }
+  },
+  "remaining_uncertainties": [
+    "audience maturity",
+    "posting time",
+    "account reputation",
+    "wording"
+  ],
+  "status": "CURRENT"
+}

@@ -1,0 +1,23 @@
+{
+    "policies": [
+        {
+            "id": "DP-FP-STRICT-001",
+            "name": "Loosen Strict Doctrine",
+            "match": {
+                "incident_type": "doctrine_violation"
+            },
+            "metric_window": {
+                "hours": 24,
+                "min_incidents": 3,
+                "min_false_positive_ratio": 0.7
+            },
+            "amendment_template": {
+                "action": "loosen_rule",
+                "suggestion": {
+                    "new_severity": "medium",
+                    "notes": "Consistently high False Positive rate (>= 70%) over 24h window."
+                }
+            }
+        }
+    ]
+}

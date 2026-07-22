@@ -1,0 +1,25 @@
+{
+    "name": "AXIS_GOVERNANCE_BASELINE_V1",
+    "timestamp_utc": "2026-06-03T21:28:59Z",
+    "status": "sealed_baseline",
+    "system_state": {
+        "current_cycle": 569,
+        "current_witness_head": "503687b1ad91759ab83e0583d5cc557ce710cab213bb43c71fea637484e845ca",
+        "anchor_witness_head": "503687b1ad91759ab83e0583d5cc557ce710cab213bb43c71fea637484e845ca",
+        "current_calibration_hash": "ceb026895eb1f465b888697515788ec3e45e530c47380fea4352bc740128bbda",
+        "latest_governance_audit_report": "D:\\Infinite\\Infinity\\Governance\\Reports\\governance_audit_1780452390187.json",
+        "latest_replay_report_summary": "D:\\Infinite\\Infinity\\Strategy\\State\\ReplaySegments\\segment_boundary_569_operator_candidate_pool_edit.json"
+    },
+    "file_hashes": {
+        "epistemic_governance_charter.md": "9e6d3824e4066225b234395d3753e709413e1d94a1e129f00bc5ea9389efa8fe",
+        "lane_registry.json": "259403a3a56a9d45d1eb1b036957f50f844aa4752286faa033f2291f8c6612d9",
+        "autonomy_policy.v1.json": "cb691b580b121fea34d6787228c712b7ed9d247f788bb1c48f327df7c2bd5f06",
+        "autonomy_policy.md": "877747bca45db79bdbfa3c35cf7938a46d3a65eaf821b982685db4ed54469c4d",
+        "lane_router.py": "2d06a6adcbb48b5823609c2c198049933d8a63087b7f1639c33c1a556b91951b",
+        "governance_audit.py": "c3ab298274a963370f9f87106a2118c746c7e69af65d048607acdc4221760841",
+        "witness_admission.py": "8ddebd65f383047080944fad56451a5f71416d17492429b0bd679f63b56a1ff4",
+        "axis_conversation_surface.py": "0da8ff804b81dcd549f40910a83965f10eb416d4e9789ea2fb3f39001e494ae1",
+        "to_axs_bridge.py": "c2f2a37cfc7898cd1584c4b367a4e905b3765fce1e5c31c0f966ec60c62ee148",
+        "CONTROLLED_CHAT_MODE.md": "9cc6658f7555419dce7c0694c380229be4d6b76057ef45c9480e1492cbdc5692"
+    }
+}

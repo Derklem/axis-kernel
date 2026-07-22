@@ -1,0 +1,12 @@
+{
+  "imp_version": "1.0",
+  "message_id": "test-gpt-002",
+  "source_model": "GPT",
+  "message_type": "status",
+  "claim": "Testing external IMP daemon after parser fix.",
+  "constraints": [
+    "no_core_mutation",
+    "read_only"
+  ],
+  "requires_response": true
+}

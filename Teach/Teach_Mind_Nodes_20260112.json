@@ -1,0 +1,88 @@
+{
+    "version": 1,
+    "type": "teach_nodes",
+    "note": "Explicit classification of stable home nodes (PC, Phone, TV) for trust/policy calibration.",
+    "nodes": [
+        {
+            "id": "node-main-pc",
+            "ip": "192.168.1.6",
+            "hostname_hint": "Main_PC",
+            "role": "workstation",
+            "owner": "anchor",
+            "trust_level": "trusted_home_primary",
+            "location": "home",
+            "tags": [
+                "device:pc",
+                "anchor-primary",
+                "cluster:home-core"
+            ]
+        },
+        {
+            "id": "node-phone",
+            "ip": "192.168.1.7",
+            "hostname_hint": "Phone",
+            "role": "handset",
+            "owner": "anchor",
+            "trust_level": "trusted_home_mobile",
+            "location": "home",
+            "tags": [
+                "device:phone",
+                "anchor-mobile",
+                "cluster:home-core"
+            ]
+        },
+        {
+            "id": "node-media-tv",
+            "ip": "192.168.1.11",
+            "hostname_hint": "LivingRoom_TV",
+            "role": "media_endpoint",
+            "owner": "household",
+            "trust_level": "trusted_home_passive",
+            "location": "home",
+            "tags": [
+                "device:tv",
+                "passive-endpoint",
+                "cluster:home-ambient"
+            ]
+        }
+    ],
+    "policy_hints": [
+        {
+            "id": "POLICY-20260112-NODES-TRUST-BASELINE",
+            "description": "Treat explicitly taught home nodes as low-risk by default, unless contradicted by anomaly evidence.",
+            "rules": [
+                {
+                    "match": {
+                        "trust_level": "trusted_home_primary"
+                    },
+                    "effect": {
+                        "baseline_risk_offset": -20,
+                        "allow_high_frequency_monitoring": true,
+                        "allow_non_destructive_auto_actions": true
+                    }
+                },
+                {
+                    "match": {
+                        "trust_level": "trusted_home_mobile"
+                    },
+                    "effect": {
+                        "baseline_risk_offset": -15,
+                        "require_anchor_for_admin_tools": true
+                    }
+                },
+                {
+                    "match": {
+                        "trust_level": "trusted_home_passive"
+                    },
+                    "effect": {
+                        "baseline_risk_offset": -10,
+                        "limit_toolset": [
+                            "Ping-Host",
+                            "Read-Metrics"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

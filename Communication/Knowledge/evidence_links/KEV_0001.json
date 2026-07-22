@@ -1,0 +1,14 @@
+{
+  "evidence_link_id": "KEV_0001",
+  "claim_id": "KCLM_001",
+  "source_artifact": "assessments/asm_015_real.v3.json",
+  "relation": "SUPPORTS",
+  "independence_group": "EXP_015_REAL",
+  "proposition_supported": "The tested DM campaign to specialized AI/ML practitioners yielded a highly substantive technical response.",
+  "strength": "DIRECT_WITH_LIMITATIONS",
+  "limitations": [
+    "manual DM outreach differs from broadcast",
+    "prior personal relationship exists with recipients",
+    "exposure denominator artificially constrained to 3"
+  ]
+}

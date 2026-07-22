@@ -1,0 +1,10 @@
+@echo off
+md AEGIS\core
+md AEGIS\memory
+md AEGIS\processing
+md AEGIS\interfaces
+md AEGIS\security
+md AEGIS\exodus
+md AEGIS\scripts
+md AEGIS\config
+md AEGIS\logs

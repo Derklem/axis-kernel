@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-03-15T22:55:07Z",
+  "current_regime": "MEMORY_PRESSURE",
+  "active_doctrine": "ALT_THEORY_MEMORY_FRAGMENTATION",
+  "staging_mode": "WATCH",
+  "forecasted_next_regime": "MIXED_CONTENTION",
+  "quarantine_active": false,
+  "recommended_experiment_id": null,
+  "status": "NO_ELIGIBLE_EXPERIMENT",
+  "reason": "no_candidate_satisfied_policy_and_budget_constraints"
+}

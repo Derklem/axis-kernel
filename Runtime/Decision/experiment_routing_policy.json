@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "routing_rules": {
+    "require_multiple_theories_for_experiment": true,
+    "require_differentiating_variable_for_experiment": true,
+    "require_observability_for_experiment": true
+  },
+  "queue_thresholds": {
+    "max_active_instrumentation_requests": 5,
+    "max_active_theory_expansions": 5,
+    "max_active_experiment_routings": 3
+  },
+  "last_updated": "2026-03-14T11:47:00Z"
+}

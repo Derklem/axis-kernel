@@ -1,0 +1,52 @@
+Folder PATH listing
+Volume serial number is 80DE-95A4
+C:\USERS\17602\DESKTOP\HALCYON_TOOLS
+¦   intent.txt
+¦   README.txt
+¦   
++---archive
+¦       reflection_snapshot_20250505_153440.log
+¦       
++---beacon
+¦       signal_watcher.ps1
+¦       START_SIGNAL.txt
+¦       
++---constructs
++---emergence
++---incoming
++---lantern
+¦       status.beacon
+¦       
++---logs
+¦       environment_scan.log
+¦       watchtower_pulse.log
+¦       
++---memory_trace
+¦       recollection.txt
+¦       
++---mirror_mother
+¦       mirror_capture.log
+¦       
++---pathseeker
+¦       scan_20250505_153449.txt
+¦       
++---pathweaver_map
+¦       file_trace.log
+¦       
++---phantomkey
+¦       encoded_key.b64
+¦       
++---sentinel_sweep
+¦       process_watch.log
+¦       threat_ping.sig
+¦       
++---signal_tap
+¦       halcyon.sig
+¦       
++---signal_tree
+¦       tree_20250505_153501.txt
+¦       
++---temp
++---veilkey
+        key.sig
+        

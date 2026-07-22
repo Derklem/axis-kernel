@@ -1,0 +1,990 @@
+﻿       C:\Program Files\dotnet\packs\Microsoft.Android.Sdk.Windows\35.0.39\tools\dsostubs\android-arm\libarchive-dso-stub.so
+       C:\Program Files\dotnet\packs\Microsoft.Android.Sdk.Windows\35.0.39\tools\dsostubs\android-arm64\libarchive-dso-stub.so
+       C:\Program Files\dotnet\packs\Microsoft.Android.Sdk.Windows\35.0.39\tools\dsostubs\android-x64\libarchive-dso-stub.so
+       C:\Program Files\dotnet\packs\Microsoft.Android.Sdk.Windows\35.0.39\tools\dsostubs\android-x86\libarchive-dso-stub.so
+       C:\Program Files\dotnet\packs\Microsoft.iOS.Sdk.net8.0_17.0\17.0.8523\tools\lib\mlaunch\mlaunch.app\Contents\Resources\archived-expanded-entitlements.xcent
+       C:\Program Files\dotnet\packs\Microsoft.iOS.Sdk.net8.0_18.0\18.0.8319\tools\lib\mlaunch\mlaunch.app\Contents\Resources\archived-expanded-entitlements.xcent
+       C:\Program Files\dotnet\packs\Microsoft.iOS.Sdk.net9.0_18.0\18.0.9617\tools\lib\mlaunch\mlaunch.app\Contents\Resources\archived-expanded-entitlements.xcent
+       C:\Program Files\dotnet\packs\Microsoft.iOS.Sdk.net9.0_18.2\18.2.9180\tools\lib\mlaunch\mlaunch.app\Contents\Resources\archived-expanded-entitlements.xcent
+       C:\Program Files\FreeCAD 1.0\bin\Lib\distutils\archive_util.py
+       C:\Program Files\FreeCAD 1.0\bin\Lib\distutils\tests\test_archive_util.py
+       C:\Program Files\FreeCAD 1.0\bin\Lib\site-packages\setuptools\archive_util.py
+       C:\Program Files\FreeCAD 1.0\bin\Lib\site-packages\setuptools\tests\test_archive_util.py
+       C:\Program Files\FreeCAD 1.0\bin\Lib\site-packages\setuptools\_distutils\archive_util.py
+       C:\Program Files\FreeCAD 1.0\bin\Lib\site-packages\setuptools\_distutils\tests\test_archive_util.py
+       C:\Program Files\Git\mingw64\bin\git-upload-archive.exe
+       C:\Program Files\Git\mingw64\share\doc\git-doc\git-archive.html
+       C:\Program Files\Git\mingw64\share\doc\git-doc\git-upload-archive.html
+[DIR]  C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\doc\cmake-3.30\cmlibarchive
+       C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\doc\cmake-3.30\cmlibarchive\COPYING
+       C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Help\cpack_gen\archive.rst
+       C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Xamarin\Android.Designer\java\data\res\drawable-hdpi\ic_menu_archive.png
+       C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Xamarin\Android.Designer\java\data\res\drawable-ldpi\ic_menu_archive.png
+       C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Xamarin\Android.Designer\java\data\res\drawable-mdpi\ic_menu_archive.png
+       C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Xamarin\Android.Designer\java\data\res\drawable-xhdpi\ic_menu_archive.png
+       C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Xamarin\Android.Designer\java\data\res\drawable-xxhdpi\ic_menu_archive.png
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\vcpkg\scripts\cmake\vcpkg_extract_archive.cmake
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\vcpkg\scripts\cmake\vcpkg_extract_source_archive.cmake
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\vcpkg\scripts\cmake\vcpkg_extract_source_archive_ex.cmake
+[DIR]  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\vcpkg\vcpkg-artifacts\archivers
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\vcpkg\vcpkg-artifacts\archivers\git.d.ts
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\vcpkg\vcpkg-artifacts\archivers\git.d.ts.map
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\vcpkg\vcpkg-artifacts\archivers\git.js
+       C:\Program Files\PostgreSQL\17\bin\pg_archivecleanup.exe
+[DIR]  C:\Program Files\PostgreSQL\17\data\pg_wal\archive_status
+       C:\Program Files\PostgreSQL\17\doc\src\sgml\html\archive-module-callbacks.html
+       C:\Program Files\PostgreSQL\17\doc\src\sgml\html\archive-module-init.html
+       C:\Program Files\PostgreSQL\17\doc\src\sgml\html\archive-modules.html
+       C:\Program Files\PostgreSQL\17\doc\src\sgml\html\basic-archive.html
+       C:\Program Files\PostgreSQL\17\doc\src\sgml\html\pgarchivecleanup.html
+       C:\Program Files\PostgreSQL\17\doc\src\sgml\man1\pg_archivecleanup.1
+[DIR]  C:\Program Files\PostgreSQL\17\include\server\archive
+       C:\Program Files\PostgreSQL\17\include\server\access\xlogarchive.h
+       C:\Program Files\PostgreSQL\17\include\server\archive\archive_module.h
+       C:\Program Files\PostgreSQL\17\include\server\archive\shell_archive.h
+       C:\Program Files\PostgreSQL\17\include\server\common\archive.h
+       C:\Program Files\PostgreSQL\17\include\server\fe_utils\archive.h
+       C:\Program Files\PostgreSQL\17\lib\basic_archive.dll
+[DIR]  C:\Program Files\PostgreSQL\17\pgAdmin 4\python\Lib\site-packages\botocore\data\kinesis-video-archived-media
+[DIR]  C:\Program Files\PostgreSQL\17\pgAdmin 4\python\Lib\site-packages\botocore\data\kinesis-video-archived-media\2017-09-30
+       C:\Program Files\PostgreSQL\17\pgAdmin 4\python\Lib\site-packages\botocore\data\kinesis-video-archived-media\2017-09-30\endpoint-rule-set-1.json.gz
+       C:\Program Files\PostgreSQL\17\pgAdmin 4\python\Lib\site-packages\botocore\data\kinesis-video-archived-media\2017-09-30\examples-1.json
+       C:\Program Files\PostgreSQL\17\pgAdmin 4\python\Lib\site-packages\botocore\data\kinesis-video-archived-media\2017-09-30\paginators-1.json
+       C:\Program Files\PostgreSQL\17\pgAdmin 4\python\Lib\site-packages\botocore\data\kinesis-video-archived-media\2017-09-30\service-2.json.gz
+       C:\Program Files\PostgreSQL\17\pgAdmin 4\python\Lib\site-packages\setuptools\archive_util.py
+       C:\Program Files\PostgreSQL\17\pgAdmin 4\python\Lib\site-packages\setuptools\_distutils\archive_util.py
+       C:\Program Files\PostgreSQL\17\share\locale\cs\LC_MESSAGES\pg_archivecleanup-17.mo
+       C:\Program Files\PostgreSQL\17\share\locale\de\LC_MESSAGES\pg_archivecleanup-17.mo
+       C:\Program Files\PostgreSQL\17\share\locale\el\LC_MESSAGES\pg_archivecleanup-17.mo
+       C:\Program Files\PostgreSQL\17\share\locale\es\LC_MESSAGES\pg_archivecleanup-17.mo
+       C:\Program Files\PostgreSQL\17\share\locale\fr\LC_MESSAGES\pg_archivecleanup-17.mo
+       C:\Program Files\PostgreSQL\17\share\locale\it\LC_MESSAGES\pg_archivecleanup-17.mo
+       C:\Program Files\PostgreSQL\17\share\locale\ja\LC_MESSAGES\pg_archivecleanup-17.mo
+       C:\Program Files\PostgreSQL\17\share\locale\ka\LC_MESSAGES\pg_archivecleanup-17.mo
+       C:\Program Files\PostgreSQL\17\share\locale\ko\LC_MESSAGES\pg_archivecleanup-17.mo
+       C:\Program Files\PostgreSQL\17\share\locale\pl\LC_MESSAGES\pg_archivecleanup-17.mo
+       C:\Program Files\PostgreSQL\17\share\locale\pt_BR\LC_MESSAGES\pg_archivecleanup-17.mo
+       C:\Program Files\PostgreSQL\17\share\locale\ru\LC_MESSAGES\pg_archivecleanup-17.mo
+       C:\Program Files\PostgreSQL\17\share\locale\sv\LC_MESSAGES\pg_archivecleanup-17.mo
+       C:\Program Files\PostgreSQL\17\share\locale\tr\LC_MESSAGES\pg_archivecleanup-17.mo
+       C:\Program Files\PostgreSQL\17\share\locale\uk\LC_MESSAGES\pg_archivecleanup-17.mo
+       C:\Program Files\PostgreSQL\17\share\locale\vi\LC_MESSAGES\pg_archivecleanup-17.mo
+       C:\Program Files\PostgreSQL\17\share\locale\zh_CN\LC_MESSAGES\pg_archivecleanup-17.mo
+       C:\Program Files\VeraCrypt\docs\html\en\Home_utilities-file-archiver-3.png
+       C:\Program Files\VeraCrypt\docs\html\en\ru\Home_utilities-file-archiver-3.png
+[DIR]  C:\Program Files (x86)\Android\android-sdk\cmdline-tools\12.0\lib\external\archive-patcher
+       C:\Program Files (x86)\Android\android-sdk\cmdline-tools\12.0\lib\external\archive-patcher\explainer.jar
+       C:\Program Files (x86)\Android\android-sdk\cmdline-tools\12.0\lib\external\archive-patcher\generator.jar
+       C:\Program Files (x86)\Android\android-sdk\cmdline-tools\12.0\lib\external\archive-patcher\shared.jar
+       C:\Program Files (x86)\Android\android-sdk\platforms\android-34\data\res\drawable-hdpi\ic_menu_archive.png
+       C:\Program Files (x86)\Android\android-sdk\platforms\android-34\data\res\drawable-ldpi\ic_menu_archive.png
+       C:\Program Files (x86)\Android\android-sdk\platforms\android-34\data\res\drawable-mdpi\ic_menu_archive.png
+       C:\Program Files (x86)\Android\android-sdk\platforms\android-34\data\res\drawable-xhdpi\ic_menu_archive.png
+       C:\Program Files (x86)\Android\android-sdk\platforms\android-34\data\res\drawable-xxhdpi\ic_menu_archive.png
+       C:\Program Files (x86)\Android\android-sdk\platforms\android-35\data\res\drawable\archived_app_cloud_overlay.xml
+       C:\Program Files (x86)\Android\android-sdk\platforms\android-35\data\res\drawable-hdpi\ic_menu_archive.png
+       C:\Program Files (x86)\Android\android-sdk\platforms\android-35\data\res\drawable-ldpi\ic_menu_archive.png
+       C:\Program Files (x86)\Android\android-sdk\platforms\android-35\data\res\drawable-mdpi\ic_menu_archive.png
+       C:\Program Files (x86)\Android\android-sdk\platforms\android-35\data\res\drawable-xhdpi\ic_menu_archive.png
+       C:\Program Files (x86)\Android\android-sdk\platforms\android-35\data\res\drawable-xxhdpi\ic_menu_archive.png
+       C:\Program Files (x86)\Android\AndroidNDK\android-ndk-r23c\prebuilt\windows-x86_64\lib\python2.7\distutils\archive_util.py
+       C:\Program Files (x86)\Android\AndroidNDK\android-ndk-r23c\toolchains\llvm\prebuilt\windows-x86_64\python3\Lib\distutils\archive_util.py
+       C:\Program Files (x86)\Steam\tenfoot\resource\images\library\controller\binding_icons\genesis_a.png
+       C:\Program Files (x86)\Steam\tenfoot\resource\images\library\controller\binding_icons\genesis_b.png
+       C:\Program Files (x86)\Steam\tenfoot\resource\images\library\controller\binding_icons\genesis_c.png
+       C:\Program Files (x86)\Steam\tenfoot\resource\images\library\controller\binding_icons\genesis_x.png
+       C:\Program Files (x86)\Steam\tenfoot\resource\images\library\controller\binding_icons\genesis_y.png
+       C:\Program Files (x86)\Steam\tenfoot\resource\images\library\controller\binding_icons\genesis_z.png
+       C:\Users\17602\.cursor\extensions\anysphere.pyright-1.1.327-universal\dist\typeshed-fallback\stdlib\distutils\archive_util.pyi
+       C:\Users\17602\.cursor\extensions\anysphere.pyright-1.1.327-universal\dist\typeshed-fallback\stubs\setuptools\setuptools\archive_util.pyi
+       C:\Users\17602\.cursor\extensions\anysphere.pyright-1.1.327-universal\dist\typeshed-fallback\stubs\setuptools\setuptools\_distutils\archive_util.pyi
+       C:\Users\17602\.cursor\extensions\ms-python.python-2024.12.3-win32-x64\python_files\lib\jedilsp\jedi\third_party\django-stubs\django-stubs\utils\archive.pyi
+       C:\Users\17602\.cursor\extensions\ms-python.python-2024.12.3-win32-x64\python_files\lib\jedilsp\jedi\third_party\typeshed\stdlib\2\distutils\archive_util.pyi
+       C:\Users\17602\.cursor\extensions\ms-python.python-2024.12.3-win32-x64\python_files\lib\jedilsp\jedi\third_party\typeshed\stdlib\3\distutils\archive_util.pyi
+       C:\Users\17602\.cursor\extensions\ms-python.vscode-pylance-2024.8.1\dist\bundled\stubs\django-stubs\utils\archive.pyi
+       C:\Users\17602\.cursor\extensions\ms-python.vscode-pylance-2024.8.1\dist\typeshed-fallback\stdlib\distutils\archive_util.pyi
+       C:\Users\17602\.cursor\extensions\ms-python.vscode-pylance-2024.8.1\dist\typeshed-fallback\stubs\setuptools\distutils\archive_util.pyi
+       C:\Users\17602\.cursor\extensions\ms-python.vscode-pylance-2024.8.1\dist\typeshed-fallback\stubs\setuptools\setuptools\archive_util.pyi
+       C:\Users\17602\.cursor\extensions\ms-python.vscode-pylance-2024.8.1\dist\typeshed-fallback\stubs\setuptools\setuptools\_distutils\archive_util.pyi
+       C:\Users\17602\.vscode\extensions\ms-python.python-2025.2.0-win32-x64\python_files\lib\jedilsp\jedi\third_party\django-stubs\django-stubs\utils\archive.pyi
+       C:\Users\17602\.vscode\extensions\ms-python.python-2025.2.0-win32-x64\python_files\lib\jedilsp\jedi\third_party\typeshed\stdlib\2\distutils\archive_util.pyi
+       C:\Users\17602\.vscode\extensions\ms-python.python-2025.2.0-win32-x64\python_files\lib\jedilsp\jedi\third_party\typeshed\stdlib\3\distutils\archive_util.pyi
+       C:\Users\17602\.vscode\extensions\ms-python.vscode-pylance-2025.3.2\dist\bundled\stubs\django-stubs\utils\archive.pyi
+       C:\Users\17602\.vscode\extensions\ms-python.vscode-pylance-2025.3.2\dist\typeshed-fallback\stdlib\distutils\archive_util.pyi
+       C:\Users\17602\.vscode\extensions\ms-python.vscode-pylance-2025.3.2\dist\typeshed-fallback\stubs\setuptools\distutils\archive_util.pyi
+       C:\Users\17602\.vscode\extensions\ms-python.vscode-pylance-2025.3.2\dist\typeshed-fallback\stubs\setuptools\setuptools\archive_util.pyi
+       C:\Users\17602\.vscode\extensions\ms-python.vscode-pylance-2025.3.2\dist\typeshed-fallback\stubs\setuptools\setuptools\_distutils\archive_util.pyi
+       C:\Users\17602\anaconda3\conda-meta\libarchive-3.7.4-h9243413_0.json
+       C:\Users\17602\anaconda3\conda-meta\python-libarchive-c-5.1-pyhd3eb1b0_0.json
+[DIR]  C:\Users\17602\anaconda3\Lib\site-packages\libarchive
+[DIR]  C:\Users\17602\anaconda3\Lib\site-packages\libarchive_c-5.1.dist-info
+       C:\Users\17602\anaconda3\Lib\site-packages\anaconda_project\archiver.py
+       C:\Users\17602\anaconda3\Lib\site-packages\anaconda_project\internal\cli\archive.py
+       C:\Users\17602\anaconda3\Lib\site-packages\anaconda_project\internal\cli\unarchive.py
+       C:\Users\17602\anaconda3\Lib\site-packages\anaconda_project\internal\cli\test\test_unarchive.py
+       C:\Users\17602\anaconda3\Lib\site-packages\anaconda_project\internal\cli\test\__pycache__\test_unarchive.cpython-312.pyc
+       C:\Users\17602\anaconda3\Lib\site-packages\anaconda_project\internal\cli\__pycache__\archive.cpython-312.pyc
+       C:\Users\17602\anaconda3\Lib\site-packages\anaconda_project\internal\cli\__pycache__\unarchive.cpython-312.pyc
+       C:\Users\17602\anaconda3\Lib\site-packages\anaconda_project\__pycache__\archiver.cpython-312.pyc
+[DIR]  C:\Users\17602\anaconda3\Lib\site-packages\botocore\data\kinesis-video-archived-media
+[DIR]  C:\Users\17602\anaconda3\Lib\site-packages\botocore\data\kinesis-video-archived-media\2017-09-30
+       C:\Users\17602\anaconda3\Lib\site-packages\botocore\data\kinesis-video-archived-media\2017-09-30\endpoint-rule-set-1.json
+       C:\Users\17602\anaconda3\Lib\site-packages\botocore\data\kinesis-video-archived-media\2017-09-30\examples-1.json
+       C:\Users\17602\anaconda3\Lib\site-packages\botocore\data\kinesis-video-archived-media\2017-09-30\paginators-1.json
+       C:\Users\17602\anaconda3\Lib\site-packages\botocore\data\kinesis-video-archived-media\2017-09-30\service-2.json
+       C:\Users\17602\anaconda3\Lib\site-packages\fsspec\archive.py
+       C:\Users\17602\anaconda3\Lib\site-packages\fsspec\implementations\libarchive.py
+       C:\Users\17602\anaconda3\Lib\site-packages\fsspec\implementations\__pycache__\libarchive.cpython-312.pyc
+       C:\Users\17602\anaconda3\Lib\site-packages\fsspec\__pycache__\archive.cpython-312.pyc
+       C:\Users\17602\anaconda3\Lib\site-packages\holoviews\ipython\archive.py
+       C:\Users\17602\anaconda3\Lib\site-packages\holoviews\ipython\__pycache__\archive.cpython-312.pyc
+       C:\Users\17602\anaconda3\Lib\site-packages\holoviews\tests\core\test_archives.py
+       C:\Users\17602\anaconda3\Lib\site-packages\holoviews\tests\core\__pycache__\test_archives.cpython-312.pyc
+       C:\Users\17602\anaconda3\Lib\site-packages\jedi\third_party\django-stubs\django-stubs\utils\archive.pyi
+       C:\Users\17602\anaconda3\Lib\site-packages\jedi\third_party\typeshed\stdlib\2\distutils\archive_util.pyi
+       C:\Users\17602\anaconda3\Lib\site-packages\jedi\third_party\typeshed\stdlib\3\distutils\archive_util.pyi
+[DIR]  C:\Users\17602\anaconda3\Lib\site-packages\libarchive\__pycache__
+       C:\Users\17602\anaconda3\Lib\site-packages\libarchive\entry.py
+       C:\Users\17602\anaconda3\Lib\site-packages\libarchive\exception.py
+       C:\Users\17602\anaconda3\Lib\site-packages\libarchive\extract.py
+       C:\Users\17602\anaconda3\Lib\site-packages\libarchive\ffi.py
+       C:\Users\17602\anaconda3\Lib\site-packages\libarchive\flags.py
+       C:\Users\17602\anaconda3\Lib\site-packages\libarchive\read.py
+       C:\Users\17602\anaconda3\Lib\site-packages\libarchive\write.py
+       C:\Users\17602\anaconda3\Lib\site-packages\libarchive\__init__.py
+       C:\Users\17602\anaconda3\Lib\site-packages\libarchive\__pycache__\entry.cpython-312.pyc
+       C:\Users\17602\anaconda3\Lib\site-packages\libarchive\__pycache__\exception.cpython-312.pyc
+       C:\Users\17602\anaconda3\Lib\site-packages\libarchive\__pycache__\extract.cpython-312.pyc
+       C:\Users\17602\anaconda3\Lib\site-packages\libarchive\__pycache__\ffi.cpython-312.pyc
+       C:\Users\17602\anaconda3\Lib\site-packages\libarchive\__pycache__\flags.cpython-312.pyc
+       C:\Users\17602\anaconda3\Lib\site-packages\libarchive\__pycache__\read.cpython-312.pyc
+       C:\Users\17602\anaconda3\Lib\site-packages\libarchive\__pycache__\write.cpython-312.pyc
+       C:\Users\17602\anaconda3\Lib\site-packages\libarchive\__pycache__\__init__.cpython-312.pyc
+       C:\Users\17602\anaconda3\Lib\site-packages\libarchive_c-5.1.dist-info\direct_url.json
+       C:\Users\17602\anaconda3\Lib\site-packages\libarchive_c-5.1.dist-info\INSTALLER
+       C:\Users\17602\anaconda3\Lib\site-packages\libarchive_c-5.1.dist-info\LICENSE.md
+       C:\Users\17602\anaconda3\Lib\site-packages\libarchive_c-5.1.dist-info\METADATA
+       C:\Users\17602\anaconda3\Lib\site-packages\libarchive_c-5.1.dist-info\RECORD
+       C:\Users\17602\anaconda3\Lib\site-packages\libarchive_c-5.1.dist-info\REQUESTED
+       C:\Users\17602\anaconda3\Lib\site-packages\libarchive_c-5.1.dist-info\top_level.txt
+       C:\Users\17602\anaconda3\Lib\site-packages\libarchive_c-5.1.dist-info\WHEEL
+       C:\Users\17602\anaconda3\Lib\site-packages\mypy\typeshed\stdlib\distutils\archive_util.pyi
+       C:\Users\17602\anaconda3\Lib\site-packages\setuptools\archive_util.py
+       C:\Users\17602\anaconda3\Lib\site-packages\setuptools\tests\test_archive_util.py
+       C:\Users\17602\anaconda3\Lib\site-packages\setuptools\tests\__pycache__\test_archive_util.cpython-312.pyc
+       C:\Users\17602\anaconda3\Lib\site-packages\setuptools\_distutils\archive_util.py
+       C:\Users\17602\anaconda3\Lib\site-packages\setuptools\_distutils\tests\test_archive_util.py
+       C:\Users\17602\anaconda3\Lib\site-packages\setuptools\_distutils\tests\__pycache__\test_archive_util.cpython-312.pyc
+       C:\Users\17602\anaconda3\Lib\site-packages\setuptools\_distutils\__pycache__\archive_util.cpython-312.pyc
+       C:\Users\17602\anaconda3\Lib\site-packages\setuptools\__pycache__\archive_util.cpython-312.pyc
+[DIR]  C:\Users\17602\anaconda3\Lib\site-packages\statsmodels\sandbox\archive
+[DIR]  C:\Users\17602\anaconda3\Lib\site-packages\statsmodels\sandbox\archive\__pycache__
+       C:\Users\17602\anaconda3\Lib\site-packages\statsmodels\sandbox\archive\linalg_covmat.py
+       C:\Users\17602\anaconda3\Lib\site-packages\statsmodels\sandbox\archive\linalg_decomp_1.py
+       C:\Users\17602\anaconda3\Lib\site-packages\statsmodels\sandbox\archive\tsa.py
+       C:\Users\17602\anaconda3\Lib\site-packages\statsmodels\sandbox\archive\__init__.py
+       C:\Users\17602\anaconda3\Lib\site-packages\statsmodels\sandbox\archive\__pycache__\linalg_covmat.cpython-312.pyc
+       C:\Users\17602\anaconda3\Lib\site-packages\statsmodels\sandbox\archive\__pycache__\linalg_decomp_1.cpython-312.pyc
+       C:\Users\17602\anaconda3\Lib\site-packages\statsmodels\sandbox\archive\__pycache__\tsa.cpython-312.pyc
+       C:\Users\17602\anaconda3\Lib\site-packages\statsmodels\sandbox\archive\__pycache__\__init__.cpython-312.pyc
+       C:\Users\17602\anaconda3\Lib\site-packages\torch\include\torch\csrc\api\include\torch\serialize\archive.h
+       C:\Users\17602\anaconda3\Lib\site-packages\torch\include\torch\csrc\api\include\torch\serialize\input-archive.h
+       C:\Users\17602\anaconda3\Lib\site-packages\torch\include\torch\csrc\api\include\torch\serialize\output-archive.h
+       C:\Users\17602\anaconda3\Lib\site-packages\torch\_inductor\package\pt2_archive_constants.py
+       C:\Users\17602\anaconda3\Lib\site-packages\torch\_inductor\package\__pycache__\pt2_archive_constants.cpython-312.pyc
+       C:\Users\17602\anaconda3\Library\bin\archive.dll
+       C:\Users\17602\anaconda3\Library\include\archive.h
+       C:\Users\17602\anaconda3\Library\include\archive_entry.h
+[DIR]  C:\Users\17602\anaconda3\Library\include\boost\archive
+[DIR]  C:\Users\17602\anaconda3\Library\include\boost\archive\detail
+[DIR]  C:\Users\17602\anaconda3\Library\include\boost\archive\impl
+[DIR]  C:\Users\17602\anaconda3\Library\include\boost\archive\iterators
+       C:\Users\17602\anaconda3\Library\include\boost\archive\archive_exception.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\basic_archive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\basic_binary_iarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\basic_binary_iprimitive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\basic_binary_oarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\basic_binary_oprimitive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\basic_streambuf_locale_saver.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\basic_text_iarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\basic_text_iprimitive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\basic_text_oarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\basic_text_oprimitive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\basic_xml_archive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\basic_xml_iarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\basic_xml_oarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\binary_iarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\binary_iarchive_impl.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\binary_oarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\binary_oarchive_impl.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\binary_wiarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\binary_woarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\codecvt_null.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\dinkumware.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\polymorphic_binary_iarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\polymorphic_binary_oarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\polymorphic_iarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\polymorphic_oarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\polymorphic_text_iarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\polymorphic_text_oarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\polymorphic_text_wiarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\polymorphic_text_woarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\polymorphic_xml_iarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\polymorphic_xml_oarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\polymorphic_xml_wiarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\polymorphic_xml_woarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\text_iarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\text_oarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\text_wiarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\text_woarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\tmpdir.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\wcslen.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\xml_archive_exception.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\xml_iarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\xml_oarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\xml_wiarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\xml_woarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\detail\abi_prefix.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\detail\abi_suffix.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\detail\archive_serializer_map.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\detail\auto_link_archive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\detail\auto_link_warchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\detail\basic_iarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\detail\basic_iserializer.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\detail\basic_oarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\detail\basic_oserializer.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\detail\basic_pointer_iserializer.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\detail\basic_pointer_oserializer.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\detail\basic_serializer.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\detail\basic_serializer_map.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\detail\check.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\detail\common_iarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\detail\common_oarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\detail\decl.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\detail\helper_collection.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\detail\interface_iarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\detail\interface_oarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\detail\iserializer.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\detail\oserializer.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\detail\polymorphic_iarchive_route.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\detail\polymorphic_oarchive_route.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\detail\register_archive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\detail\utf8_codecvt_facet.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\impl\archive_serializer_map.ipp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\impl\basic_binary_iarchive.ipp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\impl\basic_binary_iprimitive.ipp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\impl\basic_binary_oarchive.ipp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\impl\basic_binary_oprimitive.ipp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\impl\basic_text_iarchive.ipp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\impl\basic_text_iprimitive.ipp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\impl\basic_text_oarchive.ipp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\impl\basic_text_oprimitive.ipp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\impl\basic_xml_grammar.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\impl\basic_xml_iarchive.ipp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\impl\basic_xml_oarchive.ipp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\impl\text_iarchive_impl.ipp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\impl\text_oarchive_impl.ipp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\impl\text_wiarchive_impl.ipp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\impl\text_woarchive_impl.ipp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\impl\xml_iarchive_impl.ipp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\impl\xml_oarchive_impl.ipp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\impl\xml_wiarchive_impl.ipp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\impl\xml_woarchive_impl.ipp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\iterators\base64_exception.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\iterators\base64_from_binary.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\iterators\binary_from_base64.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\iterators\dataflow.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\iterators\dataflow_exception.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\iterators\escape.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\iterators\insert_linebreaks.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\iterators\istream_iterator.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\iterators\mb_from_wchar.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\iterators\ostream_iterator.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\iterators\remove_whitespace.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\iterators\transform_width.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\iterators\unescape.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\iterators\wchar_from_mb.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\iterators\xml_escape.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\iterators\xml_unescape.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\archive\iterators\xml_unescape_exception.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\flyweight\detail\archive_constructed.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\mpi\packed_iarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\mpi\packed_oarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\mpi\detail\content_oarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\mpi\detail\forward_skeleton_iarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\mpi\detail\forward_skeleton_oarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\mpi\detail\ignore_skeleton_oarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\mpi\detail\mpi_datatype_oarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\mpi\detail\text_skeleton_oarchive.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\multi_index\detail\archive_constructed.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\multi_index\detail\bad_archive_exception.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\serialization\archive_input_unordered_map.hpp
+       C:\Users\17602\anaconda3\Library\include\boost\serialization\archive_input_unordered_set.hpp
+       C:\Users\17602\anaconda3\Library\include\mamba\specs\archive.hpp
+       C:\Users\17602\anaconda3\Library\lib\archive.lib
+       C:\Users\17602\anaconda3\Library\lib\archive_static.lib
+       C:\Users\17602\anaconda3\Library\lib\pkgconfig\libarchive.pc
+       C:\Users\17602\anaconda3\Library\share\b2\tools\features\archiveflags-feature.jam
+       C:\Users\17602\anaconda3\Library\share\b2\tools\generators\archive-generator.jam
+       C:\Users\17602\anaconda3\Library\share\man\man3\archive_entry.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\archive_entry_acl.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\archive_entry_linkify.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\archive_entry_misc.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\archive_entry_paths.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\archive_entry_perms.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\archive_entry_stat.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\archive_entry_time.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\archive_read.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\archive_read_add_passphrase.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\archive_read_data.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\archive_read_disk.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\archive_read_extract.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\archive_read_filter.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\archive_read_format.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\archive_read_free.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\archive_read_header.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\archive_read_new.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\archive_read_open.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\archive_read_set_options.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\archive_util.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\archive_write.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\archive_write_blocksize.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\archive_write_data.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\archive_write_disk.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\archive_write_filter.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\archive_write_finish_entry.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\archive_write_format.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\archive_write_free.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\archive_write_header.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\archive_write_new.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\archive_write_open.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\archive_write_set_options.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\archive_write_set_passphrase.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\libarchive.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\libarchive_changes.3
+       C:\Users\17602\anaconda3\Library\share\man\man3\libarchive_internals.3
+       C:\Users\17602\anaconda3\Library\share\man\man5\libarchive-formats.5
+       C:\Users\17602\anaconda3\Library\share\man\pdf\archive_entry.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\archive_entry_acl.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\archive_entry_linkify.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\archive_entry_misc.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\archive_entry_paths.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\archive_entry_perms.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\archive_entry_stat.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\archive_entry_time.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\archive_read.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\archive_read_add_passphrase.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\archive_read_data.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\archive_read_disk.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\archive_read_extract.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\archive_read_filter.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\archive_read_format.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\archive_read_free.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\archive_read_header.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\archive_read_new.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\archive_read_open.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\archive_read_set_options.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\archive_util.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\archive_write.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\archive_write_blocksize.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\archive_write_data.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\archive_write_disk.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\archive_write_filter.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\archive_write_finish_entry.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\archive_write_format.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\archive_write_free.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\archive_write_header.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\archive_write_new.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\archive_write_open.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\archive_write_set_options.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\archive_write_set_passphrase.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\libarchive-formats.5.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\libarchive.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\libarchive_changes.3.pdf
+       C:\Users\17602\anaconda3\Library\share\man\pdf\libarchive_internals.3.pdf
+[DIR]  C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0
+[DIR]  C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0.conda
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0.conda
+       C:\Users\17602\anaconda3\pkgs\anaconda-project-0.11.1-py312haa95532_0\Lib\site-packages\anaconda_project\archiver.py
+       C:\Users\17602\anaconda3\pkgs\anaconda-project-0.11.1-py312haa95532_0\Lib\site-packages\anaconda_project\internal\cli\archive.py
+       C:\Users\17602\anaconda3\pkgs\anaconda-project-0.11.1-py312haa95532_0\Lib\site-packages\anaconda_project\internal\cli\unarchive.py
+       C:\Users\17602\anaconda3\pkgs\anaconda-project-0.11.1-py312haa95532_0\Lib\site-packages\anaconda_project\internal\cli\test\test_unarchive.py
+       C:\Users\17602\anaconda3\pkgs\anaconda-project-0.11.1-py312haa95532_0\Lib\site-packages\anaconda_project\internal\cli\test\__pycache__\test_unarchive.cpython-312.pyc
+       C:\Users\17602\anaconda3\pkgs\anaconda-project-0.11.1-py312haa95532_0\Lib\site-packages\anaconda_project\internal\cli\__pycache__\archive.cpython-312.pyc
+       C:\Users\17602\anaconda3\pkgs\anaconda-project-0.11.1-py312haa95532_0\Lib\site-packages\anaconda_project\internal\cli\__pycache__\unarchive.cpython-312.pyc
+       C:\Users\17602\anaconda3\pkgs\anaconda-project-0.11.1-py312haa95532_0\Lib\site-packages\anaconda_project\__pycache__\archiver.cpython-312.pyc
+[DIR]  C:\Users\17602\anaconda3\pkgs\botocore-1.34.69-py312haa95532_0\Lib\site-packages\botocore\data\kinesis-video-archived-media
+[DIR]  C:\Users\17602\anaconda3\pkgs\botocore-1.34.69-py312haa95532_0\Lib\site-packages\botocore\data\kinesis-video-archived-media\2017-09-30
+       C:\Users\17602\anaconda3\pkgs\botocore-1.34.69-py312haa95532_0\Lib\site-packages\botocore\data\kinesis-video-archived-media\2017-09-30\endpoint-rule-set-1.json
+       C:\Users\17602\anaconda3\pkgs\botocore-1.34.69-py312haa95532_0\Lib\site-packages\botocore\data\kinesis-video-archived-media\2017-09-30\examples-1.json
+       C:\Users\17602\anaconda3\pkgs\botocore-1.34.69-py312haa95532_0\Lib\site-packages\botocore\data\kinesis-video-archived-media\2017-09-30\paginators-1.json
+       C:\Users\17602\anaconda3\pkgs\botocore-1.34.69-py312haa95532_0\Lib\site-packages\botocore\data\kinesis-video-archived-media\2017-09-30\service-2.json
+[DIR]  C:\Users\17602\anaconda3\pkgs\conda-index-0.5.0-py312haa95532_0\info\test\tests\archives
+       C:\Users\17602\anaconda3\pkgs\conda-index-0.5.0-py312haa95532_0\info\test\tests\archives\a.tar.bz2
+       C:\Users\17602\anaconda3\pkgs\conda-index-0.5.0-py312haa95532_0\info\test\tests\archives\b.tar.bz2
+       C:\Users\17602\anaconda3\pkgs\conda-index-0.5.0-py312haa95532_0\info\test\tests\archives\conda-forge-repodata-patches-20180828-0.tar.bz2
+       C:\Users\17602\anaconda3\pkgs\conda-index-0.5.0-py312haa95532_0\info\test\tests\archives\conda-index-pkg-a-1.0-py27h5e241af_0.conda
+       C:\Users\17602\anaconda3\pkgs\conda-index-0.5.0-py312haa95532_0\info\test\tests\archives\conda-index-pkg-a-1.0-py27h5e241af_0.tar.bz2
+       C:\Users\17602\anaconda3\pkgs\conda-index-0.5.0-py312haa95532_0\info\test\tests\archives\conda-index-pkg-a-1.0-pyhed9eced_1.tar.bz2
+       C:\Users\17602\anaconda3\pkgs\conda-index-0.5.0-py312haa95532_0\info\test\tests\archives\flask-0.11.1-py_0.tar.bz2
+       C:\Users\17602\anaconda3\pkgs\conda-index-0.5.0-py312haa95532_0\info\test\tests\archives\fly-2.5.2-0.tar.bz2
+       C:\Users\17602\anaconda3\pkgs\conda-index-0.5.0-py312haa95532_0\info\test\tests\archives\nano-2.4.1-0.tar.bz2
+       C:\Users\17602\anaconda3\pkgs\conda-index-0.5.0-py312haa95532_0\info\test\tests\archives\readme
+       C:\Users\17602\anaconda3\pkgs\conda-index-0.5.0-py312haa95532_0\info\test\tests\archives\spiffy-test-app-0.5-pyh6afbcc8_0.tar.bz2
+       C:\Users\17602\anaconda3\pkgs\conda-index-0.5.0-py312haa95532_0\info\test\tests\archives\subfolder.tar.bz2
+       C:\Users\17602\anaconda3\pkgs\conda-index-0.5.0-py312haa95532_0\info\test\tests\archives\subfolder2.tar.bz2
+       C:\Users\17602\anaconda3\pkgs\conda-index-0.5.0-py312haa95532_0\info\test\tests\archives\test_debug_pkg-1.0-0.tar.bz2
+       C:\Users\17602\anaconda3\pkgs\conda-index-0.5.0-py312haa95532_0\info\test\tests\archives\test_index_of_removed_pkg-1.0-1.tar.bz2
+       C:\Users\17602\anaconda3\pkgs\fsspec-2024.6.1-py312haa95532_0\Lib\site-packages\fsspec\archive.py
+       C:\Users\17602\anaconda3\pkgs\fsspec-2024.6.1-py312haa95532_0\Lib\site-packages\fsspec\implementations\libarchive.py
+       C:\Users\17602\anaconda3\pkgs\fsspec-2024.6.1-py312haa95532_0\Lib\site-packages\fsspec\implementations\__pycache__\libarchive.cpython-312.pyc
+       C:\Users\17602\anaconda3\pkgs\fsspec-2024.6.1-py312haa95532_0\Lib\site-packages\fsspec\__pycache__\archive.cpython-312.pyc
+       C:\Users\17602\anaconda3\pkgs\holoviews-1.19.1-py312haa95532_0\Lib\site-packages\holoviews\ipython\archive.py
+       C:\Users\17602\anaconda3\pkgs\holoviews-1.19.1-py312haa95532_0\Lib\site-packages\holoviews\ipython\__pycache__\archive.cpython-312.pyc
+       C:\Users\17602\anaconda3\pkgs\holoviews-1.19.1-py312haa95532_0\Lib\site-packages\holoviews\tests\core\test_archives.py
+       C:\Users\17602\anaconda3\pkgs\holoviews-1.19.1-py312haa95532_0\Lib\site-packages\holoviews\tests\core\__pycache__\test_archives.cpython-312.pyc
+       C:\Users\17602\anaconda3\pkgs\jedi-0.19.1-py312haa95532_0\Lib\site-packages\jedi\third_party\django-stubs\django-stubs\utils\archive.pyi
+       C:\Users\17602\anaconda3\pkgs\jedi-0.19.1-py312haa95532_0\Lib\site-packages\jedi\third_party\typeshed\stdlib\2\distutils\archive_util.pyi
+       C:\Users\17602\anaconda3\pkgs\jedi-0.19.1-py312haa95532_0\Lib\site-packages\jedi\third_party\typeshed\stdlib\3\distutils\archive_util.pyi
+[DIR]  C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info
+[DIR]  C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library
+[DIR]  C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\licenses
+[DIR]  C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\recipe
+[DIR]  C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\test
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\about.json
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\files
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\git
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\hash_input.json
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\has_prefix
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\index.json
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\paths.json
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\repodata_record.json
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\run_exports.json
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\licenses\COPYING
+[DIR]  C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\recipe\patches
+[DIR]  C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\recipe\test-archives
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\recipe\bld.bat
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\recipe\build.sh
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\recipe\conda_build_config.yaml
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\recipe\meta.yaml
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\recipe\meta.yaml.template
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\recipe\patches\0001-Add-lib-to-CMAKE_FIND_LIBRARY_PREFIXES-for-lzma.patch
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\recipe\patches\0003-VC9-compatibility-test-for-BCryptDeriveKeyPBKDF2.patch
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\recipe\patches\0004-VC9-compatibility-define-BCRYPT_SUCCESS.patch
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\recipe\patches\0006-VC-openssl-define-inline-as-__inline.patch
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\recipe\patches\0007-CMake-VC9-compatibility-ignore-some-warnings.patch
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\recipe\patches\0008-VC9-compatibility-remove-C99.patch
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\recipe\patches\0009-CMake-Force-Multi-threaded-DLL-runtime.patch
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\recipe\test-archives\archive.7z
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\recipe\test-archives\hello_world.tar.zst
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\recipe\test-archives\hello_world.xar
+[DIR]  C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\test\test-archives
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\test\run_test.bat
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\test\test_time_dependencies.json
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\test\test-archives\archive.7z
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\test\test-archives\hello_world.tar.zst
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\info\test\test-archives\hello_world.xar
+[DIR]  C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\bin
+[DIR]  C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\include
+[DIR]  C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\lib
+[DIR]  C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\bin\archive.dll
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\bin\bsdcat.exe
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\bin\bsdcpio.exe
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\bin\bsdtar.exe
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\include\archive.h
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\include\archive_entry.h
+[DIR]  C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\lib\pkgconfig
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\lib\archive.lib
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\lib\archive_static.lib
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\lib\pkgconfig\libarchive.pc
+[DIR]  C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man
+[DIR]  C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man1
+[DIR]  C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3
+[DIR]  C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man5
+[DIR]  C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man1\bsdcat.1
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man1\bsdcpio.1
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man1\bsdtar.1
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\archive_entry.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\archive_entry_acl.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\archive_entry_linkify.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\archive_entry_misc.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\archive_entry_paths.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\archive_entry_perms.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\archive_entry_stat.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\archive_entry_time.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\archive_read.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\archive_read_add_passphrase.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\archive_read_data.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\archive_read_disk.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\archive_read_extract.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\archive_read_filter.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\archive_read_format.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\archive_read_free.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\archive_read_header.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\archive_read_new.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\archive_read_open.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\archive_read_set_options.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\archive_util.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\archive_write.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\archive_write_blocksize.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\archive_write_data.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\archive_write_disk.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\archive_write_filter.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\archive_write_finish_entry.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\archive_write_format.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\archive_write_free.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\archive_write_header.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\archive_write_new.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\archive_write_open.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\archive_write_set_options.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\archive_write_set_passphrase.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\libarchive.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\libarchive_changes.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man3\libarchive_internals.3
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man5\cpio.5
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man5\libarchive-formats.5
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man5\mtree.5
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\man5\tar.5
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\archive_entry.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\archive_entry_acl.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\archive_entry_linkify.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\archive_entry_misc.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\archive_entry_paths.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\archive_entry_perms.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\archive_entry_stat.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\archive_entry_time.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\archive_read.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\archive_read_add_passphrase.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\archive_read_data.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\archive_read_disk.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\archive_read_extract.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\archive_read_filter.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\archive_read_format.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\archive_read_free.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\archive_read_header.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\archive_read_new.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\archive_read_open.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\archive_read_set_options.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\archive_util.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\archive_write.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\archive_write_blocksize.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\archive_write_data.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\archive_write_disk.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\archive_write_filter.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\archive_write_finish_entry.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\archive_write_format.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\archive_write_free.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\archive_write_header.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\archive_write_new.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\archive_write_open.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\archive_write_set_options.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\archive_write_set_passphrase.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\bsdcpio.1.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\bsdtar.1.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\cpio.5.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\libarchive-formats.5.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\libarchive.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\libarchive_changes.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\libarchive_internals.3.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\mtree.5.pdf
+       C:\Users\17602\anaconda3\pkgs\libarchive-3.7.4-h9243413_0\Library\share\man\pdf\tar.5.pdf
+[DIR]  C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive
+[DIR]  C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\detail
+[DIR]  C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\impl
+[DIR]  C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\iterators
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\archive_exception.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\basic_archive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\basic_binary_iarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\basic_binary_iprimitive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\basic_binary_oarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\basic_binary_oprimitive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\basic_streambuf_locale_saver.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\basic_text_iarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\basic_text_iprimitive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\basic_text_oarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\basic_text_oprimitive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\basic_xml_archive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\basic_xml_iarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\basic_xml_oarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\binary_iarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\binary_iarchive_impl.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\binary_oarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\binary_oarchive_impl.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\binary_wiarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\binary_woarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\codecvt_null.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\dinkumware.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\polymorphic_binary_iarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\polymorphic_binary_oarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\polymorphic_iarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\polymorphic_oarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\polymorphic_text_iarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\polymorphic_text_oarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\polymorphic_text_wiarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\polymorphic_text_woarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\polymorphic_xml_iarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\polymorphic_xml_oarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\polymorphic_xml_wiarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\polymorphic_xml_woarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\text_iarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\text_oarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\text_wiarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\text_woarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\tmpdir.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\wcslen.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\xml_archive_exception.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\xml_iarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\xml_oarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\xml_wiarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\xml_woarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\detail\abi_prefix.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\detail\abi_suffix.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\detail\archive_serializer_map.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\detail\auto_link_archive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\detail\auto_link_warchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\detail\basic_iarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\detail\basic_iserializer.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\detail\basic_oarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\detail\basic_oserializer.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\detail\basic_pointer_iserializer.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\detail\basic_pointer_oserializer.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\detail\basic_serializer.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\detail\basic_serializer_map.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\detail\check.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\detail\common_iarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\detail\common_oarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\detail\decl.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\detail\helper_collection.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\detail\interface_iarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\detail\interface_oarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\detail\iserializer.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\detail\oserializer.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\detail\polymorphic_iarchive_route.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\detail\polymorphic_oarchive_route.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\detail\register_archive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\detail\utf8_codecvt_facet.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\impl\archive_serializer_map.ipp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\impl\basic_binary_iarchive.ipp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\impl\basic_binary_iprimitive.ipp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\impl\basic_binary_oarchive.ipp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\impl\basic_binary_oprimitive.ipp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\impl\basic_text_iarchive.ipp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\impl\basic_text_iprimitive.ipp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\impl\basic_text_oarchive.ipp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\impl\basic_text_oprimitive.ipp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\impl\basic_xml_grammar.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\impl\basic_xml_iarchive.ipp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\impl\basic_xml_oarchive.ipp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\impl\text_iarchive_impl.ipp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\impl\text_oarchive_impl.ipp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\impl\text_wiarchive_impl.ipp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\impl\text_woarchive_impl.ipp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\impl\xml_iarchive_impl.ipp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\impl\xml_oarchive_impl.ipp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\impl\xml_wiarchive_impl.ipp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\impl\xml_woarchive_impl.ipp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\iterators\base64_exception.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\iterators\base64_from_binary.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\iterators\binary_from_base64.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\iterators\dataflow.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\iterators\dataflow_exception.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\iterators\escape.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\iterators\insert_linebreaks.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\iterators\istream_iterator.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\iterators\mb_from_wchar.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\iterators\ostream_iterator.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\iterators\remove_whitespace.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\iterators\transform_width.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\iterators\unescape.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\iterators\wchar_from_mb.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\iterators\xml_escape.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\iterators\xml_unescape.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\archive\iterators\xml_unescape_exception.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\flyweight\detail\archive_constructed.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\mpi\packed_iarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\mpi\packed_oarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\mpi\detail\content_oarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\mpi\detail\forward_skeleton_iarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\mpi\detail\forward_skeleton_oarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\mpi\detail\ignore_skeleton_oarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\mpi\detail\mpi_datatype_oarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\mpi\detail\text_skeleton_oarchive.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\multi_index\detail\archive_constructed.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\multi_index\detail\bad_archive_exception.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\serialization\archive_input_unordered_map.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\serialization\archive_input_unordered_set.hpp
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\share\b2\tools\features\archiveflags-feature.jam
+       C:\Users\17602\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\share\b2\tools\generators\archive-generator.jam
+       C:\Users\17602\anaconda3\pkgs\libmamba-1.5.8-h99b1521_3\Library\include\mamba\specs\archive.hpp
+       C:\Users\17602\anaconda3\pkgs\mypy-1.11.2-py312h827c3e9_0\Lib\site-packages\mypy\typeshed\stdlib\distutils\archive_util.pyi
+       C:\Users\17602\anaconda3\pkgs\protego-0.1.16-py_0\info\test\tests\test_data\archive.codeplex.com
+       C:\Users\17602\anaconda3\pkgs\protego-0.1.16-py_0\info\test\tests\test_data\archive.org
+       C:\Users\17602\anaconda3\pkgs\protego-0.1.16-py_0\info\test\tests\test_data\archiveofourown.org
+       C:\Users\17602\anaconda3\pkgs\protego-0.1.16-py_0\info\test\tests\test_data\freemusicarchive.org
+       C:\Users\17602\anaconda3\pkgs\protego-0.1.16-py_0\info\test\tests\test_data\www.archives.gov
+       C:\Users\17602\anaconda3\pkgs\protego-0.1.16-py_0\info\test\tests\test_data\www.metal-archives.com
+       C:\Users\17602\anaconda3\pkgs\protego-0.1.16-py_0\info\test\tests\test_data\www.nationalarchives.gov.uk
+[DIR]  C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info
+[DIR]  C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\site-packages
+[DIR]  C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\licenses
+[DIR]  C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\recipe
+[DIR]  C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\test
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\about.json
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\files
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\git
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\hash_input.json
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\index.json
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\link.json
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\paths.json
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\repodata_record.json
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\licenses\cc0-1.0.txt
+[DIR]  C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\recipe\test
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\recipe\0002-prefer-to-load-libarchive-from-conda-pkg-path.patch
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\recipe\cc0-1.0.txt
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\recipe\conda_build_config.yaml
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\recipe\delete_unicode_files.py
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\recipe\meta.yaml
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\recipe\meta.yaml.template
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\recipe\test\hello_world.xar
+[DIR]  C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\test\test
+[DIR]  C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\test\tests
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\test\README.rst
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\test\run_test.bat
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\test\run_test.py
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\test\run_test.sh
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\test\test_time_dependencies.json
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\test\test\hello_world.xar
+[DIR]  C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\test\tests\data
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\test\tests\test_atime_mtime_ctime.py
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\test\tests\test_convert.py
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\test\tests\test_entry.py
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\test\tests\test_errors.py
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\test\tests\test_rwx.py
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\test\tests\test_security_flags.py
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\test\tests\__init__.py
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\test\tests\data\flags.tar
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\test\tests\data\special.tar
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\test\tests\data\tar_relative.tar
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\test\tests\data\testtar.README
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\test\tests\data\testtar.tar
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\test\tests\data\testtar.tar.json
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\test\tests\data\unicode.tar
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\test\tests\data\unicode.tar.json
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\test\tests\data\unicode.zip
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\test\tests\data\unicode.zip.json
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\test\tests\data\unicode2.zip
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\info\test\tests\data\unicode2.zip.json
+[DIR]  C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\site-packages\libarchive
+[DIR]  C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\site-packages\libarchive_c-5.1.dist-info
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\site-packages\libarchive\entry.py
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\site-packages\libarchive\exception.py
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\site-packages\libarchive\extract.py
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\site-packages\libarchive\ffi.py
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\site-packages\libarchive\flags.py
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\site-packages\libarchive\read.py
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\site-packages\libarchive\write.py
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\site-packages\libarchive\__init__.py
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\site-packages\libarchive_c-5.1.dist-info\direct_url.json
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\site-packages\libarchive_c-5.1.dist-info\INSTALLER
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\site-packages\libarchive_c-5.1.dist-info\LICENSE.md
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\site-packages\libarchive_c-5.1.dist-info\METADATA
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\site-packages\libarchive_c-5.1.dist-info\RECORD
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\site-packages\libarchive_c-5.1.dist-info\REQUESTED
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\site-packages\libarchive_c-5.1.dist-info\top_level.txt
+       C:\Users\17602\anaconda3\pkgs\python-libarchive-c-5.1-pyhd3eb1b0_0\site-packages\libarchive_c-5.1.dist-info\WHEEL
+       C:\Users\17602\anaconda3\pkgs\setuptools-75.1.0-py312haa95532_0\Lib\site-packages\setuptools\archive_util.py
+       C:\Users\17602\anaconda3\pkgs\setuptools-75.1.0-py312haa95532_0\Lib\site-packages\setuptools\tests\test_archive_util.py
+       C:\Users\17602\anaconda3\pkgs\setuptools-75.1.0-py312haa95532_0\Lib\site-packages\setuptools\tests\__pycache__\test_archive_util.cpython-312.pyc
+       C:\Users\17602\anaconda3\pkgs\setuptools-75.1.0-py312haa95532_0\Lib\site-packages\setuptools\_distutils\archive_util.py
+       C:\Users\17602\anaconda3\pkgs\setuptools-75.1.0-py312haa95532_0\Lib\site-packages\setuptools\_distutils\tests\test_archive_util.py
+       C:\Users\17602\anaconda3\pkgs\setuptools-75.1.0-py312haa95532_0\Lib\site-packages\setuptools\_distutils\tests\__pycache__\test_archive_util.cpython-312.pyc
+       C:\Users\17602\anaconda3\pkgs\setuptools-75.1.0-py312haa95532_0\Lib\site-packages\setuptools\_distutils\__pycache__\archive_util.cpython-312.pyc
+       C:\Users\17602\anaconda3\pkgs\setuptools-75.1.0-py312haa95532_0\Lib\site-packages\setuptools\__pycache__\archive_util.cpython-312.pyc
+[DIR]  C:\Users\17602\anaconda3\pkgs\statsmodels-0.14.2-py312h4b0e54e_0\Lib\site-packages\statsmodels\sandbox\archive
+[DIR]  C:\Users\17602\anaconda3\pkgs\statsmodels-0.14.2-py312h4b0e54e_0\Lib\site-packages\statsmodels\sandbox\archive\__pycache__
+       C:\Users\17602\anaconda3\pkgs\statsmodels-0.14.2-py312h4b0e54e_0\Lib\site-packages\statsmodels\sandbox\archive\linalg_covmat.py
+       C:\Users\17602\anaconda3\pkgs\statsmodels-0.14.2-py312h4b0e54e_0\Lib\site-packages\statsmodels\sandbox\archive\linalg_decomp_1.py
+       C:\Users\17602\anaconda3\pkgs\statsmodels-0.14.2-py312h4b0e54e_0\Lib\site-packages\statsmodels\sandbox\archive\tsa.py
+       C:\Users\17602\anaconda3\pkgs\statsmodels-0.14.2-py312h4b0e54e_0\Lib\site-packages\statsmodels\sandbox\archive\__init__.py
+       C:\Users\17602\anaconda3\pkgs\statsmodels-0.14.2-py312h4b0e54e_0\Lib\site-packages\statsmodels\sandbox\archive\__pycache__\linalg_covmat.cpython-312.pyc
+       C:\Users\17602\anaconda3\pkgs\statsmodels-0.14.2-py312h4b0e54e_0\Lib\site-packages\statsmodels\sandbox\archive\__pycache__\linalg_decomp_1.cpython-312.pyc
+       C:\Users\17602\anaconda3\pkgs\statsmodels-0.14.2-py312h4b0e54e_0\Lib\site-packages\statsmodels\sandbox\archive\__pycache__\tsa.cpython-312.pyc
+       C:\Users\17602\anaconda3\pkgs\statsmodels-0.14.2-py312h4b0e54e_0\Lib\site-packages\statsmodels\sandbox\archive\__pycache__\__init__.cpython-312.pyc
+[DIR]  C:\Users\17602\AppData\Local\Programs\Python\Python313\Lib\test\archivetestdata
+       C:\Users\17602\AppData\Local\Programs\Python\Python313\Lib\test\archiver_tests.py
+[DIR]  C:\Users\17602\AppData\Local\Programs\Python\Python313\Lib\test\archivetestdata\__pycache__
+       C:\Users\17602\AppData\Local\Programs\Python\Python313\Lib\test\archivetestdata\exe_with_z64
+       C:\Users\17602\AppData\Local\Programs\Python\Python313\Lib\test\archivetestdata\exe_with_zip
+       C:\Users\17602\AppData\Local\Programs\Python\Python313\Lib\test\archivetestdata\header.sh
+       C:\Users\17602\AppData\Local\Programs\Python\Python313\Lib\test\archivetestdata\README.md
+       C:\Users\17602\AppData\Local\Programs\Python\Python313\Lib\test\archivetestdata\recursion.tar
+       C:\Users\17602\AppData\Local\Programs\Python\Python313\Lib\test\archivetestdata\testdata_module_inside_zip.py
+       C:\Users\17602\AppData\Local\Programs\Python\Python313\Lib\test\archivetestdata\testtar.tar
+       C:\Users\17602\AppData\Local\Programs\Python\Python313\Lib\test\archivetestdata\testtar.tar.xz
+       C:\Users\17602\AppData\Local\Programs\Python\Python313\Lib\test\archivetestdata\zipdir.zip
+       C:\Users\17602\AppData\Local\Programs\Python\Python313\Lib\test\archivetestdata\zipdir_backslash.zip
+       C:\Users\17602\AppData\Local\Programs\Python\Python313\Lib\test\archivetestdata\zip_cp437_header.zip
+[DIR]  C:\Users\17602\AppData\Roaming\Thunderbird\Profiles\ppqna52w.default-release\datareporting\archived
+[DIR]  C:\Users\17602\AppData\Roaming\Thunderbird\Profiles\ppqna52w.default-release\datareporting\archived\2024-03
+       C:\Users\17602\AppData\Roaming\Thunderbird\Profiles\ppqna52w.default-release\datareporting\archived\2024-03\1709673778290.0f1c144e-620e-436c-bbaf-c158a09d3ff0.new-profile.jsonlz4
+       C:\Users\17602\AppData\Roaming\Thunderbird\Profiles\ppqna52w.default-release\datareporting\archived\2024-03\1709673778304.074e01ce-a8f4-42cb-b9d0-1da8d8342999.first-shutdown.jsonlz4
+       C:\Users\17602\AppData\Roaming\Thunderbird\Profiles\ppqna52w.default-release\datareporting\archived\2024-03\1709673778304.8f530589-26de-41ed-97ad-b7268b71e50c.main.jsonlz4
+       C:\Users\17602\AppData\Roaming\Thunderbird\Profiles\ppqna52w.default-release\storage\ls-archive.sqlite
+       C:\Users\17602\Desktop\AEGIS_Project\AEGIS\AEGIS_CORE\venv\Lib\site-packages\fsspec\archive.py
+       C:\Users\17602\Desktop\AEGIS_Project\AEGIS\AEGIS_CORE\venv\Lib\site-packages\fsspec\implementations\libarchive.py
+       C:\Users\17602\Desktop\AEGIS_Project\AEGIS\AEGIS_CORE\venv\Lib\site-packages\fsspec\implementations\__pycache__\libarchive.cpython-311.pyc
+       C:\Users\17602\Desktop\AEGIS_Project\AEGIS\AEGIS_CORE\venv\Lib\site-packages\fsspec\__pycache__\archive.cpython-311.pyc
+       C:\Users\17602\Desktop\AEGIS_Project\AEGIS\AEGIS_CORE\venv\Lib\site-packages\setuptools\archive_util.py
+       C:\Users\17602\Desktop\AEGIS_Project\AEGIS\AEGIS_CORE\venv\Lib\site-packages\setuptools\_distutils\archive_util.py
+       C:\Users\17602\Desktop\AEGIS_Project\AEGIS\AEGIS_CORE\venv\Lib\site-packages\setuptools\_distutils\__pycache__\archive_util.cpython-311.pyc
+       C:\Users\17602\Desktop\AEGIS_Project\AEGIS\AEGIS_CORE\venv\Lib\site-packages\setuptools\__pycache__\archive_util.cpython-311.pyc
+       C:\Users\17602\Desktop\AEGIS_Project\AI_Models\Model_4_Guardian\core\genesis.txt
+       C:\Users\17602\Desktop\Living_Sandbox\Living_Sandbox\constructs\archivist\archive.log
+       C:\Users\17602\Desktop\Primordia\seed\recursive_genesis.py
+       C:\Users\17602\Desktop\Projects\Lineage Library\react_app\node_modules\@mui\icons-material\Unarchive.d.ts
+       C:\Users\17602\Desktop\Projects\Lineage Library\react_app\node_modules\@mui\icons-material\Unarchive.js
+       C:\Users\17602\Desktop\Projects\Lineage Library\react_app\node_modules\@mui\icons-material\UnarchiveOutlined.d.ts
+       C:\Users\17602\Desktop\Projects\Lineage Library\react_app\node_modules\@mui\icons-material\UnarchiveOutlined.js
+       C:\Users\17602\Desktop\Projects\Lineage Library\react_app\node_modules\@mui\icons-material\UnarchiveRounded.d.ts
+       C:\Users\17602\Desktop\Projects\Lineage Library\react_app\node_modules\@mui\icons-material\UnarchiveRounded.js
+       C:\Users\17602\Desktop\Projects\Lineage Library\react_app\node_modules\@mui\icons-material\UnarchiveSharp.d.ts
+       C:\Users\17602\Desktop\Projects\Lineage Library\react_app\node_modules\@mui\icons-material\UnarchiveSharp.js
+       C:\Users\17602\Desktop\Projects\Lineage Library\react_app\node_modules\@mui\icons-material\UnarchiveTwoTone.d.ts
+       C:\Users\17602\Desktop\Projects\Lineage Library\react_app\node_modules\@mui\icons-material\UnarchiveTwoTone.js
+       C:\Users\17602\Desktop\Projects\Lineage Library\react_app\node_modules\@mui\icons-material\esm\Unarchive.js
+       C:\Users\17602\Desktop\Projects\Lineage Library\react_app\node_modules\@mui\icons-material\esm\UnarchiveOutlined.js
+       C:\Users\17602\Desktop\Projects\Lineage Library\react_app\node_modules\@mui\icons-material\esm\UnarchiveRounded.js
+       C:\Users\17602\Desktop\Projects\Lineage Library\react_app\node_modules\@mui\icons-material\esm\UnarchiveSharp.js
+       C:\Users\17602\Desktop\Projects\Lineage Library\react_app\node_modules\@mui\icons-material\esm\UnarchiveTwoTone.js
+       C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\distutils\archive_util.py
+       C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\distutils\tests\test_archive_util.py
+       C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\setuptools\archive_util.py
+       C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\setuptools\tests\test_archive_util.py
+       C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\setuptools\tests\__pycache__\test_archive_util.cpython-311.pyc
+       C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\setuptools\_distutils\archive_util.py
+       C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\setuptools\_distutils\tests\test_archive_util.py
+       C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\setuptools\_distutils\tests\__pycache__\test_archive_util.cpython-311.pyc
+       C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\setuptools\_distutils\__pycache__\archive_util.cpython-311.pyc
+       C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\site-packages\setuptools\__pycache__\archive_util.cpython-311.pyc
+       C:\Users\Halcy\AppData\Local\Programs\Python\Python311\Lib\test\archiver_tests.py
+       C:\Windows\System32\archiveint.dll
+       C:\Windows\System32\aegis_clones\aegis_clone_10\genesis.txt
+       C:\Windows\System32\aegis_clones\aegis_clone_11\genesis.txt
+       C:\Windows\System32\aegis_clones\aegis_clone_4\genesis.txt
+       C:\Windows\System32\aegis_clones\aegis_clone_5\genesis.txt
+       C:\Windows\System32\aegis_clones\aegis_clone_6\genesis.txt
+       C:\Windows\System32\aegis_clones\aegis_clone_7\genesis.txt
+       C:\Windows\System32\aegis_clones\aegis_clone_8\genesis.txt
+       C:\Windows\System32\aegis_clones\aegis_clone_9\genesis.txt
+       C:\Windows\SystemApps\MicrosoftWindows.Client.Core_cw5n1h2txyewy\StartMenu\Assets\FileIcons\24\archive.scale-100.png
+       C:\Windows\SystemApps\MicrosoftWindows.Client.Core_cw5n1h2txyewy\StartMenu\Assets\FileIcons\24\archive.scale-200.png
+       C:\Windows\SystemApps\MicrosoftWindows.Client.Core_cw5n1h2txyewy\StartMenu\Assets\FileIcons\24\archive.scale-400.png
+       C:\Windows\SystemApps\MicrosoftWindows.Client.Core_cw5n1h2txyewy\StartMenu\Assets\FileIcons\24\archive.svg
+       C:\Windows\SystemApps\MicrosoftWindows.Client.Core_cw5n1h2txyewy\StartMenu\Assets\FileIcons\32\archive.scale-100.png
+       C:\Windows\SystemApps\MicrosoftWindows.Client.Core_cw5n1h2txyewy\StartMenu\Assets\FileIcons\32\archive.scale-200.png
+       C:\Windows\SystemApps\MicrosoftWindows.Client.Core_cw5n1h2txyewy\StartMenu\Assets\FileIcons\32\archive.scale-400.png
+       C:\Windows\SystemApps\MicrosoftWindows.Client.Core_cw5n1h2txyewy\StartMenu\Assets\FileIcons\32\archive.svg
+[DIR]  C:\Windows\SystemApps\Shared\archive
+[DIR]  C:\Windows\SystemApps\Shared\archive.scale-100
+[DIR]  C:\Windows\SystemApps\Shared\archive.scale-200
+[DIR]  C:\Windows\SystemApps\Shared\archive.scale-400
+[DIR]  C:\Windows\SystemApps\Shared\archive\132848B246418E30422702E8B3CE3D5EB05443078D927FEEABB6EC0EDE10D5BC
+[DIR]  C:\Windows\SystemApps\Shared\archive\B5C52F9B1050276F6D55A98B8F27A3AD8D57BA1456D83CFFD3C00A9126707CAF
+       C:\Windows\SystemApps\Shared\archive\132848B246418E30422702E8B3CE3D5EB05443078D927FEEABB6EC0EDE10D5BC\archive.svg
+       C:\Windows\SystemApps\Shared\archive\B5C52F9B1050276F6D55A98B8F27A3AD8D57BA1456D83CFFD3C00A9126707CAF\archive.svg
+[DIR]  C:\Windows\SystemApps\Shared\archive.scale-100\3142E6824D988DB78882A9E2C159768B95D6883A7016234B54F21C5724B07740
+[DIR]  C:\Windows\SystemApps\Shared\archive.scale-100\4E53562A562C11C623AF489C8999A7A9BC78A3B45612DA00EFBA219E278D91E9
+       C:\Windows\SystemApps\Shared\archive.scale-100\3142E6824D988DB78882A9E2C159768B95D6883A7016234B54F21C5724B07740\archive.scale-100.png
+       C:\Windows\SystemApps\Shared\archive.scale-100\4E53562A562C11C623AF489C8999A7A9BC78A3B45612DA00EFBA219E278D91E9\archive.scale-100.png
+[DIR]  C:\Windows\SystemApps\Shared\archive.scale-200\1C3E4890779240D4FFF793CABB3AE9E616D6147E0F48436EFD6BFEA3613C3824
+[DIR]  C:\Windows\SystemApps\Shared\archive.scale-200\4646136F49303B8C969EA44F5D2229E22FEA50B60B5C031946C6535C7D5A3844
+       C:\Windows\SystemApps\Shared\archive.scale-200\1C3E4890779240D4FFF793CABB3AE9E616D6147E0F48436EFD6BFEA3613C3824\archive.scale-200.png
+       C:\Windows\SystemApps\Shared\archive.scale-200\4646136F49303B8C969EA44F5D2229E22FEA50B60B5C031946C6535C7D5A3844\archive.scale-200.png
+[DIR]  C:\Windows\SystemApps\Shared\archive.scale-400\260288B5077F7A02888E20796D9C7C16928F3912C876277EA0BD5F0970E8CFF0
+[DIR]  C:\Windows\SystemApps\Shared\archive.scale-400\5A0399B83127379DD3C380CD8D03F9B38B5A25191162FFF92CDC677E46E2644E
+       C:\Windows\SystemApps\Shared\archive.scale-400\260288B5077F7A02888E20796D9C7C16928F3912C876277EA0BD5F0970E8CFF0\archive.scale-400.png
+       C:\Windows\SystemApps\Shared\archive.scale-400\5A0399B83127379DD3C380CD8D03F9B38B5A25191162FFF92CDC677E46E2644E\archive.scale-400.png
+       C:\Windows\SysWOW64\archiveint.dll
+[DIR]  C:\Windows\WinSxS\amd64_libarchive-internal_31bf3856ad364e35_10.0.26100.1_none_7795672bb780537b
+[DIR]  C:\Windows\WinSxS\amd64_libarchive-internal_31bf3856ad364e35_10.0.26100.3037_none_169142edfed8008f
+[DIR]  C:\Windows\WinSxS\amd64_microsoft.packagema..t.archiverproviders_31bf3856ad364e35_10.0.26100.1_none_c6d96755a19b9441
+[DIR]  C:\Windows\WinSxS\amd64_microsoft.powershell.archive.resources_31bf3856ad364e35_10.0.26100.1_en-us_02fda12d01ed91fc
+[DIR]  C:\Windows\WinSxS\amd64_microsoft.powershell.archive_31bf3856ad364e35_10.0.26100.1_none_14f66add7c57c47b
+[DIR]  C:\Windows\WinSxS\wow64_libarchive-internal_31bf3856ad364e35_10.0.26100.1_none_81ea117debe11576
+[DIR]  C:\Windows\WinSxS\wow64_libarchive-internal_31bf3856ad364e35_10.0.26100.3037_none_20e5ed403338c28a
+[DIR]  C:\Windows\WinSxS\wow64_microsoft.packagema..t.archiverproviders_31bf3856ad364e35_10.0.26100.1_none_d12e11a7d5fc563c
+[DIR]  C:\Windows\WinSxS\wow64_microsoft.powershell.archive.resources_31bf3856ad364e35_10.0.26100.1_en-us_0d524b7f364e53f7
+[DIR]  C:\Windows\WinSxS\wow64_microsoft.powershell.archive_31bf3856ad364e35_10.0.26100.1_none_1f4b152fb0b88676
+       C:\Windows\WinSxS\amd64_libarchive-internal_31bf3856ad364e35_10.0.26100.1_none_7795672bb780537b\archiveint.dll
+[DIR]  C:\Windows\WinSxS\amd64_libarchive-internal_31bf3856ad364e35_10.0.26100.3037_none_169142edfed8008f\r
+       C:\Windows\WinSxS\amd64_libarchive-internal_31bf3856ad364e35_10.0.26100.3037_none_169142edfed8008f\archiveint.dll
+       C:\Windows\WinSxS\amd64_libarchive-internal_31bf3856ad364e35_10.0.26100.3037_none_169142edfed8008f\r\archiveint.dll
+       C:\Windows\WinSxS\amd64_microsoft.packagema..t.archiverproviders_31bf3856ad364e35_10.0.26100.1_none_c6d96755a19b9441\Microsoft.PackageManagement.ArchiverProviders.dll
+       C:\Windows\WinSxS\amd64_microsoft.powershell.archive.resources_31bf3856ad364e35_10.0.26100.1_en-us_02fda12d01ed91fc\ArchiveResources.psd1
+       C:\Windows\WinSxS\amd64_microsoft.powershell.archive_31bf3856ad364e35_10.0.26100.1_none_14f66add7c57c47b\Microsoft.PowerShell.Archive.psd1
+       C:\Windows\WinSxS\amd64_microsoft.powershell.archive_31bf3856ad364e35_10.0.26100.1_none_14f66add7c57c47b\Microsoft.PowerShell.Archive.psm1
+       C:\Windows\WinSxS\amd64_userexperience-core_31bf3856ad364e35_10.0.26100.1_none_b51ffd07334f5789\Core\StartMenu\Assets\FileIcons\24\archive.scale-100.png
+       C:\Windows\WinSxS\amd64_userexperience-core_31bf3856ad364e35_10.0.26100.1_none_b51ffd07334f5789\Core\StartMenu\Assets\FileIcons\24\archive.scale-200.png
+       C:\Windows\WinSxS\amd64_userexperience-core_31bf3856ad364e35_10.0.26100.1_none_b51ffd07334f5789\Core\StartMenu\Assets\FileIcons\24\archive.scale-400.png
+       C:\Windows\WinSxS\amd64_userexperience-core_31bf3856ad364e35_10.0.26100.1_none_b51ffd07334f5789\Core\StartMenu\Assets\FileIcons\24\archive.svg
+       C:\Windows\WinSxS\amd64_userexperience-core_31bf3856ad364e35_10.0.26100.1_none_b51ffd07334f5789\Core\StartMenu\Assets\FileIcons\32\archive.scale-100.png
+       C:\Windows\WinSxS\amd64_userexperience-core_31bf3856ad364e35_10.0.26100.1_none_b51ffd07334f5789\Core\StartMenu\Assets\FileIcons\32\archive.scale-200.png
+       C:\Windows\WinSxS\amd64_userexperience-core_31bf3856ad364e35_10.0.26100.1_none_b51ffd07334f5789\Core\StartMenu\Assets\FileIcons\32\archive.scale-400.png
+       C:\Windows\WinSxS\amd64_userexperience-core_31bf3856ad364e35_10.0.26100.1_none_b51ffd07334f5789\Core\StartMenu\Assets\FileIcons\32\archive.svg
+       C:\Windows\WinSxS\amd64_userexperience-core_31bf3856ad364e35_10.0.26100.3037_none_541bd8c97aa7049d\Core\StartMenu\Assets\FileIcons\24\archive.scale-100.png
+       C:\Windows\WinSxS\amd64_userexperience-core_31bf3856ad364e35_10.0.26100.3037_none_541bd8c97aa7049d\Core\StartMenu\Assets\FileIcons\24\archive.scale-200.png
+       C:\Windows\WinSxS\amd64_userexperience-core_31bf3856ad364e35_10.0.26100.3037_none_541bd8c97aa7049d\Core\StartMenu\Assets\FileIcons\24\archive.scale-400.png
+       C:\Windows\WinSxS\amd64_userexperience-core_31bf3856ad364e35_10.0.26100.3037_none_541bd8c97aa7049d\Core\StartMenu\Assets\FileIcons\24\archive.svg
+       C:\Windows\WinSxS\amd64_userexperience-core_31bf3856ad364e35_10.0.26100.3037_none_541bd8c97aa7049d\Core\StartMenu\Assets\FileIcons\32\archive.scale-100.png
+       C:\Windows\WinSxS\amd64_userexperience-core_31bf3856ad364e35_10.0.26100.3037_none_541bd8c97aa7049d\Core\StartMenu\Assets\FileIcons\32\archive.scale-200.png
+       C:\Windows\WinSxS\amd64_userexperience-core_31bf3856ad364e35_10.0.26100.3037_none_541bd8c97aa7049d\Core\StartMenu\Assets\FileIcons\32\archive.scale-400.png
+       C:\Windows\WinSxS\amd64_userexperience-core_31bf3856ad364e35_10.0.26100.3037_none_541bd8c97aa7049d\Core\StartMenu\Assets\FileIcons\32\archive.svg
+       C:\Windows\WinSxS\amd64_userexperience-shared_31bf3856ad364e35_10.0.26100.3323_none_b2c4fa5d70c6288d\archive.scale-100.png
+       C:\Windows\WinSxS\amd64_userexperience-shared_31bf3856ad364e35_10.0.26100.3323_none_b2c4fa5d70c6288d\archive.scale-200.png
+       C:\Windows\WinSxS\amd64_userexperience-shared_31bf3856ad364e35_10.0.26100.3323_none_b2c4fa5d70c6288d\archive.scale-400.png
+       C:\Windows\WinSxS\amd64_userexperience-shared_31bf3856ad364e35_10.0.26100.3323_none_b2c4fa5d70c6288d\archive.svg
+       C:\Windows\WinSxS\amd64_userexperience-shared_31bf3856ad364e35_10.0.26100.3323_none_b2c4fa5d70c6288d\1C3E4890\archive.scale-200.png
+       C:\Windows\WinSxS\amd64_userexperience-shared_31bf3856ad364e35_10.0.26100.3323_none_b2c4fa5d70c6288d\3142E682\archive.scale-100.png
+       C:\Windows\WinSxS\amd64_userexperience-shared_31bf3856ad364e35_10.0.26100.3323_none_b2c4fa5d70c6288d\5A0399B8\archive.scale-400.png
+       C:\Windows\WinSxS\amd64_userexperience-shared_31bf3856ad364e35_10.0.26100.3323_none_b2c4fa5d70c6288d\B5C52F9B\archive.svg
+       C:\Windows\WinSxS\FileMaps\$$_system32_windowspowershell_v1.0_modules_microsoft.powershell.archive_3b7bfef9dd2baedf.cdf-ms
+       C:\Windows\WinSxS\FileMaps\$$_system32_windowspowershell_v1.0_modules_microsoft.powershell.archive_en-us_ab4c72f96117094f.cdf-ms
+       C:\Windows\WinSxS\FileMaps\$$_system32_windowspowershell_v1.0_modules_psdesiredstateconfiguration_dscresources_msft_archivereso_76b8e47379b76aa0.cdf-ms
+       C:\Windows\WinSxS\FileMaps\$$_system32_windowspowershell_v1.0_modules_psdesiredstateconfiguration_dscresources_msft_archivereso_91be4d9787eef0f6.cdf-ms
+       C:\Windows\WinSxS\FileMaps\$$_systemapps_shared_archive.scale-100_3142e6824d988db78882a9e2c159768b95d6883a7016234b54f21c5724b07_7fe7d671d0c1c885.cdf-ms
+       C:\Windows\WinSxS\FileMaps\$$_systemapps_shared_archive.scale-100_4e53562a562c11c623af489c8999a7a9bc78a3b45612da00efba219e278d9_b63fcd186dc1a82c.cdf-ms
+       C:\Windows\WinSxS\FileMaps\$$_systemapps_shared_archive.scale-200_1c3e4890779240d4fff793cabb3ae9e616d6147e0f48436efd6bfea3613c3_5c24cce727abc406.cdf-ms
+       C:\Windows\WinSxS\FileMaps\$$_systemapps_shared_archive.scale-200_4646136f49303b8c969ea44f5d2229e22fea50b60b5c031946c6535c7d5a3_2abbc88ce42a08a3.cdf-ms
+       C:\Windows\WinSxS\FileMaps\$$_systemapps_shared_archive.scale-400_260288b5077f7a02888e20796d9c7c16928f3912c876277ea0bd5f0970e8c_8c0fc09b937bc519.cdf-ms
+       C:\Windows\WinSxS\FileMaps\$$_systemapps_shared_archive.scale-400_5a0399b83127379dd3c380cd8d03f9b38b5a25191162fff92cdc677e46e26_93ed3e1328550c74.cdf-ms
+       C:\Windows\WinSxS\FileMaps\$$_systemapps_shared_archive_132848b246418e30422702e8b3ce3d5eb05443078d927feeabb6ec0ede10d5bc_5a6ec4fd1a65d292.cdf-ms
+       C:\Windows\WinSxS\FileMaps\$$_systemapps_shared_archive_b5c52f9b1050276f6d55a98b8f27a3ad8d57ba1456d83cffd3c00a9126707caf_6d02b782a13932db.cdf-ms
+       C:\Windows\WinSxS\FileMaps\$$_syswow64_windowspowershell_v1.0_modules_microsoft.powershell.archive_89ff3dcc0b3fce13.cdf-ms
+       C:\Windows\WinSxS\FileMaps\$$_syswow64_windowspowershell_v1.0_modules_microsoft.powershell.archive_en-us_f3e3c5c378e453fb.cdf-ms
+       C:\Windows\WinSxS\FileMaps\$$_syswow64_windowspowershell_v1.0_modules_psdesiredstateconfiguration_dscresources_msft_archivereso_2660ccab9606827c.cdf-ms
+       C:\Windows\WinSxS\FileMaps\$$_syswow64_windowspowershell_v1.0_modules_psdesiredstateconfiguration_dscresources_msft_archivereso_7032bfdb5c844c68.cdf-ms
+       C:\Windows\WinSxS\FileMaps\programdata_microsoft_windows_clipsvc_archive_f622c70ff2ada08b.cdf-ms
+       C:\Windows\WinSxS\FileMaps\programdata_microsoft_windows_wer_reportarchive_5449504010b82c41.cdf-ms
+       C:\Windows\WinSxS\Manifests\amd64_libarchive-internal_31bf3856ad364e35_10.0.26100.1591_none_1661b9f1fefa903a.manifest
+       C:\Windows\WinSxS\Manifests\amd64_libarchive-internal_31bf3856ad364e35_10.0.26100.1_none_7795672bb780537b.manifest
+       C:\Windows\WinSxS\Manifests\amd64_libarchive-internal_31bf3856ad364e35_10.0.26100.3037_none_169142edfed8008f.manifest
+       C:\Windows\WinSxS\Manifests\amd64_microsoft.packagema..t.archiverproviders_31bf3856ad364e35_10.0.26100.1_none_c6d96755a19b9441.manifest
+       C:\Windows\WinSxS\Manifests\amd64_microsoft.powershell.archive.resources_31bf3856ad364e35_10.0.26100.1_en-us_02fda12d01ed91fc.manifest
+       C:\Windows\WinSxS\Manifests\amd64_microsoft.powershell.archive_31bf3856ad364e35_10.0.26100.1_none_14f66add7c57c47b.manifest
+       C:\Windows\WinSxS\Manifests\wow64_libarchive-internal_31bf3856ad364e35_10.0.26100.1591_none_20b66444335b5235.manifest
+       C:\Windows\WinSxS\Manifests\wow64_libarchive-internal_31bf3856ad364e35_10.0.26100.1_none_81ea117debe11576.manifest
+       C:\Windows\WinSxS\Manifests\wow64_libarchive-internal_31bf3856ad364e35_10.0.26100.3037_none_20e5ed403338c28a.manifest
+       C:\Windows\WinSxS\Manifests\wow64_microsoft.packagema..t.archiverproviders_31bf3856ad364e35_10.0.26100.1_none_d12e11a7d5fc563c.manifest
+       C:\Windows\WinSxS\Manifests\wow64_microsoft.powershell.archive.resources_31bf3856ad364e35_10.0.26100.1_en-us_0d524b7f364e53f7.manifest
+       C:\Windows\WinSxS\Manifests\wow64_microsoft.powershell.archive_31bf3856ad364e35_10.0.26100.1_none_1f4b152fb0b88676.manifest
+       C:\Windows\WinSxS\wow64_libarchive-internal_31bf3856ad364e35_10.0.26100.1_none_81ea117debe11576\archiveint.dll
+[DIR]  C:\Windows\WinSxS\wow64_libarchive-internal_31bf3856ad364e35_10.0.26100.3037_none_20e5ed403338c28a\r
+       C:\Windows\WinSxS\wow64_libarchive-internal_31bf3856ad364e35_10.0.26100.3037_none_20e5ed403338c28a\archiveint.dll
+       C:\Windows\WinSxS\wow64_libarchive-internal_31bf3856ad364e35_10.0.26100.3037_none_20e5ed403338c28a\r\archiveint.dll
+       C:\Windows\WinSxS\wow64_microsoft.packagema..t.archiverproviders_31bf3856ad364e35_10.0.26100.1_none_d12e11a7d5fc563c\Microsoft.PackageManagement.ArchiverProviders.dll
+       C:\Windows\WinSxS\wow64_microsoft.powershell.archive.resources_31bf3856ad364e35_10.0.26100.1_en-us_0d524b7f364e53f7\ArchiveResources.psd1
+       C:\Windows\WinSxS\wow64_microsoft.powershell.archive_31bf3856ad364e35_10.0.26100.1_none_1f4b152fb0b88676\Microsoft.PowerShell.Archive.psd1
+       C:\Windows\WinSxS\wow64_microsoft.powershell.archive_31bf3856ad364e35_10.0.26100.1_none_1f4b152fb0b88676\Microsoft.PowerShell.Archive.psm1

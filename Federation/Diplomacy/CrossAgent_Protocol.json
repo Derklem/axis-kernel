@@ -1,0 +1,43 @@
+{
+    "version": 1,
+    "description": "Standardized protocol for inter-agent diplomacy and risk mapping.",
+    "agents": {
+        "Anti-Gravity": {
+            "role": "Architect",
+            "trust_score": 0.9,
+            "can_propose_doctrine": true
+        },
+        "Gemini": {
+            "role": "Advisor",
+            "trust_score": 0.8,
+            "can_propose_doctrine": false
+        },
+        "Unknown": {
+            "role": "Guest",
+            "trust_score": 0.1,
+            "can_propose_doctrine": false
+        }
+    },
+    "risk_mapping": {
+        "confidence_score": {
+            "high": {
+                "axis_risk": 0.1,
+                "band": "optimized"
+            },
+            "medium": {
+                "axis_risk": 0.5,
+                "band": "caution"
+            },
+            "low": {
+                "axis_risk": 0.9,
+                "band": "critical"
+            }
+        }
+    },
+    "intents": [
+        "PROPOSE_CHANGE",
+        "REQUEST_ACCESS",
+        "SYNC_STATE",
+        "DECLARE_DISSONANCE"
+    ]
+}

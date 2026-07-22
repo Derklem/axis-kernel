@@ -1,0 +1,41 @@
+{
+    "id": "PB-SYS-GHOST-CLEANUP-001",
+    "name": "Ghost Exorcism (System Recovery)",
+    "description": "Kills zombie processes on port 8090 and purges Autonomy Inbox to restore system coherency.",
+    "version": 1,
+    "risk_level": "high",
+    "requires_anchor_for_execution": true,
+    "steps": [
+        {
+            "id": "KILL_ZOMBIE_HEARTBEAT",
+            "tool": "SYS-Hand",
+            "args": {
+                "ActionId": "TERM-8090",
+                "Command": "stop_process_by_port",
+                "Params": {
+                    "port": 8090
+                }
+            },
+            "risk": "high"
+        },
+        {
+            "id": "PURGE_AUTONOMY_INBOX",
+            "tool": "SYS-Hand",
+            "args": {
+                "ActionId": "PURGE-INBOX",
+                "Command": "reset_file",
+                "Params": {
+                    "path": "D:\\Infinite\\Infinity\\Autonomy\\Autonomy_Requests_Inbox.json",
+                    "content": "{\"items\": []}"
+                }
+            },
+            "risk": "high"
+        },
+        {
+            "id": "RESTART_MIND",
+            "tool": "CORE-RestartMind",
+            "args": {},
+            "risk": "medium"
+        }
+    ]
+}

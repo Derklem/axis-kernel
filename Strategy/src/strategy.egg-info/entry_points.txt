@@ -1,0 +1,3 @@
+[console_scripts]
+axis-kernel-proof = strategy.proof:main
+strategy = strategy.cli:main

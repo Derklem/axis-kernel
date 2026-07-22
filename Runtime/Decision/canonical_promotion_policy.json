@@ -1,0 +1,97 @@
+{
+  "version": "1.0",
+  "inputs": {
+    "staging_queue": "canonical_promotion_staging_queue.jsonl",
+    "research_surface": "theory_lineage_registry.json",
+    "meta_registry": "meta_theory_registry.json",
+    "subsumption_map": "theory_subsumption_map.json",
+    "belief_state": "theory_belief_state.json",
+    "meta_science": "meta_science_registry.json",
+    "reality_divergence": "reality_divergence_ledger.jsonl"
+  },
+  "promotion_tracks": {
+    "WORLDVIEW_PROMOTION": {
+      "eligible_statuses": [
+        "CANONICAL_CANDIDATE",
+        "PROVISIONAL_META_THEORY"
+      ],
+      "allowed_transitions": [
+        "PROVISIONAL_META_THEORY -> CANONICAL_CANDIDATE",
+        "CANONICAL_CANDIDATE -> CANONICAL_ACTIVE"
+      ]
+    },
+    "CANONICAL_MAINTENANCE": {
+      "eligible_review_outcomes": [
+        "DUPLICATE_COLLAPSE_RECOMMENDED"
+      ],
+      "allowed_actions": [
+        "CANONICAL_ALIAS_CREATE",
+        "CANONICAL_ALIAS_ACTIVATE",
+        "DEPRECATE_DUPLICATE"
+      ]
+    }
+  },
+  "hard_firebreaks": {
+    "forbidden_if_any_true": [
+      { "condition": "pioneer_involved", "reason": "PIONEER theories cannot be canonical." },
+      { "condition": "lineage_integrity_failed", "reason": "Lineage custody must be intact." },
+      { "condition": "subsumption_missing_for_synthesis", "reason": "Meta-theory must have explicit subsumption map." },
+      { "condition": "reality_divergence_quarantine_active", "reason": "No canonical changes during divergence quarantine." }
+    ]
+  },
+  "review_gates": {
+    "gate_A_integrity": {
+      "requires": [
+        "lineage_integrity",
+        "evidence_tier_compliance",
+        "attestation_chain_intact"
+      ]
+    },
+    "gate_B_cross_support": {
+      "min_supporting_edges": 4,
+      "min_distinct_families": 2
+    },
+    "gate_C_stability": {
+      "min_age_hours": 6,
+      "min_revision_events": 3,
+      "max_recent_confidence_volatility": 0.20
+    },
+    "gate_D_pluralism": {
+      "requires_competitor_or_disambiguation": true,
+      "allow_if_competitor_confidence_below": 0.25
+    },
+    "gate_E_institutional_health": {
+      "min_experiment_efficiency": 0.50,
+      "min_average_information_gain": 0.10,
+      "max_theory_fragmentation": 0.30
+    }
+  },
+  "decision_thresholds": {
+    "promote_to_canonical_candidate": 0.70,
+    "promote_to_canonical_active": 0.85,
+    "defer_for_more_evidence": 0.50
+  },
+  "attestation_requirements": {
+    "canonical_active_requires": [
+      "PROMOTION_AUTHORIZED",
+      "ARCHITECT_AUTHORITY"
+    ],
+    "canonical_candidate_allows": [
+      "SYSTEM_SIGNED"
+    ],
+    "maintenance_actions_allow": [
+      "SYSTEM_SIGNED"
+    ]
+  },
+  "cooldowns": {
+    "min_hours_between_canonical_active_changes": 24,
+    "min_hours_between_candidate_promotions": 6
+  },
+  "outputs": {
+    "canonical_registry": "canonical_theory_registry.json",
+    "canonical_transition_ledger": "canonical_transition_ledger.jsonl",
+    "canonical_review_receipt": "canonical_review_receipt.json",
+    "canonical_alias_map": "canonical_alias_map.json"
+  },
+  "last_updated": "2026-03-15T00:00:00Z"
+}

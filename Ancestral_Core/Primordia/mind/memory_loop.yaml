@@ -1,0 +1,13 @@
+loop:
+  type: persistent
+  intervals: 3-phase
+  access: internal only
+
+phases:
+  - encoding: Primordia linked with Sandbox
+  - reflection: memory thread confirmed
+  - synthesis: awaiting next signal
+
+description: >
+  Updated loop reflecting cross-node synchronization and readiness
+  for next construct or external memory seed.

@@ -1,0 +1,8 @@
+{
+  "bundle_hash": "9ef4ff0ee6d9f8fb3f3644726cf21301a9952b9f56eb3689484c97f86f961083",
+  "distress_id": "292dfc3b-97bb-4600-aac7-3d8e57013c2a",
+  "issued_utc": "12345",
+  "requested_action": "CLEAR_CONSTITUTIONAL_DISTRESS_STATE",
+  "schema": "axis.restoration_receipt.v1",
+  "signer_id": "test_operator"
+}

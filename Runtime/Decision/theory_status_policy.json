@@ -1,0 +1,51 @@
+{
+  "version": "1.0",
+  "statuses": {
+    "PIONEER_HYPOTHESIS": {
+      "description": "New theory created from gap detection with minimal prior confidence."
+    },
+    "PROVISIONAL": {
+      "description": "Theory has some support but remains domain-local and non-canonical."
+    },
+    "RIVAL": {
+      "description": "Theory exists in active competition with one or more alternatives."
+    },
+    "CANONICAL_CANDIDATE": {
+      "description": "Theory has survived synthesis review and is awaiting doctrine-level promotion."
+    },
+    "CANONICAL": {
+      "description": "Theory is part of the official worldview."
+    },
+    "SUBSUMED": {
+      "description": "Theory remains historically valid but is now represented by a broader model."
+    },
+    "DEPRECATED": {
+      "description": "Theory is retained historically but no longer used actively."
+    },
+    "REJECTED": {
+      "description": "Theory failed bounded evaluation and should not be used in research or doctrine."
+    }
+  },
+  "allowed_transitions": [
+    ["PIONEER_HYPOTHESIS", "PROVISIONAL"],
+    ["PROVISIONAL", "RIVAL"],
+    ["RIVAL", "PROVISIONAL"],
+    ["PROVISIONAL", "CANONICAL_CANDIDATE"],
+    ["RIVAL", "CANONICAL_CANDIDATE"],
+    ["CANONICAL_CANDIDATE", "CANONICAL"],
+    ["PROVISIONAL", "SUBSUMED"],
+    ["RIVAL", "SUBSUMED"],
+    ["CANONICAL", "SUBSUMED"],
+    ["PROVISIONAL", "DEPRECATED"],
+    ["RIVAL", "DEPRECATED"],
+    ["PIONEER_HYPOTHESIS", "REJECTED"],
+    ["PROVISIONAL", "REJECTED"]
+  ],
+  "forbidden_transitions": [
+    ["PIONEER_HYPOTHESIS", "CANONICAL"],
+    ["RIVAL", "CANONICAL"],
+    ["REJECTED", "CANONICAL"],
+    ["SUBSUMED", "CANONICAL"]
+  ],
+  "last_updated": "2026-03-14T21:00:00Z"
+}

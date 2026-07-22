@@ -1,0 +1,19 @@
+{
+  "experiment_id": "EXP_015_REAL",
+  "target_artifact": "observations/obs_e95bb31b.json",
+  "correction_id": "corr_obs_e95bb31b",
+  "timestamp": "2026-07-11T18:25:00Z",
+  "reason": "Operator input error during manual schema completion. The observed metrics (9 views, 0 engagement) cannot support the 'CONTRADICTS' conclusion, as the evidence is merely absent, not contradictory.",
+  "corrections": [
+    {
+      "field": "hypothesis_result",
+      "stored_value": "CONTRADICTS",
+      "intended_value": "INCONCLUSIVE"
+    },
+    {
+      "field": "next_smallest_experiment",
+      "stored_value": "3",
+      "intended_value": "Wait another 72 hours"
+    }
+  ]
+}

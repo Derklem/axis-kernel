@@ -1,0 +1,45 @@
+﻿{
+    "version":  1,
+    "last_update":  "2026-01-12T09:46:36Z",
+    "nodes":  [
+                  {
+                      "ip":  "192.168.1.6",
+                      "label":  "UNKNOWN_192-168-1-6",
+                      "role":  "unknown",
+                      "trust":  "unclassified",
+                      "first_seen":  "2026-01-11T20:01:33Z",
+                      "notes":  "Detected during Initial Sovereign Constellation Shift.",
+                      "concern":  "none",
+                      "missing_since":  null,
+                      "status":  "online",
+                      "last_seen":  "2026-01-12T09:46:36Z",
+                      "concern_override":  null
+                  },
+                  {
+                      "ip":  "192.168.1.7",
+                      "label":  "UNKNOWN_192-168-1-7",
+                      "role":  "unknown",
+                      "trust":  "unclassified",
+                      "first_seen":  "2026-01-11T20:01:33Z",
+                      "notes":  "Detected during Initial Sovereign Constellation Shift.",
+                      "concern":  "none",
+                      "missing_since":  null,
+                      "status":  "online",
+                      "last_seen":  "2026-01-12T09:46:36Z",
+                      "concern_override":  null
+                  },
+                  {
+                      "ip":  "192.168.1.11",
+                      "label":  "UNKNOWN_192-168-1-11",
+                      "role":  "unknown",
+                      "trust":  "unclassified",
+                      "first_seen":  "2026-01-11T20:01:33Z",
+                      "notes":  "Detected during Initial Sovereign Constellation Shift.",
+                      "concern":  "none",
+                      "missing_since":  null,
+                      "status":  "online",
+                      "last_seen":  "2026-01-12T09:46:36Z",
+                      "concern_override":  null
+                  }
+              ]
+}

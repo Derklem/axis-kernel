@@ -1,0 +1,170 @@
+{
+    "timestamp_utc": "2026-07-22T00:20:43.595934+00:00Z",
+    "epistemic_state": {
+        "group_distributions": {
+            "G1": {
+                "total_active": 3,
+                "sum_confidence": 0.9999,
+                "theories": [
+                    {
+                        "id": "T1",
+                        "conf": 0.3333,
+                        "drift": 0.0
+                    },
+                    {
+                        "id": "T1A",
+                        "conf": 0.3333,
+                        "drift": 0.0
+                    },
+                    {
+                        "id": "T1U",
+                        "conf": 0.3333,
+                        "drift": 0.0
+                    }
+                ]
+            },
+            "G2": {
+                "total_active": 3,
+                "sum_confidence": 0.9999,
+                "theories": [
+                    {
+                        "id": "T2",
+                        "conf": 0.3333,
+                        "drift": 0.0
+                    },
+                    {
+                        "id": "T2A",
+                        "conf": 0.3333,
+                        "drift": 0.0
+                    },
+                    {
+                        "id": "T2U",
+                        "conf": 0.3333,
+                        "drift": 0.0
+                    }
+                ]
+            },
+            "G3": {
+                "total_active": 3,
+                "sum_confidence": 0.9999,
+                "theories": [
+                    {
+                        "id": "T3",
+                        "conf": 0.3333,
+                        "drift": 0.0
+                    },
+                    {
+                        "id": "T3A",
+                        "conf": 0.3333,
+                        "drift": 0.0
+                    },
+                    {
+                        "id": "T3U",
+                        "conf": 0.3333,
+                        "drift": 0.0
+                    }
+                ]
+            },
+            "G4": {
+                "total_active": 3,
+                "sum_confidence": 1.0001,
+                "theories": [
+                    {
+                        "id": "T4",
+                        "conf": 0.7987,
+                        "drift": 0.4654
+                    },
+                    {
+                        "id": "T4A",
+                        "conf": 0.1007,
+                        "drift": -0.2326
+                    },
+                    {
+                        "id": "T4U",
+                        "conf": 0.1007,
+                        "drift": -0.2326
+                    }
+                ]
+            }
+        },
+        "retired_theories": [],
+        "birth_required_groups": []
+    },
+    "authority_state": {
+        "source_trust_scores": {
+            "live log": 0.9,
+            "operator": 0.9,
+            "validator": 1.0,
+            "calibration engine": 1.0,
+            "external_intake_gateway": 1.0
+        },
+        "total_submissions": 9,
+        "rejected_count": 6,
+        "rejection_rate": 0.6667,
+        "rejection_reasons_by_source": {
+            "hacker": {
+                "Unregistered resolution source: hacker": 1
+            },
+            "operator": {
+                "Source lacks can_resolve authority: operator": 1,
+                "Derived evidence cannot be used as a confirming source.": 1
+            },
+            "validator": {
+                "prediction_id not found in ledger: PRED-UNKNOWN": 1,
+                "Prediction PRED-C6DA6D27 is already resolved.": 1
+            },
+            "live log": {
+                "Derived evidence cannot be used as a confirming source.": 1
+            }
+        }
+    },
+    "operational_state": {
+        "active_overrides": [
+            {
+                "id": "T4",
+                "reason": "Unknown"
+            }
+        ]
+    },
+    "forecasting_state": {
+        "open_predictions_by_theory": {},
+        "total_open_predictions": 0,
+        "total_resolved": 12,
+        "successful_resolutions": 7,
+        "failed_resolutions": 5,
+        "calibration_state": {
+            "T4": {
+                "calibration_id": "CAL-F2A563BF",
+                "theory_id": "T4",
+                "resolved_predictions": 6,
+                "successful_predictions": 6,
+                "forecast_accuracy": 1.0,
+                "calibration_state": "CALIBRATED",
+                "stable_runs": 1,
+                "adjustment_emitted": true,
+                "timestamp_utc": "2026-06-15T18:37:22.570485+00:00Z"
+            },
+            "T2": {
+                "calibration_id": "CAL-96D0B85A",
+                "theory_id": "T2",
+                "resolved_predictions": 6,
+                "successful_predictions": 1,
+                "forecast_accuracy": 0.1667,
+                "calibration_state": "DEGRADED",
+                "stable_runs": 1,
+                "adjustment_emitted": true,
+                "timestamp_utc": "2026-06-15T18:37:22.610191+00:00Z"
+            }
+        }
+    },
+    "integrity_state": {
+        "normalization_passed": true,
+        "normalization_errors": [],
+        "malformed_ledger_rows": 0,
+        "market_stagnation_warning": true,
+        "total_primary_weight": 3.0,
+        "total_derived_weight": 2.0,
+        "loop_capture_watch": true,
+        "loop_capture_risk": true
+    }
+}

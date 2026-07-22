@@ -1,0 +1,23 @@
+{
+    "id":  "draft_66c0837c",
+    "experiment_id":  "EXP_018_DISCORD",
+    "platform":  "Discord",
+    "target": {
+        "guild_id": "1199488022593421412",
+        "channel_id": "1199488022593421415",
+        "channel_name": "general"
+    },
+    "intent":  "Test a highly tactical, direct offer in a developer/tech Discord channel.",
+    "evidence_links":  [
+                           "D:\\Mind\\Laboratory\\OPERATION_ZERO.md"
+                       ],
+    "content":  "Yo. If anyone is stuck on building local AI automations (especially PowerShell/Python bridges, state management, or agent loops), I\u0027ve been doing this non-stop and have some hardened templates. Let me know what you\u0027re building and I\u0027ll drop some feedback or point you to a pattern that works.",
+    "risk_assessment":  {
+                            "color":  "GREEN",
+                            "reasoning":  "Casual, helpful, fits Discord developer culture perfectly.",
+                            "evidence_freshness":  "High",
+                            "known_assumptions":  0
+                        },
+    "status":  "approved",
+    "created_at":  "2026-07-09T21:29:24.705331+00:00"
+}

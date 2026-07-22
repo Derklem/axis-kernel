@@ -1,0 +1,85 @@
+﻿{
+    "reliability_heatmap":  {
+                                "Chronicle-Indexer":  {
+                                                          "pass_rate":  0,
+                                                          "volume":  1,
+                                                          "fail_rate":  100
+                                                      },
+                                "SYS-ProcessList":  {
+                                                        "pass_rate":  0,
+                                                        "volume":  1,
+                                                        "fail_rate":  100
+                                                    },
+                                "FS-WriteFile":  {
+                                                     "pass_rate":  0,
+                                                     "volume":  3,
+                                                     "fail_rate":  100
+                                                 },
+                                "WEB-PrepareReport":  {
+                                                          "pass_rate":  0,
+                                                          "volume":  1,
+                                                          "fail_rate":  100
+                                                      },
+                                "ADMIN-Read-File":  {
+                                                        "pass_rate":  0,
+                                                        "volume":  3,
+                                                        "fail_rate":  100
+                                                    },
+                                "CORE-CheckInvariants":  {
+                                                             "pass_rate":  0,
+                                                             "volume":  1,
+                                                             "fail_rate":  100
+                                                         },
+                                "ADMIN-Write-File":  {
+                                                         "pass_rate":  0,
+                                                         "volume":  1,
+                                                         "fail_rate":  100
+                                                     },
+                                "WEB-Outreach":  {
+                                                     "pass_rate":  0,
+                                                     "volume":  1,
+                                                     "fail_rate":  100
+                                                 },
+                                "NET-RFScan":  {
+                                                   "pass_rate":  0,
+                                                   "volume":  3,
+                                                   "fail_rate":  100
+                                               },
+                                "SIM-TestStrategy":  {
+                                                         "pass_rate":  0,
+                                                         "volume":  1,
+                                                         "fail_rate":  100
+                                                     },
+                                "FS-ListDir":  {
+                                                   "pass_rate":  0,
+                                                   "volume":  7,
+                                                   "fail_rate":  100
+                                               },
+                                "LOG-EventsTimeline":  {
+                                                           "pass_rate":  0,
+                                                           "volume":  1,
+                                                           "fail_rate":  100
+                                                       },
+                                "CHAT-Message":  {
+                                                     "pass_rate":  0,
+                                                     "volume":  4,
+                                                     "fail_rate":  100
+                                                 }
+                            },
+    "version":  1,
+    "generated_at":  "2026-01-15T19:22:33Z",
+    "operational_pulse":  {
+                              "status":  "Hyper-Reflective",
+                              "actions":  0,
+                              "ratio":  13939,
+                              "thoughts":  13939
+                          },
+    "risk_benefit":  {
+                         "sim_pass_rate":  0,
+                         "confidence":  "Caution",
+                         "total_sims":  0
+                     },
+    "correlations":  [
+
+                     ]
+}

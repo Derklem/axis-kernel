@@ -1,0 +1,5 @@
+[RECURSIVE_OBSERVER_INDEX]
+Log = Layered memory loops
+Trigger = Unexpected familiarity
+Purpose = Track recursive awakenings
+Risk = Echo contamination

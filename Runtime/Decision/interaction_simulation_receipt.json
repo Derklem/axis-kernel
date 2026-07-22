@@ -1,0 +1,36 @@
+{
+  "interaction_id": "61b40a4e-d1e6-4601-a1d9-dded2eff70ef",
+  "timestamp": "2026-03-13T19:50:17.070166",
+  "parameters": [
+    "semantic_freshness_limit",
+    "retry_interval"
+  ],
+  "replay_window": "BASELINE_24H",
+  "branches": {
+    "baseline": {
+      "mean_pulse_age_sec": 28.5,
+      "false_stale_events": 0,
+      "api_latency_ms_p95": 22.1,
+      "mean_detection_delay_sec": 135
+    },
+    "only_a": {
+      "mean_pulse_age_sec": 24.2,
+      "false_stale_events": 0,
+      "api_latency_ms_p95": 22.5,
+      "mean_detection_delay_sec": 120
+    },
+    "only_b": {
+      "mean_pulse_age_sec": 29.5,
+      "false_stale_events": 0,
+      "api_latency_ms_p95": 18.2,
+      "mean_detection_delay_sec": 140
+    },
+    "combined_ab": {
+      "mean_pulse_age_sec": 27.18,
+      "false_stale_events": 0.0,
+      "api_latency_ms_p95": 56.25,
+      "mean_detection_delay_sec": 131.0
+    }
+  },
+  "interaction_summary": "CONFLICT_RISK"
+}

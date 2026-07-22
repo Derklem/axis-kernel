@@ -1,0 +1,22 @@
+{
+  "hypothesis": "Test observation extraction loop",
+  "procedure": "Emit an evaluation artifact",
+  "expected_artifacts": [
+    "evaluation.json"
+  ],
+  "adapter": {
+    "type": "subprocess",
+    "command": [
+      "python",
+      "emit.py"
+    ]
+  },
+  "evaluation_criteria": {
+    "deterministic_checks": [
+      {
+        "name": "exit_code_equals",
+        "expected_exit_code": 0
+      }
+    ]
+  }
+}

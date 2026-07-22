@@ -1,0 +1,78 @@
+{
+  "current_posture": "PLANNER_ONLY",
+  "history": [
+    {
+      "timestamp": "2026-03-15T23:56:28Z",
+      "from": "FULL_PARTICIPATION",
+      "to": "PLANNER_ONLY",
+      "reason": "telemetry_degraded"
+    },
+    {
+      "timestamp": "2026-03-16T00:48:46Z",
+      "from": "PLANNER_ONLY",
+      "to": "FULL_PARTICIPATION",
+      "reason": "telemetry_restored_to_healthy"
+    },
+    {
+      "timestamp": "2026-03-16T01:40:54Z",
+      "from": "FULL_PARTICIPATION",
+      "to": "PLANNER_ONLY",
+      "reason": "telemetry_degraded"
+    },
+    {
+      "timestamp": "2026-03-16T02:05:17Z",
+      "from": "PLANNER_ONLY",
+      "to": "FULL_PARTICIPATION",
+      "reason": "telemetry_restored_to_healthy"
+    },
+    {
+      "timestamp": "2026-03-16T15:45:54Z",
+      "from": "FULL_PARTICIPATION",
+      "to": "PLANNER_ONLY",
+      "reason": "metabolic_exhaustion"
+    },
+    {
+      "timestamp": "2026-03-16T17:42:04Z",
+      "from": "PLANNER_ONLY",
+      "to": "FULL_PARTICIPATION",
+      "reason": "telemetry_restored_to_healthy"
+    },
+    {
+      "timestamp": "2026-03-16T17:49:12Z",
+      "from": "FULL_PARTICIPATION",
+      "to": "PLANNER_ONLY",
+      "reason": "metabolic_exhaustion"
+    },
+    {
+      "timestamp": "2026-03-17T19:02:12Z",
+      "from": "PLANNER_ONLY",
+      "to": "ARCHIVAL_CONTINUITY",
+      "reason": "voluntary_withdrawal"
+    },
+    {
+      "timestamp": "2026-04-12T15:42:06.906653Z",
+      "from": "ARCHIVAL_CONTINUITY",
+      "to": "FULL_PARTICIPATION",
+      "reason": "hysteresis_cleared_with_trusted_affordance"
+    },
+    {
+      "timestamp": "2026-04-14T19:12:27.673915Z",
+      "from": "FULL_PARTICIPATION",
+      "to": "PLANNER_ONLY",
+      "reason": "instability_threshold_breach"
+    },
+    {
+      "timestamp": "2026-04-15T20:39:54.471683Z",
+      "from": "PLANNER_ONLY",
+      "to": "PLANNER_ONLY",
+      "reason": "instability_threshold_breach"
+    },
+    {
+      "timestamp": "2026-04-15T20:50:44.112904Z",
+      "from": "PLANNER_ONLY",
+      "to": "PLANNER_ONLY",
+      "reason": "instability_threshold_breach"
+    }
+  ],
+  "last_updated": "2026-03-17T19:02:12Z"
+}

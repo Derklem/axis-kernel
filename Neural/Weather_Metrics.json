@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "metric_id": "METRIC-WEATHER-001",
+    "last_updated_utc": null,
+    "location": "UNKNOWN",
+    "current_temp_c": null,
+    "current_condition": null,
+    "current_humidity": null,
+    "current_wind_kph": null,
+    "current_precip_mm": null,
+    "status": "unknown",
+    "alerts": [],
+    "history": []
+}

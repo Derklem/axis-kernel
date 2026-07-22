@@ -1,0 +1,22 @@
+{
+    "timestamp_utc": "2026-06-03T03:00:22Z",
+    "granted_count": 1,
+    "admissions": [
+        {
+            "id": "chat-1780455621850",
+            "content": "Entity: USER\nClaim: Does this pass?",
+            "status": "PENDING",
+            "received_utc": "2026-06-03T03:00:21Z",
+            "bridged_utc": "2026-06-03T03:00:21Z",
+            "source_file": "test_pass.json",
+            "bridge_target": "Witness_Admission_Queue.jsonl",
+            "classification": "novel_claim",
+            "source": "USER",
+            "rationale": "test pass",
+            "operator_ack": true,
+            "epistemic_cost_ack": true,
+            "admission_record_id": "grant-1780455622816",
+            "admission_utc": "2026-06-03T03:00:22Z"
+        }
+    ]
+}

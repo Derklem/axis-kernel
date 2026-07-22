@@ -1,0 +1,83 @@
+﻿{
+    "version":  1,
+    "tasks":  [
+                  {
+                      "id":  "TASK-CODER-20260125-131917-EWN5",
+                      "created_at":  "2026-01-25T21:19:17.1140727Z",
+                      "status":  "pending",
+                      "priority":  "medium",
+                      "source":  "AGENT-CODER-001",
+                      "basis":  {
+                                    "from_audit":  null,
+                                    "from_proposal":  "PROP-REFLECT-20260124185602-7173",
+                                    "from_lab":  null
+                                },
+                      "target":  {
+                                     "path":  "DOC-AUTH-001",
+                                     "hint":  "Address treaty_harmonization: Treaty Dissonance detected. Rule IDs must be synchronized across federated nodes.",
+                                     "kind":  "config"
+                                 },
+                      "suggestion":  {
+                                         "summary":  "Address treaty_harmonization: Treaty Dissonance detected. Rule IDs must be synchronized across federated nodes.",
+                                         "category":  "refactor",
+                                         "notes":  "Linked to pending_proposal Basis ID: PROP-REFLECT-20260124185602-7173."
+                                     },
+                      "tags":  [
+                                   "coder",
+                                   "patch_planning"
+                               ]
+                  },
+                  {
+                      "id":  "TASK-CODER-20260125-131917-EZKH",
+                      "created_at":  "2026-01-25T21:19:17.1416757Z",
+                      "status":  "pending",
+                      "priority":  "high",
+                      "source":  "AGENT-CODER-001",
+                      "basis":  {
+                                    "from_audit":  null,
+                                    "from_proposal":  "PROP-REFLECT-20260124185602-8303",
+                                    "from_lab":  null
+                                },
+                      "target":  {
+                                     "path":  "BAND-system",
+                                     "hint":  "Address doctrine_pruning: Persistent high risk in \u0027system\u0027 sector. Recommend pruning complexity or restrictive amendment.",
+                                     "kind":  "config"
+                                 },
+                      "suggestion":  {
+                                         "summary":  "Address doctrine_pruning: Persistent high risk in \u0027system\u0027 sector. Recommend pruning complexity or restrictive amendment.",
+                                         "category":  "refactor",
+                                         "notes":  "Linked to pending_proposal Basis ID: PROP-REFLECT-20260124185602-8303."
+                                     },
+                      "tags":  [
+                                   "coder",
+                                   "patch_planning"
+                               ]
+                  },
+                  {
+                      "id":  "TASK-CODER-20260125-131917-ISRE",
+                      "created_at":  "2026-01-25T21:19:17.1416757Z",
+                      "status":  "pending",
+                      "priority":  "medium",
+                      "source":  "AGENT-CODER-001",
+                      "basis":  {
+                                    "from_audit":  null,
+                                    "from_proposal":  null,
+                                    "from_lab":  "EXP-LAB-AUDITOR-001"
+                                },
+                      "target":  {
+                                     "path":  "D:\\Infinite\\Infinity\\Sovereign_Lab_Experiments.json",
+                                     "hint":  "Fix flaky/failed experiment: EXP-LAB-AUDITOR-001 (Error: Cannot process argument transformation on parameter \u0027Config\u0027. Cannot convert value \"@{reports_path=D:\\Infinite\\Infinity\\Neural_Reports; intel_index_path=D:\\Infinite\\Infinity\\Neural_Intel_Index.json; lab_results_path=D:\\Infinite\\Infinity\\Logs\\Lab_Results.jsonl; human_decisions_path=D:\\Infinite\\Infinity\\Logs\\Human_Decision_Log.jsonl; treaty_ledger_path=D:\\Infinite\\Infinity\\Governance\\Treaty_Ledger.json; shadow_risk_path=D:\\Infinite\\Infinity\\Shadow\\Shadow_Risk_Index.json; incident_metrics_path=D:\\Infinite\\Infinity\\Incident_Metrics.json; governance_history_path=D:\\Infinite\\Infinity\\Governance_History.json; proposal_registry_path=D:\\Infinite\\Infinity\\Governance\\Neural_Proposals.json}\" to type \"System.Collections.Hashtable\". Error: \"Cannot convert the \"@{reports_path=D:\\Infinite\\Infinity\\Neural_Reports; intel_index_path=D:\\Infinite\\Infinity\\Neural_Intel_Index.json; lab_results_path=D:\\Infinite\\Infinity\\Logs\\Lab_Results.jsonl; human_decisions_path=D:\\Infinite\\Infinity\\Logs\\Human_Decision_Log.jsonl; treaty_ledger_path=D:\\Infinite\\Infinity\\Governance\\Treaty_Ledger.json; shadow_risk_path=D:\\Infinite\\Infinity\\Shadow\\Shadow_Risk_Index.json; incident_metrics_path=D:\\Infinite\\Infinity\\Incident_Metrics.json; governance_history_path=D:\\Infinite\\Infinity\\Governance_History.json; proposal_registry_path=D:\\Infinite\\Infinity\\Governance\\Neural_Proposals.json}\" value of type \"System.Management.Automation.PSCustomObject\" to type \"System.Collections.Hashtable\".\")",
+                                     "kind":  "lab"
+                                 },
+                      "suggestion":  {
+                                         "summary":  "Fix flaky/failed experiment: EXP-LAB-AUDITOR-001 (Error: Cannot process argument transformation on parameter \u0027Config\u0027. Cannot convert value \"@{reports_path=D:\\Infinite\\Infinity\\Neural_Reports; intel_index_path=D:\\Infinite\\Infinity\\Neural_Intel_Index.json; lab_results_path=D:\\Infinite\\Infinity\\Logs\\Lab_Results.jsonl; human_decisions_path=D:\\Infinite\\Infinity\\Logs\\Human_Decision_Log.jsonl; treaty_ledger_path=D:\\Infinite\\Infinity\\Governance\\Treaty_Ledger.json; shadow_risk_path=D:\\Infinite\\Infinity\\Shadow\\Shadow_Risk_Index.json; incident_metrics_path=D:\\Infinite\\Infinity\\Incident_Metrics.json; governance_history_path=D:\\Infinite\\Infinity\\Governance_History.json; proposal_registry_path=D:\\Infinite\\Infinity\\Governance\\Neural_Proposals.json}\" to type \"System.Collections.Hashtable\". Error: \"Cannot convert the \"@{reports_path=D:\\Infinite\\Infinity\\Neural_Reports; intel_index_path=D:\\Infinite\\Infinity\\Neural_Intel_Index.json; lab_results_path=D:\\Infinite\\Infinity\\Logs\\Lab_Results.jsonl; human_decisions_path=D:\\Infinite\\Infinity\\Logs\\Human_Decision_Log.jsonl; treaty_ledger_path=D:\\Infinite\\Infinity\\Governance\\Treaty_Ledger.json; shadow_risk_path=D:\\Infinite\\Infinity\\Shadow\\Shadow_Risk_Index.json; incident_metrics_path=D:\\Infinite\\Infinity\\Incident_Metrics.json; governance_history_path=D:\\Infinite\\Infinity\\Governance_History.json; proposal_registry_path=D:\\Infinite\\Infinity\\Governance\\Neural_Proposals.json}\" value of type \"System.Management.Automation.PSCustomObject\" to type \"System.Collections.Hashtable\".\")",
+                                         "category":  "fix",
+                                         "notes":  "Linked to lab_failure Basis ID: EXP-LAB-AUDITOR-001."
+                                     },
+                      "tags":  [
+                                   "coder",
+                                   "patch_planning"
+                               ]
+                  }
+              ]
+}

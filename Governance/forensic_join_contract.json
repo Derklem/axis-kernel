@@ -1,0 +1,51 @@
+{
+    "contract": "axis.forensics.join.v1",
+    "description": "Defines the required relationships between Runtime, Audit, and Spend ledgers for forensic coherence.",
+    "keys": {
+        "primary": [
+            {
+                "name": "corr_id",
+                "description": "Global correlation ID for the user interaction/trace."
+            },
+            {
+                "name": "intent_id",
+                "description": "Unique ID of the intent envelope (proposal)."
+            },
+            {
+                "name": "spend_txn_id",
+                "description": "Unique ID of the economic resource reservation."
+            },
+            {
+                "name": "audit_event_id",
+                "description": "Unique ID of the authorization decision."
+            }
+        ]
+    },
+    "relationships": {
+        "spend_to_audit": {
+            "source": "spend_ledger.jsonl",
+            "target": "audit_trail.jsonl",
+            "requirement": "Every terminal spend event (COMMIT, ROLLBACK, EXPIRE) MUST include a valid 'audit_event_id' that exists in the audit trail.",
+            "exception": "RESERVE events may have null or 'PENDING' audit_event_id."
+        },
+        "audit_to_spend": {
+            "source": "audit_trail.jsonl",
+            "target": "spend_ledger.jsonl",
+            "requirement": "Audit events related to resource-gated operations SHOULD include 'spend_txn_id' in the 'detail' object.",
+            "allow_missing": true
+        },
+        "identity_consistency": {
+            "description": "The 'identity' and 'op_key' fields MUST match across all linked events (Spend, Audit, Decision) for a given transaction."
+        }
+    },
+    "invariants": [
+        {
+            "code": "INV_TWO_PHASE_CLOSURE",
+            "description": "Every RESERVE must have exactly one terminal event (COMMIT, ROLLBACK, or EXPIRE)."
+        },
+        {
+            "code": "INV_AUTHORITATIVE_LINK",
+            "description": "The audit_event_id in a spend terminal event must match the authoritative ID of the decision."
+        }
+    ]
+}

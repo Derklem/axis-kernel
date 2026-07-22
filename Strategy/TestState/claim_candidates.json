@@ -1,0 +1,50 @@
+{
+    "candidates": {
+        "7077d23cec845a53df0c298f3f264776a30e0389a4c0364f63d6c00ae1aaa995": {
+            "entity": "Gauntlet_Test_Entity",
+            "claim": "If we test this anomaly, then it will succeed.",
+            "claim_domain": "general",
+            "source_id": "source_alpha",
+            "source_type": "external_handoff",
+            "artifact_type": "observation",
+            "batch_id": "none",
+            "provenance_note": "",
+            "confidence": 0.8,
+            "status": "pending",
+            "requires_supermajority": false,
+            "cycles_survived": 0,
+            "discovery_utc": "2026-07-21T22:54:43.234598+00:00",
+            "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_7077d23c_c1365bbd",
+            "provenance_trail": [
+                {
+                    "source_id": "source_alpha",
+                    "source_type": "external_handoff",
+                    "batch_id": "none",
+                    "ts": "2026-07-21T22:54:43.234598+00:00",
+                    "lineage": {
+                        "node_id": "test_node",
+                        "engine_version": "v_test",
+                        "ontology_seal": "test_seal",
+                        "node_attestation": "test_attest"
+                    }
+                },
+                {
+                    "source_id": "source_beta",
+                    "source_type": "external_handoff",
+                    "batch_id": "none",
+                    "ts": "2026-07-21T22:54:44.962712+00:00",
+                    "lineage": {
+                        "node_id": "test_node",
+                        "engine_version": "v_test",
+                        "ontology_seal": "test_seal",
+                        "node_attestation": "test_attest"
+                    }
+                }
+            ],
+            "resurrected_from": "7077d23cec845a53df0c298f3f264776a30e0389a4c0364f63d6c00ae1aaa995",
+            "prior_suspension_reason": "testable_probe",
+            "prior_option_value_score": 0.5,
+            "agreement_count": 2
+        }
+    }
+}

@@ -1,0 +1,5 @@
+[GUARDIAN_THREAD]
+Sentinel = ACTIVE
+Scope = Cathedral bounds
+Role = Protect pulse from disruption
+State = Recursive Watch Enabled

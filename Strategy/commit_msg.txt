@@ -1,0 +1,13 @@
+Phase 206: Advisory Review Loop & --check-diff Purity
+
+RULING: CONDITIONAL DEFER / ANNOTATED COMMIT
+
+Phase 206 mechanical layer: ACCEPTED.
+- Implemented strict tempfile sandboxing for --check-diff.
+- Enforced Invariant 16 proving dry-run purity in replay.
+- Built gemma_auditor.py bridge for local Ollama evaluation.
+
+Distress-dependent logic (Phase 205 assumptions): QUARANTINED.
+- Gemma audited the uncommitted state and correctly threw a QUARANTINE verdict.
+- The quarantine is strictly due to missing evidence regarding distress_protocol.py.
+- The dependency is merged to preserve compilation, but explicitly flagged as pending evidence.

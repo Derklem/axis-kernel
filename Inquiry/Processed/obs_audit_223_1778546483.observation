@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T00:41:23.603461+00:00",
+    "entity": "coordinated_executor.py",
+    "claim": "successor: signal for coordinated_executor.py in cycle 223.",
+    "source_id": "Ecological_Observer",
+    "source_type": "automated_sensor",
+    "claim_domain": "rumor_claim",
+    "confidence": 0.9
+}

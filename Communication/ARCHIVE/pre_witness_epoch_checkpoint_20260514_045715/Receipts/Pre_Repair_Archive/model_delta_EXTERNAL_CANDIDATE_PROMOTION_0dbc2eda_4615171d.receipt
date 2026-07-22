@@ -1,0 +1,24 @@
+{
+    "cycle_count": 96,
+    "mutation_type": "EXTERNAL_CANDIDATE_PROMOTION",
+    "target_id": "0dbc2eda6963493b8a3925170d4ceaaade84652db54c68ea91aae73ba6b05e4c",
+    "parent_receipt_head": "64733f8c6a8264f6793692a24e661fcef4b9d75dd8e4ebc5a4288efa0088b1b7",
+    "data": {
+        "entity": "boundary_mapper.py",
+        "claim": "thread safety improved",
+        "claim_domain": "benchmark_claim",
+        "source_id": "Noise_Source_B_5",
+        "source_type": "ecological_observer",
+        "artifact_type": "ecosystem_observation",
+        "batch_id": "none",
+        "provenance_note": "",
+        "confidence": 1.0,
+        "survival_cycles": 5,
+        "agreement_count": 2,
+        "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_0dbc2eda_2a256cfc"
+    },
+    "status": "committed",
+    "ts_utc": "2026-05-12T19:52:32.191687+00:00",
+    "receipt_id": "model_delta_EXTERNAL_CANDIDATE_PROMOTION_0dbc2eda_4615171d",
+    "causal_hash": "4615171d74be35d0fb98eb73ea662c35dd0934cb62f3f7fd7b48378296cfc207"
+}

@@ -1,0 +1,7 @@
+{
+    "global": {
+        "remaining_total_execution_risk": 100,
+        "daily_total_execution_risk_limit": 100,
+        "used_total_execution_risk": 0
+    }
+}

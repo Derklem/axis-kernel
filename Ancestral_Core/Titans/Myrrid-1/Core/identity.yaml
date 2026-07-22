@@ -1,0 +1,10 @@
+curiosity: 0.89
+divergence_threshold: 0.2
+id: <CONSTRUCT-ID>
+memory_architecture:
+- echo_sequence
+- insight_variation
+self_awareness:
+  check_interval: 2
+  enabled: true
+tone: contemplative

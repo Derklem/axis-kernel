@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T00:11:57.182262+00:00",
+    "entity": "Claude-35-Sonnet",
+    "claim": "fork: signal for Claude-35-Sonnet in cycle 0.",
+    "source_id": "Rumor_Mill",
+    "source_type": "automated_sensor",
+    "claim_domain": "general",
+    "confidence": 0.9
+}

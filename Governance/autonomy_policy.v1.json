@@ -1,0 +1,40 @@
+{
+    "version": "v1",
+    "policy_name": "Axis Autonomy Policy",
+    "autonomy_classes": {
+        "surface_autonomy": {
+            "allowed": true,
+            "rules": [
+                "may run continuously",
+                "may read telemetry/state/audit reports",
+                "may write only Telescope logs/latest surface JSON",
+                "may not touch Direct_Inquiry, claim_candidates, witness ledger, anchors, state, source files"
+            ]
+        },
+        "governance_autonomy": {
+            "allowed": true,
+            "rules": [
+                "allowed for audit-only scripts",
+                "may run governance_audit.py periodically",
+                "may write Governance/Reports only",
+                "may not route/admit/process inputs automatically"
+            ]
+        },
+        "witness_admission_autonomy": {
+            "allowed": false,
+            "rules": [
+                "admission must remain operator-triggered"
+            ]
+        },
+        "epistemic_metabolism_autonomy": {
+            "allowed": false,
+            "rules": [
+                "no daemon StrategyEngine ticks in v1"
+            ]
+        },
+        "self_modification_autonomy": {
+            "allowed": false,
+            "rules": []
+        }
+    }
+}

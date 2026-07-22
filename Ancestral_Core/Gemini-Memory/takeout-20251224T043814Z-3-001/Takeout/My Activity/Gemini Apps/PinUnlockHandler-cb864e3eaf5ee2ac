@@ -1,0 +1,25 @@
+// app-child/src/main/kotlin/com/timeout/child/PinUnlockHandler.kt
+
+package com.timeout.child
+
+import android.content.Context
+import android.content.Intent
+
+object PinUnlockHandler {
+    fun launch(context: Context, packageName: String, appName: String) {
+        val intent = Intent(context, PinUnlockActivity::class.java).apply {
+            addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            putExtra("blocked_package", packageName)
+            putExtra("blocked_app_name", appName)
+        }
+        context.startActivity(intent)
+    }
+
+    fun getAppName(context: Context, pkg: String): String = try {
+        context.packageManager.getApplicationLabel(
+            context.packageManager.getApplicationInfo(pkg, 0)
+        ).toString()
+    } catch (e: Exception) {
+        pkg
+    }
+}

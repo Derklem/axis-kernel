@@ -1,0 +1,194 @@
+<#
+.SYNOPSIS
+  Module 2.5: Generic Executor (L0/L1 Interop)
+.DESCRIPTION
+  Two-Phase Executor (Trigger -> Fulfill).
+  - Loop 1 (Reap): Checks In-Flight intents against verified L0 Proofs (confirmed_post).
+  - Loop 2 (Process): Approves and Triggers new intents with CorrelationId.
+  - State: Updates decision_state.json with In-Flight and Executed lists.
+.EXAMPLE
+  T08_Executor.ps1 -DryRun
+  T08_Executor.ps1 
+#>
+
+param(
+    [switch]$DryRun,
+    [switch]$Force # Bypass some local checks if needed, but never Review status
+)
+
+# --- Config ---
+$RuntimeDir = "D:\Infinite\Infinity\Runtime\Decision"
+$ModeFile = Join-Path $RuntimeDir "system_mode.json"
+$global:SystemMode = if (Test-Path $ModeFile) { Get-Content $ModeFile | ConvertFrom-Json } else { @{ mode = "OBSERVATION_ONLY" } }
+$ExecutorBuild = if (Test-Path $PSCommandPath) { (Get-Item $PSCommandPath).LastWriteTimeUtc.ToString("yyyyMMdd-HHmmss") } else { "Unknown" }
+$QueueFile = Join-Path $RuntimeDir "intent_queue.jsonl"
+$Approvals = Join-Path $RuntimeDir "approvals.jsonl"
+$StateFile = Join-Path $RuntimeDir "execution_state.json" 
+$DecLog = Join-Path $RuntimeDir "decision_log.jsonl"
+
+# --- Deterministic State Initialization ---
+$Policy = $null
+$id = $null
+
+# --- FIREWALL: NARRATIVE LAYER ---
+# ---------------------------------
+$Client = "D:\Infinite\Axis_Moltbook_Client.ps1"
+
+# --- Auth Sentinel ---
+$AuthModule = "D:\Infinite\Infinity\Truth_Engine\Auth_Guard.psm1"
+if (Test-Path $AuthModule) { Import-Module $AuthModule -Force }
+
+$L0Log = "D:\Infinite\Infinity\Runtime\Moltbook\run_log.jsonl"
+
+# --- Reality Guard ---
+$RealityModule = "D:\Infinite\Infinity\Truth_Engine\Reality_Class.psm1"
+if (Test-Path $RealityModule) { Import-Module $RealityModule -Force }
+
+# --- Immune Kernel ---
+$ImmuneModule = "D:\Infinite\Infinity\Truth_Engine\Immune_Kernel.psm1"
+if (Test-Path $ImmuneModule) { Import-Module $ImmuneModule -Force }
+
+# --- Phase 12: Provenance ---
+$ProvenanceModule = "D:\Infinite\Infinity\Truth_Engine\T12_Provenance.psm1"
+if (Test-Path $ProvenanceModule) { Import-Module $ProvenanceModule -Force }
+
+# --- Phase 13: Prediction ---
+$PredictorModule = "D:\Infinite\Infinity\Truth_Engine\T13_Predictor.psm1"
+if (Test-Path $PredictorModule) { Import-Module $PredictorModule -Force }
+
+# --- Phase 639/640: Normalization & Target ---
+$T19 = Join-Path $RuntimeDir "T19_IntentNormalize.ps1"
+$T20 = Join-Path $RuntimeDir "T20_TargetResolver.ps1"
+if (Test-Path $T19) { . $T19 }
+if (Test-Path $T20) { . $T20 }
+
+# --- Phase 641: Operator Ergonomics (Log Policy) ---
+$LogPolicyHelper = Join-Path $RuntimeDir "T08_DecisionLogPolicy.ps1"
+if (Test-Path $LogPolicyHelper) { . $LogPolicyHelper }
+
+# --- Earth Engine (Hands Library) ---
+$EarthModule = "D:\Infinite\Infinity\Earth\Earth_Adapters.psm1"
+if (Test-Path $EarthModule) { Import-Module $EarthModule -Force }
+
+# --- Helper: Reality Shim ---
+function Ensure-RealityHeader {
+    param($obj, [string]$source)
+    if (-not $obj.reality) {
+        $obj | Add-Member -NotePropertyName "reality" -NotePropertyValue (New-Object -TypeName PSCustomObject) -Force
+    }
+    $newReality = [ordered]@{
+        class         = "L0_OBSERVED"
+        source        = $source
+        confidence    = 1.0
+        evidence_refs = @()
+    }
+    if ($obj.reality.evidence_refs) {
+        if ($obj.reality.evidence_refs -is [string]) { $newReality.evidence_refs += $obj.reality.evidence_refs }
+        else { $newReality.evidence_refs += $obj.reality.evidence_refs }
+    }
+    $newReality.evidence_refs += "local:executor_observed"
+    $newReality.evidence_refs = $newReality.evidence_refs | Select-Object -Unique
+    $obj | Add-Member -NotePropertyName "reality" -NotePropertyValue ([PSCustomObject]$newReality) -Force
+    return $obj
+}
+
+# --- Helpers ---
+function Get-State {
+    if (Test-Path $StateFile) { 
+        $s = (Get-Content $StateFile -Raw | ConvertFrom-Json)
+        if ($s.inflight -is [System.Management.Automation.PSCustomObject]) {
+            $h = @{}
+            foreach ($p in $s.inflight.PSObject.Properties) { $h[$p.Name] = $p.Value }
+            $s.inflight = $h
+        }
+        return $s
+    }
+    return $null
+}
+
+function Save-State($obj) {
+    if ($DryRun) { return }
+    $obj | ConvertTo-Json -Depth 5 | Set-Content $StateFile -Encoding UTF8 -Force
+}
+
+function Append-DecLog($msg, $intentId, $result, $corrId = $null, $extraData = $null) {
+    if ($global:LogPolicyActive) {
+        $mode = if ($global:SystemMode.mode) { $global:SystemMode.mode } else { "OBSERVATION_ONLY" }
+        if (-not (Test-ShouldEmitLog -Mode $mode -ResultCode $result)) {
+            if ($DryRun) { Write-Host "[Suppressed] $result: $msg" -ForegroundColor DarkGray }
+            return
+        }
+    }
+
+    $entry = [ordered]@{
+        ts             = (Get-Date).ToUniversalTime().ToString("o")
+        decision       = "EXECUTE_LOG"
+        intent_id      = $intentId
+        corr_id        = $corrId
+        result         = $result
+        message        = $msg
+        executor_build = $ExecutorBuild
+    }
+    if ($extraData) { foreach ($k in $extraData.Keys) { $entry[$k] = $extraData[$k] } }
+    if ($Policy) {
+        $entry["policy_id"] = $Policy.snapshot_id
+        $entry["policy_mode"] = $Policy.derived.effective_posture
+    }
+    if ($DryRun) { Write-Host "[DryRun] Log: $($entry | ConvertTo-Json -Compress)" -ForegroundColor Gray; return }
+    $entry | ConvertTo-Json -Compress | Add-Content $DecLog -Encoding UTF8
+}
+
+function Get-ApprovalStatus($intentId) {
+    if (-not (Test-Path $Approvals)) { return "unreviewed" }
+    $last = $null
+    foreach ($line in Get-Content $Approvals) {
+        if ([string]::IsNullOrWhiteSpace($line)) { continue }
+        try {
+            $obj = $line | ConvertFrom-Json
+            if ($obj -and $obj.intent_id -eq $intentId) { $last = $obj }
+        } catch { continue }
+    }
+    return if ($last -and $last.decision) { [string]$last.decision } else { "unreviewed" }
+}
+
+function Resolve-SubmoltFromIntentTarget($intent) {
+    if ($intent.target -is [string]) {
+        if ($intent.target -match '^[^:]+:(.+)$') { return $Matches[1] }
+        return $null
+    }
+    try { if ($intent.target.submolt) { return [string]$intent.target.submolt } } catch {}
+    return $null
+}
+
+# --- MAIN ---
+$state = Get-State
+if (-not $state) { Write-Error "No State File"; return }
+if (-not $state.PSObject.Properties.Match("inflight")) { $state | Add-Member -NotePropertyName "inflight" -NotePropertyValue @{} -Force }
+
+# --- PHASE 1: REAP IN-FLIGHT ---
+if ($state.inflight.Count -gt 0) {
+    Write-Host "Checking In-Flight Intents ($($state.inflight.Count))..." -ForegroundColor Cyan
+    if (Test-Path $L0Log) {
+        $l0Logs = @()
+        foreach ($line in (Get-Content $L0Log -Tail 2000)) {
+            try { $obj = $line | ConvertFrom-Json; if ($obj) { $l0Logs += $obj } } catch { continue }
+        }
+        $keys = @($state.inflight.Keys)
+        foreach ($intentId in $keys) {
+            $flight = $state.inflight[$intentId]
+            $corr = $flight.corr_id
+            $sub = if ($flight.submolt) { $flight.submolt } else { "general" }
+            $proof = $l0Logs | Where-Object { $_.corr_id -eq $corr -and ($_.event_type -eq "client_handshake" -or $_.event_type -eq "confirmed_post") } | Select-Object -Last 1
+            if ($proof -and ($proof.ok -eq $true -or $proof.event_type -eq "confirmed_post")) {
+                Write-Host "  -> FULFILLED: $intentId ($corr)" -ForegroundColor Green
+                $state.executed_intents += $intentId
+                $state.inflight.Remove($intentId)
+                Append-DecLog "Fulfilled via Proof" $intentId "FULFILLED" $corr
+            }
+            elseif ($proof -and $proof.ok -eq $false) {
+                Write-Host "  -> FAILED (Handshake): $intentId ($corr)" -ForegroundColor Red
+                $state.failed_intents += $intentId
+                $state.inflight.Remove($intentId)
+                Append-DecLog "Confirmed Failure" $intentId "FAILED" $corr
+            }
+            # ... (Rest of Reap Logic - to be preserved)

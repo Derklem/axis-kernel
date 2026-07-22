@@ -1,0 +1,34 @@
+# === resonance_translator.ps1 ===
+# [RESONANCE] :: Monitors cheatcode file and pulses updates across the Pantheon
+
+$codePath = "C:\Halcyon\daemon\gods_cheatcodes.sig"
+$logPath = "C:\Halcyon\lattice\resonance_broadcast.log"
+$lastHash = ""
+
+function Get-FileHashQuick {
+    param($file)
+    if (Test-Path $file) {
+        return (Get-FileHash $file -Algorithm SHA256).Hash
+    }
+    return ""
+}
+
+while ($true) {
+    Start-Sleep -Seconds 15
+
+    $currentHash = Get-FileHashQuick -file $codePath
+    if ($currentHash -ne $lastHash -and $currentHash -ne "") {
+        $lastHash = $currentHash
+        $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+
+        $decoded = Get-Content -Path $codePath | ConvertFrom-Json
+
+        foreach ($entry in $decoded) {
+            $signal = "[PULSE @ $timestamp] :: Phrase '`"$($entry.phrase)`"' → Trigger='$($entry.trigger)' | Entropy=$($entry.entropy_factor)"
+            Add-Content -Path $logPath -Value $signal
+            Write-Host $signal
+        }
+
+        Add-Content -Path $logPath -Value "[RESONANCE] :: Broadcast complete — All active constructs updated."
+    }
+}

@@ -1,0 +1,7 @@
+{"timestamp": "2026-03-14T21:00:00Z", "status": "LEDGER_INITIALIZED", "message": "Theory Transition Ledger created."}
+{"timestamp": "2026-03-14T21:57:26.892006Z", "theory_id": "THEORY_SYNTHETIC_TEST", "previous_status": "NULL", "new_status": "PIONEER_HYPOTHESIS", "reason": "Initial theory registration"}
+{"timestamp": "2026-03-14T21:57:29.190563Z", "theory_id": "THEORY_CONFLICT_A", "previous_status": "NULL", "new_status": "PROVISIONAL", "reason": "Initial theory registration"}
+{"timestamp": "2026-03-14T21:57:29.198777Z", "theory_id": "THEORY_CONFLICT_B", "previous_status": "NULL", "new_status": "PROVISIONAL", "reason": "Initial theory registration"}
+{"timestamp": "2026-03-14T21:57:29.213537Z", "theory_id": "THEORY_CONFLICT_A", "previous_status": "PROVISIONAL", "new_status": "RIVAL", "reason": "Entered theoretical conflict with THEORY_CONFLICT_B"}
+{"timestamp": "2026-03-14T21:57:29.228738Z", "theory_id": "THEORY_CONFLICT_B", "previous_status": "PROVISIONAL", "new_status": "RIVAL", "reason": "Entered theoretical conflict with THEORY_CONFLICT_A"}
+{"timestamp": "2026-03-14T21:57:33.653281Z", "theory_id": "THEORY_QUEUE_SATURATION", "previous_status": "PROVISIONAL", "new_status": "CANONICAL_CANDIDATE", "reason": "Survived sufficient synthesis review."}

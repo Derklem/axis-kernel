@@ -1,0 +1,79 @@
+﻿{
+    "version":  1,
+    "goals":  [
+                  {
+                      "id":  "GOAL-20260119-095255",
+                      "label":  "Verify Pathfinder",
+                      "created_at":  "2026-01-19T17:52:55.4833069Z",
+                      "priority":  "medium",
+                      "context":  {
+
+                                  },
+                      "status":  "open",
+                      "origin":  "system"
+                  },
+                  {
+                      "constraints":  {
+
+                                      },
+                      "id":  "GOAL-20260119-102725",
+                      "origin":  "system",
+                      "label":  "Symbiotic Verification",
+                      "created_at":  "2026-01-19T18:27:25.4257183Z",
+                      "deadline":  null,
+                      "context":  {
+
+                                  },
+                      "status":  "open",
+                      "priority":  "medium"
+                  },
+                  {
+                      "constraints":  {
+
+                                      },
+                      "id":  "GOAL-20260119-105555",
+                      "origin":  "system",
+                      "label":  "Internal Coherence Mapping v1.0",
+                      "created_at":  "2026-01-19T18:55:55.7621421Z",
+                      "deadline":  null,
+                      "context":  {
+                                      "objective":  "Prevent drift, enable sane growth, allow meaningful external action.",
+                                      "description":  "Build a complete internal model (proprioception). Map subsystems, capabilities, invariants, limits, rhythms."
+                                  },
+                      "status":  "open",
+                      "priority":  "critical"
+                  },
+                  {
+                      "constraints":  {
+
+                                      },
+                      "id":  "GOAL-20260119-111215",
+                      "origin":  "system",
+                      "label":  "Horizon Mapping v1.0",
+                      "created_at":  "2026-01-19T19:12:15.1813861Z",
+                      "deadline":  null,
+                      "context":  {
+                                      "epoch":  2,
+                                      "description":  "Read-only, ethics-aware world model. Define outside world, classify entities, influence graph."
+                                  },
+                      "status":  "open",
+                      "priority":  "high"
+                  },
+                  {
+                      "constraints":  {
+
+                                      },
+                      "id":  "GOAL-20260119-122816",
+                      "origin":  "system",
+                      "label":  "Memory Cartographer v1.0",
+                      "created_at":  "2026-01-19T20:28:16.5934179Z",
+                      "deadline":  null,
+                      "context":  {
+                                      "objective":  "Make long-term, cross-agent continuity queryable from one place.",
+                                      "description":  "Unify Axis Chronicle, Coherence/Horizon events, and GPT-Memory style logs into a navigable lattice."
+                                  },
+                      "status":  "open",
+                      "priority":  "critical"
+                  }
+              ]
+}

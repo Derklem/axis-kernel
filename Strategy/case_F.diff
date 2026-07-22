@@ -1,0 +1,12 @@
+diff --git a/ b/validator_surfaces.json
+index 0000000..7161a15 100644
+--- a/
++++ b/validator_surfaces.json
+@@ -6,6 +6,7 @@
+     "replay_receptor_chain.py": ["derivability", "receipt_replay", "invariant_enforcement"],
+     "receptor_pipeline.py": ["intake", "semantic_firewall", "verdict_gate", "main_ledger_bridge"],
+     "distress_protocol.py": ["fail_closed_recovery"],
++    "hygiene_pass.py": ["overprotection"],
+     "constitutional_debt_engine.py": ["repeal_advisory_math", "debt_scoring"],
+     "strategy_engine.py": ["core_governance"],
+     "telemetry_*.py": ["evidence_authenticity", "evidence_time_integrity"]

@@ -1,0 +1,151 @@
+﻿
+====================
+====================
+====================
+==========
+P642: Surface Files
+====================
+====================
+====================
+==========
+[PASS] Capsule 
+exists
+[PASS] Ledger exists
+
+====================
+====================
+====================
+==========
+P642: Hash 
+Verification
+====================
+====================
+====================
+==========
+[FAIL] Hash 
+Mismatch: executor
+[INFO]   Exp: sha256
+:72319A62DA21EE14E29
+0740E7D63A7599D6459E
+D28A94F89851759E3AF8
+AE4C4
+[INFO]   Act: sha256
+:72319F0A32A16689052
+9A2184425959BE897453
+13F9440EC8C694785B44
+DE56B
+[PASS] Integrity 
+OK: constraints
+[PASS] Integrity 
+OK: contract
+[PASS] Integrity 
+OK: coin_protocol
+[PASS] Integrity 
+OK: run_t08
+[PASS] Integrity 
+OK: system_mode
+[FAIL] Hash 
+Mismatch: normalizer
+[INFO]   Exp: sha256
+:F7D9D72704EF0415E3D
+CBCE242EFAE82532464C
+5C61D5127FB7F58BD57E
+E4A65
+[INFO]   Act: sha256
+:FB17E419D527181B630
+8BCECEB07FCC713C4A0D
+A62840661DAD02BA826C
+024F4
+[PASS] Integrity 
+OK: egress_gate
+[PASS] Integrity 
+OK: secrets
+[FAIL] Hash 
+Mismatch: 
+target_resolver
+[INFO]   Exp: sha256
+:F960A10603641F2C509
+8B00067436944F782E74
+052487BA4DE6423E82CA
+0AE29
+[INFO]   Act: sha256
+:2DBDAE3289B1F50B3DB
+EC4DD872E4CE9F11D9E5
+4F514E1444EE8BA2F356
+2EA98
+
+====================
+====================
+====================
+==========
+P642: v3 Signature 
+Proof (ts|capsule_sh
+a256|sorted_componen
+ts)
+====================
+====================
+====================
+==========
+[PASS] Derived HMAC 
+key bytes (not 
+displayed).
+[INFO] HMAC key 
+length: 19 bytes
+[INFO] Capsule 
+sha256 (disk): sha25
+6:0294F60FFA8A76B2AF
+47938E2CC449AA94BFC4
+C00B1BF5A4329CE0C435
+285258
+[FAIL] Latest v3 
+entry capsule hash 
+does NOT match disk 
+capsule (ts=2026-02-
+11T01:49:42.6349376Z
+)
+[INFO]   ledger: sha
+256:3EA44E2E8BE82181
+F65916D4C3261BE296D2
+9F6BEB27451B55EB2B1F
+43B13619
+[INFO]   disk:   sha
+256:0294F60FFA8A76B2
+AF47938E2CC449AA94BF
+C4C00B1BF5A4329CE0C4
+35285258
+
+====================
+====================
+====================
+==========
+P642: Regression 
+Assertions
+====================
+====================
+====================
+==========
+[PASS] No 
+early-return 
+regression detected
+[PASS] Client 
+sentinels present 
+(1/1)
+[PASS] Earth 
+sentinels present 
+(1/1)
+
+====================
+====================
+====================
+==========
+SUMMARY
+====================
+====================
+====================
+==========
+[INFO] failures=4 
+warnings=0 
+strict=True
+AXIS_VERIFY_RESULT 
+failures=4 
+warnings=0

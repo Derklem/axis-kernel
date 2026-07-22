@@ -1,0 +1,9 @@
+﻿=== WITNESS HEAD COMPARISON ===
+Timestamp: 05/13/2026 21:20:05
+Ledger head: e658d3772d9a3d277517ea812f7ebf58fce3d3a5c7e666e7b9189708c7ea601b
+Anchor head: d8c4c2c3637edeee08dd1f34302e1786ea1d6d2ab0c696361b2fc8df25d111f4
+Ledger cycle: 505
+Anchor cycle: 505
+
+Witness ledger lines: 54947
+

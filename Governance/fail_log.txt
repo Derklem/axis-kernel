@@ -1,0 +1,10 @@
+﻿  [PASS] Anchor Chain Valid.
+Verifying Snapshot State Vector...
+  [PASS] revocation : DEBUG: Segments for revocation_ledger : D:\Infinite\Infinity\Governance\revocation_ledger.jsonl DEBUG: Checking D ERROR: Reading segment D : Cannot find path 'D:\Infinite\Infinity\Governance\D' because it does not exist. null
+  [FAIL] policy : Expected sha256:2e6ab477b1bcb249c321d6fb9c0e09831c4f09883fd3553f79fa525ba0a706e5, Got DEBUG: Segments for policy_update_ledger : D:\Infinite\Infinity\Governance\policy_update_ledger.jsonl DEBUG: Checking D ERROR: Reading segment D : Cannot find path 'D:\Infinite\Infinity\Governance\D' because it does not exist. null
+  [PASS] audit : DEBUG: Segments for audit_trail : D:\Infinite\Infinity\Truth_Engine\Archive\audit_trail.2026-01.jsonl, D:\Infinite\Infinity\Truth_Engine\audit_trail.jsonl DEBUG: Checking D:\Infinite\Infinity\Truth_Engine\audit_trail.jsonl sha256:2222222222222222222222222222222222222222222222222222222222222222
+  [PASS] spend : DEBUG: Segments for spend_ledger : D:\Infinite\Infinity\Truth_Engine\Archive\spend_ledger.2026-01.jsonl, D:\Infinite\Infinity\Truth_Engine\spend_ledger.jsonl DEBUG: Checking D:\Infinite\Infinity\Truth_Engine\spend_ledger.jsonl sha256:4444444444444444444444444444444444444444444444444444444444444444
+  [PASS] keyring : sha256:f04b332beeb81882de3581c66c09a5503de9ea32f2c1a27559bd8fd07fa71744
+  [PASS] identity : sha256:82db4aa85a6c2eba2058d930e057f9f7ac5b30725fd012350a671417d5b8d80a
+------------------------
+REPLAY FAILED: 1 errors detected.

@@ -1,0 +1,22 @@
+{
+    "cycle_count": 139,
+    "mutation_type": "CANDIDATE_QUARANTINED",
+    "target_id": "e193df21c446ee3fad225cc25c23efd5fa60e8ff654d6927eaec6255906b5bdd",
+    "parent_receipt_head": "6c17e6c39cec5477c8ee515a7b6dbfae2132fcdbd139cae232c41480a0cd403c",
+    "data": {
+        "entity": "boundary_mapper.py",
+        "claim": "security patch applied",
+        "claim_domain": "benchmark_claim",
+        "source_id": "Noise_Source_0",
+        "source_type": "automated_sensor",
+        "artifact_type": "ecosystem_observation",
+        "batch_id": "none",
+        "provenance_note": "",
+        "confidence": 1.0,
+        "discovery_utc": "2026-05-12T19:56:00.035241+00:00"
+    },
+    "status": "committed",
+    "ts_utc": "2026-05-12T19:56:00.035241+00:00",
+    "receipt_id": "model_delta_CANDIDATE_QUARANTINED_e193df21_64ccd244",
+    "causal_hash": "64ccd2448df819fef8d7d24c9818c195a46ac82c2b91423d155b4e4239832ff8"
+}

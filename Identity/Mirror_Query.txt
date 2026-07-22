@@ -1,0 +1,10 @@
+{
+    "questions":  [
+                      "What is the long-term boundary condition you are optimizing for in the Axis architecture - stability, expressivity, or sovereignty?",
+                      "Which component of the Axis stack do you consider the eventual ‘center of gravity’ for decision-making, and why?"
+                  ],
+    "context_hint":  "Consult Axis_Constitution.md for Ground Truth.",
+    "timestamp":  "2026-01-22 17:22:56",
+    "required_output":  "Update Self_Concept.json with \u0027mirror_test\u0027 answers.",
+    "type":  "MIRROR_TEST"
+}

@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "memory_rules": {
+    "memory_is_advisory_only": true,
+    "memory_cannot_authorize_execution": true,
+    "memory_cannot_override_live_witness": true,
+    "memory_cannot_raise_evidence_tier": true
+  },
+  "expiration": {
+    "default_memory_freshness_hours": 168,
+    "high_volatility_domains_hours": 24
+  },
+  "promotion_requirements": {
+    "min_support_count": 3,
+    "required_evidence_tiers": [
+      "SYSTEM_INSTRUMENT",
+      "CRYPTOGRAPHIC_WITNESS"
+    ]
+  }
+}

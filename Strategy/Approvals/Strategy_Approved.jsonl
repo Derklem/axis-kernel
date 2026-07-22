@@ -1,0 +1,3 @@
+{"ts_utc": "2026-02-26T10:00:00Z", "status": "rolled_back", "proposed_change": {"delta": {"heartbeat": {"to": 20}}}}
+{"ts_utc": "2026-02-26T12:00:00Z", "status": "rolled_back", "proposed_change": {"delta": {"heartbeat": {"to": 25}}}}
+{"ts_utc": "2026-02-26T14:00:00Z", "status": "rolled_back", "proposed_change": {"delta": {"heartbeat": {"to": 30}}}}

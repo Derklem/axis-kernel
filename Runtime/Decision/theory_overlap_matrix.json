@@ -1,0 +1,34 @@
+{
+  "version": "1.0",
+  "pairs": [
+    {
+      "theory_a": "THEORY_QUEUE_SATURATION",
+      "theory_b": "ALT_THEORY_MEMORY_FRAGMENTATION",
+      "scores": {
+        "shared_effect_overlap": 1.0,
+        "supporting_edge_overlap": 0.88,
+        "prediction_similarity": 0.72,
+        "hidden_variable_adjacency": 0.58,
+        "rivalry_density": 0.9,
+        "boundary_complementarity": 0.84
+      },
+      "total_overlap_score": 0.825,
+      "status": "CANDIDATE"
+    },
+    {
+      "theory_a": "THEORY_DB_DEADLOCK_A",
+      "theory_b": "THEORY_DB_DEADLOCK_B",
+      "scores": {
+        "shared_effect_overlap": 1.0,
+        "supporting_edge_overlap": 0.98,
+        "prediction_similarity": 0.99,
+        "hidden_variable_adjacency": 1.0,
+        "rivalry_density": 0.8,
+        "boundary_complementarity": 0.05
+      },
+      "total_overlap_score": 0.878,
+      "status": "CANDIDATE"
+    }
+  ],
+  "last_updated": "2026-03-15T16:57:19.038294Z"
+}

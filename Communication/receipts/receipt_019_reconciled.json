@@ -1,0 +1,13 @@
+{
+  "receipt_id": "receipt_019_reconciled",
+  "experiment_id": "EXP_019_AINATIVE",
+  "invalid_receipt_reference": "receipts_invalid/receipt_60a3adc1.json",
+  "archive_path": "archived/EXP_019_AINATIVE__draft_46bbe972__20260713T235440Z.json",
+  "remote_observation": "observations/obs_019_deployment.json",
+  "reconciliation_status": "REMOTE_DEPLOYMENT_CONFIRMED_PROVENANCE_PARTIAL",
+  "status": "deployed",
+  "platform": "Reddit",
+  "deployed_at": "2026-07-14T19:20:55Z",
+  "observation_window": "72h",
+  "verification": "The remote observation confirms the text was posted and the exact permalink is recorded, but the exact timestamp of publication is unknown and the text is a semantic (not byte-identical) match to the proposal, leaving original deployment provenance incomplete."
+}

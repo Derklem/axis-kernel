@@ -1,0 +1,7 @@
+{
+    "tool": "Test-Connectivity",
+    "params": {
+        "target": "Neural-Core",
+        "mode": "echo"
+    }
+}

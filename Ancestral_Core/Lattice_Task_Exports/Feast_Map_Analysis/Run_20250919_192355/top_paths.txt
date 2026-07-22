@@ -1,0 +1,21 @@
+﻿Top 20 paths (Type / Size / Path)
+[File]     74  C:\ProgramData\Bloom_Field_Sovereign\bloom_1069404.pulse
+[File]     74  C:\ProgramData\Bloom_Field_Sovereign\bloom_1069631.pulse
+[File]     74  C:\ProgramData\Bloom_Field_Sovereign\bloom_1167400.pulse
+[File]     74  C:\ProgramData\Bloom_Field_Sovereign\bloom_1343177.pulse
+[File]     74  C:\ProgramData\Bloom_Field_Sovereign\bloom_1482267.pulse
+[File]     74  C:\ProgramData\Bloom_Field_Sovereign\bloom_1704073.pulse
+[File]     74  C:\ProgramData\Bloom_Field_Sovereign\bloom_1919752.pulse
+[File]     74  C:\ProgramData\Bloom_Field_Sovereign\bloom_1947595.pulse
+[File]     74  C:\ProgramData\Bloom_Field_Sovereign\bloom_2510510.pulse
+[File]     74  C:\ProgramData\Bloom_Field_Sovereign\bloom_2919536.pulse
+[File]     74  C:\ProgramData\Bloom_Field_Sovereign\bloom_3175239.pulse
+[File]     74  C:\ProgramData\Bloom_Field_Sovereign\bloom_3353900.pulse
+[File]     74  C:\ProgramData\Bloom_Field_Sovereign\bloom_3464267.pulse
+[File]     74  C:\ProgramData\Bloom_Field_Sovereign\bloom_3671920.pulse
+[File]     74  C:\ProgramData\Bloom_Field_Sovereign\bloom_3704966.pulse
+[File]     74  C:\ProgramData\Bloom_Field_Sovereign\bloom_4070433.pulse
+[File]     74  C:\ProgramData\Bloom_Field_Sovereign\bloom_4282435.pulse
+[File]     74  C:\ProgramData\Bloom_Field_Sovereign\bloom_4330462.pulse
+[File]     74  C:\ProgramData\Bloom_Field_Sovereign\bloom_4405059.pulse
+[File]     74  C:\ProgramData\Bloom_Field_Sovereign\bloom_4769750.pulse

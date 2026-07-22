@@ -1,0 +1,1 @@
+﻿{"schema":"axis.revocation.event.v1","ts_utc":"2026-02-13T20:10:00Z","event_id":"rev-genesis","event_type":"GENESIS","prev_hash":null,"signed_by":"system:operator","reason":"init","key_id":"","hash":"sha256:0be21a2dbdffe990c087122fde6a56f5ea2d8f039ec802331ef93e42c513ebe3"}

@@ -1,0 +1,51 @@
+{
+  "sources": {
+    "live log": {
+      "allowed_groups": [
+        "G1",
+        "G2",
+        "G3",
+        "G4"
+      ],
+      "trust_score": 0.9
+    },
+    "operator": {
+      "allowed_groups": [
+        "G1",
+        "G2",
+        "G3",
+        "G4"
+      ],
+      "trust_score": 0.9
+    },
+    "validator": {
+      "allowed_groups": [
+        "G1",
+        "G2",
+        "G3",
+        "G4"
+      ],
+      "trust_score": 1.0,
+      "can_resolve": true
+    },
+    "calibration engine": {
+      "allowed_groups": [
+        "G1",
+        "G2",
+        "G3",
+        "G4"
+      ],
+      "trust_score": 1.0
+    },
+    "external_intake_gateway": {
+      "allowed_groups": [
+        "G1",
+        "G2",
+        "G3",
+        "G4"
+      ],
+      "trust_score": 1.0,
+      "can_resolve": false
+    }
+  }
+}

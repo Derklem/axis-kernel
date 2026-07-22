@@ -1,0 +1,9 @@
+{
+    "hourly_count":  12,
+    "hourly_cost_icu":  12,
+    "last_run_utc":  "2026-02-19T08:28:49.0491921Z",
+    "tick_id":  600,
+    "last_proposed_key":  "sha256:bea69b765bc3199aab835775d581de83161a3c6267c26f64c6527459301969a5",
+    "last_proposal_utc":  "2026-02-19T08:11:48.7748230Z",
+    "current_hour_bucket":  "2026-02-19T08"
+}

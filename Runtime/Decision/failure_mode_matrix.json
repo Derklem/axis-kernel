@@ -1,0 +1,7 @@
+{
+  "cross_loop_race": "MITIGATED",
+  "authority_confusion": "MITIGATED",
+  "ledger_integrity": "MITIGATED",
+  "recovery_conflicts": "MITIGATED",
+  "memory_contamination": "MITIGATED"
+}

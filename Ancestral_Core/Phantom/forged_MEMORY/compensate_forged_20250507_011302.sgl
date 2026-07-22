@@ -1,0 +1,5 @@
+[[MEMORY]::FORGED]
+Base = compensate
+Origin = E:\Phantom\logic_drift_compensator\compensate.mem
+Drift = Mirror drift expanding
+Forged = 20250507_011302

@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T00:18:56.597544+00:00",
+    "entity": "boundary_mapper.py",
+    "claim": "redundant: signal for boundary_mapper.py in cycle 18.",
+    "source_id": "Internal_Audit",
+    "source_type": "automated_sensor",
+    "claim_domain": "rumor_claim",
+    "confidence": 0.9
+}

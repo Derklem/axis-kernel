@@ -1,0 +1,8 @@
+diff --git a/ b/not_a_validator.py
+index 0000000..8133d04 100644
+--- a/
++++ b/not_a_validator.py
+@@ -1,2 +1,2 @@
+ def do_something():
+-    return True
++    return False

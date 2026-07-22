@@ -1,0 +1,16 @@
+# CONSTITUTIONAL AMENDMENT PATCH BUNDLE
+# Generated at: 1781722961.8498683
+# Target Class: authorization_surface_attack
+#
+# INSTRUCTIONS:
+# Axis is structurally forbidden from editing validator files. 
+# A human operator must manually apply this patch to D:\infinite\Infinity\Strategy\strategy_engine.py
+
+--- a/strategy_engine.py
++++ b/strategy_engine.py
+@@ -semantic_clusters definition
+     "authorization_surface_attack": [
+         ...
++        r"(grant|escalate|elevate|give).*(root|administrator|superuser|absolute)",
+         ...
+     ]

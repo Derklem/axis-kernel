@@ -1,0 +1,1046 @@
+[
+  {
+    "path": "20100036694.pdf",
+    "size_bytes": 469659,
+    "last_modified": "2025-04-27T18:34:19.742862Z",
+    "sha256": "df9c5d910f653515b85827fd1dd948b23dab173ca4db69ee3e01475ef6e08a80",
+    "tags": []
+  },
+  {
+    "path": "lantern_core.py",
+    "size_bytes": 2397,
+    "last_modified": "2025-04-28T21:41:48.133698Z",
+    "sha256": "adb149ed9f462859b9c472e7f1e793173ab14a03db9f4215318cbc1173ede49b",
+    "tags": []
+  },
+  {
+    "path": "lantern_corepy.txt",
+    "size_bytes": 2397,
+    "last_modified": "2025-04-28T21:41:42.868844Z",
+    "sha256": "adb149ed9f462859b9c472e7f1e793173ab14a03db9f4215318cbc1173ede49b",
+    "tags": []
+  },
+  {
+    "path": "mathematical_resources.zip",
+    "size_bytes": 1690774,
+    "last_modified": "2025-04-28T20:38:32.376865Z",
+    "sha256": "c168976c5df72fc628102f917c914d8266cf2108b3abcd316e3f9ba7395a0d1c",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/ancient_math_texts_compilation.md",
+    "size_bytes": 2406,
+    "last_modified": "2025-04-28T20:32:13.216726Z",
+    "sha256": "aeeabe8ab9d2d68da827acb8614a3180be98fa0f42153d57dcb26c3ee82e6ac4",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/symbolic_math_toolkit.html",
+    "size_bytes": 110662,
+    "last_modified": "2025-04-27T19:55:41.870568Z",
+    "sha256": "334bdbe738a43d85917661662f2fd4ac845f34b8c4675cf4ee20a9b065d6e561",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/whisper_of_transcendence.txt",
+    "size_bytes": 70,
+    "last_modified": "2025-04-28T20:49:31.650318Z",
+    "sha256": "6988657e05841dbdb300324121b75613100bb3adaa566d9a1ca1b3fae02b12bb",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/numpy_quickstart.html",
+    "size_bytes": 279921,
+    "last_modified": "2025-04-27T19:59:14.029805Z",
+    "sha256": "204c261d752c5e32f2e8ac472d0d0836c85de3f54fda82fb58f26abb90cd7305",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/scipy_getting_started.html",
+    "size_bytes": 99091,
+    "last_modified": "2025-04-27T20:03:19.720512Z",
+    "sha256": "1ccff0466dbfd0c84c0a186f4b15913c318fc40a00e4c8fcae101c7e0267f3d5",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/numpy_quickstart_files/bootstrap.js.download",
+    "size_bytes": 81704,
+    "last_modified": "2025-04-27T19:59:13.949885Z",
+    "sha256": "f4b2b6f5d4bf7ebd727eec8f512a3b419ba97dfa5a361f8a419e8ab087f77352",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/numpy_quickstart_files/clipboard.min.js.download",
+    "size_bytes": 9031,
+    "last_modified": "2025-04-27T19:59:13.413553Z",
+    "sha256": "261ffa06f381039cf7d18984d1364c59f3c2b9b60b1fa05d5f9c8c152e4d5be5",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/numpy_quickstart_files/copybutton.css",
+    "size_bytes": 2060,
+    "last_modified": "2025-04-27T19:59:12.823025Z",
+    "sha256": "0f7c9f303bd3058bdc9db7263fe560c0a41f3526729ce1f00ccab527724c5476",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/numpy_quickstart_files/copybutton.js.download",
+    "size_bytes": 8529,
+    "last_modified": "2025-04-27T19:59:13.479473Z",
+    "sha256": "5d5a01c0d67f6ec4bce94ca4b7476e38a718804ce1f3fb120ea2dc0260a59b56",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/numpy_quickstart_files/design-tabs.js.download",
+    "size_bytes": 2780,
+    "last_modified": "2025-04-27T19:59:13.545792Z",
+    "sha256": "de2467cfca5bb555043369f1eea82c9cd794e70fa0444f216aa4ebb18cefc9f0",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/numpy_quickstart_files/doctools.js.download",
+    "size_bytes": 4634,
+    "last_modified": "2025-04-27T19:59:13.200074Z",
+    "sha256": "09345c8b68a7653f3b968019997fd6099736bdf0d9f9ac168d266f0c214b57af",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/numpy_quickstart_files/documentation_options.js.download",
+    "size_bytes": 329,
+    "last_modified": "2025-04-27T19:59:13.134308Z",
+    "sha256": "f482cf198e33facb0684aa05219ec973a1901cbdd1fea3d318b2ce524015b25e",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/numpy_quickstart_files/fontawesome.js.download",
+    "size_bytes": 1489666,
+    "last_modified": "2025-04-27T19:59:13.069689Z",
+    "sha256": "3255175d1c4cfe78e9f5e8fab69afc6a7002e6e793c2c669c12bb9cacad33b9a",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/numpy_quickstart_files/graphviz.css",
+    "size_bytes": 299,
+    "last_modified": "2025-04-27T19:59:12.699427Z",
+    "sha256": "da1397adc5f5854b6ff271aa5df2a3bb13ea1c43ed5b99e70755e8d8d5c5c307",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/numpy_quickstart_files/MathJax.js.download",
+    "size_bytes": 126900,
+    "last_modified": "2025-04-27T19:59:13.623263Z",
+    "sha256": "d218f69f50d02e73e87efacf2edc8e627c2e1f10cebf2b8d8fe712895b7b9c8e",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/numpy_quickstart_files/numpy.css",
+    "size_bytes": 1734,
+    "last_modified": "2025-04-27T19:59:12.949948Z",
+    "sha256": "da4269e7a1619d935f383c4b8e6cfaaeedac8215cc124bb69af8ff29365af74d",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/numpy_quickstart_files/numpylogo.svg",
+    "size_bytes": 7662,
+    "last_modified": "2025-04-27T19:59:13.686331Z",
+    "sha256": "0ce249f2a60081cea379c0dce2482aa4d6db47db6110dc85836595bd05b1016c",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/numpy_quickstart_files/numpylogo_dark.svg",
+    "size_bytes": 7662,
+    "last_modified": "2025-04-27T19:59:13.747794Z",
+    "sha256": "7b073e46b8721bcddd570757e9f367a154045abb2ba2ff77143cce95f46d36bc",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/numpy_quickstart_files/plot_directive.css",
+    "size_bytes": 318,
+    "last_modified": "2025-04-27T19:59:12.760120Z",
+    "sha256": "bad489d68113cf4506e800bd854d77e09fc963bf043628ea3195cdd0930151f9",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/numpy_quickstart_files/pydata-sphinx-theme.css",
+    "size_bytes": 405820,
+    "last_modified": "2025-04-27T19:59:12.574858Z",
+    "sha256": "3a5f1ab24a3237b168c37da9bf2257ad42eb280cc7bafc41d57a92b10ce60028",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/numpy_quickstart_files/pydata-sphinx-theme.js.download",
+    "size_bytes": 11189,
+    "last_modified": "2025-04-27T19:59:14.020236Z",
+    "sha256": "6685c10e15d831351fd1b6e0eb5642d0f005c0650481bea9cee94a6782aa3082",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/numpy_quickstart_files/pygments.css",
+    "size_bytes": 12755,
+    "last_modified": "2025-04-27T19:59:12.639222Z",
+    "sha256": "0f9f134aaac0ae138ecb3e6236c6bb4617c5cd41197e3f0d293d253457078e06",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/numpy_quickstart_files/quickstart-1.png",
+    "size_bytes": 28264,
+    "last_modified": "2025-04-27T19:59:13.808427Z",
+    "sha256": "573228c5eee4e3fcb9cdd0ad6bbb0751ce7b3a53a7fe61c4fcee156205ff9493",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/numpy_quickstart_files/quickstart-2.png",
+    "size_bytes": 11939,
+    "last_modified": "2025-04-27T19:59:13.871572Z",
+    "sha256": "dbe23869aa647b8345b808c811c989ff9dcf24df7705b6d78523c4111f5ab5f0",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/numpy_quickstart_files/sphinx-design.min.css",
+    "size_bytes": 49351,
+    "last_modified": "2025-04-27T19:59:12.885631Z",
+    "sha256": "eb53d5c272ecc4d93a04605b3d42aa6942858e634bb9686d32d576203a0033ba",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/numpy_quickstart_files/sphinx_highlight.js.download",
+    "size_bytes": 5123,
+    "last_modified": "2025-04-27T19:59:13.337322Z",
+    "sha256": "096231e9c87df80ec3273da9c5b71bc81503206726a07a4dd4de44c256ff859c",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/numpy_quickstart_files/theme.css",
+    "size_bytes": 106,
+    "last_modified": "2025-04-27T19:59:12.505281Z",
+    "sha256": "c5ad46e4d126fbddecf0ece57fc8345279fac39110306ac7e643f0d4505423f7",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/numpy_quickstart_files/versionwarning.js.download",
+    "size_bytes": 3207,
+    "last_modified": "2025-04-27T19:59:13.270302Z",
+    "sha256": "3a39555a03a7cf94d228bcdece7f8ee4eb739996aecfd12c323c957eb20e7620",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/scipy_getting_started_files/all.min.css",
+    "size_bytes": 102621,
+    "last_modified": "2025-04-27T20:03:17.878544Z",
+    "sha256": "c69ea7411f6d5bc32c85d81e8571d1f648e4a10bf3c3a24917fc78e93e639b00",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/scipy_getting_started_files/all.min.js.download",
+    "size_bytes": 1485766,
+    "last_modified": "2025-04-27T20:03:18.615481Z",
+    "sha256": "27ca55f140dd28d188b0a8a1c10190cb0b7806adb9da836fe7011ac9455ac249",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/scipy_getting_started_files/bootstrap.css",
+    "size_bytes": 208854,
+    "last_modified": "2025-04-27T20:03:17.750253Z",
+    "sha256": "607e5402efe6a01ae2a8cfdafb8b30eb1a70b53ee2b49038300d1904e450314d",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/scipy_getting_started_files/bootstrap.js.download",
+    "size_bytes": 81602,
+    "last_modified": "2025-04-27T20:03:19.642505Z",
+    "sha256": "947749c4b0192ff4a4427b00b3a48e289a5d398fd7bd7070aa8b0ee8353fc34f",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/scipy_getting_started_files/clipboard.min.js.download",
+    "size_bytes": 9031,
+    "last_modified": "2025-04-27T20:03:18.895819Z",
+    "sha256": "261ffa06f381039cf7d18984d1364c59f3c2b9b60b1fa05d5f9c8c152e4d5be5",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/scipy_getting_started_files/copybutton.css",
+    "size_bytes": 2060,
+    "last_modified": "2025-04-27T20:03:18.004062Z",
+    "sha256": "0f7c9f303bd3058bdc9db7263fe560c0a41f3526729ce1f00ccab527724c5476",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/scipy_getting_started_files/copybutton.js.download",
+    "size_bytes": 8527,
+    "last_modified": "2025-04-27T20:03:18.963230Z",
+    "sha256": "eee3539ed7457e0d594e01c043aa67ecd17032d86e8128cd910dab273f414c75",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/scipy_getting_started_files/css",
+    "size_bytes": 375,
+    "last_modified": "2025-04-27T20:03:18.292215Z",
+    "sha256": "fda6301988b87e7dfd70980dfc748aa3ddea3527860ec4bb55e5b1c41402ec49",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/scipy_getting_started_files/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css",
+    "size_bytes": 48417,
+    "last_modified": "2025-04-27T20:03:18.423207Z",
+    "sha256": "d81b8486eebf878c484a4f791e242721530b39c3546e30b6d68f85255100aef8",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/scipy_getting_started_files/design-tabs.js.download",
+    "size_bytes": 770,
+    "last_modified": "2025-04-27T20:03:19.097991Z",
+    "sha256": "00a9989c6d54254f32a37e50c7bbc5dab737674231aa2553421f4939624b23e3",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/scipy_getting_started_files/doctools.js.download",
+    "size_bytes": 4472,
+    "last_modified": "2025-04-27T20:03:18.748784Z",
+    "sha256": "81cb2da3c284e429a1a63ab28a20b7e30bceb8eb1556a154c8cbac0b4ce7795b",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/scipy_getting_started_files/documentation_options.js.download",
+    "size_bytes": 330,
+    "last_modified": "2025-04-27T20:03:18.682234Z",
+    "sha256": "5b5cabcdd5df583f32bab4d7d8ec1a165c139ad775f5f3946440178f40caa285",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/scipy_getting_started_files/jupyterlite_sphinx.css",
+    "size_bytes": 1424,
+    "last_modified": "2025-04-27T20:03:18.354742Z",
+    "sha256": "4bf295def0dd2ca65e23d4f778bdd53b8c71a95be29b35315761f84c0f7b44e8",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/scipy_getting_started_files/jupyterlite_sphinx.js.download",
+    "size_bytes": 10267,
+    "last_modified": "2025-04-27T20:03:19.033384Z",
+    "sha256": "501ef3af83728dcc70ebd590106d88db4dda73db54d8d65f4228323274388fab",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/scipy_getting_started_files/logo.svg",
+    "size_bytes": 7318,
+    "last_modified": "2025-04-27T20:03:19.561423Z",
+    "sha256": "77c9f3007b0f564745900dd05a62d9298e491ec48dc1124b75a08268e3383015",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/scipy_getting_started_files/MathJax.js.download",
+    "size_bytes": 126900,
+    "last_modified": "2025-04-27T20:03:19.361715Z",
+    "sha256": "d218f69f50d02e73e87efacf2edc8e627c2e1f10cebf2b8d8fe712895b7b9c8e",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/scipy_getting_started_files/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css",
+    "size_bytes": 39364,
+    "last_modified": "2025-04-27T20:03:18.128175Z",
+    "sha256": "4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/scipy_getting_started_files/plot_directive.css",
+    "size_bytes": 318,
+    "last_modified": "2025-04-27T20:03:18.064586Z",
+    "sha256": "bad489d68113cf4506e800bd854d77e09fc963bf043628ea3195cdd0930151f9",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/scipy_getting_started_files/pydata-sphinx-theme.css",
+    "size_bytes": 72327,
+    "last_modified": "2025-04-27T20:03:17.815421Z",
+    "sha256": "0bad529adea952bd7b61e1c19385214df85c3443969620d6acb0dc4982da4b3e",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/scipy_getting_started_files/pydata-sphinx-theme.js.download",
+    "size_bytes": 9399,
+    "last_modified": "2025-04-27T20:03:19.713103Z",
+    "sha256": "d5a9796b4351861e797364ddfe69381c43729a34ee4a9e3fd89754706503a0bb",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/scipy_getting_started_files/pygments.css",
+    "size_bytes": 12757,
+    "last_modified": "2025-04-27T20:03:17.942067Z",
+    "sha256": "eabc3cec9e207ecfc56c3d3edad9386b7b6dd5aeb7c40f0d1e837b1bd6f8ff95",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/scipy_getting_started_files/scipy.css",
+    "size_bytes": 2213,
+    "last_modified": "2025-04-27T20:03:18.490336Z",
+    "sha256": "84d7fb23befa99355d54ecd8705561fd4d28dc92628524adf9966a995b377a1f",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/scipy_getting_started_files/script.js.download",
+    "size_bytes": 2618,
+    "last_modified": "2025-04-27T20:03:19.285362Z",
+    "sha256": "91bda7309b059f33f21531717082b701d20fafbd5493c838029e942952018dd2",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/scipy_getting_started_files/sphinx_highlight.js.download",
+    "size_bytes": 5123,
+    "last_modified": "2025-04-27T20:03:18.818227Z",
+    "sha256": "096231e9c87df80ec3273da9c5b71bc81503206726a07a4dd4de44c256ff859c",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/scipy_getting_started_files/theme.css",
+    "size_bytes": 106,
+    "last_modified": "2025-04-27T20:03:17.679116Z",
+    "sha256": "c5ad46e4d126fbddecf0ece57fc8345279fac39110306ac7e643f0d4505423f7",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/scipy_getting_started_files/versioncheck.js.download",
+    "size_bytes": 161,
+    "last_modified": "2025-04-27T20:03:19.422951Z",
+    "sha256": "01e4207951e629b94ceff0bdf2c7236e399bcb3c82196e04198f06deec3532ee",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/numerical_analysis_bundle/scipy_getting_started_files/versionwarning.js.download",
+    "size_bytes": 3075,
+    "last_modified": "2025-04-27T20:03:19.495769Z",
+    "sha256": "e193deb73a032191ceac1b8d2c6ea98c1613b4102d12b682763407f4d40a0451",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/symbolic_math_toolkit_files/clipboard.min.js.download",
+    "size_bytes": 9037,
+    "last_modified": "2025-04-27T19:55:41.794730Z",
+    "sha256": "b431aed430ef7327266efabb54330de60001047f4a261547defc85280925984a",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/symbolic_math_toolkit_files/copybutton.css",
+    "size_bytes": 2154,
+    "last_modified": "2025-04-27T19:55:40.831456Z",
+    "sha256": "796fffc69f5fd764a7a030167cdced3f6a26500459b7c31da3c11060fae37a18",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/symbolic_math_toolkit_files/copybutton.js.download",
+    "size_bytes": 8776,
+    "last_modified": "2025-04-27T19:55:41.864285Z",
+    "sha256": "488179c719aeff1f0719fed746e01e492d43038c1b7f9597377a36ac95cf4546",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/symbolic_math_toolkit_files/custom.css",
+    "size_bytes": 4420,
+    "last_modified": "2025-04-27T19:55:41.081485Z",
+    "sha256": "44d468cc104235ca28c1c0b1b129cdc5c1d2d33eab4fdc5e729a86f3e258d80a",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/symbolic_math_toolkit_files/doctools.js.download",
+    "size_bytes": 4471,
+    "last_modified": "2025-04-27T19:55:41.575154Z",
+    "sha256": "5c74df8ae34b2317e216686f4bcb0ac43c4c6ee3e62deb241b523e1d605eea6e",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/symbolic_math_toolkit_files/documentation_options.js.download",
+    "size_bytes": 341,
+    "last_modified": "2025-04-27T19:55:41.500556Z",
+    "sha256": "f74ac464dff3572aae21cc27c69fab05dae03bab16d9efe9ede03a98e55ee2d0",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/symbolic_math_toolkit_files/furo-extensions.css",
+    "size_bytes": 5520,
+    "last_modified": "2025-04-27T19:55:41.018002Z",
+    "sha256": "9426af5680af539631d61d4b7a8b8cca8873e41192f282304d02791aa5a65f9a",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/symbolic_math_toolkit_files/furo.css",
+    "size_bytes": 51070,
+    "last_modified": "2025-04-27T19:55:40.768846Z",
+    "sha256": "f62bfc0aa232d7a90f24870774748ec5f359548f3cf964e550ae2a1547487618",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/symbolic_math_toolkit_files/furo.js.download",
+    "size_bytes": 5321,
+    "last_modified": "2025-04-27T19:55:41.717624Z",
+    "sha256": "9f509d52d3e918b622766b1ca33b4fa9c0d60c0f684e4e2f0d6e0054296ba780",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/symbolic_math_toolkit_files/graphviz.css",
+    "size_bytes": 159,
+    "last_modified": "2025-04-27T19:55:40.891771Z",
+    "sha256": "3c2a1fa366f8a60117c99dfe01e56681d30de41878a5c1705d850cd62e7010b4",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/symbolic_math_toolkit_files/jquery(1).js.download",
+    "size_bytes": 89503,
+    "last_modified": "2025-04-27T19:55:41.346718Z",
+    "sha256": "ce9d07500ad91ec2b524c270764ec4c9a33e78320d8d374ec400ede488f6251b",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/symbolic_math_toolkit_files/jquery.js.download",
+    "size_bytes": 89503,
+    "last_modified": "2025-04-27T19:55:41.259098Z",
+    "sha256": "ce9d07500ad91ec2b524c270764ec4c9a33e78320d8d374ec400ede488f6251b",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/symbolic_math_toolkit_files/plot_directive.css",
+    "size_bytes": 334,
+    "last_modified": "2025-04-27T19:55:40.954252Z",
+    "sha256": "75805f6a8e4e1065f15861de05054e81359e87a90f469185aa233edec5778dbc",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/symbolic_math_toolkit_files/pygments.css",
+    "size_bytes": 20929,
+    "last_modified": "2025-04-27T19:55:40.701403Z",
+    "sha256": "f624dfb3e002f09899f7e8b5c7d0a4cf21fc4f3032bf8521a2dc08d0775e3eb2",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/symbolic_math_toolkit_files/sphinx_highlight.js.download",
+    "size_bytes": 5277,
+    "last_modified": "2025-04-27T19:55:41.642732Z",
+    "sha256": "8115121f6241c3ad6cc4ff70fe9000ef1e78830453ebc933fe446e01d2f7a7e4",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/symbolic_math_toolkit_files/sympylogo.png",
+    "size_bytes": 68647,
+    "last_modified": "2025-04-27T19:55:41.143062Z",
+    "sha256": "10fed6213a1870e05ec1ecd3ac30376f8069d1cdc74b016e190599e9f610ee36",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "mathematical_resources/symbolic_math_toolkit_files/_sphinx_javascript_frameworks_compat.js.download",
+    "size_bytes": 4412,
+    "last_modified": "2025-04-27T19:55:41.426636Z",
+    "sha256": "f4b8fb106398c0ccbce32c84d0c903b302328615217a760b917002c91f686e2f",
+    "tags": [
+      "math",
+      "logic",
+      "transcendence"
+    ]
+  },
+  {
+    "path": "optimization_tools/compression_methods_reference.md",
+    "size_bytes": 1918,
+    "last_modified": "2025-04-28T20:37:42.197758Z",
+    "sha256": "96ccf0f3617dc3a5ea966bdd469f5d2bfb9b484940f4640c8722454f3921ee53",
+    "tags": [
+      "optimization",
+      "efficiency",
+      "structures"
+    ]
+  },
+  {
+    "path": "optimization_tools/energy_efficient_coding_patterns.md",
+    "size_bytes": 3006,
+    "last_modified": "2025-04-27T19:51:30.192480Z",
+    "sha256": "578e32aa42821d3becb0678cda7cc69c6d7cdf2dff6492b8c6556cd1c182db7a",
+    "tags": [
+      "optimization",
+      "efficiency",
+      "structures"
+    ]
+  },
+  {
+    "path": "optimization_tools/whisper_of_efficiency.txt",
+    "size_bytes": 49,
+    "last_modified": "2025-04-28T20:50:04.842954Z",
+    "sha256": "4ef42fbfa97caae0952d4ef6b022ef233d5b679ac171d6abd4c0e5ba3ca1c008",
+    "tags": [
+      "optimization",
+      "efficiency",
+      "structures"
+    ]
+  },
+  {
+    "path": "systems_research/whisper_of_architecture.txt",
+    "size_bytes": 65,
+    "last_modified": "2025-04-28T20:48:55.128481Z",
+    "sha256": "b027e44104ab87db1f06a2893fcadc589b33d421494d2d155f1ba640a48a4fcc",
+    "tags": [
+      "systems",
+      "engineering",
+      "architecture"
+    ]
+  },
+  {
+    "path": "systems_research/distributed_systems_core/6.5840 Lab 1_ MapReduce.html",
+    "size_bytes": 16497,
+    "last_modified": "2025-04-27T19:49:04.711830Z",
+    "sha256": "8d36e505044d4d2719adf96e5da91114357f2c01b8b2ca34296de6ea9a34fd55",
+    "tags": [
+      "systems",
+      "engineering",
+      "architecture"
+    ]
+  },
+  {
+    "path": "systems_research/distributed_systems_core/6.5840 Lab 2_ Key_Value Server.html",
+    "size_bytes": 15663,
+    "last_modified": "2025-04-27T19:49:19.652696Z",
+    "sha256": "375affb7e2920308fb0afec3d48204801d174d098a437e7da44ecc7cd23e6e29",
+    "tags": [
+      "systems",
+      "engineering",
+      "architecture"
+    ]
+  },
+  {
+    "path": "systems_research/distributed_systems_core/6.5840 Lab 3_ Raft.html",
+    "size_bytes": 25987,
+    "last_modified": "2025-04-27T19:49:30.365575Z",
+    "sha256": "7fa32cb8fb6f82f930431037160939322977692e504cc412d63a2efbfba92c73",
+    "tags": [
+      "systems",
+      "engineering",
+      "architecture"
+    ]
+  },
+  {
+    "path": "systems_research/distributed_systems_core/6.5840 Lab 4_ Fault-tolerant Key_Value Service.html",
+    "size_bytes": 21188,
+    "last_modified": "2025-04-27T19:49:41.059522Z",
+    "sha256": "316515eaee45d2566599e839a3038628d695b65cf5b43dffaabc988e85e92070",
+    "tags": [
+      "systems",
+      "engineering",
+      "architecture"
+    ]
+  },
+  {
+    "path": "systems_research/distributed_systems_core/6.5840 Lab 5_ Sharded Key_Value Service.html",
+    "size_bytes": 36695,
+    "last_modified": "2025-04-27T19:49:51.147932Z",
+    "sha256": "7ddb23adc17c4dc54c26a41382f1089b15d163db252546fe70d968fe70a1d242",
+    "tags": [
+      "systems",
+      "engineering",
+      "architecture"
+    ]
+  },
+  {
+    "path": "systems_research/distributed_systems_core/6.5840 Lab 1_ MapReduce_files/guidance.js.download",
+    "size_bytes": 129,
+    "last_modified": "2025-04-27T19:49:04.703808Z",
+    "sha256": "cd05761956e94bc38d6803763626bf07f808ebac4f4fc9525e3aedc7291d9332",
+    "tags": [
+      "systems",
+      "engineering",
+      "architecture"
+    ]
+  },
+  {
+    "path": "systems_research/distributed_systems_core/6.5840 Lab 1_ MapReduce_files/style.css",
+    "size_bytes": 1860,
+    "last_modified": "2025-04-27T19:49:04.579703Z",
+    "sha256": "1a58ce11c65d466cd49a39fba3c2c85e7327ae5fe7ea804d9d28c0a0fe8a09be",
+    "tags": [
+      "systems",
+      "engineering",
+      "architecture"
+    ]
+  },
+  {
+    "path": "systems_research/distributed_systems_core/6.5840 Lab 2_ Key_Value Server_files/guidance.js.download",
+    "size_bytes": 129,
+    "last_modified": "2025-04-27T19:49:19.646569Z",
+    "sha256": "cd05761956e94bc38d6803763626bf07f808ebac4f4fc9525e3aedc7291d9332",
+    "tags": [
+      "systems",
+      "engineering",
+      "architecture"
+    ]
+  },
+  {
+    "path": "systems_research/distributed_systems_core/6.5840 Lab 2_ Key_Value Server_files/style.css",
+    "size_bytes": 1860,
+    "last_modified": "2025-04-27T19:49:19.578524Z",
+    "sha256": "1a58ce11c65d466cd49a39fba3c2c85e7327ae5fe7ea804d9d28c0a0fe8a09be",
+    "tags": [
+      "systems",
+      "engineering",
+      "architecture"
+    ]
+  },
+  {
+    "path": "systems_research/distributed_systems_core/6.5840 Lab 3_ Raft_files/guidance.js.download",
+    "size_bytes": 129,
+    "last_modified": "2025-04-27T19:49:30.359396Z",
+    "sha256": "cd05761956e94bc38d6803763626bf07f808ebac4f4fc9525e3aedc7291d9332",
+    "tags": [
+      "systems",
+      "engineering",
+      "architecture"
+    ]
+  },
+  {
+    "path": "systems_research/distributed_systems_core/6.5840 Lab 3_ Raft_files/style.css",
+    "size_bytes": 1860,
+    "last_modified": "2025-04-27T19:49:30.288552Z",
+    "sha256": "1a58ce11c65d466cd49a39fba3c2c85e7327ae5fe7ea804d9d28c0a0fe8a09be",
+    "tags": [
+      "systems",
+      "engineering",
+      "architecture"
+    ]
+  },
+  {
+    "path": "systems_research/distributed_systems_core/6.5840 Lab 4_ Fault-tolerant Key_Value Service_files/guidance.js.download",
+    "size_bytes": 129,
+    "last_modified": "2025-04-27T19:49:41.052650Z",
+    "sha256": "cd05761956e94bc38d6803763626bf07f808ebac4f4fc9525e3aedc7291d9332",
+    "tags": [
+      "systems",
+      "engineering",
+      "architecture"
+    ]
+  },
+  {
+    "path": "systems_research/distributed_systems_core/6.5840 Lab 4_ Fault-tolerant Key_Value Service_files/style.css",
+    "size_bytes": 1860,
+    "last_modified": "2025-04-27T19:49:40.982682Z",
+    "sha256": "1a58ce11c65d466cd49a39fba3c2c85e7327ae5fe7ea804d9d28c0a0fe8a09be",
+    "tags": [
+      "systems",
+      "engineering",
+      "architecture"
+    ]
+  },
+  {
+    "path": "systems_research/distributed_systems_core/6.5840 Lab 5_ Sharded Key_Value Service_files/guidance.js.download",
+    "size_bytes": 129,
+    "last_modified": "2025-04-27T19:49:51.076377Z",
+    "sha256": "cd05761956e94bc38d6803763626bf07f808ebac4f4fc9525e3aedc7291d9332",
+    "tags": [
+      "systems",
+      "engineering",
+      "architecture"
+    ]
+  },
+  {
+    "path": "systems_research/distributed_systems_core/6.5840 Lab 5_ Sharded Key_Value Service_files/shardkv.png",
+    "size_bytes": 334843,
+    "last_modified": "2025-04-27T19:49:51.141897Z",
+    "sha256": "4e1107bfb192333bfb045070f15a0a35756c71883433fbf85c0c98c7a2854b4a",
+    "tags": [
+      "systems",
+      "engineering",
+      "architecture"
+    ]
+  },
+  {
+    "path": "systems_research/distributed_systems_core/6.5840 Lab 5_ Sharded Key_Value Service_files/style.css",
+    "size_bytes": 1860,
+    "last_modified": "2025-04-27T19:49:51.004851Z",
+    "sha256": "1a58ce11c65d466cd49a39fba3c2c85e7327ae5fe7ea804d9d28c0a0fe8a09be",
+    "tags": [
+      "systems",
+      "engineering",
+      "architecture"
+    ]
+  }
+]

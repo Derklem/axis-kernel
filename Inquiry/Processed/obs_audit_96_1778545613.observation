@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T00:26:53.711044+00:00",
+    "entity": "Llama-4-70B",
+    "claim": "standard update: signal for Llama-4-70B in cycle 96.",
+    "source_id": "Ecological_Observer",
+    "source_type": "automated_sensor",
+    "claim_domain": "safety_claim",
+    "confidence": 0.48
+}

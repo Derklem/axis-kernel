@@ -1,0 +1,5 @@
+{"timestamp": "2026-03-14T12:12:00Z", "status": "LEDGER_INITIALIZED", "message": "Research Transition Ledger created."}
+{"timestamp": "2026-03-14T19:11:23.954035Z", "domain": "LIVE_DB_CORRUPTION_RISK", "previous_state": "NEW_FUNDED_DOMAIN", "new_state": "THEORY_EXPANSION_REQUIRED", "reason": "No plural candidate theories available."}
+{"timestamp": "2026-03-14T19:11:23.955312Z", "domain": "DRILL_DOMAIN_A_UNDERSPECIFIED", "previous_state": "NEW_FUNDED_DOMAIN", "new_state": "THEORY_EXPANSION_REQUIRED", "reason": "No plural candidate theories available."}
+{"timestamp": "2026-03-14T19:11:23.956312Z", "domain": "DRILL_DOMAIN_B_UNOBSERVABLE", "previous_state": "NEW_FUNDED_DOMAIN", "new_state": "INSTRUMENTATION_REQUIRED", "reason": "Candidate theory exists but lacks discriminating observables."}
+{"timestamp": "2026-03-14T19:11:23.965599Z", "domain": "DRILL_DOMAIN_C_MATURE", "previous_state": "NEW_FUNDED_DOMAIN", "new_state": "READY_FOR_EXPERIMENT_DESIGN", "reason": "Plural theories and intervention variable present."}

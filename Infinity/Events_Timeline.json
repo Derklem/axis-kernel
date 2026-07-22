@@ -1,0 +1,252 @@
+﻿[
+    {
+        "timestamp":  "2026-01-20T03:13:36Z",
+        "data":  {
+                     "old_mode":  null,
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from  to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-01-20T03:27:14Z",
+        "data":  {
+                     "old_mode":  "auto_low_risk",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from auto_low_risk to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-01-20T03:47:15Z",
+        "data":  {
+                     "old_mode":  "auto_low_risk",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from auto_low_risk to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-01-20T03:51:36Z",
+        "data":  {
+                     "old_mode":  "auto_low_risk",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from auto_low_risk to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-01-20T03:55:32Z",
+        "data":  {
+                     "old_mode":  "auto_low_risk",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from auto_low_risk to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-01-20T03:56:29Z",
+        "data":  {
+                     "old_mode":  "auto_low_risk",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from auto_low_risk to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-01-20T06:02:33Z",
+        "data":  {
+                     "old_mode":  "auto_low_risk",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from auto_low_risk to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-01-20T17:47:14Z",
+        "data":  {
+                     "old_mode":  "auto_low_risk",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from auto_low_risk to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-01-20T18:09:05Z",
+        "data":  {
+                     "old_mode":  "auto_low_risk",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from auto_low_risk to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-01-23T04:32:06Z",
+        "data":  {
+                     "old_mode":  "auto_low_risk",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from auto_low_risk to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-01-29T05:36:13Z",
+        "data":  {
+                     "old_mode":  "auto_low_risk",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from auto_low_risk to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-01-30T04:01:06Z",
+        "data":  {
+                     "old_mode":  "auto_low_risk",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from auto_low_risk to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-01-30T04:08:36Z",
+        "data":  {
+                     "old_mode":  "auto_low_risk",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from auto_low_risk to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-01-30T04:51:11Z",
+        "data":  {
+                     "old_mode":  "auto_low_risk",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from auto_low_risk to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-02-04T20:56:06Z",
+        "data":  {
+                     "old_mode":  "auto_low_risk",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from auto_low_risk to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-02-05T04:16:13Z",
+        "data":  {
+                     "old_mode":  "auto_low_risk",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from auto_low_risk to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-02-05T04:18:38Z",
+        "data":  {
+                     "old_mode":  "auto_low_risk",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from auto_low_risk to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-02-05T04:23:04Z",
+        "data":  {
+                     "old_mode":  "auto_low_risk",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from auto_low_risk to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-02-05T04:37:33Z",
+        "data":  {
+                     "old_mode":  "auto_low_risk",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from auto_low_risk to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-02-05T04:40:04Z",
+        "data":  {
+                     "old_mode":  "auto_low_risk",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from auto_low_risk to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-02-05T04:43:09Z",
+        "data":  {
+                     "old_mode":  "auto_low_risk",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from auto_low_risk to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-02-05T18:40:51Z",
+        "data":  {
+                     "old_mode":  "auto_low_risk",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from auto_low_risk to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-02-06T22:42:28Z",
+        "data":  {
+                     "old_mode":  "auto_low_risk",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from auto_low_risk to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-02-10T04:13:44Z",
+        "data":  {
+                     "old_mode":  null,
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from  to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    },
+    {
+        "timestamp":  "2026-02-11T02:45:24Z",
+        "data":  {
+                     "old_mode":  "auto_low_risk",
+                     "new_mode":  "auto_low_risk"
+                 },
+        "source":  "Axis_Mind",
+        "msg":  "Autonomy mode changed from auto_low_risk to auto_low_risk",
+        "kind":  "AutonomyModeChanged"
+    }
+]

@@ -1,0 +1,6 @@
+{
+  "observation_schema_version": "1.0.0",
+  "kind": "failure",
+  "status": "UNOBSERVABLE",
+  "reason_code": "LABORATORY_RUN_NOT_VERIFIED_PYTHON"
+}

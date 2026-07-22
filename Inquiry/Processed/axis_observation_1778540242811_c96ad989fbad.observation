@@ -1,0 +1,16 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "entity": "Llama-4-70B",
+    "claim": "Mark Zuckerberg says Llama 4 training is using 600k H100s.",
+    "claim_domain": "release_claim",
+    "claim_polarity": "affirming",
+    "source_type": "official_statement",
+    "source_id": " Zuck_Public",
+    "confidence": 0.5,
+    "confidence_components": {
+        "base": 0.5,
+        "tension_penalty": 0.0,
+        "reason": "stewardship_inference"
+    },
+    "ts_utc": "2026-05-11T22:57:22.811155+00:00"
+}

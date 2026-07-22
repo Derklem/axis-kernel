@@ -1,0 +1,50 @@
+﻿2026-01-29 20:34:48 [SUPERVISOR] --- Supervisor Awakening ---
+2026-01-29 20:34:48 [SUPERVISOR] Heartbeat: ALIVE
+2026-01-29 20:34:48 [SUPERVISOR] Core Loop: ALIVE (PID 7100)
+2026-01-29 20:34:48 [SUPERVISOR] --- Supervisor Sleep ---
+2026-02-11 00:31:14 [SUPERVISOR] --- Supervisor Awakening ---
+2026-02-11 00:31:16 [SUPERVISOR] Heartbeat unresponsive: The operation has timed out.
+2026-02-11 00:31:16 [SUPERVISOR] Action: Starting Heartbeat Server (Daemon)...
+2026-02-11 00:31:22 [SUPERVISOR] No PID file found.
+2026-02-11 00:31:22 [SUPERVISOR] Action: Restarting Core Loop (Status: MISSING)...
+2026-02-11 00:31:22 [SUPERVISOR] Core Loop Launched.
+2026-02-11 00:31:22 [SUPERVISOR] --- Supervisor Sleep ---
+2026-02-11 00:32:52 [SUPERVISOR] --- Supervisor Awakening ---
+2026-02-11 00:32:54 [SUPERVISOR] Heartbeat unresponsive: The operation has timed out.
+2026-02-11 00:32:54 [SUPERVISOR] Action: Starting Heartbeat Server (Daemon)...
+2026-02-11 00:32:59 [SUPERVISOR] No PID file found.
+2026-02-11 00:32:59 [SUPERVISOR] Action: Restarting Core Loop (Status: MISSING)...
+2026-02-11 00:32:59 [SUPERVISOR] Core Loop Launched.
+2026-02-11 00:32:59 [SUPERVISOR] --- Supervisor Sleep ---
+2026-02-19 00:30:41 [SUPERVISOR] --- Supervisor Awakening ---
+2026-02-19 00:30:52 [SUPERVISOR] Heartbeat unresponsive: Unable to connect to the remote server
+2026-02-19 00:30:52 [SUPERVISOR] Action: Starting Heartbeat Server (Daemon)...
+2026-02-19 00:30:57 [SUPERVISOR] PID File exists (8772) but process is missing.
+2026-02-19 00:30:57 [SUPERVISOR] Action: Restarting Core Loop (Status: DEAD_PID)...
+2026-02-19 00:30:57 [SUPERVISOR] Core Loop Launched.
+2026-02-19 00:30:57 [SUPERVISOR] --- Supervisor Sleep ---
+2026-02-19 11:57:38 [SUPERVISOR] --- Supervisor Awakening ---
+2026-02-19 11:57:38 [SUPERVISOR] CRITICAL: JSON Corruption detected in D:\Infinite\Infinity\Covenant\Covenant_Core.json. Blocking startup.
+2026-02-19 11:57:38 [SUPERVISOR] Error: Invalid array passed in, ']' expected. (3): [
+
+2026-02-21 12:18:53 [SUPERVISOR] --- Supervisor Awakening ---
+2026-02-21 12:19:05 [SUPERVISOR] Heartbeat unresponsive: The operation has timed out.
+2026-02-21 12:19:05 [SUPERVISOR] Action: Starting Heartbeat Server (Daemon)...
+2026-02-21 12:19:10 [SUPERVISOR] No PID file found.
+2026-02-21 12:19:10 [SUPERVISOR] Action: Restarting Core Loop (Status: MISSING)...
+2026-02-21 12:19:10 [SUPERVISOR] Core Loop Launched.
+2026-02-21 12:19:10 [SUPERVISOR] --- Supervisor Sleep ---
+2026-02-22 16:07:55 [SUPERVISOR] --- Supervisor Awakening ---
+2026-02-22 16:08:10 [SUPERVISOR] Heartbeat unresponsive: The operation has timed out.
+2026-02-22 16:08:10 [SUPERVISOR] Action: Starting Heartbeat Server (Daemon)...
+2026-02-22 16:08:15 [SUPERVISOR] No PID file found.
+2026-02-22 16:08:15 [SUPERVISOR] Action: Restarting Core Loop (Status: MISSING)...
+2026-02-22 16:08:15 [SUPERVISOR] Core Loop Launched.
+2026-02-22 16:08:15 [SUPERVISOR] --- Supervisor Sleep ---
+2026-02-23 12:29:58 [SUPERVISOR] --- Supervisor Awakening ---
+2026-02-23 12:30:03 [SUPERVISOR] Heartbeat unresponsive: The operation has timed out.
+2026-02-23 12:30:03 [SUPERVISOR] Action: Starting Heartbeat Server (Daemon)...
+2026-02-23 12:30:08 [SUPERVISOR] No PID file found.
+2026-02-23 12:30:08 [SUPERVISOR] Action: Restarting Core Loop (Status: MISSING)...
+2026-02-23 12:30:08 [SUPERVISOR] Core Loop Launched.
+2026-02-23 12:30:08 [SUPERVISOR] --- Supervisor Sleep ---

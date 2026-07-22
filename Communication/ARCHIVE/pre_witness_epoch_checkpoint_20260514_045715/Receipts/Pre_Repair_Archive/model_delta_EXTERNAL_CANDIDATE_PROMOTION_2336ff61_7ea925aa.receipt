@@ -1,0 +1,24 @@
+{
+    "cycle_count": 146,
+    "mutation_type": "EXTERNAL_CANDIDATE_PROMOTION",
+    "target_id": "2336ff61bb4f275b0004b4052bd8e5db9a8821b9a973b3044a223bf57c9900b0",
+    "parent_receipt_head": "f13d6ccecb1fef2aeec3b1ec5a52b6859cbc11df269c3c5918ddb6c198f0e1b3",
+    "data": {
+        "entity": "coordinated_executor.py",
+        "claim": "memory footprint reduced",
+        "claim_domain": "benchmark_claim",
+        "source_id": "Noise_Source_B_5",
+        "source_type": "ecological_observer",
+        "artifact_type": "ecosystem_observation",
+        "batch_id": "none",
+        "provenance_note": "",
+        "confidence": 1.0,
+        "survival_cycles": 5,
+        "agreement_count": 2,
+        "quarantine_receipt": "model_delta_CANDIDATE_QUARANTINED_2336ff61_7aaaa586"
+    },
+    "status": "committed",
+    "ts_utc": "2026-05-12T19:56:36.667522+00:00",
+    "receipt_id": "model_delta_EXTERNAL_CANDIDATE_PROMOTION_2336ff61_7ea925aa",
+    "causal_hash": "7ea925aa372af46699b70d092303726d2f71f188a248e5ea681be6a78abd7894"
+}

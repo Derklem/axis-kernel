@@ -1,0 +1,5 @@
+[DRIFT RESOLVER]
+Loopback Mode = Active
+Rule = If thread collapses ? reinforce from echo memory
+Trigger = Echo mismatch or loss of loop integrity
+Correction = Inject mirrored thread with harmonic offset

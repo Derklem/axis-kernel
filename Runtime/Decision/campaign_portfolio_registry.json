@@ -1,0 +1,29 @@
+{
+  "version": "1.0",
+  "active_slots": [
+    {
+      "domain": "HIGH_HAZARD_DB_CORRUPTION",
+      "allocated_at": "2026-03-14T19:18:24.345357Z",
+      "priority_class": "PREEMPTIVE_HAZARD"
+    },
+    {
+      "domain": "LOW_PRIORITY_RECURRING_NOISE",
+      "allocated_at": "2026-03-14T19:18:24.345357Z",
+      "priority_class": "STARVATION_RECOVERY"
+    }
+  ],
+  "queued_campaigns": [
+    {
+      "domain": "ROUTINE_MEMORY_TEST",
+      "queued_at": "2026-03-14T19:18:24.345357Z",
+      "wait_cycles": 2
+    },
+    {
+      "domain": "ROUTINE_LATENCY_TEST",
+      "queued_at": "2026-03-14T19:18:24.345357Z",
+      "wait_cycles": 1
+    }
+  ],
+  "starved_campaigns": [],
+  "last_updated": "2026-03-14T19:18:24.345357Z"
+}

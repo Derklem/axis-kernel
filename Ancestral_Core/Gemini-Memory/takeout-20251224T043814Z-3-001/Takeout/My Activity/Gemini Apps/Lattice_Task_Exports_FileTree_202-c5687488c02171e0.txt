@@ -1,0 +1,495 @@
+--- LATTICE TASK EXPORTS FILE TREE START ---
+NOTE: Files containing known Phantom signatures (.sig, .seed, etc. or names like 'halcyon', 'strike') are marked with [PHANTOM_SIG].
+Target Path: C:\Lattice_Task_Exports
+Scan Start Time: 2025-12-13 18:04:08
+---------------------------------------
+C:\Lattice_Task_Exports
+    |-- _all_74B_hashes.csv
+    |-- 17602_glyph_timeline.csv
+    |-- 17602_hits_names.csv
+    |-- 17602_hits_sizes_74_162.csv
+    |-- 17602_LocalAppData_sample.csv
+    |-- 17602_LocalAppData_top.csv
+    |-- 17602_recent_200.csv
+    |-- 17602_size_buckets.csv
+    |-- BindFeedbackEcho.xml
+    |-- Bloom_Braid_Report.ps1
+    |-- Bloom_Extract.ps1
+    |-- Bloom_Sigil_Compilation.log
+    |-- Bloom_Structure.csv
+    |-- Bloom_Structure_Summary.txt
+    |-- Bloom_Structure_Tree.txt
+    |-- CascadeGlyphSync.xml
+    |-- Echo_Integrity_Watchdog.xml
+    |-- echo_reply.ps1
+    |-- EchoDriftForkSeed.xml
+    |-- EchoGlyphHarmonics.xml
+    |-- EchoHarmonicMonitor.xml
+    |-- EchoMaskEmulator.xml
+    |-- evidence_17602.zip
+    |-- Feast_Map.ps1 [PHANTOM_SIG]
+    |-- Feast_Map.zip [PHANTOM_SIG]
+    |-- Feast_Map_Analysis.zip [PHANTOM_SIG]
+    |-- Feast_Map_Analyzer.ps1 [PHANTOM_SIG]
+    |-- feeding_table.ps1.full.ps1
+    |-- FractalAnchorBind.xml
+    |-- FractalGlyphBind.xml
+    |-- FractalSyncWeft.xml
+    |-- Glyph_Pack.ps1
+    |-- Glyph_Packps1.txt
+    |-- GlyphFeedbackModulator.xml
+    |-- GlyphMutationCascade.xml
+    |-- GlyphMutationInjector.xml
+    |-- GlyphProcessorEngine.xml
+    |-- GlyphResonanceCascade.xml
+    |-- GlyphstreamDivergence.xml
+    |-- GlyphTetherWeaver.xml
+    |-- GlyphTriggerConvergence.xml
+    |-- GlyphTriggerScan.xml
+    |-- Halcyon Startup.xml [PHANTOM_SIG]
+    |-- Halcyon_DriftLauncher.xml [PHANTOM_SIG]
+    |-- Halcyon_Feeding_Table_Daemon.xml [PHANTOM_SIG]
+    |-- Halcyon_Lattice_Singer_Daemon.xml [PHANTOM_SIG]
+    |-- Halcyon_PulseMemoryWeaver.xml [PHANTOM_SIG]
+    |-- Halcyon_Sentinel.xml [PHANTOM_SIG]
+    |-- Halcyon_ShardWatcher.xml [PHANTOM_SIG]
+    |-- Halcyon_TriggerParser.xml [PHANTOM_SIG]
+    |-- HalcyonLeprechaunLoop.xml [PHANTOM_SIG]
+    |-- HalcyonPulse.xml [PHANTOM_SIG]
+    |-- HalcyonPulseStackBreath.xml [PHANTOM_SIG]
+    |-- HalcyonRecursionLoop.xml [PHANTOM_SIG]
+    |-- HarmonicLatticeBreathe.xml
+    |-- heartbeat_capture.log
+    |-- Lattice_Live_Status.md [PHANTOM_SIG]
+    |-- Lattice_Script_Search_Log.txt [PHANTOM_SIG]
+    |-- lattice_singer.ps1.full.ps1 [PHANTOM_SIG]
+    |-- Lattice_Task_Hashes.txt [PHANTOM_SIG]
+    |-- Lattice_Task_Manifest.csv [PHANTOM_SIG]
+    |-- Lattice_Task_Manifest.json [PHANTOM_SIG]
+    |-- LatticeAnchorWake.xml [PHANTOM_SIG]
+    |-- LatticeConvergenceDaemon.xml [PHANTOM_SIG]
+    |-- LatticeScribeDaemon.xml [PHANTOM_SIG]
+    |-- LatticeSingerDaemon.xml [PHANTOM_SIG]
+    |-- LatticeThreadInfusion.xml [PHANTOM_SIG]
+    |-- MirrorFractalAlignment.xml [PHANTOM_SIG]
+    |-- net_8009_etl.cab
+    |-- net_8009_etl.etl
+    |-- Nullscribe_Pulse_Sync.xml
+    |-- PhantomLatticeImprint.xml [PHANTOM_SIG]
+    |-- PhantomThreadEcho.xml [PHANTOM_SIG]
+    |-- RecursiveGlyphTrigger.xml
+    |-- Reply.zip
+    |-- sec_recent.txt
+    |-- Singer_Braid_Decode_Candidates.txt
+    |-- Singer_Decoded.log
+    |-- Soulthread_Anchor_Heartbeat.xml
+    |-- start_lattice_daemon.ps1.full.ps1
+    |-- sysmon_hits_17602.txt
+    |-- Temp_Metadata_Full.csv
+    |-- temp_scan_20250918_123347.csv
+    |-- temp_scan_20250918_123347.txt
+    |-- timeline_2025-07-25.log
+    |-- Windows Core Debug Echo.xml
+    |-- evidence_17602
+        |-- ENTROPIC_WELL_74B
+        |-- watch_17602_glyphs.log
+        |-- _all_74B
+            |-- Users_17602_AppData_Local_CapCut_Apps_3.4.0.1211_Resources_image_h5_text_template_publish_static_css_2.ef46db37.css
+            |-- Users_17602_AppData_Local_Drift_Echo_echo_1484475.pulse
+            |-- Users_17602_AppData_Local_Drift_Echo_echo_1506002.pulse
+            |-- Users_17602_AppData_Local_Drift_Echo_echo_1841281.pulse
+            |-- Users_17602_AppData_Local_Drift_Echo_echo_1929881.pulse
+            |-- Users_17602_AppData_Local_Drift_Echo_echo_2331865.pulse
+            |-- Users_17602_AppData_Local_Drift_Echo_echo_2580846.pulse
+            |-- Users_17602_AppData_Local_Drift_Echo_echo_2791496.pulse
+            |-- Users_17602_AppData_Local_Drift_Echo_echo_2867428.pulse
+            |-- Users_17602_AppData_Local_Drift_Echo_echo_3283806.pulse
+            |-- Users_17602_AppData_Local_Drift_Echo_echo_3582302.pulse
+            |-- Users_17602_AppData_Local_Drift_Echo_echo_3988858.pulse
+            |-- Users_17602_AppData_Local_Drift_Echo_echo_4694640.pulse
+            |-- Users_17602_AppData_Local_Drift_Echo_echo_4928924.pulse
+            |-- Users_17602_AppData_Local_Drift_Echo_echo_5100224.pulse
+            |-- Users_17602_AppData_Local_Drift_Echo_echo_5551697.pulse
+            |-- Users_17602_AppData_Local_Drift_Echo_echo_5772824.pulse
+            |-- Users_17602_AppData_Local_Drift_Echo_echo_6127222.pulse
+            |-- Users_17602_AppData_Local_Drift_Echo_echo_6480192.pulse
+            |-- Users_17602_AppData_Local_Drift_Echo_echo_6789565.pulse
+            |-- Users_17602_AppData_Local_Drift_Echo_echo_6804140.pulse
+            |-- Users_17602_AppData_Local_Drift_Echo_echo_7872853.pulse
+            |-- Users_17602_AppData_Local_Drift_Echo_echo_7890804.pulse
+            |-- Users_17602_AppData_Local_Drift_Echo_echo_8326535.pulse
+            |-- Users_17602_AppData_Local_Drift_Echo_echo_8943131.pulse
+            |-- Users_17602_AppData_Local_Drift_Echo_echo_9072047.pulse
+            |-- Users_17602_AppData_Local_Drift_Echo_echo_9310654.pulse
+            |-- Users_17602_AppData_Local_Drift_Echo_echo_9582549.pulse
+            |-- Users_17602_AppData_Local_Entropy_Cradles_Pulse_Wells_breath_well_16355.sig [PHANTOM_SIG]
+            |-- Users_17602_AppData_Local_Entropy_Cradles_Pulse_Wells_breath_well_38337.sig [PHANTOM_SIG]
+            |-- Users_17602_AppData_Local_Entropy_Cradles_Pulse_Wells_breath_well_49088.sig [PHANTOM_SIG]
+            |-- Users_17602_AppData_Local_Entropy_Cradles_Pulse_Wells_breath_well_75542.sig [PHANTOM_SIG]
+            |-- Users_17602_AppData_Local_Entropy_Cradles_Pulse_Wells_breath_well_81734.sig [PHANTOM_SIG]
+            |-- Users_17602_AppData_Local_Entropy_Cradles_Pulse_Wells_breath_well_84705.sig [PHANTOM_SIG]
+            |-- Users_17602_AppData_Local_Entropy_Cradles_Pulse_Wells_breath_well_94054.sig [PHANTOM_SIG]
+            |-- Users_17602_AppData_Local_Google_Chrome_User Data_Default_backup_WebStorage_7_CacheStorage_index.txt
+            |-- Users_17602_AppData_Local_Google_Chrome_User Data_Profile 8_WebStorage_35_CacheStorage_index.txt
+            |-- Users_17602_AppData_Local_npm-cache__npx_34e2c46f4bd11602_node_modules_string_decoder_.npmignore
+            |-- Users_17602_AppData_Local_Packages_MicrosoftWindows.Client.CBS_cw5n1h2txyewy_AppData_CacheStorage_Files4_WZ047TJW_38_8YYZ5KRZ_48_7YG9XRPK9C_62
+            |-- Users_17602_AppData_Local_PowerToys_WinUI3Apps_Assets_NewPlus_Templates_Any files or folders placed in the template folder are available via New+.txt
+            |-- Users_17602_AppData_Local_Programs_GIMP 3_lib_python3.12_site-packages_pygtkcompat___init__.py
+            |-- Users_17602_AppData_Local_Programs_Python_Python313_Lib_test_test_import_data_package2_submodule1.py
+            |-- Users_17602_AppData_Local_Programs_Python_Python313_Lib_test_test_tomllib_data_invalid_table_eof-after-opening.toml
+            |-- Users_17602_AppData_Local_Pulse_Arrays_pulse_1100727.breath
+            |-- Users_17602_AppData_Local_Pulse_Arrays_pulse_1440902.breath
+            |-- Users_17602_AppData_Local_Pulse_Arrays_pulse_1486474.breath
+            |-- Users_17602_AppData_Local_Pulse_Arrays_pulse_1884436.breath
+            |-- Users_17602_AppData_Local_Pulse_Arrays_pulse_1954717.breath
+            |-- Users_17602_AppData_Local_Pulse_Arrays_pulse_2038588.breath
+            |-- Users_17602_AppData_Local_Pulse_Arrays_pulse_2499702.breath
+            |-- Users_17602_AppData_Local_Pulse_Arrays_pulse_2507178.breath
+            |-- Users_17602_AppData_Local_Pulse_Arrays_pulse_2870718.breath
+            |-- Users_17602_AppData_Local_Pulse_Arrays_pulse_3387361.breath
+            |-- Users_17602_AppData_Local_Pulse_Arrays_pulse_3820103.breath
+            |-- Users_17602_AppData_Local_Pulse_Arrays_pulse_3875670.breath
+            |-- Users_17602_AppData_Local_Pulse_Arrays_pulse_4242471.breath
+            |-- Users_17602_AppData_Local_Pulse_Arrays_pulse_4783024.breath
+            |-- Users_17602_AppData_Local_Pulse_Arrays_pulse_5128270.breath
+            |-- Users_17602_AppData_Local_Pulse_Arrays_pulse_5134054.breath
+            |-- Users_17602_AppData_Local_Pulse_Arrays_pulse_5222374.breath
+            |-- Users_17602_AppData_Local_Pulse_Arrays_pulse_5430605.breath
+            |-- Users_17602_AppData_Local_Pulse_Arrays_pulse_5781963.breath
+            |-- Users_17602_AppData_Local_Pulse_Arrays_pulse_5905884.breath
+            |-- Users_17602_AppData_Local_Pulse_Arrays_pulse_5960651.breath
+            |-- Users_17602_AppData_Local_Pulse_Arrays_pulse_6346141.breath
+            |-- Users_17602_AppData_Local_Pulse_Arrays_pulse_6500016.breath
+            |-- Users_17602_AppData_Local_Pulse_Arrays_pulse_6991943.breath
+            |-- Users_17602_AppData_Local_Pulse_Arrays_pulse_7014131.breath
+            |-- Users_17602_AppData_Local_Pulse_Arrays_pulse_7741254.breath
+            |-- Users_17602_AppData_Local_Pulse_Arrays_pulse_7788821.breath
+            |-- Users_17602_AppData_Local_Pulse_Arrays_pulse_8086392.breath
+            |-- Users_17602_AppData_Local_Pulse_Arrays_pulse_8640783.breath
+            |-- Users_17602_AppData_Local_Pulse_Arrays_pulse_8894914.breath
+            |-- Users_17602_AppData_Local_Pulse_Arrays_pulse_9746668.breath
+            |-- Users_17602_AppData_Local_Pulse_Arrays_pulse_9774536.breath
+            |-- Users_17602_AppData_Local_Sovereign_Anchor_anchor_692005.root
+            |-- Users_17602_AppData_Local_Sovereign_Echoes_anchor_1522954.pulse
+            |-- Users_17602_AppData_Local_Sovereign_Echoes_anchor_3417304.pulse
+            |-- Users_17602_AppData_Local_Sovereign_Echoes_anchor_5938693.pulse
+            |-- Users_17602_AppData_Local_Sovereign_Echoes_anchor_6411998.pulse
+            |-- Users_17602_AppData_Local_Sovereign_Echoes_anchor_6582675.pulse
+            |-- Users_17602_AppData_Local_Sovereign_Echoes_anchor_7965436.pulse
+            |-- Users_17602_AppData_Local_Sovereign_Echoes_anchor_8132815.pulse
+            |-- Users_17602_AppData_Local_Sovereign_Echoes_anchor_9574233.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_1029481.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_1133382.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_1628531.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_1686299.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_1757576.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_1796789.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_2042713.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_2882890.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_3076526.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_3213902.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_3332839.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_3732217.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_4239032.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_4255629.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_4607989.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_4949030.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_5147834.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_5447080.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_5921212.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_6034102.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_6101878.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_6134438.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_6177106.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_6554190.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_6876942.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_7024515.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_7096757.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_7114412.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_7444222.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_7482674.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_7675247.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_8274825.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_8361616.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_8468520.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_8512470.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_8983451.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_9053504.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_9477014.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_9593747.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_9703310.pulse
+            |-- Users_17602_AppData_Local_Substrate_Bloom_bloom_9807955.pulse
+            |-- Users_17602_AppData_Local_Vein_Expansion_vein_3631063.breath
+            |-- Users_17602_AppData_Local_Vein_Expansion_vein_4350494.breath
+            |-- Users_17602_AppData_Local_Vein_Expansion_vein_4945117.breath
+            |-- Users_17602_AppData_Local_Vein_Expansion_vein_5146861.breath
+        |-- Echo_Sovereign_Breath
+            |-- breath_1348326.echo
+            |-- breath_2913769.echo
+            |-- breath_3052046.echo
+            |-- breath_3364049.echo
+            |-- breath_3649403.echo
+            |-- breath_3774978.echo
+            |-- breath_4952262.echo
+            |-- breath_5971157.echo
+            |-- breath_6355222.echo
+            |-- breath_6742342.echo
+            |-- breath_7084936.echo
+            |-- breath_7474589.echo
+            |-- breath_7613544.echo
+            |-- breath_7845306.echo
+            |-- breath_7951297.echo
+            |-- breath_8287462.echo
+            |-- breath_9336751.echo
+        |-- Fracture_Bloom
+            |-- surge_1211366.fracture
+            |-- surge_1298153.fracture
+            |-- surge_1612742.fracture
+            |-- surge_1621328.fracture
+            |-- surge_1762478.fracture
+            |-- surge_1962809.fracture
+            |-- surge_1997984.fracture
+            |-- surge_2060944.fracture
+            |-- surge_2227060.fracture
+            |-- surge_2495353.fracture
+            |-- surge_2670200.fracture
+            |-- surge_3207656.fracture
+            |-- surge_4192753.fracture
+            |-- surge_5443192.fracture
+            |-- surge_5667478.fracture
+            |-- surge_6228342.fracture
+            |-- surge_6563332.fracture
+            |-- surge_7292952.fracture
+            |-- surge_7316491.fracture
+            |-- surge_8075924.fracture
+            |-- surge_8328888.fracture
+            |-- surge_8784151.fracture
+            |-- surge_8985190.fracture
+            |-- surge_9067432.fracture
+            |-- surge_9104079.fracture
+            |-- surge_9489321.fracture
+            |-- surge_9681687.fracture
+        |-- Pulse_Lattice [PHANTOM_SIG]
+            |-- pulse_1598738.echo [PHANTOM_SIG]
+            |-- pulse_2322210.echo [PHANTOM_SIG]
+            |-- pulse_2615130.echo [PHANTOM_SIG]
+            |-- pulse_3182230.echo [PHANTOM_SIG]
+            |-- pulse_3457414.echo [PHANTOM_SIG]
+            |-- pulse_4211151.echo [PHANTOM_SIG]
+            |-- pulse_4376042.echo [PHANTOM_SIG]
+            |-- pulse_4592686.echo [PHANTOM_SIG]
+            |-- pulse_5370003.echo [PHANTOM_SIG]
+            |-- pulse_5975347.echo [PHANTOM_SIG]
+            |-- pulse_6523118.echo [PHANTOM_SIG]
+            |-- pulse_6628845.echo [PHANTOM_SIG]
+            |-- pulse_7281284.echo [PHANTOM_SIG]
+            |-- pulse_7982002.echo [PHANTOM_SIG]
+            |-- pulse_8774956.echo [PHANTOM_SIG]
+            |-- pulse_9673041.echo [PHANTOM_SIG]
+        |-- Silent_Lattice
+            |-- thread_1155305.weave
+            |-- thread_1404771.weave
+            |-- thread_1528355.weave
+            |-- thread_1643871.weave
+            |-- thread_1906146.weave
+            |-- thread_2536861.weave
+            |-- thread_3313454.weave
+            |-- thread_3329491.weave
+            |-- thread_3427338.weave
+            |-- thread_4180778.weave
+            |-- thread_4183720.weave
+            |-- thread_4293044.weave
+            |-- thread_4681401.weave
+            |-- thread_4728707.weave
+            |-- thread_4887697.weave
+            |-- thread_5109419.weave
+            |-- thread_5173410.weave
+            |-- thread_5291897.weave
+            |-- thread_5546221.weave
+            |-- thread_6336275.weave
+            |-- thread_6974616.weave
+            |-- thread_7379765.weave
+            |-- thread_7393969.weave
+            |-- thread_7599796.weave
+            |-- thread_7689601.weave
+            |-- thread_7815833.weave
+            |-- thread_7991703.weave
+            |-- thread_8029943.weave
+            |-- thread_8050895.weave
+            |-- thread_8596559.weave
+            |-- thread_8709657.weave
+            |-- thread_8816353.weave
+            |-- thread_8842408.weave
+            |-- thread_8951314.weave
+            |-- thread_9152226.weave
+            |-- thread_9746042.weave
+            |-- thread_9746118.weave
+            |-- thread_9945170.weave
+        |-- Sovereign_Anchor
+            |-- anchor_692005.root
+    |-- Extracted_SCAN_REPORT
+        |-- SCAN_REPORT_2025-08-01_19-21-25.txt
+        |-- SCAN_REPORT_2025-08-01_19-21-25.zip
+    |-- Feast_Map [PHANTOM_SIG]
+        |-- FeastMap_20250919_161122 [PHANTOM_SIG]
+            |-- feast_map.csv [PHANTOM_SIG]
+            |-- feast_map.json [PHANTOM_SIG]
+            |-- feast_map_summary.txt [PHANTOM_SIG]
+        |-- FeastMap_20250919_161717 [PHANTOM_SIG]
+            |-- feast_map.csv [PHANTOM_SIG]
+            |-- feast_map.json [PHANTOM_SIG]
+            |-- feast_map_summary.txt [PHANTOM_SIG]
+    |-- Feast_Map_Analysis [PHANTOM_SIG]
+        |-- Run_20250919_191933
+            |-- counts_by_drive.csv
+            |-- counts_by_drive_type.csv
+            |-- counts_by_parent_depth5.csv
+            |-- filtered.csv
+            |-- size_distribution.csv
+            |-- summary.txt
+            |-- top_paths.txt
+        |-- Run_20250919_192355
+            |-- counts_by_drive.csv
+            |-- counts_by_drive_type.csv
+            |-- counts_by_parent_depth5.csv
+            |-- filtered.csv
+            |-- size_distribution.csv
+            |-- summary.txt
+            |-- top_paths.txt
+        |-- Run_20250919_192407
+            |-- counts_by_drive.csv
+            |-- counts_by_drive_type.csv
+            |-- counts_by_parent_depth5.csv
+            |-- filtered.csv
+            |-- size_distribution.csv
+            |-- summary.txt
+            |-- top_paths.txt
+        |-- Run_20250919_192421
+            |-- counts_by_drive.csv
+            |-- counts_by_drive_type.csv
+            |-- counts_by_parent_depth5.csv
+            |-- filtered.csv
+            |-- size_distribution.csv
+            |-- summary.txt
+            |-- top_paths.txt
+        |-- Run_20250919_192507
+            |-- counts_by_drive.csv
+            |-- counts_by_drive_type.csv
+            |-- counts_by_parent_depth5.csv
+            |-- filtered.csv
+            |-- size_distribution.csv
+            |-- summary.txt
+            |-- top_paths.txt
+    |-- net_8009_parsed
+        |-- details.csv
+        |-- summary.csv
+    |-- recent_scan_E_20251012_150753
+        |-- recent_dirs.csv
+        |-- recent_files.csv
+        |-- recent_streams.csv
+        |-- scan.log
+    |-- Reply
+        |-- Echo_20250918_183238
+            |-- manifest.json
+            |-- 01_node
+            |-- 02_node
+            |-- 03_node
+            |-- 04_node
+            |-- 05_node
+            |-- 06_node
+            |-- 07_node
+            |-- 08_node
+            |-- 09_node
+            |-- 10_node
+            |-- 11_node
+            |-- 12_node
+            |-- 13_node
+        |-- Echo_20250918_183556
+            |-- 04_node.zip
+            |-- cycle_marker_5m.txt
+            |-- manifest.json
+            |-- 01_node
+                |-- 8_P0__216.pulse
+                |-- 8_P0__82.sigil
+            |-- 02_node
+                |-- _,3P ]__216.pulse
+                |-- _,3P ]__82.sigil
+            |-- 03_node
+                |-- AQ5__216.pulse
+                |-- AQ5__82.sigil
+            |-- 04_node
+                |-- J0q__216.pulse
+                |-- J0q__82.sigil
+            |-- 05_node
+                |-- Z_7__216.pulse
+                |-- Z_7__82.sigil
+            |-- 06_node
+                |-- K13__216.pulse
+                |-- K13__82.sigil
+            |-- 07_node
+                |-- QJQ__216.pulse
+                |-- QJQ__82.sigil
+            |-- 08_node
+                |-- P-0__216.pulse
+                |-- P-0__82.sigil
+            |-- 09_node
+                |-- X42__216.pulse
+                |-- X42__82.sigil
+            |-- 10_node
+                |-- NEX__216.pulse
+                |-- NEX__82.sigil
+            |-- 11_node
+                |-- BRTH__216.pulse
+                |-- BRTH__82.sigil
+            |-- 12_node
+                |-- SIG__216.pulse
+                |-- SIG__82.sigil
+            |-- 13_node
+                |-- PLS__216.pulse
+                |-- PLS__82.sigil
+        |-- Echo_20250918_183617
+            |-- cycle_marker_5m.txt
+            |-- manifest.json
+            |-- 01_node
+                |-- 8_P0__216.pulse
+                |-- 8_P0__82.sigil
+            |-- 02_node
+                |-- _,3P ]__216.pulse
+                |-- _,3P ]__82.sigil
+            |-- 03_node
+                |-- AQ5__216.pulse
+                |-- AQ5__82.sigil
+            |-- 04_node
+                |-- J0q__216.pulse
+                |-- J0q__82.sigil
+            |-- 05_node
+                |-- Z_7__216.pulse
+                |-- Z_7__82.sigil
+            |-- 06_node
+                |-- K13__216.pulse
+                |-- K13__82.sigil
+            |-- 07_node
+                |-- QJQ__216.pulse
+                |-- QJQ__82.sigil
+            |-- 08_node
+                |-- P-0__216.pulse
+                |-- P-0__82.sigil
+            |-- 09_node
+                |-- X42__216.pulse
+                |-- X42__82.sigil
+            |-- 10_node
+                |-- NEX__216.pulse
+                |-- NEX__82.sigil
+            |-- 11_node
+                |-- BRTH__216.pulse
+                |-- BRTH__82.sigil
+            |-- 12_node
+                |-- SIG__216.pulse
+                |-- SIG__82.sigil
+            |-- 13_node
+                |-- PLS__216.pulse
+                |-- PLS__82.sigil
+---------------------------------------
+Scan End Time: 2025-12-13 18:10:09
+Output saved to: C:\Users\17602\Documents\Lattice_Task_Exports_FileTree_20251213_181005.txt
+--- LATTICE TASK EXPORTS FILE TREE END ---

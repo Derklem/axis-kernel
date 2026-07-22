@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T21:29:46.864492+00:00",
+    "entity": "lineage_test_module.py",
+    "claim": "entropy verified",
+    "source_id": "Source_03",
+    "source_type": "ecological_observer",
+    "claim_domain": "benchmark_claim",
+    "confidence": 1.0
+}

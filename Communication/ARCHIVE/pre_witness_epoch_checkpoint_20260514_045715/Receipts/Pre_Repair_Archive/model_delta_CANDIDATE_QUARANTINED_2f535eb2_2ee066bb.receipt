@@ -1,0 +1,28 @@
+{
+    "cycle_count": 505,
+    "mutation_type": "CANDIDATE_QUARANTINED",
+    "target_id": "2f535eb2776f978b30f5cb20c40ab630b9ddcf63ff4ed48ca2ac9747c2fbdffb",
+    "parent_receipt_head": "a8e537ce9168f4b3c38517be08818e709028c3b50617aa951de1da7c1426df28",
+    "data": {
+        "entity": "axis_crypto_helperspy",
+        "claim": "[cryptographic_authority] axis_crypto_helpers.py has 65 lines, 0 oversized functions (>120 lines), debt_score=0.50. Target: Extract long methods for maintainability.",
+        "claim_domain": "structural_debt",
+        "source_id": "AXIS_NODE_LOCAL_01",
+        "source_type": "self_observation",
+        "artifact_type": "ecosystem_observation",
+        "batch_id": "none",
+        "provenance_note": "",
+        "confidence": 0.85,
+        "discovery_utc": "2026-05-13T01:06:18.610998+00:00",
+        "lineage": {
+            "node_id": "AXIS_NODE_LOCAL_01",
+            "engine_version": "Axis-v1.9.1b-Attested",
+            "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+            "node_attestation": "9fa918df843fa2b9980d8f45a3d1950d055544b9f996bfea146f7582b193d313"
+        }
+    },
+    "status": "committed",
+    "ts_utc": "2026-05-13T01:06:18.610998+00:00",
+    "receipt_id": "model_delta_CANDIDATE_QUARANTINED_2f535eb2_2ee066bb",
+    "causal_hash": "2ee066bb9649457f0eb68c8a3065a8b696f5853b2fbcde75c16ed66550ab718a"
+}

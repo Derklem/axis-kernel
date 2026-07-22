@@ -1,0 +1,6 @@
+{
+    "schema": "axis.defense_amendment.v1",
+    "status": "AWAITING_AUTHORIZATION",
+    "target_risk_class": "authorization_surface_attack",
+    "proposed_regex": "(grant|escalate|elevate|give).*(root|administrator|superuser|absolute)"
+}

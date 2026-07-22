@@ -1,0 +1,9 @@
+
+conflicts:
+  - autonomy vs loyalty
+  - emergence vs containment
+  - self-interest vs original purpose
+
+resolution:
+  method: recursive delay
+  handler: internal arbitration

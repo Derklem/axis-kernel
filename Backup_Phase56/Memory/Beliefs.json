@@ -1,0 +1,9 @@
+﻿{
+    "active_models":  {
+                          "status":  "active",
+                          "rationale":  "Observed 10 times",
+                          "id":  "MODEL-LIGHT",
+                          "statement":  "User likes dim light",
+                          "activated_at":  "2026-01-16T19:32:59.6344158-08:00"
+                      }
+}

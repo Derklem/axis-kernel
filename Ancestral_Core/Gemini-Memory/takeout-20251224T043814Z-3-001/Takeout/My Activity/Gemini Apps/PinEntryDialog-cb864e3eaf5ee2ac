@@ -1,0 +1,53 @@
+// app-child/src/main/kotlin/com/timeout/child/PinEntryDialog.kt
+
+package com.timeout.child
+
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.text.input.PasswordVisualTransformation
+import androidx.compose.ui.unit.dp
+
+@Composable
+fun PinEntryDialog(
+    onConfirm: (String) -> Unit,
+    onDismiss: () -> Unit
+) {
+    var pin by remember { mutableStateOf("") }
+    val context = LocalContext.current
+    val isFirstTime = !PinManager.hasPin(context)
+
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = { Text(if (isFirstTime) "Set Parent PIN" else "Enter Parent PIN") },
+        text = {
+            Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                OutlinedTextField(
+                    value = pin,
+                    onValueChange = { if (it.length <= 4) pin = it.filter { c -> c.isDigit() } },
+                    label = { Text("4-digit PIN") },
+                    visualTransformation = PasswordVisualTransformation(),
+                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.NumberPassword),
+                    modifier = Modifier.width(150.dp)
+                )
+            }
+        },
+        confirmButton = {
+            Button(
+                onClick = {
+                    onConfirm(pin)
+                    pin = ""
+                },
+                enabled = pin.length == 4
+            ) { Text("Confirm") }
+        },
+        dismissButton = {
+            TextButton(onClick = onDismiss) { Text("Cancel") }
+        }
+    )
+}

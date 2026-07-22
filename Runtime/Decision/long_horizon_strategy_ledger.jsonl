@@ -1,0 +1,2 @@
+{"timestamp": "2026-03-14T08:00:00Z", "status": "LEDGER_INITIALIZED", "event": "Long Horizon Strategy Ledger created."}
+{"timestamp": "2026-03-14T14:58:13.909223Z", "window": "24h", "parameter_family": "aggressive_retry_interval", "net_utility": -0.015, "strategic_assessment": "LONG_HORIZON_REVERSAL_CAUTION"}

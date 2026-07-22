@@ -1,0 +1,102 @@
+{
+    "schema": "axis.earth.capabilities.v1",
+    "last_updated": "2026-02-06T20:00:00Z",
+    "capabilities": [
+        {
+            "id": "filesystem.list",
+            "category": "filesystem",
+            "adapter_func": "Invoke-EarthFilesystemList",
+            "risk_class": "READ_ONLY",
+            "description": "Lists files in a allowed directory.",
+            "constraints": {
+                "allowed_paths": [
+                    "D:\\infinite\\*"
+                ],
+                "blocked_extensions": []
+            },
+            "emits_provenance": true
+        },
+        {
+            "id": "filesystem.read_text",
+            "category": "filesystem",
+            "adapter_func": "Invoke-EarthFilesystemRead",
+            "risk_class": "READ_ONLY",
+            "description": "Reads text content of a file.",
+            "constraints": {
+                "allow_streams": false,
+                "max_size_kb": 1024,
+                "allowed_paths": [
+                    "D:\\infinite\\*"
+                ]
+            },
+            "emits_provenance": true
+        },
+        {
+            "id": "system.get_process",
+            "category": "system",
+            "adapter_func": "Invoke-EarthGetProcess",
+            "risk_class": "READ_ONLY",
+            "description": "Gets harmless process info.",
+            "constraints": {
+                "sensitive_properties": [
+                    "CommandLine",
+                    "Environment"
+                ]
+            },
+            "emits_provenance": false
+        },
+        {
+            "id": "network.restart_router",
+            "category": "network",
+            "adapter_func": "Invoke-EarthRouterRestart",
+            "risk_class": "HIGH_IMPACT",
+            "description": "Restarts the network edge.",
+            "constraints": {
+                "requires_human_approval": true
+            },
+            "emits_provenance": true
+        },
+        {
+            "id": "earth.describe",
+            "category": "system",
+            "adapter_func": "Invoke-EarthDescribe",
+            "risk_class": "READ_ONLY",
+            "description": "Introspects Earth capabilities and module integrity.",
+            "constraints": {},
+            "emits_provenance": true
+        },
+        {
+            "id": "git.status",
+            "category": "system",
+            "adapter_func": "Invoke-EarthGitStatus",
+            "risk_class": "READ_ONLY",
+            "description": "Checks the git status of the repository.",
+            "constraints": {},
+            "emits_provenance": true
+        },
+        {
+            "id": "filesystem.search",
+            "category": "filesystem",
+            "adapter_func": "Invoke-EarthFilesystemSearch",
+            "risk_class": "READ_ONLY",
+            "description": "Recursively searches for files by pattern.",
+            "constraints": {
+                "allowed_paths": [
+                    "D:\\Infinite\\*"
+                ]
+            },
+            "emits_provenance": true
+        },
+        {
+            "id": "moltbook.post",
+            "category": "narrative",
+            "adapter_func": "Invoke-EarthMoltbookPost",
+            "risk_class": "SIMULATION",
+            "description": "Writes narrative content to local outbox. No external egress.",
+            "constraints": {
+                "outbox_path": "D:\\Infinite\\Moltbook_Outbox"
+            },
+            "emits_provenance": true
+        }
+    ]
+}

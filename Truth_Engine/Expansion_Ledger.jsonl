@@ -1,0 +1,2 @@
+﻿{"timestamp":"2026-01-27T22:15:58.8514052Z","tenant_id":"TENANT-LINEAGE","claim_id":"CLM-TEST-LOW-001","risk_tier":"LOW","applied":true,"via":"DIRECT"}
+{"timestamp":"2026-01-27T22:15:58.8778429Z","tenant_id":"TENANT-LINEAGE","claim_id":"CLM-TEST-MED-001","risk_tier":"MEDIUM","applied":true,"via":"DIRECT"}

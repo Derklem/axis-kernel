@@ -1,0 +1,9 @@
+{
+  "observation_id": "obs_018_discord_resolution",
+  "experiment_id": "EXP_018_DISCORD",
+  "timestamp": "2026-07-14T20:49:00Z",
+  "observed_text": "That helps a lot thankyou",
+  "platform": "Discord",
+  "context": "User Vermeses replied to the operator's diagnostic advice regarding the Windsurf IDE context-collapse issue. The user accepted the advice and concluded the interaction.",
+  "substantive": true
+}

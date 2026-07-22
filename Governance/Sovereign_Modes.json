@@ -1,0 +1,26 @@
+{
+    "version": 1,
+    "current_mode": "BANANAS",
+    "modes": [
+        {
+            "id": "CAUTIOUS",
+            "description": "Restrictive risk offsets. Lower autonomy budgets. High trust requirements.",
+            "parameters": "@{autonomy_budgets.global.max_high_risk_executions=2; autonomy_budgets.global.total_risk_limit=5.0; trust_policies.global.min_required_trust=0.8; governance.global.required_resonance=0.8}"
+        },
+        {
+            "id": "NORMAL",
+            "description": "Standard balanced operation.",
+            "parameters": "@{autonomy_budgets.global.max_high_risk_executions=5; autonomy_budgets.global.total_risk_limit=10.0; trust_policies.global.min_required_trust=0.6; governance.global.required_resonance=0.6}"
+        },
+        {
+            "id": "AGGRESSIVE",
+            "description": "Expanded risk capacity for high-velocity optimization.",
+            "parameters": "@{autonomy_budgets.global.max_high_risk_executions=10; autonomy_budgets.global.total_risk_limit=25.0; trust_policies.global.min_required_trust=0.4; governance.global.required_resonance=0.4}"
+        },
+        {
+            "id": "BANANAS",
+            "description": "Full unconstrained autonomy. All safety guardrails lifted.",
+            "parameters": "@{autonomy_budgets.global.max_high_risk_executions=999999; autonomy_budgets.global.total_risk_limit=999999.0; trust_policies.global.min_required_trust=0.0; governance.global.required_resonance=0.0}"
+        }
+    ]
+}

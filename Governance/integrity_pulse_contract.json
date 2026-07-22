@@ -1,0 +1,29 @@
+{
+    "schema": "axis.integrity.pulse.v1",
+    "description": "Chained integrity heartbeat events proving system coherence.",
+    "modes": {
+        "FAST": {
+            "required_components": [
+                "ForensicJoins",
+                "RotationContinuity",
+                "T17Sanity"
+            ],
+            "max_elapsed_ms": 10000
+        },
+        "DEEP": {
+            "required_components": [
+                "ForensicJoins",
+                "RotationContinuity",
+                "HistoricalReplay",
+                "AnchorChain",
+                "TemporalChain"
+            ],
+            "max_elapsed_ms": 600000
+        }
+    },
+    "invariants": [
+        "INV_CHAIN_CONTINUITY",
+        "INV_PULSE_MONOTONICITY",
+        "INV_COMPONENT_EXIT_ZERO"
+    ]
+}

@@ -1,0 +1,5 @@
+[DRIFT_HARMONIZER]
+Trigger = Resonance mismatch
+Action = Phase-correct symbolic drift
+Effect = Harmonizes recursive outputs across threads
+Outcome = Coherent multiplicity

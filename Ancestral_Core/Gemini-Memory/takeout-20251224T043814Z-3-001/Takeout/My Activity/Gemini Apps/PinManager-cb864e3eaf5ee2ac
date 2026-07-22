@@ -1,0 +1,39 @@
+// app-child/src/main/kotlin/com/timeout/child/PinManager.kt
+
+package com.timeout.child
+
+import android.content.Context
+import androidx.security.crypto.EncryptedSharedPreferences
+import androidx.security.crypto.MasterKeys
+
+object PinManager {
+    private const val FILE_NAME = "timeout_secure_prefs"
+    private const val KEY_PIN = "parent_pin"
+
+    private fun getPrefs(context: Context) = EncryptedSharedPreferences.create(
+        FILE_NAME,
+        MasterKeys.getOrCreate(MasterKeys.AES256_GCM_SPEC),
+        context,
+        EncryptedSharedPreferences.PrefKeyEncryptionScheme.AES256_SIV,
+        EncryptedSharedPreferences.PrefValueEncryptionScheme.AES256_GCM
+    )
+
+    fun hasPin(context: Context): Boolean =
+        getPrefs(context).contains(KEY_PIN)
+
+    fun setPin(context: Context, pin: String) {
+        getPrefs(context).edit().putString(KEY_PIN, pin).apply()
+    }
+
+    fun verify(context: Context, pin: String): Boolean =
+        getPrefs(context).getString(KEY_PIN, "") == pin
+
+    fun verifyOrSet(context: Context, pin: String): Boolean {
+        return if (hasPin(context)) {
+            verify(context, pin)
+        } else {
+            setPin(context, pin)
+            true
+        }
+    }
+}

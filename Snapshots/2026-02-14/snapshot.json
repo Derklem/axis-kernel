@@ -1,0 +1,37 @@
+﻿{
+    "snapshot_id":  "snap-b63987a82de74d6d9aec10b9764d70fb",
+    "timestamp":  "2026-02-14T21:51:16.7331770Z",
+    "date_key":  "2026-02-14",
+    "anchor_link":  "sha256:4da5fb6a45e1b6ca9623a1252a9ab575294634d90b428da27611173345ed63bf",
+    "system_metrics":  {
+                           "revocation":  {
+                                              "count":  0,
+                                              "size_bytes":  0,
+                                              "hash":  "null"
+                                          },
+                           "policy":  {
+                                          "count":  1,
+                                          "size_bytes":  173,
+                                          "hash":  "sha256:2e6ab477b1bcb249c321d6fb9c0e09831c4f09883fd3553f79fa525ba0a706e5"
+                                      },
+                           "audit":  {
+                                         "count":  1,
+                                         "size_bytes":  265,
+                                         "hash":  "sha256:2222222222222222222222222222222222222222222222222222222222222222"
+                                     },
+                           "spend":  {
+                                         "count":  1,
+                                         "size_bytes":  251,
+                                         "hash":  "sha256:4444444444444444444444444444444444444444444444444444444444444444"
+                                     },
+                           "keyring":  {
+                                           "hash":  "sha256:f04b332beeb81882de3581c66c09a5503de9ea32f2c1a27559bd8fd07fa71744",
+                                           "size_bytes":  3191
+                                       },
+                           "identity":  {
+                                            "hash":  "sha256:82db4aa85a6c2eba2058d930e057f9f7ac5b30725fd012350a671417d5b8d80a",
+                                            "size_bytes":  2598
+                                        }
+                       },
+    "verified":  false
+}

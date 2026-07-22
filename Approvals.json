@@ -1,0 +1,239 @@
+﻿{
+    "version":  1,
+    "decisions":  [
+                      {
+                          "request_id":  "REQ-20260115T120255Z-UI-CONSOLE-FS-ListDir",
+                          "anchor":  "Mobile_Anchor",
+                          "decision":  "approve",
+                          "reason":  null,
+                          "decided_at":  "2026-01-15T12:03:08Z",
+                          "applied_at":  null,
+                          "previous_status":  "waiting_for_approval"
+                      },
+                      {
+                          "request_id":  "REQ-20260115T120255Z-UI-CONSOLE-FS-ListDir",
+                          "anchor":  "Mobile_Anchor",
+                          "decision":  "approve",
+                          "reason":  null,
+                          "decided_at":  "2026-01-15T12:03:08Z",
+                          "applied_at":  null,
+                          "previous_status":  "waiting_for_approval"
+                      },
+                      {
+                          "request_id":  "REQ-20260115T124438Z-UI-CONSOLE-LOG-AutonomyTest-Rec",
+                          "anchor":  "Mobile_Anchor",
+                          "decision":  "approve",
+                          "reason":  null,
+                          "decided_at":  "2026-01-15T12:58:05Z",
+                          "applied_at":  null,
+                          "previous_status":  "waiting_for_approval"
+                      },
+                      {
+                          "request_id":  "REQ-20260115T124452Z-UI-CONSOLE-LOG-AutonomyTest-Auto",
+                          "anchor":  "Mobile_Anchor",
+                          "decision":  "approve",
+                          "reason":  null,
+                          "decided_at":  "2026-01-15T12:58:19Z",
+                          "applied_at":  null,
+                          "previous_status":  "waiting_for_approval"
+                      },
+                      {
+                          "request_id":  "REQ-20260115-124834-LOG-ResolveHypothesis",
+                          "anchor":  "Mobile_Anchor",
+                          "decision":  "approve",
+                          "reason":  null,
+                          "decided_at":  "2026-01-15T12:58:33Z",
+                          "applied_at":  null,
+                          "previous_status":  "waiting_for_approval"
+                      },
+                      {
+                          "request_id":  "REQ-20260115-124834-LOG-ResolveHypothesis",
+                          "anchor":  "Mobile_Anchor",
+                          "decision":  "approve",
+                          "reason":  null,
+                          "decided_at":  "2026-01-15T12:58:33Z",
+                          "applied_at":  null,
+                          "previous_status":  "waiting_for_approval"
+                      },
+                      {
+                          "request_id":  "REQ-20260115-124834-LOG-ResolveHypothesis",
+                          "anchor":  "Mobile_Anchor",
+                          "decision":  "approve",
+                          "reason":  null,
+                          "decided_at":  "2026-01-15T12:58:47Z",
+                          "applied_at":  null,
+                          "previous_status":  "waiting_for_approval"
+                      },
+                      {
+                          "request_id":  "REQ-20260115-135322-NET-DeviceRosterLite",
+                          "anchor":  "Mobile_Anchor",
+                          "decision":  "approve",
+                          "reason":  null,
+                          "decided_at":  "2026-01-15T13:58:31Z",
+                          "applied_at":  null,
+                          "previous_status":  "waiting_for_approval"
+                      },
+                      {
+                          "request_id":  "REQ-20260115-135322-NET-DeviceRosterLite",
+                          "anchor":  "Mobile_Anchor",
+                          "decision":  "approve",
+                          "reason":  null,
+                          "decided_at":  "2026-01-15T13:58:51Z",
+                          "applied_at":  null,
+                          "previous_status":  "waiting_for_approval"
+                      },
+                      {
+                          "request_id":  "REQ-20260115-135335-NET-DeviceRosterLite",
+                          "anchor":  "Mobile_Anchor",
+                          "decision":  "approve",
+                          "reason":  null,
+                          "decided_at":  "2026-01-15T13:58:51Z",
+                          "applied_at":  null,
+                          "previous_status":  "waiting_for_approval"
+                      },
+                      {
+                          "request_id":  "REQ-20260115-135338-NET-DeviceRosterLite",
+                          "anchor":  "Mobile_Anchor",
+                          "decision":  "approve",
+                          "reason":  null,
+                          "decided_at":  "2026-01-15T13:58:51Z",
+                          "applied_at":  null,
+                          "previous_status":  "waiting_for_approval"
+                      },
+                      {
+                          "request_id":  "REQ-20260115-135338-NET-DeviceRosterLite",
+                          "anchor":  "Mobile_Anchor",
+                          "decision":  "approve",
+                          "reason":  null,
+                          "decided_at":  "2026-01-15T13:58:51Z",
+                          "applied_at":  null,
+                          "previous_status":  "waiting_for_approval"
+                      },
+                      {
+                          "request_id":  "REQ-20260115-135532-NET-DeviceRosterLite",
+                          "anchor":  "Mobile_Anchor",
+                          "decision":  "approve",
+                          "reason":  null,
+                          "decided_at":  "2026-01-15T13:59:11Z",
+                          "applied_at":  null,
+                          "previous_status":  "waiting_for_approval"
+                      },
+                      {
+                          "request_id":  "REQ-20260115-135549-NET-DeviceRosterLite",
+                          "anchor":  "Mobile_Anchor",
+                          "decision":  "approve",
+                          "reason":  null,
+                          "decided_at":  "2026-01-15T13:59:29Z",
+                          "applied_at":  null,
+                          "previous_status":  "waiting_for_approval"
+                      },
+                      {
+                          "request_id":  "REQ-20260115-135353-NET-DeviceRosterLite",
+                          "anchor":  "Mobile_Anchor",
+                          "decision":  "approve",
+                          "reason":  null,
+                          "decided_at":  "2026-01-15T14:02:30Z",
+                          "applied_at":  null,
+                          "previous_status":  "waiting_for_approval"
+                      },
+                      {
+                          "request_id":  "REQ-20260115-135410-NET-DeviceRosterLite",
+                          "anchor":  "Mobile_Anchor",
+                          "decision":  "approve",
+                          "reason":  null,
+                          "decided_at":  "2026-01-15T14:03:37Z",
+                          "applied_at":  null,
+                          "previous_status":  "waiting_for_approval"
+                      },
+                      {
+                          "request_id":  "REQ-20260115-141130-NET-DeviceRosterLite",
+                          "anchor":  "Mobile_Anchor",
+                          "decision":  "approve",
+                          "reason":  null,
+                          "decided_at":  "2026-01-15T14:15:22Z",
+                          "applied_at":  null,
+                          "previous_status":  "waiting_for_approval"
+                      },
+                      {
+                          "request_id":  "REQ-20260115-141712-NET-DeviceRosterLite",
+                          "anchor":  "Mobile_Anchor",
+                          "decision":  "approve",
+                          "reason":  null,
+                          "decided_at":  "2026-01-15T14:46:34Z",
+                          "applied_at":  null,
+                          "previous_status":  "waiting_for_approval"
+                      },
+                      {
+                          "request_id":  "REQ-20260115-141727-NET-DeviceRosterLite",
+                          "anchor":  "Mobile_Anchor",
+                          "decision":  "approve",
+                          "reason":  null,
+                          "decided_at":  "2026-01-15T15:55:25Z",
+                          "applied_at":  null,
+                          "previous_status":  "waiting_for_approval"
+                      },
+                      {
+                          "request_id":  "REQ-20260115-162329-NET-DeviceRosterLite",
+                          "anchor":  "Mobile_Anchor",
+                          "decision":  "approve",
+                          "reason":  null,
+                          "decided_at":  "2026-01-16T09:17:06Z",
+                          "applied_at":  null,
+                          "previous_status":  "waiting_for_approval"
+                      },
+                      {
+                          "request_id":  "REQ-20260115-162346-NET-DeviceRosterLite",
+                          "anchor":  "Mobile_Anchor",
+                          "decision":  "approve",
+                          "reason":  null,
+                          "decided_at":  "2026-01-16T09:40:19Z",
+                          "applied_at":  null,
+                          "previous_status":  "waiting_for_approval"
+                      },
+                      {
+                          "request_id":  "REQ-20260116-114637-NET-DeviceRosterLite",
+                          "anchor":  "Mobile_Anchor",
+                          "decision":  "approve",
+                          "reason":  null,
+                          "decided_at":  "2026-01-16T14:33:37Z",
+                          "applied_at":  null,
+                          "previous_status":  "waiting_for_approval"
+                      },
+                      {
+                          "request_id":  "REQ-20260116-114637-NET-DeviceRosterLite",
+                          "anchor":  "Mobile_Anchor",
+                          "decision":  "approve",
+                          "reason":  null,
+                          "decided_at":  "2026-01-16T14:33:52Z",
+                          "applied_at":  null,
+                          "previous_status":  "waiting_for_approval"
+                      },
+                      {
+                          "request_id":  "REQ-20260116-114649-NET-DeviceRosterLite",
+                          "anchor":  "Mobile_Anchor",
+                          "decision":  "approve",
+                          "reason":  null,
+                          "decided_at":  "2026-01-16T14:33:52Z",
+                          "applied_at":  null,
+                          "previous_status":  "waiting_for_approval"
+                      },
+                      {
+                          "request_id":  "REQ-20260116-114702-NET-DeviceRosterLite",
+                          "anchor":  "Mobile_Anchor",
+                          "decision":  "approve",
+                          "reason":  null,
+                          "decided_at":  "2026-01-16T14:33:52Z",
+                          "applied_at":  null,
+                          "previous_status":  "waiting_for_approval"
+                      },
+                      {
+                          "request_id":  "REQ-20260116-114844-NET-DeviceRosterLite",
+                          "anchor":  "Mobile_Anchor",
+                          "decision":  "approve",
+                          "reason":  null,
+                          "decided_at":  "2026-01-16T14:33:52Z",
+                          "applied_at":  null,
+                          "previous_status":  "waiting_for_approval"
+                      }
+                  ]
+}

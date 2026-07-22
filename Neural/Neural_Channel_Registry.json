@@ -1,0 +1,244 @@
+{
+    "version": 1,
+    "registry_id": "NEURAL-REG-2026-001",
+    "channels": [
+        {
+            "channel_id": "NEURAL-SYS-HEARTBEAT-001",
+            "name": "System Heartbeat Stream",
+            "description": "Internal heartbeat and pulse events emitted by Axis and Earth for health monitoring.",
+            "source_type": "file",
+            "direction": "input",
+            "category": "system",
+            "data_format": "jsonl",
+            "schema_hint": "neural.heartbeat.v1",
+            "endpoint": {
+                "path": "D:/Infinite/Neural/Inbox/System_Heartbeat.log"
+            },
+            "intake_handler": "NEURAL-Intake-Heartbeat",
+            "status": "enabled",
+            "trust_level": "core",
+            "risk_class": "low",
+            "tags": [
+                "heartbeat",
+                "system",
+                "core"
+            ],
+            "rate_limit": {
+                "max_events_per_min": 120,
+                "burst_limit": 300
+            },
+            "retention_policy": {
+                "max_days": 7,
+                "max_mb": 512,
+                "rollup_strategy": "aggregate"
+            },
+            "health": {
+                "last_seen_utc": "2026-01-22T19:04:12.2381883Z",
+                "last_status": "ok",
+                "last_error": ""
+            },
+            "metrics": {
+                "avg_events_per_min": 0,
+                "error_rate": 0
+            },
+            "origin": "system_core",
+            "created_at": "2026-01-22T00:00:00Z",
+            "updated_at": "2026-01-22T19:04:12.3006387Z",
+            "created_by": "Axis",
+            "last_reviewed_by": "Architect",
+            "last_reviewed_at": "2026-01-22T00:00:00Z"
+        },
+        {
+            "channel_id": "NEURAL-NET-ROUTER-001",
+            "name": "Router Telemetry",
+            "description": "Passive network telemetry from the primary router.",
+            "source_type": "file",
+            "direction": "input",
+            "category": "network",
+            "data_format": "jsonl",
+            "schema_hint": "neural.net.telemetry.v1",
+            "endpoint": {
+                "path": "D:/Infinite/Neural/Inbox/Router_Telemetry.log"
+            },
+            "intake_handler": "NEURAL-Intake-RouterTelemetry",
+            "status": "enabled",
+            "trust_level": "trusted",
+            "risk_class": "medium",
+            "tags": [
+                "network",
+                "router",
+                "telemetry"
+            ],
+            "rate_limit": {
+                "max_events_per_min": 300,
+                "burst_limit": 1000
+            },
+            "retention_policy": {
+                "max_days": 3,
+                "max_mb": 1024,
+                "rollup_strategy": "aggregate"
+            },
+            "health": {
+                "last_seen_utc": "2026-01-22T19:04:12.2381883Z",
+                "last_status": "error",
+                "last_error": "File missing"
+            },
+            "metrics": {
+                "avg_events_per_min": 0,
+                "error_rate": 1
+            },
+            "origin": "system_core",
+            "created_at": "2026-01-22T00:00:00Z",
+            "updated_at": "2026-01-22T19:04:12.3688905Z",
+            "created_by": "Axis",
+            "last_reviewed_by": "Architect",
+            "last_reviewed_at": "2026-01-22T00:00:00Z"
+        },
+        {
+            "channel_id": "NEURAL-EXT-WEATHER-001",
+            "name": "External Weather Feed",
+            "description": "External weather API feed used for environmental context.",
+            "source_type": "api",
+            "direction": "input",
+            "category": "external_weather",
+            "data_format": "json",
+            "schema_hint": "neural.weather.noaa.v1",
+            "endpoint": {
+                "url": "https://example.weather.api/axis/weather",
+                "method": "GET"
+            },
+            "intake_handler": "NEURAL-Intake-Weather",
+            "status": "disabled",
+            "trust_level": "external",
+            "risk_class": "medium",
+            "tags": [
+                "external",
+                "weather",
+                "context"
+            ],
+            "rate_limit": {
+                "max_events_per_min": 6,
+                "burst_limit": 12
+            },
+            "retention_policy": {
+                "max_days": 2,
+                "max_mb": 256,
+                "rollup_strategy": "aggregate"
+            },
+            "health": {
+                "last_seen_utc": null,
+                "last_status": "unknown",
+                "last_error": null
+            },
+            "metrics": {
+                "avg_events_per_min": 0,
+                "error_rate": 0
+            },
+            "origin": "system_core",
+            "created_at": "2026-01-22T00:00:00Z",
+            "updated_at": "2026-01-22T00:00:00Z",
+            "created_by": "Axis",
+            "last_reviewed_by": "Architect",
+            "last_reviewed_at": "2026-01-22T00:00:00Z"
+        },
+        {
+            "channel_id": "NEURAL-VIS-RETINA-001",
+            "name": "Visual Retina Feed",
+            "description": "Raw visual frame metadata from local visual capture (screen/camera).",
+            "source_type": "file",
+            "direction": "input",
+            "category": "visual",
+            "data_format": "jsonl",
+            "schema_hint": "neural.visual.retina.v1",
+            "endpoint": {
+                "path": "D:/Infinite/Neural/Inbox/Retina_Raw.log"
+            },
+            "intake_handler": "NEURAL-Intake-Retina",
+            "status": "enabled",
+            "trust_level": "sensitive",
+            "risk_class": "high",
+            "tags": [
+                "visual",
+                "retina",
+                "sensitive"
+            ],
+            "rate_limit": {
+                "max_events_per_min": 60,
+                "burst_limit": 120
+            },
+            "retention_policy": {
+                "rollup_strategy": "aggregate",
+                "max_mb": 512,
+                "max_days": 2
+            },
+            "health": {
+                "last_seen_utc": null,
+                "last_error": null,
+                "last_status": "unknown"
+            },
+            "metrics": {
+                "error_rate": 0,
+                "avg_events_per_min": 0
+            },
+            "origin": "system_core",
+            "created_at": "2026-01-22T00:00:00Z",
+            "updated_at": "2026-01-22T00:00:00Z",
+            "created_by": "Axis",
+            "last_reviewed_by": "Architect",
+            "last_reviewed_at": "2026-01-22T00:00:00Z"
+        },
+        {
+            "channel_id": "NEURAL-CMD-MOBILE-001",
+            "name": "Mobile Obsidian Portal",
+            "description": "Direct command interface from the Mobile Axis Dashboard.",
+            "source_type": "api",
+            "direction": "input",
+            "category": "command",
+            "data_format": "json",
+            "schema_hint": "neural.cmd.mobile.v1",
+            "endpoint": {
+                "url": "http://<Axis_IP>:8090/api/haptic",
+                "method": "POST"
+            },
+            "intake_handler": "NEURAL-Intake-MobileCmd",
+            "allowed_intents": [
+                "ping",
+                "approve",
+                "deny",
+                "CMD_EXEC_PLAYBOOK"
+            ],
+            "status": "enabled",
+            "trust_level": "user_device",
+            "risk_class": "high",
+            "tags": [
+                "mobile",
+                "command",
+                "auth_required"
+            ],
+            "rate_limit": {
+                "max_events_per_min": 60,
+                "burst_limit": 10
+            },
+            "retention_policy": {
+                "max_days": 30,
+                "max_mb": 100,
+                "rollup_strategy": "audit_log"
+            },
+            "health": {
+                "last_seen_utc": null,
+                "last_status": "unknown",
+                "last_error": null
+            },
+            "metrics": {
+                "avg_events_per_min": 0,
+                "error_rate": 0
+            },
+            "origin": "user_device",
+            "created_at": "2026-01-22T20:00:00Z",
+            "updated_at": "2026-01-22T20:00:00Z",
+            "created_by": "Axis",
+            "last_reviewed_by": "Architect",
+            "last_reviewed_at": "2026-01-22T20:00:00Z"
+        }
+    ]
+}

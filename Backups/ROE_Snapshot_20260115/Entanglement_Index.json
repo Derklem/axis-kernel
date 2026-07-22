@@ -1,0 +1,68 @@
+﻿{
+    "version":  1,
+    "last_updated":  "2026-01-12T00:00:00Z",
+    "threads":  [
+                    {
+                        "id":  "THREAD-EXAMPLE-001",
+                        "incident_id":  null,
+                        "sim_id":  "SIM-20260112-145042",
+                        "request_id":  "REQ-20260112-145042-List-Directory",
+                        "earth_action_id":  null,
+                        "summary":  "Example thread linking Sim and Request."
+                    },
+                    {
+                        "id":  "THREAD-20260112-REQ-TEST-001",
+                        "created_at":  "2026-01-12T16:18:18",
+                        "incident_id":  null,
+                        "request_id":  "REQ-TEST-001",
+                        "earth_action_id":  null,
+                        "summary":  "Action: List-Directory (Completed, logic link pending)",
+                        "sim_id":  null
+                    },
+                    {
+                        "id":  "THREAD-20260112-REQ-20260112-145043-ADMIN-Restart-Router",
+                        "created_at":  "2026-01-12T16:18:18",
+                        "incident_id":  null,
+                        "request_id":  "REQ-20260112-145043-ADMIN-Restart-Router",
+                        "earth_action_id":  null,
+                        "summary":  "Action: ADMIN-Restart-Router (Status: pending)",
+                        "sim_id":  null
+                    },
+                    {
+                        "id":  "THREAD-20260112-REQ-20260112-160643-ADMIN-Restart-Router",
+                        "created_at":  "2026-01-12T16:18:18",
+                        "incident_id":  null,
+                        "request_id":  "REQ-20260112-160643-ADMIN-Restart-Router",
+                        "earth_action_id":  null,
+                        "summary":  "Action: ADMIN-Restart-Router (Status: denied)",
+                        "sim_id":  null
+                    },
+                    {
+                        "id":  "THREAD-20260112-REQ-20260112-160644-Read-File",
+                        "created_at":  "2026-01-12T16:18:18",
+                        "incident_id":  null,
+                        "request_id":  "REQ-20260112-160644-Read-File",
+                        "earth_action_id":  null,
+                        "summary":  "Action: Read-File (Status: denied)",
+                        "sim_id":  null
+                    },
+                    {
+                        "id":  "THREAD-20260112-REQ-20260112-161118-ADMIN-Restart-Router",
+                        "created_at":  "2026-01-12T16:18:18",
+                        "incident_id":  null,
+                        "request_id":  "REQ-20260112-161118-ADMIN-Restart-Router",
+                        "earth_action_id":  null,
+                        "summary":  "Action: ADMIN-Restart-Router (Status: denied)",
+                        "sim_id":  null
+                    },
+                    {
+                        "id":  "THREAD-20260112-REQ-20260112-161119-Read-File",
+                        "created_at":  "2026-01-12T16:18:18",
+                        "incident_id":  null,
+                        "request_id":  "REQ-20260112-161119-Read-File",
+                        "earth_action_id":  null,
+                        "summary":  "Action: Read-File (Status: denied)",
+                        "sim_id":  null
+                    }
+                ]
+}

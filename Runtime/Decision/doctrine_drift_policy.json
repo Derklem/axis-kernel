@@ -1,0 +1,26 @@
+{
+  "version": "1.0",
+  "drift_metrics": {
+    "max_override_ratio": 0.60,
+    "min_prediction_accuracy": 0.55,
+    "max_usage_decay_rate": 0.35,
+    "meta_subsumption_pressure_threshold": 0.50
+  },
+  "score_weights": {
+    "override_ratio": 0.35,
+    "prediction_failure": 0.25,
+    "usage_decay_rate": 0.25,
+    "meta_subsumption_pressure": 0.15
+  },
+  "retirement_thresholds": {
+    "monitoring_threshold": 0.40,
+    "candidate_for_retirement": 0.60,
+    "recommended_retirement": 0.75
+  },
+  "retirement_safety": {
+    "cannot_retire_if_canonical_active_overall": true,
+    "cannot_retire_if_active_in_any_regime": true,
+    "requires_competing_doctrine": true,
+    "requires_minimum_observation_window_hours": 24
+  }
+}

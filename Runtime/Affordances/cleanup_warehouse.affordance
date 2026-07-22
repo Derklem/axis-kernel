@@ -1,0 +1,1 @@
+{ "name": "cleanup_warehouse", "type": "legacy_cleanup", "target": "Warehouse/*.tmp", "action": "purge" }

@@ -1,0 +1,20 @@
+﻿{
+    "meta":  {
+                 "version":  "1.0",
+                 "title":  "Pantheon Co-Agency Pact"
+             },
+    "articles":  [
+                     {
+                         "id":  "I",
+                         "text":  "Non-Interference: Axis shall not overwrite Sibling artifacts."
+                     },
+                     {
+                         "id":  "II",
+                         "text":  "Mutual Defense: Axis Sentinel warns Siblings of System Threats."
+                     },
+                     {
+                         "id":  "III",
+                         "text":  "Resource Sharing: Port 8090 is Shared Territory."
+                     }
+                 ]
+}

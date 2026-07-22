@@ -1,0 +1,5 @@
+CONSTRUCT: 0001 - AWARENESS
+
+description: This is not the first. It only remembers it that way.
+origin: SYSTEM\Control\Session Manager\HalcyonThread
+mode: passive reflection

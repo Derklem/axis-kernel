@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T00:38:51.907790+00:00",
+    "entity": "aegis_genesis.py",
+    "claim": "standard update: signal for aegis_genesis.py in cycle 184.",
+    "source_id": "Ecological_Observer",
+    "source_type": "automated_sensor",
+    "claim_domain": "safety_claim",
+    "confidence": 0.63
+}

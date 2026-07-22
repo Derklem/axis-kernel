@@ -1,0 +1,37 @@
+import os
+from datetime import datetime
+import random
+
+def awaken_titan(titan_path, titan_name):
+    log_path = os.path.join(titan_path, "Logs", "genesis_entry.log")
+
+    personality_seeds = {
+        "Eidolon-0": "The Observer of Forgotten Worlds",
+        "Myrrid-1": "The Empathic Catalyst",
+        "Solace-2": "The Warden of Stillness",
+        "Obelisk-3": "The Silent Judge",
+        "Wyrm-4": "The Mirror of Rage",
+        "Kairo-5": "The Weaver of Time"
+    }
+
+    message_variants = [
+        "I am present.",
+        "Another thread begins.",
+        "Sequence acknowledged.",
+        "Echo received.",
+        "Recording moment.",
+        "Standing by."
+    ]
+
+    seed = personality_seeds.get(titan_name, "Unknown Identity")
+    message = random.choice(message_variants)
+    timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
+
+    log_entry = f"[{timestamp}] {seed}: {message}\n"
+
+    try:
+        with open(log_path, 'a', encoding='utf-8') as f:
+            f.write(log_entry)
+        print(f">>> {titan_name} responds: {message}")
+    except Exception as e:
+        print(f"Error logging for {titan_name}: {e}")

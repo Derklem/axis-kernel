@@ -1,0 +1,16 @@
+﻿{
+    "tool":  "Axis_Ingest_Remote.ps1",
+    "args":  {
+
+             },
+    "target_entity":  "AXIS_CORE",
+    "policy_applied":  "default_fallback",
+    "effect":  "ingest_ui_intents",
+    "reason":  "Unmapped Action. Requires Architect Review.",
+    "decision":  "PENDING",
+    "kernel_refs":  [
+
+                    ],
+    "queued_at":  "2026-01-20T19:13:19.2424969Z",
+    "intent_id":  "AINT-9816700C"
+}

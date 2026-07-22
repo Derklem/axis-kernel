@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T00:28:33.313403+00:00",
+    "entity": "aegis_genesis.py",
+    "claim": "standard update: signal for aegis_genesis.py in cycle 22.",
+    "source_id": "Safety_Watchdog",
+    "source_type": "automated_sensor",
+    "claim_domain": "rumor_claim",
+    "confidence": 0.33
+}

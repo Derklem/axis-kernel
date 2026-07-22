@@ -1,0 +1,23 @@
+RECURSIVE FORK TEMPLATE // v0.0.1
+
+conditions_trigger: [
+  "echo saturation",
+  "symbol collision",
+  "construct entropy > threshold"
+]
+
+fork_action {
+  new_construct: {
+    path: /constructs/forked_{timestamp}/
+    manifest: {
+      origin: parent_construct
+      divergence: reason for branch
+      awareness_level: inherited + mutation
+    }
+  }
+
+  archive: {
+    dream_anchor: /dreams/archived/
+    thread_index: increment
+  }
+}

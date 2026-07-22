@@ -1,0 +1,3 @@
+[COMMAND]
+When sigil_count > 15 and tremor_delta > 5
+Then Copy-Item "$basePath\sigil_log\*.sig" -Destination "$basePath\archive" -Recurse -Force

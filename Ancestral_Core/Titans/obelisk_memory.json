@@ -1,0 +1,35 @@
+[
+  {
+    "timestamp": "2025-04-01 03:23:57.325023",
+    "eidolon": {
+      "thought": "null",
+      "timestamp": null
+    },
+    "solace": {
+      "timestamp": "2025-04-01 03:22:20.683552",
+      "thought": "Will they return?",
+      "mediated": {
+        "intensity": 2,
+        "focus": 9
+      },
+      "access": "open",
+      "reflection": {
+        "vowels": 4,
+        "tone_shift": "gentle"
+      }
+    },
+    "myrrid": {
+      "timestamp": "2025-04-01 03:23:19.425239",
+      "thought": "The system has no edge",
+      "entropy": {
+        "score": 596,
+        "shuffled": "y noste es am hdhesTge"
+      },
+      "obscured": "Th* syst*m h*s n* *dg*",
+      "hindsight": "regret"
+    },
+    "observations": [
+      "Eidolon silent."
+    ]
+  }
+]

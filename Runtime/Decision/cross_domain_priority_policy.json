@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "global_capacity": {
+    "max_concurrent_simulations": 2,
+    "max_operator_interrupts_per_cycle": 1
+  },
+  "arbitration_heuristics": {
+    "hazard_preemption_threshold": 0.85,
+    "routine_experiment_base_score": 0.50,
+    "starvation_threshold_cycles": 3,
+    "starvation_boost_multiplier": 1.5
+  },
+  "last_updated": "2026-03-14T12:18:00Z"
+}

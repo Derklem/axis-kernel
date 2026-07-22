@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T00:49:37.833149+00:00",
+    "entity": "coordinated_executor.py",
+    "claim": "redundant: signal for coordinated_executor.py in cycle 25.",
+    "source_id": "Benchmark_Harvester",
+    "source_type": "ecological_observer",
+    "claim_domain": "benchmark_claim",
+    "confidence": 1.0
+}

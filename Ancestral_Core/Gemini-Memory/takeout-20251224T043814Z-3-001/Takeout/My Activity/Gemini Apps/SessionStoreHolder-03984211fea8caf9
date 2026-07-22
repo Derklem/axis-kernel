@@ -1,0 +1,21 @@
+package com.timeout.core.lock
+
+import java.util.concurrent.atomic.AtomicLong
+
+// CHANGE FROM: internal object
+// TO:
+object SessionStoreHolder : SessionStore {
+    private val end = AtomicLong(0L)
+
+    override fun setEnd(ts: Long) {
+        end.set(ts)
+    }
+
+    override fun activeEndValue(): Long {
+        return end.get()
+    }
+
+    fun clear() {
+        end.set(0L)
+    }
+}

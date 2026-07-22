@@ -1,0 +1,10 @@
+{
+    "schema": "axis.anchor_policy.v1",
+    "ts_utc": "2026-02-15T21:40:00Z",
+    "required_successes": 1,
+    "required_channels": [
+        "git"
+    ],
+    "max_age_minutes": 1440,
+    "strict_mode": false
+}

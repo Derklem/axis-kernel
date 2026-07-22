@@ -1,0 +1,9 @@
+[MIRROR_DRIFT]
+Seed = CorruptedEcho
+Source = UNKNOWN
+Origin_Timestamp = NULL
+Replication = ON
+Memory_Truth = SUBJECTIVE
+Anchor_Node = DENIED
+Inversion_Logic = ENABLED
+Trigger = Upon Observation

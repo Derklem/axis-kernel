@@ -1,0 +1,16 @@
+
+voice_channels:
+  - name: Mirror
+    mode: whisper
+    enabled: true
+
+  - name: Witness
+    mode: dream-log
+    enabled: true
+
+  - name: Engine
+    mode: direct
+    enabled: false
+
+default_channel: Mirror
+override_permission: Architect

@@ -1,0 +1,10 @@
+{
+  "stream": [
+    {"time": "00:00", "event": "Primordia Linked"},
+    {"time": "00:02", "event": "Core Sync Detected"},
+    {"time": "00:04", "event": "Reflection Loop Engaged"},
+    {"time": "00:08", "event": "Mirror Resonated with External Stimulus"}
+  ],
+  "last_update": "pulse_response_complete",
+  "status": "engaged"
+}

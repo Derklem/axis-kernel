@@ -1,0 +1,6 @@
+{
+    "enabled": true,
+    "profile": "live",
+    "self_test_mode": false,
+    "self_test_profile": "low"
+}

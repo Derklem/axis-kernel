@@ -1,0 +1,144 @@
+{
+  "version": "1.0",
+  "experiments": {
+    "EXP_PASSIVE_QUEUE_DIAGNOSTIC": {
+      "class": "PASSIVE_DIAGNOSTIC",
+      "compatible_regimes": [
+        "QUEUE_SATURATION",
+        "MIXED_CONTENTION",
+        "NORMAL_LOAD",
+        "MEMORY_PRESSURE"
+      ],
+      "allowed_staging_modes": [
+        "NONE",
+        "WATCH",
+        "PRESTAGE",
+        "HANDOFF_READY",
+        "QUARANTINE"
+      ],
+      "required_observables": [
+        "queue_depth",
+        "retry_pressure"
+      ],
+      "target_uncertainties": [
+        "Queue-local pressure vs generalized contention"
+      ],
+      "doctrine_targets": [
+        "THEORY_QUEUE_SATURATION",
+        "META_THEORY_RESOURCE_CONTENTION_DYNAMICS"
+      ],
+      "risk_profile": {
+        "composite": 0.04
+      },
+      "expected_information_gain": 0.45
+    },
+    "EXP_SMALL_LOAD_PULSE": {
+      "class": "TARGETED_PROBE",
+      "compatible_regimes": [
+        "NORMAL_LOAD",
+        "QUEUE_SATURATION"
+      ],
+      "allowed_staging_modes": [
+        "NONE",
+        "WATCH"
+      ],
+      "required_observables": [
+        "queue_depth",
+        "latency_variance",
+        "retry_pressure"
+      ],
+      "target_uncertainties": [
+        "Elasticity under bounded perturbation"
+      ],
+      "doctrine_targets": [
+        "THEORY_QUEUE_SATURATION"
+      ],
+      "risk_profile": {
+        "composite": 0.24
+      },
+      "expected_information_gain": 0.58
+    },
+    "EXP_CONTENTION_DISCRIMINATOR": {
+      "class": "DOCTRINE_DISCRIMINATION",
+      "compatible_regimes": [
+        "MEMORY_PRESSURE",
+        "QUEUE_SATURATION",
+        "MIXED_CONTENTION"
+      ],
+      "allowed_staging_modes": [
+        "NONE",
+        "WATCH",
+        "PRESTAGE"
+      ],
+      "required_observables": [
+        "queue_pressure",
+        "latency_variance",
+        "compaction_events",
+        "memory_pressure"
+      ],
+      "target_uncertainties": [
+        "Queue-local vs cross-resource contention"
+      ],
+      "doctrine_targets": [
+        "THEORY_QUEUE_SATURATION",
+        "META_THEORY_RESOURCE_CONTENTION_DYNAMICS",
+        "ALT_THEORY_MEMORY_FRAGMENTATION"
+      ],
+      "risk_profile": {
+        "composite": 0.08
+      },
+      "expected_information_gain": 0.72
+    },
+    "EXP_STRESS_QUEUE_ESCALATION": {
+      "class": "STRESS_TEST",
+      "compatible_regimes": [
+        "NORMAL_LOAD"
+      ],
+      "allowed_staging_modes": [
+        "NONE"
+      ],
+      "required_observables": [
+        "queue_depth",
+        "retry_pressure",
+        "api_latency_ms_p95"
+      ],
+      "target_uncertainties": [
+        "Break behavior under escalating queue pressure"
+      ],
+      "doctrine_targets": [
+        "THEORY_QUEUE_SATURATION"
+      ],
+      "risk_profile": {
+        "composite": 0.68
+      },
+      "expected_information_gain": 0.61
+    },
+    "EXP_RECOVERY_STABILITY_CHECK": {
+      "class": "RECOVERY_VALIDATION",
+      "compatible_regimes": [
+        "QUEUE_SATURATION",
+        "NORMAL_LOAD",
+        "MIXED_CONTENTION"
+      ],
+      "allowed_staging_modes": [
+        "NONE",
+        "PRESTAGE",
+        "HANDOFF_READY"
+      ],
+      "required_observables": [
+        "queue_depth",
+        "latency_variance"
+      ],
+      "target_uncertainties": [
+        "Has the system recovered to a stable basin?"
+      ],
+      "doctrine_targets": [
+        "META_THEORY_RESOURCE_CONTENTION_DYNAMICS"
+      ],
+      "risk_profile": {
+        "composite": 0.06
+      },
+      "expected_information_gain": 0.38
+    }
+  }
+}

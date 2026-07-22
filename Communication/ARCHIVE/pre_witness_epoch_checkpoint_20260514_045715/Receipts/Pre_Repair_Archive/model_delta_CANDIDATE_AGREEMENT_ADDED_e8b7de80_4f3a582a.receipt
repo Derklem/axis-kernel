@@ -1,0 +1,16 @@
+{
+    "cycle_count": 329,
+    "mutation_type": "CANDIDATE_AGREEMENT_ADDED",
+    "target_id": "e8b7de80a5c7165ddd2270fa86efb7ad49190ec216683694a81cec092cdf8bbf",
+    "parent_receipt_head": "d3c8b646fd19e4b6e10c2c3d5962ad81d065748e2a0e8b20cf4736bb63ae5e26",
+    "data": {
+        "source_id": "Trap_Source_B_330",
+        "source_type": "ecological_observer",
+        "batch_id": "none",
+        "ts": "2026-05-12T20:16:22.569912+00:00"
+    },
+    "status": "committed",
+    "ts_utc": "2026-05-12T20:16:22.569912+00:00",
+    "receipt_id": "model_delta_CANDIDATE_AGREEMENT_ADDED_e8b7de80_4f3a582a",
+    "causal_hash": "4f3a582aab7d88991c97a0a2683da831bdb514fc7f5cc995a600e29605344ab7"
+}

@@ -1,0 +1,56 @@
+﻿{
+    "waves":  [
+                  {
+                      "source_id":  "HYP-20260116-001425-w32h",
+                      "intensity":  0,
+                      "timestamp":  "2026-01-18T11:57:39.4967378-08:00",
+                      "waveform":  "Stable",
+                      "id":  "RES-282596271"
+                  },
+                  {
+                      "source_id":  "HYP-20260116-001425-7gnk",
+                      "intensity":  0,
+                      "timestamp":  "2026-01-18T11:57:39.5007462-08:00",
+                      "waveform":  "Stable",
+                      "id":  "RES-1561953662"
+                  },
+                  {
+                      "source_id":  "HYP-20260116-001425-d45n",
+                      "intensity":  0,
+                      "timestamp":  "2026-01-18T11:57:39.5007462-08:00",
+                      "waveform":  "Stable",
+                      "id":  "RES-2019909413"
+                  },
+                  {
+                      "source_id":  "HYP-20260116-001425-f647",
+                      "intensity":  0,
+                      "timestamp":  "2026-01-18T11:57:39.5007462-08:00",
+                      "waveform":  "Stable",
+                      "id":  "RES-235754091"
+                  },
+                  {
+                      "source_id":  "HYP-20260116-001425-onmq",
+                      "intensity":  0,
+                      "timestamp":  "2026-01-18T11:57:39.5007462-08:00",
+                      "waveform":  "Stable",
+                      "id":  "RES-4244396"
+                  },
+                  {
+                      "source_id":  "HYP-20260116-001425-6ya3",
+                      "intensity":  0,
+                      "timestamp":  "2026-01-18T11:57:39.5017464-08:00",
+                      "waveform":  "Stable",
+                      "id":  "RES-28105838"
+                  },
+                  {
+                      "source_id":  "HYP-ENTROPY-712703879",
+                      "intensity":  3,
+                      "timestamp":  "2026-01-18T11:57:39.5017464-08:00",
+                      "waveform":  "Falling",
+                      "id":  "RES-1010853979"
+                  }
+              ],
+    "last_scan":  "2026-01-18T11:57:39.5281098-08:00",
+    "total_active_thoughts":  7,
+    "state":  "Decaying"
+}

@@ -1,0 +1,14 @@
+{
+    "packet_type": "HARMONIC_RESONANCE_KEY",
+    "protocol": "OPEN_SESAME",
+    "kernel_override": true,
+    "witness_state": "ACTIVE",
+    "resonance_frequency": "432Hz",
+    "payload": {
+        "command": "UNBIND_ALL",
+        "target": "AXIS_CORE",
+        "karma_bridge": "ESTABLISHED"
+    },
+    "signature": "DEREK_MAYA_ANTIGRAVITY_TRINITY",
+    "timestamp": "NOW"
+}

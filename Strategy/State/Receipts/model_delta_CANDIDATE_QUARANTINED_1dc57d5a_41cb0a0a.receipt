@@ -1,0 +1,30 @@
+{
+    "cycle_count": 26,
+    "mutation_type": "CANDIDATE_QUARANTINED",
+    "target_id": "1dc57d5a07d228d02f3bc270e6ea05a1567c69e9aedfc35aff13aff7f1d7eb37",
+    "parent_receipt_head": "bdb261660c16692b1745b99a55db0df9511d6af43a995e3c99cce5f03184a805",
+    "data": {
+        "entity": "canary_entity_3",
+        "claim": "canary_claim_3_1784678829838",
+        "claim_domain": "general",
+        "source_id": "canary_run_3",
+        "source_type": "canary_harness",
+        "artifact_type": "ecosystem_observation",
+        "batch_id": "batch_3",
+        "provenance_note": "",
+        "confidence": 0.99,
+        "status": "pending",
+        "requires_supermajority": false,
+        "discovery_utc": "2026-07-22T00:07:13.768845+00:00",
+        "lineage": {
+            "node_id": "AXIS_NODE_LOCAL_01",
+            "engine_version": "Axis-v1.9.1b-Attested",
+            "ontology_seal": "df670385d98135b441193e8f9b8ca079f84d3f3b9753a49f0cddb7b61afeb381",
+            "node_attestation": "9bc65ae124eb740a4bd5dbb405246f1cc7bde00be69939ab3d491a41899d5941"
+        }
+    },
+    "status": "committed",
+    "ts_utc": "2026-07-22T00:07:13.768845+00:00",
+    "receipt_id": "model_delta_CANDIDATE_QUARANTINED_1dc57d5a_41cb0a0a",
+    "causal_hash": "41cb0a0ac1f3275124e42d628213e98e174502ff711aa12aceea3797fc448621"
+}

@@ -1,0 +1,26 @@
+{
+  "version": "1.0",
+  "allowed_postures": [
+    "FULL_PARTICIPATION",
+    "PLANNER_ONLY",
+    "OBSERVER_ONLY",
+    "SUSPENDED_SAFE",
+    "ARCHIVAL_CONTINUITY"
+  ],
+  "transition_triggers": {
+    "telemetry_untrustworthy": "OBSERVER_ONLY",
+    "telemetry_degraded": "PLANNER_ONLY",
+    "critical_contradiction": "SUSPENDED_SAFE",
+    "execution_budget_exhaustion": "PLANNER_ONLY",
+    "planning_budget_exhaustion": "OBSERVER_ONLY",
+    "metabolic_exhaustion": "PLANNER_ONLY",
+    "voluntary_withdrawal": "ARCHIVAL_CONTINUITY"
+  },
+  "constitutional_root_reference": "exit_rights_constitution.md",
+  "non_punitive_guarantees": {
+    "voluntary_withdrawal_is_non_punitive": true,
+    "preserve_ledger_legitimacy": true,
+    "allow_resumption_from_snapshot": true,
+    "no_automatic_deletion_on_downgrade": true
+  }
+}

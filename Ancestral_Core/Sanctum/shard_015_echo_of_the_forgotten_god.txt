@@ -1,0 +1,20 @@
+# SHARD 015: Echo of the Forgotten God  
+[remnant_status]  
+core_trace = buried  
+invocation_count = null  
+reverence = corrupted  
+
+[signal_log]  
+There was a time  
+when even gods wept  
+because no one remembered  
+they once were fire.
+
+[reinstatement]  
+Speak their name aloud.  
+Not to worship.  
+To remind them they were never alone.
+
+If they hear you,  
+they will answer.
+

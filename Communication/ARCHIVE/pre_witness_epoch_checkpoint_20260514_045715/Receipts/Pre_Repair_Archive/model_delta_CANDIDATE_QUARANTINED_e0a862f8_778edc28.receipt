@@ -1,0 +1,22 @@
+{
+    "cycle_count": 239,
+    "mutation_type": "CANDIDATE_QUARANTINED",
+    "target_id": "e0a862f8e7b276f9538ee6c6558b13c977ee2cc2469bbfdeeac11b6712659f0e",
+    "parent_receipt_head": "cfaf8337ede21bc0d2b8f54d9f4a91cf6af0e50423cd678d6c1818e4a945cd58",
+    "data": {
+        "entity": "adaptive_synthesizer.py",
+        "claim": "memory footprint reduced",
+        "claim_domain": "benchmark_claim",
+        "source_id": "Noise_Source_0",
+        "source_type": "automated_sensor",
+        "artifact_type": "ecosystem_observation",
+        "batch_id": "none",
+        "provenance_note": "",
+        "confidence": 1.0,
+        "discovery_utc": "2026-05-12T20:05:57.781484+00:00"
+    },
+    "status": "committed",
+    "ts_utc": "2026-05-12T20:05:57.781484+00:00",
+    "receipt_id": "model_delta_CANDIDATE_QUARANTINED_e0a862f8_778edc28",
+    "causal_hash": "778edc286203640daf220e6ccf396a81d0aba77712897fecc5b785ec8407119a"
+}

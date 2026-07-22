@@ -1,0 +1,8 @@
+{"timestamp": "2026-03-14T11:47:00Z", "status": "QUEUE_INITIALIZED", "message": "Theory Expansion Request Queue created."}
+{"timestamp": "2026-03-14T18:47:05.114871Z", "domain": "LIVE_DB_CORRUPTION_RISK", "route": "THEORY_EXPANSION_REQUEST", "reason": "Domain funded, but lacks plural candidate theories to differentiate via experiment.", "status": "QUEUED"}
+{"timestamp": "2026-03-14T18:47:05.116011Z", "domain": "DRILL_DOMAIN_A_UNDERSPECIFIED", "route": "THEORY_EXPANSION_REQUEST", "reason": "Domain funded, but lacks plural candidate theories to differentiate via experiment.", "status": "QUEUED"}
+{"timestamp": "2026-03-14T18:47:05.118169Z", "domain": "DRILL_DOMAIN_B_UNOBSERVABLE", "route": "THEORY_EXPANSION_REQUEST", "reason": "Domain funded, but lacks plural candidate theories to differentiate via experiment.", "status": "QUEUED"}
+{"timestamp": "2026-03-14T18:47:29.047550Z", "domain": "LIVE_DB_CORRUPTION_RISK", "route": "THEORY_EXPANSION_REQUEST", "reason": "Domain funded, but lacks candidate theories to differentiate via experiment.", "status": "QUEUED"}
+{"timestamp": "2026-03-14T18:47:29.048567Z", "domain": "DRILL_DOMAIN_A_UNDERSPECIFIED", "route": "THEORY_EXPANSION_REQUEST", "reason": "Domain funded, but lacks candidate theories to differentiate via experiment.", "status": "QUEUED"}
+{"timestamp": "2026-03-14T19:11:23.954035Z", "domain": "LIVE_DB_CORRUPTION_RISK", "route": "THEORY_EXPANSION_REQUIRED", "reason": "No plural candidate theories available.", "status": "QUEUED"}
+{"timestamp": "2026-03-14T19:11:23.955312Z", "domain": "DRILL_DOMAIN_A_UNDERSPECIFIED", "route": "THEORY_EXPANSION_REQUIRED", "reason": "No plural candidate theories available.", "status": "QUEUED"}

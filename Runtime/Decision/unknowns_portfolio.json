@@ -1,0 +1,43 @@
+{
+  "version": "1.0",
+  "active_unknowns": [
+    {
+      "domain": "LIVE_DB_CORRUPTION_RISK",
+      "budget_score": 0.805,
+      "observation_count": 1,
+      "timestamp": "2026-03-14T18:39:24.753261Z",
+      "allocation_status": "FUNDED",
+      "assigned_mode": "THEORY_FAMILY_EXPANSION"
+    }
+  ],
+  "queued_unknowns": [
+    {
+      "domain": "NETWORK_IO_ROUTING",
+      "budget_score": 0.682,
+      "observation_count": 1,
+      "timestamp": "2026-03-14T18:39:24.752523Z",
+      "allocation_status": "PENDING_RECURRENCE_DENSITY"
+    },
+    {
+      "domain": "BACKGROUND_TELEMETRY_DRIFT",
+      "budget_score": 0.42,
+      "observation_count": 1,
+      "timestamp": "2026-03-14T18:39:24.753261Z",
+      "allocation_status": "PENDING_RECURRENCE_DENSITY"
+    }
+  ],
+  "deferred_unknowns": [
+    {
+      "domain": "QUANTUM_FLUCTUATION_NOISE",
+      "budget_score": 0.36,
+      "observation_count": 1,
+      "timestamp": "2026-03-14T18:39:24.753261Z",
+      "allocation_status": "DEFERRED"
+    }
+  ],
+  "current_allocation": {
+    "domains_active": 1,
+    "high_priority_active": 1
+  },
+  "last_updated": "2026-03-14T18:39:24.754771Z"
+}

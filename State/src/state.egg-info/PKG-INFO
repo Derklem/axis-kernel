@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: state
+Version: 0.2.0
+Summary: State Engine for Axis
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: jsonschema>=4.19.0
+Requires-Dist: laboratory<0.3.0,>=0.2.1
+Requires-Dist: observation<0.3.0,>=0.2.0
+Requires-Dist: referencing>=0.30.0
+
+# State
+
+State Engine for Axis. Purely functional deterministic state transition from observation feeds.

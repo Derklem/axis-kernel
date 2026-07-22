@@ -1,0 +1,22 @@
+﻿{
+    "mode": "recommend",
+    "resonance_threshold": 0.5,
+    "coherent_mode_enabled": true,
+    "always_manual_tools": [
+        "*"
+    ],
+    "permissible_roots": [
+        "D:\\Infinite\\",
+        "E:\\AI_Projects\\"
+    ],
+    "governance_axioms": {
+        "coherence_beats_rules": 100,
+        "audit_beats_action": 90,
+        "grounding_beats_ascension": 80
+    },
+    "risk_budget": "LIMITED",
+    "concurrency": {
+        "global_max_parallel": 4,
+        "net_max_parallel": 2
+    }
+}

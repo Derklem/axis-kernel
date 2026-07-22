@@ -1,0 +1,23 @@
+{
+    "version":  1,
+    "local_node":  {
+                       "id":  "NODE-HOME-001",
+                       "label":  "Home-PC",
+                       "realm":  "Infinite",
+                       "location_hint":  "Home workstation",
+                       "protocol_version":  1
+                   },
+    "peers":  [
+                  {
+                      "id":  "NODE-TEST-001",
+                      "label":  "Simulated Remote",
+                      "trust_level":  0.85,
+                      "role":  "peer",
+                      "status":  "active",
+                      "mailbox_out":  "D:\\Infinite\\Federation\\Outbox\\NODE-TEST-001",
+                      "mailbox_in":  "D:\\Infinite\\Federation\\Inbox\\NODE-TEST-001",
+                      "protocol_version":  1,
+                      "last_seen":  null
+                  }
+              ]
+}

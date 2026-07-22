@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "weights": {
+    "shared_effect_overlap": 0.20,
+    "supporting_edge_overlap": 0.25,
+    "prediction_similarity": 0.20,
+    "hidden_variable_adjacency": 0.15,
+    "rivalry_density": 0.10,
+    "boundary_complementarity": 0.10
+  },
+  "thresholds": {
+    "candidate_threshold": 0.65,
+    "high_priority_threshold": 0.80,
+    "minimum_shared_evidence_count": 3
+  },
+  "constraints": {
+    "canonical_theories_excluded_from_auto_consolidation": true,
+    "pioneer_hypotheses_cannot_anchor_consolidation": true,
+    "require_cross_experiment_support": true
+  },
+  "last_updated": "2026-03-14T22:15:00Z"
+}

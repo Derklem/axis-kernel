@@ -1,0 +1,13 @@
+{
+  "claim_id": "KCLM_002",
+  "statement": "A broadcast architectural-review offer in a specialized AI/ML practitioner community will produce at least one substantive technical inquiry.",
+  "claim_type": "PREDICTIVE_EMPIRICAL",
+  "status": "PROPOSED",
+  "evaluation_window": "72 hours from confirmed remote publication",
+  "success_condition": "At least one attributable substantive technical inquiry",
+  "failure_condition": "Zero attributable substantive technical inquiries by window close",
+  "attribution_rule": "Reply, direct message, or contact explicitly referring to the Reddit comment or offer",
+  "anticipated_evidence": [
+    "EXP_019_AINATIVE"
+  ]
+}

@@ -1,0 +1,106 @@
+{
+    "schema": "axis.keyring.v1",
+    "ts_utc": "2026-02-13T20:10:00Z",
+    "keys": [
+        {
+            "key_id": "k_portal_voice_local_v1",
+            "identity": "portal:voice_local",
+            "status": "active",
+            "fingerprint": "sha256:PLACEHOLDER_VOICE_KEY",
+            "created_utc": "2026-02-01T00:00:00Z",
+            "not_before_utc": "2026-02-01T00:00:00Z",
+            "expires_utc": null,
+            "scopes": [
+                "voice.transcribe",
+                "voice.synthesize"
+            ],
+            "notes": "Voice Portal V1"
+        },
+        {
+            "key_id": "k_portal_maya_phone_v1",
+            "identity": "portal:maya_phone",
+            "status": "active",
+            "fingerprint": "sha256:PLACEHOLDER_MAYA_KEY",
+            "created_utc": "2026-02-01T00:00:00Z",
+            "not_before_utc": "2026-02-01T00:00:00Z",
+            "expires_utc": null,
+            "scopes": [
+                "intent.submit",
+                "intent.promote",
+                "tool.execute",
+                "policy.compile"
+            ],
+            "notes": "Maya Phone V1"
+        },
+        {
+            "key_id": "k_system_promoter_v1",
+            "identity": "system:promoter",
+            "status": "active",
+            "fingerprint": "sha256:PLACEHOLDER_PROMOTER_KEY",
+            "created_utc": "2026-02-01T00:00:00Z",
+            "not_before_utc": "2026-02-01T00:00:00Z",
+            "expires_utc": null,
+            "scopes": [
+                "intent.promote"
+            ],
+            "notes": "System Promoter V1"
+        },
+        {
+            "key_id": "k_system_harness_v1",
+            "identity": "system:harness",
+            "status": "active",
+            "fingerprint": "sha256:PLACEHOLDER_HARNESS_KEY",
+            "created_utc": "2026-02-01T00:00:00Z",
+            "not_before_utc": "2026-02-01T00:00:00Z",
+            "expires_utc": null,
+            "scopes": [
+                "intent.submit",
+                "intent.promote",
+                "*"
+            ],
+            "notes": "Verification Harness (Superuser Scope)"
+        },
+        {
+            "key_id": "k_system_tester_v3",
+            "identity": "system:tester",
+            "status": "revoked",
+            "fingerprint": "sha256:PLACEHOLDER_TESTER_KEY",
+            "created_utc": "2026-02-01T00:00:00Z",
+            "not_before_utc": "2026-02-01T00:00:00Z",
+            "expires_utc": null,
+            "scopes": [
+                "tool.execute",
+                "intent.submit"
+            ],
+            "notes": "System Tester V3"
+        },
+        {
+            "key_id": "k_system_tester_v4",
+            "identity": "system:tester",
+            "status": "active",
+            "fingerprint": "sha256:PLACEHOLDER_TESTER_KEY_V4",
+            "created_utc": "2026-02-13T21:00:00Z",
+            "not_before_utc": "2026-02-13T21:00:00Z",
+            "expires_utc": null,
+            "scopes": [
+                "tool.execute",
+                "intent.submit"
+            ],
+            "notes": "System Tester V4 (Rotation Target)"
+        },
+        {
+            "key_id": "axis_anchor_key_primary_v1",
+            "identity": "system:anchor_manager",
+            "status": "active",
+            "fingerprint": "RUNTMSAAAAA4wU3NtOu0o6BLTgyVuI6712/1nXdYt69rQVSRZEkPCJdM9iDkdWj9naUspQCre6UeX8tgX0jzu6jU8OPDS3tF",
+            "created_utc": "2026-02-15T21:40:00Z",
+            "not_before_utc": "2026-02-15T21:40:00Z",
+            "expires_utc": null,
+            "scopes": [
+                "anchor.sign",
+                "witness.publish"
+            ],
+            "notes": "Primary External Anchor ECDSA P256 Key"
+        }
+    ]
+}

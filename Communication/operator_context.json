@@ -1,0 +1,28 @@
+{
+  "deferred_dependencies": [
+    "Moltbook recovery deferred pending new authentication evidence or maintainer assistance."
+  ],
+  "next_allowed_actions": [
+    "Wait until observation windows close.",
+    "Record new signals if they appear."
+  ],
+  "intended_observation_window": "72h",
+  "artifact_corrections": [
+    {
+      "experiment_id": "EXP_015_REAL",
+      "artifact": "observations/obs_e95bb31b.json",
+      "field": "hypothesis_result",
+      "stored_value": "CONTRADICTS",
+      "intended_value": "INCONCLUSIVE",
+      "status": "UNRESOLVED"
+    },
+    {
+      "experiment_id": "EXP_015_REAL",
+      "artifact": "observations/obs_e95bb31b.json",
+      "field": "next_smallest_experiment",
+      "stored_value": "3",
+      "intended_value": "Wait another 72 hours",
+      "status": "UNRESOLVED"
+    }
+  ]
+}

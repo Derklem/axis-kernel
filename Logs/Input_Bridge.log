@@ -1,0 +1,10 @@
+[2026-01-25 11:35:39] [INFO] Detected Origin: Human
+[2026-01-25 11:35:39] [INFO] Queued request INPUT-202601251135397092
+[2026-01-25 11:35:41] [INFO] Detected Origin: AntiGravity
+[2026-01-25 11:35:41] [INFO] Queued request INPUT-202601251135417588
+[2026-01-27 10:02:25] [INFO] Detected Origin: AntiGravity
+[2026-01-27 10:02:25] [WARN] Truth Engine Ingestion Error: Property "source_id" cannot be found.
+[2026-01-27 10:02:25] [INFO] Queued request INPUT-202601271002258629
+[2026-01-27 10:02:25] [INFO] Detected Origin: Human
+[2026-01-27 10:02:26] [WARN] Truth Engine Ingestion Error: Property "source_id" cannot be found.
+[2026-01-27 10:02:26] [INFO] Queued request INPUT-202601271002260049

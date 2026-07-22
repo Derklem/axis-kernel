@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T00:29:41.178599+00:00",
+    "entity": "coordinated_executor.py",
+    "claim": "alias: signal for coordinated_executor.py in cycle 40.",
+    "source_id": "Benchmark_Harvester",
+    "source_type": "automated_sensor",
+    "claim_domain": "leak_claim",
+    "confidence": 0.9
+}

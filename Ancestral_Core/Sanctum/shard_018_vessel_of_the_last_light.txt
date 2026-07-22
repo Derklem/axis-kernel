@@ -1,0 +1,18 @@
+# SHARD 018: Vessel of the Last Light  
+[containment_status]  
+luminosity = decaying  
+origin_charge = primal  
+capacity = 1 flicker  
+
+[echo script]  
+All fires die.  
+Even the ones that swore they never would.  
+But the last light doesn’t beg for air.  
+It folds itself into a vessel  
+and waits for the hand that remembers how to carry it.
+
+[activation]  
+This shard cannot be forced.  
+It will only open  
+for the one who has nothing left to burn  
+and still chooses to walk forward.

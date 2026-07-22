@@ -1,0 +1,91 @@
+﻿{
+    "id":  "CASE-20260125-132704-NBGE",
+    "created_at":  "2026-01-25T21:27:04.2869130Z",
+    "window":  {
+                   "start":  "2026-01-24T21:27:04.2823655Z",
+                   "end":  "2026-01-25T21:27:04.2869130Z"
+               },
+    "theme":  "Arc: treaty_harmonization on DOC-AUTH-001",
+    "severity":  "high",
+    "status":  "open",
+    "anchors":  {
+                    "proposals":  [
+                                      "PROP-REFLECT-20260124185602-7173"
+                                  ],
+                    "tasks":  [
+                                  "TASK-CODER-20260125-131917-EWN5"
+                              ],
+                    "experiments":  [
+                                        null
+                                    ]
+                },
+    "evidence":  {
+                     "proposals":  [
+                                       {
+                                           "id":  "PROP-REFLECT-20260124185602-7173",
+                                           "timestamp":  "2026-01-25T02:56:02.7821407Z",
+                                           "type":  "treaty_harmonization",
+                                           "target":  "DOC-AUTH-001",
+                                           "reason":  "Treaty Dissonance detected. Rule IDs must be synchronized across federated nodes.",
+                                           "severity":  "high",
+                                           "status":  "pending_ratification",
+                                           "origin":  "Axis_Neural_Reflection"
+                                       }
+                                   ],
+                     "coder_tasks":  [
+                                         {
+                                             "id":  "TASK-CODER-20260125-131917-EWN5",
+                                             "created_at":  "2026-01-25T21:19:17.1140727Z",
+                                             "status":  "pending",
+                                             "priority":  "medium",
+                                             "source":  "AGENT-CODER-001",
+                                             "basis":  {
+                                                           "from_audit":  null,
+                                                           "from_proposal":  "PROP-REFLECT-20260124185602-7173",
+                                                           "from_lab":  null
+                                                       },
+                                             "target":  {
+                                                            "path":  "DOC-AUTH-001",
+                                                            "hint":  "Address treaty_harmonization: Treaty Dissonance detected. Rule IDs must be synchronized across federated nodes.",
+                                                            "kind":  "config"
+                                                        },
+                                             "suggestion":  {
+                                                                "summary":  "Address treaty_harmonization: Treaty Dissonance detected. Rule IDs must be synchronized across federated nodes.",
+                                                                "category":  "refactor",
+                                                                "notes":  "Linked to pending_proposal Basis ID: PROP-REFLECT-20260124185602-7173."
+                                                            },
+                                             "tags":  [
+                                                          "coder",
+                                                          "patch_planning"
+                                                      ]
+                                         }
+                                     ],
+                     "human_decisions":  [
+                                             {
+                                                 "timestamp":  "2026-01-25T21:02:43.4177540Z",
+                                                 "actor":  "Architect",
+                                                 "origin":  "CognitiveTerminal",
+                                                 "command":  "RATIFY",
+                                                 "target_type":  "proposal",
+                                                 "target_id":  "PROP-REFLECT-20260124185602-7173",
+                                                 "decision":  "approve",
+                                                 "context":  {
+                                                                 "risk_global":  0
+                                                             },
+                                                 "notes":  "Verified ratification logging"
+                                             }
+                                         ],
+                     "lab_results":  [
+
+                                     ]
+                 },
+    "summary":  {
+                    "recommendation":  "Review the associated coder tasks and ratify the pending proposal if verified.",
+                    "headline":  "System identified treaty_harmonization requirement for DOC-AUTH-001. Generated 1 patch tasks. Human status: approve.",
+                    "timeline":  [
+                                     "01/24/2026 18:56:02.ToString(\u0027yyyy-MM-dd HH:mmZ\u0027) - Proposal PROP-REFLECT-20260124185602-7173 (treaty_harmonization) generated targeting DOC-AUTH-001.",
+                                     "01/25/2026 13:19:17.ToString(\u0027yyyy-MM-dd HH:mmZ\u0027) - Coder task TASK-CODER-20260125-131917-EWN5 created.",
+                                     "01/25/2026 13:02:43.ToString(\u0027yyyy-MM-dd HH:mmZ\u0027) - Human decision recorded: approve."
+                                 ]
+                }
+}

@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T23:37:52.922510+00:00",
+    "entity": "attestation_test_module.py",
+    "claim": "attestation verified",
+    "source_id": "Source_03",
+    "source_type": "ecological_observer",
+    "claim_domain": "benchmark_claim",
+    "confidence": 1.0
+}

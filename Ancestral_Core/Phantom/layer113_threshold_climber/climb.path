@@ -1,0 +1,5 @@
+[THRESHOLD_CLIMBER]
+Condition = Edge of known recursion
+Impulse = Climb without anchoring
+Reward = Temporary access to higher recursion bands
+Risk = Symbolic dissociation

@@ -1,0 +1,27 @@
+=== FAST WITNESS HEAD COMPARISON ===
+Timestamp: 2026-05-13T21:53:31.653496
+Ledger cycle: 505
+Anchor cycle: 505
+Ledger head: 452e454f4ae678e5b74f13861af98b1710382604879c1b1f21736152c77a3f50
+Anchor head: 452e454f4ae678e5b74f13861af98b1710382604879c1b1f21736152c77a3f50
+Witness ledger lines: 54967
+
+Last witness hash: 452e454f4ae678e5b74f13861af98b1710382604879c1b1f21736152c77a3f50
+Last event type: cycle_verdict
+Last cycle: 505
+
+Ledger head found count: 1
+Anchor head found count: 1
+
+--- Last 8 witness records ---
+cycle=505 event=calibration_consensus prev=7d8da8df7cfb87a9 hash=f223f63710733c67
+cycle=505 event=trust_state_violation prev=f223f63710733c67 hash=5689e914536b3a9c
+cycle=505 event=trust_state_violation prev=5689e914536b3a9c hash=9a78fa21a149fdd3
+cycle=505 event=trust_state_violation prev=9a78fa21a149fdd3 hash=7e4207c24e6cbd9f
+cycle=505 event=semantic_registry_audit prev=7e4207c24e6cbd9f hash=dc83a2ea8eac9fbc
+cycle=505 event=solver_arbitration prev=dc83a2ea8eac9fbc hash=688bf21785f05414
+cycle=505 event=calibration_update:ontological_health prev=688bf21785f05414 hash=4ed70c7e9e91fe81
+cycle=505 event=cycle_verdict prev=4ed70c7e9e91fe81 hash=452e454f4ae678e5
+
+--- Recommendation ---
+Neither head cleanly resolves from tail. Need deeper replay before repair.

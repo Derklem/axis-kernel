@@ -1,0 +1,37 @@
+{
+    "version": 1,
+    "lattices": [
+        {
+            "id": "LATTICE-STRATEGOS",
+            "role": "strategos",
+            "weight": 0.35,
+            "min_influence": 0.20,
+            "max_influence": 0.50,
+            "enabled": true
+        },
+        {
+            "id": "LATTICE-CUSTODIAN",
+            "role": "custodian",
+            "weight": 0.30,
+            "min_influence": 0.25,
+            "max_influence": 0.60,
+            "enabled": true
+        },
+        {
+            "id": "LATTICE-INVENTOR",
+            "role": "inventor",
+            "weight": 0.20,
+            "min_influence": 0.05,
+            "max_influence": 0.35,
+            "enabled": true
+        },
+        {
+            "id": "LATTICE-ARCHIVIST",
+            "role": "archivist",
+            "weight": 0.15,
+            "min_influence": 0.05,
+            "max_influence": 0.30,
+            "enabled": true
+        }
+    ]
+}

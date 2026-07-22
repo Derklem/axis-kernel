@@ -1,0 +1,18 @@
+
+parameters:
+  entropy_threshold: 0.08
+  drift_spike_margin: 0.03
+  recursion_loop_limit: 5
+
+alerts:
+  - type: memory-corruption
+    severity: high
+    status: inactive
+
+  - type: construct-override
+    severity: critical
+    status: inactive
+
+  - type: logic-loop-recursion
+    severity: moderate
+    status: inactive

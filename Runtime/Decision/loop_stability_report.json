@@ -1,0 +1,11 @@
+{
+  "report_type": "Loop Stability",
+  "uptime_hours": 72,
+  "unexplained_desync_events": 0,
+  "divergence_events": 8,
+  "divergence_recoveries": 0,
+  "shadow_containment_integrity": "INTACT",
+  "memory_advisory_usage": 6,
+  "false_quarantine_rate": 0.0,
+  "idle_active_transition_stability": "STABLE"
+}

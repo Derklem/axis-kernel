@@ -1,0 +1,32 @@
+{
+    "schema": "axis.intent_schema.v1",
+    "timestamp": "2026-02-10T21:20:00Z",
+    "required_fields": [
+        "intent_id",
+        "ts",
+        "type",
+        "target",
+        "payload"
+    ],
+    "field_specs": {
+        "intent_id": {
+            "type": "string",
+            "regex": "^[A-Z0-9_-]+$"
+        },
+        "ts": {
+            "type": "string",
+            "format": "ISO8601"
+        },
+        "type": {
+            "enum": [
+                "POST",
+                "GET",
+                "COMMAND",
+                "SIMULATE"
+            ]
+        },
+        "target": {
+            "type": "any"
+        }
+    }
+}

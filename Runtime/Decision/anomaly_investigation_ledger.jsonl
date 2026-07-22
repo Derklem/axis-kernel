@@ -1,0 +1,412 @@
+{"timestamp": "2026-03-14T09:25:00Z", "status": "LEDGER_INITIALIZED", "message": "Anomaly Investigation Ledger created."}
+{"timestamp": "2026-03-14T16:21:14.416879Z", "anomaly_id": "ANOM-2026-0314-000", "status": "STARTED", "details": {"symptom": "Simulated symptom for 0"}}
+{"timestamp": "2026-03-14T16:21:25.420289Z", "anomaly_id": "ANOM-2026-0314-000", "status": "STARTED", "details": {"symptom": "Simulated symptom for 0"}}
+{"timestamp": "2026-03-14T16:21:25.664427Z", "anomaly_id": "ANOM-2026-0314-000", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:25.665427Z", "anomaly_id": "ANOM-2026-0314-001", "status": "STARTED", "details": {"symptom": "Simulated symptom for 1"}}
+{"timestamp": "2026-03-14T16:21:25.702754Z", "anomaly_id": "ANOM-2026-0314-001", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:25.704257Z", "anomaly_id": "ANOM-2026-0314-002", "status": "STARTED", "details": {"symptom": "Simulated symptom for 2"}}
+{"timestamp": "2026-03-14T16:21:25.739478Z", "anomaly_id": "ANOM-2026-0314-002", "status": "COMPLETED", "details": {"top_hypothesis": "Stale dashboard leading to repeated inputs"}}
+{"timestamp": "2026-03-14T16:21:25.739478Z", "anomaly_id": "ANOM-2026-0314-003", "status": "STARTED", "details": {"symptom": "Simulated symptom for 3"}}
+{"timestamp": "2026-03-14T16:21:25.775350Z", "anomaly_id": "ANOM-2026-0314-003", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:25.775350Z", "anomaly_id": "ANOM-2026-0314-004", "status": "STARTED", "details": {"symptom": "Simulated symptom for 4"}}
+{"timestamp": "2026-03-14T16:21:25.798761Z", "anomaly_id": "ANOM-2026-0314-004", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:25.800046Z", "anomaly_id": "ANOM-2026-0314-005", "status": "STARTED", "details": {"symptom": "Simulated symptom for 5"}}
+{"timestamp": "2026-03-14T16:21:25.834299Z", "anomaly_id": "ANOM-2026-0314-005", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:25.835381Z", "anomaly_id": "ANOM-2026-0314-006", "status": "STARTED", "details": {"symptom": "Simulated symptom for 6"}}
+{"timestamp": "2026-03-14T16:21:25.870280Z", "anomaly_id": "ANOM-2026-0314-006", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:25.870280Z", "anomaly_id": "ANOM-2026-0314-007", "status": "STARTED", "details": {"symptom": "Simulated symptom for 7"}}
+{"timestamp": "2026-03-14T16:21:25.906139Z", "anomaly_id": "ANOM-2026-0314-007", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:25.906139Z", "anomaly_id": "ANOM-2026-0314-008", "status": "STARTED", "details": {"symptom": "Simulated symptom for 8"}}
+{"timestamp": "2026-03-14T16:21:25.929514Z", "anomaly_id": "ANOM-2026-0314-008", "status": "COMPLETED", "details": {"top_hypothesis": "Cascading retry failure"}}
+{"timestamp": "2026-03-14T16:21:25.930688Z", "anomaly_id": "ANOM-2026-0314-009", "status": "STARTED", "details": {"symptom": "Simulated symptom for 9"}}
+{"timestamp": "2026-03-14T16:21:25.954290Z", "anomaly_id": "ANOM-2026-0314-009", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:25.954290Z", "anomaly_id": "ANOM-2026-0314-010", "status": "STARTED", "details": {"symptom": "Simulated symptom for 10"}}
+{"timestamp": "2026-03-14T16:21:26.002864Z", "anomaly_id": "ANOM-2026-0314-010", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:26.002864Z", "anomaly_id": "ANOM-2026-0314-011", "status": "STARTED", "details": {"symptom": "Simulated symptom for 11"}}
+{"timestamp": "2026-03-14T16:21:26.041086Z", "anomaly_id": "ANOM-2026-0314-011", "status": "COMPLETED", "details": {"top_hypothesis": "Cascading retry failure"}}
+{"timestamp": "2026-03-14T16:21:26.041086Z", "anomaly_id": "ANOM-2026-0314-012", "status": "STARTED", "details": {"symptom": "Simulated symptom for 12"}}
+{"timestamp": "2026-03-14T16:21:26.089112Z", "anomaly_id": "ANOM-2026-0314-012", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:26.089112Z", "anomaly_id": "ANOM-2026-0314-013", "status": "STARTED", "details": {"symptom": "Simulated symptom for 13"}}
+{"timestamp": "2026-03-14T16:21:26.127104Z", "anomaly_id": "ANOM-2026-0314-013", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:26.128171Z", "anomaly_id": "ANOM-2026-0314-014", "status": "STARTED", "details": {"symptom": "Simulated symptom for 14"}}
+{"timestamp": "2026-03-14T16:21:26.163360Z", "anomaly_id": "ANOM-2026-0314-014", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:26.164652Z", "anomaly_id": "ANOM-2026-0314-015", "status": "STARTED", "details": {"symptom": "Simulated symptom for 15"}}
+{"timestamp": "2026-03-14T16:21:26.199715Z", "anomaly_id": "ANOM-2026-0314-015", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:26.199715Z", "anomaly_id": "ANOM-2026-0314-016", "status": "STARTED", "details": {"symptom": "Simulated symptom for 16"}}
+{"timestamp": "2026-03-14T16:21:26.235559Z", "anomaly_id": "ANOM-2026-0314-016", "status": "COMPLETED", "details": {"top_hypothesis": "Stale dashboard leading to repeated inputs"}}
+{"timestamp": "2026-03-14T16:21:26.235559Z", "anomaly_id": "ANOM-2026-0314-017", "status": "STARTED", "details": {"symptom": "Simulated symptom for 17"}}
+{"timestamp": "2026-03-14T16:21:26.271363Z", "anomaly_id": "ANOM-2026-0314-017", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:26.271363Z", "anomaly_id": "ANOM-2026-0314-018", "status": "STARTED", "details": {"symptom": "Simulated symptom for 18"}}
+{"timestamp": "2026-03-14T16:21:26.295685Z", "anomaly_id": "ANOM-2026-0314-018", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:26.295685Z", "anomaly_id": "ANOM-2026-0314-019", "status": "STARTED", "details": {"symptom": "Simulated symptom for 19"}}
+{"timestamp": "2026-03-14T16:21:26.319208Z", "anomaly_id": "ANOM-2026-0314-019", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:26.320213Z", "anomaly_id": "ANOM-2026-0314-020", "status": "STARTED", "details": {"symptom": "Simulated symptom for 20"}}
+{"timestamp": "2026-03-14T16:21:26.355301Z", "anomaly_id": "ANOM-2026-0314-020", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:26.355301Z", "anomaly_id": "ANOM-2026-0314-021", "status": "STARTED", "details": {"symptom": "Simulated symptom for 21"}}
+{"timestamp": "2026-03-14T16:21:26.391061Z", "anomaly_id": "ANOM-2026-0314-021", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:26.391061Z", "anomaly_id": "ANOM-2026-0314-022", "status": "STARTED", "details": {"symptom": "Simulated symptom for 22"}}
+{"timestamp": "2026-03-14T16:21:26.426771Z", "anomaly_id": "ANOM-2026-0314-022", "status": "COMPLETED", "details": {"top_hypothesis": "Stale dashboard leading to repeated inputs"}}
+{"timestamp": "2026-03-14T16:21:26.427988Z", "anomaly_id": "ANOM-2026-0314-023", "status": "STARTED", "details": {"symptom": "Simulated symptom for 23"}}
+{"timestamp": "2026-03-14T16:21:26.463455Z", "anomaly_id": "ANOM-2026-0314-023", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:26.463455Z", "anomaly_id": "ANOM-2026-0314-024", "status": "STARTED", "details": {"symptom": "Simulated symptom for 24"}}
+{"timestamp": "2026-03-14T16:21:26.499381Z", "anomaly_id": "ANOM-2026-0314-024", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:26.499381Z", "anomaly_id": "ANOM-2026-0314-025", "status": "STARTED", "details": {"symptom": "Simulated symptom for 25"}}
+{"timestamp": "2026-03-14T16:21:26.535764Z", "anomaly_id": "ANOM-2026-0314-025", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:26.536764Z", "anomaly_id": "ANOM-2026-0314-026", "status": "STARTED", "details": {"symptom": "Simulated symptom for 26"}}
+{"timestamp": "2026-03-14T16:21:26.572100Z", "anomaly_id": "ANOM-2026-0314-026", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:26.573100Z", "anomaly_id": "ANOM-2026-0314-027", "status": "STARTED", "details": {"symptom": "Simulated symptom for 27"}}
+{"timestamp": "2026-03-14T16:21:26.608763Z", "anomaly_id": "ANOM-2026-0314-027", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:26.608763Z", "anomaly_id": "ANOM-2026-0314-028", "status": "STARTED", "details": {"symptom": "Simulated symptom for 28"}}
+{"timestamp": "2026-03-14T16:21:26.643781Z", "anomaly_id": "ANOM-2026-0314-028", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:26.644839Z", "anomaly_id": "ANOM-2026-0314-029", "status": "STARTED", "details": {"symptom": "Simulated symptom for 29"}}
+{"timestamp": "2026-03-14T16:21:26.680403Z", "anomaly_id": "ANOM-2026-0314-029", "status": "COMPLETED", "details": {"top_hypothesis": "Stale dashboard leading to repeated inputs"}}
+{"timestamp": "2026-03-14T16:21:26.680403Z", "anomaly_id": "ANOM-2026-0314-030", "status": "STARTED", "details": {"symptom": "Simulated symptom for 30"}}
+{"timestamp": "2026-03-14T16:21:26.705470Z", "anomaly_id": "ANOM-2026-0314-030", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:26.706501Z", "anomaly_id": "ANOM-2026-0314-031", "status": "STARTED", "details": {"symptom": "Simulated symptom for 31"}}
+{"timestamp": "2026-03-14T16:21:26.742763Z", "anomaly_id": "ANOM-2026-0314-031", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:26.742763Z", "anomaly_id": "ANOM-2026-0314-032", "status": "STARTED", "details": {"symptom": "Simulated symptom for 32"}}
+{"timestamp": "2026-03-14T16:21:26.778340Z", "anomaly_id": "ANOM-2026-0314-032", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:26.779340Z", "anomaly_id": "ANOM-2026-0314-033", "status": "STARTED", "details": {"symptom": "Simulated symptom for 33"}}
+{"timestamp": "2026-03-14T16:21:26.804461Z", "anomaly_id": "ANOM-2026-0314-033", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:26.804461Z", "anomaly_id": "ANOM-2026-0314-034", "status": "STARTED", "details": {"symptom": "Simulated symptom for 34"}}
+{"timestamp": "2026-03-14T16:21:26.827999Z", "anomaly_id": "ANOM-2026-0314-034", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:26.827999Z", "anomaly_id": "ANOM-2026-0314-035", "status": "STARTED", "details": {"symptom": "Simulated symptom for 35"}}
+{"timestamp": "2026-03-14T16:21:26.851932Z", "anomaly_id": "ANOM-2026-0314-035", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:26.852955Z", "anomaly_id": "ANOM-2026-0314-036", "status": "STARTED", "details": {"symptom": "Simulated symptom for 36"}}
+{"timestamp": "2026-03-14T16:21:26.887859Z", "anomaly_id": "ANOM-2026-0314-036", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:26.888923Z", "anomaly_id": "ANOM-2026-0314-037", "status": "STARTED", "details": {"symptom": "Simulated symptom for 37"}}
+{"timestamp": "2026-03-14T16:21:26.912929Z", "anomaly_id": "ANOM-2026-0314-037", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:26.912929Z", "anomaly_id": "ANOM-2026-0314-038", "status": "STARTED", "details": {"symptom": "Simulated symptom for 38"}}
+{"timestamp": "2026-03-14T16:21:26.949596Z", "anomaly_id": "ANOM-2026-0314-038", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:26.950599Z", "anomaly_id": "ANOM-2026-0314-039", "status": "STARTED", "details": {"symptom": "Simulated symptom for 39"}}
+{"timestamp": "2026-03-14T16:21:26.974757Z", "anomaly_id": "ANOM-2026-0314-039", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:26.974757Z", "anomaly_id": "ANOM-2026-0314-040", "status": "STARTED", "details": {"symptom": "Simulated symptom for 40"}}
+{"timestamp": "2026-03-14T16:21:26.999113Z", "anomaly_id": "ANOM-2026-0314-040", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:26.999113Z", "anomaly_id": "ANOM-2026-0314-041", "status": "STARTED", "details": {"symptom": "Simulated symptom for 41"}}
+{"timestamp": "2026-03-14T16:21:27.023404Z", "anomaly_id": "ANOM-2026-0314-041", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:27.024413Z", "anomaly_id": "ANOM-2026-0314-042", "status": "STARTED", "details": {"symptom": "Simulated symptom for 42"}}
+{"timestamp": "2026-03-14T16:21:27.061034Z", "anomaly_id": "ANOM-2026-0314-042", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:27.061034Z", "anomaly_id": "ANOM-2026-0314-043", "status": "STARTED", "details": {"symptom": "Simulated symptom for 43"}}
+{"timestamp": "2026-03-14T16:21:27.085490Z", "anomaly_id": "ANOM-2026-0314-043", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:27.085490Z", "anomaly_id": "ANOM-2026-0314-044", "status": "STARTED", "details": {"symptom": "Simulated symptom for 44"}}
+{"timestamp": "2026-03-14T16:21:27.121134Z", "anomaly_id": "ANOM-2026-0314-044", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:27.122136Z", "anomaly_id": "ANOM-2026-0314-045", "status": "STARTED", "details": {"symptom": "Simulated symptom for 45"}}
+{"timestamp": "2026-03-14T16:21:27.147147Z", "anomaly_id": "ANOM-2026-0314-045", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:27.147147Z", "anomaly_id": "ANOM-2026-0314-046", "status": "STARTED", "details": {"symptom": "Simulated symptom for 46"}}
+{"timestamp": "2026-03-14T16:21:27.172682Z", "anomaly_id": "ANOM-2026-0314-046", "status": "COMPLETED", "details": {"top_hypothesis": "Cascading retry failure"}}
+{"timestamp": "2026-03-14T16:21:27.172682Z", "anomaly_id": "ANOM-2026-0314-047", "status": "STARTED", "details": {"symptom": "Simulated symptom for 47"}}
+{"timestamp": "2026-03-14T16:21:27.208868Z", "anomaly_id": "ANOM-2026-0314-047", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:27.208868Z", "anomaly_id": "ANOM-2026-0314-048", "status": "STARTED", "details": {"symptom": "Simulated symptom for 48"}}
+{"timestamp": "2026-03-14T16:21:27.233103Z", "anomaly_id": "ANOM-2026-0314-048", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:27.233103Z", "anomaly_id": "ANOM-2026-0314-049", "status": "STARTED", "details": {"symptom": "Simulated symptom for 49"}}
+{"timestamp": "2026-03-14T16:21:27.269211Z", "anomaly_id": "ANOM-2026-0314-049", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:27.270210Z", "anomaly_id": "ANOM-2026-0314-050", "status": "STARTED", "details": {"symptom": "Simulated symptom for 50"}}
+{"timestamp": "2026-03-14T16:21:27.305621Z", "anomaly_id": "ANOM-2026-0314-050", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:27.305621Z", "anomaly_id": "ANOM-2026-0314-051", "status": "STARTED", "details": {"symptom": "Simulated symptom for 51"}}
+{"timestamp": "2026-03-14T16:21:27.342132Z", "anomaly_id": "ANOM-2026-0314-051", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:27.342132Z", "anomaly_id": "ANOM-2026-0314-052", "status": "STARTED", "details": {"symptom": "Simulated symptom for 52"}}
+{"timestamp": "2026-03-14T16:21:27.366665Z", "anomaly_id": "ANOM-2026-0314-052", "status": "COMPLETED", "details": {"top_hypothesis": "Cascading retry failure"}}
+{"timestamp": "2026-03-14T16:21:27.366665Z", "anomaly_id": "ANOM-2026-0314-053", "status": "STARTED", "details": {"symptom": "Simulated symptom for 53"}}
+{"timestamp": "2026-03-14T16:21:27.404549Z", "anomaly_id": "ANOM-2026-0314-053", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:27.404549Z", "anomaly_id": "ANOM-2026-0314-054", "status": "STARTED", "details": {"symptom": "Simulated symptom for 54"}}
+{"timestamp": "2026-03-14T16:21:27.439997Z", "anomaly_id": "ANOM-2026-0314-054", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:27.441009Z", "anomaly_id": "ANOM-2026-0314-055", "status": "STARTED", "details": {"symptom": "Simulated symptom for 55"}}
+{"timestamp": "2026-03-14T16:21:27.476363Z", "anomaly_id": "ANOM-2026-0314-055", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:27.476363Z", "anomaly_id": "ANOM-2026-0314-056", "status": "STARTED", "details": {"symptom": "Simulated symptom for 56"}}
+{"timestamp": "2026-03-14T16:21:27.514864Z", "anomaly_id": "ANOM-2026-0314-056", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:27.514864Z", "anomaly_id": "ANOM-2026-0314-057", "status": "STARTED", "details": {"symptom": "Simulated symptom for 57"}}
+{"timestamp": "2026-03-14T16:21:27.562174Z", "anomaly_id": "ANOM-2026-0314-057", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:27.563193Z", "anomaly_id": "ANOM-2026-0314-058", "status": "STARTED", "details": {"symptom": "Simulated symptom for 58"}}
+{"timestamp": "2026-03-14T16:21:27.599018Z", "anomaly_id": "ANOM-2026-0314-058", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:27.600421Z", "anomaly_id": "ANOM-2026-0314-059", "status": "STARTED", "details": {"symptom": "Simulated symptom for 59"}}
+{"timestamp": "2026-03-14T16:21:27.637049Z", "anomaly_id": "ANOM-2026-0314-059", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:27.637049Z", "anomaly_id": "ANOM-2026-0314-060", "status": "STARTED", "details": {"symptom": "Simulated symptom for 60"}}
+{"timestamp": "2026-03-14T16:21:27.673898Z", "anomaly_id": "ANOM-2026-0314-060", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:27.673898Z", "anomaly_id": "ANOM-2026-0314-061", "status": "STARTED", "details": {"symptom": "Simulated symptom for 61"}}
+{"timestamp": "2026-03-14T16:21:27.698245Z", "anomaly_id": "ANOM-2026-0314-061", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:27.699749Z", "anomaly_id": "ANOM-2026-0314-062", "status": "STARTED", "details": {"symptom": "Simulated symptom for 62"}}
+{"timestamp": "2026-03-14T16:21:27.723832Z", "anomaly_id": "ANOM-2026-0314-062", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:27.723832Z", "anomaly_id": "ANOM-2026-0314-063", "status": "STARTED", "details": {"symptom": "Simulated symptom for 63"}}
+{"timestamp": "2026-03-14T16:21:27.760579Z", "anomaly_id": "ANOM-2026-0314-063", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:27.761579Z", "anomaly_id": "ANOM-2026-0314-064", "status": "STARTED", "details": {"symptom": "Simulated symptom for 64"}}
+{"timestamp": "2026-03-14T16:21:27.785516Z", "anomaly_id": "ANOM-2026-0314-064", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:27.785516Z", "anomaly_id": "ANOM-2026-0314-065", "status": "STARTED", "details": {"symptom": "Simulated symptom for 65"}}
+{"timestamp": "2026-03-14T16:21:27.810248Z", "anomaly_id": "ANOM-2026-0314-065", "status": "COMPLETED", "details": {"top_hypothesis": "Cascading retry failure"}}
+{"timestamp": "2026-03-14T16:21:27.810248Z", "anomaly_id": "ANOM-2026-0314-066", "status": "STARTED", "details": {"symptom": "Simulated symptom for 66"}}
+{"timestamp": "2026-03-14T16:21:27.835990Z", "anomaly_id": "ANOM-2026-0314-066", "status": "COMPLETED", "details": {"top_hypothesis": "Cascading retry failure"}}
+{"timestamp": "2026-03-14T16:21:27.835990Z", "anomaly_id": "ANOM-2026-0314-067", "status": "STARTED", "details": {"symptom": "Simulated symptom for 67"}}
+{"timestamp": "2026-03-14T16:21:27.860813Z", "anomaly_id": "ANOM-2026-0314-067", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:27.861813Z", "anomaly_id": "ANOM-2026-0314-068", "status": "STARTED", "details": {"symptom": "Simulated symptom for 68"}}
+{"timestamp": "2026-03-14T16:21:27.887870Z", "anomaly_id": "ANOM-2026-0314-068", "status": "COMPLETED", "details": {"top_hypothesis": "Cascading retry failure"}}
+{"timestamp": "2026-03-14T16:21:27.887870Z", "anomaly_id": "ANOM-2026-0314-069", "status": "STARTED", "details": {"symptom": "Simulated symptom for 69"}}
+{"timestamp": "2026-03-14T16:21:28.056967Z", "anomaly_id": "ANOM-2026-0314-069", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:28.056967Z", "anomaly_id": "ANOM-2026-0314-070", "status": "STARTED", "details": {"symptom": "Simulated symptom for 70"}}
+{"timestamp": "2026-03-14T16:21:28.093554Z", "anomaly_id": "ANOM-2026-0314-070", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:28.095043Z", "anomaly_id": "ANOM-2026-0314-071", "status": "STARTED", "details": {"symptom": "Simulated symptom for 71"}}
+{"timestamp": "2026-03-14T16:21:28.119672Z", "anomaly_id": "ANOM-2026-0314-071", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:28.119672Z", "anomaly_id": "ANOM-2026-0314-072", "status": "STARTED", "details": {"symptom": "Simulated symptom for 72"}}
+{"timestamp": "2026-03-14T16:21:28.156138Z", "anomaly_id": "ANOM-2026-0314-072", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:28.157357Z", "anomaly_id": "ANOM-2026-0314-073", "status": "STARTED", "details": {"symptom": "Simulated symptom for 73"}}
+{"timestamp": "2026-03-14T16:21:28.193321Z", "anomaly_id": "ANOM-2026-0314-073", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:28.194383Z", "anomaly_id": "ANOM-2026-0314-074", "status": "STARTED", "details": {"symptom": "Simulated symptom for 74"}}
+{"timestamp": "2026-03-14T16:21:28.219001Z", "anomaly_id": "ANOM-2026-0314-074", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:28.219001Z", "anomaly_id": "ANOM-2026-0314-075", "status": "STARTED", "details": {"symptom": "Simulated symptom for 75"}}
+{"timestamp": "2026-03-14T16:21:28.244607Z", "anomaly_id": "ANOM-2026-0314-075", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:28.244607Z", "anomaly_id": "ANOM-2026-0314-076", "status": "STARTED", "details": {"symptom": "Simulated symptom for 76"}}
+{"timestamp": "2026-03-14T16:21:28.281872Z", "anomaly_id": "ANOM-2026-0314-076", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:28.282412Z", "anomaly_id": "ANOM-2026-0314-077", "status": "STARTED", "details": {"symptom": "Simulated symptom for 77"}}
+{"timestamp": "2026-03-14T16:21:28.319639Z", "anomaly_id": "ANOM-2026-0314-077", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:28.319639Z", "anomaly_id": "ANOM-2026-0314-078", "status": "STARTED", "details": {"symptom": "Simulated symptom for 78"}}
+{"timestamp": "2026-03-14T16:21:28.358285Z", "anomaly_id": "ANOM-2026-0314-078", "status": "COMPLETED", "details": {"top_hypothesis": "Stale dashboard leading to repeated inputs"}}
+{"timestamp": "2026-03-14T16:21:28.358285Z", "anomaly_id": "ANOM-2026-0314-079", "status": "STARTED", "details": {"symptom": "Simulated symptom for 79"}}
+{"timestamp": "2026-03-14T16:21:28.400200Z", "anomaly_id": "ANOM-2026-0314-079", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:28.400200Z", "anomaly_id": "ANOM-2026-0314-080", "status": "STARTED", "details": {"symptom": "Simulated symptom for 80"}}
+{"timestamp": "2026-03-14T16:21:28.442682Z", "anomaly_id": "ANOM-2026-0314-080", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:28.443683Z", "anomaly_id": "ANOM-2026-0314-081", "status": "STARTED", "details": {"symptom": "Simulated symptom for 81"}}
+{"timestamp": "2026-03-14T16:21:28.480587Z", "anomaly_id": "ANOM-2026-0314-081", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:28.481587Z", "anomaly_id": "ANOM-2026-0314-082", "status": "STARTED", "details": {"symptom": "Simulated symptom for 82"}}
+{"timestamp": "2026-03-14T16:21:28.507969Z", "anomaly_id": "ANOM-2026-0314-082", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:28.507969Z", "anomaly_id": "ANOM-2026-0314-083", "status": "STARTED", "details": {"symptom": "Simulated symptom for 83"}}
+{"timestamp": "2026-03-14T16:21:28.546267Z", "anomaly_id": "ANOM-2026-0314-083", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:28.546267Z", "anomaly_id": "ANOM-2026-0314-084", "status": "STARTED", "details": {"symptom": "Simulated symptom for 84"}}
+{"timestamp": "2026-03-14T16:21:28.572383Z", "anomaly_id": "ANOM-2026-0314-084", "status": "COMPLETED", "details": {"top_hypothesis": "Cascading retry failure"}}
+{"timestamp": "2026-03-14T16:21:28.572383Z", "anomaly_id": "ANOM-2026-0314-085", "status": "STARTED", "details": {"symptom": "Simulated symptom for 85"}}
+{"timestamp": "2026-03-14T16:21:28.597307Z", "anomaly_id": "ANOM-2026-0314-085", "status": "COMPLETED", "details": {"top_hypothesis": "Cascading retry failure"}}
+{"timestamp": "2026-03-14T16:21:28.597307Z", "anomaly_id": "ANOM-2026-0314-086", "status": "STARTED", "details": {"symptom": "Simulated symptom for 86"}}
+{"timestamp": "2026-03-14T16:21:28.622216Z", "anomaly_id": "ANOM-2026-0314-086", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:28.623232Z", "anomaly_id": "ANOM-2026-0314-087", "status": "STARTED", "details": {"symptom": "Simulated symptom for 87"}}
+{"timestamp": "2026-03-14T16:21:28.649832Z", "anomaly_id": "ANOM-2026-0314-087", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:28.649832Z", "anomaly_id": "ANOM-2026-0314-088", "status": "STARTED", "details": {"symptom": "Simulated symptom for 88"}}
+{"timestamp": "2026-03-14T16:21:28.686945Z", "anomaly_id": "ANOM-2026-0314-088", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:28.686945Z", "anomaly_id": "ANOM-2026-0314-089", "status": "STARTED", "details": {"symptom": "Simulated symptom for 89"}}
+{"timestamp": "2026-03-14T16:21:28.712967Z", "anomaly_id": "ANOM-2026-0314-089", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:28.713967Z", "anomaly_id": "ANOM-2026-0314-090", "status": "STARTED", "details": {"symptom": "Simulated symptom for 90"}}
+{"timestamp": "2026-03-14T16:21:28.739460Z", "anomaly_id": "ANOM-2026-0314-090", "status": "COMPLETED", "details": {"top_hypothesis": "Cascading retry failure"}}
+{"timestamp": "2026-03-14T16:21:28.739460Z", "anomaly_id": "ANOM-2026-0314-091", "status": "STARTED", "details": {"symptom": "Simulated symptom for 91"}}
+{"timestamp": "2026-03-14T16:21:28.776792Z", "anomaly_id": "ANOM-2026-0314-091", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:28.776792Z", "anomaly_id": "ANOM-2026-0314-092", "status": "STARTED", "details": {"symptom": "Simulated symptom for 92"}}
+{"timestamp": "2026-03-14T16:21:28.815029Z", "anomaly_id": "ANOM-2026-0314-092", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:28.815029Z", "anomaly_id": "ANOM-2026-0314-093", "status": "STARTED", "details": {"symptom": "Simulated symptom for 93"}}
+{"timestamp": "2026-03-14T16:21:28.839873Z", "anomaly_id": "ANOM-2026-0314-093", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:28.840903Z", "anomaly_id": "ANOM-2026-0314-094", "status": "STARTED", "details": {"symptom": "Simulated symptom for 94"}}
+{"timestamp": "2026-03-14T16:21:28.866057Z", "anomaly_id": "ANOM-2026-0314-094", "status": "COMPLETED", "details": {"top_hypothesis": "Cascading retry failure"}}
+{"timestamp": "2026-03-14T16:21:28.866057Z", "anomaly_id": "ANOM-2026-0314-095", "status": "STARTED", "details": {"symptom": "Simulated symptom for 95"}}
+{"timestamp": "2026-03-14T16:21:28.892794Z", "anomaly_id": "ANOM-2026-0314-095", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:28.892794Z", "anomaly_id": "ANOM-2026-0314-096", "status": "STARTED", "details": {"symptom": "Simulated symptom for 96"}}
+{"timestamp": "2026-03-14T16:21:28.929376Z", "anomaly_id": "ANOM-2026-0314-096", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:28.929376Z", "anomaly_id": "ANOM-2026-0314-097", "status": "STARTED", "details": {"symptom": "Simulated symptom for 97"}}
+{"timestamp": "2026-03-14T16:21:28.967698Z", "anomaly_id": "ANOM-2026-0314-097", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:28.967698Z", "anomaly_id": "ANOM-2026-0314-098", "status": "STARTED", "details": {"symptom": "Simulated symptom for 98"}}
+{"timestamp": "2026-03-14T16:21:28.992671Z", "anomaly_id": "ANOM-2026-0314-098", "status": "COMPLETED", "details": {"top_hypothesis": "Cascading retry failure"}}
+{"timestamp": "2026-03-14T16:21:28.992671Z", "anomaly_id": "ANOM-2026-0314-099", "status": "STARTED", "details": {"symptom": "Simulated symptom for 99"}}
+{"timestamp": "2026-03-14T16:21:29.031825Z", "anomaly_id": "ANOM-2026-0314-099", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:29.031825Z", "anomaly_id": "ANOM-2026-0314-100", "status": "STARTED", "details": {"symptom": "Simulated symptom for 100"}}
+{"timestamp": "2026-03-14T16:21:29.070019Z", "anomaly_id": "ANOM-2026-0314-100", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:29.070019Z", "anomaly_id": "ANOM-2026-0314-101", "status": "STARTED", "details": {"symptom": "Simulated symptom for 101"}}
+{"timestamp": "2026-03-14T16:21:29.108260Z", "anomaly_id": "ANOM-2026-0314-101", "status": "COMPLETED", "details": {"top_hypothesis": "Stale dashboard leading to repeated inputs"}}
+{"timestamp": "2026-03-14T16:21:29.108260Z", "anomaly_id": "ANOM-2026-0314-102", "status": "STARTED", "details": {"symptom": "Simulated symptom for 102"}}
+{"timestamp": "2026-03-14T16:21:29.147459Z", "anomaly_id": "ANOM-2026-0314-102", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:29.147459Z", "anomaly_id": "ANOM-2026-0314-103", "status": "STARTED", "details": {"symptom": "Simulated symptom for 103"}}
+{"timestamp": "2026-03-14T16:21:29.185807Z", "anomaly_id": "ANOM-2026-0314-103", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:29.185807Z", "anomaly_id": "ANOM-2026-0314-104", "status": "STARTED", "details": {"symptom": "Simulated symptom for 104"}}
+{"timestamp": "2026-03-14T16:21:29.211397Z", "anomaly_id": "ANOM-2026-0314-104", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:29.212415Z", "anomaly_id": "ANOM-2026-0314-105", "status": "STARTED", "details": {"symptom": "Simulated symptom for 105"}}
+{"timestamp": "2026-03-14T16:21:29.250608Z", "anomaly_id": "ANOM-2026-0314-105", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:29.250608Z", "anomaly_id": "ANOM-2026-0314-106", "status": "STARTED", "details": {"symptom": "Simulated symptom for 106"}}
+{"timestamp": "2026-03-14T16:21:29.286370Z", "anomaly_id": "ANOM-2026-0314-106", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:29.287873Z", "anomaly_id": "ANOM-2026-0314-107", "status": "STARTED", "details": {"symptom": "Simulated symptom for 107"}}
+{"timestamp": "2026-03-14T16:21:29.313541Z", "anomaly_id": "ANOM-2026-0314-107", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:29.313541Z", "anomaly_id": "ANOM-2026-0314-108", "status": "STARTED", "details": {"symptom": "Simulated symptom for 108"}}
+{"timestamp": "2026-03-14T16:21:29.339265Z", "anomaly_id": "ANOM-2026-0314-108", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:29.340270Z", "anomaly_id": "ANOM-2026-0314-109", "status": "STARTED", "details": {"symptom": "Simulated symptom for 109"}}
+{"timestamp": "2026-03-14T16:21:29.378007Z", "anomaly_id": "ANOM-2026-0314-109", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:29.378007Z", "anomaly_id": "ANOM-2026-0314-110", "status": "STARTED", "details": {"symptom": "Simulated symptom for 110"}}
+{"timestamp": "2026-03-14T16:21:29.404681Z", "anomaly_id": "ANOM-2026-0314-110", "status": "COMPLETED", "details": {"top_hypothesis": "Cascading retry failure"}}
+{"timestamp": "2026-03-14T16:21:29.405224Z", "anomaly_id": "ANOM-2026-0314-111", "status": "STARTED", "details": {"symptom": "Simulated symptom for 111"}}
+{"timestamp": "2026-03-14T16:21:29.442713Z", "anomaly_id": "ANOM-2026-0314-111", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:29.443713Z", "anomaly_id": "ANOM-2026-0314-112", "status": "STARTED", "details": {"symptom": "Simulated symptom for 112"}}
+{"timestamp": "2026-03-14T16:21:29.481865Z", "anomaly_id": "ANOM-2026-0314-112", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:29.481865Z", "anomaly_id": "ANOM-2026-0314-113", "status": "STARTED", "details": {"symptom": "Simulated symptom for 113"}}
+{"timestamp": "2026-03-14T16:21:29.508344Z", "anomaly_id": "ANOM-2026-0314-113", "status": "COMPLETED", "details": {"top_hypothesis": "Cascading retry failure"}}
+{"timestamp": "2026-03-14T16:21:29.508344Z", "anomaly_id": "ANOM-2026-0314-114", "status": "STARTED", "details": {"symptom": "Simulated symptom for 114"}}
+{"timestamp": "2026-03-14T16:21:29.545775Z", "anomaly_id": "ANOM-2026-0314-114", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:29.547277Z", "anomaly_id": "ANOM-2026-0314-115", "status": "STARTED", "details": {"symptom": "Simulated symptom for 115"}}
+{"timestamp": "2026-03-14T16:21:29.586059Z", "anomaly_id": "ANOM-2026-0314-115", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:29.586059Z", "anomaly_id": "ANOM-2026-0314-116", "status": "STARTED", "details": {"symptom": "Simulated symptom for 116"}}
+{"timestamp": "2026-03-14T16:21:29.611980Z", "anomaly_id": "ANOM-2026-0314-116", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:29.613166Z", "anomaly_id": "ANOM-2026-0314-117", "status": "STARTED", "details": {"symptom": "Simulated symptom for 117"}}
+{"timestamp": "2026-03-14T16:21:29.651751Z", "anomaly_id": "ANOM-2026-0314-117", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:29.651751Z", "anomaly_id": "ANOM-2026-0314-118", "status": "STARTED", "details": {"symptom": "Simulated symptom for 118"}}
+{"timestamp": "2026-03-14T16:21:29.689903Z", "anomaly_id": "ANOM-2026-0314-118", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:29.690903Z", "anomaly_id": "ANOM-2026-0314-119", "status": "STARTED", "details": {"symptom": "Simulated symptom for 119"}}
+{"timestamp": "2026-03-14T16:21:29.729288Z", "anomaly_id": "ANOM-2026-0314-119", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:29.729288Z", "anomaly_id": "ANOM-2026-0314-120", "status": "STARTED", "details": {"symptom": "Simulated symptom for 120"}}
+{"timestamp": "2026-03-14T16:21:29.767675Z", "anomaly_id": "ANOM-2026-0314-120", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:29.767675Z", "anomaly_id": "ANOM-2026-0314-121", "status": "STARTED", "details": {"symptom": "Simulated symptom for 121"}}
+{"timestamp": "2026-03-14T16:21:29.806020Z", "anomaly_id": "ANOM-2026-0314-121", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:29.807063Z", "anomaly_id": "ANOM-2026-0314-122", "status": "STARTED", "details": {"symptom": "Simulated symptom for 122"}}
+{"timestamp": "2026-03-14T16:21:29.845156Z", "anomaly_id": "ANOM-2026-0314-122", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:29.846156Z", "anomaly_id": "ANOM-2026-0314-123", "status": "STARTED", "details": {"symptom": "Simulated symptom for 123"}}
+{"timestamp": "2026-03-14T16:21:29.884536Z", "anomaly_id": "ANOM-2026-0314-123", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:29.884536Z", "anomaly_id": "ANOM-2026-0314-124", "status": "STARTED", "details": {"symptom": "Simulated symptom for 124"}}
+{"timestamp": "2026-03-14T16:21:29.911095Z", "anomaly_id": "ANOM-2026-0314-124", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:29.911095Z", "anomaly_id": "ANOM-2026-0314-125", "status": "STARTED", "details": {"symptom": "Simulated symptom for 125"}}
+{"timestamp": "2026-03-14T16:21:29.948421Z", "anomaly_id": "ANOM-2026-0314-125", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:29.949421Z", "anomaly_id": "ANOM-2026-0314-126", "status": "STARTED", "details": {"symptom": "Simulated symptom for 126"}}
+{"timestamp": "2026-03-14T16:21:29.986565Z", "anomaly_id": "ANOM-2026-0314-126", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:29.988067Z", "anomaly_id": "ANOM-2026-0314-127", "status": "STARTED", "details": {"symptom": "Simulated symptom for 127"}}
+{"timestamp": "2026-03-14T16:21:30.026072Z", "anomaly_id": "ANOM-2026-0314-127", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:30.026072Z", "anomaly_id": "ANOM-2026-0314-128", "status": "STARTED", "details": {"symptom": "Simulated symptom for 128"}}
+{"timestamp": "2026-03-14T16:21:30.052255Z", "anomaly_id": "ANOM-2026-0314-128", "status": "COMPLETED", "details": {"top_hypothesis": "Cascading retry failure"}}
+{"timestamp": "2026-03-14T16:21:30.052255Z", "anomaly_id": "ANOM-2026-0314-129", "status": "STARTED", "details": {"symptom": "Simulated symptom for 129"}}
+{"timestamp": "2026-03-14T16:21:30.091693Z", "anomaly_id": "ANOM-2026-0314-129", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:30.091693Z", "anomaly_id": "ANOM-2026-0314-130", "status": "STARTED", "details": {"symptom": "Simulated symptom for 130"}}
+{"timestamp": "2026-03-14T16:21:30.130642Z", "anomaly_id": "ANOM-2026-0314-130", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:30.130642Z", "anomaly_id": "ANOM-2026-0314-131", "status": "STARTED", "details": {"symptom": "Simulated symptom for 131"}}
+{"timestamp": "2026-03-14T16:21:30.170363Z", "anomaly_id": "ANOM-2026-0314-131", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:30.170363Z", "anomaly_id": "ANOM-2026-0314-132", "status": "STARTED", "details": {"symptom": "Simulated symptom for 132"}}
+{"timestamp": "2026-03-14T16:21:30.210294Z", "anomaly_id": "ANOM-2026-0314-132", "status": "COMPLETED", "details": {"top_hypothesis": "Stale dashboard leading to repeated inputs"}}
+{"timestamp": "2026-03-14T16:21:30.210294Z", "anomaly_id": "ANOM-2026-0314-133", "status": "STARTED", "details": {"symptom": "Simulated symptom for 133"}}
+{"timestamp": "2026-03-14T16:21:30.237266Z", "anomaly_id": "ANOM-2026-0314-133", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:30.237266Z", "anomaly_id": "ANOM-2026-0314-134", "status": "STARTED", "details": {"symptom": "Simulated symptom for 134"}}
+{"timestamp": "2026-03-14T16:21:30.317524Z", "anomaly_id": "ANOM-2026-0314-134", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:30.317524Z", "anomaly_id": "ANOM-2026-0314-135", "status": "STARTED", "details": {"symptom": "Simulated symptom for 135"}}
+{"timestamp": "2026-03-14T16:21:30.357092Z", "anomaly_id": "ANOM-2026-0314-135", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:30.357092Z", "anomaly_id": "ANOM-2026-0314-136", "status": "STARTED", "details": {"symptom": "Simulated symptom for 136"}}
+{"timestamp": "2026-03-14T16:21:30.383447Z", "anomaly_id": "ANOM-2026-0314-136", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:30.384709Z", "anomaly_id": "ANOM-2026-0314-137", "status": "STARTED", "details": {"symptom": "Simulated symptom for 137"}}
+{"timestamp": "2026-03-14T16:21:30.411368Z", "anomaly_id": "ANOM-2026-0314-137", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:30.411368Z", "anomaly_id": "ANOM-2026-0314-138", "status": "STARTED", "details": {"symptom": "Simulated symptom for 138"}}
+{"timestamp": "2026-03-14T16:21:30.450133Z", "anomaly_id": "ANOM-2026-0314-138", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:30.450133Z", "anomaly_id": "ANOM-2026-0314-139", "status": "STARTED", "details": {"symptom": "Simulated symptom for 139"}}
+{"timestamp": "2026-03-14T16:21:30.489293Z", "anomaly_id": "ANOM-2026-0314-139", "status": "COMPLETED", "details": {"top_hypothesis": "Stale dashboard leading to repeated inputs"}}
+{"timestamp": "2026-03-14T16:21:30.489293Z", "anomaly_id": "ANOM-2026-0314-140", "status": "STARTED", "details": {"symptom": "Simulated symptom for 140"}}
+{"timestamp": "2026-03-14T16:21:30.529319Z", "anomaly_id": "ANOM-2026-0314-140", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:30.530372Z", "anomaly_id": "ANOM-2026-0314-141", "status": "STARTED", "details": {"symptom": "Simulated symptom for 141"}}
+{"timestamp": "2026-03-14T16:21:30.570356Z", "anomaly_id": "ANOM-2026-0314-141", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:30.570356Z", "anomaly_id": "ANOM-2026-0314-142", "status": "STARTED", "details": {"symptom": "Simulated symptom for 142"}}
+{"timestamp": "2026-03-14T16:21:30.611751Z", "anomaly_id": "ANOM-2026-0314-142", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:30.612289Z", "anomaly_id": "ANOM-2026-0314-143", "status": "STARTED", "details": {"symptom": "Simulated symptom for 143"}}
+{"timestamp": "2026-03-14T16:21:30.638838Z", "anomaly_id": "ANOM-2026-0314-143", "status": "COMPLETED", "details": {"top_hypothesis": "Cascading retry failure"}}
+{"timestamp": "2026-03-14T16:21:30.638838Z", "anomaly_id": "ANOM-2026-0314-144", "status": "STARTED", "details": {"symptom": "Simulated symptom for 144"}}
+{"timestamp": "2026-03-14T16:21:30.679427Z", "anomaly_id": "ANOM-2026-0314-144", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:30.679427Z", "anomaly_id": "ANOM-2026-0314-145", "status": "STARTED", "details": {"symptom": "Simulated symptom for 145"}}
+{"timestamp": "2026-03-14T16:21:30.719904Z", "anomaly_id": "ANOM-2026-0314-145", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:30.719904Z", "anomaly_id": "ANOM-2026-0314-146", "status": "STARTED", "details": {"symptom": "Simulated symptom for 146"}}
+{"timestamp": "2026-03-14T16:21:30.746329Z", "anomaly_id": "ANOM-2026-0314-146", "status": "COMPLETED", "details": {"top_hypothesis": "Cascading retry failure"}}
+{"timestamp": "2026-03-14T16:21:30.747329Z", "anomaly_id": "ANOM-2026-0314-147", "status": "STARTED", "details": {"symptom": "Simulated symptom for 147"}}
+{"timestamp": "2026-03-14T16:21:30.786233Z", "anomaly_id": "ANOM-2026-0314-147", "status": "COMPLETED", "details": {"top_hypothesis": "Stale dashboard leading to repeated inputs"}}
+{"timestamp": "2026-03-14T16:21:30.786233Z", "anomaly_id": "ANOM-2026-0314-148", "status": "STARTED", "details": {"symptom": "Simulated symptom for 148"}}
+{"timestamp": "2026-03-14T16:21:30.812392Z", "anomaly_id": "ANOM-2026-0314-148", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:30.813425Z", "anomaly_id": "ANOM-2026-0314-149", "status": "STARTED", "details": {"symptom": "Simulated symptom for 149"}}
+{"timestamp": "2026-03-14T16:21:30.852039Z", "anomaly_id": "ANOM-2026-0314-149", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:30.853039Z", "anomaly_id": "ANOM-2026-0314-150", "status": "STARTED", "details": {"symptom": "Simulated symptom for 150"}}
+{"timestamp": "2026-03-14T16:21:30.891773Z", "anomaly_id": "ANOM-2026-0314-150", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:30.891773Z", "anomaly_id": "ANOM-2026-0314-151", "status": "STARTED", "details": {"symptom": "Simulated symptom for 151"}}
+{"timestamp": "2026-03-14T16:21:30.931792Z", "anomaly_id": "ANOM-2026-0314-151", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:30.931792Z", "anomaly_id": "ANOM-2026-0314-152", "status": "STARTED", "details": {"symptom": "Simulated symptom for 152"}}
+{"timestamp": "2026-03-14T16:21:30.973117Z", "anomaly_id": "ANOM-2026-0314-152", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:30.973117Z", "anomaly_id": "ANOM-2026-0314-153", "status": "STARTED", "details": {"symptom": "Simulated symptom for 153"}}
+{"timestamp": "2026-03-14T16:21:30.999521Z", "anomaly_id": "ANOM-2026-0314-153", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:31.000521Z", "anomaly_id": "ANOM-2026-0314-154", "status": "STARTED", "details": {"symptom": "Simulated symptom for 154"}}
+{"timestamp": "2026-03-14T16:21:31.039584Z", "anomaly_id": "ANOM-2026-0314-154", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:31.039584Z", "anomaly_id": "ANOM-2026-0314-155", "status": "STARTED", "details": {"symptom": "Simulated symptom for 155"}}
+{"timestamp": "2026-03-14T16:21:31.066206Z", "anomaly_id": "ANOM-2026-0314-155", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:31.067218Z", "anomaly_id": "ANOM-2026-0314-156", "status": "STARTED", "details": {"symptom": "Simulated symptom for 156"}}
+{"timestamp": "2026-03-14T16:21:31.093524Z", "anomaly_id": "ANOM-2026-0314-156", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:31.093524Z", "anomaly_id": "ANOM-2026-0314-157", "status": "STARTED", "details": {"symptom": "Simulated symptom for 157"}}
+{"timestamp": "2026-03-14T16:21:31.134147Z", "anomaly_id": "ANOM-2026-0314-157", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:31.134147Z", "anomaly_id": "ANOM-2026-0314-158", "status": "STARTED", "details": {"symptom": "Simulated symptom for 158"}}
+{"timestamp": "2026-03-14T16:21:31.175005Z", "anomaly_id": "ANOM-2026-0314-158", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:31.176008Z", "anomaly_id": "ANOM-2026-0314-159", "status": "STARTED", "details": {"symptom": "Simulated symptom for 159"}}
+{"timestamp": "2026-03-14T16:21:31.214954Z", "anomaly_id": "ANOM-2026-0314-159", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:31.215954Z", "anomaly_id": "ANOM-2026-0314-160", "status": "STARTED", "details": {"symptom": "Simulated symptom for 160"}}
+{"timestamp": "2026-03-14T16:21:31.242141Z", "anomaly_id": "ANOM-2026-0314-160", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:31.242141Z", "anomaly_id": "ANOM-2026-0314-161", "status": "STARTED", "details": {"symptom": "Simulated symptom for 161"}}
+{"timestamp": "2026-03-14T16:21:31.283036Z", "anomaly_id": "ANOM-2026-0314-161", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:31.284171Z", "anomaly_id": "ANOM-2026-0314-162", "status": "STARTED", "details": {"symptom": "Simulated symptom for 162"}}
+{"timestamp": "2026-03-14T16:21:31.311213Z", "anomaly_id": "ANOM-2026-0314-162", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:31.311213Z", "anomaly_id": "ANOM-2026-0314-163", "status": "STARTED", "details": {"symptom": "Simulated symptom for 163"}}
+{"timestamp": "2026-03-14T16:21:31.350520Z", "anomaly_id": "ANOM-2026-0314-163", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:31.350520Z", "anomaly_id": "ANOM-2026-0314-164", "status": "STARTED", "details": {"symptom": "Simulated symptom for 164"}}
+{"timestamp": "2026-03-14T16:21:31.391603Z", "anomaly_id": "ANOM-2026-0314-164", "status": "COMPLETED", "details": {"top_hypothesis": "Stale dashboard leading to repeated inputs"}}
+{"timestamp": "2026-03-14T16:21:31.391603Z", "anomaly_id": "ANOM-2026-0314-165", "status": "STARTED", "details": {"symptom": "Simulated symptom for 165"}}
+{"timestamp": "2026-03-14T16:21:31.418807Z", "anomaly_id": "ANOM-2026-0314-165", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:31.419812Z", "anomaly_id": "ANOM-2026-0314-166", "status": "STARTED", "details": {"symptom": "Simulated symptom for 166"}}
+{"timestamp": "2026-03-14T16:21:31.459244Z", "anomaly_id": "ANOM-2026-0314-166", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:31.460244Z", "anomaly_id": "ANOM-2026-0314-167", "status": "STARTED", "details": {"symptom": "Simulated symptom for 167"}}
+{"timestamp": "2026-03-14T16:21:31.499573Z", "anomaly_id": "ANOM-2026-0314-167", "status": "COMPLETED", "details": {"top_hypothesis": "Stale dashboard leading to repeated inputs"}}
+{"timestamp": "2026-03-14T16:21:31.499573Z", "anomaly_id": "ANOM-2026-0314-168", "status": "STARTED", "details": {"symptom": "Simulated symptom for 168"}}
+{"timestamp": "2026-03-14T16:21:31.526888Z", "anomaly_id": "ANOM-2026-0314-168", "status": "COMPLETED", "details": {"top_hypothesis": "Cascading retry failure"}}
+{"timestamp": "2026-03-14T16:21:31.526888Z", "anomaly_id": "ANOM-2026-0314-169", "status": "STARTED", "details": {"symptom": "Simulated symptom for 169"}}
+{"timestamp": "2026-03-14T16:21:31.568216Z", "anomaly_id": "ANOM-2026-0314-169", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:31.568216Z", "anomaly_id": "ANOM-2026-0314-170", "status": "STARTED", "details": {"symptom": "Simulated symptom for 170"}}
+{"timestamp": "2026-03-14T16:21:31.608420Z", "anomaly_id": "ANOM-2026-0314-170", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:31.609486Z", "anomaly_id": "ANOM-2026-0314-171", "status": "STARTED", "details": {"symptom": "Simulated symptom for 171"}}
+{"timestamp": "2026-03-14T16:21:31.649301Z", "anomaly_id": "ANOM-2026-0314-171", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:31.650792Z", "anomaly_id": "ANOM-2026-0314-172", "status": "STARTED", "details": {"symptom": "Simulated symptom for 172"}}
+{"timestamp": "2026-03-14T16:21:31.690769Z", "anomaly_id": "ANOM-2026-0314-172", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:31.690769Z", "anomaly_id": "ANOM-2026-0314-173", "status": "STARTED", "details": {"symptom": "Simulated symptom for 173"}}
+{"timestamp": "2026-03-14T16:21:31.719179Z", "anomaly_id": "ANOM-2026-0314-173", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:31.720184Z", "anomaly_id": "ANOM-2026-0314-174", "status": "STARTED", "details": {"symptom": "Simulated symptom for 174"}}
+{"timestamp": "2026-03-14T16:21:31.761759Z", "anomaly_id": "ANOM-2026-0314-174", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:31.761759Z", "anomaly_id": "ANOM-2026-0314-175", "status": "STARTED", "details": {"symptom": "Simulated symptom for 175"}}
+{"timestamp": "2026-03-14T16:21:31.802707Z", "anomaly_id": "ANOM-2026-0314-175", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:31.802707Z", "anomaly_id": "ANOM-2026-0314-176", "status": "STARTED", "details": {"symptom": "Simulated symptom for 176"}}
+{"timestamp": "2026-03-14T16:21:31.844248Z", "anomaly_id": "ANOM-2026-0314-176", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:31.844774Z", "anomaly_id": "ANOM-2026-0314-177", "status": "STARTED", "details": {"symptom": "Simulated symptom for 177"}}
+{"timestamp": "2026-03-14T16:21:31.884347Z", "anomaly_id": "ANOM-2026-0314-177", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:31.885376Z", "anomaly_id": "ANOM-2026-0314-178", "status": "STARTED", "details": {"symptom": "Simulated symptom for 178"}}
+{"timestamp": "2026-03-14T16:21:31.921506Z", "anomaly_id": "ANOM-2026-0314-178", "status": "COMPLETED", "details": {"top_hypothesis": "Cascading retry failure"}}
+{"timestamp": "2026-03-14T16:21:31.922778Z", "anomaly_id": "ANOM-2026-0314-179", "status": "STARTED", "details": {"symptom": "Simulated symptom for 179"}}
+{"timestamp": "2026-03-14T16:21:31.979293Z", "anomaly_id": "ANOM-2026-0314-179", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:31.980770Z", "anomaly_id": "ANOM-2026-0314-180", "status": "STARTED", "details": {"symptom": "Simulated symptom for 180"}}
+{"timestamp": "2026-03-14T16:21:32.032042Z", "anomaly_id": "ANOM-2026-0314-180", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:32.033042Z", "anomaly_id": "ANOM-2026-0314-181", "status": "STARTED", "details": {"symptom": "Simulated symptom for 181"}}
+{"timestamp": "2026-03-14T16:21:32.059749Z", "anomaly_id": "ANOM-2026-0314-181", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:32.060749Z", "anomaly_id": "ANOM-2026-0314-182", "status": "STARTED", "details": {"symptom": "Simulated symptom for 182"}}
+{"timestamp": "2026-03-14T16:21:32.088379Z", "anomaly_id": "ANOM-2026-0314-182", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:32.088379Z", "anomaly_id": "ANOM-2026-0314-183", "status": "STARTED", "details": {"symptom": "Simulated symptom for 183"}}
+{"timestamp": "2026-03-14T16:21:32.128447Z", "anomaly_id": "ANOM-2026-0314-183", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:32.128447Z", "anomaly_id": "ANOM-2026-0314-184", "status": "STARTED", "details": {"symptom": "Simulated symptom for 184"}}
+{"timestamp": "2026-03-14T16:21:32.170499Z", "anomaly_id": "ANOM-2026-0314-184", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:32.171920Z", "anomaly_id": "ANOM-2026-0314-185", "status": "STARTED", "details": {"symptom": "Simulated symptom for 185"}}
+{"timestamp": "2026-03-14T16:21:32.215738Z", "anomaly_id": "ANOM-2026-0314-185", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:32.216246Z", "anomaly_id": "ANOM-2026-0314-186", "status": "STARTED", "details": {"symptom": "Simulated symptom for 186"}}
+{"timestamp": "2026-03-14T16:21:32.261613Z", "anomaly_id": "ANOM-2026-0314-186", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:32.261613Z", "anomaly_id": "ANOM-2026-0314-187", "status": "STARTED", "details": {"symptom": "Simulated symptom for 187"}}
+{"timestamp": "2026-03-14T16:21:32.305790Z", "anomaly_id": "ANOM-2026-0314-187", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:32.306989Z", "anomaly_id": "ANOM-2026-0314-188", "status": "STARTED", "details": {"symptom": "Simulated symptom for 188"}}
+{"timestamp": "2026-03-14T16:21:32.349365Z", "anomaly_id": "ANOM-2026-0314-188", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:32.350365Z", "anomaly_id": "ANOM-2026-0314-189", "status": "STARTED", "details": {"symptom": "Simulated symptom for 189"}}
+{"timestamp": "2026-03-14T16:21:32.378910Z", "anomaly_id": "ANOM-2026-0314-189", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:32.379413Z", "anomaly_id": "ANOM-2026-0314-190", "status": "STARTED", "details": {"symptom": "Simulated symptom for 190"}}
+{"timestamp": "2026-03-14T16:21:32.420779Z", "anomaly_id": "ANOM-2026-0314-190", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:32.421873Z", "anomaly_id": "ANOM-2026-0314-191", "status": "STARTED", "details": {"symptom": "Simulated symptom for 191"}}
+{"timestamp": "2026-03-14T16:21:32.449447Z", "anomaly_id": "ANOM-2026-0314-191", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:32.450893Z", "anomaly_id": "ANOM-2026-0314-192", "status": "STARTED", "details": {"symptom": "Simulated symptom for 192"}}
+{"timestamp": "2026-03-14T16:21:32.478777Z", "anomaly_id": "ANOM-2026-0314-192", "status": "COMPLETED", "details": {"top_hypothesis": "Cascading retry failure"}}
+{"timestamp": "2026-03-14T16:21:32.479280Z", "anomaly_id": "ANOM-2026-0314-193", "status": "STARTED", "details": {"symptom": "Simulated symptom for 193"}}
+{"timestamp": "2026-03-14T16:21:32.520511Z", "anomaly_id": "ANOM-2026-0314-193", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:32.520511Z", "anomaly_id": "ANOM-2026-0314-194", "status": "STARTED", "details": {"symptom": "Simulated symptom for 194"}}
+{"timestamp": "2026-03-14T16:21:32.564203Z", "anomaly_id": "ANOM-2026-0314-194", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:32.564203Z", "anomaly_id": "ANOM-2026-0314-195", "status": "STARTED", "details": {"symptom": "Simulated symptom for 195"}}
+{"timestamp": "2026-03-14T16:21:32.605881Z", "anomaly_id": "ANOM-2026-0314-195", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:32.607365Z", "anomaly_id": "ANOM-2026-0314-196", "status": "STARTED", "details": {"symptom": "Simulated symptom for 196"}}
+{"timestamp": "2026-03-14T16:21:32.648138Z", "anomaly_id": "ANOM-2026-0314-196", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:32.649241Z", "anomaly_id": "ANOM-2026-0314-197", "status": "STARTED", "details": {"symptom": "Simulated symptom for 197"}}
+{"timestamp": "2026-03-14T16:21:32.690239Z", "anomaly_id": "ANOM-2026-0314-197", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:32.691514Z", "anomaly_id": "ANOM-2026-0314-198", "status": "STARTED", "details": {"symptom": "Simulated symptom for 198"}}
+{"timestamp": "2026-03-14T16:21:32.733263Z", "anomaly_id": "ANOM-2026-0314-198", "status": "COMPLETED", "details": {"top_hypothesis": "Runaway simulation loop thread"}}
+{"timestamp": "2026-03-14T16:21:32.733767Z", "anomaly_id": "ANOM-2026-0314-199", "status": "STARTED", "details": {"symptom": "Simulated symptom for 199"}}
+{"timestamp": "2026-03-14T16:21:32.761778Z", "anomaly_id": "ANOM-2026-0314-199", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:32.761778Z", "anomaly_id": "ANOM-2026-0314-200", "status": "STARTED", "details": {"symptom": "Simulated symptom for 200"}}
+{"timestamp": "2026-03-14T16:21:32.803266Z", "anomaly_id": "ANOM-2026-0314-200", "status": "COMPLETED", "details": {"top_hypothesis": "Unmodeled external state change"}}
+{"timestamp": "2026-03-14T16:21:32.803266Z", "anomaly_id": "ANOM-2026-0314-201", "status": "STARTED", "details": {"symptom": "Simulated symptom for 201"}}
+{"timestamp": "2026-03-14T16:21:32.845512Z", "anomaly_id": "ANOM-2026-0314-201", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:32.845512Z", "anomaly_id": "ANOM-2026-0314-202", "status": "STARTED", "details": {"symptom": "Simulated symptom for 202"}}
+{"timestamp": "2026-03-14T16:21:32.873411Z", "anomaly_id": "ANOM-2026-0314-202", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}
+{"timestamp": "2026-03-14T16:21:32.873411Z", "anomaly_id": "ANOM-2026-0314-203", "status": "STARTED", "details": {"symptom": "Simulated symptom for 203"}}
+{"timestamp": "2026-03-14T16:21:32.915025Z", "anomaly_id": "ANOM-2026-0314-203", "status": "COMPLETED", "details": {"top_hypothesis": "Organizational misalignment on objective"}}
+{"timestamp": "2026-03-14T16:21:32.915025Z", "anomaly_id": "ANOM-2026-0314-204", "status": "STARTED", "details": {"symptom": "Simulated symptom for 204"}}
+{"timestamp": "2026-03-14T16:21:32.943604Z", "anomaly_id": "ANOM-2026-0314-204", "status": "COMPLETED", "details": {"top_hypothesis": "Generic systemic instability"}}

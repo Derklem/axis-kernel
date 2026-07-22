@@ -1,0 +1,23 @@
+{
+  "nodes": [
+    "semantic_freshness_limit",
+    "retry_interval",
+    "api_timeout"
+  ],
+  "edges": [
+    {
+      "from": "semantic_freshness_limit",
+      "to": "retry_interval",
+      "interaction_type": "discovered_correlation",
+      "strength": 0.5,
+      "confidence": 0.5
+    },
+    {
+      "from": "semantic_freshness_limit",
+      "to": "api_timeout",
+      "interaction_type": "discovered_correlation",
+      "strength": 0.5,
+      "confidence": 0.5
+    }
+  ]
+}

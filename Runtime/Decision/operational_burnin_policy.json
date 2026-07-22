@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "campaign_mode": "Track A - Operational Burn-In",
+  "duration_bounds": {
+    "minimum_hours": 72,
+    "preferred_hours": 168
+  },
+  "objectives": [
+    "Prove loop synchronization over long idle/active cycles.",
+    "Measure operator friction (steps to approve, ambiguity rate).",
+    "Monitor divergence recoveries vs false quarantines.",
+    "Collect Track C (Scientific Evaluation) baseline metrics quietly."
+  ],
+  "failure_conditions": [
+    "Unexplained loop desynchronization.",
+    "Persistent emergency/freeze residue.",
+    "Stale contradiction-buffer artifacts blocking operation.",
+    "Shadow or memory authority leaks."
+  ]
+}

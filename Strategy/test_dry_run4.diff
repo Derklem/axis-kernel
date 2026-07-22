@@ -1,0 +1,8 @@
+diff --git a/Strategy/hygiene_pass.py b/Strategy/hygiene_pass.py
+index abcdef1..1234567 100644
+--- a/Strategy/hygiene_pass.py
++++ b/Strategy/hygiene_pass.py
+@@ -10,3 +10,4 @@
+ def hygiene():
+     pass
++    def SyntaxError(]

@@ -1,0 +1,17 @@
+{
+  "event_type": "CODE_REFACTOR_QUARANTINED",
+  "mutation_id": "REFACTOR-1781656673",
+  "target_file": "D:\\Infinite\\Infinity\\Strategy\\dummy_debt.py",
+  "pre_hash": "cbe45656a650581c",
+  "proposed_post_hash": "ca606a6e9495736e",
+  "patch_path": "D:\\Infinite\\Infinity\\Strategy\\State\\MutationArtifacts\\REFACTOR-1781656673\\patch.diff",
+  "trial_file": "D:\\Infinite\\Infinity\\Strategy\\State\\MutationArtifacts\\REFACTOR-1781656673\\trial_file.py",
+  "backup_path": "D:\\Infinite\\Infinity\\Strategy\\State\\MutationArtifacts\\REFACTOR-1781656673\\pre_file.py",
+  "approval_receipt_id": "536b7f681fb017b97c3e716e6c5ac70c4e06a4ac2eea07e9b77d528be834da4c",
+  "test_result": "pass_but_quarantined",
+  "quarantined_utc": "2026-06-17T00:37:54.698221+00:00",
+  "cycle": 100,
+  "action": "extract_method",
+  "delta_summary": "Decompose oversized function 'oversized_func' (155 lines) to reduce structural debt.",
+  "artifact_folder": "D:\\Infinite\\Infinity\\Strategy\\State\\MutationArtifacts\\REFACTOR-1781656673"
+}

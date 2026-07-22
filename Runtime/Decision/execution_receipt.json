@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-03-15T22:54:09Z",
+  "plan_id": "PLAN_A",
+  "status": "BLOCKED_TELEMETRY_UNSTABLE",
+  "reason": "current_regime_observability_bundle_status_BLOCKED_MISSING_REQUIRED_not_decision_ready",
+  "required_status": "DECISION_READY",
+  "current_status": "BLOCKED_MISSING_REQUIRED"
+}

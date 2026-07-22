@@ -1,0 +1,26 @@
+﻿{
+    "steps":  [
+                  {
+                      "label":  "Measure Drift",
+                      "status":  "pending",
+                      "params":  {
+
+                                 },
+                      "id":  "STEP-1",
+                      "tool":  "Vector"
+                  },
+                  {
+                      "label":  "Map Unknowns",
+                      "status":  "pending",
+                      "params":  {
+
+                                 },
+                      "id":  "STEP-2",
+                      "tool":  "Unknowns"
+                  }
+              ],
+    "created_at":  "2026-01-19T18:27:25.4789669Z",
+    "plan_id":  "PLAN-GOAL-20260119-102725",
+    "goal_id":  "GOAL-20260119-102725",
+    "status":  "open"
+}

@@ -1,0 +1,31 @@
+﻿=== Temp Recon Summary (20250918_123347) ===
+Target     : C:\Windows\Temp
+CSV        : C:\Lattice_Task_Exports\temp_scan_20250918_123347.csv
+This TXT   : C:\Lattice_Task_Exports\temp_scan_20250918_123347.txt
+
+Counts
+------
+Total items       : 72
+Modified today    : 7
+Access denied     : 0
+
+Tag buckets (top):
+
+Largest items (KB):
+   16598.02  C:\Windows\Temp\146b9ddd-3c39-4332-83d8-e18a1320e8f1.tmp
+   11377.65  C:\Windows\Temp\5ed4ef9f-f668-4fcd-8757-179fa029e129.tmp
+    7825.07  C:\Windows\Temp\bea1dc4c-bde2-4a77-82c2-7092d2353c6b.tmp
+     458.76  C:\Windows\Temp\MpSigStub.log
+       10.5  C:\Windows\Temp\53b2b88c-7b9d-489b-91a1-c8f20f7c7729.tmp.exe
+       10.5  C:\Windows\Temp\c62ccca1-a346-4f8f-9733-85511b36814e.tmp.exe
+          0  C:\Windows\Temp\edge_BITS_16852_89727878
+          0  C:\Windows\Temp\Low
+          0  C:\Windows\Temp\lu182005uprm5.tmp
+          0  C:\Windows\Temp\msedge_url_fetcher_16160_1377458589
+          0  C:\Windows\Temp\MsEdgeCrashpad
+          0  C:\Windows\Temp\msedge_url_fetcher_16852_1636637623
+          0  C:\Windows\Temp\lu106405uq9ek.tmp
+          0  C:\Windows\Temp\edge_BITS_16852_45761720
+          0  C:\Windows\Temp\edge_BITS_16852_1565694128
+
+Access-denied paths:

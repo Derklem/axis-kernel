@@ -1,0 +1,17 @@
+{
+  "baseline_name": "AXIS_TIER_2_LOCAL_ORACLE_BASELINE",
+  "baseline_timestamp_utc": "2026-06-11T22:03:22.561457+00:00",
+  "baseline_origin": "operator_checkpoint",
+  "baseline_operator": "human_supervised_antigravity",
+  "baseline_reason": "Seal Tier 2 local oracle state after verified adjudication",
+  "approval_capable": false,
+  "oracle_tier": "tier_2_local",
+  "hashes": {
+    "strategy_state.json": "ccd778b1f4b2f0a5e7289ec2626f36061b8db0b1a8789229da9f010678409480",
+    "calibration_continuity_anchor.json": "930b01dbfe1beff6bb16210b5f774886bb76681ebb774aab5f145b395281b2de",
+    "forensic_witness_ledger.jsonl": "02d8a482b2b2a2c46275698dd13916a0d98b6b4b1036effa0895397f1c005faf"
+  },
+  "limitations": {
+    "mttr_p95_24h": "insufficient_resolved_incident_samples"
+  }
+}

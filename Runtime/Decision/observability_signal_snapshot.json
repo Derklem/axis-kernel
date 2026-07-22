@@ -1,0 +1,25 @@
+{
+  "version": "1.0",
+  "signals": {
+    "queue_pressure": {
+      "value": 0.81,
+      "timestamp": "2026-03-15T22:55:07Z",
+      "source": "bad_probe"
+    },
+    "latency_variance": {
+      "value": 0.68,
+      "timestamp": "2026-03-15T22:55:07Z",
+      "source": "latency_aggregator"
+    },
+    "compaction_events": {
+      "value": 8,
+      "timestamp": "2026-03-15T22:55:07Z",
+      "source": "memory_probe"
+    },
+    "memory_pressure": {
+      "value": 0.77,
+      "timestamp": "2026-03-15T22:55:07Z",
+      "source": "memory_probe"
+    }
+  }
+}

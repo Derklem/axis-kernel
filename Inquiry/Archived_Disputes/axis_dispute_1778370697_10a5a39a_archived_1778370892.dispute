@@ -1,0 +1,11 @@
+{
+    "artifact_type": "ecosystem_dispute_candidate",
+    "entity": "Apple",
+    "claim": "Apple Intelligence is NOT coming to all users in June; it will launch in Beta this Fall for iPhone 15 Pro and later only.",
+    "reason": "unbound_contradiction",
+    "best_overlap": 0.2917,
+    "source_type": "news_article",
+    "source_id": "bloomberg_wire",
+    "ts_utc": "2026-05-09T23:51:37.737955+00:00",
+    "requires_review": true
+}

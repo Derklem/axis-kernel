@@ -1,0 +1,15 @@
+﻿{
+    "ts":  "2026-02-02T02:38:49.0710587Z",
+    "window_min":  10,
+    "count":  0,
+    "avg_score":  0,
+    "accept_rate":  0,
+    "verdicts":  {
+                     "accept":  0,
+                     "downweight":  0,
+                     "quarantine":  0
+                 },
+    "by_channel":  {
+
+                   }
+}

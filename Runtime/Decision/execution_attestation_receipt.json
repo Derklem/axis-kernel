@@ -1,0 +1,20 @@
+{
+  "execution_id": "bd3f6822-3608-434c-96e6-6ba09db2b0ec",
+  "timestamp": "2026-03-13T21:33:48.879598Z",
+  "nonce": "57ff40b9",
+  "parameter_family": "dummy",
+  "action": "TEST",
+  "old_value": null,
+  "new_value": null,
+  "artifact_lineage_hashes": {
+    "utility_profile": "b153156d941b418a46c73daf5a5c0bdd38a762fb1fb9b3f2a5bdd382fb53d339",
+    "witness_registry": "39f78d02ebe4f9d39b981c94b4526362697916ed55bfda4b7f2a1c49b6ee3eb0",
+    "branch_receipt": "644152be51e7a93f6e293daba764f7ab89e92bba5aded0f0599ee40d4fec805d"
+  },
+  "policy_versions": {
+    "attestation": "1.0"
+  },
+  "signature_class": "SYSTEM_SIGNED",
+  "attestation_status": "REQUESTED",
+  "signature": "06fdefdfbe8f2b92ca2ec0ad893e71c424e6de5c771d462824de06c6a65b2beb"
+}

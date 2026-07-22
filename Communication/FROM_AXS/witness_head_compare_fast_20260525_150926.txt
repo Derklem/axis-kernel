@@ -1,0 +1,27 @@
+=== FAST WITNESS HEAD COMPARISON ===
+Timestamp: 2026-05-25T15:09:26.782171
+Ledger cycle: 536
+Anchor cycle: 536
+Ledger head: 7664ca7f176c05cd6f2ab37458c4bc90a5cc8ef8e374d4a3dfebf5dac4a0cfb7
+Anchor head: 7664ca7f176c05cd6f2ab37458c4bc90a5cc8ef8e374d4a3dfebf5dac4a0cfb7
+Witness ledger lines: 1084
+
+Last witness hash: 7664ca7f176c05cd6f2ab37458c4bc90a5cc8ef8e374d4a3dfebf5dac4a0cfb7
+Last event type: ECOSYSTEM_CYCLE_COMPLETE
+Last cycle: 535
+
+Ledger head found count: 1
+Anchor head found count: 1
+
+--- Last 8 witness records ---
+cycle=535 event=trust_state_violation prev=70d7cf5b1658213f hash=1f1eb5dc8782f7f1
+cycle=535 event=semantic_registry_audit prev=1f1eb5dc8782f7f1 hash=00a18fc3e1e3479a
+cycle=535 event=ecosystem_observation_emitted prev=00a18fc3e1e3479a hash=1d30d25adb716df2
+cycle=535 event=ecosystem_observation_emitted prev=1d30d25adb716df2 hash=8fe9adc5e938019d
+cycle=535 event=ecosystem_observation_emitted prev=8fe9adc5e938019d hash=e50fcbb3e61dae6d
+cycle=535 event=ecosystem_observation_emitted prev=e50fcbb3e61dae6d hash=b6fd9e5a9bbd61eb
+cycle=535 event=cycle_verdict prev=b6fd9e5a9bbd61eb hash=a63f6cd24efab59f
+cycle=535 event=ECOSYSTEM_CYCLE_COMPLETE prev=a63f6cd24efab59f hash=7664ca7f176c05cd
+
+--- Recommendation ---
+SUCCESS: Ledger, anchor, and witness tail are synchronized. No repair needed.

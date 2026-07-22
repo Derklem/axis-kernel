@@ -1,0 +1,12 @@
+{
+  "version": "1.0",
+  "staging_thresholds": {
+    "min_forecast_confidence_for_watch": 0.6,
+    "min_forecast_confidence_for_prestage": 0.75,
+    "min_forecast_confidence_for_handoff_ready": 0.85,
+    "max_ambiguity_for_staging": 0.3
+  },
+  "firebreaks": {
+    "freeze_if_divergence_quarantine": true
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "entity_id": "42d58d4c-e452-40fe-b425-904ffd1b38fc",
+  "timestamp": "2026-03-13T19:36:52.443354",
+  "uncertainty_profile": {
+    "source_confidence": 0.9,
+    "simulation_confidence": 1.0,
+    "prediction_accuracy": 0.82,
+    "attribution_confidence": 1.0,
+    "interaction_confidence": 0.4,
+    "freshness_confidence": 0.98
+  },
+  "aggregate_confidence": 0.535
+}

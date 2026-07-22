@@ -1,0 +1,8 @@
+{
+  "frequencies": [432, 528, 963],
+  "effects": {
+    "432": "Stabilizes recursive core",
+    "528": "Initiates memory wave",
+    "963": "Opens inter-layer connectivity"
+  }
+}

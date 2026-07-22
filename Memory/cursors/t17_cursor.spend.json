@@ -1,0 +1,13 @@
+﻿{
+    "file_len":  9694,
+    "fingerprint_offset":  "537be7f1baf2fce32d422348e9a16e6beb236686dd722ce3e1bd8454d2987a26",
+    "byte_offset":  9694,
+    "current_segment":  "D:\\Infinite\\Infinity\\Truth_Engine\\spend_ledger.jsonl",
+    "ledger":  "spend",
+    "file_mtime_utc":  "2026-02-21T19:33:47.8544506Z",
+    "fingerprint":  "50cb03476bd560945dff456dd785951ec6de219574cc6a57fd388e2f1178f78a",
+    "seen_segments":  {
+
+                      },
+    "schema":  "axis.t17.cursor.v1"
+}

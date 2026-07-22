@@ -1,0 +1,22 @@
+{
+    "cycle_count": 505,
+    "mutation_type": "CANDIDATE_AGREEMENT_ADDED",
+    "target_id": "e8aadfc3d1cb81d83c8bbf092eb5280835aa869cf214c78443bce72e11ccab35",
+    "parent_receipt_head": "328b8d8168a181f152d1eefb51bd2aa3db94363c2d4ac09fcee7ca73fc7093ac",
+    "data": {
+        "source_id": "Source_02",
+        "source_type": "automated_sensor",
+        "batch_id": "none",
+        "ts": "2026-05-12T23:37:51.811872+00:00",
+        "lineage": {
+            "node_id": "NODE_B",
+            "engine_version": "Spoofed-v9.9.9",
+            "ontology_seal": "seal_X",
+            "node_attestation": "35636e0da851e2fc44dafacab9d17e468f7f32424c85c688f71b96f18eeae617"
+        }
+    },
+    "status": "committed",
+    "ts_utc": "2026-05-12T23:37:51.811872+00:00",
+    "receipt_id": "model_delta_CANDIDATE_AGREEMENT_ADDED_e8aadfc3_797ab0a7",
+    "causal_hash": "797ab0a730de3549ba6e2f3f26ed3b9b808112fe162298bb88a356ef0811f23c"
+}

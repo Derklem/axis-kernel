@@ -1,0 +1,37 @@
+﻿{
+    "version":  1,
+    "metric_id":  "METRIC-ROUTER-001",
+    "last_updated_utc":  "2026-01-22T19:10:00Z",
+    "identity":  {
+                     "hostname":  "Nighthawk",
+                     "model":  "R7000",
+                     "wan_ip":  "203.0.113.42"
+                 },
+    "traffic":  {
+                    "rx_mbps":  3.5,
+                    "tx_mbps":  1.1,
+                    "active_clients":  18
+                },
+    "errors":  {
+                   "wan_down_events_24h":  0,
+                   "auth_failures_24h":  0,
+                   "dhcp_conflicts_24h":  0
+               },
+    "status":  "ok",
+    "alerts":  [
+                   "auth_failures_5m:12",
+                   "dhcp_conflicts_5m:1",
+                   "client_jump:18"
+               ],
+    "history":  [
+                    {
+                        "timestamp_utc":  "2026-01-22T19:10:00Z",
+                        "rx_mbps":  3.5,
+                        "tx_mbps":  1.1,
+                        "active_clients":  18,
+                        "wan_up":  true,
+                        "auth_failures":  12,
+                        "dhcp_conflicts":  1
+                    }
+                ]
+}

@@ -1,0 +1,15 @@
+﻿{
+    "visuals":  {
+                    "pulse_rate":  74,
+                    "color":  "#ff5555"
+                },
+    "resilience_score":  0.93,
+    "scenarios_passed":  3,
+    "timestamp":  "2026-01-22T02:55:03.5201169Z",
+    "profile":  "Standard",
+    "scenarios_tested":  4,
+    "weak_points":  [
+                        "Firewall Latency",
+                        "Node Sync Drift"
+                    ]
+}

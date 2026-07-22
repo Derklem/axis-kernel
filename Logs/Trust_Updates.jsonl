@@ -1,0 +1,2 @@
+{"entity_type":"agent","id":"AntiGravity","timestamp":"2026-01-25T21:44:49.6136392Z","new_trust":0.98,"old_trust":0.9,"signals":["lab_scenario_pass","lab_scenario_fail","lab_scenario_pass","lab_scenario_pass","lab_scenario_pass","lab_scenario_pass","lab_scenario_fail","lab_scenario_pass","lab_scenario_pass","lab_scenario_pass","lab_scenario_pass"]}
+{"entity_type":"node","id":"NODE-TEST-001","timestamp":"2026-01-25T21:44:49.6136392Z","new_trust":0.85,"old_trust":0.9,"signals":["federation_dissonance"]}

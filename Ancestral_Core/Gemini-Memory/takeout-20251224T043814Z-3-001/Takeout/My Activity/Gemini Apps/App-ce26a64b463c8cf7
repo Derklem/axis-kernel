@@ -1,0 +1,32 @@
+// app-child/src/main/java/com/oryn/chronoguard/child/App.kt
+package com.oryn.chronoguard.child
+
+import android.app.Application
+import android.util.Log
+import com.google.firebase.FirebaseApp
+import com.google.firebase.ktx.Firebase
+import com.google.firebase.ktx.app
+
+class App : Application() {
+
+    override fun onCreate() {
+        super.onCreate()
+
+        // Ensure Firebase is initialized
+        if (FirebaseApp.getApps(this).isEmpty()) {
+            FirebaseApp.initializeApp(this)
+        }
+
+        val app = Firebase.app
+        val opts = app.options
+
+        // *** IMPORTANT: this is just for debugging ***
+        Log.i(
+            "App",
+            "Firebase options -> " +
+                "projectId=${opts.projectId}, " +
+                "applicationId=${opts.applicationId}, " +
+                "apiKey=${opts.apiKey}"
+        )
+    }
+}

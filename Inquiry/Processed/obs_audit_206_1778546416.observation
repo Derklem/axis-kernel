@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T00:40:16.794053+00:00",
+    "entity": "Mistral",
+    "claim": "alias: signal for Mistral in cycle 206.",
+    "source_id": "Ecological_Observer",
+    "source_type": "automated_sensor",
+    "claim_domain": "general",
+    "confidence": 0.9
+}

@@ -1,0 +1,15 @@
+{
+  "doctrine_scores": {
+    "THEORY_A": {
+      "confidence": 0.9,
+      "accuracy": 0.85,
+      "failures_streak": 1
+    },
+    "THEORY_C": {
+      "confidence": 0.95,
+      "accuracy": 0.92,
+      "failures_streak": 0
+    }
+  },
+  "last_updated": "2026-03-15T23:34:01Z"
+}

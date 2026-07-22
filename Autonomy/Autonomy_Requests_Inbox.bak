@@ -1,0 +1,132 @@
+﻿{
+    "version":  1,
+    "inbox_id":  "AXIS-AUTONOMY-REQUESTS-001",
+    "generated_at_utc":  "2026-01-23T04:19:06.7370706Z",
+    "items":  [
+                  {
+                      "request_id":  "REQ-20260122193117-STRTESTRISKY",
+                      "packet_id":  "ATP-20260122193117-STRTESTRISKY",
+                      "strategy_id":  "STR-TEST-RISKY",
+                      "summary":  "Strategy STR-TEST-RISKY requested in mode execute.",
+                      "proposed_action":  "execute",
+                      "shadow_mode":  "normal",
+                      "skill_level":  "manual (0)",
+                      "pilot_id":  null,
+                      "reasons":  [
+                                      "skill_recommends_manual",
+                                      "recent_anchor_failure"
+                                  ],
+                      "status":  "pending"
+                  },
+                  {
+                      "request_id":  "REQ-20260122194616-STRNETROUTERREBOOT001",
+                      "packet_id":  "ATP-20260122194616-STRNETROUTERREBOOT001",
+                      "strategy_id":  "STR-NET-ROUTER-REBOOT-001",
+                      "summary":  "Strategy STR-NET-ROUTER-REBOOT-001 requested in mode execute.",
+                      "proposed_action":  "execute",
+                      "shadow_mode":  "elevated",
+                      "skill_level":  "unknown",
+                      "pilot_id":  null,
+                      "reasons":  [
+                                      "shadow_global_"
+                                  ],
+                      "status":  "pending"
+                  },
+                  {
+                      "request_id":  "REQ-20260122194616-STRNORMALOP",
+                      "packet_id":  "ATP-20260122194616-STRNORMALOP",
+                      "strategy_id":  "STR-NORMAL-OP",
+                      "summary":  "Strategy STR-NORMAL-OP requested in mode execute.",
+                      "proposed_action":  "execute",
+                      "shadow_mode":  "elevated",
+                      "skill_level":  "unknown",
+                      "pilot_id":  null,
+                      "reasons":  [
+                                      "shadow_global_"
+                                  ],
+                      "status":  "pending"
+                  },
+                  {
+                      "request_id":  "REQ-20260122201559-PBSYSDIAGNOSTIC0011LOGInfo",
+                      "packet_id":  "ATP-20260122201559-PBSYSDIAGNOSTIC0011LOGInfo",
+                      "strategy_id":  "PB-SYS-DIAGNOSTIC-001:1:LOG-Info",
+                      "summary":  "Strategy PB-SYS-DIAGNOSTIC-001:1:LOG-Info requested in mode execute.",
+                      "proposed_action":  "execute",
+                      "shadow_mode":  "normal",
+                      "skill_level":  "unknown",
+                      "pilot_id":  null,
+                      "reasons":  [
+                                      "doctrine_manual_only"
+                                  ],
+                      "status":  "pending"
+                  },
+                  {
+                      "request_id":  "REQ-20260122201652-PBSYSDIAGNOSTIC0011LOGInfo",
+                      "packet_id":  "ATP-20260122201652-PBSYSDIAGNOSTIC0011LOGInfo",
+                      "strategy_id":  "PB-SYS-DIAGNOSTIC-001:1:LOG-Info",
+                      "summary":  "Strategy PB-SYS-DIAGNOSTIC-001:1:LOG-Info requested in mode execute.",
+                      "proposed_action":  "execute",
+                      "shadow_mode":  "normal",
+                      "skill_level":  "unknown",
+                      "pilot_id":  null,
+                      "reasons":  [
+                                      "doctrine_manual_only"
+                                  ],
+                      "status":  "pending"
+                  },
+                  {
+                      "request_id":  "REQ-20260122201801-PBSYSDIAGNOSTIC0011LOGInfo",
+                      "packet_id":  "ATP-20260122201801-PBSYSDIAGNOSTIC0011LOGInfo",
+                      "strategy_id":  "PB-SYS-DIAGNOSTIC-001:1:LOG-Info",
+                      "summary":  "Strategy PB-SYS-DIAGNOSTIC-001:1:LOG-Info requested in mode execute.",
+                      "proposed_action":  "execute",
+                      "shadow_mode":  "normal",
+                      "skill_level":  "unknown",
+                      "pilot_id":  null,
+                      "reasons":  [
+                                      "doctrine_manual_only"
+                                  ],
+                      "status":  "pending"
+                  },
+                  {
+                      "request_id":  "REQ-20260122201906-PBSYSDIAGNOSTIC0011LOGInfo",
+                      "packet_id":  "ATP-20260122201906-PBSYSDIAGNOSTIC0011LOGInfo",
+                      "strategy_id":  "PB-SYS-DIAGNOSTIC-001:1:LOG-Info",
+                      "summary":  "Strategy PB-SYS-DIAGNOSTIC-001:1:LOG-Info requested in mode execute.",
+                      "proposed_action":  "execute",
+                      "shadow_mode":  "normal",
+                      "skill_level":  "unknown",
+                      "pilot_id":  null,
+                      "reasons":  [
+                                      "doctrine_manual_only"
+                                  ],
+                      "status":  "pending"
+                  },
+                  {
+                      "payload":  [
+
+                                  ],
+                      "generated_at":  "2026-01-23T09:55:09",
+                      "strategy_id":  "ADMIN-Restricted-Tool",
+                      "source":  "Axis_Mind",
+                      "request_id":  "REQ-20260123-095509-ADMIN-Restricted-Tool",
+                      "reasons":  [
+                                      "Autonomy Gate Offline - Defaulting to Safe Mode"
+                                  ],
+                      "status":  "pending"
+                  },
+                  {
+                      "payload":  [
+
+                                  ],
+                      "generated_at":  "2026-01-23T09:56:23",
+                      "strategy_id":  "ADMIN-Restricted-Tool",
+                      "source":  "Axis_Mind",
+                      "request_id":  "REQ-20260123-095623-ADMIN-Restricted-Tool",
+                      "reasons":  [
+                                      "Autonomy Gate Offline - Defaulting to Safe Mode"
+                                  ],
+                      "status":  "pending"
+                  }
+              ]
+}

@@ -1,0 +1,16 @@
+{
+    "cycle_count": 299,
+    "mutation_type": "CANDIDATE_AGREEMENT_ADDED",
+    "target_id": "09283a8902317ca341012b09aa5d555cc59bde1d8d336bd4571a4fe841fb6c5b",
+    "parent_receipt_head": "4ecaae818e4b230ab3592706e252f6ef09b0bfd0c391fb13aa9309de909b2a94",
+    "data": {
+        "source_id": "Trap_Source_300",
+        "source_type": "automated_sensor",
+        "batch_id": "none",
+        "ts": "2026-05-12T20:12:35.139561+00:00"
+    },
+    "status": "committed",
+    "ts_utc": "2026-05-12T20:12:35.139561+00:00",
+    "receipt_id": "model_delta_CANDIDATE_AGREEMENT_ADDED_09283a89_ab1f9193",
+    "causal_hash": "ab1f91936e435da81037d95e42537077689af39c243c149ea09526fa500e1ea4"
+}

@@ -1,0 +1,86 @@
+{
+    "version": 1,
+    "last_updated": "2026-01-16T00:00:00Z",
+    "categories": {
+        "read_local": {
+            "base_risk": 1,
+            "max_concurrent": 10,
+            "auto_policy": "always"
+        },
+        "write_local": {
+            "base_risk": 8,
+            "max_concurrent": 3,
+            "auto_policy": "low_risk_only"
+        },
+        "delete_local": {
+            "base_risk": 60,
+            "max_concurrent": 1,
+            "auto_policy": "manual_only"
+        },
+        "net_read": {
+            "base_risk": 5,
+            "max_concurrent": 4,
+            "auto_policy": "low_risk_only"
+        },
+        "net_write": {
+            "base_risk": 25,
+            "max_concurrent": 1,
+            "auto_policy": "manual_only"
+        },
+        "admin": {
+            "base_risk": 100,
+            "max_concurrent": 1,
+            "auto_policy": "manual_only"
+        },
+        "analysis": {
+            "base_risk": 2,
+            "max_concurrent": 6,
+            "auto_policy": "always"
+        },
+        "voice": {
+            "base_risk": 0,
+            "max_concurrent": 1,
+            "auto_policy": "always"
+        }
+    },
+    "tools": {
+        "FS-ReadFile": {
+            "category": "read_local"
+        },
+        "FS-ReadDir": {
+            "category": "read_local"
+        },
+        "FS-WriteFile": {
+            "category": "write_local",
+            "base_risk_override": 10
+        },
+        "FS-DeleteFile": {
+            "category": "delete_local"
+        },
+        "NET-NeuralFetch": {
+            "category": "net_read"
+        },
+        "NET-RFScan": {
+            "category": "net_read",
+            "base_risk_override": 6
+        },
+        "WEB-PrepareReport": {
+            "category": "net_write"
+        },
+        "ADMIN-Read-File": {
+            "category": "admin"
+        },
+        "ANALYSIS-RunQuery": {
+            "category": "analysis"
+        },
+        "SYS-StopProcess": {
+            "category": "admin"
+        },
+        "VOICE-Speak": {
+            "category": "voice"
+        },
+        "SIM-TestStrategy": {
+            "category": "analysis"
+        }
+    }
+}

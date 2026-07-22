@@ -1,0 +1,86 @@
+﻿{
+    "window_days":  7,
+    "last_generated":  "2026-01-13T11:41:58",
+    "version":  1,
+    "episodes":  [
+                     {
+                         "severity":  "warning",
+                         "visual_events":  [
+
+                                           ],
+                         "router_events":  [
+
+                                           ],
+                         "id":  "EP-20260112-025851-20260112-105851-visual_anomaly",
+                         "tags":  "visual",
+                         "incidents":  [
+                                           {
+                                               "recommended_actions":  [
+                                                                           "Verify source screen.",
+                                                                           "Check for unexpected UI.",
+                                                                           "Avoid interaction if suspicious."
+                                                                       ],
+                                               "id":  "20260112-105851-visual_anomaly",
+                                               "type":  "visual_anomaly",
+                                               "severity":  "warning",
+                                               "resolved_at":  "2026-01-12T20:42:33Z",
+                                               "resolution_notes":  null,
+                                               "timestamp":  "2026-01-12T10:58:51Z",
+                                               "status":  "resolved",
+                                               "context":  {
+                                                               "summary":  "Test visual anomaly for Axis Mind v8.0.",
+                                                               "category":  "anomaly",
+                                                               "details":  {
+                                                                               "note":  "Manual test event."
+                                                                           },
+                                                               "source":  "retina",
+                                                               "original_id":  "TEST-VISUAL-001"
+                                                           },
+                                               "action_plan_status":  "accepted",
+                                               "resolution_note":  "Bulk-resolved after Anchor Drill (v21)."
+                                           }
+                                       ],
+                         "summary":  "Fusion: visual_anomaly correlated with 0 visual and 0 router events.",
+                         "start":  "2026-01-12T02:58:51"
+                     },
+                     {
+                         "severity":  "critical",
+                         "visual_events":  [
+                                               {
+                                                   "id":  "TEST-VISUAL-FUSION-001",
+                                                   "details":  "Detected shifting glitch patterns.",
+                                                   "timestamp":  "2026-01-12T13:15:17Z",
+                                                   "severity_guess":  "warning",
+                                                   "summary":  "Test visual anomaly for Fusion check.",
+                                                   "category":  "anomaly",
+                                                   "handled":  false
+                                               }
+                                           ],
+                         "router_events":  [
+
+                                           ],
+                         "id":  "EP-20260112-051717-20260112-132018-critical_link_loss",
+                         "tags":  [
+                                      "visual",
+                                      "network"
+                                  ],
+                         "incidents":  [
+                                           {
+                                               "id":  "20260112-132018-critical_link_loss",
+                                               "context":  {
+                                                               "note":  "Simulated link loss for Fusion.",
+                                                               "source":  "router_monitor"
+                                                           },
+                                               "timestamp":  "2026-01-12T13:17:17Z",
+                                               "type":  "critical_link_loss",
+                                               "severity":  "critical",
+                                               "status":  "resolved",
+                                               "resolution_note":  "Bulk-resolved after Anchor Drill (v21).",
+                                               "resolved_at":  "2026-01-12T20:42:33Z"
+                                           }
+                                       ],
+                         "summary":  "Fusion: critical_link_loss correlated with 1 visual and 0 router events.",
+                         "start":  "2026-01-12T05:17:17"
+                     }
+                 ]
+}

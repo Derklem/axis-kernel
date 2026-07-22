@@ -1,0 +1,19 @@
+{
+  "version": "1.0",
+  "routing_precedence": [
+    "INSTRUMENTATION_REQUIRED",
+    "THEORY_EXPANSION_REQUIRED",
+    "READY_FOR_EXPERIMENT_DESIGN",
+    "DEFERRED",
+    "RECURRENCE_WAIT_STATE"
+  ],
+  "exclusive_states": [
+    "THEORY_EXPANSION_REQUEST",
+    "INSTRUMENTATION_REQUEST",
+    "DISAMBIGUATION_EXPERIMENT_REQUEST",
+    "DEFERRED",
+    "BLOCKED_BY_BUDGET",
+    "AWAITING_RECURRENCE"
+  ],
+  "last_updated": "2026-03-14T12:12:00Z"
+}

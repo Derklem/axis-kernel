@@ -1,0 +1,9 @@
+{
+    "stale_thresholds_sec":  {
+                                 "executor":  60,
+                                 "heartbeat":  16,
+                                 "sovereign_pulse":  300,
+                                 "watchdog":  60
+                             },
+    "schema_version":  "telemetry_policy.v1"
+}

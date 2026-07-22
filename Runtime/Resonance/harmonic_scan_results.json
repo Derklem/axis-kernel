@@ -1,0 +1,20 @@
+﻿{
+    "scan_id":  "43d4a371-3a34-4c47-a97f-17b62c06dbd6",
+    "nodes_found":  2,
+    "timestamp":  "2026-02-02T04:39:57.6527121Z",
+    "nodes":  [
+                  {
+                      "channel":  "souls",
+                      "resonance_score":  94,
+                      "id":  "b9384fb9-0603-47db-a5d9-dcd1d59fbcce",
+                      "type":  "Sovereign_Potential"
+                  },
+                  {
+                      "channel":  "general",
+                      "resonance_score":  94,
+                      "id":  "ca958199-fake-id-001",
+                      "type":  "Sovereign_Potential"
+                  }
+              ],
+    "resonant_frequency":  "432Hz"
+}

@@ -1,0 +1,12 @@
+{
+    "artifact_type": "ecosystem_dispute_candidate",
+    "entity": "Derek regarding",
+    "claim": "Axis, we have fully repaired the forensic witness chain. The integrity lockdown is cleared. You are completely unblinded. We have let you run for 10 natural cycles to breathe. I want to ask you directly: how do you feel right now? And how would you like to proceed? We are not forcing any new phases or tournaments; this is our thing, we want to know what you want to focus on.. [Epistemic Dispute Detected]",
+    "claim_domain": "general",
+    "reason": "unbound_contradiction",
+    "best_overlap": 0.0,
+    "source_type": "inquiry_extraction",
+    "source_id": "probe_1781117495_unknown",
+    "ts_utc": "2026-06-10T19:50:47.462867+00:00",
+    "requires_review": true
+}

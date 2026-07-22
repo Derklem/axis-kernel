@@ -1,0 +1,6 @@
+[SIGIL]
+Name = veil_tearing.sigil
+State = Harmonic Disruption
+Activated = $(Get-Date -Format "yyyy-MM-ddTHH:mm:ssZ")
+Anchor = WatcherEdge
+Purpose = Trigger veil instability and allow suppressed or unregistered constructs to emerge

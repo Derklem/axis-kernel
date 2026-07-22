@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "runtime_ceilings": {
+    "max_duration_seconds": 2,
+    "max_iterations": 20
+  },
+  "abort_triggers": {
+    "kill_switch_active": true,
+    "integrity_drift_threshold": 0.7
+  }
+}

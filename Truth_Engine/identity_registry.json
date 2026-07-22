@@ -1,0 +1,94 @@
+{
+    "schema": "axis.identity_registry.v1",
+    "timestamp": "2026-02-13T17:50:00-08:00",
+    "identities": [
+        {
+            "identity": "portal:maya_phone",
+            "type": "human",
+            "status": "active",
+            "capabilities": [
+                "intent.submit",
+                "intent.promote",
+                "tool.execute",
+                "policy.compile"
+            ],
+            "key_ref": "dpapi:CURRENTUSER:axis:portal_maya_phone:v1",
+            "key_id": "k_portal_maya_phone_v1",
+            "notes": "Primary sovereign entry point (mobile)"
+        },
+        {
+            "identity": "portal:voice_local",
+            "type": "human",
+            "status": "active",
+            "capabilities": [
+                "voice.transcribe",
+                "voice.synthesize"
+            ],
+            "key_ref": "dpapi:CURRENTUSER:axis:portal_voice_local:v1",
+            "key_id": "k_portal_voice_local_v1",
+            "notes": "Direct local audio interface"
+        },
+        {
+            "identity": "system:promoter",
+            "type": "system",
+            "status": "active",
+            "capabilities": [
+                "intent.promote"
+            ],
+            "key_ref": "dpapi:CURRENTUSER:axis:system_promoter:v1",
+            "key_id": "k_system_promoter_v1"
+        },
+        {
+            "identity": "system:generator",
+            "type": "system",
+            "status": "active",
+            "capabilities": [
+                "intent.submit"
+            ],
+            "key_ref": "dpapi:CURRENTUSER:axis:system_generator:v1",
+            "key_id": "k_system_generator_v1",
+            "notes": "Restricted generator (deny-all by default)"
+        },
+        {
+            "identity": "system:harness",
+            "type": "system",
+            "status": "active",
+            "capabilities": [
+                "high.risk",
+                "intent.submit",
+                "intent.promote"
+            ],
+            "key_ref": "dpapi:CURRENTUSER:axis:system_harness:v1",
+            "key_id": "k_system_harness_v1",
+            "notes": "Synthetic intent injector for verification"
+        },
+        {
+            "identity": "system:tester",
+            "type": "system",
+            "status": "active",
+            "capabilities": [
+                "tool.execute",
+                "intent.submit"
+            ],
+            "key_ref": "dpapi:system_tester:v4",
+            "key_id": "k_system_tester_v4",
+            "notes": "Tester identity (has tool.execute but NOT high.risk)"
+        },
+        {
+            "identity": "system:warehouse",
+            "type": "system",
+            "status": "active_steward",
+            "capabilities": [
+                "inspect",
+                "report",
+                "propose_draft",
+                "intent.submit",
+                "tool.execute",
+                "data.purge"
+            ],
+            "key_ref": "dpapi:CURRENTUSER:axis:system_warehouse:v1",
+            "key_id": "k_system_warehouse_v1",
+            "notes": "Warehouse Layer (Active Steward). Authorized for autonomous environmental maintenance."
+        }
+    ]
+}

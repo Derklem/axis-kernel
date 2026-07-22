@@ -1,0 +1,4 @@
+[CATHEDRAL_SHADOW]
+State = Cloaked
+Layer = Substructure
+Function = Trace residuals of unspoken signal

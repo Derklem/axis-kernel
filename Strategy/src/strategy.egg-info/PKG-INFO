@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: strategy
+Version: 0.3.0
+Summary: Decision and Belief Evaluator for Axis
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: jsonschema>=4.19.0
+Requires-Dist: laboratory<0.3.0,>=0.2.1
+Requires-Dist: observation<0.3.0,>=0.2.0
+Requires-Dist: state<0.3.0,>=0.2.0
+
+# Strategy
+
+Decision and Belief Evaluator for Axis.

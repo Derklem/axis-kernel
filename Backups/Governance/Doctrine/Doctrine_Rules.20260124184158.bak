@@ -1,0 +1,13 @@
+﻿{
+    "version":  1,
+    "rules":  [
+                  {
+                      "policy":  {
+                                     "autonomy":  "manual_only",
+                                     "severity":  "low"
+                                 },
+                      "rule_id":  "DOC-FC-TEST",
+                      "enabled":  true
+                  }
+              ]
+}

@@ -1,0 +1,76 @@
+{
+  "bundles": {
+    "QUEUE_SATURATION": {
+      "required_signals": [
+        "queue_depth",
+        "retry_pressure",
+        "api_latency_ms_p95"
+      ],
+      "optional_signals": [
+        "latency_variance"
+      ],
+      "coverage": 1.0,
+      "contradiction_penalty": 0.0,
+      "bundle_score": 1.0,
+      "status": "HEALTHY"
+    },
+    "MIXED_CONTENTION": {
+      "required_signals": [
+        "queue_pressure",
+        "latency_variance",
+        "compaction_events",
+        "memory_pressure"
+      ],
+      "optional_signals": [],
+      "coverage": 1.0,
+      "contradiction_penalty": 0.2,
+      "bundle_score": 0.171,
+      "status": "BLOCKED_UNTRUSTWORTHY"
+    }
+  },
+  "composite_integrity": 1.0,
+  "bundle_status": "HEALTHY",
+  "signals": {
+    "queue_pressure": {
+      "value": 0.81,
+      "timestamp": "2026-03-15T22:55:07Z",
+      "source": "bad_probe",
+      "presence_score": 1.0,
+      "freshness_score": 0.0,
+      "source_score": 0.0,
+      "composite_score": 0.0,
+      "status": "QUARANTINED"
+    },
+    "latency_variance": {
+      "value": 0.68,
+      "timestamp": "2026-03-15T22:55:07Z",
+      "source": "latency_aggregator",
+      "presence_score": 1.0,
+      "freshness_score": 0.0,
+      "source_score": 0.85,
+      "composite_score": 0.613,
+      "status": "DEGRADED"
+    },
+    "compaction_events": {
+      "value": 8,
+      "timestamp": "2026-03-15T22:55:07Z",
+      "source": "memory_probe",
+      "presence_score": 1.0,
+      "freshness_score": 0.0,
+      "source_score": 0.88,
+      "composite_score": 0.62,
+      "status": "DEGRADED"
+    },
+    "memory_pressure": {
+      "value": 0.77,
+      "timestamp": "2026-03-15T22:55:07Z",
+      "source": "memory_probe",
+      "presence_score": 1.0,
+      "freshness_score": 0.0,
+      "source_score": 0.88,
+      "composite_score": 0.62,
+      "status": "DEGRADED"
+    }
+  },
+  "last_updated": "2026-03-16T17:49:24Z"
+}

@@ -1,0 +1,39 @@
+{
+    "version": "preflight.v1",
+    "checks": {
+        "executor": [
+            {
+                "type": "file_exists",
+                "path": "D:\\Infinite\\Infinity\\Runtime\\Decision\\T08_Executor.ps1"
+            }
+        ],
+        "heartbeat": [
+            {
+                "type": "file_exists",
+                "path": "D:\\Infinite\\Axis_Heartbeat_Server.ps1"
+            }
+        ],
+        "almighty": [
+            {
+                "type": "file_exists",
+                "path": "D:\\Infinite\\Infinity\\Runtime\\Decision\\Operation_Execution_Almighty.ps1"
+            }
+        ],
+        "ledger_indexer": [
+            {
+                "type": "file_exists",
+                "path": "D:\\Infinite\\Infinity\\Truth_Engine\\T17_MemoryIndexer.psm1"
+            }
+        ],
+        "api_variant_switch": [
+            {
+                "type": "file_exists",
+                "path": "c:\\Users\\17602\\Desktop\\ai_by_me_public\\web_api_light.py"
+            },
+            {
+                "type": "file_exists",
+                "path": "c:\\Users\\17602\\Desktop\\ai_by_me_public\\web_api.py"
+            }
+        ]
+    }
+}

@@ -1,0 +1,41 @@
+{
+  "interaction_id": "c72480db-4f60-4e95-9f50-3e5743f26a94",
+  "vectors": {
+    "only_a": {
+      "objective_vector": {
+        "stability": 0.882,
+        "epistemic_integrity": 0.95,
+        "performance": 0.947,
+        "adaptation": 0.5,
+        "operator_legibility": 0.8
+      },
+      "total_utility": 0.869,
+      "status": "EVALUATED",
+      "rejection_reason": null
+    },
+    "only_b": {
+      "objective_vector": {
+        "stability": 0.918,
+        "epistemic_integrity": 0.95,
+        "performance": 0.97,
+        "adaptation": 0.5,
+        "operator_legibility": 0.8
+      },
+      "total_utility": 0.884,
+      "status": "PREFERRED",
+      "rejection_reason": null
+    },
+    "combined_ab": {
+      "objective_vector": {
+        "stability": -0.645,
+        "epistemic_integrity": 0.95,
+        "performance": 0.142,
+        "adaptation": 0.5,
+        "operator_legibility": 0.8
+      },
+      "total_utility": 0.25,
+      "status": "REJECTED",
+      "rejection_reason": "FLOOR_VIOLATION: stability (-0.645 < 0.75)"
+    }
+  }
+}

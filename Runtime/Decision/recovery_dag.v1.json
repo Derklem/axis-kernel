@@ -1,0 +1,42 @@
+{
+    "version": "recovery_dag.v1",
+    "nodes": {
+        "executor": {
+            "type": "oneshot",
+            "telemetry_component": "executor",
+            "depends_on": []
+        },
+        "heartbeat": {
+            "type": "daemon",
+            "telemetry_component": "heartbeat",
+            "depends_on": []
+        },
+        "almighty": {
+            "type": "oneshot",
+            "telemetry_component": "sovereign_pulse",
+            "depends_on": [
+                "executor"
+            ]
+        },
+        "ledger_indexer": {
+            "type": "oneshot",
+            "telemetry_component": "ledger",
+            "depends_on": []
+        },
+        "api_variant_switch": {
+            "type": "oneshot",
+            "telemetry_component": "api_process",
+            "depends_on": []
+        }
+    },
+    "edges": [
+        [
+            "executor",
+            "almighty"
+        ]
+    ],
+    "policy": {
+        "max_chain_actions_per_tick": 1,
+        "prefer_fix_required_first": true
+    }
+}

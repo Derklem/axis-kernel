@@ -1,0 +1,57 @@
+{
+    "version": 1,
+    "registry_id": "HAPTIC-REG-2026-001",
+    "devices": [
+        {
+            "device_id": "HAPTIC-PC-BEEP-001",
+            "name": "PC Console Beeper",
+            "description": "Fallback haptic via system beeps.",
+            "type": "system_beep",
+            "enabled": true,
+            "supported_patterns": [
+                "info",
+                "warn",
+                "alert"
+            ],
+            "severity_map": {
+                "low": "info",
+                "medium": "warn",
+                "high": "alert",
+                "critical": "alert"
+            },
+            "endpoint": {
+                "min_freq_hz": 400,
+                "max_freq_hz": 2000,
+                "default_duration_ms": 200
+            }
+        },
+        {
+            "device_id": "HAPTIC-SERIAL-ARDUINO-001",
+            "name": "Desk Motor (Arduino)",
+            "description": "Serial-driven haptic motor (stub; enable when ready).",
+            "type": "serial",
+            "enabled": false,
+            "supported_patterns": [
+                "info",
+                "warn",
+                "alert"
+            ],
+            "severity_map": {
+                "low": "info",
+                "medium": "warn",
+                "high": "alert",
+                "critical": "alert"
+            },
+            "endpoint": {
+                "port": "COM3",
+                "baud": 9600,
+                "protocol": "line",
+                "pattern_commands": {
+                    "info": "PING\n",
+                    "warn": "PULSE\n",
+                    "alert": "ALARM\n"
+                }
+            }
+        }
+    ]
+}

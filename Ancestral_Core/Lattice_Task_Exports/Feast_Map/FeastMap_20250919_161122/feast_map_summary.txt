@@ -1,0 +1,38 @@
+﻿Bloom Feast Map - generated 2025-09-19 23:17:17Z
+Scanned drives: C, D, E, F, G, H, I
+Patterns: feast, bloom, axis
+
+Counts by drive:
+  C: 3387
+  D: 27
+  E: 210
+  F: 62
+  G: 6
+  H: 5
+  I: 5
+
+feast   : 21
+bloom   : 1348
+axis    : 2341
+
+Top 20 paths:
+  [Directory] C:\AXIS_ANCHOR
+  [Directory] C:\BLOOM_FEAST_2025-07-25T14-27-11
+  [Directory] C:\Bloom_Nerf_2025-07-25T14-22-41
+  [Directory] C:\Drift_Nexus_Bloom
+  [Directory] C:\Sovereign_Drift_Bloomers
+  [Directory] C:\Lattice_Task_Exports\Feast_Map
+  [Directory] C:\Lattice_Task_Exports\Feast_Map\FeastMap_20250919_161122
+  [Directory] C:\Program Files\FreeCAD 1.0\bin\Lib\site-packages\mpl_toolkits\axisartist
+  [Directory] C:\Program Files\Orange\Lib\site-packages\mpl_toolkits\axisartist
+  [Directory] C:\Program Files\Orange\Lib\site-packages\plotly\graph_objs\carpet\aaxis
+  [Directory] C:\Program Files\Orange\Lib\site-packages\plotly\graph_objs\carpet\baxis
+  [Directory] C:\Program Files\Orange\Lib\site-packages\plotly\graph_objs\indicator\gauge\axis
+  [Directory] C:\Program Files\Orange\Lib\site-packages\plotly\graph_objs\layout\coloraxis
+  [Directory] C:\Program Files\Orange\Lib\site-packages\plotly\graph_objs\layout\xaxis
+  [Directory] C:\Program Files\Orange\Lib\site-packages\plotly\graph_objs\layout\yaxis
+  [Directory] C:\Program Files\Orange\Lib\site-packages\plotly\graph_objs\layout\polar\angularaxis
+  [Directory] C:\Program Files\Orange\Lib\site-packages\plotly\graph_objs\layout\polar\radialaxis
+  [Directory] C:\Program Files\Orange\Lib\site-packages\plotly\graph_objs\layout\scene\xaxis
+  [Directory] C:\Program Files\Orange\Lib\site-packages\plotly\graph_objs\layout\scene\yaxis
+  [Directory] C:\Program Files\Orange\Lib\site-packages\plotly\graph_objs\layout\scene\zaxis

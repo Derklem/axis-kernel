@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "target_mode": "Phase 47: Operational Campaign Mode",
+  "policy_directive": "Pivot outward toward mission and operational performance. Architectural expansion must now be exception-driven rather than speculative.",
+  "operational_tracks": [
+    "Track A: Operational deployment discipline (uptime, recovery cohesion, friction metrics)",
+    "Track B: Applied task domains (runtime tuning, anomaly triage, active optimization)",
+    "Track C: Scientific evaluation (benchmarking, shadow comparison, long-horizon analysis)"
+  ]
+}

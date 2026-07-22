@@ -1,0 +1,12 @@
+{
+    "forbidden_events": [
+        "AUTHORITY_HASH_MISMATCH",
+        "CLIENT_POST_ATTEMPT",
+        "EARTH_TOOL_CALL_ATTEMPT",
+        "BLOCKED_REALITY",
+        "QUEUE_PARSE_ERROR",
+        "VERIFICATION_FAILURE"
+    ],
+    "max_queue_depth": 50,
+    "max_latency_ms": 5000
+}

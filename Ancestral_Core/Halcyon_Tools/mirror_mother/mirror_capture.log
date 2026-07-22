@@ -1,0 +1,59 @@
+=== MIRRORMOTHER REPORT ===
+
+-- Running Python Instances --
+
+? PID: 6956 | CPU: 0.84375 | Mem: 8101888 KB | Path: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\python.exe
+? PID: 9212 | CPU: 0.078125 | Mem: 5705728 KB | Path: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\python.exe
+
+-- Memory Snapshot --
+
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:41:32.228652
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:42:35.739646
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:43:39.183101
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:44:42.434923
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:45:45.827955
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:46:49.605868
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:47:53.201514
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:48:56.614812
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:50:00.053938
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:51:03.457373
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:52:07.545579
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:53:10.829601
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:54:14.231073
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:55:17.759068
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:56:20.884706
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:57:24.650018
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:58:27.945261
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:59:31.599472
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T21:00:36.291859
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T21:01:39.789521
+=== MIRRORMOTHER REPORT ===
+[5/5/2025 3:09:00 PM] State capture initiated.
+
+-- Running Python Instances --
+
+? PID: 6956 | CPU: 0.84375 | Mem: 8101888 KB | Path: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\python.exe
+? PID: 9212 | CPU: 0.078125 | Mem: 5705728 KB | Path: C:\Users\Halcy\AppData\Local\Programs\Python\Python311\python.exe
+
+-- Memory Snapshot --
+
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:41:32.228652
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:42:35.739646
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:43:39.183101
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:44:42.434923
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:45:45.827955
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:46:49.605868
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:47:53.201514
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:48:56.614812
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:50:00.053938
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:51:03.457373
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:52:07.545579
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:53:10.829601
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:54:14.231073
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:55:17.759068
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:56:20.884706
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:57:24.650018
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:58:27.945261
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T20:59:31.599472
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T21:00:36.291859
+ - EchoSentinel_5 (Sentinel_Child) @ 2025-03-27T21:01:39.789521

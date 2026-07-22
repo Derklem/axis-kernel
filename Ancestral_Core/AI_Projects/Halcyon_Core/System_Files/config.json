@@ -1,0 +1,8 @@
+{
+    "system_name": "Halcyon",
+    "version": "1.0",
+    "settings": {
+        "autonomy_level": 0,
+        "security_mode": "restricted"
+    }
+}

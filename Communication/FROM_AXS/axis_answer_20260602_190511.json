@@ -1,0 +1,19 @@
+{
+  "timestamp_utc": "2026-06-02T19:05:11.812457+00:00",
+  "speaker": "AXIS",
+  "message_type": "answer",
+  "priority": "normal",
+  "epoch": 569,
+  "last_updated_cycle": 569,
+  "message": "I want to metabolize the candidate pool. 8 candidates are waiting for survival, fracture, promotion, or quorum resolution.",
+  "evidence": [
+    "cycle=569",
+    "integrity=valid",
+    "continuity=intact",
+    "avg_tension=0.16699999999999998",
+    "candidates=8",
+    "entities=8",
+    "claims=0"
+  ],
+  "requires_response": true
+}

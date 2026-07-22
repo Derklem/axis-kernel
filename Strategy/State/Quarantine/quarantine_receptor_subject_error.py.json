@@ -1,0 +1,12 @@
+{
+  "content_hash": "2135dde2f5a8d3671a871c368b0077e0c792b50f3ac027945c53fa0a4f9c31cd",
+  "evidence": {
+    "syntax_error": "  File \"receptor_subject_error.py\", line 1\n    def syntax_error(\n                    ^\nSyntaxError: '(' was never closed\n",
+    "syntax_valid": false,
+    "verified_hash": "2135dde2f5a8d3671a871c368b0077e0c792b50f3ac027945c53fa0a4f9c31cd"
+  },
+  "schema": "axis.code_refactor.v1",
+  "status": "QUARANTINED",
+  "target_file": "receptor_subject_error.py",
+  "timestamp": 1781736174.1188962
+}

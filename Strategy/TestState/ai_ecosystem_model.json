@@ -1,0 +1,13 @@
+{
+    "claims": {},
+    "entities": {
+        "Gauntlet_Test_Entity": {
+            "first_discovery_utc": "2026-07-21T22:54:43.234598+00:00",
+            "last_seen_utc": "2026-07-21T22:54:43.234598+00:00",
+            "reliability_index": 0.5,
+            "verified_claims_count": 0
+        }
+    },
+    "cycle_count": 0,
+    "last_updated_utc": "2026-07-21T22:54:43.269679+00:00"
+}

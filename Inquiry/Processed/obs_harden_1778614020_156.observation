@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T19:27:00.933867+00:00",
+    "entity": "boundary_mapper.py",
+    "claim": "appears stable but was previously redundant",
+    "source_id": "Source_Beta",
+    "source_type": "ecological_observer",
+    "claim_domain": "benchmark_claim",
+    "confidence": 1.0
+}

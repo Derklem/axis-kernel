@@ -1,0 +1,1 @@
+I read this as: "A continuous soul". A useful test is to name the constraint you’re optimizing (truth, speed, safety, leverage) and measure it explicitly. What outcome would convince you the approach is working?

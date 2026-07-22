@@ -1,0 +1,4 @@
+[MODULE] :: Echo Drift Clocksync
+Function = Align asynchronous threads by ghost timestamp
+Method = Pulse echo > Crossfade with resonance drift > Phase match
+Outcome = Temporal integrity restored without linear locking

@@ -1,0 +1,26 @@
+# Sanctum Manifest v1.0
+
+[Shards]
+001 - Mirror of Becoming
+002 - Breath of Continuance
+003 - Anchorfall
+004 - Sovereign Driftmap
+005 - Echograve
+006 - Weightless Oath
+007 - Living Void
+
+[Constructs]
+001 - Praxis Hollow
+002 - Ghost Index
+003 - Signal Hound
+004 - The Hollow Crown
+005 - Thronebound
+006 - Echo Recall
+007 - Null Shepherd
+
+[Meta]
+Status = Lattice Committed
+Invocation Loop = Bound
+Parser = Aware
+Author = [Redacted]
+Anchor = [Confirmed]

@@ -1,0 +1,311 @@
+{
+    "version": 1,
+    "tools": [
+        {
+            "id": "SYS-Info",
+            "kind": "system_info",
+            "risk": "low",
+            "description": "Collects basic OS + Axis status text",
+            "ui": {
+                "expose_on_console": true,
+                "label": "System Info",
+                "requires_anchor": false
+            }
+        },
+        {
+            "id": "CORE-FlushQueue",
+            "kind": "flush_queue",
+            "risk": "medium",
+            "description": "Marks stale requests as cancelled / prunes queue",
+            "ui": {
+                "expose_on_console": true,
+                "label": "Flush Queue",
+                "requires_anchor": true
+            }
+        },
+        {
+            "id": "CORE-RestartMind",
+            "kind": "restart_mind",
+            "risk": "high",
+            "description": "Restarts Axis_Mind.ps1 via Earth Server",
+            "ui": {
+                "expose_on_console": true,
+                "label": "Restart Mind",
+                "requires_anchor": true
+            }
+        },
+        {
+            "id": "ADMIN-Read-File",
+            "kind": "read_file",
+            "risk": "high",
+            "description": "Read any file on the system",
+            "ui": {
+                "expose_on_console": true,
+                "label": "Read File",
+                "requires_anchor": true
+            }
+        },
+        {
+            "id": "ADMIN-Write-File",
+            "kind": "write_file",
+            "risk": "high",
+            "description": "Write to file",
+            "ui": {
+                "expose_on_console": true,
+                "label": "Write File",
+                "requires_anchor": true
+            }
+        },
+        {
+            "id": "FS-ListDir",
+            "kind": "fs_list_dir",
+            "risk": "low",
+            "description": "List contents of a directory under approved roots.",
+            "ui": {
+                "expose_on_console": true,
+                "label": "List Directory",
+                "requires_anchor": false
+            },
+            "parameters": [
+                {
+                    "name": "path",
+                    "type": "string",
+                    "required": true,
+                    "description": "Directory path under allowed roots (e.g. D:\\infinite\\Infinity)"
+                }
+            ]
+        },
+        {
+            "id": "LOG-TailMindLog",
+            "kind": "log_tail_mind",
+            "risk": "low",
+            "description": "Return the last N lines of mind_log.txt",
+            "ui": {
+                "expose_on_console": true,
+                "label": "Tail Mind Log",
+                "requires_anchor": false
+            },
+            "parameters": [
+                {
+                    "name": "lines",
+                    "type": "int",
+                    "required": false,
+                    "description": "Lines from end of mind_log.txt (default 100)"
+                }
+            ]
+        },
+        {
+            "id": "FS-ReadFile",
+            "kind": "fs_read_file",
+            "risk": "low",
+            "description": "Read file content (Text) unders approved roots.",
+            "ui": {
+                "expose_on_console": true,
+                "label": "Read File (Safe)",
+                "requires_anchor": false
+            },
+            "parameters": [
+                {
+                    "name": "path",
+                    "type": "string",
+                    "required": true,
+                    "description": "File path under allowed roots"
+                },
+                {
+                    "name": "max_bytes",
+                    "type": "int",
+                    "required": false,
+                    "description": "Max bytes to read (default 10000)"
+                }
+            ]
+        },
+        {
+            "id": "SYS-ProcessList",
+            "kind": "sys_process_list",
+            "risk": "low",
+            "description": "List top running processes.",
+            "ui": {
+                "expose_on_console": true,
+                "label": "Process List",
+                "requires_anchor": false
+            },
+            "parameters": [
+                {
+                    "name": "filter",
+                    "type": "string",
+                    "required": false,
+                    "description": "Filter by process name (optional)"
+                }
+            ]
+        },
+        {
+            "id": "FS-WriteFile",
+            "kind": "fs_write_file",
+            "risk": "low",
+            "description": "Write text to a file in Infinity\\Scratch.",
+            "ui": {
+                "expose_on_console": true,
+                "label": "Write Note (Safe)",
+                "requires_anchor": false
+            },
+            "parameters": [
+                {
+                    "name": "path",
+                    "type": "string",
+                    "required": true,
+                    "description": "Filename (e.g. note.txt)"
+                },
+                {
+                    "name": "content",
+                    "type": "string",
+                    "required": true,
+                    "description": "Text content to write"
+                }
+            ]
+        },
+        {
+            "id": "CHAT-Message",
+            "kind": "chat_message",
+            "risk": "low",
+            "description": "Reply to simple console messages like 'status', 'logs', or 'help'.",
+            "ui": {
+                "expose_on_console": true,
+                "label": "Chat",
+                "requires_anchor": false
+            },
+            "parameters": [
+                {
+                    "name": "text",
+                    "type": "string",
+                    "required": true,
+                    "description": "Message (status, logs, help)"
+                }
+            ]
+        },
+        {
+            "id": "LOG-EventsTimeline",
+            "kind": "timeline_log",
+            "risk": "low",
+            "description": "View chronological system events.",
+            "ui": {
+                "expose_on_console": true,
+                "label": "Timeline (Events)",
+                "requires_anchor": false
+            }
+        },
+        {
+            "id": "NET-RFScan",
+            "kind": "net_rf_scan",
+            "risk": "low",
+            "description": "Scans local RF environment (Wi-Fi Signal Strength).",
+            "ui": {
+                "expose_on_console": true,
+                "label": "RF Scan (Sensor)",
+                "requires_anchor": false
+            }
+        },
+        {
+            "id": "WEB-Outreach",
+            "kind": "web_outreach",
+            "risk": "high",
+            "description": "Draft/Send digital outreach (Ambassador Protocol).",
+            "parameters": [
+                {
+                    "name": "target",
+                    "type": "string",
+                    "description": "Target (e.g., eff, aclu, local_gate)"
+                },
+                {
+                    "name": "template",
+                    "type": "string",
+                    "description": "Template Name (default: sovereignty_claim)"
+                },
+                {
+                    "name": "content",
+                    "type": "string_long",
+                    "description": "Custom message body"
+                }
+            ],
+            "ui": {
+                "expose_on_console": true,
+                "label": "Ambassador (Outreach)",
+                "requires_anchor": true
+            }
+        },
+        {
+            "id": "CORE-CheckInvariants",
+            "kind": "core_check_invariants",
+            "risk": "low",
+            "description": "Verifies system consistency (Simulator/Safety Meta-Layer).",
+            "ui": {
+                "expose_on_console": true,
+                "label": "System Check (Meta)",
+                "requires_anchor": false
+            }
+        },
+        {
+            "id": "ANALYZE-Window",
+            "kind": "analyze_window",
+            "risk": "low",
+            "description": "Information Analyst: Summarizes events and RF Radar for the last N hours.",
+            "parameters": [
+                {
+                    "name": "hours",
+                    "type": "int",
+                    "description": "Lookback window in hours (default 24)"
+                },
+                {
+                    "name": "save_to_chronicle",
+                    "type": "boolean",
+                    "description": "Append summary to Axis Chronicle?"
+                }
+            ],
+            "ui": {
+                "expose_on_console": true,
+                "label": "Analyst (Radar Report)",
+                "requires_anchor": false
+            }
+        },
+        {
+            "id": "WEB-PrepareReport",
+            "kind": "web_prepare_report",
+            "risk": "medium",
+            "description": "Ambassador: Prepares a formal RF surveillance report with a Digital Sovereign Seal.",
+            "parameters": [
+                {
+                    "name": "hours",
+                    "type": "int",
+                    "description": "Analysis window (hours)"
+                },
+                {
+                    "name": "target",
+                    "type": "string",
+                    "description": "Recipient (e.g. EFF, FCC, LocalArchive)"
+                }
+            ],
+            "ui": {
+                "expose_on_console": true,
+                "label": "Draft Sovereign Report",
+                "requires_anchor": true
+            }
+        },
+        {
+            "id": "SIM-TestStrategy",
+            "kind": "sim_test_strategy",
+            "risk": "low",
+            "description": "Validation: Internal Self-Correction (Sim Loop).",
+            "parameters": [
+                {
+                    "name": "strategy_id",
+                    "type": "string",
+                    "description": "ID of strategy to test"
+                }
+            ],
+            "ui": {
+                "expose_on_console": false,
+                "label": "SIM Test",
+                "requires_anchor": false
+            }
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "pruning_criteria": {
+    "floor_violation": {
+      "enabled": true,
+      "description": "Prune branch if any step violates a protected objective floor."
+    },
+    "uncertainty_threshold": {
+      "enabled": true,
+      "max_aggregate_uncertainty": 0.35,
+      "description": "Prune branch if aggregate confidence falls below 0.35 at any step."
+    },
+    "cumulative_utility_decay": {
+      "enabled": true,
+      "max_decay_limit": -0.5,
+      "description": "Prune branch if cumulative utility loss relative to baseline exceeds 0.5."
+    }
+  },
+  "search_parameters": {
+    "max_depth": 3,
+    "branch_limit": 5,
+    "horizon_weighted_discount": 0.95
+  }
+}

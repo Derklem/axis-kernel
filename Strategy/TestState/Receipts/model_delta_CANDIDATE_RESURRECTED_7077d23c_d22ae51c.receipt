@@ -1,0 +1,22 @@
+{
+    "cycle_count": 525,
+    "mutation_type": "CANDIDATE_RESURRECTED",
+    "target_id": "7077d23cec845a53df0c298f3f264776a30e0389a4c0364f63d6c00ae1aaa995",
+    "parent_receipt_head": "84adc50a651a818cb628c4cafbac00d8a921ff10c750379372bea2078105449f",
+    "data": {
+        "source_id": "source_beta",
+        "source_type": "external_handoff",
+        "batch_id": "none",
+        "ts": "2026-07-21T22:54:44.962712+00:00",
+        "lineage": {
+            "node_id": "test_node",
+            "engine_version": "v_test",
+            "ontology_seal": "test_seal",
+            "node_attestation": "test_attest"
+        }
+    },
+    "status": "committed",
+    "ts_utc": "2026-07-21T22:54:44.962712+00:00",
+    "receipt_id": "model_delta_CANDIDATE_RESURRECTED_7077d23c_d22ae51c",
+    "causal_hash": "d22ae51c22dfc98a21907dc87726d0678fe6aad5ffb18c221e492e6643982683"
+}

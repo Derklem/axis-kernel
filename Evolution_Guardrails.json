@@ -1,0 +1,42 @@
+{
+    "version": 1,
+    "immutable_scopes": [
+        "Axiomatic_Floor",
+        "Autonomy_Contract",
+        "DeadManSwitch",
+        "Hand_Core",
+        "Tool_Gating_Core",
+        "Mirror_Core"
+    ],
+    "evolvable_scopes": [
+        "RF_Tooling",
+        "Reporting",
+        "Analytics",
+        "Indexing",
+        "UI_Prompts",
+        "Curiosity"
+    ],
+    "safety_critical_functions": [
+        "Trigger-DeadMansSwitch",
+        "Get-AutonomyDecision",
+        "New-AxisRequest",
+        "Request-HandAction",
+        "Process-MirrorCycle"
+    ],
+    "max_proposals_per_cycle": 3,
+    "max_applied_per_day": 2,
+    "impact_limits": {
+        "low": {
+            "files_touched": 3,
+            "lines_changed_percent": 30
+        },
+        "medium": {
+            "files_touched": 6,
+            "lines_changed_percent": 50
+        },
+        "high": {
+            "files_touched": 10,
+            "lines_changed_percent": 80
+        }
+    }
+}

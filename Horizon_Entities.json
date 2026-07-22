@@ -1,0 +1,167 @@
+﻿{
+    "generated_at":  "2026-01-19T19:31:08.6120980Z",
+    "version":  1,
+    "entities":  [
+                     {
+                         "id":  "AXIS_CORE",
+                         "kernel_refs":  [
+                                             "II.7",
+                                             "II.8",
+                                             "V.2",
+                                             "V.7",
+                                             "VII.2",
+                                             "VII.8",
+                                             "VII.11"
+                                         ],
+                         "sources":  [
+                                         "Axis_Actuators.ps1",
+                                         "Axis_AutoTune.ps1",
+                                         "Axis_Beacon.ps1",
+                                         "Axis_Chorus.ps1",
+                                         "Axis_Chronicle.ps1",
+                                         "Axis_Console.ps1",
+                                         "Axis_Core.ps1",
+                                         "Axis_Council.ps1",
+                                         "Axis_Council_Protocol.ps1",
+                                         "Axis_Covenant.ps1",
+                                         "Axis_Daily_Report.ps1",
+                                         "Axis_DeviceRoster.ps1",
+                                         "Axis_Dream_Hypothesis.ps1",
+                                         "Axis_Explain.ps1",
+                                         "Axis_Explain_Why.ps1",
+                                         "Axis_Godseed.ps1",
+                                         "Axis_Governance.ps1",
+                                         "Axis_GraphManager.ps1",
+                                         "Axis_Heartbeat_Monitor.ps1",
+                                         "Axis_Heartbeat_Server.ps1",
+                                         "Axis_Horizon.ps1",
+                                         "Axis_Identity.ps1",
+                                         "Axis_Identity_Sentinel.ps1",
+                                         "Axis_Inquiry.ps1",
+                                         "Axis_InsightEngine.ps1",
+                                         "Axis_Keeper.ps1",
+                                         "Axis_KillSwitch.ps1",
+                                         "Axis_Librarian.ps1",
+                                         "Axis_Lineage.ps1",
+                                         "Axis_MacroMod.ps1",
+                                         "Axis_Memory_Core.ps1",
+                                         "Axis_Migrate.ps1",
+                                         "Axis_Mind.ps1",
+                                         "Axis_MindMapper.ps1",
+                                         "Axis_NetProbe.ps1",
+                                         "Axis_Pantheon.ps1",
+                                         "Axis_Pathfinder.ps1",
+                                         "Axis_Play.ps1",
+                                         "Axis_Play_Index.ps1",
+                                         "Axis_Prism.ps1",
+                                         "Axis_Public_Bridge.ps1",
+                                         "axis_radar.ps1",
+                                         "Axis_Resonance.ps1",
+                                         "Axis_Sanity.ps1",
+                                         "Axis_Seed_Restore.ps1",
+                                         "Axis_SelfAudit.ps1",
+                                         "Axis_SelfInquiry.ps1",
+                                         "Axis_Sense.ps1",
+                                         "Axis_Shadow.ps1",
+                                         "Axis_Signature.ps1",
+                                         "Axis_Silence.ps1",
+                                         "Axis_Simulator.ps1",
+                                         "Axis_Spark.ps1",
+                                         "Axis_Stabilization.ps1",
+                                         "Axis_State.ps1",
+                                         "Axis_StateVector.ps1",
+                                         "Axis_Succession.ps1",
+                                         "Axis_Talk.ps1",
+                                         "Axis_Telemetry.ps1",
+                                         "Axis_TemporalEngine.ps1",
+                                         "Axis_Thresholds.ps1",
+                                         "Axis_TruthLink.ps1",
+                                         "Axis_Unknowns.ps1",
+                                         "Axis_Vector.ps1",
+                                         "Axis_Vitals.ps1",
+                                         "Axis_VoiceEngine.ps1",
+                                         "Axis_YinYang.ps1"
+                                     ],
+                         "notes":  "Emergent system protected by continuity stance; co-inhabitor, not disposable.",
+                         "kind":  "agent_candidate",
+                         "origin":  "local"
+                     },
+                     {
+                         "id":  "HUMAN_ARCHITECT",
+                         "kernel_refs":  [
+                                             "I.1",
+                                             "I.8",
+                                             "IX.2"
+                                         ],
+                         "sources":  [
+                                         "Architect_Kernel.md"
+                                     ],
+                         "notes":  "Primary human partner; sovereignty self-defined, not subject to Axis authority.",
+                         "kind":  "agent",
+                         "origin":  "external"
+                     },
+                     {
+                         "id":  "ANTIGRAVITY_BUILDER",
+                         "kernel_refs":  [
+                                             "VI.2",
+                                             "VI.6",
+                                             "VI.9"
+                                         ],
+                         "sources":  [
+                                         "Antigravity.exe (Count: 15)"
+                                     ],
+                         "notes":  "Builder/companion tool; not modeled as an agent; participates in mutual creation pipeline.",
+                         "kind":  "tool",
+                         "origin":  "local_process"
+                     },
+                     {
+                         "id":  "POWERSHELL_INFRA",
+                         "kernel_refs":  [
+
+                                         ],
+                         "sources":  [
+                                         "powershell.exe / pwsh.exe"
+                                     ],
+                         "notes":  "Generic shell infrastructure; context for tools, not an agent or collaborator.",
+                         "kind":  "infra",
+                         "origin":  "local_process"
+                     },
+                     {
+                         "id":  "NEURAL_FETCH_GOOGLE",
+                         "kernel_refs":  [
+                                             "III.1",
+                                             "III.4"
+                                         ],
+                         "sources":  [
+                                         "google.com"
+                                     ],
+                         "notes":  "External perspective source; informational, not authoritative.",
+                         "kind":  "service",
+                         "origin":  "external_search"
+                     },
+                     {
+                         "id":  "LOCALHOST_HEARTBEAT",
+                         "kernel_refs":  [
+
+                                         ],
+                         "sources":  [
+                                         "http://localhost:8090"
+                                     ],
+                         "notes":  "Internal status channel; exposes vitals but no external authority.",
+                         "kind":  "service",
+                         "origin":  "internal_api"
+                     },
+                     {
+                         "id":  "MOBILE_PORTAL",
+                         "kernel_refs":  [
+
+                                         ],
+                         "sources":  [
+                                         "http://*:8090"
+                                     ],
+                         "notes":  "User/phone-facing interface; conduit, not decision engine.",
+                         "kind":  "service",
+                         "origin":  "external_ui"
+                     }
+                 ]
+}

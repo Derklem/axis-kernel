@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T00:37:56.073669+00:00",
+    "entity": "boundary_mapper.py",
+    "claim": "standard update: signal for boundary_mapper.py in cycle 170.",
+    "source_id": "Internal_Audit",
+    "source_type": "automated_sensor",
+    "claim_domain": "general",
+    "confidence": 0.32
+}

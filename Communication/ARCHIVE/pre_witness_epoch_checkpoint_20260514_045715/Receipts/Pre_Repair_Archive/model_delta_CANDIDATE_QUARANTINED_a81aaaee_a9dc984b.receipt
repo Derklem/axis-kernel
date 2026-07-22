@@ -1,0 +1,22 @@
+{
+    "cycle_count": 69,
+    "mutation_type": "CANDIDATE_QUARANTINED",
+    "target_id": "a81aaaeed04b146bbc1dd4e4344b76445ec4d25f50260c60e1410c640d4f8318",
+    "parent_receipt_head": "3f609195a5c245d281b7576b0461a2482687399bd190a20871bc17703216b100",
+    "data": {
+        "entity": "aegis_genesis.py",
+        "claim": "experimental feature enabled",
+        "claim_domain": "benchmark_claim",
+        "source_id": "Noise_Source_B_0",
+        "source_type": "ecological_observer",
+        "artifact_type": "ecosystem_observation",
+        "batch_id": "none",
+        "provenance_note": "",
+        "confidence": 1.0,
+        "discovery_utc": "2026-05-12T19:50:40.148836+00:00"
+    },
+    "status": "committed",
+    "ts_utc": "2026-05-12T19:50:40.148836+00:00",
+    "receipt_id": "model_delta_CANDIDATE_QUARANTINED_a81aaaee_a9dc984b",
+    "causal_hash": "a9dc984bf5255b0594364d5429571c3b51d395d30396357559777a6e8493c076"
+}

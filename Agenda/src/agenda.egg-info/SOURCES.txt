@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+pyproject.toml
+src/agenda/__init__.py
+src/agenda/cli.py
+src/agenda/planner.py
+src/agenda.egg-info/PKG-INFO
+src/agenda.egg-info/SOURCES.txt
+src/agenda.egg-info/dependency_links.txt
+src/agenda.egg-info/requires.txt
+src/agenda.egg-info/top_level.txt
+src/agenda/schemas/__init__.py
+src/agenda/schemas/agenda.json
+src/agenda/schemas/hypothesis_candidate.json
+src/agenda/schemas/planner_input.json
+src/agenda/schemas/planner_spec.json

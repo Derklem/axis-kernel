@@ -1,0 +1,73 @@
+﻿{
+    "version":  1,
+    "generated_at":  "2026-01-13T11:41:58",
+    "window_days":  7,
+    "suggestions":  [
+                        {
+                            "scope":  "node_trust",
+                            "reason":  "Node 192.168.1.6 stable (0 incidents in 7 days) but unclassified.",
+                            "proposal":  {
+                                             "suggested_trust":  "medium",
+                                             "target_ip":  "192.168.1.6",
+                                             "current_trust":  "unclassified"
+                                         },
+                            "status":  "pending",
+                            "id":  "POLICY-20260112-113525-02"
+                        },
+                        {
+                            "scope":  "node_trust",
+                            "reason":  "Node 192.168.1.7 stable (0 incidents in 7 days) but unclassified.",
+                            "proposal":  {
+                                             "suggested_trust":  "medium",
+                                             "target_ip":  "192.168.1.7",
+                                             "current_trust":  "unclassified"
+                                         },
+                            "status":  "pending",
+                            "id":  "POLICY-20260112-113525-02"
+                        },
+                        {
+                            "scope":  "node_trust",
+                            "reason":  "Node 192.168.1.11 stable (0 incidents in 7 days) but unclassified.",
+                            "proposal":  {
+                                             "suggested_trust":  "medium",
+                                             "target_ip":  "192.168.1.11",
+                                             "current_trust":  "unclassified"
+                                         },
+                            "status":  "pending",
+                            "id":  "POLICY-20260112-113525-02"
+                        },
+                        {
+                            "proposal":  {
+                                             "suggested_trust":  "medium",
+                                             "target_ip":  "192.168.1.6",
+                                             "current_trust":  "unclassified"
+                                         },
+                            "id":  "POLICY-20260113-114158-02-192-168-1-6",
+                            "scope":  "node_trust",
+                            "reason":  "Stable unclassified node",
+                            "status":  "pending"
+                        },
+                        {
+                            "proposal":  {
+                                             "suggested_trust":  "medium",
+                                             "target_ip":  "192.168.1.7",
+                                             "current_trust":  "unclassified"
+                                         },
+                            "id":  "POLICY-20260113-114158-02-192-168-1-7",
+                            "scope":  "node_trust",
+                            "reason":  "Stable unclassified node",
+                            "status":  "pending"
+                        },
+                        {
+                            "proposal":  {
+                                             "suggested_trust":  "medium",
+                                             "target_ip":  "192.168.1.11",
+                                             "current_trust":  "unclassified"
+                                         },
+                            "id":  "POLICY-20260113-114158-02-192-168-1-11",
+                            "scope":  "node_trust",
+                            "reason":  "Stable unclassified node",
+                            "status":  "pending"
+                        }
+                    ]
+}

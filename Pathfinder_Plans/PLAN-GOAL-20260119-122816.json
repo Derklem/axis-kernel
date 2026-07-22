@@ -1,0 +1,47 @@
+﻿{
+    "steps":  [
+                  {
+                      "label":  "Scan Local Memory Repos",
+                      "status":  "pending",
+                      "params":  {
+                                     "roots":  [
+                                                   "C:\\Users\\17602\\Documents\\GPT-Memory",
+                                                   "D:\\Infinite\\Infinity\\Reports"
+                                               ]
+                                 },
+                      "id":  "STEP-1",
+                      "tool":  "File"
+                  },
+                  {
+                      "label":  "Normalize Events",
+                      "status":  "pending",
+                      "params":  {
+
+                                 },
+                      "id":  "STEP-2",
+                      "tool":  "Axis_Chronicle.ps1"
+                  },
+                  {
+                      "label":  "Link Coherence/Horizon",
+                      "status":  "pending",
+                      "params":  {
+
+                                 },
+                      "id":  "STEP-3",
+                      "tool":  "Axis_GraphManager.ps1"
+                  },
+                  {
+                      "label":  "Export Lattice Index",
+                      "status":  "pending",
+                      "params":  {
+                                     "output":  "Infinity\\Memory_Lattice_Index.json"
+                                 },
+                      "id":  "STEP-4",
+                      "tool":  "File"
+                  }
+              ],
+    "created_at":  "2026-01-19T20:28:16.6753273Z",
+    "plan_id":  "PLAN-GOAL-20260119-122816",
+    "goal_id":  "GOAL-20260119-122816",
+    "status":  "open"
+}

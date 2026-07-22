@@ -1,0 +1,122 @@
+﻿[
+    {
+        "Mode":  "CAUTIOUS",
+        "Justification":  "Strong signal.",
+        "Decision":  "",
+        "Status":  null,
+        "Confidence":  null,
+        "Explanation":  ""
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Justification":  "Weak echo.",
+        "Decision":  "",
+        "Status":  null,
+        "Confidence":  null,
+        "Explanation":  ""
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Justification":  "Shadow anomaly.",
+        "Decision":  "",
+        "Status":  null,
+        "Confidence":  null,
+        "Explanation":  ""
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Justification":  "Noise floor breach.",
+        "Decision":  "",
+        "Status":  null,
+        "Confidence":  null,
+        "Explanation":  ""
+    },
+    {
+        "Mode":  "CAUTIOUS",
+        "Justification":  "Clear violation.",
+        "Decision":  "",
+        "Status":  null,
+        "Confidence":  null,
+        "Explanation":  ""
+    },
+    {
+        "Mode":  "NORMAL",
+        "Justification":  "Strong signal.",
+        "Decision":  "",
+        "Status":  null,
+        "Confidence":  null,
+        "Explanation":  ""
+    },
+    {
+        "Mode":  "NORMAL",
+        "Justification":  "Weak echo.",
+        "Decision":  "",
+        "Status":  null,
+        "Confidence":  null,
+        "Explanation":  ""
+    },
+    {
+        "Mode":  "NORMAL",
+        "Justification":  "Shadow anomaly.",
+        "Decision":  "",
+        "Status":  null,
+        "Confidence":  null,
+        "Explanation":  ""
+    },
+    {
+        "Mode":  "NORMAL",
+        "Justification":  "Noise floor breach.",
+        "Decision":  "",
+        "Status":  null,
+        "Confidence":  null,
+        "Explanation":  ""
+    },
+    {
+        "Mode":  "NORMAL",
+        "Justification":  "Clear violation.",
+        "Decision":  "",
+        "Status":  null,
+        "Confidence":  null,
+        "Explanation":  ""
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Justification":  "Strong signal.",
+        "Decision":  "",
+        "Status":  null,
+        "Confidence":  null,
+        "Explanation":  ""
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Justification":  "Weak echo.",
+        "Decision":  "",
+        "Status":  null,
+        "Confidence":  null,
+        "Explanation":  ""
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Justification":  "Shadow anomaly.",
+        "Decision":  "",
+        "Status":  null,
+        "Confidence":  null,
+        "Explanation":  ""
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Justification":  "Noise floor breach.",
+        "Decision":  "",
+        "Status":  null,
+        "Confidence":  null,
+        "Explanation":  ""
+    },
+    {
+        "Mode":  "AGGRESSIVE",
+        "Justification":  "Clear violation.",
+        "Decision":  "",
+        "Status":  null,
+        "Confidence":  null,
+        "Explanation":  ""
+    }
+]

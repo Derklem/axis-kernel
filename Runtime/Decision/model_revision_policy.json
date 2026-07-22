@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "revisable_components": {
+    "ATTRIBUTION_WEIGHTS": {
+      "target_file": "analyze_execution_outcome.py",
+      "max_single_shift": 0.15
+    },
+    "SIMULATION_HEURISTICS": {
+      "target_file": "simulate_proposal_effect.py",
+      "max_single_shift": 0.20
+    },
+    "INTERACTION_STRENGTH": {
+      "target_file": "parameter_interaction_graph.json",
+      "max_single_shift": 0.25
+    }
+  },
+  "quarantine_rules": {
+    "shadow_min_observation_window_steps": 5,
+    "side_by_side_required": true,
+    "manual_promotion_required_for_all": true
+  },
+  "constitutional_firebreaks": {
+    "locked_files": [
+      "constitutional_invariants.json",
+      "parameter_authorization_policy.json",
+      "governance_firebreak_policy.json"
+    ],
+    "no_recursive_governance_revision": true
+  }
+}

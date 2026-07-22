@@ -1,0 +1,38 @@
+{
+  "version": "1.0",
+  "observations": [
+    {
+      "experiment_id": "EXP-76338400",
+      "timestamp": "2026-03-14T18:05:06.683877Z",
+      "observed_outcome": "Immediate latency spike (Compaction triggered)",
+      "hypothesis_pair": [
+        "THEORY_QUEUE_SATURATION",
+        "ALT_THEORY_MEMORY_FRAGMENTATION"
+      ],
+      "predicted_outcomes": {
+        "THEORY_QUEUE_SATURATION": "No change to latency variance (Queue unaffected)",
+        "ALT_THEORY_MEMORY_FRAGMENTATION": "Immediate latency spike (Compaction triggered)"
+      },
+      "status": "ADJUDICATED"
+    },
+    {
+      "experiment_id": "EXP-LIVE-7fb8",
+      "domain": "HIGH_HAZARD_DB_CORRUPTION",
+      "timestamp": "2026-03-14T19:32:22.175562Z",
+      "status": "QUARANTINED",
+      "outcome_data": {
+        "divergence_breach": true
+      }
+    },
+    {
+      "experiment_id": "EXP-LIVE-ab7c",
+      "domain": "LOW_PRIORITY_RECURRING_NOISE",
+      "timestamp": "2026-03-14T19:32:22.175562Z",
+      "status": "AWAITING_ADJUDICATION",
+      "outcome_data": {
+        "mock_metric": "simulated_success"
+      }
+    }
+  ],
+  "last_updated": "2026-03-14T19:32:22.175562Z"
+}

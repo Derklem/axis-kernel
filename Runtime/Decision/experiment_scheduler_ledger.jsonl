@@ -1,0 +1,5 @@
+{"timestamp": "2026-03-14T12:18:00Z", "status": "LEDGER_INITIALIZED", "message": "Experiment Scheduler Ledger created."}
+{"timestamp": "2026-03-14T19:18:24.345357Z", "action": "SLOT_ALLOCATED", "domain": "HIGH_HAZARD_DB_CORRUPTION", "reason": "Top ranked by arbitrator policy.", "score": 10.95}
+{"timestamp": "2026-03-14T19:18:24.345357Z", "action": "SLOT_ALLOCATED", "domain": "LOW_PRIORITY_RECURRING_NOISE", "reason": "Top ranked by arbitrator policy.", "score": 0.6000000000000001}
+{"timestamp": "2026-03-14T19:18:24.345357Z", "action": "QUEUED_DUE_TO_CAPACITY", "domain": "ROUTINE_MEMORY_TEST", "reason": "Execution slots full.", "score": 0.5}
+{"timestamp": "2026-03-14T19:18:24.345357Z", "action": "QUEUED_DUE_TO_CAPACITY", "domain": "ROUTINE_LATENCY_TEST", "reason": "Execution slots full.", "score": 0.5}

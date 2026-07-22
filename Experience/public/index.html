@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Axis Sovereign Cockpit</title>
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --panel: #141414;
+            --border: #333;
+            --accent: #00ff9d;
+            --text: #e0e0e0;
+            --dim: #666;
+            --err: #ff4444;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Segoe UI', monospace;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .panel {
+            background: var(--panel);
+            border: 1px solid var(--border);
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        .full {
+            grid-column: 1 / -1;
+        }
+
+        h2 {
+            margin-top: 0;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+            color: var(--accent);
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Stats */
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-size: 13px;
+        }
+
+        .stat-val {
+            font-weight: bold;
+        }
+
+        /* Stream */
+        #pulse-stream {
+            height: 300px;
+            overflow-y: auto;
+            font-family: monospace;
+            font-size: 12px;
+        }
+
+        .event-row {
+            padding: 4px 0;
+            border-bottom: 1px solid #222;
+            display: flex;
+            gap: 10px;
+            align-items: start;
+        }
+
+        .ts {
+            color: var(--dim);
+            min-width: 150px;
+        }
+
+        .type {
+            color: var(--accent);
+            min-width: 80px;
+        }
+
+        .hash {
+            color: #888;
+            flex-grow: 1;
+            word-break: break-all;
+        }
+
+        /* Interactive Links */
+        .hashLink {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--dim);
+            cursor: pointer;
+        }
+
+        .hashLink:hover {
+            color: #fff;
+            border-bottom: 1px solid #fff;
+        }
+
+        /* Status Dot */
+        .status-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #444;
+            margin-right: 8px;
+        }
+
+        .status-dot.active {
+            background: var(--accent);
+            box-shadow: 0 0 8px var(--accent);
+        }
+
+        .status-dot.dead {
+            background: var(--err);
+        }
+
+        /* Narrative Panel */
+        .panelHeader {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+        }
+
+        .panelTitle {
+            color: var(--accent);
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .panelSub {
+            font-size: 12px;
+            color: var(--dim);
+            font-family: monospace;
+        }
+
+        .btn {
+            background: #222;
+            color: #ccc;
+            border: 1px solid #444;
+            padding: 4px 12px;
+            cursor: pointer;
+            font-size: 11px;
+            margin-right: 5px;
+        }
+
+        .btn:hover:not(:disabled) {
+            background: #333;
+            color: #fff;
+            border-color: #666;
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: default;
+        }
+
+        .muted {
+            color: var(--dim);
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 2px 6px;
+            font-size: 10px;
+            border-radius: 2px;
+            background: #222;
+            color: #888;
+            margin-right: 5px;
+        }
+
+        .badge {
+            background: var(--accent);
+            color: #000;
+            font-size: 10px;
+            font-weight: bold;
+            padding: 1px 5px;
+            border-radius: 10px;
+            margin-left: 5px;
+            display: none;
+        }
+
+        .pending-item {
+            background: #111;
+            border: 1px solid #222;
+            padding: 8px;
+            margin-bottom: 8px;
+            font-size: 11px;
+        }
+
+        .pending-item:hover {
+            border-color: var(--accent);
+        }
+    </style>
+</head>
+
+<body>
+    <div style="margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between;">
+        <div style="display: flex; align-items: center;">
+            <div id="kernel-status" class="status-dot"></div>
+            <h1 style="margin: 0; font-size: 18px;">AXIS SOVEREIGN COCKPIT <span
+                    style="font-weight:normal; color:var(--dim); font-size:14px;">(Experience Layer)</span></h1>
+        </div>
+        <div style="font-size: 12px; color: var(--dim);">
+            KERNEL: <span id="kernel-url">http://127.0.0.1:8798</span>
+        </div>
+    </div>
+
+    <div class="grid">
+        <!-- PULSE STREAM -->
+        <div class="panel full">
+            <h2>Integrity Pulse Stream</h2>
+            <div id="pulse-stream">
+                <div style="color: var(--dim); padding: 20px; text-align: center;">Connecting to Kernel Stream...</div>
+            </div>
+        </div>
+
+        <!-- NARRATIVE PANEL -->
+        <div class="panel full" id="narrativePanel">
+            <div class="panelHeader">
+                <div class="panelTitle">CLICK-TO-EXPLAIN</div>
+                <div class="panelSub" id="narrativeKey">No selection</div>
+            </div>
+
+            <div class="panelBody">
+                <div id="narrativeSummary" class="muted"
+                    style="font-size: 12px; font-family: monospace; white-space: pre-wrap; margin-bottom: 15px;">Click a
+                    pulse hash above to explain it.</div>
+
+                <div style="margin-bottom: 15px;">
+                    <!-- Phase 65 Replay Controls -->
+                    <div style="margin-bottom:10px; border-bottom:1px solid #222; padding-bottom:10px;">
+                        <input id="bundleFile" type="file" accept="application/json" style="display:none;" />
+                        <button id="btnLoadBundle" class="btn">Load Bundle</button>
+                        <span id="bundleStatus" class="muted" style="font-family: monospace;">No bundle loaded.</span>
+                    </div>
+
+                    <button id="btnTrail" class="btn" disabled>Load Trail</button>
+                    <button id="btnGraph" class="btn" disabled>Load Graph</button>
+                    <div class="row" style="margin-top:10px;">
+                        <button id="btnPin" class="btn">Pin</button>
+                        <button id="btnExport" class="btn">Export Bundle</button>
+                        <!-- Phase 66 -->
+                        <button id="btnWitness" class="btn" disabled>Propose Witness<span id="witnessBadge"
+                                class="badge">0</span></button>
+                        <span id="witnessStatus" class="muted"
+                            style="font-family: monospace; font-size:11px; margin-left:8px;"></span>
+                    </div>
+
+                    <!-- Pending Proposals Panel (Phase 67) -->
+                    <div id="pendingProposalsPanel"
+                        style="display:none; margin-top:15px; border-top:1px solid #222; padding-top:10px;">
+                        <div class="panelTitle" style="font-size:12px; margin-bottom:10px;">PENDING PROPOSALS</div>
+                        <div id="pendingList" style="max-height:200px; overflow:auto;"></div>
+                    </div>
+
+                    <pre id="narrativeRaw"
+                        style="display:none; max-height: 280px; overflow:auto; font-size: 11px; color: #888; background: #000; padding: 10px;"></pre>
+
+                    <div id="narrativeTrail"
+                        style="max-height: 320px; overflow:auto; font-size: 12px; font-family: monospace;"></div>
+
+                    <!-- PINS (Phase 64/65.2) -->
+                    <div style="margin-top:15px; border-top:1px solid #222; padding-top:10px;">
+                        <div class="panelTitle" style="font-size:12px;">PINS</div>
+                        <div id="pinsList"
+                            style="margin-top:8px; font-family: monospace; font-size:12px; max-height:200px; overflow:auto;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KERNEL VITALS -->
+            <div class="panel">
+                <h2>Kernel Vitals</h2>
+                <div class="stat-row"><span>Status</span><span id="v-status" class="stat-val">-</span></div>
+                <div class="stat-row"><span>PID</span><span id="v-pid" class="stat-val">-</span></div>
+                <div class="stat-row"><span>Memory</span><span id="v-mem" class="stat-val">-</span></div>
+                <div class="stat-row"><span>Handles</span><span id="v-hnd" class="stat-val">-</span></div>
+            </div>
+
+            <!-- ECONOMICS -->
+            <div class="panel">
+                <h2>Economics</h2>
+                <div class="stat-row"><span>Epoch</span><span id="e-epoch" class="stat-val">-</span></div>
+                <div class="stat-row"><span>Active Debits</span><span id="e-debits" class="stat-val">-</span></div>
+                <div class="stat-row"><span>Burn Rate</span><span id="e-burn" class="stat-val">-</span></div>
+                <div style="margin-top: 10px; font-size: 11px; color: var(--dim);">
+                    Axis Integrity Economics (ICU)
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const KERNEL_URL = 'http://127.0.0.1:8798';
+            const streamDiv = document.getElementById('pulse-stream');
+            const statusDot = document.getElementById('kernel-status');
+
+            // Narrative Elements
+            let selectedKey = null;
+            let selectedLastPulseJson = null;
+            let rawVisible = false;
+
+            // Phase 65.1: Caching Namespace
+            let selectedSourceId = "LIVE"; // "LIVE" or bundle filename/hash
+            const trailCache = new Map();
+            const graphCache = new Map();
+
+            function cacheKeyFor(key) { return `${selectedSourceId}::${key}`; }
+
+            const elKey = document.getElementById("narrativeKey");
+            const elSummary = document.getElementById("narrativeSummary");
+            const elRaw = document.getElementById("narrativeRaw");
+            const elTrail = document.getElementById("narrativeTrail");
+
+            const btnTrail = document.getElementById("btnTrail");
+            const btnGraph = document.getElementById("btnGraph");
+            const btnRaw = document.getElementById("btnRaw");
+
+            // Phase 64
+            const btnPin = document.getElementById("btnPin");
+            const btnExport = document.getElementById("btnExport");
+            // Phase 66
+            const btnWitness = document.getElementById("btnWitness");
+            const witnessBadge = document.getElementById("witnessBadge");
+            const witnessStatus = document.getElementById("witnessStatus");
+            const pendingPanel = document.getElementById("pendingProposalsPanel");
+            const pendingList = document.getElementById("pendingList");
+
+            const elPins = document.getElementById("pinsList");
+
+            // Phase 65: Replay
+            const btnLoadBundle = document.getElementById("btnLoadBundle");
+            const bundleFile = document.getElementById("bundleFile");
+            const bundleStatus = document.getElementById("bundleStatus");
+
+            let replayMode = false;
+            let replayBundle = null;
+
+            // Phase 65.1: Global Stream Ref
+            let kernelStream = null;
+            let kernelStreamOpen = false;
+
+            // --- Utils ---
+            function safeText(s) {
+                if (s == null) return "";
+                return String(s).replace(/[<>&]/g, ch => ({ "<": "&lt;", ">": "&gt;", "&": "&amp;" }[ch]));
+            }
+            function pretty(obj) {
+                try { return JSON.stringify(obj, null, 2); } catch { return String(obj); }
+            }
+            function getColor(type) {
+                if (type === 'PULSE') return '#00ff9d';
+                if (type === 'ECON') return '#ffcc00';
+                if (type === 'SYSTEM') return '#ffffff';
+                return '#888';
+            }
+
+            // --- Pins Logic (Phase 64/65.2) ---
+            const PINS_KEY = "axis_pins_v1";
+
+            function loadPins() {
+                try { return JSON.parse(localStorage.getItem(PINS_KEY) || "[]"); }
+                catch { return []; }
+            }
+            function savePins(pins) {
+                localStorage.setItem(PINS_KEY, JSON.stringify(pins));
+            }
+            function shortHash(h) {
+                if (!h) return "";
+                return h.length > 20 ? (h.slice(0, 12) + "..." + h.slice(-6)) : h;
+            }
+
+            function renderPins() {
+                const pins = loadPins();
+                if (!pins.length) {
+                    elPins.innerHTML = `<div class="muted">No pins yet.</div>`;
+                    return;
+                }
+                elPins.innerHTML = pins.slice().reverse().map((p, idxRev) => {
+                    const idx = pins.length - 1 - idxRev;
+                    const ts = p.ts_utc ? safeText(p.ts_utc) : "";
+                    const note = p.note ? safeText(p.note) : "";
+                    const drift = p.drift_reason ? safeText(p.drift_reason) : "";
+                    const src = p.source_id ? `[${safeText(p.source_id).substr(0, 8)}]` : "";
+
+                    return `
+              <div style="border-bottom:1px solid #1c1c1c; padding:6px 0;">
+                <div>
+                  <a href="#" class="hashLink" data-pin-idx="${idx}">${safeText(shortHash(p.hash))}</a>
+                  <span class="muted" style="font-size:10px;"> ${src} ${ts}</span>
+                </div>
+                <div class="muted" style="margin-top:2px; color:var(--accent);">${note}</div>
+                <div class="muted" style="margin-top:2px;">${drift}</div>
+                <div style="margin-top:4px;">
+                  <button class="btn" style="padding:2px 8px;" data-pin-open="${idx}">Open</button>
+                  <button class="btn" style="padding:2px 8px;" data-pin-del="${idx}">Del</button>
+                </div>
+              </div>
+            `;
+                }).join("");
+
+                // bind actions
+                elPins.querySelectorAll("[data-pin-open]").forEach(b => {
+                    b.onclick = (e) => {
+                        e.preventDefault();
+                        const i = parseInt(b.getAttribute("data-pin-open"), 10);
+                        const pins = loadPins();
+                        const pin = pins[i];
+                        if (!pin) return;
+
+                        // Phase 65.2: Restore Source & Hydrate Namespace
+                        selectedSourceId = pin.source_id || "LIVE";
+
+                        // Restore namespaced cache
+                        const ck = cacheKeyFor(pin.hash);
+                        if (pin.bundle?.trail) trailCache.set(ck, pin.bundle.trail);
+                        if (pin.bundle?.graph) graphCache.set(ck, pin.bundle.graph);
+
+                        // Set replay mode based on source
+                        replayMode = (selectedSourceId !== "LIVE");
+                        replayBundle = replayMode ? { selected_key: pin.hash } : null; // minimal stub for logic compatibility
+                        setBundleStatus(replayMode ? `Replay via pin (${selectedSourceId})` : "Live mode (from pin)");
+
+                        // Select
+                        selectKey(pin.hash, pin.bundle?.pulse || pin.pulse || null);
+                    };
+                });
+                elPins.querySelectorAll("[data-pin-del]").forEach(b => {
+                    b.onclick = (e) => {
+                        e.preventDefault();
+                        const i = parseInt(b.getAttribute("data-pin-del"), 10);
+                        const pins = loadPins();
+                        pins.splice(i, 1);
+                        savePins(pins);
+                        renderPins();
+                    };
+                });
+            }
+
+            function buildBundle() {
+                const p = selectedLastPulseJson || null;
+                const ck = cacheKeyFor(selectedKey);
+                const trailObj = selectedKey ? trailCache.get(ck) : null;
+                const graphObj = selectedKey ? graphCache.get(ck) : null;
+
+                const pulse = p;
+
+                return {
+                    exported_at_local: new Date().toISOString(),
+                    source_id: selectedSourceId, // Phase 65.2: Provenance
+                    selected_key: selectedKey,
+                    pulse,
+                    trail: trailObj || null,
+                    graph: graphObj || null
+                };
+            }
+
+            function downloadJson(filename, obj) {
+                const data = JSON.stringify(obj, null, 2);
+                const blob = new Blob([data], { type: "application/json" });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement("a");
+                a.href = url;
+                a.download = filename;
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+                URL.revokeObjectURL(url);
+            }
+
+            // --- Phase 65: Replay Logic ---
+            function isAxisBundle(obj) {
+                // Phase 65.1: Safer Validation
+                if (!obj || typeof obj !== "object") return false;
+                if (!obj.selected_key || typeof obj.selected_key !== "string") return false;
+                // check for plausible hash length (loose check for compatibility)
+                if (obj.selected_key.length < 16) return false;
+                // must have at least one data component
+                if (!(obj.pulse || obj.trail || obj.graph || obj.vitals)) return false;
+                return true;
+            }
+
+            function setBundleStatus(text) {
+                bundleStatus.textContent = text;
+            }
+
+            function applyBundleToUI(bundle, filename) {
+                replayMode = true;
+                replayBundle = bundle;
+                // Phase 65.2: Set Source ID from bundle if present
+                selectedSourceId = bundle.source_id || filename || "BUNDLE";
+
+                // normalize key
+                const key = bundle.selected_key || (bundle.pulse && bundle.pulse.hash) || null;
+                if (!key) {
+                    setBundleStatus("Bundle missing selected_key/hash.");
+                    return;
+                }
+
+                // hydrate caches using Namespaced Keys
+                const ck = cacheKeyFor(key);
+                if (bundle.trail) trailCache.set(ck, bundle.trail);
+                if (bundle.graph) graphCache.set(ck, bundle.graph);
+
+                // select using bundle pulse object
+                selectKey(key, bundle.pulse || null);
+
+                setBundleStatus(`Replay loaded: ${filename || "bundle.json"} (key=${shortHash(key)})`);
+
+                if (bundle.vitals) {
+                    try {
+                        const v = bundle.vitals;
+                        elSummary.textContent +=
+                            `\n\nReplay Vitals Snapshot:` +
+                            `\n  pid: ${v.pid || v.ProcessId || "?"}` +
+                            `\n  ws_mb: ${v.ws_mb || (v.WorkingSet64 ? (v.WorkingSet64 / 1024 / 1024).toFixed(1) : "?")}` +
+                            `\n  handles: ${v.handles || v.HandleCount || "?"}` +
+                            `\n  ts_utc: ${v.ts_utc || v.timestamp || ""}`;
+                    } catch { /* ignore */ }
+                }
+            }
+
+            btnLoadBundle.addEventListener("click", () => bundleFile.click());
+
+            bundleFile.addEventListener("change", async () => {
+                const f = bundleFile.files && bundleFile.files[0];
+                if (!f) return;
+
+                try {
+                    const text = await f.text();
+                    const obj = JSON.parse(text);
+                    if (!isAxisBundle(obj)) {
+                        setBundleStatus("Not an Axis bundle (missing expected fields).");
+                        return;
+                    }
+                    applyBundleToUI(obj, f.name);
+                } catch (e) {
+                    setBundleStatus(`Bundle load error: ${e}`);
+                } finally {
+                    bundleFile.value = "";
+                }
+            });
+
+            document.addEventListener("dragover", (e) => { e.preventDefault(); });
+            document.addEventListener("drop", async (e) => {
+                e.preventDefault();
+                const f = e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files[0];
+                if (!f) return;
+                if (!/\.json$/i.test(f.name)) {
+                    setBundleStatus("Drop a .json bundle file.");
+                    return;
+                }
+                try {
+                    const text = await f.text();
+                    const obj = JSON.parse(text);
+                    if (!isAxisBundle(obj)) {
+                        setBundleStatus("Not an Axis bundle (missing expected fields).");
+                        return;
+                    }
+                    applyBundleToUI(obj, f.name);
+                } catch (err) {
+                    setBundleStatus(`Bundle drop error: ${err}`);
+                }
+            });
+
+
+            // --- 1. Selection Logic ---
+            function setButtonsEnabled(on) {
+                btnTrail.disabled = !on;
+                btnGraph.disabled = !on;
+                btnRaw.disabled = !on;
+                btnPin.disabled = !on;
+                btnExport.disabled = !on;
+            }
+
+            function summarizePulse(pulseObj) {
+                if (!pulseObj) return "No locally cached data. Fetching from Find API...";
+                const p = pulseObj.pulse || pulseObj;
+                const status = p.status || "UNKNOWN";
+                const mode = p.mode || "N/A";
+                const drift = (p.drift_detected === true) ? "DRIFT=TRUE" : (p.drift_reason ? "DRIFT=SOFT/WARN" : "DRIFT=FALSE");
+                const reason = p.drift_reason ? `\nReason: ${p.drift_reason}` : "";
+                const comps = Array.isArray(p.components) ? p.components.map(c => `${c.name}:${c.status}(${c.ms}ms)`).join(", ") : "n/a";
+                return `Status: ${status} | Mode: ${mode} | ${drift}${reason}\nComponents: ${comps}`;
+            }
+
+            async function selectKey(key, lastPulseJsonMaybe) {
+                selectedKey = key;
+                selectedLastPulseJson = lastPulseJsonMaybe || null;
+
+                elKey.textContent = key;
+                elSummary.textContent = "Loading...";
+                elTrail.innerHTML = "";
+                elRaw.textContent = "";
+                elRaw.style.display = "none";
+                rawVisible = false;
+
+                setButtonsEnabled(true);
+
+                // 1. Immediate Summary
+                if (selectedLastPulseJson) {
+                    elSummary.textContent = summarizePulse(selectedLastPulseJson);
+                    elRaw.textContent = pretty(selectedLastPulseJson);
+
+                    try {
+                        const p = (selectedLastPulseJson && (selectedLastPulseJson.pulse || selectedLastPulseJson)) || null;
+                        const sv = p && p.state_vector ? p.state_vector : null;
+                        if (sv) {
+                            elSummary.textContent +=
+                                `\n\nState Vector:` +
+                                `\n  witness_tip: ${sv.witness_tip}` +
+                                `\n  anchor_tip:  ${sv.anchor_tip}` +
+                                `\n  pulse_tip:   ${sv.pulse_tip}` +
+                                `\n  econ_tip:    ${sv.econ_tip}` +
+                                `\n  hot_segments:${sv.hot_segment_count}` +
+                                `\n  warm_packs:  ${sv.warm_pack_count}` +
+                                `\n  genesis_ok:  ${sv.genesis_reachable}`;
+                        }
+                    } catch { /* ignore */ }
+                } else {
+                    elSummary.textContent = "Selected via Find. Use Load Trail / Load Graph.";
+                }
+
+                // Replay Mode Check
+                if (replayMode) {
+                    elSummary.textContent += `\n\n[Replay Mode: Find API Skipped]`;
+                    if (replayBundle && replayBundle.find_result) {
+                        elSummary.textContent += `\n[Using Replay Find Result]`;
+                        elRaw.textContent = pretty({ local_cache: selectedLastPulseJson, find_result: replayBundle.find_result });
+                    }
+                    return;
+                }
+
+                // 2. Enrich via Find API
+                try {
+                    const res = await fetch(`${KERNEL_URL}/api/find?key=${encodeURIComponent(key)}`);
+                    if (res.ok) {
+                        const rec = await res.json();
+                        elSummary.textContent += `\n\n[Found in Tier: ${rec.source?.tier || 'unknown'}]`;
+                        if (!selectedLastPulseJson) {
+                            elSummary.textContent = summarizePulse(rec.record) + `\n\n[Found in Tier: ${rec.source?.tier}]`;
+                            selectedLastPulseJson = rec.record;
+
+                            try {
+                                const p = (rec.record && (rec.record.pulse || rec.record)) || null;
+                                const sv = p && p.state_vector ? p.state_vector : null;
+                                if (sv) {
+                                    elSummary.textContent +=
+                                        `\n\nState Vector:` +
+                                        `\n  witness_tip: ${sv.witness_tip}` +
+                                        `\n  anchor_tip:  ${sv.anchor_tip}` +
+                                        `\n  pulse_tip:   ${sv.pulse_tip}` +
+                                        `\n  econ_tip:    ${sv.econ_tip}` +
+                                        `\n  hot_segments:${sv.hot_segment_count}` +
+                                        `\n  warm_packs:  ${sv.warm_pack_count}` +
+                                        `\n  genesis_ok:  ${sv.genesis_reachable}`;
+                                }
+                            } catch { /* ignore */ }
+                        }
+                        elRaw.textContent = pretty({ local_cache: selectedLastPulseJson, find_result: rec });
+                    } else {
+                        elSummary.textContent += `\n\n[Find API: Not Found/Offline]`;
+                    }
+                } catch (e) {
+                    elSummary.textContent += `\n\n[Find Error: ${e}]`;
+                }
+            }
+
+            // --- 2. Button Handlers ---
+            btnRaw.addEventListener("click", () => {
+                rawVisible = !rawVisible;
+                elRaw.style.display = rawVisible ? "block" : "none";
+            });
+
+            function renderTrailHtml(trail) {
+                if (!Array.isArray(trail) || trail.length === 0) {
+                    return `<div class="muted">No trail returned.</div>`;
+                }
+                return trail.map((e, idx) => {
+                    const ts = e.ts_utc || e.ts || "";
+                    const kind = e.kind || e.type || "event";
+                    const detail = e.component ? e.component : (e.name ? e.name : "");
+                    const msg = e.message || e.reason || "";
+                    return `<div style="margin-bottom:6px; padding-bottom:4px; border-bottom:1px solid #1c1c1c;">
+                    <span class="muted" style="display:inline-block; width:20px;">#${idx + 1}</span>
+                    <span class="muted" style="display:inline-block; width:140px;">${safeText(ts)}</span>
+                    <span style="color:var(--accent); display:inline-block; width:100px;">${safeText(kind)}</span>
+                    <span style="display:inline-block; width:100px;">${safeText(detail)}</span>
+                    <span class="muted">${safeText(msg)}</span>
+                </div>`;
+                }).join("");
+            }
+
+            btnTrail.addEventListener("click", async () => {
+                if (!selectedKey) return;
+
+                // Refinement: Namespaced Cache
+                const ck = cacheKeyFor(selectedKey);
+                if (trailCache.has(ck)) {
+                    const obj = trailCache.get(ck);
+                    const trail = obj.trail || obj.data || [];
+                    elTrail.innerHTML = renderTrailHtml(trail);
+                    elRaw.textContent = pretty({ pulse: selectedLastPulseJson, trail_response: obj, cached: true });
+                    return;
+                }
+
+                if (replayMode) {
+                    elTrail.innerHTML = `<div class="muted">Replay Mode: Trail not in bundle.</div>`;
+                    return;
+                }
+
+                elTrail.innerHTML = `<div class="muted">Loading provenance trail...</div>`;
+                try {
+                    const res = await fetch(`${KERNEL_URL}/api/provenance/trail?key=${encodeURIComponent(selectedKey)}`);
+                    if (res.status === 429) {
+                        const err = await res.json();
+                        elTrail.innerHTML = `<div style="color:var(--err)">BUDGET EXCEEDED: ${err.reason} (Status: ${err.status})</div>`;
+                        return;
+                    }
+                    const obj = await res.json();
+
+                    // Cache result
+                    trailCache.set(ck, obj);
+
+                    const trail = obj.trail || obj.data || [];
+                    elTrail.innerHTML = renderTrailHtml(trail);
+                    elRaw.textContent = pretty({ pulse: selectedLastPulseJson, trail_response: obj });
+                } catch (e) {
+                    elTrail.innerHTML = `<div class="muted">Error: ${safeText(e)}</div>`;
+                }
+            });
+
+            function renderGraph(obj, cached) {
+                const stats = obj.stats || (obj.graphData && obj.graphData.stats) || {};
+                elTrail.innerHTML = `
+              <div style="color:var(--accent)">Graph Analysis Completed ${cached ? '(cached)' : ''}</div>
+              <div class="muted">Nodes: ${stats.nodeCount || 'n/a'} | Edges: ${stats.edgeCount || 'n/a'} | Expansions: ${stats.expansions || 'n/a'}</div>
+              <pre style="font-size:11px; margin-top:10px;">${safeText(pretty(obj))}</pre>
+            `;
+                elRaw.textContent = pretty({ pulse: selectedLastPulseJson, graph_response: obj, cached });
+            }
+
+            btnGraph.addEventListener("click", async () => {
+                if (!selectedKey) return;
+
+                // Refinement: Namespaced Cache
+                const ck = cacheKeyFor(selectedKey);
+                if (graphCache.has(ck)) {
+                    const obj = graphCache.get(ck);
+                    renderGraph(obj, true);
+                    return;
+                }
+
+                if (replayMode) {
+                    elTrail.innerHTML = `<div class="muted">Replay Mode: Graph not in bundle.</div>`;
+                    return;
+                }
+
+                elTrail.innerHTML = `<div class="muted">Loading graph stats...</div>`;
+                try {
+                    const res = await fetch(`${KERNEL_URL}/api/provenance/graph?key=${encodeURIComponent(selectedKey)}&mode=Event`);
+                    if (res.status === 429) {
+                        elTrail.innerHTML = `<div style="color:var(--err)">BUDGET EXCEEDED</div>`;
+                        return;
+                    }
+                    const obj = await res.json();
+
+                    // Cache result
+                    graphCache.set(ck, obj);
+
+                    renderGraph(obj, false);
+                } catch (e) {
+                    elTrail.innerHTML = `<div class="muted">Graph Error: ${safeText(e)}</div>`;
+                }
+            });
+
+            btnPin.addEventListener("click", async () => {
+                if (!selectedKey) return;
+
+                const note = prompt("Pin note (optional):", "") || "";
+                const p = (selectedLastPulseJson && (selectedLastPulseJson.pulse || selectedLastPulseJson)) || {};
+                const ts = p.ts_utc || null;
+
+                // Phase 65.2: Source Awareness
+                const source_id = selectedSourceId || "LIVE";
+                const ck = cacheKeyFor(selectedKey);
+                const cachedTrail = trailCache.get(ck) || null;
+                const cachedGraph = graphCache.get(ck) || null;
+
+                const pin = {
+                    hash: selectedKey,
+                    source_id, // Store Source Match
+                    ts_utc: ts,
+                    status: p.status || null,
+                    drift_detected: p.drift_detected === true,
+                    drift_reason: p.drift_reason || null,
+                    note,
+                    bundle: {
+                        pulse: selectedLastPulseJson,
+                        trail: cachedTrail, // Store cached data if present
+                        graph: cachedGraph
+                    }
+                };
+
+                const pins = loadPins();
+                // Phase 65.2.1: Source-Aware Dedupe
+                const existing = pins.findIndex(x => (x.hash === pin.hash) && ((x.source_id || "LIVE") === (pin.source_id || "LIVE")));
+                if (existing >= 0) pins.splice(existing, 1);
+                pins.push(pin);
+
+                while (pins.length > 50) pins.shift();
+
+                savePins(pins);
+                renderPins();
+            });
+
+            btnExport.addEventListener("click", async () => {
+                if (!selectedKey) return;
+
+                let vitals = null;
+                try {
+                    const res = await fetch(`${KERNEL_URL}/api/status`);
+                    if (res.ok) vitals = await res.json();
+                } catch { /* ignore */ }
+
+                const bundle = buildBundle();
+                bundle.vitals = vitals;
+
+                const safe = selectedKey.replace(/[:/]/g, "_");
+                downloadJson(`axis_bundle_${safe}.json`, bundle);
+            });
+
+            // --- 3. Stream & Vitals Logic ---
+            function connectStream() {
+                // Phase 65.1: Global Reference
+                kernelStream = new EventSource(`${KERNEL_URL}/api/stream`);
+
+                kernelStream.onopen = () => {
+                    kernelStreamOpen = true;
+                    statusDot.className = 'status-dot active';
+                    // Clear the initial placeholder once we have a real connection
+                    streamDiv.innerHTML = "";
+                    addLog('SYSTEM', 'Connected to Kernel SSE Stream');
+                };
+
+                kernelStream.onerror = () => {
+                    kernelStreamOpen = false;
+                    statusDot.className = 'status-dot dead';
+                    addLog('SYSTEM', 'Connection Lost. Retrying...');
+                };
+
+                kernelStream.addEventListener('pulse', (e) => {
+                    try {
+                        const data = JSON.parse(e.data);
+                        const ts = data.ts_utc || data.ts || data.timestamp || null;
+                        addLog('PULSE', data.hash, ts, data);
+                        updateVitals();
+                    } catch (x) { console.error(x); }
+                });
+
+                kernelStream.addEventListener('econ', (e) => {
+                    try {
+                        const data = JSON.parse(e.data);
+                        const ts = data.ts_utc || data.ts || data.timestamp || null;
+                        addLog('ECON', `${data.action} (${data.cost} ICU)`, ts);
+                        updateEcon();
+                    } catch (x) { console.error(x); }
+                });
+
+                kernelStream.addEventListener('pending_witness', (e) => {
+                    try {
+                        const data = JSON.parse(e.data);
+                        updatePendingUI(data.count);
+                    } catch (x) { console.error(x); }
+                });
+            }
+
+            function updatePendingUI(count) {
+                if (count > 0) {
+                    witnessBadge.style.display = "inline-block";
+                    witnessBadge.textContent = count;
+                    pendingPanel.style.display = "block";
+                    refreshPendingList();
+                } else {
+                    witnessBadge.style.display = "none";
+                    pendingPanel.style.display = "none";
+                }
+            }
+
+            async function refreshPendingList() {
+                try {
+                    const res = await fetch(`${KERNEL_URL}/api/witness/proposals?status=PROPOSED`);
+                    if (!res.ok) return;
+                    const items = await res.json();
+
+                    pendingList.innerHTML = "";
+                    items.forEach(item => {
+                        const div = document.createElement("div");
+                        div.className = "pending-item";
+                        div.innerHTML = `
+                            <div style="display:flex; justify-content:space-between; margin-bottom:4px;">
+                                <span style="color:var(--accent)">${item.intent?.note || item.proposal_id.substring(0, 8)}</span>
+                                <span class="muted">${new Date(item.ts_utc).toLocaleTimeString()}</span>
+                            </div>
+                            <div class="muted">Key: ${item.source?.selected_key?.substring(0, 12)}...</div>
+                            <button class="btn" style="margin-top:5px; width:100%" onclick="applyProposal('${item.proposal_id}')">Load for Commit</button>
+                        `;
+                        pendingList.appendChild(div);
+                    });
+                } catch (e) { console.error("Failed to refresh pending list", e); }
+            }
+
+            window.applyProposal = async (id) => {
+                try {
+                    const res = await fetch(`${KERNEL_URL}/api/witness/proposals/${id}`);
+                    if (!res.ok) return;
+                    const prop = await res.json();
+
+                    // Pre-fill modal
+                    openWitnessModal();
+                    selectedKey = prop.source.selected_key;
+                    selectedSourceId = prop.source.source_id;
+                    wmKey.textContent = selectedKey;
+                    wmSource.textContent = selectedSourceId;
+                    wmNote.value = prop.intent.note;
+                    wmTags.value = prop.intent.tags.join(", ");
+
+                    // Mark as Proposed in modal
+                    lastWitnessProposalId = prop.proposal_id;
+                    lastWitnessPreview = prop;
+                    wmStatus.textContent = `LOADED: ${shortHash(id)} | risk=${prop.policy?.risk ?? "MED"}`;
+                    wmTokenRow.style.display = "block";
+                    btnWitnessCommit.disabled = false;
+
+                } catch (e) { alert("Failed to load proposal: " + e.message); }
+            };
+
+            function addLog(type, msg, ts, fullObj) {
+                const row = document.createElement('div');
+                row.className = 'event-row';
+                const time = ts ? new Date(ts).toLocaleTimeString() : new Date().toLocaleTimeString();
+
+                let content = `<div class="hash">${safeText(msg)}</div>`;
+
+                if (type === 'PULSE' && fullObj) {
+                    const hash = fullObj.hash;
+                    content = `<a class="hashLink hash" href="#">${safeText(hash)}</a>`;
+                }
+
+                row.innerHTML = `
+                <div class="ts">${time}</div>
+                <div class="type" style="color: ${getColor(type)}">${type}</div>
+                ${content}
+            `;
+
+                if (type === 'PULSE' && fullObj) {
+                    const link = row.querySelector('a');
+                    link.onclick = (e) => {
+                        e.preventDefault();
+                        // Phase 65.1: Safer Replay Exit
+                        if (replayMode && kernelStreamOpen) {
+                            replayMode = false;
+                            replayBundle = null;
+                            selectedSourceId = "LIVE";
+                            setBundleStatus("Live mode resumed via stream click.");
+                        }
+                        selectKey(fullObj.hash, fullObj);
+                    };
+                }
+
+                streamDiv.insertBefore(row, streamDiv.firstChild);
+                if (streamDiv.children.length > 50) streamDiv.lastChild.remove();
+            }
+
+            async function updateVitals() {
+                try {
+                    const res = await fetch(`${KERNEL_URL}/api/status`);
+                    const data = await res.json();
+                    document.getElementById('v-status').innerText = 'RUNNING';
+                    document.getElementById('v-pid').innerText = data.pid || data.ProcessId || '-';
+                    document.getElementById('v-mem').innerText = (data.ws_mb || (data.WorkingSet64 / 1024 / 1024)).toFixed(1) + ' MB';
+                    document.getElementById('v-hnd').innerText = data.handles || data.HandleCount || '-';
+                } catch (e) {
+                    document.getElementById('v-status').innerText = 'OFFLINE';
+                }
+            }
+
+            async function updateEcon() {
+                try {
+                    const res = await fetch(`${KERNEL_URL}/api/econ/status`);
+                    const data = await res.json();
+                    document.getElementById('e-epoch').innerText = data.epoch || 'N/A';
+                    document.getElementById('e-debits').innerText = data.total_debits || 0;
+                } catch (e) { }
+            }
+
+            // Init
+            connectStream();
+            setInterval(updateVitals, 5000);
+            setInterval(updateEcon, 10000);
+            updateVitals();
+            updateEcon();
+            renderPins();
+
+            // --- Phase 66: Witness Writer UI ---
+            // (Elements declared at top of file)
+
+            const witnessModal = document.getElementById("witnessModal");
+            const btnWitnessClose = document.getElementById("btnWitnessClose");
+            const btnWitnessPropose = document.getElementById("btnWitnessPropose");
+            const btnWitnessCommit = document.getElementById("btnWitnessCommit");
+
+            const wmSource = document.getElementById("wmSource");
+            const wmKey = document.getElementById("wmKey");
+            const wmIncPulse = document.getElementById("wmIncPulse");
+            const wmIncTrail = document.getElementById("wmIncTrail");
+            const wmIncGraph = document.getElementById("wmIncGraph");
+            const wmNote = document.getElementById("wmNote");
+            const wmTags = document.getElementById("wmTags");
+            const wmStatus = document.getElementById("wmStatus");
+            const wmPreview = document.getElementById("wmPreview");
+            const wmTokenRow = document.getElementById("wmTokenRow");
+            const wmToken = document.getElementById("wmToken");
+
+            let lastWitnessProposalId = null;
+            let lastWitnessPreview = null;
+
+            // Button Enablement Hook
+            const originalSetButtonsEnabled = setButtonsEnabled;
+            setButtonsEnabled = function (on) {
+                originalSetButtonsEnabled(on);
+                if (btnWitness) btnWitness.disabled = !on;
+            };
+
+            // Modal Logic
+            function openWitnessModal() {
+                wmSource.textContent = selectedSourceId || "LIVE";
+                wmKey.textContent = selectedKey || "-";
+                wmStatus.textContent = "";
+                wmPreview.style.display = "none";
+                wmPreview.textContent = "";
+                wmTokenRow.style.display = "none";
+                wmToken.value = "";
+                btnWitnessCommit.disabled = true;
+                lastWitnessProposalId = null;
+                lastWitnessPreview = null;
+                witnessModal.style.display = "block";
+            }
+
+            function closeWitnessModal() {
+                witnessModal.style.display = "none";
+            }
+
+            if (btnWitness) {
+                btnWitness.addEventListener("click", () => {
+                    if (!selectedKey) return;
+                    openWitnessModal();
+                });
+            }
+
+            if (btnWitnessClose) btnWitnessClose.onclick = (e) => { e.preventDefault(); closeWitnessModal(); };
+            if (witnessModal) {
+                witnessModal.addEventListener("click", (e) => {
+                    if (e.target === witnessModal) closeWitnessModal();
+                });
+            }
+
+            // Payload Builder
+            function parseTags(s) {
+                if (!s) return [];
+                return String(s).split(",").map(x => x.trim()).filter(Boolean).slice(0, 25);
+            }
+
+            function getCachedTrailForSelected() {
+                const ck = cacheKeyFor(selectedKey);
+                const obj = trailCache.get(ck);
+                return obj || null;
+            }
+
+            function getCachedGraphForSelected() {
+                const ck = cacheKeyFor(selectedKey);
+                const obj = graphCache.get(ck);
+                return obj || null;
+            }
+
+            function buildWitnessRequest() {
+                const includePulse = wmIncPulse.checked;
+                const includeTrail = wmIncTrail.checked;
+                const includeGraph = wmIncGraph.checked;
+
+                const payload = { pulse: null, trail: null, graph: null };
+
+                if (includePulse) payload.pulse = selectedLastPulseJson || null;
+                if (includeTrail) payload.trail = getCachedTrailForSelected();
+                if (includeGraph) payload.graph = getCachedGraphForSelected();
+
+                return {
+                    source_id: selectedSourceId || "LIVE",
+                    selected_key: selectedKey,
+                    action: "WITNESS_EVENT",
+                    note: (wmNote.value || "").trim(),
+                    tags: parseTags(wmTags.value),
+                    payload
+                };
+            }
+
+            // API Helpers
+            async function postJson(url, obj) {
+                const res = await fetch(url, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(obj)
+                });
+                const text = await res.text();
+                let data = null;
+                try { data = JSON.parse(text); } catch { data = { raw: text }; }
+                if (!res.ok) {
+                    const msg = (data && (data.error || data.message)) ? (data.error || data.message) : `HTTP ${res.status}`;
+                    const err = new Error(msg);
+                    err.httpStatus = res.status;
+                    err.data = data;
+                    throw err;
+                }
+                return data;
+            }
+
+            // Action Handlers
+            btnWitnessPropose.addEventListener("click", async () => {
+                if (!selectedKey) return;
+
+                wmStatus.textContent = "Proposing...";
+                btnWitnessPropose.disabled = true;
+
+                try {
+                    const req = buildWitnessRequest();
+                    const data = await postJson(`${KERNEL_URL}/api/witness/propose`, req);
+
+                    lastWitnessProposalId = data.proposal_id || null;
+                    lastWitnessPreview = data;
+
+                    wmPreview.style.display = "block";
+                    wmPreview.textContent = pretty(data);
+
+                    wmStatus.textContent = `PROPOSED: ${shortHash(lastWitnessProposalId)} | cost=${data.cost_estimate_icu ?? "?"} ICU | risk=${data.risk ?? "?"}`;
+
+                    // RC1: Always require token for now
+                    wmTokenRow.style.display = "block";
+                    btnWitnessCommit.disabled = !lastWitnessProposalId;
+                } catch (e) {
+                    wmStatus.textContent = `ERROR: ${e.message}`;
+                    wmPreview.style.display = "block";
+                    wmPreview.textContent = pretty(e.data || { error: String(e) });
+                } finally {
+                    btnWitnessPropose.disabled = false;
+                }
+            });
+
+            btnWitnessCommit.addEventListener("click", async () => {
+                if (!lastWitnessProposalId) return;
+
+                const token = (wmToken.value || "").trim();
+                if (!token) {
+                    wmStatus.textContent = "ERROR: missing token";
+                    return;
+                }
+
+                wmStatus.textContent = "Committing...";
+                btnWitnessCommit.disabled = true;
+
+                try {
+                    const data = await postJson(`${KERNEL_URL}/api/witness/commit`, {
+                        proposal_id: lastWitnessProposalId,
+                        approval_token: token
+                    });
+
+                    wmPreview.style.display = "block";
+                    wmPreview.textContent = pretty({ proposal: lastWitnessPreview, commit: data });
+
+                    wmStatus.textContent = `COMMITTED: witness_key=${shortHash(data.witness_key)} | cost=${data.write_receipt?.cost_icu ?? "?"} ICU`;
+
+                    witnessStatus.textContent = `Last witness commit: ${shortHash(data.witness_key)}`;
+                } catch (e) {
+                    wmStatus.textContent = `COMMIT ERROR: ${e.message}`;
+                    wmPreview.style.display = "block";
+                    wmPreview.textContent = pretty(e.data || { error: String(e) });
+                    btnWitnessCommit.disabled = false; // allow retry
+                }
+            });
+
+        </script>
+
+        <!-- Witness Modal (Phase 66) -->
+        <div id="witnessModal"
+            style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.75); z-index:9999;">
+            <div
+                style="max-width:720px; margin:60px auto; background:#0b0b0b; border:1px solid #333; padding:14px; border-radius:6px;">
+                <div
+                    style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #222; padding-bottom:10px;">
+                    <div style="color:var(--accent); font-size:13px; letter-spacing:1px;">WITNESS WRITER</div>
+                    <button id="btnWitnessClose" class="btn">Close</button>
+                </div>
+
+                <div class="muted" style="margin-top:10px; font-family: monospace; font-size:12px;">
+                    Source: <span id="wmSource">-</span><br />
+                    Key: <span id="wmKey">-</span>
+                </div>
+
+                <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+                    <label class="muted" style="font-size:12px;">
+                        <input id="wmIncPulse" type="checkbox" checked /> include pulse
+                    </label>
+                    <label class="muted" style="font-size:12px;">
+                        <input id="wmIncTrail" type="checkbox" checked /> include trail (cached only)
+                    </label>
+                    <label class="muted" style="font-size:12px;">
+                        <input id="wmIncGraph" type="checkbox" /> include graph (cached only)
+                    </label>
+                </div>
+
+                <div style="margin-top:12px;">
+                    <div class="muted" style="font-size:12px; margin-bottom:6px;">Note</div>
+                    <textarea id="wmNote"
+                        style="width:100%; height:80px; background:#000; color:#bbb; border:1px solid #333; padding:8px; font-family: monospace; font-size:12px;"></textarea>
+                </div>
+
+                <div style="margin-top:12px;">
+                    <div class="muted" style="font-size:12px; margin-bottom:6px;">Tags (comma separated)</div>
+                    <input id="wmTags"
+                        style="width:100%; background:#000; color:#bbb; border:1px solid #333; padding:8px; font-family: monospace; font-size:12px;" />
+                </div>
+
+                <div style="margin-top:12px; border-top:1px solid #222; padding-top:10px;">
+                    <button id="btnWitnessPropose" class="btn">Propose</button>
+                    <button id="btnWitnessCommit" class="btn" disabled>Commit</button>
+                    <span id="wmStatus" class="muted" style="font-family: monospace; font-size:12px;"></span>
+                </div>
+
+                <pre id="wmPreview"
+                    style="margin-top:10px; background:#000; border:1px solid #222; padding:10px; max-height:240px; overflow:auto; color:#888; font-size:11px; display:none;"></pre>
+
+                <div id="wmTokenRow" style="margin-top:10px; display:none;">
+                    <div class="muted" style="font-size:12px; margin-bottom:6px;">Approval Token</div>
+                    <input id="wmToken" placeholder="paste token..."
+                        style="width:100%; background:#000; color:#bbb; border:1px solid #333; padding:8px; font-family: monospace; font-size:12px;" />
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

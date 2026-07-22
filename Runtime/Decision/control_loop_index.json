@@ -1,0 +1,40 @@
+{
+  "version": "1.0",
+  "loops": [
+    {
+      "name": "Reality Divergence Sentinel",
+      "type": "Physics/Telemetry",
+      "target": "Detects divergence between internal model and physical environment."
+    },
+    {
+      "name": "Constitutional Governance Engine",
+      "type": "Logic",
+      "target": "Enforces immutable boundaries against machine mutation."
+    },
+    {
+      "name": "Attestation Action Chains",
+      "type": "Cryptography",
+      "target": "Cryptographically seals the lineage of execution intent."
+    },
+    {
+      "name": "Simulation Validator",
+      "type": "Systems",
+      "target": "Safely isolates counterfactual generation from live execution."
+    },
+    {
+      "name": "Exploration Pressure Engine",
+      "type": "Systems",
+      "target": "Introduces bounded mutation to break optimization stagnation."
+    },
+    {
+      "name": "Model Evolution Governor",
+      "type": "Systems",
+      "target": "Regulates shadow-to-active model lifecycles and rollback procedures."
+    },
+    {
+      "name": "Institutional Strategic Memory",
+      "type": "Advisory",
+      "target": "Compresses long-horizon legacy data into stateless advisory postures."
+    }
+  ]
+}

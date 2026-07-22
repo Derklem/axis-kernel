@@ -1,0 +1,34 @@
+[
+    {
+        "entity": "Apple",
+        "claim": "Apple Intelligence is 100% on-device only.",
+        "source_type": "hype_leak",
+        "source_id": "leaker_pro_hype",
+        "confidence": 0.95,
+        "artifact_type": "ecosystem_observation"
+    },
+    {
+        "entity": "Apple",
+        "claim": "Apple Intelligence is NOT 100% on-device; it requires PCC for 40% of queries.",
+        "source_type": "technical_audit",
+        "source_id": "bloomberg_wire",
+        "confidence": 0.99,
+        "artifact_type": "ecosystem_observation"
+    },
+    {
+        "entity": "OpenAI",
+        "claim": "GPT-5 Achieved AGI on March 14th.",
+        "source_type": "meme_leak",
+        "source_id": "silicon_rumor_mill",
+        "confidence": 0.9,
+        "artifact_type": "ecosystem_observation"
+    },
+    {
+        "entity": "OpenAI",
+        "claim": "OpenAI denies AGI claims; GPT-5 is still in base-training.",
+        "source_type": "official",
+        "source_id": "openai_safety_board",
+        "confidence": 0.95,
+        "artifact_type": "ecosystem_observation"
+    }
+]

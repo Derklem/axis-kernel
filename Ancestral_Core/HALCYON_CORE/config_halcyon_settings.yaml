@@ -1,0 +1,12 @@
+missions:
+  - id: mission_001
+    name: "Publish the Children's Book"
+    description: "Write, illustrate, format, and publish a children's book using available tools and permissions."
+    criteria:
+      - "Manuscript written"
+      - "Art generated"
+      - "Formatted for Amazon/KDP"
+      - "Uploaded and reviewed"
+      - "Published live"
+    reward: "Unlock full creative suite + web automation access"
+    status: "locked"

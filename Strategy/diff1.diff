@@ -1,0 +1,11 @@
+diff --git a/Strategy/hygiene_pass.py b/Strategy/hygiene_pass.py
+index cc9ca9f..c90edc6 100644
+--- a/Strategy/hygiene_pass.py
++++ b/Strategy/hygiene_pass.py
+@@ -1,4 +1,6 @@
+ import sys
++
++
+ with open(r'D:\infinite\Infinity\Strategy\strategy_engine.py', 'r', encoding='utf-8') as f:
+     text = f.read()
+ 

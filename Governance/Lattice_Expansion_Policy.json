@@ -1,0 +1,31 @@
+{
+    "version": "2026-01-27.v1",
+    "max_new_claims_per_window": 100,
+    "window_minutes": 60,
+    "risk_tiers": [
+        {
+            "id": "LOW",
+            "description": "Benign / utility information; no enforcement impact.",
+            "requires_shadow": false,
+            "requires_anchor_review": false
+        },
+        {
+            "id": "MEDIUM",
+            "description": "Information that may affect narrative overlays (LINEAGE).",
+            "requires_shadow": true,
+            "requires_anchor_review": false
+        },
+        {
+            "id": "HIGH",
+            "description": "Information that could affect enforcement / ORYN decisions.",
+            "requires_shadow": true,
+            "requires_anchor_review": true
+        }
+    ],
+    "defaults": {
+        "tenant_risk": {
+            "TENANT-LINEAGE": "MEDIUM",
+            "TENANT-ORYN": "HIGH"
+        }
+    }
+}

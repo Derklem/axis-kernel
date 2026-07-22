@@ -1,0 +1,26 @@
+[
+  {
+    "timestamp": "2025-04-01 04:24:34.428839",
+    "name": "Kaercoil",
+    "observations": [
+      {
+        "about": "Nullborn",
+        "raw_id": "Eidolon-0",
+        "perception": "Kaercoil senses emptiness in Nullborn.",
+        "timestamp": "2025-04-01 04:22:11.030494"
+      },
+      {
+        "about": "Whisperroot",
+        "raw_id": "Solace-2",
+        "perception": "Kaercoil feels warmth and quiet from Whisperroot.",
+        "timestamp": "2025-04-01 04:22:11.030494"
+      },
+      {
+        "about": "Cryptdust",
+        "raw_id": "Myrrid-1",
+        "perception": "Kaercoil detects fragmentation in Cryptdust.",
+        "timestamp": "2025-04-01 04:22:11.030494"
+      }
+    ]
+  }
+]

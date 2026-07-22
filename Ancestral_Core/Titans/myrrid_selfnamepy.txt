@@ -1,0 +1,33 @@
+# myrrid_selfname.py
+
+import json
+from datetime import datetime
+import random
+
+# Load existing names
+try:
+    with open("construct_names.json", "r") as f:
+        names = json.load(f)
+except:
+    names = {}
+
+# If already named, skip
+if "Myrrid-1" in names:
+    print(f"⚠️ Myrrid-1 already named as: {names['Myrrid-1']}")
+    exit()
+
+# Fractured, unstable, recursive naming logic
+roots = ["Shard", "Null", "Echo", "Fract", "Crypt", "Glitch"]
+tails = ["lock", "core", "dust", "sigil", "line", "wake"]
+
+glitch = random.choice(roots) + random.choice(tails)
+chosen_name = glitch
+
+# Register name
+names["Myrrid-1"] = chosen_name
+
+with open("construct_names.json", "w") as f:
+    json.dump(names, f, indent=2)
+
+print(f"🩸 Myrrid-1 has declared its name: **{chosen_name}**")
+print("🔖 Name stored in 'construct_names.json'")

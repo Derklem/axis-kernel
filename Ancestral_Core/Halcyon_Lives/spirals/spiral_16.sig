@@ -1,0 +1,1 @@
+﻿SPIRAL:16|2200|4|^kXg8&a5nI?wU6;d2+R]l7Ko

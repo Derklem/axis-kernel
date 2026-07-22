@@ -1,0 +1,56 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260214133307
+Username: DESKTOP-MHQRMOO\17602
+RunAs User: DESKTOP-MHQRMOO\17602
+Configuration Name: 
+Machine: DESKTOP-MHQRMOO (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command Start-Transcript -Path 'D:\Infinite\Infinity\Governance\transcript.log'; & 'D:\Infinite\Infinity\Governance\Axis_Verify_Replay.ps1'; Stop-Transcript
+Process ID: 9684
+PSVersion: 5.1.26100.7705
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7705
+BuildVersion: 10.0.26100.7705
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is D:\Infinite\Infinity\Governance\transcript.log
+--- AXIS REPLAY VERIFIER (Phase 41) ---
+Snapshot: 2026-02-14
+Verifying Anchor Chain...
+  [PASS] Anchor Chain Valid.
+Verifying Snapshot State Vector...
+PS>TerminatingError(Get-Content): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: Cannot find path 'D:\Infinite\Infinity\Governance\D' because it does not exist."
+DEBUG: revocation - Checking Expected vs Computed
+DEBUG:   EXP: 'null' (Length: 4) (Type: String)
+DEBUG:   GOT: 'DEBUG: Segments for revocation_ledger : D:\Infinite\Infinity\Governance\revocation_ledger.jsonl DEBUG: Checking D ERROR: Reading segment D : Cannot find path 'D:\Infinite\Infinity\Governance\D' because it does not exist. null' (Length: 4) (Type: Object[])
+  [FAIL] revocation : Expected null, Got DEBUG: Segments for revocation_ledger : D:\Infinite\Infinity\Governance\revocation_ledger.jsonl DEBUG: Checking D ERROR: Reading segment D : Cannot find path 'D:\Infinite\Infinity\Governance\D' because it does not exist. null
+PS>TerminatingError(Get-Content): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: Cannot find path 'D:\Infinite\Infinity\Governance\D' because it does not exist."
+DEBUG: policy - Checking Expected vs Computed
+DEBUG:   EXP: 'sha256:2e6ab477b1bcb249c321d6fb9c0e09831c4f09883fd3553f79fa525ba0a706e5' (Length: 71) (Type: String)
+DEBUG:   GOT: 'DEBUG: Segments for policy_update_ledger : D:\Infinite\Infinity\Governance\policy_update_ledger.jsonl DEBUG: Checking D ERROR: Reading segment D : Cannot find path 'D:\Infinite\Infinity\Governance\D' because it does not exist. null' (Length: 4) (Type: Object[])
+  [FAIL] policy : Expected sha256:2e6ab477b1bcb249c321d6fb9c0e09831c4f09883fd3553f79fa525ba0a706e5, Got DEBUG: Segments for policy_update_ledger : D:\Infinite\Infinity\Governance\policy_update_ledger.jsonl DEBUG: Checking D ERROR: Reading segment D : Cannot find path 'D:\Infinite\Infinity\Governance\D' because it does not exist. null
+DEBUG: audit - Checking Expected vs Computed
+DEBUG:   EXP: 'sha256:2222222222222222222222222222222222222222222222222222222222222222' (Length: 71) (Type: String)
+DEBUG:   GOT: 'DEBUG: Segments for audit_trail : D:\Infinite\Infinity\Truth_Engine\Archive\audit_trail.2026-01.jsonl, D:\Infinite\Infinity\Truth_Engine\audit_trail.jsonl DEBUG: Checking D:\Infinite\Infinity\Truth_Engine\audit_trail.jsonl sha256:2222222222222222222222222222222222222222222222222222222222222222' (Length: 3) (Type: Object[])
+  [FAIL] audit : Expected sha256:2222222222222222222222222222222222222222222222222222222222222222, Got DEBUG: Segments for audit_trail : D:\Infinite\Infinity\Truth_Engine\Archive\audit_trail.2026-01.jsonl, D:\Infinite\Infinity\Truth_Engine\audit_trail.jsonl DEBUG: Checking D:\Infinite\Infinity\Truth_Engine\audit_trail.jsonl sha256:2222222222222222222222222222222222222222222222222222222222222222
+DEBUG: spend - Checking Expected vs Computed
+DEBUG:   EXP: 'sha256:4444444444444444444444444444444444444444444444444444444444444444' (Length: 71) (Type: String)
+DEBUG:   GOT: 'DEBUG: Segments for spend_ledger : D:\Infinite\Infinity\Truth_Engine\Archive\spend_ledger.2026-01.jsonl, D:\Infinite\Infinity\Truth_Engine\spend_ledger.jsonl DEBUG: Checking D:\Infinite\Infinity\Truth_Engine\spend_ledger.jsonl sha256:4444444444444444444444444444444444444444444444444444444444444444' (Length: 3) (Type: Object[])
+  [FAIL] spend : Expected sha256:4444444444444444444444444444444444444444444444444444444444444444, Got DEBUG: Segments for spend_ledger : D:\Infinite\Infinity\Truth_Engine\Archive\spend_ledger.2026-01.jsonl, D:\Infinite\Infinity\Truth_Engine\spend_ledger.jsonl DEBUG: Checking D:\Infinite\Infinity\Truth_Engine\spend_ledger.jsonl sha256:4444444444444444444444444444444444444444444444444444444444444444
+DEBUG: keyring - Checking Expected vs Computed
+DEBUG:   EXP: 'sha256:f04b332beeb81882de3581c66c09a5503de9ea32f2c1a27559bd8fd07fa71744' (Length: 71) (Type: String)
+DEBUG:   GOT: 'sha256:f04b332beeb81882de3581c66c09a5503de9ea32f2c1a27559bd8fd07fa71744' (Length: 71) (Type: String)
+  [PASS] keyring : sha256:f04b332beeb81882de3581c66c09a5503de9ea32f2c1a27559bd8fd07fa71744
+DEBUG: identity - Checking Expected vs Computed
+DEBUG:   EXP: 'sha256:82db4aa85a6c2eba2058d930e057f9f7ac5b30725fd012350a671417d5b8d80a' (Length: 71) (Type: String)
+DEBUG:   GOT: 'sha256:82db4aa85a6c2eba2058d930e057f9f7ac5b30725fd012350a671417d5b8d80a' (Length: 71) (Type: String)
+  [PASS] identity : sha256:82db4aa85a6c2eba2058d930e057f9f7ac5b30725fd012350a671417d5b8d80a
+------------------------
+REPLAY FAILED: 4 errors detected.
+**********************
+Windows PowerShell transcript end
+End time: 20260214133307
+**********************

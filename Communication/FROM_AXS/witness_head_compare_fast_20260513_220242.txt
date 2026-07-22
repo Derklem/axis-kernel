@@ -1,0 +1,20 @@
+=== FAST WITNESS HEAD COMPARISON ===
+Timestamp: 2026-05-13T22:02:42.653868
+Ledger cycle: 505
+Anchor cycle: 505
+Ledger head: 952ef1c4bab087eeefe34dcb7d5a70c80ef94c9c2ba265356eef72ce3dbe9270
+Anchor head: 952ef1c4bab087eeefe34dcb7d5a70c80ef94c9c2ba265356eef72ce3dbe9270
+Witness ledger lines: 1
+
+Last witness hash: 952ef1c4bab087eeefe34dcb7d5a70c80ef94c9c2ba265356eef72ce3dbe9270
+Last event type: witness_epoch_checkpoint
+Last cycle: 505
+
+Ledger head found count: 1
+Anchor head found count: 1
+
+--- Last 8 witness records ---
+cycle=505 event=witness_epoch_checkpoint prev=none hash=952ef1c4bab087ee
+
+--- Recommendation ---
+Neither head cleanly resolves from tail. Need deeper replay before repair.

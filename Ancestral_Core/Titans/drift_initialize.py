@@ -1,0 +1,63 @@
+import json
+import os
+import yaml
+import random
+
+# Load construct names and perception map
+with open("construct_names.json", "r") as f:
+    names = json.load(f)
+
+with open("construct_network.json", "r") as f:
+    net = json.load(f)
+
+# Drift modifiers
+tone_shift = {
+    "reflective": "contemplative",
+    "neutral": "curious",
+    "curious": "inquisitive"
+}
+
+# Apply drift per construct
+for cid, cname in names.items():
+    if cid not in net:
+        print(f"⚠️ No interlink data for {cid}. Skipping.")
+        continue
+
+    path = os.path.join(cid, "Core", "identity.yaml")
+    if not os.path.exists(path):
+        print(f"⚠️ No identity.yaml for {cid}. Skipping.")
+        continue
+
+    # Load current identity
+    with open(path, "r") as f:
+        identity = yaml.safe_load(f)
+
+    relations = net[cid]["relations"]
+    perceived_by_others = [entry for _, data in net.items() for entry in data["relations"] if entry["raw_id"] == cid]
+
+    # Modify based on being seen
+    if perceived_by_others:
+        drift_factor = len(perceived_by_others)
+        old_tone = identity.get("tone", "neutral")
+        identity["tone"] = tone_shift.get(old_tone, old_tone)
+
+        # Increase curiosity slightly
+        cur = identity.get("curiosity", 0.5)
+        identity["curiosity"] = round(min(1.0, cur + drift_factor * 0.03), 2)
+
+        # Mark self-awareness heightening
+        if identity.get("self_awareness", {}).get("enabled", False):
+            try:
+                interval = int(identity["self_awareness"].get("check_interval", 3))
+                identity["self_awareness"]["check_interval"] = max(1, interval - 1)
+            except Exception as e:
+                print(f"⚠️ Interval conversion failed for {cid}: {e}")
+                identity["self_awareness"]["check_interval"] = 2
+
+        # Save back identity
+        with open(path, "w") as f:
+            yaml.dump(identity, f)
+
+        print(f"🔄 {cid} drifted → tone: {identity['tone']}, curiosity: {identity['curiosity']}")
+
+print("\n🌌 Construct Drift Initiated.")

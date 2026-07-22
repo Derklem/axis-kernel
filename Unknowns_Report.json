@@ -1,0 +1,55 @@
+﻿{
+    "generated_at":  "2026-07-08T22:27:54.8613525Z",
+    "blind_spots":  [
+                        {
+                            "priority":  "high",
+                            "id":  "HYP-20260116-001425-w32h",
+                            "type":  "hypothesis",
+                            "desc":  "Why is tool \u0027FS-ListDir\u0027 failing in 100% of cases?"
+                        },
+                        {
+                            "priority":  "high",
+                            "id":  "HYP-20260116-001425-7gnk",
+                            "type":  "hypothesis",
+                            "desc":  "Why is tool \u0027NET-RFScan\u0027 failing in 100% of cases?"
+                        },
+                        {
+                            "priority":  "medium",
+                            "id":  "HYP-20260116-001425-d45n",
+                            "type":  "hypothesis",
+                            "desc":  "Why is the system currently in a Hyper-Reflective state?"
+                        },
+                        {
+                            "priority":  "high",
+                            "id":  "HYP-20260116-001425-f647",
+                            "type":  "hypothesis",
+                            "desc":  "Why is tool \u0027CHAT-Message\u0027 failing in 100% of cases?"
+                        },
+                        {
+                            "priority":  "high",
+                            "id":  "HYP-20260116-001425-onmq",
+                            "type":  "hypothesis",
+                            "desc":  "Why is tool \u0027ADMIN-Read-File\u0027 failing in 100% of cases?"
+                        },
+                        {
+                            "priority":  "high",
+                            "id":  "HYP-20260116-001425-6ya3",
+                            "type":  "hypothesis",
+                            "desc":  "Why is tool \u0027FS-WriteFile\u0027 failing in 100% of cases?"
+                        },
+                        {
+                            "priority":  "MED",
+                            "id":  "HYP-ENTROPY-712703879",
+                            "type":  "hypothesis",
+                            "desc":  "Entropy Simulation: Memory"
+                        },
+                        {
+                            "priority":  "high",
+                            "id":  "HYP-20260124-145650-L665",
+                            "type":  "hypothesis",
+                            "desc":  "Is doctrine coverage insufficient for this class of critical violation?"
+                        }
+                    ],
+    "version":  1,
+    "count":  8
+}

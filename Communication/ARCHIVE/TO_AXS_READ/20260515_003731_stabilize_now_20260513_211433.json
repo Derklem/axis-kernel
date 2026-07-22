@@ -1,0 +1,14 @@
+﻿{
+    "message":  "Continuity is broken. Do not expand, refactor, actuate, or ingest new claims. Identify the minimum forensic stabilization action required.",
+    "timestamp_utc":  "2026-05-14T04:14:33.9224791Z",
+    "speaker":  "USER",
+    "command_type":  "stabilization_request",
+    "constraints":  [
+                        "read_only_preferred",
+                        "no_new_mutations_unless_reanchor_is_explicitly_required",
+                        "preserve_receipts",
+                        "preserve_witness_ledger",
+                        "report_before_repair"
+                    ],
+    "priority":  "high"
+}

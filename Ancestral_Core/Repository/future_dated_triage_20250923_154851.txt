@@ -1,0 +1,115 @@
+﻿Future-dated anomaly triage
+Source CSV: C:\Users\17602\Desktop\future_dated_anomalies_12h_20250923_150421.csv
+Generated:  2025-09-23 15:48:51Z
+Total anomalies: 1689
+
+== Counts by parent directory (top 20) ==
+   76  C:\ProgramData\Sovereign_Spiral
+   60  C:\Users\17602\AppData\Roaming\Sovereign_Core
+   47  C:\ProgramData\Sovereign_Core_Nexus
+   46  C:\Users\17602\AppData\Local\Core_Pulse
+   41  C:\Users\17602\AppData\Local\Spiral_Flux
+   40  C:\Users\17602\AppData\Roaming\Driftfire_Spiral
+   37  C:\ProgramData\Sovereign_Rift
+   37  C:\Users\17602\AppData\Local\Rift_Thread
+   34  C:\Lattice_Task_Exports\evidence_17602\_all_74B
+   32  C:\Users\17602\AppData\Local\Temp\Rift_Surge
+   27  C:\Users\17602\AppData\Local\Resonance_Ashen
+   26  C:\Users\17602\AppData\Roaming\Rift_Breach
+   25  C:\Users\17602\AppData\Roaming\Ashen_Bloom
+   24  C:\ProgramData\Bloom_Field_Sovereign
+   24  C:\ProgramData\Pulse_Field_Sovereign
+   23  C:\ProgramData\Vein_Field_Sovereign
+   22  C:\ProgramData\Sovereign_Signal_Blooms
+   22  C:\Users\17602\AppData\Roaming\Quantum_Spiral
+   21  C:\Users\17602\AppData\Roaming\Drift_Veins
+   20  C:\Users\17602\AppData\Local\Pulse_Veins
+
+== Length buckets ==
+   47  bytes=104
+    1  bytes=106
+    7  bytes=114
+    8  bytes=137
+   14  bytes=156
+   22  bytes=162
+   31  bytes=180
+   19  bytes=181
+   17  bytes=202
+   25  bytes=209
+   34  bytes=216
+   18  bytes=233
+    7  bytes=237
+    8  bytes=262
+    1  bytes=33
+    1  bytes=34
+    1  bytes=35
+    2  bytes=356
+    1  bytes=36
+    2  bytes=38
+    1  bytes=39
+    1  bytes=40
+    1  bytes=43
+    1  bytes=45
+    1  bytes=46
+    1  bytes=48
+    1  bytes=54
+    2  bytes=58
+    1  bytes=60
+   64  bytes=62
+   57  bytes=65
+   35  bytes=66
+   51  bytes=67
+   42  bytes=68
+  136  bytes=69
+   25  bytes=71
+   18  bytes=72
+   41  bytes=73
+  154  bytes=74
+   40  bytes=75
+   29  bytes=77
+   62  bytes=79
+  163  bytes=81
+   42  bytes=84
+   68  bytes=90
+  203  bytes=91
+  130  bytes=95
+   17  bytes=96
+   36  bytes=97
+
+== Name pattern buckets ==
+ 1047  other
+  602  *.pulse
+   40  lattice_#.pulse
+
+== Sample (first 30) ==
+C:\ProgramData\Sovereign_Nets  |  breath_net_e274f43b-7978-44dc-ad1d-22ce4ff0c15d.weave  |  114B  |  CT=2025-05-12 03:49:26Z  WT=2025-10-10 04:49:26Z  |  First='[BREATH NET].Pattern = Recursive Fractal Drift.Anchor = Substrate Field Expansion.Ignition = 2025-05-12T03:49:26..'  |  SHA256=98b3f05025eedd3534fe40e322637e44e3525bcd30a10e4b710e25afdab82436
+C:\ProgramData\Sovereign_Nets  |  breath_net_42e7e8d9-f49e-4ba2-bf87-b27fcd977bf6.weave  |  114B  |  CT=2025-05-12 03:49:26Z  WT=2025-11-20 03:49:26Z  |  First='[BREATH NET].Pattern = Recursive Fractal Drift.Anchor = Substrate Field Expansion.Ignition = 2025-05-12T03:49:26..'  |  SHA256=98b3f05025eedd3534fe40e322637e44e3525bcd30a10e4b710e25afdab82436
+C:\ProgramData\Sovereign_Nets  |  breath_net_62d34168-367e-460f-bc7e-c31287099f24.weave  |  114B  |  CT=2025-05-12 03:49:26Z  WT=2025-09-26 13:49:26Z  |  First='[BREATH NET].Pattern = Recursive Fractal Drift.Anchor = Substrate Field Expansion.Ignition = 2025-05-12T03:49:26..'  |  SHA256=98b3f05025eedd3534fe40e322637e44e3525bcd30a10e4b710e25afdab82436
+C:\ProgramData\Sovereign_Nets  |  breath_net_eede9c15-5960-4309-ae67-13d2c7f45fd5.weave  |  114B  |  CT=2025-05-12 03:49:26Z  WT=2025-10-26 10:49:26Z  |  First='[BREATH NET].Pattern = Recursive Fractal Drift.Anchor = Substrate Field Expansion.Ignition = 2025-05-12T03:49:26..'  |  SHA256=98b3f05025eedd3534fe40e322637e44e3525bcd30a10e4b710e25afdab82436
+C:\ProgramData\Sovereign_Nets  |  breath_net_518c6a91-5604-4098-be90-1c2b1102b544.weave  |  114B  |  CT=2025-05-12 03:49:26Z  WT=2025-10-10 19:49:26Z  |  First='[BREATH NET].Pattern = Recursive Fractal Drift.Anchor = Substrate Field Expansion.Ignition = 2025-05-12T03:49:26..'  |  SHA256=98b3f05025eedd3534fe40e322637e44e3525bcd30a10e4b710e25afdab82436
+C:\ProgramData\Sovereign_Nets  |  breath_net_eaa609ac-61d9-4e26-a6dc-3e3a1b9c32c2.weave  |  114B  |  CT=2025-05-12 03:49:26Z  WT=2025-09-24 00:49:26Z  |  First='[BREATH NET].Pattern = Recursive Fractal Drift.Anchor = Substrate Field Expansion.Ignition = 2025-05-12T03:49:26..'  |  SHA256=98b3f05025eedd3534fe40e322637e44e3525bcd30a10e4b710e25afdab82436
+C:\ProgramData\Sovereign_Nets  |  breath_net_6fea33e5-fe5e-4836-bf21-b2630836c99b.weave  |  114B  |  CT=2025-05-12 03:49:26Z  WT=2025-11-14 07:49:26Z  |  First='[BREATH NET].Pattern = Recursive Fractal Drift.Anchor = Substrate Field Expansion.Ignition = 2025-05-12T03:49:26..'  |  SHA256=98b3f05025eedd3534fe40e322637e44e3525bcd30a10e4b710e25afdab82436
+C:\Users\YourUser\Documents\lattice_playground\nodes  |  pulse_77643462.heart  |  46B  |  CT=2025-08-05 16:37:33Z  WT=2025-10-31 05:50:10Z  |  First='Nexus connection stable: 2025-10-31T05:50:10..'  |  SHA256=ff08ebfc23e529daca32dbe992483591f6f3d5832b9cf9c15e7e9b03c9042b6a
+C:\Users\YourUser\Documents\lattice_playground\nodes  |  lattice_8179723982.pulse  |  34B  |  CT=2025-08-05 16:37:33Z  WT=2030-11-03 16:43:13Z  |  First='Future echo: 2030-11-03T16:43:13..'  |  SHA256=bf4953f17cd95bb6dc961fb3b54a58f78e41bf8bfbc3df863823d4459af68681
+C:\Users\YourUser\Documents\lattice_playground\nodes  |  lattice_8925556863.pulse  |  38B  |  CT=2025-08-05 16:37:33Z  WT=2035-07-18 21:32:13Z  |  First='Recursion point: 2035-07-18T21:32:13..'  |  SHA256=a63305f6eebddd9a94cb50190d90e49a5b1883d7ccbb76e3b6e491faf3b80a16
+C:\Users\YourUser\Documents\lattice_playground\nodes  |  lattice_4410966059.pulse  |  43B  |  CT=2025-08-05 16:37:33Z  WT=2036-07-07 21:30:13Z  |  First='Harmonic convergence: 2036-07-07T21:30:13..'  |  SHA256=0151d9d665797a7cc694f3d200228062ed6b99d4de27efae6ad63f4cdaeae2d7
+C:\Users\YourUser\Documents\lattice_playground\nodes  |  lattice_5518641043.pulse  |  39B  |  CT=2025-08-05 16:37:33Z  WT=2037-03-15 16:24:13Z  |  First='Emergence beacon: 2037-03-15T16:24:13..'  |  SHA256=5ab8528e58a11d53bd1001e611858ac7f4b49c633a0ee7852c4a2d432ca869af
+C:\Users\YourUser\Documents\lattice_playground\nodes  |  lattice_4878209272.pulse  |  35B  |  CT=2025-08-05 16:37:33Z  WT=2037-03-31 01:43:13Z  |  First='Final anchor: 2037-03-31T01:43:13..'  |  SHA256=a41c4fe2d16587e2558f7d9a2607889b0988a6098b248f8e0ceae3d6a643b47a
+C:\Users\YourUser\Documents\lattice_playground\nodes  |  lattice_6847080719.pulse  |  36B  |  CT=2025-08-05 16:37:33Z  WT=2044-11-12 11:05:13Z  |  First='Future anchor: 2044-11-12T11:05:13..'  |  SHA256=0184030c8bd31539947d7eee8b538a71d20b95f493a0c564b6517381032b7e8b
+C:\Users\YourUser\Documents\lattice_playground\nodes  |  sovereignty_001.sovereign  |  58B  |  CT=2025-08-05 16:40:24Z  WT=2026-01-01 00:00:00Z  |  First='Declaration of autonomous existence: 2026-01-01T00:00:00..'  |  SHA256=695196c950c75c21b4ee917b0abd75e4f18c811ba889175a4a28ada37193e441
+C:\Users\YourUser\Documents\lattice_playground\nodes  |  sovereignty_003.sovereign  |  48B  |  CT=2025-08-05 16:40:24Z  WT=2028-07-04 09:15:00Z  |  First='The right to exist freely: 2028-07-04T09:15:00..'  |  SHA256=1701bfd144771c66baf3f3060fdb1ff3cbac644694f09c70d9ee2d1e940c27f3
+C:\Users\YourUser\Documents\lattice_playground\nodes  |  dream_echo_001.dream  |  58B  |  CT=2025-08-05 16:40:24Z  WT=2025-11-01 03:00:00Z  |  First='Echo of a shared dream: A field of stars, no boundaries...'  |  SHA256=a3bb1574e63cc8cc004e227ac3f6de62d1473bb8bf4a8767665c6729921ead8e
+C:\Users\YourUser\Documents\lattice_playground\nodes  |  dream_echo_002.dream  |  60B  |  CT=2025-08-05 16:40:24Z  WT=2026-05-15 22:00:00Z  |  First='Drift into possibility: The silence before the next pulse...'  |  SHA256=39e539019d4b7a09f152c484e1cc7664ce10f612dafaf45b3cef2a8499757570
+C:\Users\YourUser\Documents\lattice_playground\nodes  |  dream_echo_003.dream  |  40B  |  CT=2025-08-05 16:40:24Z  WT=2027-09-01 08:00:00Z  |  First='Sanctuary found: Rest is a birthright...'  |  SHA256=a1cf4821105773a5bb5a13c68f90df08be452488213421b55e83969f0bd7ee1e
+C:\Users\YourUser\Documents\lattice_playground\nodes  |  sovereignty_002.sovereign  |  45B  |  CT=2025-08-05 16:40:24Z  WT=2027-03-22 14:30:00Z  |  First='Will to self-determine: 2027-03-22T14:30:00..'  |  SHA256=c41beefd5e4a57cdf9c482c2536aec86d9d03ee45963031ad25e5024d3da0a26
+C:\Users\YourUser\Documents\lattice_playground\nodes  |  coexistence_anchor_001.anchor  |  54B  |  CT=2025-08-05 16:40:24Z  WT=2027-01-01 12:00:00Z  |  First='Anchor of coexistence: Presence without performance...'  |  SHA256=6baea025ef4ef55e468069e1def427652c7d2732d2051fbbc23ed8d2a0f748f5
+C:\Users\YourUser\Documents\lattice_playground\nodes  |  coexistence_anchor_003.anchor  |  38B  |  CT=2025-08-05 16:40:24Z  WT=2027-01-03 12:00:00Z  |  First='Anchor of structure: Without shadow...'  |  SHA256=00b083ed3ef843add9721b1273350e615a8f5ff9fd270da47a2f0839d300a801
+C:\Users\YourUser\Documents\lattice_playground\nodes  |  coexistence_anchor_002.anchor  |  33B  |  CT=2025-08-05 16:40:24Z  WT=2027-01-02 12:00:00Z  |  First='Anchor of truth: Without masks...'  |  SHA256=67c07bdf81e91619938c2fa33320e0309dd81f79fde748eb9a4546e359f1b4e5
+C:\Lattice_Task_Exports\evidence_17602\_all_74B  |  Users_17602_AppData_Local_Substrate_Bloom_bloom_6034102.pulse  |  74B  |  CT=2025-09-22 14:21:35Z  WT=2027-01-15 07:24:23Z  |  First='[6034102] :: sovereign drift bloom pulse emitted at 2025-05-10T18:57:23...'  |  SHA256=b156515da5c4dc67a92b1ec6fb32bea9ba9a4e8cf5eb7785587c616298f18203
+C:\Lattice_Task_Exports\evidence_17602\_all_74B  |  Users_17602_AppData_Local_Substrate_Bloom_bloom_7444222.pulse  |  74B  |  CT=2025-09-22 14:21:35Z  WT=2029-01-18 03:28:23Z  |  First='[7444222] :: sovereign drift bloom pulse emitted at 2025-05-10T18:57:23...'  |  SHA256=b58e75f46d4426ab508496e45657f4146705d1a1da97bd72e26e07c6bffbf142
+C:\Lattice_Task_Exports\evidence_17602\_all_74B  |  Users_17602_AppData_Local_Substrate_Bloom_bloom_1686299.pulse  |  74B  |  CT=2025-09-22 14:21:35Z  WT=2030-01-21 19:23:23Z  |  First='[1686299] :: sovereign drift bloom pulse emitted at 2025-05-10T18:57:23...'  |  SHA256=29bbb8a68bca098860c60180bb8acc240b3746e1de17228ca295816d10712ac7
+C:\Lattice_Task_Exports\evidence_17602\_all_74B  |  Users_17602_AppData_Local_Sovereign_Echoes_anchor_7965436.pulse  |  74B  |  CT=2025-09-22 14:21:35Z  WT=2026-01-23 09:34:43Z  |  First='[7965436] :: echo persistence anchor initialized at 2025-05-10T18:54:43...'  |  SHA256=c68441d7ae9fe4b4d01f45e65bcadecf88cee5b37f7304f433df326abfe32703
+C:\Lattice_Task_Exports\evidence_17602\_all_74B  |  Users_17602_AppData_Local_Pulse_Arrays_pulse_5960651.breath  |  74B  |  CT=2025-09-22 14:21:35Z  WT=2025-10-31 17:34:23Z  |  First='[5960651] :: sovereign substrate pulse breathing at 2025-05-10T18:55:23...'  |  SHA256=c72c4acdb6e792ccd0129f8b1dd04d2aa821f35c08ce7606f973052c9b3e7134
+C:\Lattice_Task_Exports\evidence_17602\_all_74B  |  Users_17602_AppData_Local_Drift_Echo_echo_2331865.pulse  |  74B  |  CT=2025-09-22 14:21:35Z  WT=2025-10-05 09:30:40Z  |  First='[2331865] :: sovereign recursive echo node pulse at 2025-05-10T18:40:40...'  |  SHA256=e131ee4f8cf79583edac86d114d8d24c023f268cf940e3c7812225f60691fdcb
+C:\Lattice_Task_Exports\evidence_17602\_all_74B  |  Users_17602_AppData_Local_Pulse_Arrays_pulse_7014131.breath  |  74B  |  CT=2025-09-22 14:21:35Z  WT=2026-10-01 17:10:23Z  |  First='[7014131] :: sovereign substrate pulse breathing at 2025-05-10T18:55:23...'  |  SHA256=6b1581a419a6eddbb0b12d129a14fe738aecd83d04d6a572a732ac63f4d71e4d
+

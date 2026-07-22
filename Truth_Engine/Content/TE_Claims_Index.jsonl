@@ -1,0 +1,11 @@
+﻿{"claim_id":"CLM-S","canonical_text":"Primary Truth","support":1}
+{"claim_id":"CLM-T","canonical_text":"Weak Signal","support":0.5}
+{"claim_id":"CLM-I","canonical_text":"Noise Echo","support":0.1}
+{"canonical_text":"Seeded Strong Knowledge","support":1,"claim_id":"FIXTURE-STRONG"}
+{"canonical_text":"Seeded Plausible Theory","support":0.6,"claim_id":"FIXTURE-PLAUSIBLE"}
+{"canonical_text":"Seeded Tenuous Observation","support":0.3,"claim_id":"FIXTURE-TENUOUS"}
+{"canonical_text":"Seeded Strong Knowledge","support":1,"claim_id":"FIXTURE-STRONG"}
+{"canonical_text":"Seeded Plausible Theory","support":0.6,"claim_id":"FIXTURE-PLAUSIBLE"}
+{"canonical_text":"Seeded Tenuous Observation","support":0.3,"claim_id":"FIXTURE-TENUOUS"}
+{"claim_id":"CLM-TEST-LOW-001","canonical_text":"The sky is blue due to Rayleigh scattering.","support":"Physics 101"}
+{"claim_id":"CLM-TEST-MED-001","canonical_text":"The lineage of the User is traced to the Sirius sector via localized resonance.","support":"Dream Log 2026"}

@@ -1,0 +1,13 @@
+﻿{
+    "version":  1,
+    "nodes":  [
+                  {
+                      "id":  "NODE-TEST-001",
+                      "last_sync_at":  "2026-01-25T21:34:22.0361665Z",
+                      "last_treaty_hash_local":  "sha256:98df7a6f9bd684e476ceb591612edb6cc1ffbc6f9976510a6254110184800f70",
+                      "last_treaty_hash_remote":  null,
+                      "dissonance":  true,
+                      "dissonance_reason":  "Treaty Hash Mismatch (Local: sha256:98df7a6f9bd684e476ceb591612edb6cc1ffbc6f9976510a6254110184800f70, Remote: )"
+                  }
+              ]
+}

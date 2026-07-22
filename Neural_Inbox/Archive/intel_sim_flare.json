@@ -1,0 +1,19 @@
+{
+    "version":  1,
+    "request":  {
+                    "url":  "https://services.swpc.noaa.gov/text/discussion.txt"
+                },
+    "fetched_at":  "2026-01-15T23:51:57.9765954Z",
+    "items":  [
+                  {
+                      "summary":  "WARNING: X-Class Solar Flare in progress.",
+                      "tags":  [
+                                   "space_weather",
+                                   "flare"
+                               ],
+                      "id":  "SIM-FLARE-001"
+                  }
+              ],
+    "endpoint_id":  "space_weather_noaa",
+    "anchor_id":  "1569"
+}

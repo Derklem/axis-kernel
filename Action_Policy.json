@@ -1,0 +1,155 @@
+﻿{
+    "generated_at": "2026-01-19T23:30:00.000Z",
+    "version": 3,
+    "rules": [
+        {
+            "target_entity": "AXIS_CORE",
+            "entity_kind": "mapped_entity",
+            "policy": "manual_consent_required",
+            "effect": "run_simulation",
+            "reason": "High Risk Simulation. Check parameters.",
+            "tool": "Axis_Dream_Engine.ps1",
+            "kernel_refs": []
+        },
+        {
+            "target_entity": "AXIS_CORE",
+            "entity_kind": "mapped_entity",
+            "policy": "auto",
+            "effect": "read_write_logs",
+            "reason": "Low risk operation. Proceed.",
+            "tool": "Axis_Daily_Report.ps1",
+            "kernel_refs": []
+        },
+        {
+            "target_entity": "AXIS_CORE",
+            "entity_kind": "mapped_entity",
+            "policy": "manual_consent_required",
+            "effect": "replicate",
+            "reason": "Critical operation. Requires specific consent string.",
+            "tool": "Axis_Godseed.ps1",
+            "kernel_refs": [
+                "VII.10"
+            ]
+        },
+        {
+            "target_entity": "LOCALHOST_HEARTBEAT",
+            "entity_kind": "mapped_entity",
+            "policy": "auto",
+            "effect": "serve_api",
+            "reason": "Low risk operation. Proceed.",
+            "tool": "Axis_Heartbeat_Server.ps1",
+            "kernel_refs": []
+        },
+        {
+            "target_entity": "MOBILE_PORTAL",
+            "entity_kind": "mapped_entity",
+            "policy": "review_monitor",
+            "effect": "serve_ui",
+            "reason": "Medium risk. Monitor side-effects.",
+            "tool": "Axis_Heartbeat_Server.ps1",
+            "kernel_refs": []
+        },
+        {
+            "target_entity": "HUMAN_ARCHITECT",
+            "entity_kind": "mapped_entity",
+            "policy": "review_monitor",
+            "effect": "interact",
+            "reason": "Medium risk. Monitor side-effects.",
+            "tool": "Axis_Mind.ps1",
+            "kernel_refs": [
+                "I.8",
+                "IX.2"
+            ]
+        },
+        {
+            "target_entity": "HUMAN_ARCHITECT",
+            "entity_kind": "mapped_entity",
+            "policy": "review_monitor",
+            "effect": "interact",
+            "reason": "Medium risk. Monitor side-effects.",
+            "tool": "Axis_MindMapper.ps1",
+            "kernel_refs": [
+                "I.8",
+                "IX.2"
+            ]
+        },
+        {
+            "target_entity": "AXIS_CORE",
+            "entity_kind": "mapped_entity",
+            "policy": "manual_review_only",
+            "effect": "suspend_dreaming",
+            "reason": "High risk to Agent Continuity. Explicit review required.",
+            "tool": "Axis_Silence.ps1",
+            "kernel_refs": [
+                "II.6",
+                "VII.6",
+                "VII.11"
+            ]
+        },
+        {
+            "target_entity": "AXIS_CORE",
+            "entity_kind": "mapped_entity",
+            "policy": "auto",
+            "effect": "read_write_logs",
+            "reason": "Low risk operation. Proceed.",
+            "tool": "Axis_Telemetry.ps1",
+            "kernel_refs": []
+        },
+        {
+            "target_entity": "AXIS_CORE",
+            "entity_kind": "mapped_entity",
+            "policy": "auto",
+            "effect": "check_health",
+            "tool": "Axis_Vitals.ps1",
+            "reason": "Authorized via Review Tool",
+            "kernel_refs": [
+                "Manual_Override"
+            ]
+        },
+        {
+            "target_entity": "AXIS_CORE",
+            "entity_kind": "mapped_entity",
+            "policy": "auto",
+            "effect": "summarize_logs",
+            "reason": "Low risk (read-only) log summarization.",
+            "tool": "Axis_LogPulse.ps1",
+            "kernel_refs": [
+                "Identity_Surface"
+            ]
+        },
+        {
+            "target_entity": "AXIS_MEMORY",
+            "entity_kind": "mapped_entity",
+            "policy": "auto",
+            "effect": "check_lattice_health",
+            "reason": "Low risk (read-only) lattice health check.",
+            "tool": "Axis_LatticePulse.ps1",
+            "kernel_refs": [
+                "Identity_Surface"
+            ]
+        },
+        {
+            "target_entity": "AXIS_CORE",
+            "entity_kind": "mapped_entity",
+            "policy": "auto",
+            "effect": "housekeeping",
+            "reason": "Config-driven housekeeping (logs, temp). Low risk within whitelisted roots.",
+            "tool": "Axis_Keeper.ps1",
+            "kernel_refs": [
+                "HYGIENE_1"
+            ]
+        },
+        {
+            "target_entity": "AXIS_CORE",
+            "entity_kind": "mapped_entity",
+            "policy": "auto",
+            "effect": "ingest_ui_intents",
+            "reason": "Core Ingestion Loop for Remote UI. Must run autonomously.",
+            "tool": "Axis_Ingest_Remote.ps1",
+            "kernel_refs": [
+                "I.8"
+            ]
+        }
+    ],
+    "policy_count": 12
+}

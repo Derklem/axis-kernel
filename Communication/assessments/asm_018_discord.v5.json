@@ -1,0 +1,26 @@
+{
+  "assessment_id": "asm_018_discord_v5",
+  "experiment_id": "EXP_018_DISCORD",
+  "supersedes": "assessments/asm_018_discord.v4.json",
+  "revision_reason": "Calibrated empirical verdict and governance implication to strictly match the evidence, removing assumptions about technical authority or diagnosis correctness.",
+  "assessed_at": "2026-07-14T21:26:00Z",
+  "based_on": [
+    "observations/obs_018_late_reply.json",
+    "observations/obs_018_discord_resolution.json"
+  ],
+  "empirical_verdict": "This experiment demonstrates that at least one delayed, substantive technical interaction emerged from the Discord deployment and that the recipient positively received the follow-up guidance.",
+  "governance_implication": "On asynchronous communities, an experiment may continue producing relevant observations well after the initial posting. Premature closure can miss important outcomes.",
+  "confidence": {
+    "empirical_verdict": {
+      "value": 0.99,
+      "basis": "Direct screenshots of the technical inquiry and the user's positive resolution ('That helps a lot thankyou')",
+      "calibration_status": "CALIBRATED_TO_EVIDENCE"
+    },
+    "governance_implication": {
+      "value": 0.95,
+      "basis": "Direct demonstration of a successful interaction emerging two days after the initial assessment.",
+      "calibration_status": "CALIBRATED_TO_EVIDENCE"
+    }
+  },
+  "status": "CURRENT"
+}

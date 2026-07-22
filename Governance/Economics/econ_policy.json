@@ -1,0 +1,28 @@
+{
+    "currency": "ICU",
+    "daily_budget": 250,
+    "weights": {
+        "FAST": 1.0,
+        "DEEP-LITE": 3.0,
+        "DEEP": 8.0
+    },
+    "actions": {
+        "RotationContinuity": 5,
+        "PolicyChain": 8,
+        "TemporalChain": 8,
+        "ExternalAnchors": 12,
+        "HistoricalReplay": 25,
+        "WarmStorageIntegrity": 18,
+        "Compaction": 40,
+        "ProvenanceQuery": 15,
+        "ProvenanceGraph": 20,
+        "ClaimGraph": 30,
+        "CoinFlow": 40,
+        "GraphExpand": 2
+    },
+    "throttle": {
+        "warn_at_pct": 0.75,
+        "soft_cap_at_pct": 1.0,
+        "hard_cap_at_pct": 1.25
+    }
+}

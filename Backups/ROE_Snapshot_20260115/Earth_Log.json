@@ -1,0 +1,13 @@
+﻿{
+    "version":  1,
+    "history":  [
+                    {
+                        "id":  "EARTH-20260112-173423-List-Directory",
+                        "timestamp":  "2026-01-12T17:34:23Z",
+                        "request_id":  "REQ-20260112-145042-List-Directory",
+                        "result_summary":  "Error",
+                        "tool":  "List-Directory",
+                        "status":  "failed"
+                    }
+                ]
+}

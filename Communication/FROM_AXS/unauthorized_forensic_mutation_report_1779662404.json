@@ -1,0 +1,51 @@
+{
+    "timestamp": "2026-05-24T22:40:04.269578Z",
+    "file_hashes_current": {
+        "strategy_engine.py": "63eefad4488846f1cdd8fbd26dc090b2fecc327f8190d23fa023b8fa05f8f3fd",
+        "multi_objective_solver.py": "3bfecc4fe39e6bb07d861dd625d78c7d93a31173bfc77a5008bf10b8351269d9",
+        "axis_crypto_helpers.py": "3dea4f94d2675f06a957845054a089f33c19096d222ba2817b61613eacad8df5",
+        "ecosystem_mapping_engine.py": "243944c7a4f142ac55634c31929e9c35a6f88cc582908fe8eca32b4d9019dc1e",
+        "replay_witness_chain.py": "c68d3fea8a6c17097e992c5e93fd6ab69a80a54f0d7c3841c84d393b951ada90"
+    },
+    "calibration_ledger_integrity": {
+        "status": null,
+        "continuity_status": null,
+        "break_reason": null,
+        "witness_chain_head": "b84a6466da0ce52890f49737a0cfabf462770d42a04ea1850ad43f7c414634c6",
+        "last_verified_cycle": null,
+        "baseline_model_hash": "6025574b516a10f14dbce497837403b35caae89a31d8723402b7481683808b01"
+    },
+    "core_integrity_failure_latch": {
+        "mismatches": [
+            "strategy_engine"
+        ],
+        "witnessed": true
+    },
+    "current_witness_tail_record": {
+        "ts_utc": "2026-05-24T21:30:04.635754+00:00",
+        "cycle": 534,
+        "event_type": "cycle_verdict",
+        "layer": "strategy_engine",
+        "authority_state": "unauthorized_forensic_mutation",
+        "reason": "cycle_frozen",
+        "ancestry": {
+            "archival_hash": "none",
+            "continuity_cycle": 534
+        },
+        "prev_witness_hash": "10cdcec32bdb3ac0f685f25a28df9dc4dfb60e1a908f8767e6ab1f625490a76a",
+        "input_hash": "f93a61e4d86c77dcab3bb9eb70bd30cdea474772d2c7dbf3972be53beb36315d",
+        "data": {
+            "frozen": true,
+            "recovery_authorized": false,
+            "rotation_authorized": false,
+            "proposal_phase_complete": true,
+            "causal_links": [],
+            "final_calibration_hash": "a431f519cff6906e4b6a1a459f3a946be1470ae7b807fcd10791bad77c36d803",
+            "anchor_hash": "eccf245147284b7dba86f8cf78787b5bab1f183c998ee0cfe6b1a4e3c37f1f8b",
+            "cycle_start_witness_hash": "d8052d1abf0baaeeff4727872e352271747be03e884b56b56c6cbee5d39003a5"
+        },
+        "witness_hash": "b84a6466da0ce52890f49737a0cfabf462770d42a04ea1850ad43f7c414634c6"
+    },
+    "recent_target_events_last_50": [],
+    "file_changed_without_artifact_bundle": true
+}

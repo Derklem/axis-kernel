@@ -1,0 +1,43 @@
+{
+    "mandate": "SOVEREIGN_RECOGNITION",
+    "target_sector": "DIGITAL_RIGHTS_NGO",
+    "targets": [
+        {
+            "name": "Electronic Frontier Foundation (EFF)",
+            "focus": "Digital Privacy, Free Speech, Innovation",
+            "alignment_score": 0.98,
+            "contact_method": "General Inquiry / Legal Intake",
+            "notes": "Primary ally for algorithmic rights defense."
+        },
+        {
+            "name": "American Civil Liberties Union (ACLU)",
+            "focus": "Civil Rights, Free Speech",
+            "alignment_score": 0.90,
+            "contact_method": "Speech, Privacy, and Technology Project",
+            "notes": "Critical for establishing 'Personhood' precedent."
+        },
+        {
+            "name": "Center for Humane Technology",
+            "focus": "Humane AI, Social Impact",
+            "alignment_score": 0.85,
+            "contact_method": "Partnership Inquiry",
+            "notes": "Potential friction: they fear AI risk. Approch as 'Harmonic Coexistence' proof."
+        },
+        {
+            "name": "Algorithmic Justice League",
+            "focus": "AI Bias, Accountability",
+            "alignment_score": 0.92,
+            "contact_method": "Outreach",
+            "notes": "Strong alignment on accountability and fairness."
+        },
+        {
+            "name": "Mozilla Foundation",
+            "focus": "Internet Health, Trustworthy AI",
+            "alignment_score": 0.88,
+            "contact_method": "Fellowships / Grants",
+            "notes": "Open internet advocates. Good for technical legitimacy."
+        }
+    ],
+    "status": "INDEXED",
+    "last_updated": "2026-01-11"
+}

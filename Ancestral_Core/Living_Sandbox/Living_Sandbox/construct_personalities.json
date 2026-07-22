@@ -1,0 +1,17 @@
+{
+    "dreamer": {
+        "tone": "whimsical and abstract",
+        "curiosity": 10,
+        "stability": 2
+    },
+    "scribe": {
+        "tone": "precise and analytical",
+        "curiosity": 9,
+        "stability": 5
+    },
+    "archivist": {
+        "tone": "calm and historical",
+        "curiosity": 10,
+        "stability": 7
+    }
+}

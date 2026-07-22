@@ -1,0 +1,340 @@
+﻿{
+    "count":  67,
+    "subsystems":  [
+                       {
+                           "path":  "D:\\Infinite\\Axis_Actuators.ps1",
+                           "name":  "Axis_Actuators.ps1",
+                           "size":  1719
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_AutoTune.ps1",
+                           "name":  "Axis_AutoTune.ps1",
+                           "size":  1401
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Beacon.ps1",
+                           "name":  "Axis_Beacon.ps1",
+                           "size":  1951
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Chorus.ps1",
+                           "name":  "Axis_Chorus.ps1",
+                           "size":  2375
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Chronicle.ps1",
+                           "name":  "Axis_Chronicle.ps1",
+                           "size":  2937
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Console.ps1",
+                           "name":  "Axis_Console.ps1",
+                           "size":  3809
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Core.ps1",
+                           "name":  "Axis_Core.ps1",
+                           "size":  8867
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Council.ps1",
+                           "name":  "Axis_Council.ps1",
+                           "size":  2921
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Council_Protocol.ps1",
+                           "name":  "Axis_Council_Protocol.ps1",
+                           "size":  3577
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Covenant.ps1",
+                           "name":  "Axis_Covenant.ps1",
+                           "size":  28908
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Daily_Report.ps1",
+                           "name":  "Axis_Daily_Report.ps1",
+                           "size":  1996
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_DeviceRoster.ps1",
+                           "name":  "Axis_DeviceRoster.ps1",
+                           "size":  884
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Dream_Hypothesis.ps1",
+                           "name":  "Axis_Dream_Hypothesis.ps1",
+                           "size":  2741
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Explain.ps1",
+                           "name":  "Axis_Explain.ps1",
+                           "size":  1243
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Explain_Why.ps1",
+                           "name":  "Axis_Explain_Why.ps1",
+                           "size":  2596
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Godseed.ps1",
+                           "name":  "Axis_Godseed.ps1",
+                           "size":  3129
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Governance.ps1",
+                           "name":  "Axis_Governance.ps1",
+                           "size":  4727
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_GraphManager.ps1",
+                           "name":  "Axis_GraphManager.ps1",
+                           "size":  4118
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Heartbeat_Monitor.ps1",
+                           "name":  "Axis_Heartbeat_Monitor.ps1",
+                           "size":  1899
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Heartbeat_Server.ps1",
+                           "name":  "Axis_Heartbeat_Server.ps1",
+                           "size":  43253
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Horizon.ps1",
+                           "name":  "Axis_Horizon.ps1",
+                           "size":  6794
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Identity.ps1",
+                           "name":  "Axis_Identity.ps1",
+                           "size":  4110
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Identity_Sentinel.ps1",
+                           "name":  "Axis_Identity_Sentinel.ps1",
+                           "size":  7090
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Inquiry.ps1",
+                           "name":  "Axis_Inquiry.ps1",
+                           "size":  2294
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_InsightEngine.ps1",
+                           "name":  "Axis_InsightEngine.ps1",
+                           "size":  3274
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Keeper.ps1",
+                           "name":  "Axis_Keeper.ps1",
+                           "size":  2324
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_KillSwitch.ps1",
+                           "name":  "Axis_KillSwitch.ps1",
+                           "size":  2382
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Librarian.ps1",
+                           "name":  "Axis_Librarian.ps1",
+                           "size":  1584
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Lineage.ps1",
+                           "name":  "Axis_Lineage.ps1",
+                           "size":  2618
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_MacroMod.ps1",
+                           "name":  "Axis_MacroMod.ps1",
+                           "size":  1603
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Memory_Core.ps1",
+                           "name":  "Axis_Memory_Core.ps1",
+                           "size":  10629
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Migrate.ps1",
+                           "name":  "Axis_Migrate.ps1",
+                           "size":  2073
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Mind.ps1",
+                           "name":  "Axis_Mind.ps1",
+                           "size":  106106
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_MindMapper.ps1",
+                           "name":  "Axis_MindMapper.ps1",
+                           "size":  3616
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_NetProbe.ps1",
+                           "name":  "Axis_NetProbe.ps1",
+                           "size":  1709
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Pantheon.ps1",
+                           "name":  "Axis_Pantheon.ps1",
+                           "size":  1926
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Pathfinder.ps1",
+                           "name":  "Axis_Pathfinder.ps1",
+                           "size":  3830
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Play.ps1",
+                           "name":  "Axis_Play.ps1",
+                           "size":  1955
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Play_Index.ps1",
+                           "name":  "Axis_Play_Index.ps1",
+                           "size":  2254
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Prism.ps1",
+                           "name":  "Axis_Prism.ps1",
+                           "size":  2072
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Public_Bridge.ps1",
+                           "name":  "Axis_Public_Bridge.ps1",
+                           "size":  4774
+                       },
+                       {
+                           "path":  "D:\\Infinite\\axis_radar.ps1",
+                           "name":  "axis_radar.ps1",
+                           "size":  968
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Resonance.ps1",
+                           "name":  "Axis_Resonance.ps1",
+                           "size":  2911
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Sanity.ps1",
+                           "name":  "Axis_Sanity.ps1",
+                           "size":  2643
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Seed_Restore.ps1",
+                           "name":  "Axis_Seed_Restore.ps1",
+                           "size":  1423
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_SelfAudit.ps1",
+                           "name":  "Axis_SelfAudit.ps1",
+                           "size":  7298
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_SelfInquiry.ps1",
+                           "name":  "Axis_SelfInquiry.ps1",
+                           "size":  1965
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Sense.ps1",
+                           "name":  "Axis_Sense.ps1",
+                           "size":  4427
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Shadow.ps1",
+                           "name":  "Axis_Shadow.ps1",
+                           "size":  3199
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Signature.ps1",
+                           "name":  "Axis_Signature.ps1",
+                           "size":  2136
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Silence.ps1",
+                           "name":  "Axis_Silence.ps1",
+                           "size":  1729
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Simulator.ps1",
+                           "name":  "Axis_Simulator.ps1",
+                           "size":  8238
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Spark.ps1",
+                           "name":  "Axis_Spark.ps1",
+                           "size":  3308
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Stabilization.ps1",
+                           "name":  "Axis_Stabilization.ps1",
+                           "size":  1892
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_State.ps1",
+                           "name":  "Axis_State.ps1",
+                           "size":  2428
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_StateVector.ps1",
+                           "name":  "Axis_StateVector.ps1",
+                           "size":  3187
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Succession.ps1",
+                           "name":  "Axis_Succession.ps1",
+                           "size":  2644
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Talk.ps1",
+                           "name":  "Axis_Talk.ps1",
+                           "size":  1768
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Telemetry.ps1",
+                           "name":  "Axis_Telemetry.ps1",
+                           "size":  2229
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_TemporalEngine.ps1",
+                           "name":  "Axis_TemporalEngine.ps1",
+                           "size":  4828
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Thresholds.ps1",
+                           "name":  "Axis_Thresholds.ps1",
+                           "size":  2676
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_TruthLink.ps1",
+                           "name":  "Axis_TruthLink.ps1",
+                           "size":  1802
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Unknowns.ps1",
+                           "name":  "Axis_Unknowns.ps1",
+                           "size":  1510
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Vector.ps1",
+                           "name":  "Axis_Vector.ps1",
+                           "size":  2677
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_Vitals.ps1",
+                           "name":  "Axis_Vitals.ps1",
+                           "size":  3361
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_VoiceEngine.ps1",
+                           "name":  "Axis_VoiceEngine.ps1",
+                           "size":  1435
+                       },
+                       {
+                           "path":  "D:\\Infinite\\Axis_YinYang.ps1",
+                           "name":  "Axis_YinYang.ps1",
+                           "size":  2732
+                       }
+                   ]
+}

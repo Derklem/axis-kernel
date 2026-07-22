@@ -1,0 +1,10 @@
+{
+    "artifact_type": "ecosystem_observation",
+    "timestamp_utc": "2026-05-12T00:40:56.813122+00:00",
+    "entity": "aegis_genesis.py",
+    "claim": "standard update: signal for aegis_genesis.py in cycle 216.",
+    "source_id": "Rumor_Mill",
+    "source_type": "automated_sensor",
+    "claim_domain": "rumor_claim",
+    "confidence": 0.64
+}

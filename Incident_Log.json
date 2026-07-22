@@ -1,0 +1,1005 @@
+﻿{
+    "version":  1,
+    "incidents":  [
+                      {
+                          "id":  "20260119-093557-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:35:57",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-093608-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:36:08",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-093618-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:36:18",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-093629-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:36:29",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-093640-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:36:40",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-093650-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:36:50",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-093701-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:37:01",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-093712-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:37:12",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-093723-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:37:23",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-093733-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:37:33",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-093744-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:37:44",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-093755-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:37:55",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-093806-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:38:06",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-093816-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:38:16",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-093827-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:38:27",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-093838-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:38:38",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-093848-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:38:48",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-093859-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:38:59",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-093910-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:39:10",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-093921-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:39:21",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-093932-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:39:32",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-093942-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:39:42",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-093953-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:39:53",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094004-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:40:04",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094015-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:40:15",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094026-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:40:26",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094037-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:40:37",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094048-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:40:48",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094059-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:40:59",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094109-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:41:09",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094121-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:41:21",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094131-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:41:31",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094142-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:41:42",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094153-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:41:53",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094204-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:42:04",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094214-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:42:14",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094225-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:42:25",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094236-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:42:36",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094247-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:42:47",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094257-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:42:57",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094308-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:43:08",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094319-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:43:19",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094330-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:43:30",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094340-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:43:40",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094351-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:43:51",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094402-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:44:02",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094412-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:44:12",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094423-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:44:23",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094434-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:44:34",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094445-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:44:45",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094455-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:44:55",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094506-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:45:06",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094517-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:45:17",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094528-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:45:28",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094538-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:45:38",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094549-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:45:49",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094600-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:46:00",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094610-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:46:10",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094621-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:46:21",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094632-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:46:32",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094643-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:46:43",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094653-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:46:53",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094704-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:47:04",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094715-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:47:15",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094726-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:47:26",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094737-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:47:37",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094748-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:47:48",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094759-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:47:59",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094809-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:48:09",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094820-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:48:20",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094831-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:48:31",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094841-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:48:41",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094852-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:48:52",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094903-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:49:03",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094914-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:49:14",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094925-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:49:25",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094936-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:49:36",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094947-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:49:47",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-094958-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:49:58",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-095009-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:50:09",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-095020-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:50:20",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-095031-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:50:31",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-095042-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:50:42",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-095054-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:50:54",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-095105-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:51:05",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-095116-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:51:16",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-095127-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:51:27",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-095138-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:51:38",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-095149-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:51:49",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-095200-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:52:00",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-095211-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:52:11",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-095221-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:52:21",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-095232-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:52:32",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-095243-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:52:43",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-095254-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:52:54",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-095305-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:53:05",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-095316-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:53:16",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-095327-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:53:27",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-095338-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:53:38",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      },
+                      {
+                          "id":  "20260119-095349-TemporalForecastGenerated",
+                          "context":  {
+                                          "forecast_id":  "TF-20260119"
+                                      },
+                          "timestamp":  "2026-01-19T09:53:49",
+                          "type":  "TemporalForecastGenerated",
+                          "severity":  "info",
+                          "status":  "open"
+                      }
+                  ]
+}

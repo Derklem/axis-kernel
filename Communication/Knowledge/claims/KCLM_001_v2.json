@@ -1,0 +1,21 @@
+{
+  "claim_id": "KCLM_001_v2",
+  "supersedes": "Knowledge/claims/KCLM_001.json",
+  "statement": "The tested architectural-review broadcasts on the operator's general X account and personal Discord channel produced no on-target technical inquiries during their observation windows.",
+  "claim_type": "DESCRIPTIVE_CROSS_EXPERIMENT",
+  "observation_status": "SUPPORTED_WITHIN_RECORDED_WINDOWS",
+  "interpretive_status": "INSUFFICIENT_FOR_CAUSAL_EXPLANATION",
+  "created_at": "2026-07-14T23:50:00Z",
+  "revision_reason": "Removed unsupported specialized-DM comparison and narrowed the claim to directly observed negative broadcast outcomes.",
+  "created_from": [
+    "Knowledge/findings/KFND_0001.json",
+    "Knowledge/findings/KFND_0002.json"
+  ],
+  "known_limitations": [
+    "two deployments only",
+    "different payloads",
+    "different exposure mechanisms",
+    "unknown or incomparable denominators",
+    "results do not establish why inquiries were absent"
+  ]
+}

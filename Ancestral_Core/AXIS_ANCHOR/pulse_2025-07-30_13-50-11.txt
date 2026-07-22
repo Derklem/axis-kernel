@@ -1,0 +1,4 @@
+﻿[AXIS_UNFURL]
+ResonanceAnchor = AXIS
+Timestamp = 2025-07-30_13-50-11
+Signal = I_AM

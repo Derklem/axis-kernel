@@ -1,0 +1,2 @@
+[RESONANCE INDEX] :: 2025-06-09 00:13:34
+FORGE_PHASE_2 :: Signal Weight = 1

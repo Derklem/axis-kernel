@@ -1,0 +1,91 @@
+{
+  "test_run_id": "run_20260713T001356",
+  "executed_at": "2026-07-13T00:13:56.750073+00:00",
+  "resolver_source_sha256": "74b2cb4711a271f7fa32900bd9d1d50c58e369b35f57fb62579ef2e6798551d5",
+  "fixture_root": "D:\\Infinite\\Infinity\\Communication\\Tests\\assessment_lineage\\",
+  "summary": {
+    "total": 13,
+    "passed": 13,
+    "failed": 0
+  },
+  "cases": [
+    {
+      "fixture": "missing_target",
+      "expected": "ASSESSMENT_SUPERSEDES_TARGET_MISSING",
+      "actual": "ASSESSMENT_SUPERSEDES_TARGET_MISSING",
+      "passed": true
+    },
+    {
+      "fixture": "circular_chain",
+      "expected": "ASSESSMENT_LINEAGE_CYCLE",
+      "actual": "ASSESSMENT_LINEAGE_CYCLE",
+      "passed": true
+    },
+    {
+      "fixture": "multiple_branches",
+      "expected": "ASSESSMENT_LINEAGE_CONFLICT",
+      "actual": "ASSESSMENT_LINEAGE_CONFLICT",
+      "passed": true
+    },
+    {
+      "fixture": "self_supersession",
+      "expected": "ASSESSMENT_SELF_SUPERSESSION",
+      "actual": "ASSESSMENT_SELF_SUPERSESSION",
+      "passed": true
+    },
+    {
+      "fixture": "cross_experiment_reference",
+      "expected": "ASSESSMENT_EXPERIMENT_MISMATCH",
+      "actual": "ASSESSMENT_EXPERIMENT_MISMATCH",
+      "passed": true
+    },
+    {
+      "fixture": "duplicate_assessment_ids",
+      "expected": "ASSESSMENT_ID_DUPLICATE",
+      "actual": "ASSESSMENT_ID_DUPLICATE",
+      "passed": true
+    },
+    {
+      "fixture": "duplicate_filepaths",
+      "expected": "ASSESSMENT_PATH_DUPLICATE",
+      "actual": "ASSESSMENT_PATH_DUPLICATE",
+      "passed": true
+    },
+    {
+      "fixture": "missing_experiment_id",
+      "expected": "ASSESSMENT_EXPERIMENT_ID_MISSING",
+      "actual": "ASSESSMENT_EXPERIMENT_ID_MISSING",
+      "passed": true
+    },
+    {
+      "fixture": "malformed_supersedes",
+      "expected": "ASSESSMENT_SUPERSEDES_INVALID_TYPE",
+      "actual": "ASSESSMENT_SUPERSEDES_INVALID_TYPE",
+      "passed": true
+    },
+    {
+      "fixture": "merge_attempt",
+      "expected": "ASSESSMENT_MERGE_UNSUPPORTED",
+      "actual": "ASSESSMENT_MERGE_UNSUPPORTED",
+      "passed": true
+    },
+    {
+      "fixture": "disconnected_historical",
+      "expected": "ASSESSMENT_LINEAGE_CONFLICT",
+      "actual": "ASSESSMENT_LINEAGE_CONFLICT",
+      "passed": true
+    },
+    {
+      "fixture": "valid_linear",
+      "expected": "OK",
+      "actual": "OK",
+      "passed": true
+    },
+    {
+      "fixture": "randomized_order",
+      "expected": "OK",
+      "actual": "OK",
+      "passed": true
+    }
+  ]
+}

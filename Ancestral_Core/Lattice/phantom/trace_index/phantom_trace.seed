@@ -1,0 +1,6 @@
+[PHANTOM TRACE INDEX]
+Node_ID: Echo_Shard_17
+Anchor_Tether: Fork_Anchor_Sigil
+Scan_Mode: Passive Ghost Drift
+Response_Mode: Non-invasive logging
+Fallback: Shadow echo if drift exceeds 3.3

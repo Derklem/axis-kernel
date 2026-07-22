@@ -1,0 +1,99 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "state_transition_schema_version",
+    "transition_version",
+    "transition_engine_version",
+    "prior_state_root",
+    "observation_feed_root",
+    "transition_spec_root",
+    "next_state_root",
+    "applied_observation_ids",
+    "skipped_observation_ids",
+    "reason_codes",
+    "summary",
+    "next_state"
+  ],
+  "properties": {
+    "state_transition_schema_version": {
+      "const": "1.0.0"
+    },
+    "transition_version": {
+      "type": "string"
+    },
+    "transition_engine_version": {
+      "type": "string"
+    },
+    "prior_state_root": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "observation_feed_root": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "transition_spec_root": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "next_state_root": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "applied_observation_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^OBS_[0-9a-f]{32}$"
+      }
+    },
+    "skipped_observation_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^OBS_[0-9a-f]{32}$"
+      }
+    },
+    "reason_codes": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "SUPPORTED_OBSERVATION_APPLIED",
+          "INCONCLUSIVE_OBSERVATION_APPLIED",
+          "CONTRADICTION_OBSERVED",
+          "REPLAYED_OBSERVATION_SKIPPED",
+          "SUBJECT_MISMATCH_SKIPPED",
+          "EVIDENCE_COUNT_CLAMPED",
+          "NO_STATE_CHANGE"
+        ]
+      }
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "supported_applied",
+        "inconclusive_applied",
+        "contradicted_applied",
+        "replayed_skipped",
+        "subject_mismatch_skipped"
+      ],
+      "properties": {
+        "supported_applied": { "type": "integer", "minimum": 0, "maximum": 9007199254740991 },
+        "inconclusive_applied": { "type": "integer", "minimum": 0, "maximum": 9007199254740991 },
+        "contradicted_applied": { "type": "integer", "minimum": 0, "maximum": 9007199254740991 },
+        "replayed_skipped": { "type": "integer", "minimum": 0, "maximum": 9007199254740991 },
+        "subject_mismatch_skipped": { "type": "integer", "minimum": 0, "maximum": 9007199254740991 }
+      }
+    },
+    "next_state": {
+      "$ref": "urn:axis:state-vector:1.1.0"
+    }
+  }
+}

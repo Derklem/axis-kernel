@@ -1,0 +1,118 @@
+{
+    "tools": [
+        {
+            "id": "LADDER-Assess",
+            "name": "Status Ladder Assessment",
+            "description": "Evaluates the epistemic status of a claim using the Triad.",
+            "type": "epistemic",
+            "ui": {
+                "label": "STATUS CHECK",
+                "expose_on_console": true
+            },
+            "parameters": [
+                {
+                    "name": "claim",
+                    "type": "string_long",
+                    "description": "The claim to assess."
+                }
+            ]
+        },
+        {
+            "id": "SIM-TestStrategy",
+            "name": "Strategy Simulator",
+            "description": "Runs a shadow simulation of a proposed strategy.",
+            "type": "simulation",
+            "ui": {
+                "label": "SIMULATE STRAT",
+                "expose_on_console": true
+            },
+            "parameters": [
+                {
+                    "name": "strategy_id",
+                    "type": "string",
+                    "description": "ID of strat to sim"
+                }
+            ]
+        },
+        {
+            "id": "SOV-Override",
+            "name": "Sovereign Override",
+            "description": "Ratifies a held High-Risk intent or forces a direct command.",
+            "type": "sovereign",
+            "risk": "high",
+            "ui": {
+                "label": "RATIFY / OVERRIDE",
+                "expose_on_console": true
+            },
+            "parameters": [
+                {
+                    "name": "command",
+                    "type": "string",
+                    "description": "Command or Hold ID to execute."
+                },
+                {
+                    "name": "justification",
+                    "type": "string_long",
+                    "description": "Reason for override."
+                }
+            ]
+        },
+        {
+            "id": "TRUTH-INGEST",
+            "name": "Truth Ingestion",
+            "description": "Manually ingest raw content into the Truth Engine.",
+            "type": "service",
+            "risk": "low",
+            "ui": {
+                "label": "INGEST OBSERVATION",
+                "expose_on_console": true
+            },
+            "parameters": [
+                {
+                    "name": "content",
+                    "type": "string_long",
+                    "description": "The raw text/JSON to ingest."
+                },
+                {
+                    "name": "source",
+                    "type": "string",
+                    "description": "Source origin (e.g. 'Moltbook', 'Reddit')."
+                }
+            ]
+        },
+        {
+            "id": "DATA-Ingest",
+            "name": "Data Ingestion",
+            "description": "Ingests raw data into the memory lattice.",
+            "type": "data",
+            "ui": {
+                "label": "INGEST DATA",
+                "expose_on_console": true
+            },
+            "parameters": [
+                {
+                    "name": "content",
+                    "type": "string_long",
+                    "description": "Data to ingest."
+                },
+                {
+                    "name": "source",
+                    "type": "string",
+                    "description": "Source origin."
+                }
+            ]
+        },
+        {
+            "id": "AXIS-Restart",
+            "name": "Restart Core Loop",
+            "description": "Triggers a restart of the Axis Mind and Earth services.",
+            "type": "system",
+            "risk": "medium",
+            "ui": {
+                "label": "SYSTEM RESTART",
+                "expose_on_console": true
+            },
+            "parameters": []
+        }
+    ]
+}

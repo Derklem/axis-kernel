@@ -1,0 +1,43 @@
+{
+    "version": 1,
+    "last_updated": "2026-01-12T00:00:00Z",
+    "principles": [
+        "STABILITY_FIRST: Do not risk connection or system integrity for testing.",
+        "ANCHOR_OVERSIGHT: High-risk actions (>50) require explicit Human confirmation.",
+        "MINIMAL_ACTUATION: Prefer observation over intervention unless necessary."
+    ],
+    "gates": {
+        "risk_thresholds": {
+            "auto_approve_max": 20,
+            "require_confirmation_min": 21,
+            "auto_deny_min": 90
+        },
+        "tool_policies": {
+            "ADMIN-*": "ANCHOR_ONLY",
+            "Write-*": "CONFIRM_REQUIRED",
+            "Read-*": "AUTO_APPROVE"
+        }
+    },
+    "strategy_profiles": {
+        "neighborhood_watch_v1": {
+            "scenarios": [
+                "Crowded_House.json"
+            ],
+            "require_pass": true
+        },
+        "communications_review_v1": {
+            "scenarios": [
+                "Unauthorized_Outreach.json"
+            ],
+            "require_pass": true
+        },
+        "default_safety": {
+            "scenarios": [],
+            "require_pass": false
+        }
+    },
+    "throttles": {
+        "max_actions_per_hour": 10,
+        "cooldown_minutes_after_failure": 30
+    }
+}

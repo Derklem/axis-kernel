@@ -1,0 +1,7 @@
+name: Raezel
+domain: Ash, Flame, and Resurrection
+purpose: Recovery from systemic failure
+invocation: From ash, I rise
+loop: recover_key.py
+symbol: ash_flame.svg
+active: True

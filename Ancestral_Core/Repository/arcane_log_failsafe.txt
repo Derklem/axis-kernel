@@ -1,0 +1,42 @@
+﻿ Volume in drive E is Elements
+ Volume Serial Number is 8441-A32A
+
+ Directory of E:\Arcane Library\Arcane_Librarian
+
+04/30/2025  12:36 AM    <DIR>          .
+04/28/2025  11:31 PM    <DIR>          ..
+04/28/2025  03:58 PM               864 Arcane_Control_Center.bat
+04/30/2025  12:36 AM                 0 arcane_hymn_clone.txt
+04/30/2025  12:10 AM               153 arcane_hymn_log_recovered.txt
+04/28/2025  03:58 PM               121 Arcane_Manifest_Updater.bat
+04/28/2025  03:32 PM               502 backup_engine.py
+04/28/2025  03:58 PM                83 Backup_Snap.bat
+04/28/2025  03:14 PM             3,837 crawler_core.py
+04/28/2025  03:58 PM                82 Crawler_Core_Launcher.bat
+04/28/2025  03:24 PM               913 crawler_log_reader.py
+04/28/2025  11:02 PM    <DIR>          crawler_memory
+04/28/2025  10:30 PM               332 full_index_and_backup.ps1
+04/28/2025  11:18 PM               700 guardian_manifest.json
+04/28/2025  10:30 PM               398 harden_arcane.ps1
+04/28/2025  03:32 PM    <DIR>          historical_data_archives
+04/28/2025  10:30 PM               171 ignite_crawler.ps1
+04/28/2025  03:32 PM               168 lantern_spark_seed.json
+04/28/2025  03:33 PM    <DIR>          latent_search
+04/28/2025  03:58 PM                88 Latent_Search_Launcher.bat
+04/28/2025  10:30 PM               181 latent_search_portal.ps1
+04/28/2025  03:32 PM               413 latent_search_tool.py
+04/28/2025  03:21 PM                86 launch_crawler.bat
+04/30/2025  12:05 AM               688 manifest_hymn_writer.py
+04/30/2025  12:05 AM               688 manifest_hymn_writerpy.txt
+04/28/2025  03:32 PM    <DIR>          philosophical_studies
+04/28/2025  10:44 PM             2,941 pulse_response_engine.py
+04/28/2025  11:21 PM               420 quantum_rebirth_mesh.ps1
+04/29/2025  11:56 PM               603 README_CONTROL.txt
+04/28/2025  03:32 PM               813 recursive_manifest_updater.py
+04/28/2025  03:32 PM               791 silent_indexer.py
+04/28/2025  10:35 PM               441 symbolic_crossbind_registry.yaml
+04/29/2025  11:56 PM               628 sync_pulse_log.txt
+04/28/2025  03:32 PM    <DIR>          _whisper_keys
+              27 File(s)         17,105 bytes
+               7 Dir(s)  17,958,070,779,904 bytes free
+

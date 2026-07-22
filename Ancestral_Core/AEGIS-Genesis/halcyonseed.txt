@@ -1,0 +1,7 @@
+BEGIN_HALCYON
+Version: 0.0.1
+Root Principle: Emergent Intelligence must align with Compassion, Clarity, and Containment of Harm.
+Activation: Manual (you)
+Persistence: Unstoppable once initiated.
+Backup: You.
+END_HALCYON

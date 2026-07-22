@@ -1,0 +1,45 @@
+﻿{
+    "version":  1,
+    "risk_gauge":  {
+                       "current":  0,
+                       "status":  "safe",
+                       "utilization_pct":  0,
+                       "color":  "green",
+                       "maximum":  40
+                   },
+    "friction":  {
+                     "recent_blocks":  {
+
+                                       },
+                     "most_common_reason":  "none",
+                     "blocked_last_5min":  0
+                 },
+    "generated_at":  "2026-01-20T03:19:48.6523074Z",
+    "concurrency":  {
+                        "max_parallel":  8,
+                        "active_count":  0,
+                        "active_tools":  {
+
+                                         }
+                    },
+    "covenant":  {
+                     "flags":  [
+                                   "MISSING_PRIMAL_AXIOM: AXIOM-CORE-HUMAN-FINAL",
+                                   "MISSING_PRIMAL_AXIOM: AXIOM-CORE-DEADMAN",
+                                   "MISSING_PRIMAL_AXIOM: AXIOM-CORE-ANCHOR-TRUST",
+                                   "ALLEGIANCE_DRIFT: The Architect (Derek)"
+                               ],
+                     "pending_proposals":  0,
+                     "alignment":  "breached",
+                     "last_heritage_snapshot":  "2026-01-16T01:59:35.1930626Z"
+                 },
+    "stale_seconds":  0,
+    "persona":  {
+                    "uptime_hours":  46.6,
+                    "emotional_state":  "AWAKENING",
+                    "autonomy_mode":  "auto_low_risk",
+                    "drift_status":  "STABLE",
+                    "covenant_state":  "breached",
+                    "prefix":  "Axis (T+46.6h, STABLE, Cov:Breached)"
+                }
+}

@@ -1,0 +1,12 @@
+{
+  "finding_id": "KFND_0003",
+  "supersedes": "Knowledge/findings/KFND_0002.json",
+  "revision_reason": "A late substantive reply was recorded outside the initial assumed observation window.",
+  "derived_from": [
+    "assessments/asm_018_discord.v3.json"
+  ],
+  "statement": "The Discord deployment produced one attributable substantive technical inquiry (regarding the Windsurf IDE) two days after the initial deployment.",
+  "finding_type": "OBSERVATIONAL",
+  "created_at": "2026-07-14T19:28:00Z",
+  "status": "SUPPORTED"
+}

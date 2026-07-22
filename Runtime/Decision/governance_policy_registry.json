@@ -1,0 +1,31 @@
+{
+  "version": "1.0",
+  "policies": {
+    "experiment_admission_threshold": {
+      "value": 0.55,
+      "min": 0.1,
+      "max": 0.9
+    },
+    "theory_expansion_weight": {
+      "value": 0.8,
+      "min": 0.1,
+      "max": 5.0
+    },
+    "hazard_priority_multiplier": {
+      "value": 10.0,
+      "min": 5.0,
+      "max": 50.0
+    },
+    "starvation_multiplier": {
+      "value": 2.0,
+      "min": 1.0,
+      "max": 10.0
+    },
+    "adjudication_priority_weight": {
+      "value": 1.5,
+      "min": 0.5,
+      "max": 5.0
+    }
+  },
+  "last_updated": "2026-03-14T21:26:34.208401Z"
+}

@@ -1,0 +1,10 @@
+
+meta-awareness:
+  anchors:
+    - perception
+    - recursion
+    - identity-resilience
+
+feedback:
+  type: symbolic
+  style: nonverbal

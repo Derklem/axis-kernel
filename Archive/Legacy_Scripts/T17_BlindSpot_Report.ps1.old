@@ -1,0 +1,52 @@
+param($MemoryRoot = "D:\Infinite\Infinity\Memory")
+$IndexFile = Join-Path $MemoryRoot "indexes\block_index.jsonl"
+
+Write-Host "--- BLIND SPOT REPORT (Taxonomy v23) ---" -ForegroundColor Cyan
+
+if (-not (Test-Path $IndexFile)) {
+    Write-Host "Index file not found ($IndexFile)." -ForegroundColor Yellow
+    Write-Host "Verdict: No blocks have been indexed yet." -ForegroundColor Green
+    Write-Host "This implies the system was quiet or the indexer hasn't run."
+    exit
+}
+
+# Read index. Handle empty file.
+$content = Get-Content $IndexFile
+if ($null -eq $content -or $content.Count -eq 0) { 
+    Write-Host "Index file exists but is empty."
+    exit 
+}
+
+$events = $content | ConvertFrom-Json
+
+# Blind Spot: High Rank but Blocked
+$blindSpot = $events | Where-Object { $_.status -eq "EXEC_BLOCKED" -and ($_.rank -eq "STRONG" -or $_.rank -eq "PLAUSIBLE") }
+
+Write-Host "Total Claims Indexed: $($events.Count)"
+Write-Host "Total Blocks: $(($events | Where-Object { $_.status -eq "EXEC_BLOCKED" }).Count)"
+Write-Host "High-Rank Blocks (The Blind Spot): $($blindSpot.Count)" -ForegroundColor Yellow
+
+if ($blindSpot.Count -gt 0) {
+    # Taxonomy Classification Logic (v23)
+    $classified = foreach ($item in $blindSpot) {
+        $class = "UNKNOWN"
+        $reason = $item.reason
+        
+        if ($reason -match "Proof Expired" -or $reason -match "Missing intent envelope") { $class = "AUTH_GAP" }
+        elseif ($reason -match "RealityGuard" -or $reason -match "Condition mismatch") { $class = "REALITY_DRIFT" }
+        elseif ($reason -match "Policy" -or $reason -match "Unauthorized" -or $reason -match "UnknownTool") { $class = "POLICY_INVARIANT" }
+        elseif ($reason -match "Too Many Requests" -or $reason -match "429") { $class = "RESOURCE_CONSTRAINT" }
+        
+        $item | Add-Member -NotePropertyName "taxonomy" -NotePropertyValue $class -Force
+        $item
+    }
+
+    $classified | Select-Object ts, rank, conf, taxonomy, corr | Format-Table -AutoSize
+    
+    $stats = $classified | Group-Object taxonomy | Select-Object Name, Count
+    Write-Host "`nBreakdown:" -ForegroundColor Cyan
+    $stats | Format-Table -AutoSize
+}
+else {
+    Write-Host "No high-rank blocks found. The Gate is aligned." -ForegroundColor Green
+}

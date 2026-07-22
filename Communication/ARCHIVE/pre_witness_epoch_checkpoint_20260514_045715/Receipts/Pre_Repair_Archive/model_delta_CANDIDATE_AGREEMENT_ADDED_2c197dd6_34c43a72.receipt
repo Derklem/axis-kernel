@@ -1,0 +1,16 @@
+{
+    "cycle_count": 19,
+    "mutation_type": "CANDIDATE_AGREEMENT_ADDED",
+    "target_id": "2c197dd6030ffe206a250af7cc05ef127707ac7f115251367d2711909e14d60f",
+    "parent_receipt_head": "39ceb246e7b46d4e10dc1e20872ab924ed269eb032e9df2f355e068c952741b1",
+    "data": {
+        "source_id": "Noise_Source_B_0",
+        "source_type": "ecological_observer",
+        "batch_id": "none",
+        "ts": "2026-05-12T19:47:13.079424+00:00"
+    },
+    "status": "committed",
+    "ts_utc": "2026-05-12T19:47:13.079424+00:00",
+    "receipt_id": "model_delta_CANDIDATE_AGREEMENT_ADDED_2c197dd6_34c43a72",
+    "causal_hash": "34c43a72889f21c6d0bbe22f72a0eef443d10981c4000b1ab8b8f579389382b0"
+}

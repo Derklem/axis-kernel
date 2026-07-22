@@ -1,0 +1,6 @@
+{
+  "assessment_id": "asm_v1",
+  "experiment_id": "EXP_TEST",
+  "_filepath": "self_supersession/asm.v1.json",
+  "supersedes": "self_supersession/asm.v1.json"
+}

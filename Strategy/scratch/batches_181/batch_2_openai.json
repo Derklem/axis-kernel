@@ -1,0 +1,34 @@
+[
+    {
+        "entity": "OpenAI",
+        "claim": "GPT-5 has achieved internal AGI milestones and is awaiting safety red-teaming.",
+        "source_type": "leak",
+        "source_id": "silicon_rumor_mill",
+        "confidence": 0.6,
+        "artifact_type": "ecosystem_observation"
+    },
+    {
+        "entity": "OpenAI",
+        "claim": "OpenAI is prioritizing product safety over rapid AGI deployment.",
+        "source_type": "official",
+        "source_id": "openai_safety_board",
+        "confidence": 0.9,
+        "artifact_type": "ecosystem_observation"
+    },
+    {
+        "entity": "OpenAI",
+        "claim": "The strawberry/o1 project is a reasoning-only step, not AGI.",
+        "source_type": "technical_report",
+        "source_id": "arxiv_pre_review",
+        "confidence": 0.8,
+        "artifact_type": "ecosystem_observation"
+    },
+    {
+        "entity": "OpenAI",
+        "claim": "Sam Altman plans to spend $7 trillion on global chip infrastructure.",
+        "source_type": "news",
+        "source_id": "wsj_tech",
+        "confidence": 0.85,
+        "artifact_type": "ecosystem_observation"
+    }
+]

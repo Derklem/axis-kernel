@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "competition_blocks": [
+    {
+      "dominant_theory": "THEORY_QUEUE_SATURATION",
+      "competitors": [
+        "ALT_THEORY_MEMORY_FRAGMENTATION"
+      ],
+      "shared_cluster_size": 6,
+      "monopoly_score": 0.55
+    },
+    {
+      "dominant_theory": "ALT_THEORY_MEMORY_FRAGMENTATION",
+      "competitors": [
+        "ALT_ALT_THEORY_MEMORY_FRAGMENTATION"
+      ],
+      "shared_cluster_size": 6,
+      "monopoly_score": 0.55
+    }
+  ],
+  "last_updated": "2026-03-14T17:48:31.057910Z"
+}

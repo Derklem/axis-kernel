@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "transition_requirements": {
+    "min_transition_observations": 3,
+    "max_transition_gap_minutes": 30,
+    "min_precursor_confidence": 0.65,
+    "min_forecast_confidence": 0.70
+  },
+  "learning_windows": {
+    "precursor_window_observations": 3,
+    "stabilization_window_observations": 2
+  },
+  "handoff_rules": {
+    "allow_preemptive_meta_theory_staging": true,
+    "allow_local_doctrine_degradation_flags": true,
+    "route_unknown_transition_to_gap_detection": true
+  },
+  "safety_constraints": {
+    "transition_model_is_advisory_only": true,
+    "cannot_change_active_doctrine_directly": true,
+    "cannot_promote_noncandidate_or_pioneer_models": true,
+    "cannot_mutate_canonical_registry": true,
+    "cannot_trigger_execution": true
+  },
+  "risk_thresholds": {
+    "high_risk_handoff_failure_rate": 0.40,
+    "max_allowed_precursor_ambiguity": 0.35
+  },
+  "last_updated": "2026-03-15T00:00:00Z"
+}

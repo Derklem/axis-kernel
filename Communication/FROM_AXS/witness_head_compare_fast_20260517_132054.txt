@@ -1,0 +1,27 @@
+=== FAST WITNESS HEAD COMPARISON ===
+Timestamp: 2026-05-17T13:20:54.016931
+Ledger cycle: 506
+Anchor cycle: 506
+Ledger head: eab3a9ef044b62a63f26486f3df23594ce5f272df0b782ace90ddca0c4d17e62
+Anchor head: eab3a9ef044b62a63f26486f3df23594ce5f272df0b782ace90ddca0c4d17e62
+Witness ledger lines: 37
+
+Last witness hash: eab3a9ef044b62a63f26486f3df23594ce5f272df0b782ace90ddca0c4d17e62
+Last event type: fatal_error
+Last cycle: 506
+
+Ledger head found count: 1
+Anchor head found count: 1
+
+--- Last 8 witness records ---
+cycle=506 event=trust_state_violation prev=11a4adc8c268050d hash=0d64aec9ae295ac1
+cycle=506 event=trust_state_violation prev=0d64aec9ae295ac1 hash=14de75ad63bd064d
+cycle=506 event=semantic_registry_audit prev=14de75ad63bd064d hash=e033494eadcee1f8
+cycle=506 event=solver_arbitration prev=e033494eadcee1f8 hash=8b07e49932f8836c
+cycle=506 event=calibration_update:ontological_health prev=8b07e49932f8836c hash=419bda1e30d082e1
+cycle=506 event=cycle_verdict prev=419bda1e30d082e1 hash=c2629436ebee5425
+cycle=506 event=CANDIDATE_QUARANTINED prev=c2629436ebee5425 hash=b4e51acfa493dbc1
+cycle=506 event=fatal_error prev=b4e51acfa493dbc1 hash=eab3a9ef044b62a6
+
+--- Recommendation ---
+SUCCESS: Ledger, anchor, and witness tail are synchronized. No repair needed.

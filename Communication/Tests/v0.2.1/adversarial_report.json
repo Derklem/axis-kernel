@@ -1,0 +1,60 @@
+[
+  {
+    "drill": "Clean fixture",
+    "expected_warnings": [
+      "**Integrity status:** OK"
+    ],
+    "passed": true
+  },
+  {
+    "drill": "Whole-file metadata tamper",
+    "expected_warnings": [
+      "HASH_MISMATCH"
+    ],
+    "passed": true
+  },
+  {
+    "drill": "Content tamper",
+    "expected_warnings": [
+      "HASH_MISMATCH",
+      "CONTENT_HASH_MISMATCH"
+    ],
+    "passed": true
+  },
+  {
+    "drill": "Wrong receipt content hash only",
+    "expected_warnings": [
+      "CONTENT_HASH_MISMATCH"
+    ],
+    "passed": true
+  },
+  {
+    "drill": "Archive without receipt",
+    "expected_warnings": [
+      "ORPHANED_ARCHIVE"
+    ],
+    "passed": true
+  },
+  {
+    "drill": "Multiple receipts",
+    "expected_warnings": [
+      ""
+    ],
+    "passed": true
+  },
+  {
+    "drill": "Invalid timestamp",
+    "expected_warnings": [
+      "Invalid timestamp in receipt, window calculation failed."
+    ],
+    "passed": true
+  },
+  {
+    "drill": "Quarantined receipt",
+    "expected_warnings": [
+      "PLATFORM_REFERENCE_MISMATCH",
+      "APPROVED_ARCHIVED_NOT_DEPLOYED"
+    ],
+    "passed": true
+  }
+]

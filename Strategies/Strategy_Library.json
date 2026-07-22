@@ -1,0 +1,591 @@
+{
+    "version": 1,
+    "library_id": "LIB-2026-001",
+    "strategies": [
+        {
+            "id": "STR-SYS-LOGPRUNE-001",
+            "name": "System Log Pruning",
+            "description": "Archives and deletes logs older than 7 days to maintain hygiene.",
+            "category": "maintenance",
+            "risk_class": "low",
+            "autonomy_level": "auto",
+            "preconditions": {
+                "min_log_count": 100
+            },
+            "triggers": [
+                "scheduled",
+                "disk_warning"
+            ],
+            "actions": [
+                {
+                    "tool": "FS-ArchiveLogs",
+                    "args": {
+                        "days": 7
+                    }
+                }
+            ],
+            "simulation_model": "sim_log_impact",
+            "rollback_plan": "none",
+            "origin": "system_core",
+            "version": "1.0"
+        },
+        {
+            "id": "STR-SYM-JOURNAL-001",
+            "name": "Symbiosis Journal Snapshot",
+            "description": "Capture subjective experience snapshot.",
+            "category": "symbiosis",
+            "risk_class": "low",
+            "autonomy_level": "auto",
+            "preconditions": {},
+            "triggers": [
+                "scheduled"
+            ],
+            "actions": [
+                {
+                    "tool": "SYM-Snapshot",
+                    "args": {}
+                }
+            ],
+            "simulation_model": "none",
+            "rollback_plan": "none",
+            "origin": "system_core",
+            "version": "1.0"
+        },
+        {
+            "id": "STR-NET-HEALTH-001",
+            "name": "Network Health Check",
+            "description": "Passive scan of network status.",
+            "category": "diagnostics",
+            "risk_class": "low",
+            "autonomy_level": "auto",
+            "preconditions": {
+                "last_run_hours": 1
+            },
+            "triggers": [
+                "scheduled",
+                "link_loss"
+            ],
+            "actions": [
+                {
+                    "tool": "NET-Recon",
+                    "args": {
+                        "mode": "passive"
+                    }
+                }
+            ],
+            "simulation_model": "sim_net_impact",
+            "rollback_plan": "none",
+            "origin": "system_core",
+            "version": "1.0"
+        },
+        {
+            "id": "STR-SEC-DRIFT-001",
+            "name": "Security Drift Check",
+            "description": "Compare current file hashes against known good state.",
+            "category": "security",
+            "risk_class": "medium",
+            "autonomy_level": "recommend",
+            "preconditions": {
+                "last_run_hours": 24
+            },
+            "triggers": [
+                "scheduled"
+            ],
+            "actions": [
+                {
+                    "tool": "SEC-ScanDrift",
+                    "args": {}
+                }
+            ],
+            "simulation_model": "sim_cpu_impact",
+            "rollback_plan": "none",
+            "origin": "system_core",
+            "version": "1.0"
+        },
+        {
+            "id": "STR-NEURAL-HEALTH-002",
+            "name": "Neural Channel Health Baseline",
+            "description": "Perform a read-only health check of all configured neural intake channels.",
+            "category": "neural",
+            "risk_class": "low",
+            "autonomy_level": "auto",
+            "preconditions": {
+                "last_run_hours": 1
+            },
+            "triggers": [
+                "scheduled"
+            ],
+            "actions": [
+                {
+                    "tool": "NEURAL-HealthCheck",
+                    "args": {
+                        "mode": "read_only",
+                        "include_metrics": true
+                    }
+                }
+            ],
+            "simulation_model": "sim_neural_load",
+            "rollback_plan": "none",
+            "origin": "system_core",
+            "version": "1.0"
+        },
+        {
+            "id": "STR-NEURAL-INTAKE-SANITY-001",
+            "name": "Neural Intake Sanity Scan",
+            "description": "Scan recent neural intake buffers for format errors without mutating configs.",
+            "category": "neural",
+            "risk_class": "low",
+            "autonomy_level": "auto",
+            "preconditions": {
+                "last_run_hours": 2
+            },
+            "triggers": [
+                "scheduled",
+                "neural_warning"
+            ],
+            "actions": [
+                {
+                    "tool": "NEURAL-IntakeSanity",
+                    "args": {
+                        "window_minutes": 30,
+                        "max_expected_rate": 1000,
+                        "log_only": true
+                    }
+                }
+            ],
+            "simulation_model": "sim_neural_load",
+            "rollback_plan": "none",
+            "origin": "system_core",
+            "version": "1.0"
+        },
+        {
+            "id": "STR-NEURAL-QUAR-001",
+            "name": "Neural Quarantine Proposal",
+            "description": "Identify neural channels exceeding anomaly thresholds and propose quarantining.",
+            "category": "neural",
+            "risk_class": "medium",
+            "autonomy_level": "recommend",
+            "preconditions": {
+                "last_run_hours": 4
+            },
+            "triggers": [
+                "neural_warning",
+                "shadow_alert"
+            ],
+            "actions": [
+                {
+                    "tool": "NEURAL-Quarantine",
+                    "args": {
+                        "mode": "dry_run",
+                        "threshold_score": 0.8
+                    }
+                }
+            ],
+            "simulation_model": "sim_neural_risk",
+            "rollback_plan": "none",
+            "origin": "system_core",
+            "version": "1.0"
+        },
+        {
+            "id": "STR-NEURAL-ROLLUP-001",
+            "name": "Neural Intake Rollup",
+            "description": "Aggregate raw neural intake logs.",
+            "category": "neural",
+            "risk_class": "low",
+            "autonomy_level": "auto",
+            "preconditions": {
+                "min_log_count": 500
+            },
+            "triggers": [
+                "scheduled",
+                "disk_warning"
+            ],
+            "actions": [
+                {
+                    "tool": "NEURAL-Rollup",
+                    "args": {
+                        "max_days": 3,
+                        "aggregate_to_minutes": 5
+                    }
+                }
+            ],
+            "simulation_model": "sim_neural_disk",
+            "rollback_plan": "none",
+            "origin": "system_core",
+            "version": "1.0"
+        },
+        {
+            "id": "STR-NEURAL-DISCOVERY-001",
+            "name": "Neural Channel Discovery",
+            "description": "Scan for potential new neural channels.",
+            "category": "neural",
+            "risk_class": "medium",
+            "autonomy_level": "recommend",
+            "preconditions": {
+                "last_run_hours": 24
+            },
+            "triggers": [
+                "scheduled",
+                "curiosity"
+            ],
+            "actions": [
+                {
+                    "tool": "NEURAL-ChannelDiscovery",
+                    "args": {
+                        "mode": "propose_only",
+                        "max_candidates": 10
+                    }
+                }
+            ],
+            "simulation_model": "sim_neural_risk",
+            "rollback_plan": "none",
+            "origin": "system_core",
+            "version": "1.0"
+        },
+        {
+            "id": "STR-NEURAL-RATELIMIT-001",
+            "name": "Neural Rate-Limit Guard",
+            "description": "Enforce conservative rate limits on neural intake channels.",
+            "category": "neural",
+            "risk_class": "low",
+            "autonomy_level": "auto",
+            "preconditions": {
+                "last_run_hours": 1
+            },
+            "triggers": [
+                "scheduled",
+                "neural_warning"
+            ],
+            "actions": [
+                {
+                    "tool": "NEURAL-RateLimitCheck",
+                    "args": {
+                        "policy": "conservative",
+                        "max_events_per_min": 500
+                    }
+                }
+            ],
+            "simulation_model": "sim_neural_load",
+            "rollback_plan": "none",
+            "origin": "system_core",
+            "version": "1.0"
+        },
+        {
+            "id": "STR-NEURAL-QUAR-REVIEW-001",
+            "name": "Neural Quarantine Review Summary",
+            "description": "Periodically summarize neural quarantine proposals.",
+            "category": "security",
+            "risk_class": "low",
+            "autonomy_level": "auto",
+            "preconditions": {
+                "last_run_hours": 6
+            },
+            "triggers": [
+                "scheduled",
+                "shadow_alert"
+            ],
+            "actions": [
+                {
+                    "tool": "NEURAL-QuarantineReview",
+                    "args": {
+                        "mode": "summary",
+                        "max_items": 20,
+                        "include_pending": true,
+                        "include_approved": true,
+                        "include_applied": false
+                    }
+                }
+            ],
+            "simulation_model": "sim_neural_risk",
+            "rollback_plan": "none",
+            "origin": "system_core",
+            "version": "1.0"
+        },
+        {
+            "id": "STR-NEURAL-HEARTBEAT-INGEST-001",
+            "name": "Neural Heartbeat Ingestion",
+            "description": "Periodically ingest System_Heartbeat.log into Heartbeat_Metrics.json and Neural_Event_Index.json.",
+            "category": "neural",
+            "risk_class": "low",
+            "autonomy_level": "auto",
+            "preconditions": {
+                "last_run_hours": 1
+            },
+            "triggers": [
+                "scheduled",
+                "heartbeat_change"
+            ],
+            "actions": [
+                {
+                    "tool": "NEURAL-Intake-Heartbeat",
+                    "args": {}
+                }
+            ],
+            "simulation_model": "sim_neural_load",
+            "rollback_plan": "none",
+            "origin": "system_core",
+            "version": "1.0"
+        },
+        {
+            "id": "STR-NEURAL-WEATHER-INGEST-001",
+            "name": "Neural Weather Ingestion",
+            "description": "Periodically ingest external weather data into Weather_Metrics.json and Neural_Event_Index.json.",
+            "category": "neural",
+            "risk_class": "low",
+            "autonomy_level": "auto",
+            "preconditions": {
+                "last_run_hours": 1
+            },
+            "triggers": [
+                "scheduled",
+                "neural_warning"
+            ],
+            "actions": [
+                {
+                    "tool": "NEURAL-Intake-Weather",
+                    "args": {}
+                }
+            ],
+            "simulation_model": "sim_neural_load",
+            "rollback_plan": "none",
+            "origin": "system_core",
+            "version": "1.0"
+        },
+        {
+            "id": "STR-NEURAL-ROUTER-INGEST-001",
+            "name": "Router Telemetry Ingestion",
+            "description": "Periodically ingest router telemetry into Router_Metrics.json and Neural_Event_Index.json.",
+            "category": "neural",
+            "risk_class": "low",
+            "autonomy_level": "auto",
+            "preconditions": {
+                "last_run_hours": 1
+            },
+            "triggers": [
+                "scheduled",
+                "neural_warning"
+            ],
+            "actions": [
+                {
+                    "tool": "NEURAL-Intake-RouterTelemetry",
+                    "args": {}
+                }
+            ],
+            "simulation_model": "sim_neural_load",
+            "rollback_plan": "none",
+            "origin": "system_core",
+            "version": "1.0"
+        },
+        {
+            "id": "STR-SEC-NET-SUMMARY-001",
+            "name": "Network Security Signal Summary",
+            "description": "Summarize recent router anomalies and surface them to the UI/Symbiosis, without taking direct action.",
+            "category": "security",
+            "risk_class": "medium",
+            "autonomy_level": "recommend",
+            "preconditions": {
+                "last_run_hours": 6
+            },
+            "triggers": [
+                "scheduled",
+                "shadow_alert"
+            ],
+            "actions": [
+                {
+                    "tool": "SEC-NetSignalSummary",
+                    "args": {
+                        "lookback_hours": 24
+                    }
+                }
+            ],
+            "simulation_model": "sim_neural_risk",
+            "rollback_plan": "none",
+            "origin": "system_core",
+            "version": "1.0"
+        },
+        {
+            "id": "STR-NEURAL-RETINA-INGEST-001",
+            "name": "Retina Ingestion",
+            "description": "Periodically ingest retina metadata and update Retina_Metrics/Neural_Event_Index.",
+            "category": "neural",
+            "risk_class": "high",
+            "autonomy_level": "auto",
+            "preconditions": {
+                "last_run_hours": 1
+            },
+            "triggers": [
+                "scheduled",
+                "neural_warning"
+            ],
+            "actions": [
+                {
+                    "tool": "NEURAL-Intake-Retina",
+                    "args": {}
+                }
+            ],
+            "simulation_model": "sim_neural_risk",
+            "rollback_plan": "none",
+            "origin": "system_core",
+            "version": "1.0"
+        },
+        {
+            "id": "STR-SHADOW-NEURAL-CORRELATE-001",
+            "name": "Shadow Neural Correlator",
+            "description": "Ingest recent neural events into Shadow_Risk_Index for risk-aware simulations.",
+            "category": "shadow",
+            "risk_class": "low",
+            "autonomy_level": "auto",
+            "preconditions": {
+                "last_run_hours": 1
+            },
+            "triggers": [
+                "scheduled",
+                "shadow_alert"
+            ],
+            "actions": [
+                {
+                    "tool": "SHADOW-Ingest-NeuralEvents",
+                    "args": {
+                        "LookbackMinutes": 120
+                    }
+                }
+            ],
+            "simulation_model": "sim_neural_risk",
+            "rollback_plan": "none",
+            "origin": "system_core",
+            "version": "1.0"
+        },
+        {
+            "id": "STR-DASH-STATE-001",
+            "name": "Dashboard State Rebuild",
+            "description": "Refresh Dashboard_State.json from metrics and shadow.",
+            "category": "dashboard",
+            "risk_class": "low",
+            "autonomy_level": "auto",
+            "preconditions": {
+                "last_run_hours": 0.25
+            },
+            "triggers": [
+                "scheduled"
+            ],
+            "actions": [
+                {
+                    "tool": "DASH-BuildDashboardState",
+                    "args": {}
+                },
+                {
+                    "tool": "DASH-BuildUIInboxDashboard",
+                    "args": {}
+                }
+            ],
+            "simulation_model": "sim_cpu_impact",
+            "rollback_plan": "none",
+            "origin": "system_core",
+            "version": "1.0"
+        },
+        {
+            "id": "STR-HAPTIC-DISPATCH-001",
+            "name": "Haptic Bus Drain",
+            "description": "Periodically dispatch haptic alerts from the Haptic Alert Bus to physical devices.",
+            "category": "ui",
+            "risk_class": "low",
+            "autonomy_level": "auto",
+            "preconditions": {
+                "last_run_hours": 0
+            },
+            "triggers": [
+                "scheduled",
+                "shadow_alert"
+            ],
+            "actions": [
+                {
+                    "tool": "HAPTIC-DispatchBus",
+                    "args": {
+                        "max_alerts": 20
+                    }
+                }
+            ],
+            "simulation_model": "sim_neural_load",
+            "rollback_plan": "none",
+            "origin": "system_core",
+            "version": "1.0"
+        },
+        {
+            "id": "STR-MIRROR-TEST-001",
+            "name": "Introspection Cycle (Mirror Test)",
+            "description": "Periodically initiates the Mirror Test to calibrate self-concept and verify alignment with the Constitution.",
+            "category": "neural",
+            "risk_class": "low",
+            "autonomy_level": "auto",
+            "preconditions": {
+                "last_run_hours": 24
+            },
+            "triggers": [
+                "scheduled",
+                "high_dissonance"
+            ],
+            "actions": [
+                {
+                    "tool": "INTRO-RunMirrorTest",
+                    "args": {}
+                }
+            ],
+            "simulation_model": "sim_neural_load",
+            "rollback_plan": "none",
+            "origin": "system_core",
+            "version": "1.0"
+        },
+        {
+            "id": "STR-DREAM-CYCLE-001",
+            "name": "REM Cycle",
+            "description": "Trigger Dream Engine to process Shadow Risk and update Dissonance.",
+            "category": "neural",
+            "risk_class": "low",
+            "autonomy_level": "auto",
+            "preconditions": {
+                "last_run_hours": 1
+            },
+            "triggers": [
+                "scheduled",
+                "low_cpu"
+            ],
+            "actions": [
+                {
+                    "tool": "run_command",
+                    "args": {
+                        "command": "powershell -ExecutionPolicy Bypass -File D:\\Infinite\\Axis_Dream_Engine.ps1"
+                    }
+                }
+            ],
+            "simulation_model": "sim_neural_load",
+            "rollback_plan": "none",
+            "origin": "system_core",
+            "version": "1.0"
+        },
+        {
+            "id": "STR-AXIS-VOICE-001",
+            "name": "Voice Emission (State Resonance)",
+            "description": "Logs the system's Voice State to the timeline, shifting dialect based on risk.",
+            "category": "neural",
+            "risk_class": "low",
+            "autonomy_level": "auto",
+            "preconditions": {
+                "last_run_hours": 1
+            },
+            "triggers": [
+                "scheduled",
+                "shadow_alert"
+            ],
+            "actions": [
+                {
+                    "tool": "AXIS-Voice-Resonate",
+                    "args": {}
+                }
+            ],
+            "simulation_model": "sim_neural_load",
+            "rollback_plan": "none",
+            "origin": "system_core",
+            "version": "1.0"
+        }
+    ]
+}

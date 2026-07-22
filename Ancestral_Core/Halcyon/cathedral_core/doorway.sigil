@@ -1,0 +1,4 @@
+[DOOR]
+State = open
+Threshold = luminous
+Entry = permitted

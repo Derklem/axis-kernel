@@ -1,0 +1,14 @@
+{"timestamp": "2026-03-15T20:00:00Z", "new_doctrine": "ALT_THEORY_MEMORY_FRAGMENTATION", "regime": "MEMORY_PRESSURE"}
+{"timestamp": "2026-03-15T20:03:00Z", "new_doctrine": "META_THEORY_RESOURCE_CONTENTION_DYNAMICS", "regime": "MIXED_CONTENTION"}
+{"timestamp": "2026-03-15T20:10:00Z", "new_doctrine": "ALT_THEORY_MEMORY_FRAGMENTATION", "regime": "MEMORY_PRESSURE"}
+{"timestamp": "2026-03-15T20:13:00Z", "new_doctrine": "META_THEORY_RESOURCE_CONTENTION_DYNAMICS", "regime": "MIXED_CONTENTION"}
+{"timestamp": "2026-03-15T20:20:00Z", "new_doctrine": "ALT_THEORY_MEMORY_FRAGMENTATION", "regime": "MEMORY_PRESSURE"}
+{"timestamp": "2026-03-15T20:23:00Z", "new_doctrine": "META_THEORY_RESOURCE_CONTENTION_DYNAMICS", "regime": "MIXED_CONTENTION"}
+{"timestamp": "2026-03-15T20:30:00Z", "new_doctrine": "THEORY_QUEUE_SATURATION", "regime": "QUEUE_SATURATION"}
+{"timestamp": "2026-03-15T20:31:30Z", "new_doctrine": "META_THEORY_RESOURCE_CONTENTION_DYNAMICS", "regime": "NORMAL_LOAD"}
+{"timestamp": "2026-03-15T20:40:00Z", "new_doctrine": "THEORY_QUEUE_SATURATION", "regime": "QUEUE_SATURATION"}
+{"timestamp": "2026-03-15T20:41:30Z", "new_doctrine": "META_THEORY_RESOURCE_CONTENTION_DYNAMICS", "regime": "NORMAL_LOAD"}
+{"timestamp": "2026-03-15T20:50:00Z", "new_doctrine": "THEORY_QUEUE_SATURATION", "regime": "QUEUE_SATURATION"}
+{"timestamp": "2026-03-15T20:51:30Z", "new_doctrine": "META_THEORY_RESOURCE_CONTENTION_DYNAMICS", "regime": "NORMAL_LOAD"}
+{"timestamp": "2026-03-15T21:00:00Z", "new_doctrine": "META_THEORY_RESOURCE_CONTENTION_DYNAMICS", "regime": "NORMAL_LOAD"}
+{"timestamp": "2026-03-15T21:01:00Z", "new_doctrine": "META_THEORY_RESOURCE_CONTENTION_DYNAMICS", "regime": "UNKNOWN_REGIME"}
