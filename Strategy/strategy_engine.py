@@ -4444,6 +4444,9 @@ class StrategyEngine:
                     }
 
             execution_planner_mode = ledger_data.get("execution_planner_mode", "LEGACY")
+            VALID_MODES = {"LEGACY", "PLANNER_SHADOW", "PLANNER_CANARY", "PLANNER_LIVE"}
+            if execution_planner_mode not in VALID_MODES:
+                raise RuntimeError(f"Invalid execution planner mode: {execution_planner_mode}")
             proposals.sort(key=lambda x: 0 if x["proposed_change"]["artifact_type"] == "structural_revision" else 1)
             
             valid_proposals = []
@@ -5802,9 +5805,10 @@ class StrategyEngine:
 
     def _load_shadow_ledger(self):
         try:
-            with open(self.state_file, "r") as f: 
+            with open(self.state_file, "r", encoding="utf-8") as f: 
                 raw_data = json.load(f)
-                data = raw_data.get("mission_shadow_v2", raw_data)
+                data = dict(raw_data.get("mission_shadow_v2", raw_data))
+                data["execution_planner_mode"] = raw_data.get("execution_planner_mode", "LEGACY")
                 self.shadow_ledger = data
                 
                 # Phase 45: Restore Volatility Memory
