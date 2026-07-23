@@ -1,4 +1,4 @@
-﻿# Axis Kernel
+# Axis Kernel
 
 > **Deterministic governance for probabilistic planning.**
 
@@ -9,6 +9,22 @@ Rather than allowing an LLM to directly execute actions, proposed actions are co
 The project explores one question:
 
 > **How can autonomous planning become more auditable, reproducible, and falsifiable?**
+
+```text
+       LLM
+        │
+        ▼
+Proposal Gateway
+        │
+        ▼
+     Planner
+        │
+        ▼
+ Strategy Engine
+        │
+        ▼
+    Execution
+```
 
 ---
 
