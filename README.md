@@ -93,21 +93,21 @@ Current work includes:
 ## Getting Started
 
 Clone the repository:
-`ash
+```bash
 git clone https://github.com/Derklem/axis-kernel.git
-`
+```
 
 Create a virtual environment and install dependencies:
-`ash
+```bash
 python -m venv .venv
 # Activate the environment (e.g. .venv\Scripts\activate on Windows)
 pip install -r requirements.txt
-`
+```
 
 Run the smoke test to verify your environment:
-`ash
+```bash
 pytest tests/smoke/test_repository_boot.py
-`
+```
 
 Then explore:
 * ProposalGateway/
